@@ -1,0 +1,165 @@
+{
+  "status": "PASS",
+  "scope": "Deterministic consistency checks, not proof review or novelty certification.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "normalized_family": {
+    "models_checked": 23,
+    "max_spectral_weight_error": 1.5543122344752192e-15,
+    "step_time_in_units_1_over_k": 0.25,
+    "proved_signal_lower_bound": 0.02758943701673307,
+    "min_sampled_signal": 0.031333100211908424,
+    "examples": [
+      {
+        "microscopic_states": 3,
+        "kernel_mass": 0.5625,
+        "min_weight": 0.5624999999999999,
+        "cubic_correction": 0.06247445581134299
+      },
+      {
+        "microscopic_states": 4,
+        "kernel_mass": 0.38888888888888884,
+        "min_weight": 0.04166666666666667,
+        "cubic_correction": 0.04329813719955594
+      },
+      {
+        "microscopic_states": 9,
+        "kernel_mass": 0.33984375,
+        "min_weight": 0.0011441141359900492,
+        "cubic_correction": 0.037865805197958055
+      },
+      {
+        "microscopic_states": 25,
+        "kernel_mass": 0.28081597222222227,
+        "min_weight": 1.4789137895369695e-05,
+        "cubic_correction": 0.031343702683297225
+      }
+    ]
+  },
+  "finite_accuracy": {
+    "cases": [
+      {
+        "source_modes": 5,
+        "bins": 1,
+        "active_bins": 1,
+        "surrogate_states": 3,
+        "observed_error": 0.012070537211515686,
+        "transport_certificate": 0.49985233752515,
+        "uniform_bound": 0.64
+      },
+      {
+        "source_modes": 5,
+        "bins": 2,
+        "active_bins": 2,
+        "surrogate_states": 5,
+        "observed_error": 0.011562927989955608,
+        "transport_certificate": 0.21146804543810194,
+        "uniform_bound": 0.32
+      },
+      {
+        "source_modes": 5,
+        "bins": 4,
+        "active_bins": 3,
+        "surrogate_states": 7,
+        "observed_error": 0.003146852495653718,
+        "transport_certificate": 0.11018130630769882,
+        "uniform_bound": 0.16
+      },
+      {
+        "source_modes": 5,
+        "bins": 8,
+        "active_bins": 4,
+        "surrogate_states": 9,
+        "observed_error": 0.002191055540805356,
+        "transport_certificate": 0.030181306307698826,
+        "uniform_bound": 0.08
+      },
+      {
+        "source_modes": 13,
+        "bins": 1,
+        "active_bins": 1,
+        "surrogate_states": 3,
+        "observed_error": 0.007459293673118941,
+        "transport_certificate": 0.4540937350855795,
+        "uniform_bound": 0.64
+      },
+      {
+        "source_modes": 13,
+        "bins": 2,
+        "active_bins": 2,
+        "surrogate_states": 5,
+        "observed_error": 0.006922322905945452,
+        "transport_certificate": 0.21614160478793706,
+        "uniform_bound": 0.32
+      },
+      {
+        "source_modes": 13,
+        "bins": 4,
+        "active_bins": 4,
+        "surrogate_states": 9,
+        "observed_error": 0.003025985196883435,
+        "transport_certificate": 0.09506836432795042,
+        "uniform_bound": 0.16
+      },
+      {
+        "source_modes": 13,
+        "bins": 8,
+        "active_bins": 7,
+        "surrogate_states": 15,
+        "observed_error": 0.0007300409192722915,
+        "transport_certificate": 0.03800000877649411,
+        "uniform_bound": 0.08
+      },
+      {
+        "source_modes": 31,
+        "bins": 1,
+        "active_bins": 1,
+        "surrogate_states": 3,
+        "observed_error": 0.007386023708498654,
+        "transport_certificate": 0.4530961106502411,
+        "uniform_bound": 0.64
+      },
+      {
+        "source_modes": 31,
+        "bins": 2,
+        "active_bins": 2,
+        "surrogate_states": 5,
+        "observed_error": 0.0052575105517197185,
+        "transport_certificate": 0.20417932077362747,
+        "uniform_bound": 0.32
+      },
+      {
+        "source_modes": 31,
+        "bins": 4,
+        "active_bins": 4,
+        "surrogate_states": 9,
+        "observed_error": 0.0022707205828987193,
+        "transport_certificate": 0.09245414042502018,
+        "uniform_bound": 0.16
+      },
+      {
+        "source_modes": 31,
+        "bins": 8,
+        "active_bins": 8,
+        "surrogate_states": 17,
+        "observed_error": 0.0007136173942724894,
+        "transport_certificate": 0.04240049501025864,
+        "uniform_bound": 0.08
+      }
+    ],
+    "cases_checked": 12,
+    "protocol_samples": 240,
+    "max_observed_error_over_certificate": 0.07259644491419673,
+    "max_realized_kernel_error": 3.3653635433950058e-15,
+    "max_full_markov_memory_error": 1.231653667943533e-15,
+    "largest_matrix_dimension": 68,
+    "invalid_inputs_rejected": 4
+  },
+  "source_sha256": {
+    "verify_checkpoint.py": "ce7a2a981e6a09f7350ad42731afbcafd6c67f2de2bade8d2de16666227e2026",
+    "verify_finite_accuracy.py": "92b1679c91c7318a5e924e2a64f95ae0060eb3b7a9ebf0ab0fee5902fa985838"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "scope": "Deterministic checks; not independent proof review or novelty certification.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "sympy": "1.14.0"
+  },
+  "symbolic": {
+    "generator_and_balance": "PASS",
+    "passive_lumpability": "PASS",
+    "laplace_cases": [
+      {
+        "r": "1/4",
+        "laplace_m3": "4*(2*z**2 - 2*z - 3)/(3*z*(z + 2)**2*(2*z + 3))",
+        "status": "PASS"
+      },
+      {
+        "r": "1/2",
+        "laplace_m3": "2*(2*z**2 - z - 4)/(3*z*(z + 2)**3)",
+        "status": "PASS"
+      },
+      {
+        "r": "1",
+        "laplace_m3": "2*(2*z - 3)/(3*z*(z + 2)*(z + 3))",
+        "status": "PASS"
+      }
+    ],
+    "three_state_kernel_inversion": "PASS"
+  },
+  "deterministic": {
+    "status": "PASS",
+    "matrix_spectral_comparisons": 56,
+    "largest_coefficient_matrix_dimension": 36,
+    "max_matrix_spectral_absolute_error": 2.0539125955565396e-15,
+    "time_dependent_protocol_segments": 4,
+    "max_protocol_absolute_error": 1.354472090042691e-14,
+    "state_count_examples": [
+      {
+        "microscopic_states": 3,
+        "passive_states": 2,
+        "distinct_response_poles": 3,
+        "min_hidden_weight": 0.25
+      },
+      {
+        "microscopic_states": 4,
+        "passive_states": 2,
+        "distinct_response_poles": 4,
+        "min_hidden_weight": 0.05555555555555553
+      },
+      {
+        "microscopic_states": 5,
+        "passive_states": 2,
+        "distinct_response_poles": 5,
+        "min_hidden_weight": 0.01830582617584079
+      },
+      {
+        "microscopic_states": 6,
+        "passive_states": 2,
+        "distinct_response_poles": 6,
+        "min_hidden_weight": 0.007639320225002114
+      },
+      {
+        "microscopic_states": 7,
+        "passive_states": 2,
+        "distinct_response_poles": 7,
+        "min_hidden_weight": 0.0037215165615433576
+      },
+      {
+        "microscopic_states": 8,
+        "passive_states": 2,
+        "distinct_response_poles": 8,
+        "min_hidden_weight": 0.0020210435121955357
+      },
+      {
+        "microscopic_states": 9,
+        "passive_states": 2,
+        "distinct_response_poles": 9,
+        "min_hidden_weight": 0.001189382304511139
+      }
+    ],
+    "finite_field_remainder_at_t1": [
+      {
+        "field": 0.1,
+        "exact_mean": 0.08629769869627768,
+        "cubic_approximation": 0.08628790278820941,
+        "absolute_error": 9.795908068266357e-06,
+        "error_over_h4": 0.09795908068266355
+      },
+      {
+        "field": 0.05,
+        "exact_mean": 0.04321154343634204,
+        "cubic_approximation": 0.0432109147271532,
+        "absolute_error": 6.287091888351748e-07,
+        "error_over_h4": 0.10059347021362795
+      },
+      {
+        "field": 0.025,
+        "exact_mean": 0.021613867517710383,
+        "cubic_approximation": 0.021613827780207664,
+        "absolute_error": 3.973750271890619e-08,
+        "error_over_h4": 0.10172800696039984
+      },
+      {
+        "field": 0.0125,
+        "exact_mean": 0.010807962688427597,
+        "cubic_approximation": 0.010807960192182714,
+        "absolute_error": 2.4962448826743033e-09,
+        "error_over_h4": 0.10224619039433945
+      }
+    ]
+  }
+}
