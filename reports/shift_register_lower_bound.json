@@ -1,0 +1,419 @@
+{
+  "status": "PASS",
+  "scope": "Exact small physical shift registers, sparse Walsh leaf/Gram certificates, and endpoint/fixed-dwell derivative-stencil bounds.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "physical_register_checks": [
+    {
+      "physical_bits": 1,
+      "hidden_states": 2,
+      "full_Markov_states": 3,
+      "minimum_internal_off_diagonal": "1",
+      "Walsh_shift_and_binary_toggle_identities": true,
+      "hidden_relaxation_rate_band": [
+        "3/2",
+        "5/2"
+      ],
+      "G": "1",
+      "W": "1",
+      "field_h": "log(65/64)",
+      "full_field_stationarity_reversibility_and_Gram_filters": true
+    },
+    {
+      "physical_bits": 2,
+      "hidden_states": 4,
+      "full_Markov_states": 5,
+      "minimum_internal_off_diagonal": "3/8",
+      "Walsh_shift_and_binary_toggle_identities": true,
+      "hidden_relaxation_rate_band": [
+        "3/2",
+        "5/2"
+      ],
+      "G": "1",
+      "W": "1",
+      "field_h": "log(65/64)",
+      "full_field_stationarity_reversibility_and_Gram_filters": true
+    },
+    {
+      "physical_bits": 3,
+      "hidden_states": 8,
+      "full_Markov_states": 9,
+      "minimum_internal_off_diagonal": "3/16",
+      "Walsh_shift_and_binary_toggle_identities": true,
+      "hidden_relaxation_rate_band": [
+        "3/2",
+        "5/2"
+      ],
+      "G": "1",
+      "W": "1",
+      "field_h": "log(65/64)",
+      "full_field_stationarity_reversibility_and_Gram_filters": true
+    }
+  ],
+  "sparse_Walsh_leaf_checks": [
+    {
+      "word_depth_n": 1,
+      "implicit_register_bits": 7,
+      "implicit_physical_target_states": 129,
+      "physical_state_space_enumerated": false,
+      "controlled_Gram_dimension": 2,
+      "active_Walsh_coordinates_evaluated": 19,
+      "largest_sparse_column_support": 12,
+      "top_leaf_coefficient_exact": "1/110592",
+      "top_leaf_matrix_is_coefficient_times_identity": true,
+      "Gram_remainder_exact_sum_of_squares": true,
+      "full_pi0_Gram_eigenvalue_floor": "1/24461180928"
+    },
+    {
+      "word_depth_n": 2,
+      "implicit_register_bits": 11,
+      "implicit_physical_target_states": 2049,
+      "physical_state_space_enumerated": false,
+      "controlled_Gram_dimension": 4,
+      "active_Walsh_coordinates_evaluated": 99,
+      "largest_sparse_column_support": 55,
+      "top_leaf_coefficient_exact": "1/254803968",
+      "top_leaf_matrix_is_coefficient_times_identity": true,
+      "Gram_remainder_exact_sum_of_squares": true,
+      "full_pi0_Gram_eigenvalue_floor": "1/129850124217090048"
+    },
+    {
+      "word_depth_n": 3,
+      "implicit_register_bits": 15,
+      "implicit_physical_target_states": 32769,
+      "physical_state_space_enumerated": false,
+      "controlled_Gram_dimension": 8,
+      "active_Walsh_coordinates_evaluated": 499,
+      "largest_sparse_column_support": 232,
+      "top_leaf_coefficient_exact": "1/587068342272",
+      "top_leaf_matrix_is_coefficient_times_identity": true,
+      "Gram_remainder_exact_sum_of_squares": true,
+      "full_pi0_Gram_eigenvalue_floor": "1/689298476995988284243968"
+    }
+  ],
+  "exact_small_derivative_stencils": [
+    {
+      "scheme": "endpoint",
+      "polynomial_degree": 1,
+      "nodes_exact": [
+        "0",
+        "1"
+      ],
+      "derivative_weights_exact": [
+        "-1",
+        "1"
+      ],
+      "exact_l1_norm": "2",
+      "l1_certificate": "2",
+      "polynomial_moments_checked": 2
+    },
+    {
+      "scheme": "endpoint",
+      "polynomial_degree": 2,
+      "nodes_exact": [
+        "0",
+        "1/2",
+        "1"
+      ],
+      "derivative_weights_exact": [
+        "-3",
+        "4",
+        "-1"
+      ],
+      "exact_l1_norm": "8",
+      "l1_certificate": "8",
+      "polynomial_moments_checked": 3
+    },
+    {
+      "scheme": "endpoint",
+      "polynomial_degree": 3,
+      "nodes_exact": [
+        "0",
+        "1/4",
+        "3/4",
+        "1"
+      ],
+      "derivative_weights_exact": [
+        "-19/3",
+        "8",
+        "-8/3",
+        "1"
+      ],
+      "exact_l1_norm": "18",
+      "l1_certificate": "18",
+      "polynomial_moments_checked": 4
+    },
+    {
+      "scheme": "endpoint",
+      "polynomial_degree": 4,
+      "nodes_exact": [
+        "0",
+        "1/2 - sqrt(2)/4",
+        "1/2",
+        "sqrt(2)/4 + 1/2",
+        "1"
+      ],
+      "derivative_weights_exact": [
+        "-11",
+        "4*sqrt(2) + 8",
+        "-4",
+        "8 - 4*sqrt(2)",
+        "-1"
+      ],
+      "exact_l1_norm": "32",
+      "l1_certificate": "32",
+      "polynomial_moments_checked": 5
+    },
+    {
+      "scheme": "fixed_dwell_extrapolation",
+      "polynomial_degree": 1,
+      "nodes_exact": [
+        "1/8",
+        "2"
+      ],
+      "derivative_weights_exact": [
+        "-8/15",
+        "8/15"
+      ],
+      "exact_l1_norm": "16/15",
+      "l1_certificate": "32/9",
+      "polynomial_moments_checked": 2
+    },
+    {
+      "scheme": "fixed_dwell_extrapolation",
+      "polynomial_degree": 2,
+      "nodes_exact": [
+        "1/8",
+        "17/16",
+        "2"
+      ],
+      "derivative_weights_exact": [
+        "-392/225",
+        "544/225",
+        "-152/225"
+      ],
+      "exact_l1_norm": "1088/225",
+      "l1_certificate": "1280/27",
+      "polynomial_moments_checked": 3
+    },
+    {
+      "scheme": "fixed_dwell_extrapolation",
+      "polynomial_degree": 3,
+      "nodes_exact": [
+        "1/8",
+        "19/32",
+        "49/32",
+        "2"
+      ],
+      "derivative_weights_exact": [
+        "-4696/1125",
+        "19136/3375",
+        "-2752/1125",
+        "3208/3375"
+      ],
+      "exact_l1_norm": "14896/1125",
+      "l1_certificate": "800/3",
+      "polynomial_moments_checked": 4
+    },
+    {
+      "scheme": "fixed_dwell_extrapolation",
+      "polynomial_degree": 4,
+      "nodes_exact": [
+        "1/8",
+        "17/16 - 15*sqrt(2)/32",
+        "17/16",
+        "15*sqrt(2)/32 + 17/16",
+        "2"
+      ],
+      "derivative_weights_exact": [
+        "-434312/50625",
+        "3424*sqrt(2)/1125 + 384064/50625",
+        "-261664/50625",
+        "384064/50625 - 3424*sqrt(2)/1125",
+        "-72152/50625"
+      ],
+      "exact_l1_norm": "1536256/50625",
+      "l1_certificate": "256000/243",
+      "polynomial_moments_checked": 5
+    }
+  ],
+  "rational_interpolation_and_coefficient_certificates": [
+    {
+      "word_depth_n": 1,
+      "scheme": "endpoint_shrinking_dwell",
+      "interpolation_degree": 183,
+      "largest_stencil_time_T": "1",
+      "minimum_nonzero_dwell": "0.000073676147486546357178841716384384506856446285861512",
+      "l1_norm_rational_certificate_log10": "4.8259321751248401375752917287493663436952051240703",
+      "extrapolation_growth_factor_rational_upper": null,
+      "generator_Taylor_error_rational_certificate_log10": "-202.52597105383737502488790970518252884420939355785",
+      "controlled_matrix_error_rational_certificate_log10": "-196.07995990444614993475242119625123584528364985329",
+      "exact_leaf_Gram_floor": "1/24461180928",
+      "rational_error_below_half_Gram_floor": true,
+      "certified_finite_experiment_singular_value_floor": "1/48922361856",
+      "generator_word_degree_bound": 16,
+      "maximum_protocol_horizon": "16",
+      "entry_coefficient_budget_log10": "86.289387911669710216687452735844401742872097257678",
+      "response_error_lower_certificate_log10": "-97.279925322915177111228570312936405320813997242299",
+      "scope": "Exact scalar norm/remainder bookkeeping for the displayed finite choices; constants are sufficient and not optimized."
+    },
+    {
+      "word_depth_n": 1,
+      "scheme": "fixed_dwell_extrapolation",
+      "interpolation_degree": 200,
+      "largest_stencil_time_T": "2",
+      "minimum_nonzero_dwell": "0.125",
+      "l1_norm_rational_certificate_log10": "51.601898629527441817875262553343654738049830938407",
+      "extrapolation_growth_factor_rational_upper": "5/3",
+      "generator_Taylor_error_rational_certificate_log10": "-119.82697352073667505245193382404672376460172725464",
+      "controlled_matrix_error_rational_certificate_log10": "-113.38096237134544996231644531511543076567598355008",
+      "exact_leaf_Gram_floor": "1/24461180928",
+      "rational_error_below_half_Gram_floor": true,
+      "certified_finite_experiment_singular_value_floor": "1/48922361856",
+      "generator_word_degree_bound": 16,
+      "maximum_protocol_horizon": "32",
+      "entry_coefficient_budget_log10": "834.70485118211133710148698592935301605254611028707",
+      "response_error_lower_certificate_log10": "-845.69538859335680399602810350644501963048801027169",
+      "scope": "Exact scalar norm/remainder bookkeeping for the displayed finite choices; constants are sufficient and not optimized."
+    },
+    {
+      "word_depth_n": 2,
+      "scheme": "endpoint_shrinking_dwell",
+      "interpolation_degree": 217,
+      "largest_stencil_time_T": "1",
+      "minimum_nonzero_dwell": "0.00005239775753132392675045025675152156939874834732255",
+      "l1_norm_rational_certificate_log10": "4.9739494633610402159715796121465968583427377907184",
+      "extrapolation_growth_factor_rational_upper": null,
+      "generator_Taylor_error_rational_certificate_log10": "-256.94078606425862834480504321897202031979801413938",
+      "controlled_matrix_error_rational_certificate_log10": "-248.94972365785407047172051940521953592905716165847",
+      "exact_leaf_Gram_floor": "1/129850124217090048",
+      "rational_error_below_half_Gram_floor": true,
+      "certified_finite_experiment_singular_value_floor": "1/259700248434180096",
+      "generator_word_degree_bound": 26,
+      "maximum_protocol_horizon": "26",
+      "entry_coefficient_budget_log10": "142.63835802742615070357731755268386024420289866279",
+      "response_error_lower_certificate_log10": "-160.65489038383794766593210795311270651400454208903",
+      "scope": "Exact scalar norm/remainder bookkeeping for the displayed finite choices; constants are sufficient and not optimized."
+    },
+    {
+      "word_depth_n": 2,
+      "scheme": "fixed_dwell_extrapolation",
+      "interpolation_degree": 300,
+      "largest_stencil_time_T": "3",
+      "minimum_nonzero_dwell": "0.125",
+      "l1_norm_rational_certificate_log10": "74.129410791368210656455961677254120721248201269705",
+      "extrapolation_growth_factor_rational_upper": "5/3",
+      "generator_Taylor_error_rational_certificate_log10": "-181.67467095144411778757469876432198672717943804211",
+      "controlled_matrix_error_rational_certificate_log10": "-173.68360854503955991449017495056950233643858556119",
+      "exact_leaf_Gram_floor": "1/129850124217090048",
+      "rational_error_below_half_Gram_floor": true,
+      "certified_finite_experiment_singular_value_floor": "1/259700248434180096",
+      "generator_word_degree_bound": 26,
+      "maximum_protocol_horizon": "78",
+      "entry_coefficient_budget_log10": "1940.6803525556125821561712512454794806797449491164",
+      "response_error_lower_certificate_log10": "-1958.6968849120243791185260416459083269495465925427",
+      "scope": "Exact scalar norm/remainder bookkeeping for the displayed finite choices; constants are sufficient and not optimized."
+    },
+    {
+      "word_depth_n": 3,
+      "scheme": "endpoint_shrinking_dwell",
+      "interpolation_degree": 249,
+      "largest_stencil_time_T": "1",
+      "minimum_nonzero_dwell": "0.00003979562215810274180479069795450201553222284836907",
+      "l1_norm_rational_certificate_log10": "5.0934286898554538774693154052892461391717229260048",
+      "extrapolation_growth_factor_rational_upper": null,
+      "generator_Taylor_error_rational_certificate_log10": "-310.28805034800314807840219608227043111882665405914",
+      "controlled_matrix_error_rational_certificate_log10": "-300.75529616544374821683051414204194749537257982592",
+      "exact_leaf_Gram_floor": "1/689298476995988284243968",
+      "rational_error_below_half_Gram_floor": true,
+      "certified_finite_experiment_singular_value_floor": "1/1378596953991976568487936",
+      "generator_word_degree_bound": 36,
+      "maximum_protocol_horizon": "36",
+      "entry_coefficient_budget_log10": "200.92030368520228175004506478830300462101664227184",
+      "response_error_lower_certificate_log10": "-225.9628309867804087802135280120686935826780291397",
+      "scope": "Exact scalar norm/remainder bookkeeping for the displayed finite choices; constants are sufficient and not optimized."
+    },
+    {
+      "word_depth_n": 3,
+      "scheme": "fixed_dwell_extrapolation",
+      "interpolation_degree": 400,
+      "largest_stencil_time_T": "4",
+      "minimum_nonzero_dwell": "0.125",
+      "l1_norm_rational_certificate_log10": "78.256471880742017300200027154099920544921980229214",
+      "extrapolation_growth_factor_rational_upper": "3/2",
+      "generator_Taylor_error_rational_certificate_log10": "-261.8976333139539344345063006633730509551824290759",
+      "controlled_matrix_error_rational_certificate_log10": "-252.36487913139453457293461872314456733172835484269",
+      "exact_leaf_Gram_floor": "1/689298476995988284243968",
+      "rational_error_below_half_Gram_floor": true,
+      "certified_finite_experiment_singular_value_floor": "1/1378596953991976568487936",
+      "generator_word_degree_bound": 36,
+      "maximum_protocol_horizon": "144",
+      "entry_coefficient_budget_log10": "2834.7898585571185649683506877454872832280259051874",
+      "response_error_lower_certificate_log10": "-2859.8323858586966919985191509692529721896872920552",
+      "scope": "Exact scalar norm/remainder bookkeeping for the displayed finite choices; constants are sufficient and not optimized."
+    }
+  ],
+  "selected_high_precision_stencils": [
+    {
+      "scheme": "endpoint",
+      "degree": 24,
+      "a": "0.0",
+      "T": "1.0",
+      "decimal_precision": 100,
+      "stencil_l1_norm": "1152.0",
+      "stencil_l1_certificate": "1152.0",
+      "maximum_generator_Frobenius_error": "6.9084786842869294988508343630569704580396657112102e-26",
+      "operator_Taylor_remainder_certificate": "0.0032849541948489337802502520107543156724748761210212",
+      "full_generator_dimension": 9,
+      "scope": "Selected high-precision consistency checks; no numerical rank or optimized lower-bound inference."
+    },
+    {
+      "scheme": "endpoint",
+      "degree": 40,
+      "a": "0.0",
+      "T": "1.0",
+      "decimal_precision": 100,
+      "stencil_l1_norm": "3200.0",
+      "stencil_l1_certificate": "3200.0",
+      "maximum_generator_Frobenius_error": "2.8656588661352155658774232648994053221001983796532e-51",
+      "operator_Taylor_remainder_certificate": "6.4560017693400811916260366128317656899399195695908e-16",
+      "full_generator_dimension": 9,
+      "scope": "Selected high-precision consistency checks; no numerical rank or optimized lower-bound inference."
+    },
+    {
+      "scheme": "fixed_dwell_extrapolation",
+      "degree": 48,
+      "a": "0.125",
+      "T": "2.0",
+      "decimal_precision": 100,
+      "stencil_l1_norm": "2137869635456.6122494739479440088880052062335326739",
+      "stencil_l1_certificate": "10508056832196340.528619646086572479400937509939484",
+      "maximum_generator_Frobenius_error": "1.0903728129062465027556175129632190248480717400465e-42",
+      "operator_Taylor_remainder_certificate": "3805067.4871217051011648204430689108983471703683256",
+      "full_generator_dimension": 9,
+      "scope": "Selected high-precision consistency checks; no numerical rank or optimized lower-bound inference."
+    },
+    {
+      "scheme": "fixed_dwell_extrapolation",
+      "degree": 64,
+      "a": "0.125",
+      "T": "2.0",
+      "decimal_precision": 100,
+      "stencil_l1_norm": "10104153828753094.321429048464222992356505606566998",
+      "stencil_l1_certificate": "88291443376155038593.223216023717982512948930537656",
+      "maximum_generator_Frobenius_error": "4.9857274105965631770731365916982898513799397658796e-64",
+      "operator_Taylor_remainder_certificate": "0.023579423446549745529837419071760023295548639834085",
+      "full_generator_dimension": 9,
+      "scope": "Selected high-precision consistency checks; no numerical rank or optimized lower-bound inference."
+    }
+  ],
+  "largest_constructed_physical_generator_dimension": 9,
+  "largest_controlled_Gram_dimension": 8,
+  "no_large_physical_state_enumeration_or_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_shift_register_lower_bound.py": "2de482d66aa87e9012c769f557b43a17b3657d834542e7da6d261198baa0e485"
+  }
+}

@@ -6,6 +6,8 @@
 
 The construction uses reversible conditional-expectation lumping, finite collections of prediction functions, and a two-point moment construction. These ingredients are combined with the reset and regularization estimates in the [general upper-bound proof](GENERAL_FINITE_FIELD_UPPER_BOUND.md). Their established mathematical ingredients are attributed in [the prior-art comparison](PRIOR_ART.md).
 
+For the narrower class with a fixed finite sensitivity alphabet and an internal spectral cap, [the bounded-rate theorem](BOUNDED_RATE_FINITE_FIELD.md) now gives a sharper reversible count $\exp[C\delta^{-p}\log(2/\delta)]$ while retaining the entire actuator distribution and the spectral band. Its nonreversible construction is polynomial in $1/\delta$. The present theorem continues to cover arbitrary bounded sensitivities and unrestricted internal rates.
+
 ## 1. The theorem
 
 Fix $k>0$, $H>0$, and $0<W\le G^2$. Let $\mathcal F(k,G,W)$ be the original family: an arbitrary finite irreducible reversible internal generator $K$ with stationary law $\mu$, a centered actuator $g$ with $|g_i|\le G$ and $\langle g^2,1\rangle_\mu=W$, and external rates

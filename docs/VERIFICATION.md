@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twelve mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fourteen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -170,6 +170,22 @@ The new proofs received reciprocal internal audits covering physical positivity,
 
 The complete twelve-verifier `make check` passed locally in the pinned environment. All twelve fresh reports matched their saved JSON reports exactly. The ten earlier mathematical scripts and reports, original MIT license, pinned dependencies, and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
 
+## Bounded-rate polynomial upper and shift-register lower checkpoint
+
+This continuation starts from `04666225de07d520555144d26dee342097afb6bd`. All twelve preceding mathematical scripts and saved reports remain regression baselines. Two new verifiers are added to the build and provenance checks.
+
+[verify_bounded_rate_prediction.py](../scripts/verify_bounded_rate_prediction.py) produces [bounded_rate_prediction.json](../reports/bounded_rate_prediction.json). Exact rational examples check a nonlumpable eight-state binary target and a sparse three-state ternary target. They verify the spectral-cap uniformization bound, allowed-word irreducibility and stationarity, exact actuator histograms, and 89 prefix probabilities with their field-entry tilts. A longer-prefix discrepancy confirms that the word approximation is not accidentally exact. Full-field symbolic identities check equilibrium, passive lumpability and the stated reversibility status.
+
+A nontrivial eight-to-four-state predictive quotient checks exact stationary-flux aggregation, inherited lower and upper spectral bounds, and a nonzero three-symbol total-variation discrepancy of `7/1728`. Eight symbolic Poisson/Gamma clock calculations support the regenerative constants. Sixteen rational rounding cases include exact equality boundaries; a separate exact budget checks the reversible prefix approximation. The uniform coupling and all-size polynomial count are proved analytically, not inferred from these cases.
+
+[verify_shift_register_lower_bound.py](../scripts/verify_shift_register_lower_bound.py) produces [shift_register_lower_bound.json](../reports/shift_register_lower_bound.json). Exact one-, two-, and three-bit physical generators check positive rates, Walsh translation and binary toggle actions, full-field equilibrium and detailed balance, and the filtered mean endpoints. For word depths `n=1,2,3`, sparse Walsh polynomials verify the unique maximal-index leaf and an exact sum-of-squares Gram remainder. The largest sparse union has 499 Walsh coordinates; the exponentially larger physical state spaces are not enumerated. The largest physical generator is nine-dimensional and the largest controlled Gram matrix is eight-dimensional.
+
+Exact degree-one through degree-four interpolation formulas reproduce polynomial derivatives and check coefficient bounds for both endpoint and outside-interval stencils. Rational Taylor and filter-perturbation budgets verify that the substituted mean matrix retains at least half the exact Gram floor for the displayed finite choices in both timing regimes. Selected 100-digit calculations check higher-degree stencils against the analytic target remainder. These computations do not use numerical rank, search over competitors, or infer an all-depth exponent from a plot. The written proofs establish the unrestricted-timing and fixed-minimum-dwell lower bounds separately.
+
+Both theorem documents received reciprocal internal mathematical audits, including normalization, physical positivity, competitor scope, regeneration, interpolation and asymptotic inversion. The older tree's all-protocol truncation estimate is an analytic obstruction showing why changing only its measurement filters cannot produce a depth-exponential error floor at the same state threshold. Neither this obstruction nor the new lower theorem claims sample-efficient acquisition of the signed mean statistics. Classical de Bruijn spectra and interpolation are attributed in the [prior-art comparison](PRIOR_ART.md); no external validation or novelty certification follows from these checks.
+
+The complete fourteen-verifier `make check` passed locally in the pinned Python 3.13 environment. All fourteen fresh JSON reports matched their saved reports exactly. The twelve earlier mathematical scripts and reports, original MIT license, pinned dependencies, and workflow were checked against the starting commit and remain unchanged. The suite's largest matrix remains $68\times68$. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -186,6 +202,8 @@ python scripts/verify_actuator_hierarchy.py --output reports/actuator_hierarchy.
 python scripts/verify_general_compression.py --output reports/general_compression.json
 python scripts/verify_reversible_compression.py --output reports/reversible_compression.json
 python scripts/verify_general_controlled_lower_bound.py --output reports/general_controlled_lower_bound.json
+python scripts/verify_bounded_rate_prediction.py --output reports/bounded_rate_prediction.json
+python scripts/verify_shift_register_lower_bound.py --output reports/shift_register_lower_bound.json
 make check
 ```
 

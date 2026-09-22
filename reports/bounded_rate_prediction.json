@@ -1,0 +1,366 @@
+{
+  "status": "PASS",
+  "scope": "Exact bounded-clock word realization, reversible EPE compression, regenerative clock identities and integer error budgets; no simulations.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "spectral_clock": {
+    "models": [
+      {
+        "name": "nonlumpable_binary",
+        "hidden_states": 8,
+        "relaxation_spectrum_exact": [
+          "0",
+          "3/2",
+          "2",
+          "9/4",
+          "5/2",
+          "21/8",
+          "11/4",
+          "23/8"
+        ],
+        "clock_rate_exact": "3",
+        "minimum_diagonal_margin_Pii_minus_mui_exact": "3/16",
+        "histogram_exact": {
+          "-1": "1/2",
+          "1": "1/2"
+        }
+      },
+      {
+        "name": "sparse_ternary",
+        "hidden_states": 3,
+        "relaxation_spectrum_exact": [
+          "0",
+          "1",
+          "3"
+        ],
+        "clock_rate_exact": "3",
+        "minimum_diagonal_margin_Pii_minus_mui_exact": "0",
+        "histogram_exact": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        }
+      }
+    ],
+    "binary_nonlumpability_exit_probabilities_exact": [
+      "23/96",
+      "11/32"
+    ]
+  },
+  "stationary_word_models": {
+    "cases": [
+      {
+        "model": "nonlumpable_binary",
+        "word_length": 1,
+        "allowed_word_states": 2,
+        "excluded_zero_probability_words": 0,
+        "matched_prefix_probabilities_exact": 6,
+        "word_chain_reversible": true
+      },
+      {
+        "model": "nonlumpable_binary",
+        "word_length": 2,
+        "allowed_word_states": 4,
+        "excluded_zero_probability_words": 0,
+        "matched_prefix_probabilities_exact": 14,
+        "word_chain_reversible": false,
+        "first_unmatched_longer_prefix": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "longer_prefix_probability_gap_exact": "284339/435290112"
+      },
+      {
+        "model": "nonlumpable_binary",
+        "word_length": 3,
+        "allowed_word_states": 8,
+        "excluded_zero_probability_words": 0,
+        "matched_prefix_probabilities_exact": 30,
+        "word_chain_reversible": false
+      },
+      {
+        "model": "sparse_ternary",
+        "word_length": 2,
+        "allowed_word_states": 7,
+        "excluded_zero_probability_words": 2,
+        "matched_prefix_probabilities_exact": 39,
+        "word_chain_reversible": false
+      }
+    ],
+    "total_matched_prefix_probabilities_exact": 89,
+    "largest_physical_matrix_dimension": 9
+  },
+  "reversible_prediction_partition": {
+    "target_hidden_states": 8,
+    "cell_hidden_states": 4,
+    "cells": [
+      [
+        0
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "target_spectrum_exact": [
+      "0",
+      "3/2",
+      "2",
+      "9/4",
+      "5/2",
+      "21/8",
+      "11/4",
+      "23/8"
+    ],
+    "cell_spectrum_exact": [
+      "0",
+      "23/12",
+      "21/8",
+      "23/8"
+    ],
+    "projection_defect_exact": "5/72",
+    "prefix_comparisons": [
+      {
+        "length": 1,
+        "tv_exact": "0",
+        "profile_certificate_exact": "0",
+        "tilts": [
+          {
+            "exp_h_exact": "2/3",
+            "tilted_tv_exact": "0",
+            "tilt_certificate_exact": "0"
+          },
+          {
+            "exp_h_exact": "3/2",
+            "tilted_tv_exact": "0",
+            "tilt_certificate_exact": "0"
+          }
+        ]
+      },
+      {
+        "length": 2,
+        "tv_exact": "0",
+        "profile_certificate_exact": "5/36",
+        "tilts": [
+          {
+            "exp_h_exact": "2/3",
+            "tilted_tv_exact": "0",
+            "tilt_certificate_exact": "0"
+          },
+          {
+            "exp_h_exact": "3/2",
+            "tilted_tv_exact": "0",
+            "tilt_certificate_exact": "0"
+          }
+        ]
+      },
+      {
+        "length": 3,
+        "tv_exact": "7/1728",
+        "profile_certificate_exact": "5/9",
+        "tilts": [
+          {
+            "exp_h_exact": "2/3",
+            "tilted_tv_exact": "7/1728",
+            "tilt_certificate_exact": "7/768"
+          },
+          {
+            "exp_h_exact": "3/2",
+            "tilted_tv_exact": "7/1728",
+            "tilt_certificate_exact": "7/768"
+          }
+        ]
+      }
+    ],
+    "variance_exact": "1",
+    "spectral_cap_and_lower_gap_preserved": true
+  },
+  "regenerative_clock_identities": {
+    "symbolic_cases": [
+      {
+        "prefix_updates_retained": 0,
+        "gamma_shape": 1
+      },
+      {
+        "prefix_updates_retained": 1,
+        "gamma_shape": 2
+      },
+      {
+        "prefix_updates_retained": 2,
+        "gamma_shape": 3
+      },
+      {
+        "prefix_updates_retained": 3,
+        "gamma_shape": 4
+      },
+      {
+        "prefix_updates_retained": 4,
+        "gamma_shape": 5
+      },
+      {
+        "prefix_updates_retained": 5,
+        "gamma_shape": 6
+      },
+      {
+        "prefix_updates_retained": 6,
+        "gamma_shape": 7
+      },
+      {
+        "prefix_updates_retained": 7,
+        "gamma_shape": 8
+      }
+    ],
+    "integral_identity": "integral_0^infinity exp(-alpha*u) Pr(Pois(nu*u)>ell) du = q^(ell+1)/alpha",
+    "initial_bound_certificate": "D(0)=0 and D_prime(t)=alpha exp(-alpha*t) Pr(Pois(nu*t)>ell)>=0",
+    "scope": "Symbolic clock identities; entry conditioning and all-protocol coupling are proved in the note."
+  },
+  "error_budgets_and_counts": {
+    "R_exact": "9/4",
+    "C_R_exact": "89/8",
+    "nonreversible_cases": [
+      {
+        "clock_exact": "1/100",
+        "epsilon_exact": "1/2",
+        "word_length": 1,
+        "binary_total_state_bound": 3,
+        "error_certificate_exact": "7209/1338248"
+      },
+      {
+        "clock_exact": "1/100",
+        "epsilon_exact": "1/10",
+        "word_length": 1,
+        "binary_total_state_bound": 3,
+        "error_certificate_exact": "7209/1338248"
+      },
+      {
+        "clock_exact": "1/100",
+        "epsilon_exact": "1/100",
+        "word_length": 1,
+        "binary_total_state_bound": 3,
+        "error_certificate_exact": "7209/1338248"
+      },
+      {
+        "clock_exact": "1/100",
+        "epsilon_exact": "5255361/91560156648392",
+        "word_length": 4,
+        "binary_total_state_bound": 17,
+        "error_certificate_exact": "5255361/91560156648392"
+      },
+      {
+        "clock_exact": "1/2",
+        "epsilon_exact": "1/2",
+        "word_length": 4,
+        "binary_total_state_bound": 17,
+        "error_certificate_exact": "5255361/11358856"
+      },
+      {
+        "clock_exact": "1/2",
+        "epsilon_exact": "1/10",
+        "word_length": 7,
+        "binary_total_state_bound": 129,
+        "error_certificate_exact": "3831158169/55806059528"
+      },
+      {
+        "clock_exact": "1/2",
+        "epsilon_exact": "1/100",
+        "word_length": 11,
+        "binary_total_state_bound": 2049,
+        "error_certificate_exact": "25136228746809/4660977897838088"
+      },
+      {
+        "clock_exact": "1/2",
+        "epsilon_exact": "425684241/3282709384",
+        "word_length": 6,
+        "binary_total_state_bound": 65,
+        "error_certificate_exact": "425684241/3282709384"
+      },
+      {
+        "clock_exact": "3",
+        "epsilon_exact": "1/2",
+        "word_length": 22,
+        "binary_total_state_bound": 4194305,
+        "error_certificate_exact": "74260279981466167505695302253880187/160106493152394242113109793954363128"
+      },
+      {
+        "clock_exact": "3",
+        "epsilon_exact": "1/10",
+        "word_length": 34,
+        "binary_total_state_bound": 17179869185,
+        "error_certificate_exact": "11146069640871209056325544853441091264728479378315627/126109926099037228765856477286719099382537513491612408"
+      },
+      {
+        "clock_exact": "3",
+        "epsilon_exact": "1/100",
+        "word_length": 50,
+        "binary_total_state_bound": 1125899906842625,
+        "error_certificate_exact": "889082329539410115938055980231427035980094860236504306077888125940101042347/91735276126268494447749670452634918850050887801891060950825895080587843392248"
+      },
+      {
+        "clock_exact": "3",
+        "epsilon_exact": "101865953335344537044849522982003/166604051147132405944963365197048",
+        "word_length": 20,
+        "binary_total_state_bound": 1048577,
+        "error_certificate_exact": "101865953335344537044849522982003/166604051147132405944963365197048"
+      },
+      {
+        "clock_exact": "7",
+        "epsilon_exact": "1/2",
+        "word_length": 50,
+        "binary_total_state_bound": 1125899906842625,
+        "error_certificate_exact": "5197063566079379758983558377665872695185909485758433702069694890328953109319873017288693399143/10787105462636702324613430216645027461324454062579809389062024653015567095625486643767391285464"
+      },
+      {
+        "clock_exact": "7",
+        "epsilon_exact": "1/10",
+        "word_length": 76,
+        "binary_total_state_bound": 75557863725914323419137,
+        "error_certificate_exact": "315218947467821299844394218231611539226570577127555740020404695356638266574845792195243924478632217566828022777697463824169308225863468896487/3242274606793320784547713692354654502480818180016299747403687302077964698499392355755763293621817399809234451773383160261282376311793543205016"
+      },
+      {
+        "clock_exact": "7",
+        "epsilon_exact": "1/100",
+        "word_length": 113,
+        "binary_total_state_bound": 10384593717069655257060992658440193,
+        "error_certificate_exact": "1186349480317136422675391460330981759297596585171575947815483476710860984227720564660560840829226638903735651151242529920295833651349604212974138792836997379918596258134002621433973482879103965422544549980121/119019328284651501003059349544205273709747113295966886544998731109389474509080323790287188476282037301705178592692124170537915934360815738697731087698789721656696388800662549216004553352467310438598156030210632"
+      },
+      {
+        "clock_exact": "7",
+        "epsilon_exact": "20942746368739649375372028961473200968293534365871224498488244123384430349306983/26564797098710339121107165439156128115331740015183317078621768388264174294802904",
+        "word_length": 42,
+        "binary_total_state_bound": 4398046511105,
+        "error_certificate_exact": "20942746368739649375372028961473200968293534365871224498488244123384430349306983/26564797098710339121107165439156128115331740015183317078621768388264174294802904"
+      }
+    ],
+    "reversible_budget": {
+      "epsilon_exact": "1/10",
+      "word_length": 39,
+      "prediction_resolution_exact": "1/10733638668779520",
+      "prefix_tv_certificate_exact": "8/4005",
+      "combined_error_certificate_exact": "1702274612683966332873677207274162090382174963483320957874847/18052100584440888884796243662847756954033366184579544310528040",
+      "profile_functions": 1099511627774,
+      "bins_per_profile": 10733638668779521,
+      "total_state_bound_symbolic": "1+2*(10733638668779521)^(1099511627774)"
+    },
+    "rounding_method": "Exact rational inequalities, including equality boundaries; no floating ceil decisions."
+  },
+  "largest_matrix_dimension": 9,
+  "source_sha256": {
+    "verify_bounded_rate_prediction.py": "e150952554d6fc30005f70e09407ef63009cf482f82f9616ce41ab876986b3f1",
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

@@ -2,34 +2,74 @@
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 
-**Expanded research assessment, 22 September 2026.** The central candidate is now a distinction between passive simplicity, low-order response complexity, and full controlled prediction. General reversible targets can require a state count larger than every fixed power of the logarithm of the inverse mean error, even with binary sensitivity, a bounded internal rate band, and a fixed minimum control dwell time. Within one explicit family, exact cubic prediction needs $n+3$ states while full controlled prediction needs at least $2^n$.
+**Expanded research assessment, 22 September 2026.** The central candidate is a quantitative distinction between passive simplicity, low-order response, and full controlled prediction. For binary sensitivity and a fixed internal rate band, the worst-case physical state count is now bounded between $\exp[cL/\log L]$ necessary and $C\delta^{-p}$ sufficient, where $L=\log(1/\delta)$ and $\delta$ measures actual-mean error. With any fixed minimum control dwell time, a separate necessary bound is $\exp(c_aL^{2/3})$.
 
-A complementary theorem proves uniform finite-field approximation inside the original reversible family, preserving exact sensitivity variance and all specified passive and lower-order agreements. Its double-exponential upper bound is far above the lower bound. The general complexity law is not sharp. The earlier sharp rank-one theorem remains a resolved special case, while the information and observation theorems explain what calibration can reveal.
+Reversible predictors with a fixed finite actuator alphabet and rate cap have a singly exponential sufficient count, preserving the complete actuator distribution and spectral band. The broader bounded-sensitivity family still has a double-exponential reversible existence bound. None of these general bounds matches its lower counterpart. The sharp rank-one theorem remains a resolved special case, and the cubic, path-information, and robustness results remain foundations and operational consequences.
 
-The response, realization, spectral approximation, and Hankel-rank mechanisms remain established. The candidate contribution is their concrete consequence for physical Markov state cost in this passive-equivalent controlled family. The comparisons below and in the source audit constrain that claim; they do not certify originality. Manuscript writing remains on hold during research development.
+The candidate contribution is the controlled-word obstruction and its realization as a positive reversible physical Markov model with an exactly simple passive law, together with quantitative transfer to actual controlled-mean errors. The de Bruijn/Walsh representation, interpolation, Markov word approximation, and rank mechanisms are established. The comparisons below distinguish those ingredients from the combined physical prediction theorem; they do not certify originality. Manuscript writing remains on hold during research development.
 
-## 1. General prediction cost and the sharp subclass
+## 1. Controlled state cost and the sharp subclass
 
-### General actuators have a larger state cost
+### Bounded binary targets: lower and upper bounds
 
-Fix $k,G,W,H$ with $0<W\le G^2$. The [general controlled lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md) proves, for sufficiently small actual-mean tolerance $\delta$,
+Fix $k,W,H>0$, put $s=\sqrt W$, and consider the original targets with $g=\pm s$ and nonzero internal relaxation rates in $[k,3k]$. Centering fixes the stationary mass at each sensitivity level to $1/2$. Let $D_*^{\rm bin}(\delta)$ be the worst-case state count over this target class, with the actual-mean error taken over all bounded protocols and horizons. Competing Markov predictors have a fixed preparation and readout; they need not be reversible, analytic in the field, or calibrated to passive data.
 
-$$
-D_*^{\mathrm{general}}(\delta)
-\ge c\exp\!\left(c\sqrt{\log(1/\delta)}\right).
-$$
-
-The target uses only $g=\pm\sqrt W$, with mass $1/2$ at each sensitivity level, and all nonzero internal relaxation rates in $[k,3k]$. The lower bound applies to arbitrary finite-state Markov competitors with fixed readout and preparation. It uses only two field values, $0$ and a fixed $h_*>0$, and held intervals that are integer multiples of $1/(8k)$. It therefore does not rely on arbitrarily fast target modes or increasingly rapid control switching.
-
-The construction embeds a binary tree in hidden function space. Its positive reversible physical generator produces a controlled Hankel matrix with $2^n$ independent directions, while the cubic kernel has only $n+1$ modes. Logarithm polynomials of fixed-duration propagators transfer that rank witness to actual mean errors without requiring derivative bounds on a competitor. This gives the exact comparison $D_{\mathrm{cubic}}=n+3$ and $2^n\le D_{\mathrm{full\ controlled}}\le2^{n+1}+1$, as well as a separate finite-error lower bound. The cubic minimum is in the established analytic-in-field Markov class; the full controlled lower bound allows broader competitors.
-
-The [reversible general upper theorem](REVERSIBLE_GENERAL_COMPRESSION.md) returns a surrogate in the same family, with exact variance $W$ and sensitivity bound $G$, for every target and every positive tolerance. At fixed $G,H$ its sufficient state count is
+The [shift-register lower theorem](SHIFT_REGISTER_LOWER_BOUND.md) and [bounded-rate upper theorem](BOUNDED_RATE_FINITE_FIELD.md) give, for sufficiently small $\delta$,
 
 $$
-D(\delta)\le\exp\!\left\{\exp\!\left[C_{G,H}\log^2(16/\delta)\right]\right\}.
+\boxed{\exp\!\left(c\frac{L}{\log L}\right)
+\le D_*^{\rm bin}(\delta)\le C\delta^{-p},
+\qquad L=\log(1/\delta),}
 $$
 
-It preserves the passive law, equilibrium curve, and linear/quadratic mean responses exactly, while controlling the actual mean uniformly over all allowed protocols and horizons. Existence of such structure-preserving compression is settled; its optimal cost is not. The earlier finite-word upper construction remains a useful precursor, but its nonreversibility and variance error are no longer limitations of the strongest existence theorem.
+where a sufficient exponent is
+
+$$
+p=\frac{\log2}{\log(1+1/(3R_s))},\qquad R_s=e^{(1+s)H}.
+$$
+
+The lower witnesses lie in the narrower band $[3k/2,5k/2]$ and use only $0$ and one fixed $h_*>0$. Their positive reversible shift-register generator supplies exponentially many independent controlled directions. Interpolation of actual propagators transfers the controlled matrix rank to a mean-error bound without controlling a competitor's derivatives. The sharper lower bound uses progressively shorter held intervals. It exceeds every fixed power of $L$, but remains subpolynomial in $1/\delta$; no polynomial lower bound has been proved.
+
+The upper construction uses exact Poisson-clock uniformization, a stationary finite-order word chain, and coupling renewed at returns to $A$. Its stationary actuator histogram is exactly the target's, so the sensitivity values, all moments, passive law, equilibrium curve, and linear/quadratic mean responses are retained. Its internal dynamics may be nonreversible. It serves every allowed protocol and horizon, rather than fitting each control sequence separately.
+
+### Fixed minimum dwell is a separate lower-bound task
+
+For any fixed $a>0$, require every positive-duration held segment to last at least $a/k$. On this smaller protocol class, the same shift-register targets give
+
+$$
+D_*^{\mathrm{dwell}\ge a/k}(\delta)
+\ge\exp\!\left(c_aL^{2/3}\right).
+$$
+
+This does not establish the stronger $\exp(cL/\log L)$ bound under the dwell restriction. The all-protocol polynomial upper still applies. Both lower proofs use signed combinations of many mean experiments and may have large coefficients; they are state-dimension obstructions, not sample-efficient identification schemes.
+
+The earlier [binary-tree construction](GENERAL_CONTROLLED_LOWER_BOUND.md) remains a useful foundation. Within that family, the exact cubic response needs $n+3$ states while full controlled prediction requires between $2^n$ and $2^{n+1}+1$. The new shift register strengthens the finite-error bounds and has a related exact comparison: $4n+5$ states suffice and are necessary for cubic response, while the full controlled mean needs at least $2^n$. The cubic minima use the analytic-in-field Markov class; the full controlled lower bounds allow broader competitors. These exact comparisons do not replace the separate finite-error arguments.
+
+### Reversible predictors and the broader general family
+
+For at most $m$ actuator values and internal relaxation rates at most $\Lambda k$, put
+
+$$
+R=e^{(1+G)H},\qquad
+p_{m,\Lambda,G,H}=\frac{\log m}{\log(1+1/(\Lambda R))}.
+$$
+
+The [reversible bounded-rate construction](BOUNDED_RATE_FINITE_FIELD.md#7-a-reversible-surrogate-preserving-the-spectral-cap) gives
+
+$$
+D_{\rm rev}(\delta)
+\le\exp\!\left[C\delta^{-p_{m,\Lambda,G,H}}\log(2/\delta)\right].
+$$
+
+It preserves the exact stationary actuator histogram and the target's spectral band, including any specified positive lower gap. It therefore preserves variance $W$, sensitivity bound $G$, and every prescribed passive/static/low-order agreement, with ordinary detailed balance. The polynomial nonreversible and singly exponential reversible upper bounds do not prove an optimal reversibility penalty. A polynomial reversible upper bound remains open.
+
+For arbitrary bounded $g$ and unrestricted internal rates, the [general reversible upper theorem](REVERSIBLE_GENERAL_COMPRESSION.md) still supplies
+
+$$
+D(\delta)\le\exp\!\left\{\exp\!\left[C_{G,H}\log^2(16/\delta)\right]\right\},
+$$
+
+inside the original family, with exact variance and sensitivity bound. This is a broader target class than the bounded finite-alphabet class above. Existence of a structure-preserving approximation is settled, while its optimal general cost is not. The earlier nonreversible finite-word upper construction remains a precursor and source of shared estimates.
 
 ### The rank-one subclass has a sharp answer
 
@@ -60,11 +100,11 @@ The exact two-versus-$N$ theorem remains the motivating zero-tolerance limit. Th
 
 ## 2. What a model builder can use
 
-The intended use is compression after a microscopic model is known. Choose a field bound and an actual-mean tolerance. Both the sharp subclass construction and the general reversible construction return one Markov model with a certificate valid across that protocol class and all horizons, without refitting it for each waveform. They retain the complete passive binary path law, equilibrium curve, reference linear mean, and zero quadratic mean. The general construction also restores exact sensitivity variance, but its very large worst-case size bound is an existence result rather than a practical reduction recommendation. In the rank-one subclass, supplying the scalar kernel suffices; a general actuator can require more information.
+The intended use is compression after a microscopic model is known. Choose a field bound, an actual-mean tolerance, and the structural requirements on the predictor. A finite actuator alphabet and rate cap permit a polynomial sufficient count if nonreversible internal dynamics are allowed; a larger construction retains reversibility and the whole spectral band. Arbitrary bounded actuators and unrestricted rates have the more expensive general reversible existence bound. Each construction returns one model for the full protocol class and all horizons, retaining the complete passive binary law and the prescribed static and low-order agreements. These are worst-case guarantees rather than practical runtime recommendations. In the rank-one subclass, supplying the scalar kernel suffices; the general constructors use the full target.
 
 State count measures the number of latent Markov states. It does not charge parameter precision, computing the spectral measure, fitting data, or running the resulting simulator. The worst-case lower bound is a limit on model dimension, not an experimental sample count or a wall-clock runtime bound.
 
-For the rank-one subclass, the rate cap supplies additional information about active hidden relaxation times relative to the visible switching time $1/k$; it changes the sharp state order from squared logarithmic to logarithmic. The earlier unrestricted-rate witnesses use increasingly fast modes. The new general-family witnesses instead keep every internal relaxation rate in $[k,3k]$: their larger cost arises from controlled evolution that accesses many independent hidden directions. A relaxation-rate cap and a restriction on control switching are separate assumptions; the new lower bound already permits a fixed minimum dwell time.
+For the rank-one subclass, a rate cap changes the sharp state order from squared logarithmic to logarithmic. The controlled-word witnesses instead keep their internal spectrum in $[3k/2,5k/2]$ and obtain a larger cost from many controlled hidden directions. A relaxation-rate cap and a restriction on control timing are different assumptions: the stronger $L/\log L$ lower exponent uses shrinking intervals, while the $L^{2/3}$ lower exponent survives any fixed positive minimum dwell time. The new bounded-rate upper bounds use the finite actuator alphabet as well as the spectral cap.
 
 The actuator must be specified kinetically. Local detailed balance fixes rate ratios but does not uniquely fix how barriers change. Within a comparison at fixed state labels, the target models can keep $k,\mu,g$ and the displayed field rule unchanged while changing only the internal generator $K$. Their complete microscopic generators are therefore different. A surrogate may use a different internal realization, but receives the same scalar protocol $h(t)$.
 
@@ -109,6 +149,8 @@ The [source audit](PRIOR_ART.md) gives bibliographic links, versions, access dep
 | Kotsalis–Shamma (2015), Definitions 2.1–2.3, Theorem 4.2; indexed primary excerpts | Stationary HMM word probabilities and a lower-order Hankel-norm obstruction. | Establishes the stochastic rank mechanism. The passive word law here already has an exact two-state realization; response derivatives require an additional construction. |
 | Reis–Virnik (2009), Theorems 3.1–3.2 | Stable positive LTI reduction with an $H_\infty$ error bounded by an instance-dependent balancing tail. | Preserving positivity is established; a uniform tolerance-to-state law and the passive-equivalent reversible field family remain separate requirements. |
 | Balle–Panangaden–Precup (2015), Theorem 2 and Section 3 | Word-Hankel rank and forward--backward factorization for real weighted automata. | The controlled rank mechanism is established; the positive physical target and quantified mean-error conversion are additional requirements. |
+| Philippakis–Mallinar–Pandit–Belkin (2024), Sections 2.2–2.3 and Theorem 3.1 | Undirected de Bruijn walks, the Walsh deletion-and-shift representation, and tridiagonal spectral chains. | The shift-register graph and spectral mechanism are established; the controlled-word physical witness and interpolation-to-mean-error bound are the candidate additions. |
+| Bressaud–Fernandez–Galves (1999), Definition 2 and Theorem 4 | Canonical finite-order Markov approximation; stationary coupling convergence under additional continuity assumptions. | Short-block matching is classical. Our all-horizon mean estimate uses the physical reset and a bounded internal update clock, rather than assuming their continuity condition. |
 | Marin–Rossi (2017), Corollary 3; Fornace–Lindsey (2025 v3), Proposition 4.1 and Theorems 3/3* | Reversible quotient generators and autonomous semigroup compression with instance-dependent error bounds. | Reversible compression itself is prior art; one uniform controlled surrogate, exact actuator variance, and a size-independent state count require separate proof. |
 | Gesztesy–Simon (1997), Theorem 3.5 / Appendix A.6 | A positive finite spectral measure determines a Jacobi matrix. | Our reversible kernel realization is a direct corollary, not new inverse-spectral theory. |
 | Koyama (2023 v3), Theorems 2.14 and 3.14 | Positive, mass-preserving exponential approximation on a spectral interval. | Clamping and the response estimate yield our upper order. The upper approximation mechanism is already known. |
@@ -117,26 +159,30 @@ The [source audit](PRIOR_ART.md) gives bibliographic links, versions, access dep
 
 Two reductions are particularly important. First, the Taylor hierarchy becomes bilinear after replacing $u$ by the constrained triple $(u,u^2,u^3)$, and becomes a linear autonomous system under a constant protocol. No new general realization theorem is needed for that step. Second, Koyama's positive quadrature plus rate clamping already gives the upper asymptotic order; the explicit dyadic proof improves transparency and constants, not the mechanism.
 
-The passive-HMM comparison can be made exact. At any fixed sampling interval, every target has the same visible word probabilities as the two-state telegraph model. An operator formed solely from those probabilities is therefore identical for the target and the two-state model. Its approximation error is zero even when driven predictions differ. The cubic lower bound uses a coefficient lift. The new general lower bound instead constructs a matrix from fixed-amplitude controlled means, using polynomials of finite-time propagators and bounding their coefficient sums. Both use established rank reasoning, but require a separate connection to the particular intervention task.
+The passive-HMM comparison can be made exact. At any fixed sampling interval, every target has the same visible word probabilities as the two-state telegraph model. An operator formed solely from those probabilities is therefore identical for the target and the two-state model. Its approximation error is zero even when driven predictions differ. The cubic lower bound uses a coefficient lift. The controlled-word lower bound instead constructs a matrix from actual means at fixed field amplitudes, using finite interpolation combinations of propagators and bounding their coefficient sums. Both use established rank reasoning but require a separate connection to the intervention task.
 
-The binary-tree lower bound does not claim a new controlled-realization or matrix-logarithm principle. Its substantive requirements are the positive reversible physical embedding, binary bounded sensitivity, fixed internal rate band, quantitative transfer to the actual controlled-mean norm, and fixed minimum control dwell time. The general upper bound likewise uses established conditional expectation, Galerkin, and moment-matching ideas; it must be assessed for its uniform guarantee and preservation of the original model constraints.
+Neither the earlier binary-tree construction nor the shift-register theorem claims a new rank, interpolation, or spectral principle. The shift-register theorem must be assessed for its positive reversible physical target, binary actuator, bounded internal spectrum, controlled-word singular-value witness, and quantitative transfer to actual-mean error. Its two timing regimes have different lower exponents. The upper bounds likewise use established uniformization, canonical word approximation, conditional expectation, Galerkin projection, and moment matching. Their relevant claims are the state-count guarantees and exact model constraints retained under arbitrary bounded control; these require more than naming a classical construction.
 
 A norm distinction alone is insufficient. For a scalar nonnegative impulse error, its $L_1$ norm equals the zero-frequency gain and its $H_\infty$ norm. Positive-system truncation can therefore sometimes transfer into a kernel estimate. A signed error need not have that property. The missing conclusion from the positive-reduction result is the full uniform complexity and constrained realization statement, not an assertion that its norm can never be useful.
 
 ## 5. Assessment and next scientific question
 
-The research now has the following distinct conclusions.
+The current conclusions distinguish prediction tasks and predictor constraints.
 
 | Question | Result | Essential limitation |
 |---|---|---|
-| Can general finite-field prediction retain a logarithmic or squared-logarithmic state law? | [Controlled lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md): no; worst-case states exceed every fixed power of the logarithm, already for binary sensitivities and fixed internal rate band and control dwell time. | The exponent is a lower bound, not the optimal general order; its signed measurement combinations can be poorly conditioned. |
-| How different can cubic and full controlled prediction be? | The same binary-tree family needs exactly $n+3$ states for cubic response and between $2^n$ and $2^{n+1}+1$ for full controlled means. | This is an exact task comparison; the separate finite-error theorem supplies the quantitative tolerance statement. |
-| Can finite-field approximation preserve the original physical structure? | [Reversible general compression](REVERSIBLE_GENERAL_COMPRESSION.md): yes, including exact variance $W$, bounded sensitivity, and the prescribed passive/static/low-order agreements, with a double-exponential sufficient count. | The upper bound is far from the lower bound; no equality of optimal reversible and unrestricted state costs is proved. |
-| Can any fixed response order give complete intervention information? | [Fixed-actuator hierarchy](FIXED_ACTUATOR_HIERARCHY.md): arbitrarily many mean and path response orders can agree with the actuator fixed between models. | The first separating signal may shrink; that theorem alone supplies no finite-error state lower bound. |
+| How large is the bounded binary-rate-band state requirement? | [Controlled-word lower](SHIFT_REGISTER_LOWER_BOUND.md) and [bounded-rate upper](BOUNDED_RATE_FINITE_FIELD.md): $\exp(cL/\log L)\le D_*\le C\delta^{-p}$. | The necessary bound is subpolynomial; a polynomial lower bound and a sharp exponent are unproved. |
+| Does the obstruction survive a fixed minimum dwell time? | For every fixed $a>0$, the necessary count remains $\exp(c_aL^{2/3})$. | The stronger $L/\log L$ exponent is not proved under that restriction. |
+| Can a bounded finite-alphabet predictor preserve reversibility and the spectral band? | Yes, with sufficient count $\exp[C\delta^{-p}\log(2/\delta)]$, retaining the exact actuator histogram. | Different upper bounds do not prove a reversibility penalty; polynomial reversible size remains open. |
+| Can arbitrary bounded actuators be approximated inside the original physical family? | [General reversible compression](REVERSIBLE_GENERAL_COMPRESSION.md): yes, with a double-exponential sufficient count and exact $G,W$. | No finite alphabet or rate cap is assumed here; its much larger bound is not a sharp complexity law. |
+| How different can cubic and full controlled prediction be? | The earlier binary-tree family needs $n+3$ cubic states and exponentially many full controlled states; the shift register strengthens the finite-error obstruction. | Exact task separation and tolerance-dependent lower bounds require separate arguments. |
+| Can any fixed response order give complete intervention information? | [Fixed-actuator hierarchy](FIXED_ACTUATOR_HIERARCHY.md): arbitrarily many mean and path response orders can agree with the actuator fixed between models. | The separating signal may shrink; this theorem alone supplies no finite-error state lower bound. |
 | What information is complete for driven visible paths? | [Actuator-process equivalence](ACTUATOR_PROCESS.md): the stationary law of $g(X_t)$, with a matrix-return closure for finite actuator rank. | No stable noisy recovery or mean-only necessity is established. |
 
-The candidate publication story is now that passive compression, low-order response, and full controlled prediction have demonstrably different physical state costs. A sharp rank-one theorem, a larger general lower bound, and a structure-preserving general upper theorem give a substantive mathematical account of that distinction. The full general law remains open, so the project must not present these bounds as a completed minimax characterization.
+Here $L=\log(1/\delta)$, the bounds are asymptotic at fixed physical parameters, and the exponent $p$ depends on the actuator alphabet, rate cap and field bound. A sharp rank-one theorem and the broader cubic results remain resolved foundations; they do not impose their logarithmic state laws on the general controlled problem.
 
-The next mathematical priority is to **narrow the general-family complexity gap**, especially the upper bound, while maintaining the actual controlled-mean norm and counting every physical state. Reversibility and exact variance no longer obstruct existence; whether retaining them changes the optimal order remains unresolved. Binary sensitivity is already enough for the new lower bound, so a generic two-level closure cannot recover the rank-one complexity law.
+The candidate publication story is that an exactly simple passive model can conceal a quantitatively larger physical state requirement for controlled prediction, even with binary sensitivity and bounded relaxation rates. The stronger controlled-word lower bounds and the polynomial bounded-rate upper give a concrete interval for that requirement. They should be presented alongside the timing distinction and the structural guarantees of the predictors, with the classical graph, interpolation and rank ingredients explicitly acknowledged.
+
+The main remaining mathematical questions are the optimal bounded-binary state order and whether a polynomial reversible upper bound holds. The general bounded-sensitivity upper bound can also be improved, but it concerns a broader class. None of the current results proves a polynomial lower bound or an optimal penalty for reversibility.
 
 The constructor receives a known target. The observation results concern separate specified-model tests with ideal preparation and readout. No experimental platform or large simulation is required for the current theory question. Publication originality and a journal target remain separate assessments. Manuscript writing remains on hold.

@@ -4,34 +4,56 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** the general-family state cost is now proved to exceed every fixed power of the logarithm of the inverse error. This already happens with two sensitivity values, a bounded internal rate band, and a fixed minimum control dwell time. A complementary upper theorem supplies reversible approximants preserving the exact sensitivity variance, but the quantitative gap remains large. Originality of the combined results remains under assessment; manuscript writing remains on hold.
+**Research status:** for binary sensitivity and a fixed internal rate band, the worst-case state count is now bounded between $\exp[cL/\log L]$ necessary and $C\delta^{-p}$ sufficient, where $L=\log(1/\delta)$ and $\delta$ is actual-mean error. A separate lower bound survives a fixed minimum control dwell time. Reversible predictors also have a finite upper bound preserving the actuator distribution and spectral band. The bounds do not match, originality remains under assessment, and manuscript writing remains on hold.
 
-## Main result: driven predictions can require many more states
+## Main result: controlled prediction has a larger state cost
 
-An exact two-state passive model does not bound the cost of predicting the same binary mean under an applied field. At fixed $k,G,W,H$, the [general controlled lower bound](docs/GENERAL_CONTROLLED_LOWER_BOUND.md) proves that worst-case mean error $\delta$ requires at least
+Consider reversible targets whose sensitivity is $g=\pm\sqrt W$ and whose nonzero internal relaxation rates lie in $[k,3k]$. Every target has the exact same two-state passive binary path law. One predictor must approximate the actual binary mean under every protocol $|h(t)|\le H$ and at every observation time, starting from zero-field equilibrium.
 
-$$
-D_*(\delta)\ge c\exp\!\left(c\sqrt{\log(1/\delta)}\right)
-$$
-
-physical Markov states for sufficiently small $\delta$. This grows faster than every fixed power of $\log(1/\delta)$. The targets are reversible, use only $g=\pm\sqrt W$, and have all internal relaxation rates in $[k,3k]$. The lower bound allows arbitrary Markov competitors with fixed readout and preparation. Its controls use only $0$ and one fixed nonzero field, with every nonzero held interval at least $1/(8k)$.
-
-The same construction gives an exact comparison:
+Let $D_*^{\rm bin}(\delta)$ be the worst-case necessary state count over this target class, allowing arbitrary instantaneous-field Markov predictors with a fixed readout and preparation. The [controlled-word lower theorem](docs/SHIFT_REGISTER_LOWER_BOUND.md) and [bounded-rate upper theorem](docs/BOUNDED_RATE_FINITE_FIELD.md) give, for sufficiently small $\delta$,
 
 $$
-D_{\mathrm{cubic}}=n+3,
-\qquad 2^n\le D_{\mathrm{full\ controlled}}\le2^{n+1}+1.
+\boxed{\exp\!\left(c\frac{L}{\log L}\right)
+\le D_*^{\rm bin}(\delta)\le C\delta^{-p},
+\qquad L=\log(1/\delta).}
 $$
 
-Here the cubic minimum uses the established analytic-in-field competitor class; the full controlled lower bound permits broader Markov competitors. Thus a small model that reproduces every cubic response can still require exponentially more states to reproduce actual controlled means. The finite-error theorem separately quantifies this obstruction; it does not follow merely from exact rank.
-
-Compression nevertheless remains possible throughout the bounded-sensitivity family. The [reversible general upper bound](docs/REVERSIBLE_GENERAL_COMPRESSION.md) constructs one predictor for all allowed protocols and horizons, within the original model family: reversibility, the sensitivity bound, variance $W$, passive law, equilibrium curve, and linear/quadratic mean agreements are retained exactly. Its sufficient count is
+Here the constants depend only on the fixed physical parameters. A sufficient exponent is
 
 $$
-D(\delta)\le\exp\!\left\{\exp\!\left[C_{G,H}\log^2(16/\delta)\right]\right\}.
+p=\frac{\log2}{\log(1+1/(3R_s))},\qquad
+R_s=e^{(1+\sqrt W)H}.
 $$
 
-This double-exponential upper bound and the lower bound are far apart. The optimal general-family state order, and any additional optimal cost of preserving reversibility, remain open. Both results concern a supplied microscopic model; neither is a learning algorithm or an experimental sample bound.
+The lower bound exceeds every fixed power of $\log(1/\delta)$ but is still subpolynomial in $1/\delta$. The upper predictor preserves the entire stationary actuator distribution and all passive/static/low-order agreements, but its internal dynamics may be nonreversible. Neither bound is claimed optimal.
+
+**Timing matters.** The stronger lower bound uses increasingly short held intervals. For any fixed $a>0$, restricting every held segment to duration at least $a/k$ gives the separate necessary bound
+
+$$
+D_*^{\mathrm{dwell}\ge a/k}(\delta)
+\ge\exp\!\left(c_a L^{2/3}\right).
+$$
+
+Both lower constructions use only the field values $0$ and one fixed $h_*>0$, and their target rates remain in $[3k/2,5k/2]$. They use signed combinations of actual mean measurements in the proof; they are not sample-efficient testing procedures.
+
+**Reversibility can be retained.** For any fixed finite actuator alphabet and internal rate cap, a [reversible predictor](docs/BOUNDED_RATE_FINITE_FIELD.md#7-a-reversible-surrogate-preserving-the-spectral-cap) preserves the exact actuator histogram and the entire specified spectral band, with sufficient count
+
+$$
+D_{\rm rev}(\delta)\le
+\exp\!\left[C\delta^{-p}\log(2/\delta)\right].
+$$
+
+Here $p$ depends on the alphabet, rate cap and field bound; for the binary band above it is the displayed exponent. The different upper bounds do **not** prove that reversibility has an additional optimal cost. Whether a polynomial-size reversible predictor always suffices remains open.
+
+Without a common bound on actuator-alphabet size or internal rates, the [general reversible upper theorem](docs/REVERSIBLE_GENERAL_COMPRESSION.md) still gives
+
+$$
+D(\delta)\le\exp\!\left\{\exp\!\left[C_{G,H}\log^2(16/\delta)\right]\right\},
+$$
+
+preserving reversibility, the sensitivity bound, exact variance $W$, and every prescribed passive/static/low-order agreement. This much larger bound concerns the broader target class. All upper constructions assume the microscopic model is supplied; state count does not measure learning cost, parameter precision, or runtime.
+
+The candidate contribution is the controlled-word obstruction and its quantitative consequence for positive physical Markov models with an exactly simple passive law. The de Bruijn/Walsh shift mechanism, interpolation formulas, Markov word approximation, and rank arguments are established ingredients; [the comparison](docs/PRIOR_ART.md) distinguishes them from the physical construction and error guarantees here.
 
 ## A sharp subclass and operational results
 
@@ -62,6 +84,15 @@ These results separate three questions: which intervention data are complete, wh
 
 **Exact separation.** For every $N\ge3$, a reversible $N$-state model has exactly the same complete passive binary path law, static response curve, and dynamic linear mean response as a two-state reference, but its exact cubic step response requires at least $N$ states in an analytic autonomous Markov surrogate. The separation can be maintained with bounded field coupling and a nonvanishing total cubic correction.
 
+The [earlier binary-tree construction](docs/GENERAL_CONTROLLED_LOWER_BOUND.md) further separates two intervention tasks within one family:
+
+$$
+D_{\mathrm{cubic}}=n+3,\qquad
+2^n\le D_{\mathrm{full\ controlled}}\le2^{n+1}+1.
+$$
+
+The cubic minimum uses analytic-in-field Markov competitors, while the full controlled lower bound permits broader competitors. The newer shift-register construction strengthens the finite-error bounds; the earlier exact task comparison remains a foundation.
+
 **Finite-accuracy reuse.** Within the constructed family, a scalar kinetic kernel determines the cubic mean response to every bounded weak-field protocol. For kernel mass $W$, protocol bound $U$, and any positive integer $n$, a positive-quadrature construction and reversible realization give a surrogate with at most $2n(n+1)+3$ states and cubic-coefficient error
 
 $$
@@ -91,7 +122,9 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 
 | Question | Document |
 |---|---|
-| Why does the general state cost exceed every power of the logarithm? | [Binary-tree controlled lower bound](docs/GENERAL_CONTROLLED_LOWER_BOUND.md) |
+| How large can the state cost be with only two actuator values and bounded rates? | [Controlled-word lower bounds and timing restrictions](docs/SHIFT_REGISTER_LOWER_BOUND.md) |
+| What upper bounds hold with a finite actuator alphabet and rate cap? | [Polynomial Markov and reversible bounds](docs/BOUNDED_RATE_FINITE_FIELD.md) |
+| How different can exact cubic and full controlled prediction be? | [Earlier binary-tree construction](docs/GENERAL_CONTROLLED_LOWER_BOUND.md) |
 | Can approximation preserve reversibility and exact variance? | [General reversible compression](docs/REVERSIBLE_GENERAL_COMPRESSION.md) |
 | Where is the finite-field state order sharp? | [Uniform finite-field theorem for the rank-one subclass](docs/FINITE_FIELD.md) |
 | Does one fixed intervention already require growing model size? | [Fixed nonzero step lower bound](docs/FIXED_FIELD_LOWER_BOUND.md) |
@@ -109,7 +142,7 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
 
-The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), [general compression identities](scripts/verify_general_compression.py), [reversible compression](scripts/verify_reversible_compression.py), and [the controlled general lower bound](scripts/verify_general_controlled_lower_bound.py). Their generated evidence is in [reports](reports).
+The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), [general compression identities](scripts/verify_general_compression.py), [reversible compression](scripts/verify_reversible_compression.py), [the earlier controlled lower bound](scripts/verify_general_controlled_lower_bound.py), [the shift-register lower bounds](scripts/verify_shift_register_lower_bound.py), and [bounded-rate prediction](scripts/verify_bounded_rate_prediction.py). Their generated evidence is in [reports](reports).
 
 ## Reproduce
 
@@ -139,6 +172,8 @@ python scripts/verify_actuator_hierarchy.py --output .check-output/actuator_hier
 python scripts/verify_general_compression.py --output .check-output/general_compression.json
 python scripts/verify_reversible_compression.py --output .check-output/reversible_compression.json
 python scripts/verify_general_controlled_lower_bound.py --output .check-output/general_controlled_lower_bound.json
+python scripts/verify_shift_register_lower_bound.py --output .check-output/shift_register_lower_bound.json
+python scripts/verify_bounded_rate_prediction.py --output .check-output/bounded_rate_prediction.json
 ```
 
 A failed assertion exits unsuccessfully. Fresh reports go into the ignored `.check-output` directory; the saved reports are not overwritten. Numerical roundoff can differ across platforms. Dependency installation and GitHub Actions setup require network access; the verification calculations themselves do not.
@@ -147,7 +182,7 @@ The checks use symbolic algebra, exact rational calculations, and small determin
 
 ## Scope and attribution
 
-The coefficient theorems cover the original centered-sensitivity family. The sharp finite-field state order applies to the specified rank-one subclass. For general actuators, the new lower bound exceeds every fixed power of the logarithm, while the much larger upper bound preserves the original reversible family and exact variance; their orders do not match. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, parameter precision, runtime, or experimental resolution. No turbulence or generic molecular implementation claim is made.
+The coefficient theorems cover the original centered-sensitivity family. The sharp finite-field state order applies to the specified rank-one subclass. For binary sensitivities and bounded internal spectra, the current necessary count is $\exp[cL/\log L]$ and a polynomial sufficient count is proved; fixed minimum dwell times have the separate lower exponent $L^{2/3}$. Reversible finite-alphabet predictors have a singly exponential sufficient count, and the unrestricted general family has the larger double-exponential reversible bound. No polynomial lower bound or optimal reversibility penalty is proved. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, parameter precision, runtime, or experimental resolution. No turbulence or generic molecular implementation claim is made.
 
 Nonlinear response, aggregated Markov inference from dwell times, minimal realization, positive model reduction, and Hankel dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) and [publication scope](docs/PUBLICATION_SCOPE.md) distinguish those ingredients from the new combined claims. Demanding the correct passive law does not cause the approximation lower bound: it already applies to competitors without that requirement.
 

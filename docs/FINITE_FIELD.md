@@ -521,8 +521,10 @@ band. The [actuator-process theorem](ACTUATOR_PROCESS.md) identifies the
 complete information for general controlled visible path laws. The
 [reversible general upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) now
 establishes fixed-accuracy mean compression with exact variance and a
-nonsharp state bound. The [general controlled lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md)
-exceeds every fixed power of the logarithm of the inverse error, even with
-binary sensitivities, bounded internal rates, and fixed minimum control
-dwell time. It proves a quantitative separation from the sharp subclass
-theorem above.
+nonsharp state bound. For binary sensitivities and bounded internal rates,
+the [shift-register lower bound](SHIFT_REGISTER_LOWER_BOUND.md) is
+$\exp(cL/\log L)$ with unrestricted timing, or $\exp(c_aL^{2/3})$ with
+fixed minimum dwell, where $L=\log(1/\delta)$. Both quantitatively separate
+the general task from the sharp subclass theorem above. The same bounded
+binary class has a [polynomial upper bound](BOUNDED_RATE_FINITE_FIELD.md)
+using possibly nonreversible predictors; its optimal order remains open.

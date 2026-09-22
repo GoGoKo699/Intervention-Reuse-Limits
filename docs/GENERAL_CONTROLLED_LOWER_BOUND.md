@@ -1,8 +1,10 @@
 # A larger state cost for general finite-field prediction
 
-[Repository overview](../README.md) · [Reversible general upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) · [Finite-field task](FINITE_FIELD.md) · [Actuator information](ACTUATOR_PROCESS.md)
+[Repository overview](../README.md) · [Stronger shift-register lower bounds](SHIFT_REGISTER_LOWER_BOUND.md) · [Reversible general upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) · [Finite-field task](FINITE_FIELD.md) · [Actuator information](ACTUATOR_PROCESS.md)
 
 **Research theorem, 22 September 2026.** Allowing several hidden states at each of just two sensitivity levels changes the finite-field state-complexity problem. This note constructs reversible targets with a bounded internal rate band for which bounded controlled-mean prediction requires more than every fixed power of the logarithm of the inverse error. The proof uses a binary tree in an orthonormal basis, a controlled Hankel matrix, and polynomial approximations of the logarithm of actual propagators. It imposes no field-derivative or rate bound on a competing Markov predictor. These are internal analytic arguments, not an originality certification.
+
+**Historical role.** The [positive shift-register construction](SHIFT_REGISTER_LOWER_BOUND.md) now gives stronger finite-error lower bounds, both with unrestricted timing and with a fixed minimum dwell time. This note retains the earlier proof and its exact cubic-versus-full separation. Section 9 shows that truncating these particular weakly coupled tree targets already attains error $\exp[-\Theta(n^2)]$ below the $2^n$-state threshold, so improving their word filters alone cannot produce the stronger error scale.
 
 ## 1. Statement
 
@@ -383,3 +385,65 @@ This is a difference between prediction tasks. It does not say that every high-o
 The general bounded-sensitivity family has a strictly larger worst-case finite-field state order than the distinguished rank-one sensitivity subclass: the lower bound in (1) exceeds every fixed power of $\log(1/\delta)$. The distinction persists with two sensitivity values and a fixed internal rate band. It is produced by noncommuting controlled evolution, rather than a proliferation of scalar relaxation rates in the cubic kernel.
 
 The upper bound for the general family remains much larger; the optimal order and the extra cost, if any, of requiring reversible approximants remain open. This result counts physical states, not parameter bits or run time. The signed polynomial combinations can have very large coefficients, so the proof is not a stable reconstruction algorithm or a practical statistical protocol. The lower bound already allows a fixed minimum switching interval $1/(8k)$; a shorter fixed horizon, a more restricted protocol menu, or statistical observation noise would require separate analysis.
+
+## 9. Truncation limits this particular target sequence
+
+The quadratic exponent in (2) is sharp in order for these targets at the threshold of fewer than $2^n$ states. This is an actual all-protocol, all-horizon approximation statement. It explains why the stronger [shift-register result](SHIFT_REGISTER_LOWER_BOUND.md) changes the target construction.
+
+Work in rescaled time $k=1$. For $0\le d<n$, truncate the depth-$n$ tree at depth $d$ and realize it on its own $N_d=2^{d+1}$ hidden physical states. Retain the original coupling $\varepsilon_n=2^{-20(n+1)}$, rather than replacing it by $\varepsilon_d$. The truncated model has uniform stationary law, the same two actuator values $\pm s$ with equal masses, and baseline internal generator $-2P$. It is an admissible reversible physical surrogate: its off-diagonal internal rates are at least
+
+$$
+\frac2{N_d}-3\varepsilon_n\ge\frac1{N_d}>0,
+$$
+
+and all nonzero internal relaxation rates remain in $[1,3]$. Attach the same visible state and the original field rule.
+
+### Finite-horizon comparison
+
+In the full function-coordinate space, write
+
+$$
+Q_n(h)=Q_{\rm base}(h)+\varepsilon_n A_n.
+$$
+
+The base operator preserves the three-dimensional space spanned by the visible-state indicator, hidden constant and actuator root $r$. On this space it is the three-state model with symmetric hidden flip rate one. Every other tree coordinate, whose last sign is $\sigma\in\{-1,1\}$, evolves by scalar multiplication by $-2-e^{(\sigma s-1)h}$. Embed the truncated adjacency $A_d$ by removing every edge outside depths $0,\ldots,d$, while keeping $Q_{\rm base}$ unchanged. Unused coordinates are inaccessible from both scalar-response endpoints, so the embedded response equals that of the smaller physical surrogate.
+
+Every controlled base propagator has $L^2(\pi_0)$ norm at most two, uniformly in its duration and the protocol. Indeed, the three-state block is a Markov propagator with reference weights $(1/2,1/4,1/4)$, so its supremum-norm contraction bounds its $L^2$ norm by two; the other coordinates are scalar contractions. Also $\|A_n\|,\|A_d\|\le3$.
+
+Expand by Duhamel in $\varepsilon_n$, leaving the entire time-dependent base evolution unexpanded. A scalar term can detect a removed edge only by leaving the root, reaching that edge and returning. It therefore needs at least $M=2(d+1)$ adjacency insertions. All lower-order terms agree for every protocol. Each order-$j$ term has norm at most $2(6\varepsilon_n T)^j/j!$. Bounding both tails gives
+
+$$
+\sup_{0\le t\le T}|m_n[h](t)-m_d[h](t)|
+\le4e^{6\varepsilon_n T}
+\frac{(6\varepsilon_n T)^{2(d+1)}}{[2(d+1)]!}.
+\tag{13}
+$$
+
+### Extending the estimate to every horizon
+
+Both models have a common reset to the visible state $A$ at rate at least $\alpha=e^{-(1+s)H}$. Subtracting this reset leaves a Markov generator. Hence changing a model's initial distribution changes its final binary mean by at most $2e^{-\alpha T}$ after a duration $T$, for every bounded protocol. For observations later than $T$, restart both models from their own zero-field equilibria $T$ before the observation and apply (13) to the last $T$ units. For earlier observations use (13) directly. Thus, for every $T>0$,
+
+$$
+\mathcal D_H(F_n,F_d)
+\le4e^{-\alpha T}
++4e^{6\varepsilon_n T}
+\frac{(6\varepsilon_n T)^{2(d+1)}}{[2(d+1)]!}.
+\tag{14}
+$$
+
+Take $d=n-2$ for $n\ge2$. The surrogate has $2^{n-1}+1<2^n$ total states. With $T=(n+1)^2/\alpha$, the first term in (14) is $4e^{-(n+1)^2}$, and the logarithm of the second term is
+
+$$
+-40(\log2)n^2+O_{s,H}(n\log(n+1)).
+$$
+
+Consequently, for fixed positive constants $c_H,C_H$,
+
+$$
+\inf_{\widehat F:\,|\widehat F|<2^n}
+\mathcal D_H(F_n,\widehat F)
+\le C_H e^{-c_H n^2}.
+\tag{15}
+$$
+
+Together with (2), this sandwiches the best error for this sequence between two bounds with quadratic exponents in $n$. Changing polynomial filters or conditioning the word matrix cannot make this same sequence prove an error lower bound $e^{-O(n)}$ at this state threshold. This obstruction does not apply to the positive constant-coupling shift-register targets. The constants and cutoff time in (14) are not asserted to be optimal.

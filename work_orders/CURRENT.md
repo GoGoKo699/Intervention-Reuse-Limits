@@ -2,6 +2,20 @@
 
 ## New completed extension — 22 September 2026
 
+This continuation starts from `04666225de07d520555144d26dee342097afb6bd`. All twelve preceding mathematical verifiers and reports remain unchanged. Two stronger lower bounds and a polynomial upper bound now address the same bounded-rate binary target class.
+
+1. **Polynomial sufficiency with exact actuator distribution.** For a fixed alphabet of at most `m` sensitivities and internal relaxation rates at most `Λk`, set `R=exp((1+G)H)` and `p=log(m)/log(1+1/(ΛR))`. A stationary word-chain surrogate has at most `1+max(m,((1+2R²)/δ)^p)` total states. It preserves the entire actuator histogram and the passive/static/low-order constraints, but can lose reversibility. Exact uniformization and regeneration give the all-protocol/all-horizon bound directly.
+2. **Stronger positive-rate necessary bounds.** Write `L=log(1/δ)`. Reversible shift-register targets with balanced sensitivity `±sqrt(W)` and internal rates in `[3k/2,5k/2]` force `D≥exp(c L/log L)` under unrestricted timing. Under a fixed minimum dwell `a/k`, the separate bound is `D≥exp(c_a L^(2/3))`. Both allow arbitrary instantaneous-field Markov competitors with fixed preparation and readout. Neither is a polynomial lower bound in `1/δ`.
+3. **A sharper reversible sufficient count in the capped finite-alphabet class.** Prediction-function partitions and stationary-flux aggregation give `D_rev≤exp(C δ^-p log(2/δ))`, retaining the exact actuator histogram and both internal spectral-band endpoints when prescribed. No polynomial reversible upper bound or optimal cost of reversibility is established.
+
+Start with [the bounded-rate upper theorem](../docs/BOUNDED_RATE_FINITE_FIELD.md) and [the shift-register lower theorem](../docs/SHIFT_REGISTER_LOWER_BOUND.md). For binary targets in `[k,3k]`, unrestricted predictors now have the interval `exp(c L/log L) ≤ D_* ≤ C δ^-p`. The strongest lower proof uses intervals shrinking like `(log n/n)^2/k` and horizons `O(n/k)`; the fixed-dwell proof has horizons `O_a(n²/k)`. These timing guarantees are different.
+
+The shift register has constant operator coupling, replacing the earlier tree's exponentially shrinking coupling. A maximal Walsh-index projection gives an exact Gram floor exponential in word depth. Chebyshev derivative stencils convert generator words to actual mean experiments with controlled signed coefficients. Only target generators are approximated; the same finite propagator expressions factor exactly through every competitor's physical state space. The graph spectrum, interpolation, and rank machinery are classical. The constrained quantitative conclusion is the candidate contribution.
+
+The new target has `2^(4n+3)+1` physical states, exact cubic minimum `4n+5` in the analytic-in-field competitor class, and full controlled-mean minimum at least `2^n` even in the broader competitor class. The older tree's cleaner `n+3` versus `2^n` exact separation remains valid. Its truncation analysis also shows why improving only its measurement filters cannot produce a depth-exponential error floor at the same state threshold.
+
+## Earlier complexity and reversible-compression checkpoint
+
 This continuation starts from `1d59285`. The preserved mathematical verifiers and saved reports remain regression baselines. New lower and upper bounds change the general-family assessment.
 
 1. **General prediction costs more than every fixed power of the logarithm.** At fixed `k,G,W,H`, the worst-case physical state requirement for actual controlled-mean error `δ` is at least `c exp(c sqrt(log(1/δ)))`. The targets are reversible, have only the two sensitivity values `±sqrt(W)`, and keep all internal relaxation rates in `[k,3k]`. The lower bound allows arbitrary instantaneous-field Markov competitors with fixed readout and preparation, without field analyticity or passive matching. It uses only fields `0,h*`, with every nonzero held interval an integer multiple of `1/(8k)`. A target of size `2^(n+1)+1` defeats every competitor with fewer than `2^n` states below error `c exp(-C(n+1)^2)`.
@@ -40,11 +54,11 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 ## Single next research priority
 
-**Narrow the remaining general-family complexity gap, especially the upper bound.**
+**Determine whether bounded-rate binary prediction has polynomial necessary state growth.**
 
-The current interval runs from `exp(c sqrt(log(1/δ)))` necessary states to `exp(exp(C log²(16/δ)))` sufficient reversible states. Preserve the actual all-protocol/all-horizon mean norm and count every physical state. An improved construction must establish positive rates and its claimed structural properties; a stronger lower bound must transfer to actual finite errors against the stated competitor class.
+The focused interval is now `exp(c L/log L)` necessary states to `C δ^-p` sufficient states. The shift-register Gram floor itself is already `exp(-Cn)`; the remaining loss comes from converting degree-`O(n)` generator words into signed actual-mean experiments. Seek either a direct propagator witness with only `exp(Cn)` coefficient cost, or an upper construction proving that a polynomial lower target is too ambitious. For a fixed minimum dwell, retain the separate `exp(c_a L^(2/3))` baseline. Do not improve only the old weak-coupling tree: its truncation obstruction is now explicit.
 
-The new lower bound already handles binary sensitivities, bounded internal rates, and a fixed minimum dwell time. Those features cannot by themselves recover the rank-one complexity law. Whether the optimum is different for unrestricted and reversible competitors is unresolved: existence of a reversible approximation does not answer that comparison.
+In parallel, ask whether ordinary reversible predictors can attain a polynomial count in this capped binary class. The current reversible construction is much larger; this is a gap between sufficient constructions, not proof of an intrinsic reversibility penalty. The all-sensitivity, unrestricted-rate theorem remains `exp(exp(C log²(16/δ)))` sufficient reversible states and must not be confused with the narrower capped finite-alphabet problem. Preserve the actual all-protocol/all-horizon mean norm and count every physical state.
 
 Do not replace this quantitative question with more examples of a merely nonzero high-order coefficient, duplicate the weaker varying-moment construction, or silently change the prediction norm. Retain every completed theorem if a proposed improvement fails. Journal selection and manuscript drafting remain separate from the research task.
 

@@ -18,3 +18,5 @@ check:
 	$(PYTHON) scripts/verify_general_compression.py --output .check-output/general_compression.json
 	$(PYTHON) scripts/verify_reversible_compression.py --output .check-output/reversible_compression.json
 	$(PYTHON) scripts/verify_general_controlled_lower_bound.py --output .check-output/general_controlled_lower_bound.json
+	$(PYTHON) scripts/verify_bounded_rate_prediction.py --output .check-output/bounded_rate_prediction.json
+	$(PYTHON) scripts/verify_shift_register_lower_bound.py --output .check-output/shift_register_lower_bound.json
