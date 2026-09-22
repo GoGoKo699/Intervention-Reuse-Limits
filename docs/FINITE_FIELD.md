@@ -522,9 +522,11 @@ complete information for general controlled visible path laws. The
 [reversible general upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) now
 establishes fixed-accuracy mean compression with exact variance and a
 nonsharp state bound. For binary sensitivities and bounded internal rates,
-the [shift-register lower bound](SHIFT_REGISTER_LOWER_BOUND.md) is
-$\exp(cL/\log L)$ with unrestricted timing, or $\exp(c_aL^{2/3})$ with
-fixed minimum dwell, where $L=\log(1/\delta)$. Both quantitatively separate
-the general task from the sharp subclass theorem above. The same bounded
-binary class has a [polynomial upper bound](BOUNDED_RATE_FINITE_FIELD.md)
-using possibly nonreversible predictors; its optimal order remains open.
+the [polynomial controlled lower bound](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md)
+proves $D_*\ge c_a\delta^{-\gamma_a}$ even with a fixed switching clock
+$a/k$ and horizons $O_a(\log(1/\delta))/k$. Together with the
+[polynomial upper bound](BOUNDED_RATE_FINITE_FIELD.md), this places the
+general bounded binary task in the polynomial state-growth class, beyond
+the sharp logarithmic subclass above. The upper predictor may be
+nonreversible; optimal exponents and polynomial reversible sufficiency
+remain open.

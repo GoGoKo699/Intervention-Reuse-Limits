@@ -1,6 +1,6 @@
 # Polynomial state bounds for bounded internal rates and a finite actuator alphabet
 
-[Repository overview](../README.md) · [General upper bound](GENERAL_FINITE_FIELD_UPPER_BOUND.md) · [Reversible upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) · [Shift-register lower bound](SHIFT_REGISTER_LOWER_BOUND.md)
+[Repository overview](../README.md) · [General upper bound](GENERAL_FINITE_FIELD_UPPER_BOUND.md) · [Reversible upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) · [Polynomial controlled lower bound](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md)
 
 **Research corollary, 22 September 2026.** A finite actuator alphabet and an upper bound on internal relaxation rates give a polynomial sufficient state count for predicting the exact driven mean. The surrogate preserves the entire stationary actuator distribution, including its centering, variance and sensitivity bound. Its internal dynamics can be nonreversible. The proof combines exact uniformization, the stationary finite-order word construction, and a regenerative coupling. These are established constructions used here to obtain a quantitative prediction bound; no originality certification is claimed.
 
@@ -227,14 +227,16 @@ D\le1+\max\left\{2,
 \tag{9}
 $$
 
-In particular this applies to the two-level class with all nonzero internal rates in $[k,3k]$, by setting $\Lambda=3$. That class contains the targets in [the stronger shift-register lower bound](SHIFT_REGISTER_LOWER_BOUND.md). For this class, put $L_\varepsilon=\log(1/\varepsilon)$. The current bounds against unrestricted Markov predictors have the form
+In particular this applies to the two-level class with all nonzero internal rates in $[k,3k]$, by setting $\Lambda=3$. That class contains the targets in [the polynomial controlled lower bound](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md). For every fixed clock interval $a/k>0$, the bounds against unrestricted Markov predictors have the form
 
 $$
-\exp\!\left(c\frac{L_\varepsilon}{\log L_\varepsilon}\right)
-\ \lesssim\ D_*\ \lesssim\ \varepsilon^{-p_{\rm bin}},
+c_a\varepsilon^{-\gamma_a}
+\ \le\ D_*^{\mathrm{clock}\ a/k}
+\ \le\ D_*^{\mathrm{all\ protocols}}
+\ \le\ C\varepsilon^{-p_{\rm bin}},
 $$
 
-for sufficiently small $\varepsilon$, with constants depending on the fixed parameters. If protocols have a fixed minimum dwell $a/k$, the separate necessary bound is $\exp(c_a L_\varepsilon^{2/3})$; the same polynomial upper still applies. The stronger unrestricted lower uses shrinking intervals. The polynomial upper is not claimed optimal, and no polynomial lower is proved. These bounds do not determine whether requiring reversible predictors changes the optimal order.
+for sufficiently small $\varepsilon$, with fixed positive constants and exponents. The lower witnesses use only fields $0,h_*$, integer multiples of the fixed dwell $a/k$, and horizons $O_a(\log(1/\varepsilon))/k$. Thus the necessary and sufficient state counts belong to the polynomial growth class, even with fixed control resolution. The exponents are not matched or claimed optimal. A minimum-dwell protocol class lies between the clock-restricted and unrestricted classes and obeys the same polynomial classification. Whether requiring reversible predictors changes this growth class remains open.
 
 The result assumes the kinetic model is supplied. Computing the required word probabilities, numerical precision, learning from experiments, statistical noise and parameter storage are outside its state-count guarantee. The large collection of allowed words is counted in full as physical Markov states.
 

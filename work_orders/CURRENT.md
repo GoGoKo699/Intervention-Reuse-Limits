@@ -2,6 +2,18 @@
 
 ## New completed extension — 22 September 2026
 
+This continuation starts from `b143adad62c8ec0d8b51733760d5c1c82bcaa213`. All fourteen preceding mathematical verifiers and reports are preserved. The polynomial-necessity target is now proved, including fixed control resolution.
+
+For balanced binary sensitivities and a fixed internal spectral band, the worst-case actual-mean prediction cost satisfies `c_a δ^-γ_a ≤ D_* ≤ C δ^-p` for fixed positive exponents. Thus `D_*=δ^{-Θ(1)}` describes the growth class, not a matched optimal exponent. The lower holds for every fixed clock interval `a/k>0`, using only fields `0,h*`, held intervals that are integer multiples of `a/k`, and observation horizons `O_a(log(1/δ))/k`. Competing Markov predictors need only have fixed preparation and readout and rates depending on the instantaneous field; no competitor reversibility, rate bound, field analyticity, or passive matching is required.
+
+Start with [the polynomial controlled lower theorem](../docs/POLYNOMIAL_CONTROLLED_LOWER_BOUND.md). Its positive shift-register target and exact Gram witness are inherited from the preceding checkpoint. The improvement is to truncate the logarithm expansions by **total degree across each whole side** of the response matrix. Each side has generator degree `O(n)` and exponentially bounded coefficient mass. A single total-degree cutoff `M=O_a(n)` controls its complete tail and has only `exp(O_a(n))` actual-propagator coefficient cost. Truncate the left and right sides separately; cutting the combined entry can destroy the rank factorization and is not the proof.
+
+Target reversibility bounds powers of `I-exp(aQ_h)` in field-dependent equilibrium norms even for large fixed `a`. The finite truncated expressions are then evaluated exactly on arbitrary competitors, with no logarithm convergence claim for them. The witness has error floor `exp(-C_a n)` below `2^n` states, fixed minimum dwell `a/k`, and horizon `O_a(n/k)`. It closes the earlier logarithmic loss in the lower exponent. The polynomial upper remains possibly nonreversible, preserving the exact actuator distribution and all specified passive/static/low-order agreements.
+
+The sharp lower and upper **exponents** remain open. So does polynomial reversible sufficiency: the current reversible finite-alphabet capped bound is `exp(C δ^-p log(2/δ))`. A different sufficient construction does not prove an intrinsic reversibility penalty. The wider class with arbitrary bounded sensitivities and unrestricted internal rates retains its double-exponential reversible existence bound.
+
+## Earlier bounded-rate and shift-register checkpoint
+
 This continuation starts from `04666225de07d520555144d26dee342097afb6bd`. All twelve preceding mathematical verifiers and reports remain unchanged. Two stronger lower bounds and a polynomial upper bound now address the same bounded-rate binary target class.
 
 1. **Polynomial sufficiency with exact actuator distribution.** For a fixed alphabet of at most `m` sensitivities and internal relaxation rates at most `Λk`, set `R=exp((1+G)H)` and `p=log(m)/log(1+1/(ΛR))`. A stationary word-chain surrogate has at most `1+max(m,((1+2R²)/δ)^p)` total states. It preserves the entire actuator histogram and the passive/static/low-order constraints, but can lose reversibility. Exact uniformization and regeneration give the all-protocol/all-horizon bound directly.
@@ -54,11 +66,13 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 ## Single next research priority
 
-**Determine whether bounded-rate binary prediction has polynomial necessary state growth.**
+**Determine the optimal cost of retaining reversible dynamics in the bounded-rate binary class.**
 
-The focused interval is now `exp(c L/log L)` necessary states to `C δ^-p` sufficient states. The shift-register Gram floor itself is already `exp(-Cn)`; the remaining loss comes from converting degree-`O(n)` generator words into signed actual-mean experiments. Seek either a direct propagator witness with only `exp(Cn)` coefficient cost, or an upper construction proving that a polynomial lower target is too ambitious. For a fixed minimum dwell, retain the separate `exp(c_a L^(2/3))` baseline. Do not improve only the old weak-coupling tree: its truncation obstruction is now explicit.
+Polynomial necessary growth is established. Focus on a reversible predictor of polynomial size, or a rigorous lower bound that separates reversible from unrestricted predictors. Retain ordinary detailed balance, the exact actuator histogram, fixed binary readout, and the all-protocol/all-horizon mean guarantee; specify separately whether the spectral band is also retained. The current sufficient bounds alone imply no structural penalty. Improving the unmatched polynomial exponents is a secondary quantitative direction.
 
-In parallel, ask whether ordinary reversible predictors can attain a polynomial count in this capped binary class. The current reversible construction is much larger; this is a gap between sufficient constructions, not proof of an intrinsic reversibility penalty. The all-sensitivity, unrestricted-rate theorem remains `exp(exp(C log²(16/δ)))` sufficient reversible states and must not be confused with the narrower capped finite-alphabet problem. Preserve the actual all-protocol/all-horizon mean norm and count every physical state.
+Two exploratory routes did not settle that question. Exact reversible three-symbol matching has a small realization, but its extension needs consistent transition relations between conditional prediction profiles. Matching only their Gram and projected one-step moments is insufficient: dynamics outside the retained profile space can return and change later correlations. These are limitations of proposed certificates, not impossibility results for polynomial reversible compression. Do not substitute finite-prefix success or moment matching alone for a controlled-mean approximation proof.
+
+Maintain the primary-source comparison for the complete physical theorem. Matrix logarithms, formal power series, finite-word rank, the de Bruijn/Walsh spectrum, uniformization and canonical word approximation are classical. The candidate contribution is their constrained quantitative consequence: a fixed-resolution intervention task with polynomial physical state cost behind an exact two-state passive law. A growth-class theorem does not certify publication originality. The all-sensitivity, unrestricted-rate upper theorem concerns a broader class and remains a separate question.
 
 Do not replace this quantitative question with more examples of a merely nonzero high-order coefficient, duplicate the weaker varying-moment construction, or silently change the prediction norm. Retain every completed theorem if a proposed improvement fails. Journal selection and manuscript drafting remain separate from the research task.
 

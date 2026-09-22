@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fourteen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifteen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -186,6 +186,20 @@ Both theorem documents received reciprocal internal mathematical audits, includi
 
 The complete fourteen-verifier `make check` passed locally in the pinned Python 3.13 environment. All fourteen fresh JSON reports matched their saved reports exactly. The twelve earlier mathematical scripts and reports, original MIT license, pinned dependencies, and workflow were checked against the starting commit and remain unchanged. The suite's largest matrix remains $68\times68$. GitHub Actions is checked separately after publication.
 
+## Polynomial necessity with a fixed switching clock
+
+This continuation starts from `b143adad62c8ec0d8b51733760d5c1c82bcaa213`. The fourteen earlier mathematical verifiers and saved reports are preserved. The new proof reuses the positive shift-register target and exact leaf Gram bound, with total-degree logarithm truncation replacing the earlier per-generator interpolation step.
+
+[verify_polynomial_controlled_lower_bound.py](../scripts/verify_polynomial_controlled_lower_bound.py) produces [polynomial_controlled_lower_bound.json](../reports/polynomial_controlled_lower_bound.json). Small exact noncommutative polynomials check ordering, truncated-series associativity, and the bound on propagator word length. A separate exact counterexample shows that directly cutting the combined matrix entries can increase a rank-one factorization to rank two; the theorem instead truncates its two factors separately.
+
+An exact rational calibration at $s=1$, $e^{h_*}=65/64$ and fixed dwell $a=1/8$ gives a whole-side cutoff $M=200(n+1)$. A base-depth inequality and a decreasing rational ratio verify the matrix-error budget for every $n\ge1$, not just selected depths. The resulting conservative response floor is at least $2^{-871n-849}$, with every positive segment an integer multiple of $1/(8k)$ and maximum horizon $50(n+1)/k$. This explicit calibration is not an optimized polynomial exponent. The written proof covers arbitrary fixed positive dwell times.
+
+The verifier imports the unchanged shift-register verifier for exact small physical-generator and sparse leaf checks, recording both source hashes. A five-state physical example evaluates actual propagator series and the complete left and right factors at cutoffs 12, 24 and 40. Its controlled-matrix discrepancy decreases from about 45.5 to $3.93\times10^{-5}$ and $9.74\times10^{-12}$. These are high-precision consistency checks, not interval certification, numerical rank inference, or the large register used in the lower theorem. No exponentially large protocol menu or physical state space is enumerated; the new verifier's largest physical generator has dimension five, and the suite maximum remains 68.
+
+Internal proof audits checked the target-only logarithm identity, weighted-norm power bounds at any fixed dwell, both coefficient majorants, separate side truncation, competitor rank and strict tolerance inversion. The result establishes the polynomial growth class with unmatched exponents. It does not establish a polynomial reversible upper bound, a statistical sample bound, or publication originality.
+
+The complete fifteen-verifier `make check` passed locally in the pinned Python 3.13 environment. All fifteen fresh JSON reports matched their saved evidence exactly. The fourteen prior mathematical scripts and reports, original MIT license, pinned dependencies and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -204,6 +218,7 @@ python scripts/verify_reversible_compression.py --output reports/reversible_comp
 python scripts/verify_general_controlled_lower_bound.py --output reports/general_controlled_lower_bound.json
 python scripts/verify_bounded_rate_prediction.py --output reports/bounded_rate_prediction.json
 python scripts/verify_shift_register_lower_bound.py --output reports/shift_register_lower_bound.json
+python scripts/verify_polynomial_controlled_lower_bound.py --output reports/polynomial_controlled_lower_bound.json
 make check
 ```
 

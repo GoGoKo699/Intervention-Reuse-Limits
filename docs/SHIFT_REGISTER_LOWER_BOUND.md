@@ -1,8 +1,8 @@
 # Stronger prediction lower bounds from a reversible shift register
 
-[Repository overview](../README.md) · [Earlier binary-tree lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md) · [Binary bounded-rate upper bounds](BOUNDED_RATE_FINITE_FIELD.md) · [Unrestricted-family reversible upper bound](REVERSIBLE_GENERAL_COMPRESSION.md)
+[Repository overview](../README.md) · [Polynomial lower-bound continuation](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md) · [Earlier binary-tree lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md) · [Binary bounded-rate upper bounds](BOUNDED_RATE_FINITE_FIELD.md) · [Unrestricted-family reversible upper bound](REVERSIBLE_GENERAL_COMPRESSION.md)
 
-**Research theorem, 22 September 2026.** A positive reversible shift-register generator replaces the small-coupling function-space embedding in the earlier tree construction. Its controlled rank witness has only exponentially small, rather than Gaussian-in-depth, singular values. Polynomial interpolation of actual propagators then gives two stronger state lower bounds. One uses shrinking control dwell times; the other keeps a fixed minimum dwell time. Neither is a polynomial lower bound in the inverse tolerance. For these binary bounded-rate targets, the direct comparison is with the [polynomial nonreversible and singly exponential reversible upper bounds](BOUNDED_RATE_FINITE_FIELD.md); both gaps remain open. The arguments below are internal derivations, not a certification of originality.
+**Research theorem, 22 September 2026.** A positive reversible shift-register generator replaces the small-coupling function-space embedding in the earlier tree construction. Its controlled rank witness has only exponentially small, rather than Gaussian-in-depth, singular values. This note retains that physical construction, its exact Gram witness, and the first two interpolation-based finite-error bounds. The [polynomial continuation](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md) now strengthens both bounds by truncating complete operator sequences at once. It establishes polynomial necessary growth even with a fixed switching clock. The arguments are internal derivations, not a certification of originality.
 
 ## 1. Two finite-error lower bounds
 
@@ -414,9 +414,9 @@ $$
 
 All weights are positive and all rates differ from $k$. The established analytic-in-field Markov cubic competitor class therefore has exact minimal state count $m+2=4n+5$, by the pole bound and Jacobi realization. The full controlled-mean task requires at least $2^n$ states even for the broader competitor class, by (13). The new construction preserves the exponential exact task separation while strengthening the finite-error bounds.
 
-## 9. What remains open
+## 9. The polynomial continuation and remaining questions
 
-The arbitrary-protocol lower bound in (1) exceeds every fixed power of the logarithm and is stronger than the previous $\exp(c\sqrt{L_\delta})$ result. It is still subpolynomial in $1/\delta$; a lower bound $(1/\delta)^c$ has not been proved. The fixed-minimum-dwell lower bound improves to (2), with a smaller exponent than the unrestricted timing result.
+The arbitrary-protocol lower bound in (1) and the fixed-minimum-dwell bound in (2) remain valid, but neither is the strongest available result. The [whole-side logarithm truncation proof](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md) uses the same target and exact Gram matrix from Sections 2--3. It proves $D_*\ge c_a\delta^{-\gamma_a}$ for every fixed clock interval $a/k>0$, with positive fixed constants, integer-multiple dwell times and horizons $O_a(L_\delta)/k$. It controls the total expansion degree of each matrix factor, avoiding the cost of approximating every generator separately.
 
 For the targets constructed here, the sharper upper comparison comes from [the finite-alphabet bounded-rate theorem](BOUNDED_RATE_FINITE_FIELD.md). Set $R_s=e^{(1+s)H}$, use the cap $\Lambda=5/2$, and write
 
@@ -427,7 +427,7 @@ $$
 Let $D_{*,\mathrm{bin},5/2}(\delta)$ denote the worst-case unrestricted-predictor state count over all centered targets with actuator values $\pm s$ and internal rates at most $5k/2$. This class contains the shift-register targets. The present lower bound and the polynomial upper theorem give
 
 $$
-\exp\!\left(c\frac{L_\delta}{\log L_\delta}\right)
+c_a\delta^{-\gamma_a}
 \le D_{*,\mathrm{bin},5/2}(\delta)
 \le 1+\max\left\{2,
 \left(\frac{1+2R_s^2}{\delta}\right)^p\right\}.
@@ -440,6 +440,6 @@ D_{\rm rev}(\delta)
 \le\exp\!\left[C\delta^{-p}\log(2/\delta)\right].
 $$
 
-That construction also preserves the exact actuator distribution, including $G$ and $W$. These sufficient bounds hold on all protocols and horizons, so they also apply to the smaller fixed-dwell comparison class. They do not prove an optimal-state separation between reversible and unrestricted predictors. A polynomial reversible bound remains open.
+That construction also preserves the exact actuator distribution, including $G$ and $W$. These sufficient bounds hold on all protocols and horizons, so they also apply to the smaller fixed-clock and fixed-dwell comparison classes. The polynomial necessary and sufficient bounds classify unrestricted predictors by growth type; their exponents need not match. They do not prove an optimal-state separation between reversible and unrestricted predictors. A polynomial reversible bound remains open.
 
 For the general family without a fixed actuator alphabet or spectral cap, the [reversible exact-variance upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) remains double exponential in $L_\delta^2$. It is valid for the present targets too, but is not their sharpest available sufficient bound. The optimal general state order and the corresponding binary bounded-rate order both remain open. All statements count physical Markov states, not bit memory, parameter precision, computation time, or the sample cost of evaluating the signed interpolation formulas. The same binary passive path law, fixed actuator rule, and stationary preparation are retained throughout.

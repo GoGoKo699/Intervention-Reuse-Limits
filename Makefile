@@ -20,3 +20,4 @@ check:
 	$(PYTHON) scripts/verify_general_controlled_lower_bound.py --output .check-output/general_controlled_lower_bound.json
 	$(PYTHON) scripts/verify_bounded_rate_prediction.py --output .check-output/bounded_rate_prediction.json
 	$(PYTHON) scripts/verify_shift_register_lower_bound.py --output .check-output/shift_register_lower_bound.json
+	$(PYTHON) scripts/verify_polynomial_controlled_lower_bound.py --output .check-output/polynomial_controlled_lower_bound.json

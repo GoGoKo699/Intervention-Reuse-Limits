@@ -1,0 +1,170 @@
+{
+  "status": "PASS",
+  "scope": "Whole-side noncommutative logarithm truncation, exact all-depth calibration, and small actual-propagator consistency.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "exact_formal_checks": {
+    "maximum_checked_total_degree": 5,
+    "exact_noncommutative_order_and_associativity": true,
+    "propagator_word_length_bounded_by_total_degree": true,
+    "separate_factor_matrix_exact": "Matrix([[1, 1], [1, 1]])",
+    "incorrect_entry_cut_matrix_exact": "Matrix([[1, 1], [1, 0]])",
+    "incorrect_entry_cut_has_rank_two_from_rank_one_factors": true,
+    "scope": "Small exact coefficient check only; no large protocol expansion."
+  },
+  "exact_rational_calibration": {
+    "parameters": {
+      "k": 1,
+      "G": 1,
+      "W": 1,
+      "exp_h": "65/64",
+      "dwell_a": "1/8"
+    },
+    "analytic_radius": "3/2",
+    "formal_majorant_radius": "1/4",
+    "exp_5_over_8_rational_upper": "569/304",
+    "normalization_exact": "2146689/146232320000",
+    "all_depth_cutoff_formula": "M=200(n+1)",
+    "all_depth_error_to_floor_ratio_multiplier": "15541351137805832567355695254588151253139254712417116170014499277911234281641667985408/3279185047850305794305942247355304034928808057449314765118209404186327048164224481412156778321",
+    "all_depth_certificate": "Base depth n=1 passes and the ratio decreases by the displayed exact factor at each depth.",
+    "all_depth_response_floor": "2^(-871n-849), n>=1",
+    "all_depth_protocol_horizon": "50(n+1), with each positive segment a multiple of 1/8",
+    "records": [
+      {
+        "word_depth_n": 1,
+        "whole_side_degree_cutoff": 400,
+        "minimum_dwell": "1/8",
+        "maximum_horizon": "100",
+        "side_analytic_bound_log2": 48,
+        "side_formal_coefficient_bound_log2": 832,
+        "matrix_error_log10": "-35.340932866194996945640602615677099585233627859102",
+        "exact_leaf_Gram_floor": "1/24461180928",
+        "error_below_half_Gram_floor_exact": true,
+        "response_floor_log10": "-517.02196012239785604883619960896478157526909072243",
+        "simplified_response_floor": "2^(-1720)"
+      },
+      {
+        "word_depth_n": 2,
+        "whole_side_degree_cutoff": 600,
+        "minimum_dwell": "1/8",
+        "maximum_horizon": "150",
+        "side_analytic_bound_log2": 81,
+        "side_formal_coefficient_bound_log2": 1255,
+        "matrix_error_log10": "-50.390174967844505282577898375260523278152702346858",
+        "exact_leaf_Gram_floor": "1/129850124217090048",
+        "error_below_half_Gram_floor_exact": true,
+        "response_floor_log10": "-778.71933139929227726747297736922272491301747388099",
+        "simplified_response_floor": "2^(-2591)"
+      },
+      {
+        "word_depth_n": 3,
+        "whole_side_degree_cutoff": 800,
+        "minimum_dwell": "1/8",
+        "maximum_horizon": "200",
+        "side_analytic_bound_log2": 114,
+        "side_formal_coefficient_bound_log2": 1678,
+        "matrix_error_log10": "-65.439417069494013619515194134843946971071776834614",
+        "exact_leaf_Gram_floor": "1/689298476995988284243968",
+        "error_below_half_Gram_floor_exact": true,
+        "response_floor_log10": "-1040.4167026761866984861097551294806682507658570396",
+        "simplified_response_floor": "2^(-3462)"
+      },
+      {
+        "word_depth_n": 10,
+        "whole_side_degree_cutoff": 2200,
+        "minimum_dwell": "1/8",
+        "maximum_horizon": "550",
+        "side_analytic_bound_log2": 345,
+        "side_formal_coefficient_bound_log2": 4639,
+        "matrix_error_log10": "-170.78411178104057197807626445192791282150529824891",
+        "exact_leaf_Gram_floor": "1/81877008266648363049062522391326288177268815036892763875191061435383808",
+        "error_below_half_Gram_floor_exact": true,
+        "response_floor_log10": "-2872.2983016144476470165671994512862716150045391495",
+        "simplified_response_floor": "2^(-9559)"
+      }
+    ],
+    "scope": "A conservative exact rational calibration at one fixed field/dwell; arbitrary fixed dwell is covered analytically in the theorem."
+  },
+  "reused_small_physical_register_check": {
+    "physical_bits": 2,
+    "hidden_states": 4,
+    "full_Markov_states": 5,
+    "minimum_internal_off_diagonal": "3/8",
+    "Walsh_shift_and_binary_toggle_identities": true,
+    "hidden_relaxation_rate_band": [
+      "3/2",
+      "5/2"
+    ],
+    "G": "1",
+    "W": "1",
+    "field_h": "log(65/64)",
+    "full_field_stationarity_reversibility_and_Gram_filters": true
+  },
+  "reused_sparse_leaf_Gram_checks": [
+    {
+      "word_depth_n": 1,
+      "implicit_register_bits": 7,
+      "implicit_physical_target_states": 129,
+      "physical_state_space_enumerated": false,
+      "controlled_Gram_dimension": 2,
+      "active_Walsh_coordinates_evaluated": 19,
+      "largest_sparse_column_support": 12,
+      "top_leaf_coefficient_exact": "1/110592",
+      "top_leaf_matrix_is_coefficient_times_identity": true,
+      "Gram_remainder_exact_sum_of_squares": true,
+      "full_pi0_Gram_eigenvalue_floor": "1/24461180928"
+    },
+    {
+      "word_depth_n": 2,
+      "implicit_register_bits": 11,
+      "implicit_physical_target_states": 2049,
+      "physical_state_space_enumerated": false,
+      "controlled_Gram_dimension": 4,
+      "active_Walsh_coordinates_evaluated": 99,
+      "largest_sparse_column_support": 55,
+      "top_leaf_coefficient_exact": "1/254803968",
+      "top_leaf_matrix_is_coefficient_times_identity": true,
+      "Gram_remainder_exact_sum_of_squares": true,
+      "full_pi0_Gram_eigenvalue_floor": "1/129850124217090048"
+    }
+  ],
+  "actual_propagator_whole_side_checks": {
+    "records": [
+      {
+        "whole_side_cutoff": 12,
+        "maximum_propagator_factors_per_entry": 24,
+        "maximum_protocol_horizon": "3.0",
+        "controlled_matrix_Frobenius_error": "45.503009752361352891130268095406741871414950562684",
+        "full_generator_dimension": 5,
+        "decimal_precision": 70
+      },
+      {
+        "whole_side_cutoff": 24,
+        "maximum_propagator_factors_per_entry": 48,
+        "maximum_protocol_horizon": "6.0",
+        "controlled_matrix_Frobenius_error": "0.000039260122630026745360627586460529654861658812102444",
+        "full_generator_dimension": 5,
+        "decimal_precision": 70
+      },
+      {
+        "whole_side_cutoff": 40,
+        "maximum_propagator_factors_per_entry": 80,
+        "maximum_protocol_horizon": "10.0",
+        "controlled_matrix_Frobenius_error": "0.0000000000097364140244113635123035418696060830136862575740711",
+        "full_generator_dimension": 5,
+        "decimal_precision": 70
+      }
+    ],
+    "scope": "Small actual-propagator consistency only, not a numerical rank proof or interval certificate. The small register is not the n=1 leaf witness."
+  },
+  "largest_constructed_physical_generator_dimension": 5,
+  "largest_constructed_controlled_Gram_dimension": 4,
+  "no_large_physical_enumeration_or_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_polynomial_controlled_lower_bound.py": "4e0ff7312619aa0c460c6092664c66626ed04de717ceeaf191a5ca8bb24b3df4",
+    "verify_shift_register_lower_bound.py": "2de482d66aa87e9012c769f557b43a17b3657d834542e7da6d261198baa0e485"
+  }
+}
