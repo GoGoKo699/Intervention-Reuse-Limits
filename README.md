@@ -4,7 +4,7 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** the project now has a finite-field prediction theorem, an operational measurement separation, and a quantitative result near imperfect lumpability. The main new bound concerns actual driven means, and one fixed nonzero step already gives the matching lower order. The target actuator subclass and the statistical experiment are specified below. Originality of the combined results remains under assessment; manuscript writing remains on hold.
+**Research status:** the project now combines a sharp finite-field theorem for a specified actuator subclass with three general-family results: arbitrarily delayed response information with a fixed actuator, an exact characterization of complete driven path information, and a universal but nonsharp finite-state mean approximation. Observation and near-lumpability results supply separate operational statements. Originality of the combined results remains under assessment; manuscript writing remains on hold.
 
 ## Stronger prediction and observation results
 
@@ -20,6 +20,16 @@ The upper construction preserves reversibility, bounded sensitivity, and the ent
 **Two measurements can reveal what the mean misses.** In the broader original family, the complete passive path law and every first-order visible-path response agree with a two-state reference. The second-order path response determines the hidden kernel and can require arbitrarily many states. For a concrete pair of three-state models, retaining the initial and final visible states needs $\Theta(h^{-4})$ independent weak-step trials to distinguish them; retaining only the final state needs $\Theta(h^{-6})$. These are [specified two-hypothesis experiments](docs/ACTIVE_PATH_RESPONSE.md), with no hidden-state access or continuous monitoring required for the stronger exponent.
 
 **Imperfect lumpability has a quantitative information cost.** Small centered changes of the external equilibrium conductances, of relative size $q$, break exact passive lumpability. Nevertheless, the full stationary passive-path relative entropy from the two-state reference is bounded by $q^4(152+241kT)$, independently of hidden dimension and internal rates. A three-state pair attains the quartic information scale while retaining a nonzero finite-field driven signal. The [robustness theorem](docs/NEAR_LUMPABILITY.md) specifies the allowed barrier perturbations and the observation/preparation costs.
+
+## Beyond the scalar-kernel subclass
+
+**No finite response hierarchy is universally complete, even with the actuator fixed.** For every $d\ge2$, two $d+2$-state models can share the same state labels, $k,\mu,g$, field-dependent external rates, and one-mode kernel $C(t)=We^{-\lambda t}$. Changing only reversible hidden kinetics leaves every bounded-protocol mean coefficient through order $2d$ identical, and every visible-path coefficient through order $2d-1$ identical. The next orders differ, and their actual mean curves differ under every nonzero constant field. All hidden relaxation rates stay in $[\lambda,3\lambda/2]$. The [fixed-actuator hierarchy theorem](docs/FIXED_ACTUATOR_HIERARCHY.md) holds for any fixed $0<W<G^2$; the common actuator and state space may change with $d$. This is exact incompleteness, not a noise-robust separation or a finite-error state lower bound.
+
+**The complete path information has an exact description.** For the general family, equality of all controlled visible path laws is equivalent to equality in law of the stationary hidden sensitivity process $Y_t=g(X_t)$. Short-pulse no-exit functionals recover its joint Laplace transforms in principle. The [actuator-process theorem](docs/ACTUATOR_PROCESS.md) also gives a matrix-return closure for finitely many distinguished actuator states. Two sensitivity levels alone are insufficient for two-time closure: an explicit pair has identical two-time level kernels but different finite-field means. Necessity from mean data alone is not established.
+
+**Fixed-accuracy compression still exists for the whole bounded-sensitivity family.** For fixed $k,G,H$ and error $\varepsilon>0$, every reversible target has a Markov mean predictor with an explicit finite state bound independent of target size and internal rates. The [general upper bound](docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md) quantizes sensitivities, regularizes the hidden clock, and realizes a finite window of hidden symbols as Markov states. It preserves the same sensitivity bound, passive law, equilibrium curve, and linear/quadratic mean agreements. Its state bound is very large, its internal dynamics can be nonreversible, and sensitivity variance is only approximately preserved. No general-family squared-logarithmic upper order is proved.
+
+These results separate three questions: which intervention data are complete, whether fixed-accuracy compression exists, and how many physical states it optimally costs. A finite response hierarchy can fail the first question without making the second impossible.
 
 ## Cubic-response foundations
 
@@ -56,6 +66,9 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 |---|---|
 | What is proved for actual finite-field predictions? | [Uniform finite-field theorem](docs/FINITE_FIELD.md) |
 | Does one fixed intervention already require growing model size? | [Fixed nonzero step lower bound](docs/FIXED_FIELD_LOWER_BOUND.md) |
+| Can arbitrarily many response orders agree with the actuator fixed? | [Fixed-actuator response hierarchy](docs/FIXED_ACTUATOR_HIERARCHY.md) |
+| What replaces the scalar kernel for complete driven path laws? | [Stationary actuator process and matrix-return closure](docs/ACTUATOR_PROCESS.md) |
+| Does finite-state approximation exist outside the special subclass? | [General bounded-sensitivity upper bound](docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md) |
 | What can two visible measurements reveal? | [Path response and statistical separation](docs/ACTIVE_PATH_RESPONSE.md) |
 | Does the distinction survive imperfect passive lumpability? | [Quartic passive information and robustness](docs/NEAR_LUMPABILITY.md) |
 | What is the candidate contribution, and how does it compare with prior theorems? | [Publication scope and operational interpretation](docs/PUBLICATION_SCOPE.md) |
@@ -67,7 +80,7 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
 
-The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), and [path information](scripts/verify_path_information.py). Their generated evidence is in [reports](reports).
+The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), and [general compression identities](scripts/verify_general_compression.py). Their generated evidence is in [reports](reports).
 
 ## Reproduce
 
@@ -93,6 +106,8 @@ python scripts/verify_response_lower_bounds.py --output .check-output/response_l
 python scripts/verify_unrestricted_rate_lower_bound.py --output .check-output/unrestricted_rate_lower_bound.json
 python scripts/verify_finite_field.py --output .check-output/finite_field.json
 python scripts/verify_path_information.py --output .check-output/path_information.json
+python scripts/verify_actuator_hierarchy.py --output .check-output/actuator_hierarchy.json
+python scripts/verify_general_compression.py --output .check-output/general_compression.json
 ```
 
 A failed assertion exits unsuccessfully. Fresh reports go into the ignored `.check-output` directory; the saved reports are not overwritten. Numerical roundoff can differ across platforms. Dependency installation and GitHub Actions setup require network access; the verification calculations themselves do not.
@@ -101,7 +116,7 @@ The checks use symbolic algebra, exact rational calculations, and small determin
 
 ## Scope and attribution
 
-The coefficient theorems cover the original centered-sensitivity family; the finite-field upper theorem covers the explicitly defined rank-one sensitivity subclass. The finite-field norm measures single-time means, not approximate full path distributions. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, parameter precision, runtime, or experimental resolution. No turbulence or generic molecular implementation claim is made.
+The coefficient theorems cover the original centered-sensitivity family. The sharp finite-field state order applies to the specified rank-one subclass; the general-family upper bound is nonsharp and permits nonreversible surrogates. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, parameter precision, runtime, or experimental resolution. No turbulence or generic molecular implementation claim is made.
 
 Nonlinear response, aggregated Markov inference from dwell times, minimal realization, positive model reduction, and Hankel dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) and [publication scope](docs/PUBLICATION_SCOPE.md) distinguish those ingredients from the new combined claims. Demanding the correct passive law does not cause the approximation lower bound: it already applies to competitors without that requirement.
 

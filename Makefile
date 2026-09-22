@@ -14,3 +14,5 @@ check:
 	$(PYTHON) scripts/verify_unrestricted_rate_lower_bound.py --output .check-output/unrestricted_rate_lower_bound.json
 	$(PYTHON) scripts/verify_finite_field.py --output .check-output/finite_field.json
 	$(PYTHON) scripts/verify_path_information.py --output .check-output/path_information.json
+	$(PYTHON) scripts/verify_actuator_hierarchy.py --output .check-output/actuator_hierarchy.json
+	$(PYTHON) scripts/verify_general_compression.py --output .check-output/general_compression.json

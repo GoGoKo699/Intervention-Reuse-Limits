@@ -1,6 +1,16 @@
-# Current work order: broaden finite-field intervention reuse
+# Current work order: sharp general-family state cost
 
-## Completed checkpoint — 22 September 2026
+## New completed extension — 22 September 2026
+
+This continuation starts from `1f7f747a64442e15eab929c08e19d3958c9f4828`. All eight preceding mathematical verifiers and reports are preserved. Three broader results have complete internal proofs and proof audits, with two new deterministic verifiers.
+
+1. **Arbitrary-order obstruction with an unchanged actuator.** For every $d\ge2$, two $d+2$-state models share the full tuple $k,\mu,g$, external field rates, a one-mode cubic kernel, and all-protocol mean response through order $2d$. Their complete visible path responses agree through order $2d-1$. The next orders differ; every nonzero constant field separates the exact mean curves. Only the reversible internal generator changes, and its nonzero decay rates stay in $[\lambda,3\lambda/2]$. Fixed $0<W<G^2$ and $G$ are allowed. The tuple may change with $d$, and the separating signal may shrink.
+2. **Complete general path information.** The stationary law of the autonomous hidden sensitivity process $g(X_t)$ is equivalent to the collection of all controlled visible path laws. No-exit functionals with short pulses recover joint Laplace transforms noiselessly. A finite-rank actuator admits matrix-return closure. An explicit binary-actuator pair has identical two-time level kernels and internal spectra, but different finite-field means, ruling out a naive two-time matrix replacement.
+3. **General-family fixed-accuracy existence.** Every bounded-sensitivity reversible target has a finite Markov mean predictor with a state bound independent of microscopic size and internal rates, uniformly over all bounded protocols and horizons. Quantization, spectral regularization, and canonical finite-word approximation give an explicit, very large bound. The predictor preserves the same sensitivity bound, passive law, equilibrium curve, and linear/quadratic mean agreements. It generally loses internal reversibility and changes sensitivity variance by at most the squared quantization error.
+
+Start with `docs/FIXED_ACTUATOR_HIERARCHY.md`, `docs/ACTUATOR_PROCESS.md`, and `docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md`. The sharp canonical-subclass results below remain the quantitative baseline. No finite response-jet completeness is implied by the general approximation upper bound, and no fixed-error impossibility follows from the hierarchy theorem.
+
+## Earlier finite-field checkpoint — 22 September 2026
 
 This continuation starts from `ef1448235c1fcf70e2c5fdca7d544f87591e9052`. The research direction now extends beyond the previous narrow coefficient-compression assessment. The MIT license, all six earlier mathematical verifiers, and their saved reports are preserved; two new deterministic verifiers cover the extensions.
 
@@ -16,17 +26,19 @@ Start with `docs/FINITE_FIELD.md` and `docs/FIXED_FIELD_LOWER_BOUND.md`. Observa
 
 The main candidate is a sharp finite-field prediction theorem behind exact passive compression, with an operational explanation of what observations reveal and how passive information vanishes near lumpability. This is more ambitious than a coefficient-only compatibility statement. It remains a theorem about a specified stochastic model and physical Markov state count.
 
-The finite-field upper theorem assumes one distinguished sensitivity state with stationary mass one half. It accepts every finite positive kernel, but restricts its field realization. The fixed-step lower theorem needs no corresponding restrictions on competing Markov predictors. The known-kernel constructor is not a learning algorithm. Approximate full path-law error, noisy arbitrary-kernel recovery, finite precision, runtime, and a molecular implementation are not established.
+The sharp finite-field upper theorem assumes one distinguished sensitivity state with stationary mass one half. It accepts every finite positive kernel, but restricts its field realization. The general upper theorem removes that geometry at the cost of a much larger state bound and potentially nonreversible surrogate. The fixed-step lower theorem needs no corresponding restrictions on competing Markov predictors. Neither constructor is a learning algorithm. Approximate full path-law error over all horizons, noisy arbitrary-kernel recovery, finite precision, runtime, and a molecular implementation are not established.
 
 Canonical aggregated Markov models, waiting-time inference, poor identifiability near equal dwell times, nonlinear response expansions, positive quadrature, and Hankel rank are established. The new observation exponents follow from their leading signal orders and ordinary hypothesis-testing bounds. Do not present those mechanisms as discoveries or infer publication originality from an unsuccessful exact-title search.
 
 ## Single next research priority
 
-**Determine what intervention information replaces the scalar kernel outside the rank-one sensitivity subclass, and whether a broader finite-field complexity theorem is possible.**
+**Determine the optimal general-family state cost, including whether preserving reversibility changes it.**
 
-A concrete first question is whether any finite response jet can be sufficient in the original bounded-sensitivity family. A possible analytic route uses a reversible refresh generator and finite sensitivity distributions with matching moments. This is an exploration lead, not a proved public result. Establish the exact all-protocol coefficient dependence before making a hierarchy claim; moment matching alone is not a new mechanism.
+The completed extension answers the earlier information and existence questions. The fixed-actuator construction is stronger than the deferred varying-moment construction, so the latter need not become a duplicate theorem. The exact actuator-process invariant and nonsharp general upper bound are now available tools.
 
-Then identify the smallest additional kernel or response data that closes a larger actuator class. A proposed upper theorem must control actual means for a fixed field interval and all horizons, while counting physical Markov states. A proposed obstruction must keep the actuator and observation task explicit. State exactly which result would settle this question; do not open an unrestricted list of new projects.
+At fixed $k,G,W,H$ with $0<W<G^2$, the canonical targets embed into the general family and supply the squared-logarithmic lower order against arbitrary Markov predictors. The general upper bound is far larger and permits nonreversibility and small variance error. The task is to narrow that gap or prove a larger state order, while keeping the same controlled-mean norm and counting all physical memory states.
+
+A concrete first restricted class is two sensitivity levels with more than one hidden state at each level. Its two-time kernel already fails exact closure. Alternatively, a rank-two actuator gives a matrix-return equation, but positive-semidefinite matrix quadrature alone does not establish nonnegative Markov rates. Any proposed constructive realization must prove positivity; any lower bound must control a fixed nonzero accuracy rather than only a formally nonzero response coefficient. Avoid assuming that the new hierarchy theorem supplies such a lower bound.
 
 Retain the completed finite-field theorem even if the broader extension fails. A rigorous boundary can be scientifically useful. Do not weaken or obscure the current assumptions to obtain a more dramatic framing, and do not replace substantive research with a journal-ranking exercise. Manuscript writing remains on hold.
 

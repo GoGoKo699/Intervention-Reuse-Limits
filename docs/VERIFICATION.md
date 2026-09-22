@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all eight mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all ten mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -138,6 +138,22 @@ Neither verifier simulates statistical trials or certifies inference performance
 
 The complete eight-verifier `make check` passed locally in the pinned environment. All eight fresh reports matched their saved JSON reports exactly. The six earlier mathematical scripts and reports, original license, dependencies, and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
 
+## General actuator information and compression checkpoint
+
+This continuation starts from `1f7f747a64442e15eab929c08e19d3958c9f4828`. It retains all eight earlier mathematical verifiers and saved reports unchanged. Two new verifiers cover the broader actuator results; the build target and provenance checker include both.
+
+[verify_actuator_hierarchy.py](../scripts/verify_actuator_hierarchy.py) produces [actuator_hierarchy.json](../reports/actuator_hierarchy.json). Exact rational constructions at $d=2,3,4$ share $G=1$, $W=1/2$ and the full actuator within each pair. It checks positive reversible generators, common stationary laws, orthogonal projectors, and the identical one-mode covariance. Graded reachable spaces closed under the zero-field generator check every response word through the specified orders, without choosing protocol or time samples. Adding the visible observation projector checks finite visible observation words as well. The resulting mean first differences occur at orders $5,7,9$; their leading $t^3$ coefficients are respectively $1/96$, $1/3456$, and $1/1382400$.
+
+Independent full-generator powers verify the exact finite-field third-time-derivative identities for both the mean and no-exit survival. A separate binary-actuator example checks identical complete hidden spectra and two-time kernels, equality of the first four time derivatives of the mean, and the exact fifth derivative difference. Its largest full generator has six states; the largest comparison matrix has dimension twelve. These finite cases support the all-$d$ proof but do not replace it.
+
+[verify_general_compression.py](../scripts/verify_general_compression.py) produces [general_compression.json](../reports/general_compression.json). A four-state product chain gives an exact rational transition matrix and a nine-state order-two symbol-word realization. Thirty-nine symbol blocks of lengths one through three match exactly; a length-four witness differs, so the example does not accidentally reduce to an exact symbol Markov chain. Exact algebra checks the conditional-mean quantization variance loss $1/32$, word stationarity, nonreversibility, the physical surrogate's full finite-field equilibrium, and its passive readout eigenrelation. The largest matrix has dimension ten.
+
+Thirty scalar spectral samples, fifteen semigroup comparisons, and nine deterministic bounded-protocol comparisons check the internal-rate regularization estimates. These are consistency checks, not proofs of the all-rate or all-protocol inequalities. The explicit state-count bound is proved analytically; the script does not attempt to instantiate its potentially enormous worst-case word model. Across the complete suite the largest matrix remains $68\times68$.
+
+The three new theorem documents received reciprocal internal proof audits. These audits, exact identities, and deterministic computations belong to this investigation; they are not external validation, a learning algorithm, or evidence of publication originality. Neither new verifier simulates trajectories or estimates statistical sample complexity. The exact path-equivalence proof uses short-pulse limits analytically and does not claim a numerically stable implementation of those limits.
+
+The complete ten-verifier `make check` passed locally in the pinned environment. All ten fresh reports matched their saved JSON reports exactly. The eight preceding mathematical scripts and reports, original MIT license, pinned dependencies, and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -150,6 +166,8 @@ python scripts/verify_response_lower_bounds.py --output reports/response_lower_b
 python scripts/verify_unrestricted_rate_lower_bound.py --output reports/unrestricted_rate_lower_bound.json
 python scripts/verify_finite_field.py --output reports/finite_field.json
 python scripts/verify_path_information.py --output reports/path_information.json
+python scripts/verify_actuator_hierarchy.py --output reports/actuator_hierarchy.json
+python scripts/verify_general_compression.py --output reports/general_compression.json
 make check
 ```
 

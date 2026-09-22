@@ -514,3 +514,12 @@ mean only under the additional realization structure proved above. The
 counterexample does not invalidate the finite-field theorem for
 $\mathcal J(k,W)$, and makes no claim that fifth order is always the first
 possible discrepancy outside that subclass.
+
+The [fixed-actuator hierarchy](FIXED_ACTUATOR_HIERARCHY.md) extends this
+obstruction to arbitrarily high response order, with a fixed internal rate
+band. The [actuator-process theorem](ACTUATOR_PROCESS.md) identifies the
+complete information for general controlled visible path laws, while the
+[general upper bound](GENERAL_FINITE_FIELD_UPPER_BOUND.md) establishes
+fixed-accuracy mean compression with a nonsharp state bound and potentially
+nonreversible surrogates. These extensions do not change the sharp
+subclass theorem above.

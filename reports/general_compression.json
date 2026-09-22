@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "scope": "Exact canonical word realization and deterministic checks of internal-rate regularization.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "canonical_word_realization": {
+    "hidden_target_states": 4,
+    "word_length": 2,
+    "word_states": 9,
+    "total_surrogate_states": 10,
+    "matched_blocks_exact": 39,
+    "first_longer_word_witness": [
+      -1,
+      0,
+      0,
+      -1
+    ],
+    "longer_word_probability_difference_exact": "5/13824",
+    "quantization_variance_loss_exact": "1/32",
+    "stationarity_and_field_equilibrium_exact": true,
+    "surrogate_is_nonreversible": true,
+    "scope": "Exact finite-block and physical-realization identities, not a universal approximation proof."
+  },
+  "regularization": {
+    "normalization": "k=G=1",
+    "scalar_spectral_cases": 30,
+    "matrix_semigroup_cases": 15,
+    "protocol_cases": 9,
+    "maximum_semigroup_error_over_certificate": 0.13715351772902581,
+    "maximum_mean_error_over_certificate": 1.1162944187308656e-06,
+    "maximum_mean_error": 6.61557602088525e-07,
+    "largest_matrix_dimension": 5,
+    "scope": "Deterministic consistency samples; all-rate and all-protocol guarantees are proved analytically."
+  },
+  "largest_matrix_dimension": 10,
+  "source_sha256": {
+    "verify_general_compression.py": "9b6173d4b8f12a3519314280273415bd334d6b89fccd0b2c4d3926b1f26adf4b"
+  }
+}

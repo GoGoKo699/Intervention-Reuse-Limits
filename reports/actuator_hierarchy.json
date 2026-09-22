@@ -1,0 +1,484 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite-state consistency checks of fixed-actuator delayed response and a binary-actuator two-time counterexample; no simulations or statistical inference.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "fixed_actuator_hierarchies": [
+    {
+      "polynomial_degree_d": 2,
+      "hidden_states": 3,
+      "full_Markov_states": 4,
+      "actuator_values": [
+        "-1",
+        "0",
+        "1"
+      ],
+      "stationary_weights": [
+        "1/4",
+        "1/2",
+        "1/4"
+      ],
+      "G": "1",
+      "W": "1/2",
+      "k": "1",
+      "lambda": "1",
+      "monic_orthogonal_polynomial_values": [
+        "1/2",
+        "-1/2",
+        "1/2"
+      ],
+      "polynomial_squared_norm": "1/4",
+      "eta_first": "0",
+      "eta_second": "1/2",
+      "minimum_off_diagonal_K0": "1/4",
+      "minimum_off_diagonal_K1": "1/8",
+      "common_actuator_covariance": "(1/2) exp(-t)",
+      "stationarity_reversibility_and_positive_generator": true,
+      "mean_protocol_response_words": {
+        "pair_state_dimension": 8,
+        "orders": [
+          {
+            "field_order": 0,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 1,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 2,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 3,
+            "reachable_span_dimension": 4,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 4,
+            "reachable_span_dimension": 5,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 5,
+            "reachable_span_dimension": 6,
+            "difference_readout_annihilates_span": false
+          }
+        ],
+        "free_operators": "unperturbed generator",
+        "scope": "Exact sufficient equality certificate for every response word and every bounded scalar protocol; no numerical time grid."
+      },
+      "visible_path_response_words": {
+        "pair_state_dimension": 8,
+        "orders": [
+          {
+            "field_order": 0,
+            "reachable_span_dimension": 2,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 1,
+            "reachable_span_dimension": 3,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 2,
+            "reachable_span_dimension": 5,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 3,
+            "reachable_span_dimension": 6,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 4,
+            "reachable_span_dimension": 8,
+            "difference_readout_annihilates_span": false
+          }
+        ],
+        "free_operators": "unperturbed generator and A observation projector",
+        "scope": "Exact sufficient equality certificate for every response word and every bounded scalar protocol; no numerical time grid."
+      },
+      "exact_finite_field_mean_third_time_derivative_identity": true,
+      "first_differing_mean_field_order": 5,
+      "difference_mean_field_coefficient_leading_t3": "1/96",
+      "exact_finite_field_no_exit_third_time_derivative_identity": true,
+      "first_differing_no_exit_field_order": 4,
+      "difference_no_exit_field_coefficient_leading_t3": "-1/192"
+    },
+    {
+      "polynomial_degree_d": 3,
+      "hidden_states": 4,
+      "full_Markov_states": 5,
+      "actuator_values": [
+        "-1",
+        "-1/2",
+        "1/2",
+        "1"
+      ],
+      "stationary_weights": [
+        "1/6",
+        "1/3",
+        "1/3",
+        "1/6"
+      ],
+      "G": "1",
+      "W": "1/2",
+      "k": "1",
+      "lambda": "1",
+      "monic_orthogonal_polynomial_values": [
+        "-1/4",
+        "1/4",
+        "-1/4",
+        "1/4"
+      ],
+      "polynomial_squared_norm": "1/16",
+      "eta_first": "0",
+      "eta_second": "1/2",
+      "minimum_off_diagonal_K0": "1/6",
+      "minimum_off_diagonal_K1": "1/12",
+      "common_actuator_covariance": "(1/2) exp(-t)",
+      "stationarity_reversibility_and_positive_generator": true,
+      "mean_protocol_response_words": {
+        "pair_state_dimension": 10,
+        "orders": [
+          {
+            "field_order": 0,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 1,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 2,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 3,
+            "reachable_span_dimension": 3,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 4,
+            "reachable_span_dimension": 5,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 5,
+            "reachable_span_dimension": 6,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 6,
+            "reachable_span_dimension": 7,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 7,
+            "reachable_span_dimension": 8,
+            "difference_readout_annihilates_span": false
+          }
+        ],
+        "free_operators": "unperturbed generator",
+        "scope": "Exact sufficient equality certificate for every response word and every bounded scalar protocol; no numerical time grid."
+      },
+      "visible_path_response_words": {
+        "pair_state_dimension": 10,
+        "orders": [
+          {
+            "field_order": 0,
+            "reachable_span_dimension": 2,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 1,
+            "reachable_span_dimension": 3,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 2,
+            "reachable_span_dimension": 4,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 3,
+            "reachable_span_dimension": 6,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 4,
+            "reachable_span_dimension": 7,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 5,
+            "reachable_span_dimension": 8,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 6,
+            "reachable_span_dimension": 10,
+            "difference_readout_annihilates_span": false
+          }
+        ],
+        "free_operators": "unperturbed generator and A observation projector",
+        "scope": "Exact sufficient equality certificate for every response word and every bounded scalar protocol; no numerical time grid."
+      },
+      "exact_finite_field_mean_third_time_derivative_identity": true,
+      "first_differing_mean_field_order": 7,
+      "difference_mean_field_coefficient_leading_t3": "1/3456",
+      "exact_finite_field_no_exit_third_time_derivative_identity": true,
+      "first_differing_no_exit_field_order": 6,
+      "difference_no_exit_field_coefficient_leading_t3": "-1/6912"
+    },
+    {
+      "polynomial_degree_d": 4,
+      "hidden_states": 5,
+      "full_Markov_states": 6,
+      "actuator_values": [
+        "-1",
+        "-1/2",
+        "0",
+        "1/2",
+        "1"
+      ],
+      "stationary_weights": [
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5",
+        "1/5"
+      ],
+      "G": "1",
+      "W": "1/2",
+      "k": "1",
+      "lambda": "1",
+      "monic_orthogonal_polynomial_values": [
+        "3/140",
+        "-3/35",
+        "9/70",
+        "-3/35",
+        "3/140"
+      ],
+      "polynomial_squared_norm": "9/1400",
+      "eta_first": "0",
+      "eta_second": "7/36",
+      "minimum_off_diagonal_K0": "1/5",
+      "minimum_off_diagonal_K1": "7/45",
+      "common_actuator_covariance": "(1/2) exp(-t)",
+      "stationarity_reversibility_and_positive_generator": true,
+      "mean_protocol_response_words": {
+        "pair_state_dimension": 12,
+        "orders": [
+          {
+            "field_order": 0,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 1,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 2,
+            "reachable_span_dimension": 1,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 3,
+            "reachable_span_dimension": 3,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 4,
+            "reachable_span_dimension": 4,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 5,
+            "reachable_span_dimension": 6,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 6,
+            "reachable_span_dimension": 7,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 7,
+            "reachable_span_dimension": 8,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 8,
+            "reachable_span_dimension": 9,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 9,
+            "reachable_span_dimension": 10,
+            "difference_readout_annihilates_span": false
+          }
+        ],
+        "free_operators": "unperturbed generator",
+        "scope": "Exact sufficient equality certificate for every response word and every bounded scalar protocol; no numerical time grid."
+      },
+      "visible_path_response_words": {
+        "pair_state_dimension": 12,
+        "orders": [
+          {
+            "field_order": 0,
+            "reachable_span_dimension": 2,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 1,
+            "reachable_span_dimension": 3,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 2,
+            "reachable_span_dimension": 4,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 3,
+            "reachable_span_dimension": 5,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 4,
+            "reachable_span_dimension": 7,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 5,
+            "reachable_span_dimension": 8,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 6,
+            "reachable_span_dimension": 9,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 7,
+            "reachable_span_dimension": 10,
+            "difference_readout_annihilates_span": true
+          },
+          {
+            "field_order": 8,
+            "reachable_span_dimension": 12,
+            "difference_readout_annihilates_span": false
+          }
+        ],
+        "free_operators": "unperturbed generator and A observation projector",
+        "scope": "Exact sufficient equality certificate for every response word and every bounded scalar protocol; no numerical time grid."
+      },
+      "exact_finite_field_mean_third_time_derivative_identity": true,
+      "first_differing_mean_field_order": 9,
+      "difference_mean_field_coefficient_leading_t3": "1/1382400",
+      "exact_finite_field_no_exit_third_time_derivative_identity": true,
+      "first_differing_no_exit_field_order": 8,
+      "difference_no_exit_field_coefficient_leading_t3": "-1/2764800"
+    }
+  ],
+  "binary_actuator_two_time_counterexample": {
+    "hidden_states": 4,
+    "full_Markov_states": 5,
+    "stationary_weights": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "actuator_values": [
+      "1",
+      "1",
+      "-1",
+      "-1"
+    ],
+    "K_plus": [
+      [
+        "-1/2",
+        "1/4",
+        "1/8",
+        "1/8"
+      ],
+      [
+        "1/4",
+        "-1",
+        "3/8",
+        "3/8"
+      ],
+      [
+        "1/8",
+        "3/8",
+        "-3/4",
+        "1/4"
+      ],
+      [
+        "1/8",
+        "3/8",
+        "1/4",
+        "-3/4"
+      ]
+    ],
+    "K_minus": [
+      [
+        "-3/4",
+        "1/4",
+        "3/8",
+        "1/8"
+      ],
+      [
+        "1/4",
+        "-3/4",
+        "3/8",
+        "1/8"
+      ],
+      [
+        "3/8",
+        "3/8",
+        "-1",
+        "1/4"
+      ],
+      [
+        "1/8",
+        "1/8",
+        "1/4",
+        "-1/2"
+      ]
+    ],
+    "common_covariance": "exp(-t) cosh(t/(2 sqrt(2)))",
+    "common_covariance_Laplace_transform": "(z + 1)/((z + 1)**2 - 1/8)",
+    "common_hidden_characteristic_polynomial": "z*(z + 1)*(8*z**2 + 16*z + 7)/8",
+    "all_binary_actuator_two_time_laws_equal": true,
+    "higher_actuator_moments_plus_minus": [
+      "1/8",
+      "-1/8"
+    ],
+    "time_derivatives_1_through_4_equal_at_every_field": true,
+    "fifth_time_derivative_difference": "(x - 1)**4/(32*x**3)",
+    "field_variable": "x=exp(2h)",
+    "gap_orientation": "plus minus minus",
+    "first_nonzero_field_power_in_fifth_time_derivative": 4,
+    "scope": "A deterministic finite-state counterexample: matching all two-time actuator laws does not match finite-field mean response."
+  },
+  "largest_full_generator_dimension": 6,
+  "largest_pair_response_word_dimension": 12,
+  "source_sha256": {
+    "verify_actuator_hierarchy.py": "87a626ff66b95c54ee8ef2d4b268ab35216c6b63582e5f19118d16f83058ceed"
+  }
+}
