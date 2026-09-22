@@ -47,13 +47,14 @@ def main() -> None:
     scripts = list((ROOT/'scripts').glob('*.py'))
     for script in scripts:
         ast.parse(script.read_text(encoding='utf-8'),filename=str(script))
-    for name in ('checkpoint','finite_accuracy'):
+    for name in ('checkpoint','finite_accuracy','quadrature','minimal_realization'):
         report = json.loads((ROOT/f'reports/{name}.json').read_text())
         require(report['status']=='PASS',f'Saved report is not PASS: {name}')
-    report = json.loads((ROOT/'reports/finite_accuracy.json').read_text())
-    for name,digest in report['source_sha256'].items():
-        require(hashlib.sha256((ROOT/'scripts'/name).read_bytes()).hexdigest()==digest,
-                f'Saved extension report is stale for {name}; rerun its verifier into reports/')
+    for report_name in ('finite_accuracy','quadrature','minimal_realization'):
+        report = json.loads((ROOT/f'reports/{report_name}.json').read_text())
+        for name,digest in report['source_sha256'].items():
+            require(hashlib.sha256((ROOT/'scripts'/name).read_bytes()).hexdigest()==digest,
+                    f'Saved {report_name} report is stale for {name}; rerun its verifier into reports/')
     print(f'PASS: {count} local Markdown links, {len(scripts)} Python syntax checks, '
           'saved report provenance, and unchanged MIT license')
 

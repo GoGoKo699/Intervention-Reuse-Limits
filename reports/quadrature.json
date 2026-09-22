@@ -1,0 +1,258 @@
+{
+  "status": "PASS",
+  "scope": "Deterministic consistency checks, not proof review, optimality, novelty, or finite-field certification.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "theorem_checked": {
+    "bins": "[2^j,2^(j+1)), j=0,...,4n-1",
+    "bin_order": "n-floor(j/4)",
+    "tail_threshold": "2^(4n)",
+    "mode_bound": "2n(n+1)+1",
+    "cubic_coefficient_bound": "8 U^3 W 16^(-n)"
+  },
+  "quadrature": {
+    "cases": [
+      {
+        "order_parameter": 1,
+        "dyadic_bins": 4,
+        "bin_orders": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "source_modes": 14,
+        "compressed_modes": 5,
+        "mode_upper_bound": 5,
+        "component_l1_sum": 0.0116463667578739,
+        "component_bound": 0.06707317073170732,
+        "universal_dimensionless_l1_bound": 0.16000000000000003,
+        "tail_l1": 0.0022764227642276423,
+        "U1_response_bound": 0.32000000000000006
+      },
+      {
+        "order_parameter": 2,
+        "dyadic_bins": 8,
+        "bin_orders": [
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "source_modes": 34,
+        "compressed_modes": 13,
+        "mode_upper_bound": 13,
+        "component_l1_sum": 0.0004944683289586183,
+        "component_bound": 0.0045358910891089115,
+        "universal_dimensionless_l1_bound": 0.010000000000000002,
+        "tail_l1": 5.775577557755776e-05,
+        "U1_response_bound": 0.020000000000000004
+      },
+      {
+        "order_parameter": 3,
+        "dyadic_bins": 12,
+        "bin_orders": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "source_modes": 62,
+        "compressed_modes": 25,
+        "mode_upper_bound": 25,
+        "component_l1_sum": 1.8868750446775617e-05,
+        "component_bound": 0.0002896341463414634,
+        "universal_dimensionless_l1_bound": 0.0006249999999999999,
+        "tail_l1": 1.4114724480578138e-06,
+        "U1_response_bound": 0.0012499999999999998
+      }
+    ],
+    "bins_checked": 24,
+    "max_mass_error": 1.1102230246251565e-16,
+    "max_normalized_moment_error": 3.0005295123536335e-16,
+    "pointwise_kernel_samples": 192,
+    "minimum_normalized_sampled_kernel_gap": -1.9044246855832336e-16,
+    "scope": "Moment and pointwise sign checks are deterministic samples, not a proof."
+  },
+  "exact_rational_integrals": {
+    "cases": [
+      {
+        "order": 1,
+        "exact_component_l1": "13333037/1245717330",
+        "exact_component_bound": "1/8",
+        "float_inverse_integral_error": 0.0
+      },
+      {
+        "order": 2,
+        "exact_component_l1": "288870147/1012752218555",
+        "exact_component_bound": "1/128",
+        "float_inverse_integral_error": 0.0
+      },
+      {
+        "order": 3,
+        "exact_component_l1": "41937104268/6791350840961555",
+        "exact_component_bound": "1/2048",
+        "float_inverse_integral_error": 0.0
+      }
+    ],
+    "tail_exact_l1": "13/1536",
+    "max_float_inverse_integral_error": 0.0,
+    "arithmetic": "fractions.Fraction; no Gaussian node rationality assumed"
+  },
+  "protocols": {
+    "cases": [
+      {
+        "n": 1,
+        "protocol": "constant",
+        "U": 1.0,
+        "max_sampled_error": 0.001343174286659758,
+        "component_response_certificate": 0.0232927335157478,
+        "universal_response_bound": 0.32000000000000006
+      },
+      {
+        "n": 1,
+        "protocol": "sign_changes",
+        "U": 1.0,
+        "max_sampled_error": 0.0006063121326651752,
+        "component_response_certificate": 0.0232927335157478,
+        "universal_response_bound": 0.32000000000000006
+      },
+      {
+        "n": 1,
+        "protocol": "zero_and_restart",
+        "U": 0.8,
+        "max_sampled_error": 0.00018081778834606876,
+        "component_response_certificate": 0.011925879560062877,
+        "universal_response_bound": 0.16384000000000007
+      },
+      {
+        "n": 1,
+        "protocol": "larger_amplitude",
+        "U": 1.3,
+        "max_sampled_error": 0.001551154782513775,
+        "component_response_certificate": 0.05117413553409792,
+        "universal_response_bound": 0.7030400000000001
+      },
+      {
+        "n": 2,
+        "protocol": "constant",
+        "U": 1.0,
+        "max_sampled_error": 8.84516239228611e-05,
+        "component_response_certificate": 0.0009889366579172367,
+        "universal_response_bound": 0.020000000000000004
+      },
+      {
+        "n": 2,
+        "protocol": "sign_changes",
+        "U": 1.0,
+        "max_sampled_error": 0.00010871901068405798,
+        "component_response_certificate": 0.0009889366579172367,
+        "universal_response_bound": 0.020000000000000004
+      },
+      {
+        "n": 2,
+        "protocol": "zero_and_restart",
+        "U": 0.8,
+        "max_sampled_error": 1.805794398465621e-05,
+        "component_response_certificate": 0.0005063355688536253,
+        "universal_response_bound": 0.010240000000000004
+      },
+      {
+        "n": 2,
+        "protocol": "larger_amplitude",
+        "U": 1.3,
+        "max_sampled_error": 0.0001823011721182599,
+        "component_response_certificate": 0.002172693837444169,
+        "universal_response_bound": 0.04394000000000001
+      },
+      {
+        "n": 3,
+        "protocol": "constant",
+        "U": 1.0,
+        "max_sampled_error": 4.909671650885072e-06,
+        "component_response_certificate": 3.7737500893551233e-05,
+        "universal_response_bound": 0.0012499999999999998
+      },
+      {
+        "n": 3,
+        "protocol": "sign_changes",
+        "U": 1.0,
+        "max_sampled_error": 5.930333417947242e-06,
+        "component_response_certificate": 3.7737500893551233e-05,
+        "universal_response_bound": 0.0012499999999999998
+      },
+      {
+        "n": 3,
+        "protocol": "zero_and_restart",
+        "U": 0.8,
+        "max_sampled_error": 1.4744888586562532e-06,
+        "component_response_certificate": 1.9321600457498238e-05,
+        "universal_response_bound": 0.00064
+      },
+      {
+        "n": 3,
+        "protocol": "larger_amplitude",
+        "U": 1.3,
+        "max_sampled_error": 8.913846021640914e-06,
+        "component_response_certificate": 8.290928946313207e-05,
+        "universal_response_bound": 0.0027462499999999996
+      }
+    ],
+    "scale_cases": [
+      {
+        "k": 0.125,
+        "max_sampled_error": 0.00010871901068409962
+      },
+      {
+        "k": 0.7,
+        "max_sampled_error": 0.00010871901068405798
+      },
+      {
+        "k": 3.0,
+        "max_sampled_error": 0.00010871901068407186
+      }
+    ],
+    "protocol_samples": 162,
+    "max_observed_error_over_component_certificate": 0.15714695667514766,
+    "largest_memory_matrix_dimension": 66,
+    "scope": "Selected bounded piecewise constant protocols; all-protocol coverage is analytic."
+  },
+  "paired_realization": {
+    "compressed_modes": 6,
+    "surrogate_states": 13,
+    "full_coefficient_matrix_dimension": 52,
+    "max_realized_kernel_error": 2.7755575615628914e-16,
+    "max_linear_response_error": 1.942890293094024e-16,
+    "max_quadratic_response": 5.377642775528102e-17,
+    "max_full_markov_memory_cubic_error": 1.5265566588595902e-16
+  },
+  "boundaries": {
+    "half_open_endpoints": "PASS",
+    "exact_small_support_and_duplicates": "PASS",
+    "empty_and_zero_mass": "PASS",
+    "tail_only": "PASS",
+    "small_positive_rate": "PASS",
+    "invalid_inputs_rejected": 16,
+    "float64_limit": "n<=255; unrepresentable dimensionless or compressed rates rejected"
+  },
+  "source_sha256": {
+    "verify_checkpoint.py": "ce7a2a981e6a09f7350ad42731afbcafd6c67f2de2bade8d2de16666227e2026",
+    "verify_finite_accuracy.py": "92b1679c91c7318a5e924e2a64f95ae0060eb3b7a9ebf0ab0fee5902fa985838",
+    "verify_quadrature.py": "e3d75844fd05fdfc45d162db087abd3aba7a0c8e61784f11e620d0429a986a12"
+  }
+}

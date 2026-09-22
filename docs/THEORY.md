@@ -212,6 +212,95 @@ The normalized eigenfunctions are $\sqrt2\cos[\pi\ell(j-1/2)/M]$. Their overlaps
 
 This elementary construction has $W=(M-1)/M^2$, so its total correction shrinks with size. The [finite-accuracy note](FINITE_ACCURACY.md) both removes that shrinking-signal feature and proves that a size-independent approximate surrogate nevertheless exists. The exact lower bound must not be advertised as a fixed-error lower bound.
 
-## 9. Status
+## 9. Minimal reversible realization of a positive kernel
+
+Every finite positive kernel with $r$ distinct rates,
+
+$$
+C(t)=\sum_{j=1}^{r}c_j e^{-\lambda_jt},\qquad
+c_j>0,\quad\lambda_j>0,\quad W=\sum_jc_j>0,
+$$
+
+has an irreducible reversible realization with $r+1$ hidden states and
+$|g_i|=\sqrt W$. Adding $A$ gives $r+2$ total states under the same functional
+field rule. This is a corollary of the established finite Jacobi
+inverse-spectral construction, not a claim of new realization theory;
+see [the prior-art audit](PRIOR_ART.md). The proof below states the construction
+explicitly so its positivity and sensitivity bound can be checked.
+
+Define a probability measure on $r+1$ distinct points by
+
+$$
+\nu=\frac12\delta_0+\sum_{j=1}^r\frac{c_j}{2W}\delta_{-\lambda_j}.
+$$
+
+Apply Gram--Schmidt to $1,x,\ldots,x^r$ in $L^2(\nu)$, choosing positive
+leading coefficients. Multiplication by $x$, in this orthonormal polynomial
+basis, has a symmetric tridiagonal matrix $J$ with strictly positive
+off-diagonal entries. The three-term recurrence follows because $x p_i$ is
+orthogonal to $p_j$ for $j<i-1$: transferring multiplication by $x$ gives
+$\langle x p_i,p_j\rangle_\nu=\langle p_i,x p_j\rangle_\nu=0$.
+The adjacent coefficient is the ratio of two positive leading coefficients.
+
+The multiplication operator has eigenvalues $0,-\lambda_1,\ldots,-\lambda_r$.
+Its spectral measure at the first basis vector $e_0$, which represents the
+constant polynomial $1$, is exactly $\nu$. Since $0$ is the largest
+eigenvalue and $J$ has positive neighboring entries, the Perron--Frobenius
+theorem applied after adding a sufficiently large scalar multiple of $I$
+gives a strictly positive normalized null vector $v$. Its first component
+satisfies $v_0^2=\nu(\{0\})=1/2$.
+
+Set
+
+$$
+D=\operatorname{diag}(v),\qquad
+K=D^{-1}JD,\qquad \mu_i=v_i^2,\qquad
+g_i=2\sqrt W\left(\mathbf1_{\{i=0\}}-\frac12\right).
+$$
+
+The positive neighboring entries of $K$ make it irreducible; $K\mathbf1=0$
+follows from $Jv=0$, and all its other off-diagonal entries are zero.
+Thus $K$ is a row generator. Also
+$\mu_iK_{ij}=v_iJ_{ij}v_j=\mu_jK_{ji}$, proving reversibility.
+The identity $\mu_0=1/2$ gives $\langle g\rangle_\mu=0$ and
+$|g_i|=\sqrt W$ for every state.
+
+Write $P(t)=e^{Kt}$. Similarity and the prescribed spectral measure give
+
+$$
+P_{00}(t)=(e^{Jt})_{00}
+=\frac12+\sum_j\frac{c_j}{2W}e^{-\lambda_jt}.
+$$
+
+Stationarity then yields
+
+$$
+\langle g,e^{Kt}g\rangle_\mu
+=4W\mu_0\bigl(P_{00}(t)-\mu_0\bigr)
+=\sum_jc_j e^{-\lambda_jt}.
+$$
+
+Consequently, at fixed $k$, this model reproduces the cubic mean response
+for every bounded weak protocol, as well as the exact passive path law,
+equilibrium curve, linear response and zero quadratic response. If the
+source model has $|g|\le G$, its mass satisfies $W\le G^2$, so the
+realization preserves that sensitivity bound. Repeated rates are merged
+before applying the construction. The case $W=0$ uses the ordinary
+two-state reference.
+
+When all $\lambda_j\ne k$, Section 8 gives the matching lower bound
+$D\ge r+2$ for **any** analytic autonomous finite-state Markov surrogate
+reproducing the cubic step curve. The construction therefore attains the
+exact minimum in that noncollision case. It remains valid if a rate equals
+$k$, but the distinct-pole proof does not establish minimality there.
+The construction puts no prescribed upper bound on microscopic rates and
+does not preserve an arbitrary source topology.
+
+[The minimal-realization verifier](../scripts/verify_minimal_realization.py)
+checks this construction on small deterministic spectra, including a
+collision at $\lambda=k$ and merged repeated rates. These are consistency
+checks, not independent validation or a novelty certificate.
+
+## 10. Status
 
 The model, equations, inverse, and state-count construction are derived here and checked by [the executable verification](VERIFICATION.md). Their publication-level novelty remains under audit against response theory, controlled lumpability, and nonlinear realization theory. No experimental application, optimal controller, universal compression impossibility, or journal-level claim follows from this note.

@@ -2,9 +2,37 @@
 
 [Repository overview](../README.md) · [Core derivation](THEORY.md) · [Prior art](PRIOR_ART.md)
 
-**Working extension, 22 September 2026.** This note contains two complementary derivations. Their mathematical consistency has been checked; originality and optimality have not been established.
+**Working extension, 22 September 2026.** The elementary midpoint bound is retained as a baseline. Section 8 proves a stronger root-exponential certificate by classical positive quadrature. Originality and optimality are not asserted.
 
 The core example has an exact two-state passive description and an $N$-state exact cubic response requirement. This note first keeps that separation at nonvanishing total signal, then proves a constructive response-approximation bound independent of $N$. The approximation is itself realizable by a reversible Markov model, not only a formal memory equation.
+
+## 0. The approximation task and its quantifiers
+
+Fix $k>0$, a sensitivity bound $G<\infty$, a protocol bound $U<\infty$, and a kernel mass $0\le W\le G^2$. The target class $\mathcal F(k,G,W)$ consists of all finite models in [Theory, Section 1](THEORY.md), of arbitrary microscopic size, with $|g_j|\le G$ and $\langle g^2\rangle_\mu=W$. The internal generator is irreducible and reversible. There is no common bound on its rates, spectral gap, or topology.
+
+Every experiment starts from the model's zero-field equilibrium. Its readout is the fixed binary state observable in the core model. For $h(t)=\epsilon u(t)$, the task is the coefficient of $\epsilon^3$ in the single-time mean, with coefficients defined by derivatives divided by factorials. Let $\mathcal U_U(T)$ contain all piecewise-continuous protocols on $[0,T]$ with $|u|\le U$. Define
+
+$$
+\mathcal E_U(F,\widehat F)=
+\sup_{T>0}\ \sup_{u\in\mathcal U_U(T)}\ \sup_{0\le t\le T}
+|m_{3,F}[u](t)-m_{3,\widehat F}[u](t)|.
+$$
+
+One surrogate must serve all protocols and all horizons in this norm. The constructor is supplied the exact finite spectral measure of $C$, as well as $k$. This is a known-kernel compression problem; computation and bit precision of that input are not charged as states. It is not a learning or sample-complexity problem.
+
+For the broad comparison, $\mathcal A_D(k)$ consists of Markov models with at most $D$ states, rates analytic in the same instantaneous scalar field near zero, fixed binary state readout, and a fixed zero-field stationary preparation. Require the same complete stationary passive visible path law, the equilibrium mean $\tanh h$ near zero, the reference linear mean response for every protocol, and zero quadratic mean response. No reversibility, topology, or derivative bound is imposed on this broad surrogate class. In particular a coordinate named $g$ need not exist for a general surrogate.
+
+The minimax question is
+
+$$
+E_D(k,G,W,U)=
+\sup_{F\in\mathcal F(k,G,W)}\ \inf_{\widehat F\in\mathcal A_D(k)}
+\mathcal E_U(F,\widehat F).
+$$
+
+The results here are constructive **upper bounds** for this broad problem: they produce the more restricted surrogates in the original reversible rate-rule family, with the same $k,W$ and $|\widehat g|\le G$. They also preserve the passive path law under every microscopic initial law with the same visible initial law. Their microscopic rates and topology may change. A lower bound proved only for positive kernels, reversible surrogates, or this rate-rule family would not automatically bound $E_D$.
+
+The norm concerns Taylor coefficients only. None of its quantifiers asserts a Taylor remainder uniform in $T$, $N$, or the field amplitude. Finite-field prediction and kernel acquisition remain separate tasks.
 
 ## 1. A bounded-coupling, nonvanishing-signal exact family
 
@@ -51,7 +79,7 @@ This is a bound on a cubic **coefficient**, not on a finite-field signal without
 
 ## 2. The response error controlled by a kernel approximation
 
-For fixed $k$, consider two kernels with equal mass $C(0)=\widetilde C(0)=W$. Let $m_3[u]$ and $\widetilde m_3[u]$ denote their cubic mean-response coefficients for the same zero-field preparation and protocol $|u(t)|\le U$.
+For fixed $k$, consider two kernels with equal mass $C(0)=\widetilde C(0)=W$. Let $m_3[u]$ and $\widetilde m_3[u]$ denote their cubic mean-response coefficients, each model started from its own zero-field equilibrium and driven by the same protocol $|u(t)|\le U$.
 
 The common linear response obeys $|m_1|\le U$, and hence $|u(u-m_1)|\le2U^2$. Subtracting the two equations for $\delta$ in the core note and using the stable filter with decay $2k$ gives
 
@@ -136,7 +164,7 @@ Add the state $A$ and use exactly the **functional rate rule** of the core model
 
 If the original $|g_j|\le G$, then $W\le G^2$ and the realized $|\widetilde g|=\sqrt W\le G$. When $W=0$, the ordinary two-state reference already suffices and no paired construction is needed.
 
-The paired realization is an explicit construction, not a claim of minimal state count for a prescribed kernel. Positivity and realization theory require further prior-art comparison.
+The paired realization remains a simple regression baseline. [Theory, Section 9](THEORY.md) now gives a smaller $r+2$-state realization by standard Jacobi inverse spectral theory, retaining the same sensitivity bound. For noncolliding rates it attains the exact state lower bound.
 
 ## 6. Consequence for the research claim
 
@@ -150,10 +178,163 @@ produces an admissible surrogate with at most $2q+1$ states, **independent of th
 
 The resulting scientific distinction is not simply that the first construction had weak total signal. Exact complexity can grow without bound even with a nonvanishing response correction, while finite-accuracy complexity is controlled by tolerance and kinetic-kernel information.
 
-The $1/q$ error rate is an elementary upper bound, not a minimax or novelty claim. Positive exponential approximation has an established literature, including stronger rates under different assumptions; see [the audit](PRIOR_ART.md). A useful publication contribution must survive that comparison, specify the physically meaningful task, and address optimality or a sharper operational distinction.
+The $1/q$ error rate is an elementary upper bound, not a minimax or novelty claim. Section 8 improves it under the same assumptions. Positive exponential approximation supplies the method and the root-exponential order; see [the audit](PRIOR_ART.md). A useful publication contribution still needs a distinctive operational statement beyond those standard tools.
 
 ## 7. Checks and remaining boundary
 
 [The executable extension](../scripts/verify_finite_accuracy.py) verifies the normalized spectral weights, nonvanishing signal bound, positive reversible realization, and agreement of its master equation with the memory equations. It also tests the protocol certificate on deterministic sign-changing protocols. See [verification details](VERIFICATION.md).
 
 Still not established: the optimal dependence on tolerance, stable inference from finite noisy data, a finite-field remainder uniform in system size and observation horizon, or a specific fluid or molecular implementation. No large simulation is needed for the present derivations. The [next work order](../work_orders/CURRENT.md) targets these mathematical and novelty issues rather than a simulation campaign.
+
+## 8. A stronger bound by positive Gaussian quadrature
+
+The midpoint construction is not the strongest available certificate. Applying classical positive Gaussian quadrature separately on dyadic rate intervals yields a root-exponential bound without imposing a hidden spectral gap, a maximum microscopic rate, or a smooth spectral density. The Gaussian-quadrature machinery is established approximation theory; the result below is its explicit application to the operational response norm and Markov realization used here. It is neither a novelty claim for quadrature nor an optimality claim.
+
+**Theorem.** Let $C(t)=\sum_i c_i e^{-\lambda_i t}$ be any finite positive kernel, with $c_i>0$, $\lambda_i>0$, and total mass $W$. For every integer $n\ge1$, there is a positive kernel $\widetilde C_n$ with the same mass and at most
+
+$$
+q_n=2n(n+1)+1
+$$
+
+active rates, all strictly positive, such that
+
+$$
+\int_0^\infty e^{-kt}|C(t)-\widetilde C_n(t)|\,dt
+\le \frac{4W}{k}\,16^{-n}.
+$$
+
+Consequently, for every bounded piecewise continuous protocol $|u(t)|\le U$ and every finite horizon $T$,
+
+$$
+\boxed{\sup_{0\le t\le T}|m_3[u](t)-\widetilde m_{3,n}[u](t)|
+\le 8U^3W\,16^{-n}.}
+$$
+
+The same kernel and its Markov realization work for all these protocols and horizons. Section 5 gives an elementary paired realization with at most $2q_n+1=4n(n+1)+3$ states. The [Jacobi realization](THEORY.md#9-minimal-reversible-realization-of-a-positive-kernel) improves this to $q_n+2=2n(n+1)+3$ states. Both preserve the passive path law, equilibrium curve, dynamic linear response, and vanishing quadratic mean response. Both use $|\widetilde g_i|=\sqrt W$, so the original bound $|g_i|\le G$ is preserved as well.
+
+### 8.1 One dyadic interval
+
+Use dimensionless time $y=kt$ and rates
+
+$$
+a_i=1+\lambda_i/k>1,
+\qquad F(y)=e^{-y}C(y/k)=\sum_i c_i e^{-a_i y}.
+$$
+
+Consider a positive measure $\nu$ of mass $w$ supported on a finite subset of $[A,2A]$, where $A>0$. Its contribution to $F$ is $F_\nu(y)=\int e^{-ay}\,d\nu(a)$. If the support contains at most $d$ distinct points, retain it exactly. Otherwise use the $d$-point Gaussian quadrature rule for $\nu$. Its nodes lie strictly between the smallest and largest support points, its weights are positive, and it integrates all polynomials of degree at most $2d-1$ exactly. In particular it preserves $w$.
+
+Write $p_d$ for the monic degree-$d$ orthogonal polynomial whose roots are those nodes, and $Q_d(f)$ for the quadrature value. For fixed $y\ge0$, let $H$ be the polynomial of degree at most $2d-1$ matching $f(a)=e^{-ay}$ and its first derivative at the nodes. The Hermite-interpolation remainder gives, at every support point,
+
+$$
+0\le f(a)-H(a)
+\le \frac{y^{2d}e^{-Ay}}{(2d)!}\,p_d(a)^2.
+$$
+
+Both inequalities follow from $f^{(2d)}(a)=y^{2d}e^{-ay}\ge0$ and $a\ge A$. Exactness on $H$, together with $H=f$ at the nodes, implies
+
+$$
+0\le F_\nu(y)-Q_d(e^{-ay})
+\le \frac{y^{2d}e^{-Ay}}{(2d)!}\int p_d(a)^2\,d\nu(a).
+$$
+
+The quadrature contribution therefore underestimates $F_\nu$ pointwise. Integration in $y$ yields
+
+$$
+\int_0^\infty |F_\nu(y)-Q_d(e^{-ay})|\,dy
+\le \frac{1}{A^{2d+1}}\int p_d(a)^2\,d\nu(a).
+$$
+
+The monic orthogonal polynomial minimizes the squared $L^2(\nu)$ norm among monic degree-$d$ polynomials. Compare it with the monic rescaled Chebyshev polynomial
+
+$$
+r_d(a)=2(A/4)^d\,T_d\!\left(\frac{2a-3A}{A}\right),
+\qquad |r_d(a)|\le 2(A/4)^d\quad(A\le a\le2A).
+$$
+
+It follows that $\int p_d^2\,d\nu\le4w(A/4)^{2d}$, and hence
+
+$$
+\boxed{\int_0^\infty |F_\nu(y)-Q_d(e^{-ay})|\,dy
+\le\frac{4w}{A}\,16^{-d}.}
+$$
+
+Since the difference is nonnegative, its integral is also exactly the Gaussian-quadrature error for $a\mapsto1/a$. This identity provides a direct way to check the integrated kernel certificate without a numerical time cutoff.
+
+### 8.2 Rate intervals, degree allocation, and the tail
+
+Fix $n\ge1$, and write $\nu=\sum_i c_i\delta_{a_i}$ for the full dimensionless spectral measure. Apply the preceding one-interval argument to its restrictions. Partition $1\le a<2^{4n}$ into the half-open intervals
+
+$$
+I_j=[2^j,2^{j+1}),\qquad 0\le j<4n.
+$$
+
+On interval $I_j$, allocate
+
+$$
+d_j=n-\lfloor j/4\rfloor\ge1
+$$
+
+Gaussian nodes, retaining the measure exactly whenever it already has at most $d_j$ distinct support points. Empty intervals need no nodes. Let $w_j$ be the mass in $I_j$. Writing $j=4s+r$ with $0\le r\le3$ gives
+
+$$
+2^{-j}16^{-d_j}=16^{-n}2^{-r}\le16^{-n}.
+$$
+
+The one-interval bound therefore makes the total error from these intervals at most $4W_{\rm core}16^{-n}$, where $W_{\rm core}=\sum_jw_j$.
+
+For the remaining mass $W_{\rm tail}$ at $a\ge 2^{4n}$, move all of it to the single rate $a_*=2^{4n}$. This preserves mass and overestimates the tail pointwise. Its integrated error is
+
+$$
+\int_{a\ge a_*}\left(\frac1{a_*}-\frac1a\right)d\nu(a)
+\le W_{\rm tail}16^{-n}.
+$$
+
+Combining the core and tail errors with the triangle inequality yields
+
+$$
+\int_0^\infty |F(y)-\widetilde F_n(y)|\,dy
+\le (4W_{\rm core}+W_{\rm tail})16^{-n}
+\le4W16^{-n}.
+$$
+
+The node count is bounded by
+
+$$
+\sum_{j=0}^{4n-1}d_j+1
+=4\sum_{d=1}^n d+1
+=2n(n+1)+1.
+$$
+
+The final $+1$ is unnecessary when the tail is empty. Nodes or original atoms within the first interval are strictly greater than one because every original $a_i>1$; all other nodes and the tail node exceed one automatically. Returning to physical rates $\widetilde\lambda=k(a-1)$ thus gives strictly positive rates throughout. Changing variables back to $t$ and applying Section 2 proves the theorem.
+
+### 8.3 State count at a prescribed tolerance
+
+For $U^3W>0$ and a cubic-coefficient tolerance $\varepsilon>0$, it is sufficient to choose
+
+$$
+n=\max\!\left\{1,\left\lceil\log_{16}\!\left(\frac{8U^3W}{\varepsilon}\right)\right\rceil\right\}.
+$$
+
+The resulting reversible Markov surrogate uses at most $2n(n+1)+3$ states with the Jacobi realization, or $4n(n+1)+3$ with the explicit paired construction. Thus the constructive state upper bound is
+
+$$
+O\!\left(\left[1+\log_+\!\left(\frac{U^3W}{\varepsilon}\right)\right]^2\right),
+\qquad \log_+x=\max\{0,\log x\},
+$$
+
+independently of the original state count and spectral range. For a prescribed mode budget $q\ge5$, the explicit root-exponential certificate is obtained with
+
+$$
+n(q)=\left\lfloor\frac{\sqrt{2q-1}-1}{2}\right\rfloor,
+\qquad
+\sup_{t\le T}|m_3[u](t)-\widetilde m_3[u](t)|
+\le8U^3W\,16^{-n(q)}.
+$$
+
+For small budgets the earlier $U^3W/q$ bound can be better; one may choose whichever construction supplies the smaller certificate. If $W=0$, the two-state reference suffices exactly. If $U=0$, there is no response to approximate.
+
+The proof requires the kernel's spectral measure. It supplies no inference method from passive observations, and no statistically stable reconstruction from noisy response data. It permits new rates and new microscopic topology, as does the earlier midpoint construction. There is still no matching lower bound in tolerance, no claim that the state count is minimal, and no finite-amplitude guarantee from this cubic-coefficient theorem alone.
+
+### 8.4 Reduction to established approximation results
+
+The asymptotic order also follows from Koyama's positive quadrature results identified in [the prior-art audit](PRIOR_ART.md). Here is the reduction, rather than a claim that a different norm alone supplies novelty. For $0<\delta<1$, clamp each rate into $[k\delta,k/\delta]$. Section 3's exact transport identity shows that this costs at most $W\delta$ in the normalized norm $k\int_0^\infty e^{-kt}|\Delta C(t)|dt$, while preserving mass. On that finite interval, the established mass-preserving positive quadrature theorem gives uniform-time error $O(W\delta)$ with $O(\log^2(1/\delta))$ nodes. Its uniform-time bound also controls the normalized damped norm since $k\int_0^\infty e^{-kt}dt=1$. Retain measures with fewer nodes exactly. The response inequality and reversible realization then complete the same asymptotic state upper bound. The elementary proof above makes constants and rate allocation explicit; it does not create a new approximation-theory claim.
