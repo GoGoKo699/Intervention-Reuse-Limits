@@ -304,3 +304,5 @@ checks, not independent validation or a novelty certificate.
 ## 10. Status
 
 The model, equations, inverse, and state-count construction are derived here and checked by [the executable verification](VERIFICATION.md). Their publication-level novelty remains under audit against response theory, controlled lumpability, and nonlinear realization theory. No experimental application, optimal controller, universal compression impossibility, or journal-level claim follows from this note.
+
+[Finite Accuracy, Sections 9–10](FINITE_ACCURACY.md) now adds finite-sample lower bounds against the full analytic Markov surrogate class, alongside the constructive upper bounds. The tolerance dependence has matching logarithmic state-growth order when active target rates are at most $3k$; the unrestricted-rate minimax order remains open.

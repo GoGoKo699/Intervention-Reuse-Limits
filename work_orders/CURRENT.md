@@ -1,38 +1,41 @@
-# Current work order: an operational distinction beyond standard realization
+# Current work order: the remaining unrestricted tolerance gap
 
-## Completed takeover checkpoint — 22 September 2026
+## Completed checkpoint — 22 September 2026
 
-The inspected starting point was clean `main` at `80dc6098613b6561428d017b4a41553607fde67b`. The original `make check` was reproduced using Python 3.13.5 and the pinned dependencies. The original MIT license and both original mathematical verifiers remain unchanged.
+This continuation started from clean `main` at `78004603026a8058983e471f0bad73b2310abc12`. It preserves the existing MIT license, all four earlier mathematical verifiers, and their saved reports.
 
-The audit found no substantive error in the existing passive-law, cubic-kernel, nonvanishing-signal, or midpoint-compression derivations. The new mathematical checkpoint is:
+The earlier checkpoint established exact passive two-state compression versus arbitrarily large exact cubic-response state count; positive-quadrature compression with `O(log^2(1/tolerance))` states; and an `r+2`-state reversible realization of an `r`-mode kernel. This checkpoint adds actual response-norm lower bounds:
 
-1. **A precise known-kernel approximation task.** `docs/FINITE_ACCURACY.md`, Section 0, fixes preparation, binary readout, coefficient norm, protocol/horizon quantifiers, model and surrogate classes, and information supplied to the constructor. General analytic Markov surrogates remain the broad comparison class.
-2. **Stronger compression.** Tapered positive Gaussian quadrature on dyadic damped-rate intervals gives error at most `8 U^3 W 16^(-n)` using at most `2n(n+1)+1` kernel modes. The same surrogate works for every bounded protocol and every finite horizon; there is no original spectral-gap or maximum-rate assumption. Proof: `docs/FINITE_ACCURACY.md`, Section 8. Evidence: `scripts/verify_quadrature.py` and `reports/quadrature.json`.
-3. **Sharp generic exact realization.** A positive kernel with `r` distinct modes is realized by a reversible birth–death internal generator with `r+1` hidden states and sensitivity magnitude `sqrt(W)`. Including the visible state A gives `r+2` states, attaining the exact lower bound when no hidden decay rate equals k. Thus the quadrature construction needs at most `2n(n+1)+3` total states. Proof: `docs/THEORY.md`, Section 9. Evidence: `scripts/verify_minimal_realization.py` and `reports/minimal_realization.json`.
-4. **Novelty reduced, not certified.** Positive quadrature and Jacobi inverse spectral theory supply the mathematical machinery. The root-exponential order is a short consequence of established approximation results. Both 2026 leads and the coarse second-order paper were inspected at full-text level; Chowdhury already supplies exact ordinary visible-law agreement with altered entropy-selected dynamics. See the source-by-source audit and access depths in `docs/PRIOR_ART.md`.
+1. **Complete two-state characterization and witness.** Every admissible two-state model has rates `k r(h) exp(±h)` with `r(0)=1`, `r'(0)=0`. Its cubic freedom is one unrestricted real coefficient. Two step samples of a three-state target force error at least `15 W U^3 / [8(exp(3)+6 exp(1/2))]`, approximately `0.06254614958 W U^3`. This is exact for the two-sample minimax problem, not asserted optimal for the all-protocol norm.
+2. **A lower bound for every state budget.** For `D>=2`, set `r=3D-4`. The broad minimax error obeys `E_D >= 7 W U^3 / [3200 r^3 (36e)^(2r-2)]`. The proof uses a finite difference filter and a positive sampled Hankel matrix of one target with `3D-2` states. It allows all analytic Markov surrogates in the original comparison class, including nonreversible models, Jordan blocks, and unrestricted generator derivatives. The sample horizon is `(6D-7) log(2)/k`.
+3. **Matching order with a target rate cap.** Restricting only target active rates to `lambda<=3k` gives necessary and sufficient `Theta(log(W U^3/tolerance))` states at fixed positive W,U. No hidden spectral-gap lower bound is imposed. The broad surrogate class is unchanged. The unrestricted target problem still has logarithmic necessary versus squared-logarithmic sufficient state growth.
 
-These are proofs accompanied by internal computational checks, not external proof review. Saved local reports and GitHub Actions are separate evidence. See `docs/VERIFICATION.md` for reproduction and scope.
+Proofs: `docs/FINITE_ACCURACY.md`, Sections 9–10. Evidence: `scripts/verify_response_lower_bounds.py` and its generated report. Definitions and quantifiers remain in Section 0; earlier proofs are retained. Verification procedures and precise computational scope are in `docs/VERIFICATION.md`.
 
-## Scientific assessment and publication scope
+The prior-art audit now compares sampled Hankel and stochastic realization bounds. The linear lift, rank obstruction, singular-value bound, positive quadrature, and inverse spectral construction are established ingredients. The new application-specific claims are the bridge to this constrained cubic-response norm, the explicit target witnesses, and the tolerance state laws. Their originality is not certified by deriving them here.
 
-A defensible research note presently concerns finite reversible stochastic models, exact passive binary path compression, cubic mean-response sufficiency, and tolerance-dependent known-kernel Markov realization. It does not establish a new general principle of hidden response, a new exponential approximation method, an optimal tolerance rate, noisy identification, or finite-amplitude observability.
+## Publication scope
 
-Manuscript writing remains on hold. The combined construction is useful and more tightly characterized, but the audit has not established a distinctive publishable contribution beyond the application of standard tools. Do not turn a successful check or sharper constant into a publication claim.
+The narrow candidate story is exact passive compression, exact nonlinear-response complexity, and tolerance-controlled Markov reuse under a specified actuator and readout. The capped-target theorem is complete at the level of state-growth order. It is not a theorem about finite-amplitude signals, learning from data, memory bits, arbitrary dynamical surrogates, or turbulence.
 
-## Single next priority
+Manuscript writing remains on hold for a precise closest-theorem comparison and a clear operational explanation. Kotsalis–Shamma's HMM reduction paper and Frazho's bilinear realization paper remain full-text access gaps. The active-rate cap must be explained as additional information about target relaxation times if it is foregrounded. Do not treat the absence of an exact theorem in a bounded search as a novelty certificate.
 
-**Find a nontrivial lower bound or separating witness in the actual cubic response norm for the broad analytic Markov surrogate class, or document why the strongest plausible statement follows from known realization theory.**
+Closing the unrestricted-rate gap is not automatically a prerequisite to a paper if the completed capped-target result supports a distinctive, meaningful scope. Conversely, matching asymptotic order alone does not establish that scope.
 
-Start with a finite set of step-response samples separating an admissible target from every two-state surrogate that preserves the required passive/static/linear/quadratic behavior. Establish the exact two-state response class before optimizing the witness. Then assess whether the argument scales with tolerance; a two-state witness alone is not the final paper target.
+## Single next mathematical priority
 
-Do not substitute a kernel-approximation lower bound for a response-norm lower bound. Do not impose reversibility, positive residues, topology, rate bounds, or generator-derivative bounds on general surrogates without separating and motivating the new problem. Arbitrarily weak poles do not imply experimentally resolvable degrees of freedom. The constructive `O(log^2(1/tolerance))` upper bound rules out microscopic-size-dependent fixed-accuracy lower bounds at bounded W and U.
+**Determine whether unrestricted target rates genuinely require squared-logarithmic state growth, or whether a logarithmic-state construction exists in the allowed surrogate class.**
 
-Keep the finite-field and noisy-kernel-acquisition tasks separate. Open one only when needed for the selected operational statement, and prove the relevant remainder or statistical bound before claiming it. Frazho's full paper remains an access-limited comparison; the bibliography is not exhaustive.
+Start by assessing whether multiscale target spectra strengthen the response-sample lower bound beyond the present fixed-band witnesses. If using nonuniform sample times, preserve the finite-dimensional factorization for arbitrary analytic Markov surrogates; the convenient uniform-grid recurrence cannot simply be assumed. Any new lower bound must be in the actual response norm, with sample horizon and weight dependence explicit.
+
+In parallel with the mathematical comparison, check the closest Hankel/HMM and exponential-approximation results for a direct reduction. A documented reduction to known work is a valid checkpoint. Do not restrict general surrogates to positive kernels, reversible dynamics, bounded derivatives, or a chosen topology merely to force a bound. The present lower theorem already avoids those restrictions.
+
+Keep finite-field remainder control and noisy coefficient acquisition separate. Open one only when needed for a selected physical claim, and prove the required quantitative bound before adding that interpretation. Coefficient samples in these witnesses are not directly finite-field or noise-certified measurements.
 
 ## Evidence discipline and completion rule
 
-Run `make check` in the pinned environment. Fresh output goes into `.check-output/`. If a verifier changes, regenerate its saved report using the documented command; never hand-edit metrics. Preserve the baseline verifier, license, unrelated owner work, and non-forced Git history.
+Run `make check` in the pinned Python 3.13 environment. Fresh reports go into `.check-output/`. Regenerate saved reports when calculation sources change; never hand-edit metrics. Preserve the original license, baseline verifiers, unrelated owner work, and non-forced Git history. A local PASS and a GitHub Actions result are separate evidence.
 
-Keep the public repository free of source fiction, conversational material, and unrelated projects. Do not relabel this model as turbulence, claim independent validation from internal checks, or make acceptance or journal-tier promises.
+Keep the public repository free of source fiction, conversational material, and unrelated projects. Do not claim independent validation from internal checks, experimental implementation, acceptance, or a journal tier.
 
-The next checkpoint must deliver a proof, counterexample, or precise reduction to prior work, plus synchronized claims and appropriate checks. Another plan, bibliography, simulator, or manuscript draft alone does not complete the task.
+The next checkpoint must deliver a proof, counterexample, or precise reduction to prior work, together with synchronized claims and appropriate checks. Another plan, bibliography, simulator, or manuscript draft alone is not completion.

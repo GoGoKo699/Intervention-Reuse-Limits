@@ -1,0 +1,226 @@
+{
+  "status": "PASS",
+  "scope": "Small deterministic proof-identity checks; no minimax optimization or interval certification.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "two_state": {
+    "normalization": "W=U=k=1; general bound scales as W U^3 and times as 1/k",
+    "symbolic_coefficient_equations": 3,
+    "exact_finite_field_step_expansion": true,
+    "sampling_tau": [
+      "1/4",
+      "3/2"
+    ],
+    "normalized_two_sample_minimax_exact": "15/(8*(6*exp(1/2) + exp(3)))",
+    "normalized_two_sample_minimax_decimal": "0.06254614957766707347640835890986370919214669129244753526",
+    "optimal_alpha_decimal": "0.1687576655818169183689242503748009094565244987568199495",
+    "all_alpha_dual_identity": true,
+    "scope": "Exact minimax for the two specified samples, not the all-protocol optimum."
+  },
+  "target_hankel_witnesses": {
+    "normalization": "W=U=k=1; bounds and filtered weights scale by W U^3",
+    "filter_coefficients_lag_0_to_3": [
+      "-1/16",
+      "9/16",
+      "-3/2",
+      "1"
+    ],
+    "filter_l1_norm_exact": "25/8",
+    "cases": [
+      {
+        "state_budget_D": 2,
+        "target_modes_r": 2,
+        "target_total_states_by_jacobi": 4,
+        "hankel_dimension": 2,
+        "maximum_raw_sample_index": 5,
+        "sample_time_spacing_k_t": "log(2)",
+        "normalized_rates_interval": [
+          2,
+          3
+        ],
+        "working_decimal_digits": 150,
+        "minimum_filtered_weight": "0.00823974609375",
+        "proved_filtered_weight_floor": "0.00341796875",
+        "filter_identity_max_abs_error": "2.74466938908167608153107523609035965215454152e-152",
+        "vandermonde_factorization_max_abs_error": "0.0",
+        "computed_hankel_smallest_eigenvalue": "0.00001987798394735830292633829244736222972239613925882697824110931805607558",
+        "computed_response_witness_8_lambda_min_over_25r": "0.000003180477431577328468214126791577956755583382281412316518577490888972092",
+        "proved_conservative_response_lower_bound": "0.00000002855381289352722449055978927973665436479494663167411658097970041770694",
+        "exact_rational_vandermonde": {
+          "exact_inverse_checked": true,
+          "exact_lagrange_row_identities": 2,
+          "maximum_inverse_row_l1_rational": "18",
+          "combinatorial_row_bound_rational": "36",
+          "e_lower_series_terms": 19,
+          "rational_certificate_below_36e_power": true
+        },
+        "eigenvalue_relative_change_100_to_150_digits": "1.96476211117007802481206091475581521049102933e-100"
+      },
+      {
+        "state_budget_D": 3,
+        "target_modes_r": 5,
+        "target_total_states_by_jacobi": 7,
+        "hankel_dimension": 5,
+        "maximum_raw_sample_index": 11,
+        "sample_time_spacing_k_t": "log(2)",
+        "normalized_rates_interval": [
+          2,
+          3
+        ],
+        "working_decimal_digits": 150,
+        "minimum_filtered_weight": "0.0032958984375",
+        "proved_filtered_weight_floor": "0.0013671875",
+        "filter_identity_max_abs_error": "3.95681699471360693536958735610203465483701369e-152",
+        "vandermonde_factorization_max_abs_error": "0.0",
+        "computed_hankel_smallest_eigenvalue": "0.0000000000000001117954420387680643144704952326867127410259245173026591961238996250921",
+        "computed_response_witness_8_lambda_min_over_25r": "0.000000000000000007154908290481156116126111694891949615425659169107370188551929576005896",
+        "proved_conservative_response_lower_bound": "0.000000000000000000002080952596982618300787185798928219890026951746922243824842777528952686",
+        "exact_rational_vandermonde": {
+          "exact_inverse_checked": true,
+          "exact_lagrange_row_identities": 5,
+          "maximum_inverse_row_l1_rational": "5996376",
+          "combinatorial_row_bound_rational": "17915904",
+          "e_lower_series_terms": 19,
+          "rational_certificate_below_36e_power": true
+        },
+        "eigenvalue_relative_change_100_to_150_digits": "6.50122871171775716023989816686886144878502437e-88"
+      },
+      {
+        "state_budget_D": 4,
+        "target_modes_r": 8,
+        "target_total_states_by_jacobi": 10,
+        "hankel_dimension": 8,
+        "maximum_raw_sample_index": 17,
+        "sample_time_spacing_k_t": "log(2)",
+        "normalized_rates_interval": [
+          2,
+          3
+        ],
+        "working_decimal_digits": 150,
+        "minimum_filtered_weight": "0.0020599365234375",
+        "proved_filtered_weight_floor": "0.0008544921875",
+        "filter_identity_max_abs_error": "7.77022597641248365649218620499201498234929433e-152",
+        "vandermonde_factorization_max_abs_error": "4.5522099189454386860906770724261070784768503e-159",
+        "computed_hankel_smallest_eigenvalue": "2.838782718047998718412903289094181567288271668956787628173404107282743e-28",
+        "computed_response_witness_8_lambda_min_over_25r": "1.135513087219199487365161315637672626915308667582715051269361642913097e-29",
+        "proved_conservative_response_lower_bound": "5.785226186319064950759709768862668527363318846733911804111000943699115e-34",
+        "exact_rational_vandermonde": {
+          "exact_inverse_checked": true,
+          "exact_lagrange_row_identities": 8,
+          "maximum_inverse_row_l1_rational": "2882427817500",
+          "combinatorial_row_bound_rational": "64024066262016/5",
+          "e_lower_series_terms": 19,
+          "rational_certificate_below_36e_power": true
+        },
+        "eigenvalue_relative_change_100_to_150_digits": "6.38187852106145889516647273841565759996012986e-76"
+      }
+    ],
+    "eigenvalue_scope": "High-precision numerical consistency, not interval-certified minima.",
+    "lower_bound_scope": "The conservative analytic bound is proved in the note; sample eigenvalues do not establish minimax optimality."
+  },
+  "surrogate_recurrences": {
+    "working_decimal_digits": 100,
+    "cases": [
+      {
+        "case": "two_state_arbitrary_alpha",
+        "states_D": 2,
+        "full_coefficient_hierarchy_dimension": 8,
+        "stationary_reduced_hierarchy_dimension": 4,
+        "exact_hierarchy_intertwining": true,
+        "zero_mass_generator_eigenvalues": {
+          "-2": 1
+        },
+        "defective_eigenvalues": [],
+        "stationary_jordan_observable_coupling_exact": null,
+        "unfiltered_recurrence_degree": 4,
+        "filtered_recurrence_degree": 1,
+        "exact_filter_divisibility": true,
+        "raw_samples_checked": 10,
+        "max_full_reduced_state_error": "0.0",
+        "max_linear_reference_error": "0.0",
+        "max_quadratic_mean_abs": "0.0",
+        "max_raw_recurrence_error": "5.13451367177584464667246515840289884128787693e-102",
+        "max_filtered_recurrence_error": "4.18574484112161248370037920521975449018033445e-102"
+      },
+      {
+        "case": "three_state_reversible",
+        "states_D": 3,
+        "full_coefficient_hierarchy_dimension": 12,
+        "stationary_reduced_hierarchy_dimension": 7,
+        "exact_hierarchy_intertwining": true,
+        "zero_mass_generator_eigenvalues": {
+          "-2": 1,
+          "-9/5": 1
+        },
+        "defective_eigenvalues": [],
+        "stationary_jordan_observable_coupling_exact": null,
+        "unfiltered_recurrence_degree": 7,
+        "filtered_recurrence_degree": 4,
+        "exact_filter_divisibility": true,
+        "raw_samples_checked": 16,
+        "max_full_reduced_state_error": "7.14367119551421863884864717690838099657443747e-102",
+        "max_linear_reference_error": "7.14367119551421863884864717690838099657443747e-102",
+        "max_quadratic_mean_abs": "8.69704709215407468348989748212731136028718382e-102",
+        "max_raw_recurrence_error": "9.63767749668251274372012312001848471364022008e-102",
+        "max_filtered_recurrence_error": "1.00397140647760823346940303919065556150916637e-101"
+      },
+      {
+        "case": "four_state_nonreversible_defective",
+        "states_D": 4,
+        "full_coefficient_hierarchy_dimension": 16,
+        "stationary_reduced_hierarchy_dimension": 10,
+        "exact_hierarchy_intertwining": true,
+        "zero_mass_generator_eigenvalues": {
+          "-2": 1,
+          "-8/5": 2
+        },
+        "defective_eigenvalues": [
+          {
+            "eigenvalue": "-8/5",
+            "algebraic_multiplicity": 2,
+            "geometric_multiplicity": 1
+          }
+        ],
+        "stationary_jordan_observable_coupling_exact": "1/625",
+        "unfiltered_recurrence_degree": 10,
+        "filtered_recurrence_degree": 7,
+        "exact_filter_divisibility": true,
+        "raw_samples_checked": 22,
+        "max_full_reduced_state_error": "1.25014245921498826179851325595896667440052656e-101",
+        "max_linear_reference_error": "7.14367119551421863884864717690838099657443747e-102",
+        "max_quadratic_mean_abs": "1.98748325597189479824918706344182881752689992e-101",
+        "max_raw_recurrence_error": "3.26753521792072521811905891115596842478430387e-101",
+        "max_filtered_recurrence_error": "1.94503128600070243972610623832160848489313535e-101"
+      }
+    ],
+    "largest_matrix_dimension": 16,
+    "scope": "Exact intertwining/divisibility plus high-precision trajectory checks; not a numerical rank test."
+  },
+  "independent_analytic_master_equation": {
+    "case": "four_state_nonreversible_defective",
+    "time_k_t": "7/10",
+    "matrix_dimension": 4,
+    "working_decimal_digits": 100,
+    "cubic_coefficient_from_hierarchy": "-0.0775105457444527926866029744458487067156821905",
+    "contour_convergence_checks": [
+      {
+        "complex_contour_nodes": 24,
+        "radius": "0.005",
+        "absolute_error_against_hierarchy": "2.14867772298483237544499586532888621009111514e-68"
+      },
+      {
+        "complex_contour_nodes": 32,
+        "radius": "0.01",
+        "absolute_error_against_hierarchy": "2.1223424765902062048768731797326593818511952e-80"
+      }
+    ],
+    "max_finite_field_stationarity_residual": "3.94501504335877886873343560187837770174254634e-102",
+    "scope": "Converging complex-contour consistency check; no finite-field approximation bound claimed."
+  },
+  "source_sha256": {
+    "verify_response_lower_bounds.py": "a54d69909f8fb49c8452f7d77da29a4aafc3179b5bc56ce5a429a87002d2fad3"
+  }
+}

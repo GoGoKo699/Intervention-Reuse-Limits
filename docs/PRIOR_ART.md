@@ -2,15 +2,15 @@
 
 [Repository overview](../README.md) · [Exact theory](THEORY.md) · [Finite accuracy](FINITE_ACCURACY.md)
 
-**Updated 22 September 2026, including a Workspace full-text follow-up.** This is a bounded audit, not a certification of novelty. A derivation obtained independently here may still be known. Access depth and version are recorded below. Earlier failed retrievals remain provenance; a later successful inspection supersedes the associated access limitation, not the need for a complete novelty audit.
+**Updated 22 September 2026, including full-text comparisons for sampled-response lower bounds.** This is a bounded audit, not a certification of novelty. A derivation obtained independently here may still be known. Access depth and version are recorded below. Earlier failed retrievals remain provenance; a later successful inspection supersedes the associated access limitation, not the need for a complete novelty audit.
 
 ## Claims being screened
 
 The exact target combines: equality of the complete passive visible Markov path law; a specified reversible field-dependent rate rule; matching static and dynamic linear mean response; and an all-size sharp separation between passive state count and exact cubic-response state count.
 
-The extension retains nonvanishing total response with bounded coupling, then gives a protocol-uniform cubic approximation certificate and an explicit reversible Markov realization whose size is independent of the original state count. The coefficient tolerance, known kinetic kernel, and freedom to change microscopic rates are essential assumptions.
+The extension retains nonvanishing total response with bounded coupling, then gives a protocol-uniform cubic approximation certificate and an explicit reversible Markov realization whose size is independent of the original state count. Sampled cubic responses now also provide a lower bound against the broad analytic Markov surrogate class. The coefficient tolerance, known kinetic kernel, and freedom to change microscopic rates are essential assumptions.
 
-The broad claims below are **not** prospective contributions: hidden kinetics affect nonlinear response; one can coarse-grain response; Volterra kernels admit state realizations; positive sums of exponentials can be approximated by shorter sums.
+The broad claims below are **not** prospective contributions: hidden kinetics affect nonlinear response; one can coarse-grain response; Volterra kernels admit state realizations; positive sums of exponentials can be approximated by shorter sums; Hankel rank and singular values obstruct low-dimensional approximation.
 
 ## Established response theory
 
@@ -80,14 +80,42 @@ The publisher abstract describes bilinear realization of Volterra input-output m
 
 The two 2026 papers are preprints in the versions inspected. Successful access permits the comparisons above; it does not constitute independent verification of their proofs or an exhaustive citation search.
 
+## Sampled-response lower bounds: source audit
+
+**Clara Lacroce, Borja Balle, Prakash Panangaden, Guillaume Rabusseau, “Optimal approximate minimization of one-letter weighted finite automata” (2024).** [Publisher full text](https://www.cambridge.org/core/journals/mathematical-structures-in-computer-science/article/optimal-approximate-minimization-of-oneletter-weighted-finite-automata/9733CA9F3079F9186103F8515DE86D96), [author manuscript](https://claralacroce.github.io/static/Lacroce_journal.pdf).
+
+**Access:** both full texts inspected, particularly Theorem 2 and Section 3, Theorem 16. They recall the classical rank/state correspondence of Carlyle–Paz and Fliess and the Eckart–Young singular-value obstruction. The paper also explains why a truncated singular-value decomposition need not preserve Hankel structure. **Comparison:** our sampled coefficient lift uses this established reasoning. Transferring a finite matrix obstruction to the bounded-protocol cubic-response norm is a separate step; their optimal Hankel-norm approximation does not assert an admissible Markov realization or our error metric.
+
+**Georgios Kotsalis and Jeff S. Shamma, “Limits of performance for the model reduction problem of hidden Markov models” (2015).** CDC 2015, 4674–4679. [Primary institutional record](https://experts.illinois.edu/en/publications/limits-of-performance-for-the-model-reduction-problem-of-hidden-m/), [DOI](https://doi.org/10.1109/CDC.2015.7402948).
+
+**Access:** the primary abstract and indexed introduction were inspected. The [KAUST manuscript](https://repository.kaust.edu.sa/bitstreams/f7535c55-d4d3-4ebf-a668-0d3017a43749/download) was located, but full-text retrieval failed. The authors already bound approximation by lower-order hidden Markov models using Hankel singular values. **Comparison:** a general stochastic dimension-witness claim would overlap with this work. Its exact assumptions and norm conversion have not been checked at theorem level; neither equivalence to nor exclusion of our cubic-response result is asserted.
+
+**Simon Becker and Carsten Hartmann, “Infinite-dimensional bilinear and stochastic balanced truncation with explicit error bounds” (2019).** Mathematics of Control, Signals, and Systems 31, 1–37. [Primary full text and DOI](https://doi.org/10.1007/s00498-019-0234-8).
+
+**Access:** Definition 3.2, Corollary 3.3, and Theorems 1–2 were inspected. The Volterra-based Hankel operator factors through the state space, and its trace distance bounds output differences under specified stability and input assumptions. **Comparison:** this establishes the relevant realization framework. Their small-gain and bounded-energy conditions do not describe our complete surrogate class or all bounded protocols. Our constant-step coefficient lift and finite-sample error estimate avoid imposing those extra conditions; the underlying factorization is not new.
+
+**David W. Kammler, “$L_1$-Approximation of Completely Monotonic Functions by Sums of Exponentials” (1979).** [Primary publisher record and DOI](https://doi.org/10.1137/0716003).
+
+**Access:** publisher abstract inspected; full text not obtained. The abstract states that a best $L_1$ approximation to a completely monotone function among real exponential sums has positive coefficients and positive decay rates. **Comparison:** this supports the classical status of positive exponential approximation. It does not permit restricting our general Markov surrogates to positive kernels: their cubic coefficients can contain signed residues and exponential-polynomial terms. A kernel approximation lower bound would still require a valid transfer into our response norm.
+
+**Dietrich Braess and Wolfgang Hackbusch, “On the approximation of Stieltjes functions by exponential sums and rational functions with applications to partial differential equations” (2026).** Numerische Mathematik 158, 455–490. [Primary full text and DOI](https://doi.org/10.1007/s00211-025-01523-1) (version of record published 29 December 2025).
+
+**Access:** Sections 4.2.1–4.2.2, Theorem 4.3, and Eq. (4.14) inspected. They establish exponential approximation on finite intervals and root-exponential upper bounds for inverse powers on an infinite interval; the text distinguishes upper bounds from numerical indications about sharp constants. **Comparison:** these are established approximation mechanisms in different norms and target classes. They provide no direct matching lower bound for our analytic Markov response task. The spectral restriction and response-norm transfer must be stated explicitly.
+
 ## What this follow-up resolves
 
 The coarse-response example's passive non-Markovianity is now verified from its actual model. The recent response-memory paper matches fewer passive statistics than our target; the recent entropy-selection paper matches the complete passive process and is therefore the closer conceptual comparison. Controlled reduction requires particular care over whether the *same actuator protocol* is retained or controls can be remapped. These findings narrow the possible contribution to the explicit combination of assumptions, cubic kernel characterization, and exact-versus-approximate state complexity. They do not certify that combination as publishably new.
 
+The new lower-bound argument makes a concrete bridge to standard realization theory. A constant-step cubic coefficient of a $D$-state analytic Markov model has a linear lift of dimension at most $1+3(D-1)$. Sampling and applying a fixed finite-difference filter do not increase its Hankel rank. The target's filtered samples form a positive moment matrix; its singular values, together with a bound on the filter's error amplification, obstruct approximation in the actual response norm. This is an application of established rank reasoning, with model-specific target construction and norm conversion. It is not a new general Hankel or minimal-realization theorem.
+
+For fixed positive $WU^3$, the [finite-accuracy results, Sections 8 and 10](FINITE_ACCURACY.md) now bracket the unrestricted-rate minimax state requirement between $\Omega(\log(1/\varepsilon))$ and $O(\log^2(1/\varepsilon))$ as $\varepsilon\downarrow0$. Restricting only the **target's active hidden rates** to $\lambda\le3k$ gives a matching $\Theta(\log(1/\varepsilon))$ order (Section 10.5). The comparison class of analytic Markov surrogates remains unchanged: no rate cap, reversibility, positive-residue assumption, or generator-derivative bound is added to it. The capped-target theorem is a distinct restricted problem and does not close the unrestricted-rate gap.
+
 ## Open publication gates
 
-The first gate is whether the exact sharp separation, bounded-signal variant, and cubic kernel characterization form a useful contribution beyond established realization and response results. The bilinear mapping is explicit, and the improved reversible realization is now tied directly to a classical inverse spectral theorem; neither ingredient alone supports a novelty claim. The second gate is the operational value of the combined exact-versus-approximate statement. The stronger root-exponential approximation order follows from known positive quadrature after elementary rate truncation, so it cannot serve as the independent novelty claim. The third gate is a physical interpretation retaining the same actuator and observation assumptions, without an unsupported turbulence label.
+The first gate is a precise comparison of the combined theorem with the closest response, controlled-reduction, and stochastic-realization results. The exact separation, sampled-response lower bound, and capped-target matching tolerance order are specific mathematical statements; their derivation here does not establish publication novelty. The linear lift, Hankel rank obstruction, positive quadrature, and inverse spectral realization are established ingredients. The unavailable HMM full text remains a concrete comparison gap, and further citation tracing could reveal a closer theorem.
 
-Neither the elementary $1/q$ bound nor its stronger quadrature replacement is asserted optimal for the intervention-response metric. A universal fixed-error lower bound growing with microscopic $N$ remains incompatible with the constructive upper bounds at bounded coupling and protocol amplitude. A sharper tolerance lower bound, or a physically justified restriction changing the surrogate class, would be additional work; its value should be assessed before expanding the project.
+The second gate is operational significance: explain what preserving the same actuator, passive path law, and cubic mean response buys a user of the surrogate. The finite-sample witness certifies coefficient-approximation limits; it is not yet a noisy experimental protocol, a statistical reconstruction guarantee, or a finite-amplitude prediction theorem. The active-rate cap needs an explicit physical interpretation if the matching theorem is foregrounded. The third gate is a clear physical account retaining these assumptions without an unsupported turbulence label.
+
+The unrestricted-rate logarithmic-versus-squared-logarithmic tolerance gap remains open. A universal fixed-error lower bound growing with microscopic $N$ remains incompatible with the constructive upper bounds at bounded coupling and protocol amplitude. No conclusion about this project's novelty follows merely because the bounded search did not locate its exact theorem.
 
 No exhaustive citation graph, independent proof review, or journal assessment has been completed. The [current work order](../work_orders/CURRENT.md) turns these limitations into concrete next tasks.

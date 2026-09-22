@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all four mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all five mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -86,6 +86,20 @@ All new saved reports were generated in the same pinned Python 3.13.5 environmen
 
 The complete extended `make check` passed locally in this environment. All four fresh reports matched their saved JSON reports exactly. The final repository checks also passed; this local record does not assert a GitHub Actions outcome.
 
+## Response lower-bound checkpoint
+
+This continuation starts from `78004603026a8058983e471f0bad73b2310abc12`. All four earlier mathematical verifiers and their saved reports remain unchanged. The new [response lower-bound verifier](../scripts/verify_response_lower_bounds.py) generates [response_lower_bounds.json](../reports/response_lower_bounds.json), using Python 3.13.5, SymPy 1.14.0, and explicitly pinned mpmath 1.3.0.
+
+The two-state checks expand the general analytic rate factor symbolically and independently expand the exact finite-field step solution. Exact algebra verifies the two-sample dual statistic and the equal-and-opposite errors of its minimizer. It does not optimize the all-protocol norm.
+
+For state budgets $D=2,3,4$, the verifier checks rational Vandermonde inverses, Lagrange coefficient identities, the filter-to-positive-moment identity, and the conservative lower bound. The smallest Hankel eigenvalues are computed at 100 and 150 decimal digits; agreement is a numerical consistency check, not interval certification. Those eigenvalues are not substitutes for the general analytic bound. Their small values also illustrate that these conservative witnesses do not make every hidden mode practically observable.
+
+Three surrogate examples check the exact full-to-reduced coefficient-hierarchy intertwining and characteristic-polynomial divisibility. They include a nonreversible four-state model with a defective hidden generator and sensitivity coupled to its Jordan part. High-precision propagation tests the filtered recurrences without inferring rank from a floating-point threshold. A separate complex-contour calculation extracts the cubic coefficient from the exact analytic generator as a cross-check of the hierarchy.
+
+The new verifier's largest matrix is $16\times16$; the largest across the complete suite remains $68\times68$. The theorem covers all allowed models through the proof, not enumeration. The rate-capped upper bound reuses the proved quadrature and realization results; no new approximation algorithm is asserted. Finite-field remainder control and noisy coefficient acquisition remain outside the verification scope.
+
+The complete five-verifier `make check` passed locally in the pinned environment. All five fresh reports matched their saved JSON reports exactly. The original license, four earlier verifiers, and their reports were also checked against the starting commit and remain unchanged. This records the local result; GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -94,6 +108,7 @@ Do not edit saved metrics by hand. After reviewing and running a changed extensi
 python scripts/verify_finite_accuracy.py --output reports/finite_accuracy.json
 python scripts/verify_quadrature.py --output reports/quadrature.json
 python scripts/verify_minimal_realization.py --output reports/minimal_realization.json
+python scripts/verify_response_lower_bounds.py --output reports/response_lower_bounds.json
 make check
 ```
 

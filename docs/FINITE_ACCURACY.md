@@ -2,9 +2,9 @@
 
 [Repository overview](../README.md) · [Core derivation](THEORY.md) · [Prior art](PRIOR_ART.md)
 
-**Working extension, 22 September 2026.** The elementary midpoint bound is retained as a baseline. Section 8 proves a stronger root-exponential certificate by classical positive quadrature. Originality and optimality are not asserted.
+**Working extension, 22 September 2026.** Sections 8–10 give constructive upper bounds and finite-sample response lower bounds. The broad minimax rate remains between logarithmic and squared-logarithmic state growth; a fixed upper bound on active target rates gives matching logarithmic order. Publication-level originality is not asserted.
 
-The core example has an exact two-state passive description and an $N$-state exact cubic response requirement. This note first keeps that separation at nonvanishing total signal, then proves a constructive response-approximation bound independent of $N$. The approximation is itself realizable by a reversible Markov model, not only a formal memory equation.
+The core example has an exact two-state passive description and an $N$-state exact cubic response requirement. This note retains nonvanishing total signal, constructs reversible approximate models independently of $N$, and proves tolerance-dependent lower bounds directly from response samples. The lower bounds allow the full analytic Markov surrogate class defined below.
 
 ## 0. The approximation task and its quantifiers
 
@@ -30,7 +30,7 @@ E_D(k,G,W,U)=
 \mathcal E_U(F,\widehat F).
 $$
 
-The results here are constructive **upper bounds** for this broad problem: they produce the more restricted surrogates in the original reversible rate-rule family, with the same $k,W$ and $|\widehat g|\le G$. They also preserve the passive path law under every microscopic initial law with the same visible initial law. Their microscopic rates and topology may change. A lower bound proved only for positive kernels, reversible surrogates, or this rate-rule family would not automatically bound $E_D$.
+The constructive **upper bounds** produce surrogates in the original reversible rate-rule family, with the same $k,W$ and $|\widehat g|\le G$. They also preserve the passive path law under every microscopic initial law with the same visible initial law. Their microscopic rates and topology may change. Sections 9–10 instead prove **lower bounds against all of $\mathcal A_D(k)$** by constraining finite response samples. A lower bound proved only for positive kernels, reversible surrogates, or this rate-rule family would not automatically bound $E_D$.
 
 The norm concerns Taylor coefficients only. None of its quantifiers asserts a Taylor remainder uniform in $T$, $N$, or the field amplitude. Finite-field prediction and kernel acquisition remain separate tasks.
 
@@ -184,7 +184,7 @@ The $1/q$ error rate is an elementary upper bound, not a minimax or novelty clai
 
 [The executable extension](../scripts/verify_finite_accuracy.py) verifies the normalized spectral weights, nonvanishing signal bound, positive reversible realization, and agreement of its master equation with the memory equations. It also tests the protocol certificate on deterministic sign-changing protocols. See [verification details](VERIFICATION.md).
 
-Still not established: the optimal dependence on tolerance, stable inference from finite noisy data, a finite-field remainder uniform in system size and observation horizon, or a specific fluid or molecular implementation. No large simulation is needed for the present derivations. The [next work order](../work_orders/CURRENT.md) targets these mathematical and novelty issues rather than a simulation campaign.
+Still not established: the optimal dependence on tolerance for unrestricted target rates, stable inference from finite noisy data, a finite-field remainder uniform in system size and observation horizon, or a specific fluid or molecular implementation. Sections 9–10 add response-norm lower bounds and determine the state-growth order for the separately defined rate-capped target class. No large simulation is needed. The [next work order](../work_orders/CURRENT.md) records the remaining mathematical and novelty questions.
 
 ## 8. A stronger bound by positive Gaussian quadrature
 
@@ -333,8 +333,385 @@ $$
 
 For small budgets the earlier $U^3W/q$ bound can be better; one may choose whichever construction supplies the smaller certificate. If $W=0$, the two-state reference suffices exactly. If $U=0$, there is no response to approximate.
 
-The proof requires the kernel's spectral measure. It supplies no inference method from passive observations, and no statistically stable reconstruction from noisy response data. It permits new rates and new microscopic topology, as does the earlier midpoint construction. There is still no matching lower bound in tolerance, no claim that the state count is minimal, and no finite-amplitude guarantee from this cubic-coefficient theorem alone.
+The proof requires the kernel's spectral measure. It supplies no inference method from passive observations, and no statistically stable reconstruction from noisy response data. It permits new rates and new microscopic topology, as does the earlier midpoint construction. Section 10 proves a logarithmic state lower bound, leaving a gap from the squared-logarithmic upper bound for this unrestricted target class. No finite-amplitude guarantee follows from the cubic-coefficient theorem alone.
 
 ### 8.4 Reduction to established approximation results
 
 The asymptotic order also follows from Koyama's positive quadrature results identified in [the prior-art audit](PRIOR_ART.md). Here is the reduction, rather than a claim that a different norm alone supplies novelty. For $0<\delta<1$, clamp each rate into $[k\delta,k/\delta]$. Section 3's exact transport identity shows that this costs at most $W\delta$ in the normalized norm $k\int_0^\infty e^{-kt}|\Delta C(t)|dt$, while preserving mass. On that finite interval, the established mass-preserving positive quadrature theorem gives uniform-time error $O(W\delta)$ with $O(\log^2(1/\delta))$ nodes. Its uniform-time bound also controls the normalized damped norm since $k\int_0^\infty e^{-kt}dt=1$. Retain measures with fewer nodes exactly. The response inequality and reversible realization then complete the same asymptotic state upper bound. The elementary proof above makes constants and rate allocation explicit; it does not create a new approximation-theory claim.
+
+## 9. A finite-error obstruction for every two-state surrogate
+
+The broad comparison class in Section 0 already has a nonzero operational
+lower bound at two states. This does not assume the surrogate belongs to
+the original rate-rule family, and it does not bound its field derivatives.
+
+**Theorem.** For $k>0$, $U>0$, and $0<W\le G^2$,
+
+$$
+\boxed{E_2(k,G,W,U)\ge
+\frac{15}{8(e^3+6e^{1/2})}\,U^3W
+\approx0.06254614958\,U^3W.}
+$$
+
+One three-state target and two samples of its constant-protocol cubic
+coefficient prove the bound. The result excludes two-state approximation
+below a fixed positive coefficient tolerance. It does not determine the
+all-protocol minimax error, or its dependence on larger state budgets.
+
+### 9.1 Complete characterization of the two-state comparison class
+
+A one-state fixed-readout model cannot reproduce the binary passive path
+law. A two-state model reproducing that law must have one state of each
+visible sign, zero-field rates $a(0)=b(0)=k$, and stationary preparation
+$(1/2,1/2)$. Here $a(h)$ is the rate from $-1$ to $+1$, and $b(h)$ is the
+reverse rate. These rates remain positive in a neighborhood of zero.
+
+The required equilibrium mean implies
+
+$$
+\frac{a(h)-b(h)}{a(h)+b(h)}=\tanh h,
+\qquad
+a(h)=k r(h)e^h,\quad b(h)=k r(h)e^{-h},
+$$
+
+for one positive analytic function $r$ with $r(0)=1$. Thus its exact mean
+obeys
+
+$$
+\dot{\widehat m}=2k r(h)
+\bigl(\sinh h-\widehat m\cosh h\bigr).
+$$
+
+Write $r(h)=1+r_1h+\alpha h^2+O(h^3)$. Its linear coefficient is the
+reference $m_1$. Its quadratic coefficient satisfies
+
+$$
+\dot{\widehat m}_2=-2k\widehat m_2+2kr_1u(u-m_1).
+$$
+
+For a unit constant protocol this gives
+$\widehat m_2(t)=2kr_1t e^{-2kt}$, so the required zero quadratic
+response forces $r_1=0$. Conversely $r_1=0$ makes the quadratic response
+zero for every protocol. The entire remaining two-state freedom at cubic
+order is the real number $\alpha$:
+
+$$
+\dot{\widehat\delta}
+=-2k\widehat\delta+2k\alpha u^2(u-m_1),
+\qquad \widehat\delta=\widehat m_3-b_3,
+\qquad \widehat\delta(0)=0.
+$$
+
+There is no restriction on $\alpha$: for any real choice,
+$r(h)=\exp(\alpha h^2)$ realizes it with positive analytic rates and all
+the required passive, static, linear, and quadratic properties. Higher
+derivatives of $r$ cannot affect the cubic coefficient because the factor
+$\sinh h-\widehat m\cosh h$ vanishes at order zero. This characterizes
+cubic response throughout $\mathcal A_2(k)$, for every bounded protocol.
+
+### 9.2 A two-time response witness
+
+Choose the target with two hidden states,
+
+$$
+\mu=(1/2,1/2),\qquad g=(\sqrt W,-\sqrt W),\qquad
+K=\begin{pmatrix}-k/2&k/2\\k/2&-k/2\end{pmatrix}.
+$$
+
+It belongs to $\mathcal F(k,G,W)$ and has $C(t)=W e^{-kt}$. For the
+constant protocol $u(t)=U$, write $\tau=kt$ and
+$f(\tau)=\tau e^{-2\tau}$. The target and every admissible two-state
+surrogate have corrections
+
+$$
+\delta(t)=U^3W f(\tau)(1-\tau),\qquad
+\widehat\delta(t)=2\alpha U^3 f(\tau).
+$$
+
+For $0<\tau_1<\tau_2$, put $f_i=f(\tau_i)$ and $t_i=\tau_i/k$.
+The statistic $f_2\widehat\delta(t_1)-f_1\widehat\delta(t_2)$ vanishes
+for every two-state surrogate. For the target it equals
+$U^3W f_1f_2(\tau_2-\tau_1)$. Therefore, with
+$e_i=m_3(t_i)-\widehat m_3(t_i)=\delta(t_i)-\widehat\delta(t_i)$,
+
+$$
+\max\{|e_1|,|e_2|\}
+\ge U^3W\frac{f_1f_2}{f_1+f_2}(\tau_2-\tau_1).
+$$
+
+This is the exact minimax error for these two samples: setting
+
+$$
+2\alpha=W\frac{f_1(1-\tau_1)+f_2(1-\tau_2)}{f_1+f_2}
+$$
+
+makes the two errors equal in magnitude and opposite in sign, and such
+an $\alpha$ is admissible by Section 9.1. This two-sample exactness is not
+a claim of optimality in the larger all-protocol norm.
+
+Take $\tau_1=1/4$ and $\tau_2=3/2$. Direct substitution yields
+
+$$
+\frac{f_1f_2}{f_1+f_2}(\tau_2-\tau_1)
+=\frac{15}{8(e^3+6e^{1/2})}.
+$$
+
+The finite sampling horizon is $3/(2k)$. Its two coefficient samples are included
+in the supremum defining $\mathcal E_U$, so the same lower bound survives
+the infimum over all two-state surrogates and the supremum over targets.
+The independence from $k$ is a rescaling of the sampling times. The
+witness uses values of the cubic coefficient directly, with no kernel
+inversion or numerical differentiation in time. It remains a statement
+about response coefficients, not a finite-field or noisy-data guarantee.
+
+## 10. A logarithmic state lower bound in the response norm
+
+The finite-accuracy question admits a lower bound for the full comparison class
+$\mathcal A_D(k)$ in Section 0. It does not require a reversible surrogate, a
+positive surrogate kernel, bounded rate derivatives, or a prescribed surrogate
+topology. The proof uses a finite sampled Hankel matrix of the cubic **step
+response**, so its error is directly controlled by $\mathcal E_U$; no unstable
+differentiation of approximate response data is used. The underlying
+finite-dimensional realization and Hankel-rank principle is established
+mathematics, not a novelty claim.
+
+**Theorem.** Suppose $k>0$, $U>0$, and $0<W\le G^2$. For every integer $D\ge2$,
+put $r=3D-4$. Then
+
+$$
+\boxed{
+E_D(k,G,W,U)\ \ge\
+\frac{7U^3W}{3200\,r^3(36e)^{2r-2}}.
+}
+$$
+
+The target witnessing this bound can be chosen with $r+2=3D-2$ total states,
+$|g_i|=\sqrt W$, and all active internal relaxation rates in $[2k,3k]$.
+Only a constant protocol $u=U$ and times at most
+
+$$
+T_D=(2r+1)\frac{\log2}{k}=(6D-7)\frac{\log2}{k}
+$$
+
+are used in the proof. The constants are conservative; no sharp exponential
+rate is asserted.
+
+### 10.1 The coefficient hierarchy gives a finite recurrence
+
+Consider any admissible surrogate with $d\le D$ states, column generator
+$L(h)=\widehat Q(h)^T$, fixed stationary preparation $p_0$, and fixed readout
+$f$. Write its step-driven probability vector as
+
+$$
+p(t;\epsilon U)=p_0+\epsilon p_1(t)+\epsilon^2p_2(t)
++\epsilon^3p_3(t)+O(\epsilon^4).
+$$
+
+Let $L_j$ denote the coefficient of $\epsilon^j$ in $L(\epsilon U)$.
+Conservation of probability places each $p_j$, $j\ge1$, in the
+$(d-1)$-dimensional subspace
+$V=\{v:\mathbf1^Tv=0\}$. Since $L_0p_0=0$, the hierarchy through order three is
+
+$$
+\begin{aligned}
+\dot p_1&=L_0p_1+L_1p_0,\\
+\dot p_2&=L_0p_2+L_1p_1+L_2p_0,\\
+\dot p_3&=L_0p_3+L_1p_2+L_2p_1+L_3p_0.
+\end{aligned}
+$$
+
+Adjoining a constant coordinate makes this an autonomous linear system
+$\dot z=\mathcal Lz$ of dimension $1+3(d-1)=3d-2$. Its diagonal blocks are
+$0,A,A,A$, where $A=L_0|_V$. For
+
+$$
+\Delta=\frac{\log2}{k},\qquad B=e^{A\Delta},\qquad
+\mathcal B=e^{\mathcal L\Delta},\qquad a=e^{-2k\Delta}=\frac14,
+$$
+
+the sampled cubic sequence $s_n=f^Tp_3(n\Delta)$ is an output of
+$\mathcal B$, whose characteristic polynomial is
+
+$$
+\chi_{\mathcal B}(z)=(z-1)\det(zI-B)^3.
+$$
+
+The prescribed passive path law forces $a$ to be an eigenvalue of $B$.
+Indeed, the passive equilibrium mean is zero and its correlation is
+$e^{-2kt}$. Thus $w=\operatorname{diag}(f)p_0$ lies in $V$ and
+$f^TB^nw=a^n$. Applying the characteristic polynomial of $B$ to this scalar
+sequence gives $\det(aI-B)a^n=0$, and hence $\det(aI-B)=0$.
+This argument does not require irreducibility or diagonalizability.
+
+Let $\mathsf E$ be the forward shift of a scalar sequence, and define
+
+$$
+P(z)=(z-1)(z-a)^2
+=z^3-\frac32z^2+\frac9{16}z-\frac1{16}.
+$$
+
+The polynomial $P$ divides $\chi_{\mathcal B}$. Cayley--Hamilton therefore
+shows that the filtered sequence $y=P(\mathsf E)s$ is annihilated by the
+monic polynomial $\chi_{\mathcal B}/P$, of degree $3d-5$. Every sampled
+Hankel matrix $(y_{i+j})$ consequently has rank at most $3d-5\le3D-5$.
+This is a polynomial-quotient argument, so repeated eigenvalues, zero
+eigenvalues, and Jordan blocks cause no exception.
+
+### 10.2 A target with a positive filtered Hankel matrix
+
+Fix $r=3D-4\ge2$ and choose equally spaced nodes and equal kernel weights:
+
+$$
+x_j=\frac1{16}+\frac{j-1}{16(r-1)},\qquad
+\lambda_j=k(-\log_2x_j-1),\qquad c_j=\frac Wr,
+\qquad 1\le j\le r.
+$$
+
+All rates are distinct and belong to $[2k,3k]$. By
+[Theory, Section 9](THEORY.md#9-minimal-reversible-realization-of-a-positive-kernel),
+the kernel $C(t)=\sum_jc_je^{-\lambda_jt}$ has a target realization in
+$\mathcal F(k,G,W)$ with $r+2$ total states and $|g|=\sqrt W$.
+
+The step formula in [Theory, Section 8](THEORY.md#8-exact-response-state-count-bound)
+expresses its cubic sequence as a constant, a linear polynomial in $n$ times
+$a^n$, and hidden terms
+
+$$
+-\frac{2U^3c_j}{(1-\lambda_j/k)^2}\,x_j^n.
+$$
+
+The filter $P(\mathsf E)$ removes the constant and the visible terms. The
+remaining sequence is
+
+$$
+y_n=U^3\sum_{j=1}^rd_jx_j^n,\qquad
+d_j=\frac{2c_j(1-x_j)(x_j-a)^2}{(1-\lambda_j/k)^2}
+\ge\frac{7W}{1024r}.
+$$
+
+For the inequality, use $1-x_j\ge7/8$, $|x_j-a|\ge1/8$, and
+$(1-\lambda_j/k)^2\le4$. In particular the target's $r\times r$ Hankel
+matrix is positive definite:
+
+$$
+H=(y_{i+j})_{i,j=0}^{r-1}
+=U^3V\operatorname{diag}(d_1,\ldots,d_r)V^T,
+\qquad V_{ij}=x_j^i\quad(0\le i<r).
+$$
+
+### 10.3 An explicit smallest-eigenvalue bound
+
+The $j$th row of $V^{-1}$ consists of the monomial coefficients of the
+Lagrange polynomial
+
+$$
+\ell_j(x)=\prod_{\ell\ne j}\frac{x-x_\ell}{x_j-x_\ell}.
+$$
+
+Writing $h=1/[16(r-1)]$, the sum of the absolute values of these coefficients
+is at most
+
+$$
+\frac{(9/8)^{r-1}}
+{h^{r-1}(j-1)!(r-j)!}
+\le
+\frac{[18(r-1)]^{r-1}2^{r-1}}{(r-1)!}
+\le(36e)^{r-1}.
+$$
+
+The first bound follows by multiplying the coefficient absolute sums of
+the factors $x-x_\ell$; the second uses
+$\binom{r-1}{j-1}\le2^{r-1}$; the last uses
+$n!\ge(n/e)^n$. Consequently,
+
+$$
+\|V^{-1}\|_2\le\|V^{-1}\|_F
+\le\sqrt r\,(36e)^{r-1},
+$$
+
+and therefore
+
+$$
+\lambda_{\min}(H)
+\ge\frac{7U^3W}{1024\,r^2(36e)^{2r-2}}.
+$$
+
+### 10.4 Converting the rank obstruction to response error
+
+Let $\widehat H$ be the same filtered Hankel matrix for an arbitrary
+surrogate in $\mathcal A_D(k)$. Section 10.1 gives
+$\operatorname{rank}\widehat H\le r-1$. A unit vector in the nullspace of
+$\widehat H$ shows
+$\|H-\widehat H\|_2\ge\lambda_{\min}(H)$.
+
+If the two cubic step curves differ by at most $\varepsilon$ at all sampled
+times, each filtered sample differs by at most
+
+$$
+\|P\|_{\mathrm{coeff},1}\varepsilon
+=\left(1+\frac32+\frac9{16}+\frac1{16}\right)\varepsilon
+=\frac{25}{8}\varepsilon.
+$$
+
+It follows that $\|H-\widehat H\|_2\le(25/8)r\varepsilon$.
+Combining the two inequalities proves the theorem. The largest index
+required is $2(r-1)+3=2r+1$, establishing the stated finite horizon.
+Because all these samples are allowed in $\mathcal E_U$, taking the
+infimum over the full surrogate class and then the supremum over targets
+preserves the bound.
+
+In particular, a uniform guarantee $E_D\le\varepsilon$ requires
+
+$$
+\log\frac{U^3W}{\varepsilon}
+\le\log\frac{3200}{7}+3\log(3D-4)+(6D-10)\log(36e).
+$$
+
+For fixed $U^3W>0$, this gives a necessary state count
+$\Omega(\log(U^3W/\varepsilon))$ as $\varepsilon\downarrow0$.
+Together with Section 8, the current unrestricted target class therefore
+has logarithmic necessary and squared-logarithmic sufficient state growth.
+The gap between these orders remains open; neither bound is a minimax
+optimality claim for that class.
+
+### 10.5 An upper bound on active rates gives matching logarithmic order
+
+An upper bound on the active target rates is enough to determine the
+state-count order. Let $E_D^{\le3k}$ be the same
+minimax problem with target kernels restricted to active rates
+$0<\lambda_j\le3k$, retaining the full broad surrogate class
+$\mathcal A_D(k)$. No positive lower bound on the hidden spectral gap is
+added.
+
+The lower-bound target above already lies in this class. For an upper
+bound, all dimensionless damped rates lie in $(1,4]$. Divide them between
+$(1,2)$ and $[2,4]$. Apply Section 8.1 with $d$ quadrature nodes to each
+nonempty bin, retaining a bin exactly if its support has at most $d$
+points. The two integrated errors sum to at most $4W16^{-d}$ in
+dimensionless time. Thus the cubic response error is at most
+$8U^3W16^{-d}$, and the compressed kernel has at most $2d$ modes.
+The Jacobi realization uses at most $2d+2$ states, with the original mass
+and sensitivity bound. Its nodes in the first bin remain strictly greater
+than one because its finite target support does, so every realized
+internal rate is strictly positive.
+
+Consequently, with $r=3D-4$ and $d=\lfloor(D-2)/2\rfloor$, every $D\ge4$
+satisfies
+
+$$
+\frac{7U^3W}{3200\,r^3(36e)^{2r-2}}
+\le E_D^{\le3k}
+\le8U^3W\,16^{-\lfloor(D-2)/2\rfloor}.
+$$
+
+The necessary and sufficient number of states therefore grows as
+$\Theta(\log(U^3W/\varepsilon))$ at small tolerance in this rate-capped
+target class. This matches the order, not the constants in the exponential
+error rate. The upper-bound construction extends to any fixed finite
+upper bound on $\lambda_j/k$ by using finitely many bins.
+
+The rate cap is additional information about the **targets**, not a
+restriction on the surrogates. It does not narrow the original problem
+$E_D$ or close its logarithmic versus squared-logarithmic gap. The upper
+bound uses the established positive-quadrature method already discussed
+in Section 8; these derivations do not certify publication-level novelty.

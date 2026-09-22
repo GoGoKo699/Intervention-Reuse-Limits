@@ -4,7 +4,7 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** the takeover audit reproduces the original checkpoint and strengthens the constructive bounds. The approximation and realization methods reduce to established mathematics; publication-level novelty remains unresolved. Manuscript writing remains on hold.
+**Research status:** the current checkpoint proves upper and lower bounds for finite-accuracy reuse, including matching logarithmic state growth for targets with bounded active rates. The proofs use established approximation and realization methods; publication-level novelty remains under audit. Manuscript writing remains on hold.
 
 ## Current results
 
@@ -20,6 +20,15 @@ for every finite horizon and every admissible protocol, independently of the ori
 
 **Exact realization of a known kernel.** A kernel with $r$ distinct positive exponential modes has an explicit reversible realization with $r+2$ total states and sensitivity magnitude $\sqrt W$. When no hidden decay rate equals $k$, this meets the exact pole-location lower bound. The construction is a corollary of finite Jacobi inverse spectral theory.
 
+**Finite-accuracy lower bounds.** Two cubic step-response samples of a three-state target force error at least $0.062546\,WU^3$ against every admissible two-state surrogate. More generally, a finite matrix of response samples proves that the worst-case required state count grows at least as $\log(1/\varepsilon)$, even allowing nonreversible surrogates and unrestricted field derivatives. Combined with the upper bounds:
+
+| Target information, at fixed positive $W,U$ | Necessary states | Sufficient states |
+|---|---|---|
+| No common bound on active hidden rates | $\Omega(\log(1/\varepsilon))$ | $O(\log^2(1/\varepsilon))$ |
+| Active hidden rates at most $3k$ | $\Omega(\log(1/\varepsilon))$ | $O(\log(1/\varepsilon))$ |
+
+The second row adds information about the target; it leaves the broad surrogate class unchanged and assumes no lower bound on the hidden spectral gap. These are asymptotic coefficient-tolerance results, with conservative constants. The lower-bound sample horizon grows with the tested state budget.
+
 **The distinction matters:** exact response complexity can grow without bound even at nonvanishing signal strength; that does not imply an equally large state requirement at fixed accuracy. The approximation requires intervention-relevant information that cannot be obtained from the passive binary process alone.
 
 ## Read and inspect
@@ -32,7 +41,7 @@ for every finite horizon and every admissible protocol, independently of the ori
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
 
-The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. New checks cover [positive quadrature](scripts/verify_quadrature.py) and [minimal reversible realization](scripts/verify_minimal_realization.py). Their generated evidence is in [reports](reports).
+The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), and [response lower bounds](scripts/verify_response_lower_bounds.py). Their generated evidence is in [reports](reports).
 
 ## Reproduce
 
@@ -54,6 +63,7 @@ python scripts/verify_checkpoint.py --output .check-output/checkpoint.json
 python scripts/verify_finite_accuracy.py --output .check-output/finite_accuracy.json
 python scripts/verify_quadrature.py --output .check-output/quadrature.json
 python scripts/verify_minimal_realization.py --output .check-output/minimal_realization.json
+python scripts/verify_response_lower_bounds.py --output .check-output/response_lower_bounds.json
 ```
 
 A failed assertion exits unsuccessfully. Fresh reports go into the ignored `.check-output` directory; the saved reports are not overwritten. Numerical roundoff can differ across platforms. Dependency installation and GitHub Actions setup require network access; the verification calculations themselves do not.
@@ -64,7 +74,7 @@ The checks use symbolic algebra, exact rational calculations, and small determin
 
 The observable is a single-time binary mean; the response is a Taylor coefficient about equilibrium. The exact lower bound applies to analytic finite-state autonomous Markov models. The approximate surrogate may change microscopic topology and rates. Neither result is a general control impossibility, a bit-complexity bound, a noise-robust identification theorem, or a turbulence result.
 
-Nonlinear response revealing hidden kinetics, coarse response theory, minimal realization, and exponential-kernel approximation are established subjects. The [audit](docs/PRIOR_ART.md) now includes theorem-level comparisons and both previously inaccessible 2026 leads. A broad passive-versus-altered-dynamics story is already present in prior work; the specific combined statement here still needs a distinctive operational contribution.
+Nonlinear response revealing hidden kinetics, coarse response theory, minimal realization, exponential-kernel approximation, and Hankel state-dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) identifies those precedents and the precise remaining comparison: the state bounds in this passive-law-constrained, protocol-uniform cubic-response task. A broad passive-versus-altered-dynamics story alone is already present in prior work.
 
 Manuscript writing is on hold while the novelty and significance questions are resolved. Research contact: **Ruge Lin**, [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
