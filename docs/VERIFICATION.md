@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifteen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventeen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -200,6 +200,18 @@ Internal proof audits checked the target-only logarithm identity, weighted-norm 
 
 The complete fifteen-verifier `make check` passed locally in the pinned Python 3.13 environment. All fifteen fresh JSON reports matched their saved evidence exactly. The fourteen prior mathematical scripts and reports, original MIT license, pinned dependencies and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
 
+## Constant-step comparison and bounded-density reversible sampling
+
+This continuation starts from `c2740b58734deda54f30463395362ef7368cb034`. The fifteen earlier mathematical verifiers and saved reports are preserved. Two focused verifiers accompany the new analytic results. Malformed LaTeX commands in Section 7 of the existing finite-field note were also repaired without changing its mathematics.
+
+[verify_constant_step_compression.py](../scripts/verify_constant_step_compression.py) produces [constant_step_compression.json](../reports/constant_step_compression.json). Exact six-state constructions check both field signs, a two-atom positive mixture and one-atom padding, the positive Jacobi generator, detailed balance, irreducibility and the shifted-reset spectral coefficients. Symbolic preparation calculations verify a common full-support sign-balanced law, its stationarity at zero field, and strong lumpability to the exact passive telegraph process. Positive Gaussian nodes and moments are checked algebraically; rational tolerance budgets combine the all-time quadrature bound with the preparation perturbation. These are exact small identities supporting the general written proof, not numerical rank tests or sampled-time inference.
+
+[verify_bounded_density_sampling.py](../scripts/verify_bounded_density_sampling.py) produces [bounded_density_sampling.json](../reports/bounded_density_sampling.json). Exhaustive enumeration of sixteen nonuniform stratified samples checks forty-eight conditional row/function identities, including an actually nonzero self-row bias and its exact conditional variance. Two small sampled graphs, including repeated microscopic vertices, verify positive reversible realization, exact actuator histogram, and the full-field physical identities. Thirty word probabilities check the finite-prefix recursion and tilt estimates. Fifteen concentration and regenerative budgets use rational logarithm enclosures and exact integer ceilings. The new largest matrix is five; no random trajectories or large sampled graph are generated.
+
+Independent internal audits checked the equilibrium-tilt identity, positive quadrature tail, common-state realization and stationary preparation, the shrinking-amplitude capped lower, sampled-row conditioning, union bound, and regenerative all-horizon conversion. The constant-step predictor does not impose the original field rule or field regularity. The reversible switching theorem requires bounded conductance density and does not preserve the original spectral band. These audits do not establish the cap-only reversible theorem or certify originality.
+
+The complete seventeen-verifier `make check` passed locally in the pinned Python 3.13 environment. All seventeen fresh reports matched their saved JSON evidence exactly. The thirty prior mathematical scripts and reports, original MIT license, pinned dependencies and workflow are byte-identical to the starting commit. The largest matrix across the entire suite remains $68\times68$. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -219,6 +231,8 @@ python scripts/verify_general_controlled_lower_bound.py --output reports/general
 python scripts/verify_bounded_rate_prediction.py --output reports/bounded_rate_prediction.json
 python scripts/verify_shift_register_lower_bound.py --output reports/shift_register_lower_bound.json
 python scripts/verify_polynomial_controlled_lower_bound.py --output reports/polynomial_controlled_lower_bound.json
+python scripts/verify_constant_step_compression.py --output reports/constant_step_compression.json
+python scripts/verify_bounded_density_sampling.py --output reports/bounded_density_sampling.json
 make check
 ```
 

@@ -1,0 +1,360 @@
+{
+  "status": "PASS",
+  "scope": "Exact small common reversible/irreducible constant-step predictors and analytic positive quadrature calibration.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "equilibrium_covariance_identity": {
+    "symbolic_equilibrium_tilt_identity": true,
+    "normalized_covariance_variance": "1-m^2"
+  },
+  "signed_and_padded_realization_cases": [
+    {
+      "sign_of_field": 1,
+      "tanh_h_exact": "1/3",
+      "allocated_mixture_atoms": 2,
+      "actual_mixture_atoms": 2,
+      "total_predictor_states": 6,
+      "active_coordinates": [
+        0,
+        1,
+        2
+      ],
+      "frozen_coordinates": [
+        3,
+        4,
+        5
+      ],
+      "fixed_initial_law_exact": [
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      "fixed_binary_readout": [
+        "-1",
+        "1",
+        "1",
+        "1",
+        "-1",
+        "-1"
+      ],
+      "active_Jacobi_generator_exact": "Matrix([[-3/4, 3/4, 0], [19/12, -127/76, 5/57], [0, 30/19, -30/19]])",
+      "full_stationary_law_exact": [
+        "1/6",
+        "3/38",
+        "1/228",
+        "7/12",
+        "1/12",
+        "1/12"
+      ],
+      "strict_irreducibility_and_detailed_balance": true,
+      "relaxation_rates_exact": [
+        "0",
+        "1/2",
+        "2",
+        "3"
+      ],
+      "mean_spectral_coefficients_exact": [
+        "1/3",
+        "0",
+        "-1/12",
+        "-1/4"
+      ],
+      "reset_mode_readout_coefficient_exact": "0",
+      "preparation_role": "Intermediate exact half-root realization; the final full-support preparation and its error budget are checked separately.",
+      "fixed_initial_law_is_hidden_stationary": false,
+      "exact_characteristic_polynomial": "x*(x + 2)*(x + 3)*(2*x + 1)**3/8",
+      "exact_mixture_mean_for_every_time": true
+    },
+    {
+      "sign_of_field": 1,
+      "tanh_h_exact": "1/3",
+      "allocated_mixture_atoms": 2,
+      "actual_mixture_atoms": 1,
+      "total_predictor_states": 6,
+      "active_coordinates": [
+        0,
+        1
+      ],
+      "frozen_coordinates": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "fixed_initial_law_exact": [
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      "fixed_binary_readout": [
+        "-1",
+        "1",
+        "1",
+        "1",
+        "-1",
+        "-1"
+      ],
+      "active_Jacobi_generator_exact": "Matrix([[-2/3, 2/3], [4/3, -4/3]])",
+      "full_stationary_law_exact": [
+        "1/6",
+        "1/12",
+        "7/24",
+        "7/24",
+        "1/12",
+        "1/12"
+      ],
+      "strict_irreducibility_and_detailed_balance": true,
+      "relaxation_rates_exact": [
+        "0",
+        "1/2",
+        "5/2"
+      ],
+      "mean_spectral_coefficients_exact": [
+        "1/3",
+        "0",
+        "-1/3"
+      ],
+      "reset_mode_readout_coefficient_exact": "0",
+      "preparation_role": "Intermediate exact half-root realization; the final full-support preparation and its error budget are checked separately.",
+      "fixed_initial_law_is_hidden_stationary": false,
+      "exact_characteristic_polynomial": "x*(2*x + 1)**4*(2*x + 5)/32",
+      "exact_mixture_mean_for_every_time": true
+    },
+    {
+      "sign_of_field": -1,
+      "tanh_h_exact": "-1/3",
+      "allocated_mixture_atoms": 2,
+      "actual_mixture_atoms": 2,
+      "total_predictor_states": 6,
+      "active_coordinates": [
+        3,
+        4,
+        5
+      ],
+      "frozen_coordinates": [
+        0,
+        1,
+        2
+      ],
+      "fixed_initial_law_exact": [
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      "fixed_binary_readout": [
+        "-1",
+        "1",
+        "1",
+        "1",
+        "-1",
+        "-1"
+      ],
+      "active_Jacobi_generator_exact": "Matrix([[-3/4, 3/4, 0], [19/12, -127/76, 5/57], [0, 30/19, -30/19]])",
+      "full_stationary_law_exact": [
+        "7/12",
+        "1/12",
+        "1/12",
+        "1/6",
+        "3/38",
+        "1/228"
+      ],
+      "strict_irreducibility_and_detailed_balance": true,
+      "relaxation_rates_exact": [
+        "0",
+        "1/2",
+        "2",
+        "3"
+      ],
+      "mean_spectral_coefficients_exact": [
+        "-1/3",
+        "0",
+        "1/12",
+        "1/4"
+      ],
+      "reset_mode_readout_coefficient_exact": "0",
+      "preparation_role": "Intermediate exact half-root realization; the final full-support preparation and its error budget are checked separately.",
+      "fixed_initial_law_is_hidden_stationary": false,
+      "exact_characteristic_polynomial": "x*(x + 2)*(x + 3)*(2*x + 1)**3/8",
+      "exact_mixture_mean_for_every_time": true
+    },
+    {
+      "sign_of_field": -1,
+      "tanh_h_exact": "-1/3",
+      "allocated_mixture_atoms": 2,
+      "actual_mixture_atoms": 1,
+      "total_predictor_states": 6,
+      "active_coordinates": [
+        3,
+        4
+      ],
+      "frozen_coordinates": [
+        0,
+        1,
+        2,
+        5
+      ],
+      "fixed_initial_law_exact": [
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      "fixed_binary_readout": [
+        "-1",
+        "1",
+        "1",
+        "1",
+        "-1",
+        "-1"
+      ],
+      "active_Jacobi_generator_exact": "Matrix([[-2/3, 2/3], [4/3, -4/3]])",
+      "full_stationary_law_exact": [
+        "7/24",
+        "1/12",
+        "1/12",
+        "1/6",
+        "1/12",
+        "7/24"
+      ],
+      "strict_irreducibility_and_detailed_balance": true,
+      "relaxation_rates_exact": [
+        "0",
+        "1/2",
+        "5/2"
+      ],
+      "mean_spectral_coefficients_exact": [
+        "-1/3",
+        "0",
+        "1/3"
+      ],
+      "reset_mode_readout_coefficient_exact": "0",
+      "preparation_role": "Intermediate exact half-root realization; the final full-support preparation and its error budget are checked separately.",
+      "fixed_initial_law_is_hidden_stationary": false,
+      "exact_characteristic_polynomial": "x*(2*x + 1)**4*(2*x + 5)/32",
+      "exact_mixture_mean_for_every_time": true
+    }
+  ],
+  "zero_field_passive_lumpability": {
+    "total_predictor_states": 6,
+    "stationary_law": "(1-zeta) half-roots + zeta uniform, 0<zeta<1",
+    "exact_lumping_generator": "Matrix([[-1, 1], [1, -1]])",
+    "full_nonzero_relaxation_rate": "2",
+    "entire_passive_visible_telegraph_law_preserved": true,
+    "fixed_preparation_hidden_stationary": true,
+    "symbolic_stationarity_detailed_balance_and_sign_balance": true,
+    "all_time_preparation_bound_argument": "A Markov semigroup contracts row l1 distance; the binary readout has sup norm one. Thus the exact initial l1 change bounds every mean change.",
+    "preparation_calibrations": [
+      {
+        "tolerance": "1/10",
+        "zeta": "1/40",
+        "full_support_fixed_preparation": [
+          "59/120",
+          "1/240",
+          "1/240",
+          "59/120",
+          "1/240",
+          "1/240"
+        ],
+        "exact_l1_preparation_change": "1/30",
+        "all_fields_all_times_mean_error_budget": "1/20"
+      },
+      {
+        "tolerance": "1/100",
+        "zeta": "1/400",
+        "full_support_fixed_preparation": [
+          "599/1200",
+          "1/2400",
+          "1/2400",
+          "599/1200",
+          "1/2400",
+          "1/2400"
+        ],
+        "exact_l1_preparation_change": "1/300",
+        "all_fields_all_times_mean_error_budget": "1/200"
+      },
+      {
+        "tolerance": "1/1000",
+        "zeta": "1/4000",
+        "full_support_fixed_preparation": [
+          "5999/12000",
+          "1/24000",
+          "1/24000",
+          "5999/12000",
+          "1/24000",
+          "1/24000"
+        ],
+        "exact_l1_preparation_change": "1/3000",
+        "all_fields_all_times_mean_error_budget": "1/2000"
+      }
+    ]
+  },
+  "positive_quadrature_checks": {
+    "interval": [
+      "1",
+      "4"
+    ],
+    "q_exact": "3/4",
+    "positive_gaussian_nodes_exact": [
+      "1271/508 - sqrt(222505)/508",
+      "sqrt(222505)/508 + 1271/508"
+    ],
+    "positive_gaussian_weights_exact": [
+      "1279*sqrt(222505)/4005090 + 1/2",
+      "1/2 - 1279*sqrt(222505)/4005090"
+    ],
+    "exact_polynomial_degrees_checked": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "uniform_error_bound": "2(1-alpha/B)^(2r)",
+    "analytic_tail_argument": "For j>=2r, ((B-lambda)/B)^j <= q^(2r); the remaining exp(-Bt) Poisson series is at most one. Both positive measures have total mass one.",
+    "rational_tolerance_calibrations": [
+      {
+        "tolerance": "1/10",
+        "atoms_sufficient": 7,
+        "uniform_quadrature_error_bound_exact": "4782969/134217728",
+        "preparation_error_budget": "1/20",
+        "combined_error_bound_exact": "57469277/671088640",
+        "predictor_state_bound": 16
+      },
+      {
+        "tolerance": "1/100",
+        "atoms_sufficient": 11,
+        "uniform_quadrature_error_bound_exact": "31381059609/8796093022208",
+        "preparation_error_budget": "1/200",
+        "combined_error_bound_exact": "1884038118001/219902325555200",
+        "predictor_state_bound": 24
+      },
+      {
+        "tolerance": "1/1000",
+        "atoms_sufficient": 15,
+        "uniform_quadrature_error_bound_exact": "205891132094649/576460752303423488",
+        "preparation_error_budget": "1/2000",
+        "combined_error_bound_exact": "61765188530795093/72057594037927936000",
+        "predictor_state_bound": 32
+      }
+    ],
+    "scope": "Exact quadrature moments and analytic all-time tail bookkeeping, not a sampled-time error guarantee."
+  },
+  "largest_generator_dimension": 6,
+  "no_simulation_or_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_constant_step_compression.py": "90da33d34af1af5c9985525969f76d141b15acec620d5b1c2803814a5a360464"
+  }
+}

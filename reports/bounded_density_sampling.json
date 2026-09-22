@@ -1,0 +1,271 @@
+{
+  "status": "PASS",
+  "scope": "Exact sampled-row conditioning, reversible graph realization, finite prefix recursion, and concentration/regenerative budgets under an additional bounded conductance density; no simulations.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "target": {
+    "stationary_law_exact": [
+      "1/6",
+      "1/3",
+      "1/4",
+      "1/4"
+    ],
+    "sensitivity": [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "W_exact": "1",
+    "conductance_density_cap_exact": "2",
+    "nonlumpability_exit_probabilities_exact": [
+      "5/16",
+      "7/32"
+    ]
+  },
+  "conditional_sampling": {
+    "enumerated_configurations": 16,
+    "conditional_row_function_checks": 48,
+    "empirical_average_checks": 14,
+    "largest_absolute_conditional_bias_exact": "1/48",
+    "sample_law": "Complete finite enumeration, not Monte Carlo."
+  },
+  "realizations_and_prefixes": {
+    "sampled_graphs": [
+      {
+        "microscopic_samples": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "distinct_microscopic_states": 4,
+        "physical_replica_states": 4,
+        "minimum_update_entry_exact": "23/512",
+        "largest_outgoing_rate_exact": "147/128"
+      },
+      {
+        "microscopic_samples": [
+          0,
+          0,
+          2,
+          2
+        ],
+        "distinct_microscopic_states": 2,
+        "physical_replica_states": 4,
+        "minimum_update_entry_exact": "1/64",
+        "largest_outgoing_rate_exact": "9/16"
+      }
+    ],
+    "reset_precision_exact": "1/16",
+    "good_sample_one_step_defect_exact": "5/96",
+    "good_sample_average_defect_exact": "1395/131072",
+    "word_probabilities_checked": 30,
+    "prefix_TV": [
+      {
+        "prefix_length": 1,
+        "actual_TV_exact": "0",
+        "certificate_exact": "1/16"
+      },
+      {
+        "prefix_length": 2,
+        "actual_TV_exact": "31/1024",
+        "certificate_exact": "3/8"
+      },
+      {
+        "prefix_length": 3,
+        "actual_TV_exact": "221827/4718592",
+        "certificate_exact": "5/4"
+      },
+      {
+        "prefix_length": 4,
+        "actual_TV_exact": "32391131/603979776",
+        "certificate_exact": "7/2"
+      }
+    ]
+  },
+  "concentration_and_regeneration": {
+    "concentration_cases": [
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 1,
+        "eta_exact": "1/2",
+        "functions_bound": 6,
+        "samples_per_stratum": 6094,
+        "total_physical_states": 12189,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 1,
+        "eta_exact": "1/8",
+        "functions_bound": 6,
+        "samples_per_stratum": 120209,
+        "total_physical_states": 240419,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 1,
+        "eta_exact": "1/128",
+        "functions_bound": 6,
+        "samples_per_stratum": 42402424,
+        "total_physical_states": 84804849,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 3,
+        "eta_exact": "1/2",
+        "functions_bound": 30,
+        "samples_per_stratum": 7742,
+        "total_physical_states": 15485,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 3,
+        "eta_exact": "1/8",
+        "functions_bound": 30,
+        "samples_per_stratum": 146578,
+        "total_physical_states": 293157,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 3,
+        "eta_exact": "1/128",
+        "functions_bound": 30,
+        "samples_per_stratum": 49152896,
+        "total_physical_states": 98305793,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 3,
+        "prefix_updates": 1,
+        "eta_exact": "1/2",
+        "functions_bound": 12,
+        "samples_per_stratum": 7219,
+        "total_physical_states": 21658,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 3,
+        "prefix_updates": 1,
+        "eta_exact": "1/8",
+        "functions_bound": 12,
+        "samples_per_stratum": 138209,
+        "total_physical_states": 414628,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 3,
+        "prefix_updates": 1,
+        "eta_exact": "1/128",
+        "functions_bound": 12,
+        "samples_per_stratum": 47010338,
+        "total_physical_states": 141031015,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 3,
+        "prefix_updates": 3,
+        "eta_exact": "1/2",
+        "functions_bound": 120,
+        "samples_per_stratum": 9577,
+        "total_physical_states": 28732,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 3,
+        "prefix_updates": 3,
+        "eta_exact": "1/8",
+        "functions_bound": 120,
+        "samples_per_stratum": 175934,
+        "total_physical_states": 527803,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      },
+      {
+        "alphabet_size": 3,
+        "prefix_updates": 3,
+        "eta_exact": "1/128",
+        "functions_bound": 120,
+        "samples_per_stratum": 56668080,
+        "total_physical_states": 170004241,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100
+      }
+    ],
+    "regenerative_cases": [
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 13,
+        "eta_exact": "1/14598144",
+        "functions_bound": 32766,
+        "samples_per_stratum": 1656253569716811872,
+        "total_physical_states": 3312507139433623745,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100,
+        "requested_error_exact": "1/4",
+        "prefix_error_exact": "1/8",
+        "clock_error_exact": "52612659/536870912"
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 20,
+        "eta_exact": "1/22699573248",
+        "functions_bound": 4194302,
+        "samples_per_stratum": 5614136178189205296183907,
+        "total_physical_states": 11228272356378410592367815,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100,
+        "requested_error_exact": "1/32",
+        "prefix_error_exact": "1/64",
+        "clock_error_exact": "115063885233/8796093022208"
+      },
+      {
+        "alphabet_size": 2,
+        "prefix_updates": 30,
+        "eta_exact": "1/553329226678272",
+        "functions_bound": 4294967294,
+        "samples_per_stratum": 4670952976030333077267356941549501,
+        "total_physical_states": 9341905952060666154534713883099003,
+        "union_failure_bound": "< 2^-100",
+        "logarithm_enclosure_terms": 100,
+        "requested_error_exact": "1/512",
+        "prefix_error_exact": "1/1024",
+        "clock_error_exact": "6794407359123417/9223372036854775808"
+      }
+    ],
+    "fixed_parameters_exact": {
+      "L": "2",
+      "R": "3/2",
+      "A_H": "3/2",
+      "C_R": "11/2",
+      "q": "3/4"
+    },
+    "method": "Exact rational logarithm enclosures and integer inequalities; no floating-point ceilings."
+  },
+  "largest_matrix_dimension": 5,
+  "limitations": "Finite exact checks do not prove the all-size theorem or remove its bounded-density assumption; the predicted spectral cap is 2L, not preservation of a target band.",
+  "source_sha256": {
+    "verify_bounded_density_sampling.py": "2f640179aa443a63f913c77df7638afcbe9ee2e4e5225ac5390debca5a1159ce",
+    "verify_bounded_rate_prediction.py": "e150952554d6fc30005f70e09407ef63009cf482f82f9616ce41ab876986b3f1",
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

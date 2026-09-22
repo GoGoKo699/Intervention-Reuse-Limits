@@ -341,18 +341,17 @@ then the uniform remainder is at most $R_H|z|^4$ for $|z|\le H$.
 Set
 
 $$
-h_*=minleft{H,rac1{20(1+s)}
-ight},qquad
-gamma=e^{-h_*}sinh(s h_*).
+h_*=\min\left\{H,\frac1{20(1+s)}\right\},\qquad
+\gamma=e^{-h_*}\sinh(s h_*).
 $$
 
-For every $Dge2$, put $r=D+3$. The [fixed-field proof](FIXED_FIELD_LOWER_BOUND.md) constructs a target with $r+2=D+5$ states for which
+For every $D\ge2$, put $r=D+3$. The [fixed-field proof](FIXED_FIELD_LOWER_BOUND.md) constructs a target with $r+2=D+5$ states for which
 
 $$
-oxed{
-E_D^{mathrm{field}}(k,W,H)
-gerac{	anh(h_*)gamma^2}{640r^2}
-exp[-2pisqrt{6(r-1)}].
+\boxed{
+E_D^{\mathrm{field}}(k,W,H)
+\ge\frac{\tanh(h_*)\gamma^2}{640r^2}
+\exp[-2\pi\sqrt{6(r-1)}].
 }
 $$
 
@@ -365,22 +364,22 @@ The mechanism is exact. A reversible equilibrium-to-field step mean is a constan
 The uniform target remainder from Section 6 gives a simpler alternative whenever a cubic step curve has a positive exponential decomposition
 
 $$
-m_3(	au)=B(	au)-sum_{j=1}^r w_je^{-eta_j	au},qquad
-B(	au)=b_0+(b_1+b_2	au)e^{-2	au},qquad w_j>0,
+m_3(\tau)=B(\tau)-\sum_{j=1}^r w_je^{-\beta_j\tau},\qquad
+B(\tau)=b_0+(b_1+b_2\tau)e^{-2\tau},\qquad w_j>0,
 $$
 
-where $	au=kt$. Suppose the positive Hankel operator of the exponential sum, on $L^2(e^{-	au}d	au)$, has least positive eigenvalue at least $sigma_r$. Uniform curve error bounds Hankel operator error by the same number because this measure has mass one.
+where $\tau=kt$. Suppose the positive Hankel operator of the exponential sum, on $L^2(e^{-\tau}d\tau)$, has least positive eigenvalue at least $\sigma_r$. Uniform curve error bounds Hankel operator error by the same number because this measure has mass one.
 
-The linear curve $m_1=1-e^{-2	au}$ lies in the same rank-three baseline span as $B$. For $r=D+4$, a competitor's constant-step curve minus $z m_1+z^3B$ consequently has Hankel rank at most $D+3=r-1$. Only the target is Taylor expanded. At step amplitude $zle H$, any uniform prediction error $delta$ must satisfy
-
-$$
-delta+R_Hz^4ge z^3sigma_r.
-$$
-
-Choosing $z_D=min{H,sigma_r/(2R_H)}$ gives
+The linear curve $m_1=1-e^{-2\tau}$ lies in the same rank-three baseline span as $B$. For $r=D+4$, a competitor's constant-step curve minus $z m_1+z^3B$ consequently has Hankel rank at most $D+3=r-1$. Only the target is Taylor expanded. At step amplitude $z\le H$, any uniform prediction error $\delta$ must satisfy
 
 $$
-deltagerac{sigma_r z_D^3}{2}.
+\delta+R_Hz^4\ge z^3\sigma_r.
+$$
+
+Choosing $z_D=\min\{H,\sigma_r/(2R_H)\}$ gives
+
+$$
+\delta\ge\frac{\sigma_r z_D^3}{2}.
 $$
 
 This second argument permits a shrinking witness amplitude; it makes no inference from a competitor's finite-field error to its derivatives. Section 8 uses it for the capped class. The stronger fixed-amplitude theorem above is the primary unrestricted-rate lower bound.

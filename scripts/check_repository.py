@@ -47,10 +47,10 @@ def main() -> None:
     scripts = list((ROOT/'scripts').glob('*.py'))
     for script in scripts:
         ast.parse(script.read_text(encoding='utf-8'),filename=str(script))
-    for name in ('checkpoint','finite_accuracy','quadrature','minimal_realization','response_lower_bounds','unrestricted_rate_lower_bound','finite_field','path_information','actuator_hierarchy','general_compression','reversible_compression','general_controlled_lower_bound','bounded_rate_prediction','shift_register_lower_bound','polynomial_controlled_lower_bound'):
+    for name in ('checkpoint','finite_accuracy','quadrature','minimal_realization','response_lower_bounds','unrestricted_rate_lower_bound','finite_field','path_information','actuator_hierarchy','general_compression','reversible_compression','general_controlled_lower_bound','bounded_rate_prediction','shift_register_lower_bound','polynomial_controlled_lower_bound','constant_step_compression','bounded_density_sampling'):
         report = json.loads((ROOT/f'reports/{name}.json').read_text())
         require(report['status']=='PASS',f'Saved report is not PASS: {name}')
-    for report_name in ('finite_accuracy','quadrature','minimal_realization','response_lower_bounds','unrestricted_rate_lower_bound','finite_field','path_information','actuator_hierarchy','general_compression','reversible_compression','general_controlled_lower_bound','bounded_rate_prediction','shift_register_lower_bound','polynomial_controlled_lower_bound'):
+    for report_name in ('finite_accuracy','quadrature','minimal_realization','response_lower_bounds','unrestricted_rate_lower_bound','finite_field','path_information','actuator_hierarchy','general_compression','reversible_compression','general_controlled_lower_bound','bounded_rate_prediction','shift_register_lower_bound','polynomial_controlled_lower_bound','constant_step_compression','bounded_density_sampling'):
         report = json.loads((ROOT/f'reports/{report_name}.json').read_text())
         for name,digest in report['source_sha256'].items():
             require(hashlib.sha256((ROOT/'scripts'/name).read_bytes()).hexdigest()==digest,

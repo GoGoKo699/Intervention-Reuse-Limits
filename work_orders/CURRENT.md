@@ -1,5 +1,17 @@
 # Current work order: close the general prediction-complexity gap
 
+## New completed extension: experiment menus and reversible sampling — 22 September 2026
+
+This continuation starts from `c2740b58734deda54f30463395362ef7368cb034`. All fifteen preceding mathematical verifiers and saved reports are preserved.
+
+The central comparison is now passive observation versus constant-field steps versus switching on the same bounded-spectrum binary target class. The costs are exactly `2`, `Theta(log(1/δ))`, and `δ^{-Theta(1)}` physical states. The last expression has unmatched positive lower and upper exponents and remains necessary at every fixed control clock. Start with [constant-step compression](../docs/CONSTANT_STEP_COMPRESSION.md) and [the polynomial switching lower](../docs/POLYNOMIAL_CONTROLLED_LOWER_BOUND.md).
+
+The step upper works for all original bounded sensitivities with an internal cap, without an alphabet restriction. A positive equilibrium covariance measure has a uniform compact rate interval. Positive quadrature, shifted Jacobi realization, stationary reset, and a small fixed-preparation perturbation give one common reversible, irreducible predictor with stationary zero-field preparation, exact passive telegraph law and static mean, and a full spectral band. Its field-dependent generators need not be continuous or follow the original actuator rule. Field-function complexity is not charged by physical-state count. It has no switching guarantee. The logarithmic lower for the capped step menu may use an amplitude shrinking with state budget.
+
+For switching, [bounded-density reversible sampling](../docs/BOUNDED_DENSITY_REVERSIBLE_COMPRESSION.md) proves polynomial sufficiency under `K_ij/μ_j ≤ Lk` for every distinct hidden pair, with a fixed finite actuator alphabet. The state bound is `C δ^{-2(1+p_L)} log³(2/δ)`, where `p_L=log(m)/log(1+1/(LR))`. The predictor stays in the original field-rule family, preserves the exact actuator histogram, and has internal spectral cap `2Lk`. The original gap and band are not asserted. A bounded spectrum alone does not imply bounded conductance density; the fixed-band shift registers demonstrate the distinction.
+
+These results improve the conceptual task comparison and resolve a concrete reversible subclass. They do not settle polynomial reversible sufficiency under a spectral cap alone, identify the optimal switching exponent, or certify publication novelty. Manuscript writing remains on hold.
+
 ## New completed extension — 22 September 2026
 
 This continuation starts from `b143adad62c8ec0d8b51733760d5c1c82bcaa213`. All fourteen preceding mathematical verifiers and reports are preserved. The polynomial-necessity target is now proved, including fixed control resolution.
@@ -68,7 +80,9 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 **Determine the optimal cost of retaining reversible dynamics in the bounded-rate binary class.**
 
-Polynomial necessary growth is established. Focus on a reversible predictor of polynomial size, or a rigorous lower bound that separates reversible from unrestricted predictors. Retain ordinary detailed balance, the exact actuator histogram, fixed binary readout, and the all-protocol/all-horizon mean guarantee; specify separately whether the spectral band is also retained. The current sufficient bounds alone imply no structural penalty. Improving the unmatched polynomial exponents is a secondary quantitative direction.
+Polynomial necessary growth is established. The new bounded-density sampling proof identifies the precise next obstacle: replace its pointwise density bound by a size-independent condition following from the spectral cap, or construct a different reversible approximation that handles sparse high-density transitions. A reversible predictor of polynomial size under the original cap-only assumptions, or a rigorous lower bound separating reversible from unrestricted predictors, would settle the main question. Retain ordinary detailed balance, the exact actuator histogram, fixed binary readout, and the all-protocol/all-horizon mean guarantee; specify separately whether the spectral band is retained. The current sufficient bounds alone imply no structural penalty. Improving the unmatched polynomial exponents is a secondary quantitative direction.
+
+For the new constant-step comparison, a separate refinement would impose continuous or analytic field dependence while retaining a common equilibrium preparation and the logarithmic state order. The current broad-class separation is proved without that extra constraint. Do not silently present its field-indexed Jacobi models as belonging to the original exponential rate-rule family.
 
 Two exploratory routes did not settle that question. Exact reversible three-symbol matching has a small realization, but its extension needs consistent transition relations between conditional prediction profiles. Matching only their Gram and projected one-step moments is insufficient: dynamics outside the retained profile space can return and change later correlations. These are limitations of proposed certificates, not impossibility results for polynomial reversible compression. Do not substitute finite-prefix success or moment matching alone for a controlled-mean approximation proof.
 
