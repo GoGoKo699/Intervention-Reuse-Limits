@@ -518,8 +518,11 @@ possible discrepancy outside that subclass.
 The [fixed-actuator hierarchy](FIXED_ACTUATOR_HIERARCHY.md) extends this
 obstruction to arbitrarily high response order, with a fixed internal rate
 band. The [actuator-process theorem](ACTUATOR_PROCESS.md) identifies the
-complete information for general controlled visible path laws, while the
-[general upper bound](GENERAL_FINITE_FIELD_UPPER_BOUND.md) establishes
-fixed-accuracy mean compression with a nonsharp state bound and potentially
-nonreversible surrogates. These extensions do not change the sharp
-subclass theorem above.
+complete information for general controlled visible path laws. The
+[reversible general upper bound](REVERSIBLE_GENERAL_COMPRESSION.md) now
+establishes fixed-accuracy mean compression with exact variance and a
+nonsharp state bound. The [general controlled lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md)
+exceeds every fixed power of the logarithm of the inverse error, even with
+binary sensitivities, bounded internal rates, and fixed minimum control
+dwell time. It proves a quantitative separation from the sharp subclass
+theorem above.

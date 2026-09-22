@@ -6,6 +6,8 @@
 
 The construction combines established uniformization and canonical finite-order Markov approximation with the model's common reset and a reversible semigroup estimate. The [prior-art comparison](PRIOR_ART.md) attributes those ingredients; this note does not claim either classical construction as new.
 
+**Subsequent extension:** the [reversible compression theorem](REVERSIBLE_GENERAL_COMPRESSION.md) now preserves reversibility and the exact sensitivity variance, with a smaller, still nonsharp double-exponential upper bound. The [general controlled lower bound](GENERAL_CONTROLLED_LOWER_BOUND.md) rules out every fixed polylogarithmic state law, even for binary sensitivities and a fixed internal rate band. The proof below remains useful for its reset, quantization, and regularization estimates.
+
 ## 1. Statement and an explicit bound
 
 Fix $k>0$, $G>0$, $H>0$, and an error tolerance $0<\varepsilon<1$. The target is any member of the [original model](THEORY.md), with arbitrary finite hidden size, irreducible reversible internal generator $K$, stationary law $\mu$, centered sensitivity $g$, and $|g_j|\le G$. The constructor knows the full target.
@@ -243,4 +245,4 @@ The reset argument controls the final mean uniformly. It does not give uniform t
 
 This construction rules out a failure of all finite-state, fixed-tolerance mean compression within the bounded-field, bounded-sensitivity general family. Unrestricted hidden size and internal rates alone do not obstruct such compression. It also makes clear why scalar-kernel compression is not automatically enough: the word construction retains higher-order hidden symbol statistics that a two-time correlation kernel can discard.
 
-The upper bound is nonsharp and may be computationally unusable. It applies to known targets and says nothing about obtaining the requisite word probabilities from passive data. It leaves open a small, preferably sharp general-family state bound, and an upper bound that retains reversibility and exactly preserves the target's sensitivity variance. The canonical subclass already has a much stronger result because its actuator permits an exact scalar-kernel closure; no such closure is assumed here.
+The upper bound is nonsharp and may be computationally unusable. It applies to known targets and says nothing about obtaining the requisite word probabilities from passive data. Reversibility and exact variance preservation are resolved by the subsequent extension linked above. The sharp general-family state order remains open, with the new lower bound already exceeding every fixed power of the logarithm of the inverse error. The canonical subclass has a much smaller sharp state order because its actuator permits an exact scalar-kernel closure; no such closure is assumed here.

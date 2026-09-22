@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all ten mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twelve mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -154,6 +154,22 @@ The three new theorem documents received reciprocal internal proof audits. These
 
 The complete ten-verifier `make check` passed locally in the pinned environment. All ten fresh reports matched their saved JSON reports exactly. The eight preceding mathematical scripts and reports, original MIT license, pinned dependencies, and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
 
+## General complexity separation and reversible compression checkpoint
+
+This continuation starts from `1d5928589506cd54440896bb545863f78fa9dd6e`. All ten preceding mathematical verifiers and saved reports are preserved. Two new verifiers check the controlled lower construction and reversible compression; the build target and provenance checker include both.
+
+[verify_general_controlled_lower_bound.py](../scripts/verify_general_controlled_lower_bound.py) generates [general_controlled_lower_bound.json](../reports/general_controlled_lower_bound.json). Exact calculations at tree depths $n=1,2,3$ check the physical Haar change of basis, positive reversible generators, binary sensitivity, fixed internal rate band, and the leaf identity that proves the ideal Gram lower bound. Exact radial invariant subspaces and spectral moments check the stated cubic kernel. Full physical-generator identities independently check the polynomial filters and both mean-response endpoints, including their normalization and formal reversed words.
+
+For these targets, rational norm arithmetic certifies the perturbation after substituting fixed-duration propagator logarithm polynomials. The field is $h=\log(65/64)$, the minimum segment duration is $1/8$, and the polynomial degrees are $280,320,360$. The corresponding certified matrix errors are approximately $5.18\times10^{-69}$, $1.78\times10^{-73}$, and $4.58\times10^{-78}$, each below $1/32$. Separate calculations at 100 and 150 decimal digits evaluate the factorized mean statistics using actual propagators. These are consistency checks, not interval certification or numerical rank tests. The rival rank factorization and the all-$n$ state lower bound are analytic; no search over competitors or statistical trials is performed. The largest new physical generator is $17\times17$, and the largest controlled matrix is $8\times8$.
+
+[verify_reversible_compression.py](../scripts/verify_reversible_compression.py) generates [reversible_compression.json](../reports/reversible_compression.json). An eight-hidden-state reversible product chain gives a nontrivial four-cell predictive partition, with exact projection defect $5/72$ and three-symbol total variation $7/1728$. Rational identities verify the profile error bounds, stationary-flux quotient, detailed balance, and at-most-two-point moment restoration. The resulting six-hidden-state chain preserves $W=15/32$ and $G=1$ exactly. Symbolic full-field checks verify stationarity, detailed balance, passive lumpability, and the exact lifting of the cell model before the restored sensitivities are applied.
+
+Three deterministic protocols with seven checkpoints compare six intermediate and final models. The maximum original-to-final mean discrepancy is about $6.17\times10^{-5}$, and the maximum baseline lifting discrepancy is about $2.22\times10^{-16}$. These selected comparisons do not prove uniform protocol accuracy or instantiate the worst-case partition size. The improved double-exponential upper count follows from the written controlled-expansion argument. The largest matrix across the complete suite remains $68\times68$.
+
+The new proofs received reciprocal internal audits covering physical positivity, error norms, state counts, competitor scope, and the fixed-dwell conversion. Such audits and calculations belong to the same investigation and are not independent external validation or publication novelty certification. The signed statistics in the lower proof may be poorly conditioned for data acquisition, and neither new theorem provides an efficient learning algorithm.
+
+The complete twelve-verifier `make check` passed locally in the pinned environment. All twelve fresh reports matched their saved JSON reports exactly. The ten earlier mathematical scripts and reports, original MIT license, pinned dependencies, and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -168,6 +184,8 @@ python scripts/verify_finite_field.py --output reports/finite_field.json
 python scripts/verify_path_information.py --output reports/path_information.json
 python scripts/verify_actuator_hierarchy.py --output reports/actuator_hierarchy.json
 python scripts/verify_general_compression.py --output reports/general_compression.json
+python scripts/verify_reversible_compression.py --output reports/reversible_compression.json
+python scripts/verify_general_controlled_lower_bound.py --output reports/general_controlled_lower_bound.json
 make check
 ```
 

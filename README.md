@@ -4,9 +4,36 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** the project now combines a sharp finite-field theorem for a specified actuator subclass with three general-family results: arbitrarily delayed response information with a fixed actuator, an exact characterization of complete driven path information, and a universal but nonsharp finite-state mean approximation. Observation and near-lumpability results supply separate operational statements. Originality of the combined results remains under assessment; manuscript writing remains on hold.
+**Research status:** the general-family state cost is now proved to exceed every fixed power of the logarithm of the inverse error. This already happens with two sensitivity values, a bounded internal rate band, and a fixed minimum control dwell time. A complementary upper theorem supplies reversible approximants preserving the exact sensitivity variance, but the quantitative gap remains large. Originality of the combined results remains under assessment; manuscript writing remains on hold.
 
-## Stronger prediction and observation results
+## Main result: driven predictions can require many more states
+
+An exact two-state passive model does not bound the cost of predicting the same binary mean under an applied field. At fixed $k,G,W,H$, the [general controlled lower bound](docs/GENERAL_CONTROLLED_LOWER_BOUND.md) proves that worst-case mean error $\delta$ requires at least
+
+$$
+D_*(\delta)\ge c\exp\!\left(c\sqrt{\log(1/\delta)}\right)
+$$
+
+physical Markov states for sufficiently small $\delta$. This grows faster than every fixed power of $\log(1/\delta)$. The targets are reversible, use only $g=\pm\sqrt W$, and have all internal relaxation rates in $[k,3k]$. The lower bound allows arbitrary Markov competitors with fixed readout and preparation. Its controls use only $0$ and one fixed nonzero field, with every nonzero held interval at least $1/(8k)$.
+
+The same construction gives an exact comparison:
+
+$$
+D_{\mathrm{cubic}}=n+3,
+\qquad 2^n\le D_{\mathrm{full\ controlled}}\le2^{n+1}+1.
+$$
+
+Here the cubic minimum uses the established analytic-in-field competitor class; the full controlled lower bound permits broader Markov competitors. Thus a small model that reproduces every cubic response can still require exponentially more states to reproduce actual controlled means. The finite-error theorem separately quantifies this obstruction; it does not follow merely from exact rank.
+
+Compression nevertheless remains possible throughout the bounded-sensitivity family. The [reversible general upper bound](docs/REVERSIBLE_GENERAL_COMPRESSION.md) constructs one predictor for all allowed protocols and horizons, within the original model family: reversibility, the sensitivity bound, variance $W$, passive law, equilibrium curve, and linear/quadratic mean agreements are retained exactly. Its sufficient count is
+
+$$
+D(\delta)\le\exp\!\left\{\exp\!\left[C_{G,H}\log^2(16/\delta)\right]\right\}.
+$$
+
+This double-exponential upper bound and the lower bound are far apart. The optimal general-family state order, and any additional optimal cost of preserving reversibility, remain open. Both results concern a supplied microscopic model; neither is a learning algorithm or an experimental sample bound.
+
+## A sharp subclass and operational results
 
 **Actual finite-field prediction.** In a specified subclass, exactly one hidden state has sensitivity $+\sqrt W$ and stationary mass $1/2$; all other hidden states have sensitivity $-\sqrt W$. Every finite positive relaxation kernel has such a reversible realization. For any fixed field bound $H>0$, one reduced Markov model must predict the actual binary mean under every protocol $|h(t)|\le H$, at every time. The sharp worst-case state orders are
 
@@ -27,7 +54,7 @@ The upper construction preserves reversibility, bounded sensitivity, and the ent
 
 **The complete path information has an exact description.** For the general family, equality of all controlled visible path laws is equivalent to equality in law of the stationary hidden sensitivity process $Y_t=g(X_t)$. Short-pulse no-exit functionals recover its joint Laplace transforms in principle. The [actuator-process theorem](docs/ACTUATOR_PROCESS.md) also gives a matrix-return closure for finitely many distinguished actuator states. Two sensitivity levels alone are insufficient for two-time closure: an explicit pair has identical two-time level kernels but different finite-field means. Necessity from mean data alone is not established.
 
-**Fixed-accuracy compression still exists for the whole bounded-sensitivity family.** For fixed $k,G,H$ and error $\varepsilon>0$, every reversible target has a Markov mean predictor with an explicit finite state bound independent of target size and internal rates. The [general upper bound](docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md) quantizes sensitivities, regularizes the hidden clock, and realizes a finite window of hidden symbols as Markov states. It preserves the same sensitivity bound, passive law, equilibrium curve, and linear/quadratic mean agreements. Its state bound is very large, its internal dynamics can be nonreversible, and sensitivity variance is only approximately preserved. No general-family squared-logarithmic upper order is proved.
+**Reversibility and exact variance can be retained.** The [general reversible construction](docs/REVERSIBLE_GENERAL_COMPRESSION.md) partitions the target using finitely many prediction functions, averages reversible transitions, and uses at most two sensitivity replicas per cell to restore the original variance. A truncated controlled expansion improves its sufficient count to the double-exponential bound above. The [earlier finite-word construction](docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md) remains as a preliminary existence proof and source of shared estimates; its nonreversibility and variance error are no longer limitations of the best available upper theorem.
 
 These results separate three questions: which intervention data are complete, whether fixed-accuracy compression exists, and how many physical states it optimally costs. A finite response hierarchy can fail the first question without making the second impossible.
 
@@ -64,11 +91,13 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 
 | Question | Document |
 |---|---|
-| What is proved for actual finite-field predictions? | [Uniform finite-field theorem](docs/FINITE_FIELD.md) |
+| Why does the general state cost exceed every power of the logarithm? | [Binary-tree controlled lower bound](docs/GENERAL_CONTROLLED_LOWER_BOUND.md) |
+| Can approximation preserve reversibility and exact variance? | [General reversible compression](docs/REVERSIBLE_GENERAL_COMPRESSION.md) |
+| Where is the finite-field state order sharp? | [Uniform finite-field theorem for the rank-one subclass](docs/FINITE_FIELD.md) |
 | Does one fixed intervention already require growing model size? | [Fixed nonzero step lower bound](docs/FIXED_FIELD_LOWER_BOUND.md) |
 | Can arbitrarily many response orders agree with the actuator fixed? | [Fixed-actuator response hierarchy](docs/FIXED_ACTUATOR_HIERARCHY.md) |
 | What replaces the scalar kernel for complete driven path laws? | [Stationary actuator process and matrix-return closure](docs/ACTUATOR_PROCESS.md) |
-| Does finite-state approximation exist outside the special subclass? | [General bounded-sensitivity upper bound](docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md) |
+| What was the first general existence construction? | [Finite-word bounded-sensitivity upper bound](docs/GENERAL_FINITE_FIELD_UPPER_BOUND.md) |
 | What can two visible measurements reveal? | [Path response and statistical separation](docs/ACTIVE_PATH_RESPONSE.md) |
 | Does the distinction survive imperfect passive lumpability? | [Quartic passive information and robustness](docs/NEAR_LUMPABILITY.md) |
 | What is the candidate contribution, and how does it compare with prior theorems? | [Publication scope and operational interpretation](docs/PUBLICATION_SCOPE.md) |
@@ -80,7 +109,7 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
 
-The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), and [general compression identities](scripts/verify_general_compression.py). Their generated evidence is in [reports](reports).
+The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), [general compression identities](scripts/verify_general_compression.py), [reversible compression](scripts/verify_reversible_compression.py), and [the controlled general lower bound](scripts/verify_general_controlled_lower_bound.py). Their generated evidence is in [reports](reports).
 
 ## Reproduce
 
@@ -108,6 +137,8 @@ python scripts/verify_finite_field.py --output .check-output/finite_field.json
 python scripts/verify_path_information.py --output .check-output/path_information.json
 python scripts/verify_actuator_hierarchy.py --output .check-output/actuator_hierarchy.json
 python scripts/verify_general_compression.py --output .check-output/general_compression.json
+python scripts/verify_reversible_compression.py --output .check-output/reversible_compression.json
+python scripts/verify_general_controlled_lower_bound.py --output .check-output/general_controlled_lower_bound.json
 ```
 
 A failed assertion exits unsuccessfully. Fresh reports go into the ignored `.check-output` directory; the saved reports are not overwritten. Numerical roundoff can differ across platforms. Dependency installation and GitHub Actions setup require network access; the verification calculations themselves do not.
@@ -116,7 +147,7 @@ The checks use symbolic algebra, exact rational calculations, and small determin
 
 ## Scope and attribution
 
-The coefficient theorems cover the original centered-sensitivity family. The sharp finite-field state order applies to the specified rank-one subclass; the general-family upper bound is nonsharp and permits nonreversible surrogates. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, parameter precision, runtime, or experimental resolution. No turbulence or generic molecular implementation claim is made.
+The coefficient theorems cover the original centered-sensitivity family. The sharp finite-field state order applies to the specified rank-one subclass. For general actuators, the new lower bound exceeds every fixed power of the logarithm, while the much larger upper bound preserves the original reversible family and exact variance; their orders do not match. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, parameter precision, runtime, or experimental resolution. No turbulence or generic molecular implementation claim is made.
 
 Nonlinear response, aggregated Markov inference from dwell times, minimal realization, positive model reduction, and Hankel dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) and [publication scope](docs/PUBLICATION_SCOPE.md) distinguish those ingredients from the new combined claims. Demanding the correct passive law does not cause the approximation lower bound: it already applies to competitors without that requirement.
 

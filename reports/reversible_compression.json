@@ -1,0 +1,394 @@
+{
+  "status": "PASS",
+  "scope": "Exact reversible prediction-profile quotient, exact cell moment restoration, and small deterministic physical-model comparisons.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "exact_construction": {
+    "target_hidden_states": 8,
+    "cell_states": 4,
+    "replica_hidden_states": 6,
+    "target_total_states": 9,
+    "final_total_states": 7,
+    "P_construction": "Product of reversible bit kernels with eigenvalues 1/2, 1/3, 1/4; P=exp(K) for the stated product generator.",
+    "original_actuator": [
+      "-1",
+      "-3/4",
+      "-1/2",
+      "1/4",
+      "-1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ],
+    "bin_actuator_values": [
+      "-5/8",
+      "5/8"
+    ],
+    "original_variance_W": "15/32",
+    "quantized_variance": "25/64",
+    "predictive_profile_length": 2,
+    "profile_quantization_width": "1/2",
+    "partition_cells": [
+      [
+        0
+      ],
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        3,
+        5,
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "exact_actual_projection_defect": "5/72",
+    "prediction_word_checks": [
+      {
+        "word": [
+          -1
+        ],
+        "maximum_prediction_error_exact": "5/72",
+        "certificate_exact": "5/72"
+      },
+      {
+        "word": [
+          1
+        ],
+        "maximum_prediction_error_exact": "5/72",
+        "certificate_exact": "5/72"
+      },
+      {
+        "word": [
+          -1,
+          -1
+        ],
+        "maximum_prediction_error_exact": "2755/41472",
+        "certificate_exact": "5/36"
+      },
+      {
+        "word": [
+          -1,
+          1
+        ],
+        "maximum_prediction_error_exact": "611/41472",
+        "certificate_exact": "5/36"
+      },
+      {
+        "word": [
+          1,
+          -1
+        ],
+        "maximum_prediction_error_exact": "611/41472",
+        "certificate_exact": "5/36"
+      },
+      {
+        "word": [
+          1,
+          1
+        ],
+        "maximum_prediction_error_exact": "2755/41472",
+        "certificate_exact": "5/36"
+      }
+    ],
+    "stationary_block_checks": [
+      {
+        "block_length": 1,
+        "total_variation_exact": "0",
+        "certificate_exact": "0"
+      },
+      {
+        "block_length": 2,
+        "total_variation_exact": "0",
+        "certificate_exact": "5/36"
+      },
+      {
+        "block_length": 3,
+        "total_variation_exact": "7/1728",
+        "certificate_exact": "5/9"
+      }
+    ],
+    "nonzero_word_gap_witness": {
+      "word": [
+        -1,
+        -1,
+        -1
+      ],
+      "probability_difference": "7/6912"
+    },
+    "cell_transition": [
+      [
+        "5/16",
+        "43/96",
+        "5/24",
+        "1/32"
+      ],
+      [
+        "43/288",
+        "65/144",
+        "95/288",
+        "5/72"
+      ],
+      [
+        "5/72",
+        "95/288",
+        "65/144",
+        "43/288"
+      ],
+      [
+        "1/32",
+        "5/24",
+        "43/96",
+        "5/16"
+      ]
+    ],
+    "moment_restoration": [
+      {
+        "cell_indices": [
+          0
+        ],
+        "bin": [
+          "-1",
+          "0"
+        ],
+        "conditional_mean": "-1",
+        "conditional_variance": "0",
+        "replica_nodes": [
+          "-1"
+        ],
+        "replica_conditional_weights": [
+          "1"
+        ]
+      },
+      {
+        "cell_indices": [
+          1,
+          2,
+          4
+        ],
+        "bin": [
+          "-1",
+          "0"
+        ],
+        "conditional_mean": "-1/2",
+        "conditional_variance": "1/24",
+        "replica_nodes": [
+          "-1",
+          "-5/12"
+        ],
+        "replica_conditional_weights": [
+          "1/7",
+          "6/7"
+        ]
+      },
+      {
+        "cell_indices": [
+          3,
+          5,
+          6
+        ],
+        "bin": [
+          "0",
+          "1"
+        ],
+        "conditional_mean": "1/2",
+        "conditional_variance": "1/24",
+        "replica_nodes": [
+          "0",
+          "7/12"
+        ],
+        "replica_conditional_weights": [
+          "1/7",
+          "6/7"
+        ]
+      },
+      {
+        "cell_indices": [
+          7
+        ],
+        "bin": [
+          "0",
+          "1"
+        ],
+        "conditional_mean": "1",
+        "conditional_variance": "0",
+        "replica_nodes": [
+          "1"
+        ],
+        "replica_conditional_weights": [
+          "1"
+        ]
+      }
+    ],
+    "final_stationary_weights": [
+      "1/8",
+      "3/56",
+      "9/28",
+      "3/56",
+      "9/28",
+      "1/8"
+    ],
+    "final_actuator": [
+      "-1",
+      "-1",
+      "-5/12",
+      "0",
+      "7/12",
+      "1"
+    ],
+    "exact_restored_mean": "0",
+    "exact_restored_variance": "15/32",
+    "exact_preserved_G": "1",
+    "quotient_and_replica_reversibility": true,
+    "field_stationarity_detailed_balance_and_passive_law": true,
+    "all_field_replica_baseline_strong_lumpability": true,
+    "scope": "Exact finite-model identities and finite-word certificates; no assertion that this sample uses the theorem worst-case parameter allocation."
+  },
+  "selected_driven_means": {
+    "k": 1,
+    "G": 1.0,
+    "maximum_protocol_amplitude_H": 0.2,
+    "selected_protocols": [
+      {
+        "protocol_field_duration": [
+          [
+            0.2,
+            0.4
+          ],
+          [
+            -0.15,
+            0.5
+          ],
+          [
+            0.1,
+            0.6
+          ]
+        ],
+        "checkpoints": [
+          {
+            "time": 0.4,
+            "means": {
+              "original": 0.11054065572432115,
+              "original_quantized": 0.11048101521478781,
+              "regularized_quantized": 0.11046134126264773,
+              "cell_baseline": 0.11046136403379025,
+              "replica_baseline": 0.11046136403379025,
+              "replica_restored": 0.11053108655157706
+            }
+          },
+          {
+            "time": 0.9,
+            "means": {
+              "original": -0.05451351543515104,
+              "original_quantized": -0.05458873851203583,
+              "regularized_quantized": -0.05451267175208385,
+              "cell_baseline": -0.05451291989861784,
+              "replica_baseline": -0.05451291989861784,
+              "replica_restored": -0.05447364601573401
+            }
+          },
+          {
+            "time": 1.5,
+            "means": {
+              "original": 0.05340900121034364,
+              "original_quantized": 0.05343898088114607,
+              "regularized_quantized": 0.053401528947102594,
+              "cell_baseline": 0.05340185438067779,
+              "replica_baseline": 0.05340185438067768,
+              "replica_restored": 0.05338658582559974
+            }
+          }
+        ]
+      },
+      {
+        "protocol_field_duration": [
+          [
+            -0.2,
+            0.3
+          ],
+          [
+            0.0,
+            0.4
+          ],
+          [
+            0.2,
+            0.8
+          ]
+        ],
+        "checkpoints": [
+          {
+            "time": 0.3,
+            "means": {
+              "original": -0.09074078948078013,
+              "original_quantized": -0.0906858647957467,
+              "regularized_quantized": -0.09067131967096165,
+              "cell_baseline": -0.090671331491599,
+              "replica_baseline": -0.090671331491599,
+              "replica_restored": -0.09073399447277852
+            }
+          },
+          {
+            "time": 0.7,
+            "means": {
+              "original": -0.040772464940577624,
+              "original_quantized": -0.04074778568874726,
+              "regularized_quantized": -0.040741250142894536,
+              "cell_baseline": -0.04074125545424967,
+              "replica_baseline": -0.04074125545424945,
+              "replica_restored": -0.04076941174667148
+            }
+          },
+          {
+            "time": 1.5,
+            "means": {
+              "original": 0.1509392701905028,
+              "original_quantized": 0.1509944156232086,
+              "regularized_quantized": 0.1508810634541573,
+              "cell_baseline": 0.1508816613168621,
+              "replica_baseline": 0.15088166131686187,
+              "replica_restored": 0.1508775604558994
+            }
+          }
+        ]
+      },
+      {
+        "protocol_field_duration": [
+          [
+            0.12,
+            1.5
+          ]
+        ],
+        "checkpoints": [
+          {
+            "time": 1.5,
+            "means": {
+              "original": 0.11358051657985324,
+              "original_quantized": 0.11359876644756806,
+              "regularized_quantized": 0.11357601044575716,
+              "cell_baseline": 0.11357616910366786,
+              "replica_baseline": 0.11357616910366786,
+              "replica_restored": 0.11356748667920746
+            }
+          }
+        ]
+      }
+    ],
+    "quantization_uniform_mean_certificate": 0.3338311392738702,
+    "restoration_uniform_mean_certificate": 0.556385232123117,
+    "maximum_baseline_lifting_error": 2.220446049250313e-16,
+    "maximum_original_to_restored_mean_error": 6.170973460339901e-05,
+    "largest_master_matrix_dimension": 9,
+    "scope": "Deterministic selected protocols and checkpoint comparisons. The uniform theorem and its complete approximation budget are analytic, not established by these numerical samples."
+  },
+  "source_sha256": {
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

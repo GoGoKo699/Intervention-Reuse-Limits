@@ -16,3 +16,5 @@ check:
 	$(PYTHON) scripts/verify_path_information.py --output .check-output/path_information.json
 	$(PYTHON) scripts/verify_actuator_hierarchy.py --output .check-output/actuator_hierarchy.json
 	$(PYTHON) scripts/verify_general_compression.py --output .check-output/general_compression.json
+	$(PYTHON) scripts/verify_reversible_compression.py --output .check-output/reversible_compression.json
+	$(PYTHON) scripts/verify_general_controlled_lower_bound.py --output .check-output/general_controlled_lower_bound.json

@@ -1,0 +1,224 @@
+{
+  "status": "PASS",
+  "scope": "Exact small reversible tree targets, ideal leaf/Gram identities, rational polynomial-error certificates, and high-precision fixed-dwell experiment consistency.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "depth_cases": [
+    {
+      "exact_tree_and_filters": {
+        "depth_n": 1,
+        "hidden_states": 4,
+        "full_Markov_states": 5,
+        "controlled_matrix_dimension": 2,
+        "epsilon_exact": "1/1099511627776",
+        "G": "1",
+        "W": "1",
+        "field_h": "log(65/64)",
+        "exp_h_exact": "65/64",
+        "physical_Haar_orthonormality": true,
+        "physical_generator_positivity_floor": "549755813885/1099511627776",
+        "hidden_relaxation_rate_band": [
+          1,
+          3
+        ],
+        "ideal_leaf_matrix_exact_identity": true,
+        "ideal_Gram_minus_identity_exact_sum_of_squares": true,
+        "radial_modes": 2,
+        "radial_weights_exact": [
+          "1/2",
+          "1/2"
+        ],
+        "radial_moments_checked": 4,
+        "exact_minimal_cubic_response_states": 4,
+        "physical_rate_rule_and_generator_filter_identities": true,
+        "left_and_right_mean_Gram_endpoints": true,
+        "endpoint_normalization_exact": "-2146689/146232320000",
+        "tree_filter_column_error_certificate": "315/274877906944",
+        "certified_exact_filtered_Gram_eigenvalue_floor": "9/32"
+      },
+      "fixed_dwell_certificate": {
+        "logarithm_polynomial_degree": 280,
+        "fixed_dwell_time": "1/8",
+        "target_generator_error_bound": "1.6472184286297692538044646955109404699546814659951e-83",
+        "controlled_matrix_error_bound": "5.1798484449235925843153507430107864365317284026468e-69",
+        "rational_bound_below_one_over_32": true,
+        "certified_propagator_matrix_singular_value_floor": "1/4",
+        "log2_exact_logarithm_polynomial_coefficient_l1": "275.8759161632892726404427878891337915588968025228",
+        "log2_logarithm_polynomial_coefficient_bound": 284,
+        "generator_word_degree_bound": 26,
+        "maximum_experiment_horizon": "910",
+        "log2_entry_coefficient_budget_bound": "7496.1665225276220487300385089079500224141522988524",
+        "log10_finite_example_response_lower_bound": "-2257.4740657599630034258417209904607255385913994809",
+        "coefficient_budget_formula": "(4 P_coeff / epsilon)^(2n) * (16 * 2^m)^(20n+6) / abs(ell*r)",
+        "scope": "Exact scalar norm and coefficient bookkeeping for the checked depths and fixed offset 200; not an optimized or numerically estimated state lower bound."
+      },
+      "numerical_checks": [
+        {
+          "working_decimal_digits": 100,
+          "generator_polynomial_Frobenius_error": "4.7787559892338956707595384578762216766815119690548e-100",
+          "propagator_exponential_consistency_error": "5.4835423852996588983699764262006631972579180140831e-101",
+          "controlled_matrix_Frobenius_error_vs_exact_Gram": "6.3948619812244011817318214903925170259994856462598e-89",
+          "precision_floor_allowance": "1.0e-85",
+          "scope": "High-precision consistency, not interval certification; the rank obstruction uses the separate exact inequalities."
+        },
+        {
+          "working_decimal_digits": 150,
+          "generator_polynomial_Frobenius_error": "9.777421174417593762438949221256468265056344001844e-144",
+          "propagator_exponential_consistency_error": "6.4658474703433588151331574251818991904441473904065e-151",
+          "controlled_matrix_Frobenius_error_vs_exact_Gram": "3.4447900139511213739848902883727695232679967759426e-139",
+          "precision_floor_allowance": "1.0e-135",
+          "scope": "High-precision consistency, not interval certification; the rank obstruction uses the separate exact inequalities."
+        }
+      ],
+      "controlled_matrix_change_100_to_150_digits": "6.3948619812239841393335480146915854427343486074029e-89"
+    },
+    {
+      "exact_tree_and_filters": {
+        "depth_n": 2,
+        "hidden_states": 8,
+        "full_Markov_states": 9,
+        "controlled_matrix_dimension": 4,
+        "epsilon_exact": "1/1152921504606846976",
+        "G": "1",
+        "W": "1",
+        "field_h": "log(65/64)",
+        "exp_h_exact": "65/64",
+        "physical_Haar_orthonormality": true,
+        "physical_generator_positivity_floor": "288230376151711741/1152921504606846976",
+        "hidden_relaxation_rate_band": [
+          1,
+          3
+        ],
+        "ideal_leaf_matrix_exact_identity": true,
+        "ideal_Gram_minus_identity_exact_sum_of_squares": true,
+        "radial_modes": 3,
+        "radial_weights_exact": [
+          "1/4",
+          "1/2",
+          "1/4"
+        ],
+        "radial_moments_checked": 6,
+        "exact_minimal_cubic_response_states": 5,
+        "physical_rate_rule_and_generator_filter_identities": true,
+        "left_and_right_mean_Gram_endpoints": true,
+        "endpoint_normalization_exact": "-2146689/146232320000",
+        "tree_filter_column_error_certificate": "2835/288230376151711744",
+        "certified_exact_filtered_Gram_eigenvalue_floor": "9/32"
+      },
+      "fixed_dwell_certificate": {
+        "logarithm_polynomial_degree": 320,
+        "fixed_dwell_time": "1/8",
+        "target_generator_error_bound": "1.4981364335015034646898718124347765023728074684141e-95",
+        "controlled_matrix_error_bound": "1.7783598288650501467852443419330391213235868718025e-73",
+        "rational_bound_below_one_over_32": true,
+        "certified_propagator_matrix_singular_value_floor": "1/4",
+        "log2_exact_logarithm_polynomial_coefficient_l1": "315.68261601260067632568995522121593153023258604601",
+        "log2_logarithm_polynomial_coefficient_bound": 324,
+        "generator_word_degree_bound": 46,
+        "maximum_experiment_horizon": "1840",
+        "log2_entry_coefficient_budget_bound": "15192.277255569400041788022131234163357012515855309",
+        "log10_finite_example_response_lower_bound": "-4574.5352763527125516847742429371262202453695191536",
+        "coefficient_budget_formula": "(4 P_coeff / epsilon)^(2n) * (16 * 2^m)^(20n+6) / abs(ell*r)",
+        "scope": "Exact scalar norm and coefficient bookkeeping for the checked depths and fixed offset 200; not an optimized or numerically estimated state lower bound."
+      },
+      "numerical_checks": [
+        {
+          "working_decimal_digits": 100,
+          "generator_polynomial_Frobenius_error": "6.2428640823541288994778021708574604912416982606388e-100",
+          "propagator_exponential_consistency_error": "1.0817465261745961858385570821352153375678875809244e-100",
+          "controlled_matrix_Frobenius_error_vs_exact_Gram": "4.9956038389710771078034988822247206886061681540777e-82",
+          "precision_floor_allowance": "1.0e-85",
+          "scope": "High-precision consistency, not interval certification; the rank obstruction uses the separate exact inequalities."
+        },
+        {
+          "working_decimal_digits": 150,
+          "generator_polynomial_Frobenius_error": "8.2354200726235948251360315492385095034425423841542e-150",
+          "propagator_exponential_consistency_error": "8.8932775194766700923049093630278643360064812520557e-151",
+          "controlled_matrix_Frobenius_error_vs_exact_Gram": "6.6073244203938598922873844249444365956252144125214e-132",
+          "precision_floor_allowance": "1.0e-135",
+          "scope": "High-precision consistency, not interval certification; the rank obstruction uses the separate exact inequalities."
+        }
+      ],
+      "controlled_matrix_change_100_to_150_digits": "4.9956038389710771078250219654595857876441554862971e-82"
+    },
+    {
+      "exact_tree_and_filters": {
+        "depth_n": 3,
+        "hidden_states": 16,
+        "full_Markov_states": 17,
+        "controlled_matrix_dimension": 8,
+        "epsilon_exact": "1/1208925819614629174706176",
+        "G": "1",
+        "W": "1",
+        "field_h": "log(65/64)",
+        "exp_h_exact": "65/64",
+        "physical_Haar_orthonormality": true,
+        "physical_generator_positivity_floor": "151115727451828646838269/1208925819614629174706176",
+        "hidden_relaxation_rate_band": [
+          1,
+          3
+        ],
+        "ideal_leaf_matrix_exact_identity": true,
+        "ideal_Gram_minus_identity_exact_sum_of_squares": true,
+        "radial_modes": 4,
+        "radial_weights_exact": [
+          "1/4 - sqrt(5)/20",
+          "sqrt(5)/20 + 1/4",
+          "sqrt(5)/20 + 1/4",
+          "1/4 - sqrt(5)/20"
+        ],
+        "radial_moments_checked": 8,
+        "exact_minimal_cubic_response_states": 6,
+        "physical_rate_rule_and_generator_filter_identities": true,
+        "left_and_right_mean_Gram_endpoints": true,
+        "endpoint_normalization_exact": "-2146689/146232320000",
+        "tree_filter_column_error_certificate": "2835/37778931862957161709568",
+        "certified_exact_filtered_Gram_eigenvalue_floor": "9/32"
+      },
+      "fixed_dwell_certificate": {
+        "logarithm_polynomial_degree": 360,
+        "fixed_dwell_time": "1/8",
+        "target_generator_error_bound": "1.3625471488026082303712171891991388314389109549794e-107",
+        "controlled_matrix_error_bound": "4.5791354541164681440399184402959018889214490345876e-78",
+        "rational_bound_below_one_over_32": true,
+        "certified_propagator_matrix_singular_value_floor": "1/4",
+        "log2_exact_logarithm_polynomial_coefficient_l1": "355.51218254447170781516210961784874279446427456673",
+        "log2_logarithm_polynomial_coefficient_bound": 364,
+        "generator_word_degree_bound": 66,
+        "maximum_experiment_horizon": "2970",
+        "log2_entry_coefficient_budget_bound": "24568.387988611178034846005753560376691610879411765",
+        "log10_finite_example_response_lower_bound": "-7397.3268796609505079027881080209399999227066396827",
+        "coefficient_budget_formula": "(4 P_coeff / epsilon)^(2n) * (16 * 2^m)^(20n+6) / abs(ell*r)",
+        "scope": "Exact scalar norm and coefficient bookkeeping for the checked depths and fixed offset 200; not an optimized or numerically estimated state lower bound."
+      },
+      "numerical_checks": [
+        {
+          "working_decimal_digits": 100,
+          "generator_polynomial_Frobenius_error": "1.0639508257749018648671895983104013936659249218427e-99",
+          "propagator_exponential_consistency_error": "2.2138927344657275715655547204140006989143321946424e-100",
+          "controlled_matrix_Frobenius_error_vs_exact_Gram": "1.5921876955971922330753413974782479421046114744112e-75",
+          "precision_floor_allowance": "1.0e-85",
+          "scope": "High-precision consistency, not interval certification; the rank obstruction uses the separate exact inequalities."
+        },
+        {
+          "working_decimal_digits": 150,
+          "generator_polynomial_Frobenius_error": "1.3492799497752386613509206796510331952635979982786e-149",
+          "propagator_exponential_consistency_error": "2.1916180343353658498564499032438392550199643101845e-150",
+          "controlled_matrix_Frobenius_error_vs_exact_Gram": "2.6886016375633694433024413754168765848280430981988e-125",
+          "precision_floor_allowance": "1.0e-135",
+          "scope": "High-precision consistency, not interval certification; the rank obstruction uses the separate exact inequalities."
+        }
+      ],
+      "controlled_matrix_change_100_to_150_digits": "1.5921876955971922330753413946412132554425682136949e-75"
+    }
+  ],
+  "largest_physical_generator_dimension": 17,
+  "largest_controlled_matrix_dimension": 8,
+  "no_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_general_controlled_lower_bound.py": "a979bfcfd4e8c6615dd5bb0cbfb4b0bf417dc833e4a174d03f4748146d05b88f"
+  }
+}
