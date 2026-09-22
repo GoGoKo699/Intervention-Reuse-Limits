@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all six mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all eight mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -33,7 +33,7 @@ The locally rerun [checkpoint report](../reports/checkpoint.json) records exact 
 | Maximum matrix/spectral discrepancy | about 2.05e-15 |
 | Maximum time-dependent protocol discrepancy | about 1.35e-14 |
 
-The finite-field check is consistent with a fourth-order truncation remainder; it is not a proved uniform remainder bound.
+The original finite-field check is consistent with a fourth-order truncation remainder; that computation alone is not a proof of a uniform remainder. The later finite-field checkpoint below adds the analytic proof and separate checks.
 
 ## Finite-accuracy extension
 
@@ -124,6 +124,20 @@ The switch-off formula follows exactly from the zero-field readout eigenrelation
 
 The complete six-verifier `make check` passed locally in the pinned environment. All six fresh reports matched their saved JSON reports exactly. The license, all verification scripts and reports, pinned dependencies, build target, and workflow were checked against the starting commit and remain unchanged. Final repository checks passed. GitHub Actions is checked separately after publication.
 
+## Finite-field prediction and path-information checkpoint
+
+This continuation starts from `ef1448235c1fcf70e2c5fdca7d544f87591e9052`. It retains the six earlier mathematical verifiers and saved reports unchanged. The build target and repository checker are extended to include two new verifiers; the MIT license and dependency versions remain unchanged.
+
+[verify_finite_field.py](../scripts/verify_finite_field.py) produces [finite_field.json](../reports/finite_field.json). An exact rational recursion checks the coefficient bounds underlying the uniform fourth-order remainder. Thirty-three deterministic finite-field protocol comparisons, including fields of magnitude 1.2, compare full physical master equations with the independent scalar-kernel modal closure. A genuinely smaller quadrature model is compared with the original under a sign-changing protocol and its weighted-integral certificate. Small weak-field examples check the remainder bound without inferring uniformity from the samples.
+
+Two geometric-spectrum witnesses compare the full symmetrized field generator with the diagonal-plus-rank-one formula, its positive spectral step curve, the secular eigenvalue enclosures, the visible-weight floor, and logarithmic Gram spacing. An exact symbolic four-state calculation holds the actuator and cubic kernel fixed while showing different higher response, checking the stated boundary of the finite-field subclass. The largest new matrix is $40\times40$; the suite maximum remains $68\times68$.
+
+[verify_path_information.py](../scripts/verify_path_information.py) produces [path_information.json](../reports/path_information.json). Exact resolvents check active no-exit coefficients for three examples, including a two-mode hidden kernel. Telegraph pair intensities check normalization of the full quadratic path score. A separate full-generator calculation checks the two-snapshot identity and its signal coefficient. Exact algebra also checks complete and residual waiting densities, normalization and mean duration, the hyperbolic density formula, a censored-relative-entropy identity, and the integral $8/105$ giving the three-state relative-entropy rate coefficient $2/105$. Twelve high-precision deterministic density comparisons provide a further consistency check.
+
+Neither verifier simulates statistical trials or certifies inference performance from sampled data. The testing rates, all-size/all-horizon error bounds, and fixed-field minimax lower bound follow from the written proofs. Spectral consistency tests do not infer rank from numerical thresholds. The calculations and proof audits belong to this investigation and are not independent external validation.
+
+The complete eight-verifier `make check` passed locally in the pinned environment. All eight fresh reports matched their saved JSON reports exactly. The six earlier mathematical scripts and reports, original license, dependencies, and workflow were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -134,6 +148,8 @@ python scripts/verify_quadrature.py --output reports/quadrature.json
 python scripts/verify_minimal_realization.py --output reports/minimal_realization.json
 python scripts/verify_response_lower_bounds.py --output reports/response_lower_bounds.json
 python scripts/verify_unrestricted_rate_lower_bound.py --output reports/unrestricted_rate_lower_bound.json
+python scripts/verify_finite_field.py --output reports/finite_field.json
+python scripts/verify_path_information.py --output reports/path_information.json
 make check
 ```
 

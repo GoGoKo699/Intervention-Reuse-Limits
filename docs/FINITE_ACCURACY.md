@@ -32,7 +32,7 @@ $$
 
 The constructive **upper bounds** produce surrogates in the original reversible rate-rule family, with the same $k,W$ and $|\widehat g|\le G$. They also preserve the passive path law under every microscopic initial law with the same visible initial law. Their microscopic rates and topology may change. Sections 9–11 instead give **lower bounds against all of $\mathcal A_D(k)$**, using finite response samples or a weighted Hankel operator of the response curve. A lower bound proved only for positive kernels, reversible surrogates, or this rate-rule family would not automatically bound $E_D$.
 
-The norm concerns Taylor coefficients only. None of its quantifiers asserts a Taylor remainder uniform in $T$, $N$, or the field amplitude. Finite-field prediction and kernel acquisition remain separate tasks.
+The norm in this note concerns Taylor coefficients only. None of its quantifiers alone asserts a uniform Taylor remainder. The separate [finite-field theorem](FINITE_FIELD.md) now proves a remainder uniform in horizon and microscopic size for bounded sensitivity, and sharp actual-mean state orders for a specified target subclass. Kernel acquisition remains a separate task.
 
 The [structure-cost comparison](STRUCTURE_COST.md) also considers a relaxed cubic-only task without passive or lower-order matching requirements. Its worst-case state-growth orders coincide with those achieved by the reversible constructions here. This is a consequence of the lower proofs and does not change the original definition of $\mathcal A_D(k)$ or $E_D$.
 
@@ -186,7 +186,7 @@ The $1/q$ error rate is an elementary upper bound, not a minimax or novelty clai
 
 [The executable extension](../scripts/verify_finite_accuracy.py) verifies the normalized spectral weights, nonvanishing signal bound, positive reversible realization, and agreement of its master equation with the memory equations. It also tests the protocol certificate on deterministic sign-changing protocols. See [verification details](VERIFICATION.md).
 
-The state-growth order is now determined for unrestricted target rates and for the separately defined rate-capped target class. Still not established: sharp constants, stable inference from finite noisy data, a finite-field remainder uniform in system size and observation horizon, or a specific fluid or molecular implementation. No large simulation is needed. The [next work order](../work_orders/CURRENT.md) records the remaining publication and interpretation questions.
+The coefficient state-growth order is determined for unrestricted target rates and for the separately defined rate-capped target class. The [finite-field extension](FINITE_FIELD.md) now provides a size- and horizon-uniform remainder and a stronger prediction theorem in its specified subclass. Sharp constants, stable recovery of an arbitrary kernel from noisy data, and a specific fluid or molecular implementation remain outside these results. The [next work order](../work_orders/CURRENT.md) records the stronger research direction.
 
 ## 8. A stronger bound by positive Gaussian quadrature
 

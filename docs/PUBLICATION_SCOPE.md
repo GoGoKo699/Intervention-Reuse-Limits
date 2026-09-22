@@ -2,11 +2,21 @@
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 
-**Assessment, 22 September 2026.** Retain the project as a narrowly framed theorem about the state cost of nonlinear-response model reduction. The candidate contribution is the compatibility of optimal-order cubic approximation with reversible Markov dynamics and exact passive and low-order response agreements. It is not the discovery that hidden kinetics affect nonlinear response, a new general realization theorem, or a new root-exponential approximation mechanism.
+**Expanded research assessment, 22 September 2026.** Pursue finite-field prediction limits as the central contribution. The project now goes beyond a cubic-coefficient compression theorem: an exact two-state passive process can require a growing predictor even for one fixed nonzero intervention, with matching constructive bounds for all bounded field protocols. Separate results identify a cheaper measurement than the endpoint mean and quantify the passive information that appears when exact lumpability is broken.
 
-The inspected results establish the individual ingredients but do not directly state the combined constrained-response conclusion below. That is a specific comparison result, not a certification that the conclusion is new in the entire literature. Manuscript writing remains on hold while the final contribution and significance assessment is completed.
+The individual response, realization, dwell-time, and approximation mechanisms remain established. The more ambitious candidate is their combination into a sharp finite-field reuse theorem and a quantitative observation boundary. The source comparisons below and in the audit constrain this claim; they do not certify originality. Manuscript writing remains on hold during research development.
 
-## 1. The precise candidate theorem
+## 1. The finite-field theorem and its coefficient foundation
+
+The primary result is now [the finite-field theorem](FINITE_FIELD.md). Its target subclass has one hidden state of stationary mass $1/2$ and sensitivity $+\sqrt W$, while all other hidden states have sensitivity $-\sqrt W$. Every finite positive relaxation kernel of mass $W$ has a realization in this subclass. This is an additional actuator-geometry restriction, not a generic statement about every centered bounded sensitivity vector.
+
+For fixed $k,W,H>0$, the approximation norm measures the **actual mean** over all protocols $|h(t)|\le H$ and all horizons. The worst-case state requirement is $\Theta(\log^2(1/\delta))$, or $\Theta(\log(1/\delta))$ when active target rates are at most $3k$. Reversible surrogates retain the exact passive law and specified lower-order responses. The lower bound permits arbitrary instantaneous-field Markov predictors, with a fixed readout and preparation; they need not have analytic rates or satisfy any passive-data constraint.
+
+For unrestricted rates, the lower order already holds for [one fixed step](FIXED_FIELD_LOWER_BOUND.md) with amplitude $h_* = \min\{H,[20(1+\sqrt W)]^{-1}\}$, independent of the state budget and tolerance. The proof uses the exact positive spectral expansion of the finite-field step mean and the rank of any competing Markov curve. It does not infer a derivative bound from a small real-field error.
+
+The exact kernel closure is special. An explicit four-state counterexample in the finite-field note holds $k,\mu,g$, and the cubic kernel fixed while changing a higher response through $K$. This is a demonstrated boundary of the result, rather than an omitted genericity assumption.
+
+### Cubic coefficients in the broader original family
 
 Fix the target family, scalar field rule, stationary preparation, binary readout, bounded sensitivity, and coefficient norm in [Finite accuracy, Section 0](FINITE_ACCURACY.md#0-the-approximation-task-and-its-quantifiers). The intervention kernel is supplied exactly. One reduced model must work for every bounded protocol and every finite horizon.
 
@@ -21,17 +31,23 @@ The [structure-cost corollary](STRUCTURE_COST.md) proves this comparison. For un
 
 Thus preservation does not increase the **asymptotic order** of the required state count in this family. This does not identify equal errors at a fixed state budget or equal leading constants. The relaxed competitor is judged only on its cubic coefficient; it may have incorrect passive behavior or lower-order mean response. The theorem does not say that arbitrary positive systems, physical constraints, or finite-amplitude predictions have no cost.
 
-The exact two-versus-$N$ theorem remains the motivating zero-tolerance limit. The finite-accuracy statement is the main resource result: microscopic target size alone does not determine the required reusable model size.
+The exact two-versus-$N$ theorem remains the motivating zero-tolerance limit. These coefficient results support the finite-field theorem and continue to apply to a broader target family.
 
 ## 2. What a model builder can use
 
-The intended use is compression after a microscopic model or intervention kernel is known. Choose a protocol-amplitude bound and a cubic-coefficient tolerance. The construction returns a smaller reversible Markov model with a certificate valid across that protocol class, without refitting it for each waveform. It retains the complete passive binary path law, the equilibrium curve, the dynamic linear mean response, and zero quadratic mean response.
+The intended use is compression after a microscopic model or intervention kernel is known. In the finite-field subclass, choose a field bound and an actual-mean tolerance. The construction returns a smaller reversible Markov model with a certificate valid across that protocol class and all horizons, without refitting it for each waveform. It retains the complete passive binary path law, the equilibrium curve, the dynamic linear mean response, and zero quadratic mean response. For the broader original family, the existing certificate still concerns cubic coefficients.
 
 State count measures the number of latent Markov states. It does not charge parameter precision, computing the spectral measure, fitting data, or running the resulting simulator. The worst-case lower bound is a limit on model dimension, not an experimental sample count or a wall-clock runtime bound.
 
 The rate cap supplies additional information about active hidden relaxation times relative to the visible switching time $1/k$. It is not a lower bound on the hidden spectral gap, a cap on every microscopic transition, or a bandwidth restriction on the controller. Without a cap, the hard targets have increasingly fast active modes while their slowest active rate stays at $5k/2$.
 
 The actuator must be specified kinetically. Local detailed balance fixes rate ratios but does not uniquely fix how barriers change. Within a comparison at fixed state labels, the target models can keep $k,\mu,g$ and the displayed field rule unchanged while changing only the internal generator $K$. Their complete microscopic generators are therefore different. A surrogate may use a different internal realization, but receives the same scalar protocol $h(t)$.
+
+### What an observer can measure
+
+The [path-response theorem](ACTIVE_PATH_RESPONSE.md) shows that all first-order visible-path responses are universal in the original family, whereas their second-order response is exactly characterized by $C$. A no-exit experiment gives a sharp $r+2$ state count without the cubic mean's resonance exception. For a specified pair, two snapshots attain $\Theta(h^{-4})$ weak-step discrimination trials, compared with $\Theta(h^{-6})$ for the final snapshot alone. This is a fixed hypothesis-testing task, not a general kernel-learning theorem. Preparation cost is excluded.
+
+The [near-lumpability theorem](NEAR_LUMPABILITY.md) considers centered perturbations of external equilibrium conductances. Complete passive paths have relative entropy at most $q^4(152+241kT)$ from the telegraph law, uniformly over hidden dimension and internal rates. A three-state pair attains the quartic information scale and retains a finite active mean separation. It supplies a quantitative neighborhood of the ideal passive degeneracy, with explicit perturbation restrictions; it does not assert robustness to every microscopic change.
 
 ## 3. A diagnostic boundary: switching the field off versus keeping it on
 
@@ -78,14 +94,14 @@ The passive-HMM comparison can be made exact. At any fixed sampling interval, ev
 
 A norm distinction alone is insufficient. For a scalar nonnegative impulse error, its $L_1$ norm equals the zero-frequency gain and its $H_\infty$ norm. Positive-system truncation can therefore sometimes transfer into a kernel estimate. A signed error need not have that property. The missing conclusion from the positive-reduction result is the full uniform complexity and constrained realization statement, not an assertion that its norm can never be useful.
 
-## 5. Assessment and remaining uncertainty
+## 5. Assessment and next scientific question
 
-The defensible scope is a model-reduction theorem in stochastic response theory: a universal family of positive relaxation kernels can be represented behind an exactly compressed passive process, and its optimal cubic approximation order is achievable while retaining reversibility, bounded sensitivity, and the prescribed passive and low-order response agreements. The lower obstruction already holds without demanding those agreements. Consequently the logarithmic exponents should not be described as a penalty caused by preserving the passive law.
+The project should now be developed around the finite-field prediction theorem, with the measurement and near-lumpability results explaining what the passive-versus-driven distinction means operationally. This is a stronger candidate than the earlier narrow coefficient-only compatibility statement: actual outputs are controlled uniformly, and one fixed intervention already has an optimal-order state obstruction against broad Markov predictors.
 
-The exact equal-escape condition and centered sensitivity are deliberate model choices. They isolate the question cleanly; they are not claimed to be generic properties of coarse molecular dynamics. The kinetic barrier rule is thermodynamically consistent but is extra physical specification beyond local detailed balance. The known-kernel and coefficient-error assumptions define the computational task. These limitations belong in the theorem statement and operational interpretation, rather than being repaired by adding unrelated assumptions.
+Three boundaries remain material. The finite-field upper theorem uses rank-one sensitivity geometry. The constructor receives the intervention kernel rather than learning it. The observation results quantify specified two-model tests and a specified barrier perturbation, with ideal readout and preparation. These are theorem assumptions, not established features of a particular molecular platform.
 
-The current evidence supports retaining this combined theorem for a focused publication assessment. It does not support a broad new physical law, a general result that positivity is free, or a journal-level significance claim. No experimental platform is asserted or needed to establish the present mathematical theorem.
+The stronger scope does not make the classical tools new. Waiting-time inference and poor identifiability near equal dwell times have longstanding precedents, while positive spectral approximation, rank-one feedback, and Hankel rank are established mechanisms. The next source comparison must address the full fixed-intervention minimax theorem, rather than merely another occurrence of one ingredient. The new audit entries record what was actually inspected and where access remains partial.
 
-The remaining closest-theorem question is precise: does existing stochastic realization or positive approximation theory already provide, for an arbitrary finite positive relaxation measure, a reversible bounded-sensitivity analytic Markov family with the same binary passive path law and prescribed low-order response, together with the matching broad-surrogate complexity bound in this bounded-protocol coefficient norm? A direct reduction providing all of those steps would settle the contribution assessment. A theorem addressing only unconstrained realization, only passive HMM approximation, or only kernel quadrature supplies an ingredient rather than the whole statement.
+The next scientific question is whether the restrictive actuator geometry can be replaced by a broader finite-field principle, or whether a precise response-hierarchy obstruction explains why it cannot. The explicit same-kernel counterexample already rules out extending the current scalar-kernel certificate unchanged to the general family. Any further extension should state what additional intervention information is sufficient and what physical resource it costs. No additional large simulation or experimental platform is needed to investigate that question.
 
-The original Frazho article remains a full-text access gap, but the inspected Petreczky theorem already makes the classical exact-realization comparison concrete. Kotsalis–Shamma's central definitions and lower-bound statement were checked through indexed primary-manuscript excerpts; the complete PDF remains unavailable. These access limits are documented rather than used as novelty arguments. The current assessment is a conditional go for a focused model-reduction contribution, with no claim of certified originality or journal suitability. Further work should test the specific combined implication above and its modeling value, rather than restart an unrestricted bibliography search or optimize constants without a scientific reason.
+The recommendation is to continue this stronger research direction and keep the completed finite-field theorem as its rigorous baseline. Publication originality and a journal target remain separate assessments. Manuscript writing is on hold; the current task is to improve the scientific statement, not to inflate its framing.

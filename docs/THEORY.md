@@ -116,7 +116,7 @@ $$
 \end{aligned}
 $$
 
-All coefficients initially vanish. These equations follow by expanding the exact equations and solving the linear equation for $v_2$. They show that $k$ and $C$ determine the single-time mean through cubic order for every such protocol. They are not a closure at arbitrary finite field, nor a uniform-in-time Taylor remainder estimate.
+All coefficients initially vanish. These equations follow by expanding the exact equations and solving the linear equation for $v_2$. They show that $k$ and $C$ determine the single-time mean through cubic order for every such protocol. These coefficient equations alone do not close the general family at finite field. The [finite-field extension](FINITE_FIELD.md) separately proves a uniform-in-time remainder for bounded sensitivity and an exact kernel closure in the specified rank-one sensitivity subclass.
 
 ## 6. Step response and kernel recovery
 
@@ -310,3 +310,5 @@ The model, equations, inverse, and state-count construction are derived here and
 [Finite Accuracy, Sections 9–10](FINITE_ACCURACY.md) adds finite-sample lower bounds against the full analytic Markov surrogate class. The [unrestricted-rate theorem](UNRESTRICTED_RATE_LOWER_BOUND.md) completes the comparison with the constructive upper bounds: the worst-case state requirement grows as the square of the logarithm of inverse tolerance. When active target rates are at most $3k$, the corresponding order is a single logarithm. These are coefficient-approximation statements with conservative constants; their publication-level originality remains under audit.
 
 The [structure-cost corollary](STRUCTURE_COST.md) shows that the same orders are necessary even after removing passive, static, linear, and quadratic matching requirements from stationary analytic Markov surrogates. The constructive models preserve all of them, along with reversibility and bounded sensitivity. The [publication comparison](PUBLICATION_SCOPE.md) identifies this combined compatibility statement as the candidate contribution.
+
+The expanded research result is now the [actual finite-field prediction theorem](FINITE_FIELD.md), with a [fixed nonzero step lower bound](FIXED_FIELD_LOWER_BOUND.md). It restricts the target sensitivity geometry but permits much broader Markov competitors. The [path-response theorem](ACTIVE_PATH_RESPONSE.md) also corrects an interpretation boundary: the cubic single-time mean is not the earliest informative visible diagnostic; second-order path response, and even two snapshots for the explicit pair, can detect the hidden kinetics. [Near-lumpability](NEAR_LUMPABILITY.md) quantifies the passive information under a specified barrier perturbation.

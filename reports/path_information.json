@@ -1,0 +1,183 @@
+{
+  "status": "PASS",
+  "scope": "Exact symbolic killed-generator, visible-path score, and waiting-time information identities, plus small deterministic matrix-exponential checks.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "killed_resolvent_coefficients": [
+    {
+      "name": "two_hidden_rate_one",
+      "hidden_states": 2,
+      "internal_generator": [
+        [
+          "-1/2",
+          "1/2"
+        ],
+        [
+          "1/2",
+          "-1/2"
+        ]
+      ],
+      "centered_sensitivity": [
+        "1",
+        "-1"
+      ],
+      "kernel_mass": "1",
+      "kernel_rates": [
+        "1"
+      ],
+      "kernel_weights": [
+        "1"
+      ],
+      "visible_switch_rate_k": "1",
+      "active_no_exit_coefficients_orders_0_1_2": true,
+      "complete_wait_first_and_second_coefficients": true,
+      "stationary_residual_first_and_second_coefficients": true,
+      "complete_wait_second_coefficient_mass_and_mean_zero": true
+    },
+    {
+      "name": "two_hidden_rate_three",
+      "hidden_states": 2,
+      "internal_generator": [
+        [
+          "-3/2",
+          "3/2"
+        ],
+        [
+          "3/2",
+          "-3/2"
+        ]
+      ],
+      "centered_sensitivity": [
+        "1",
+        "-1"
+      ],
+      "kernel_mass": "1",
+      "kernel_rates": [
+        "3"
+      ],
+      "kernel_weights": [
+        "1"
+      ],
+      "visible_switch_rate_k": "1",
+      "active_no_exit_coefficients_orders_0_1_2": true,
+      "complete_wait_first_and_second_coefficients": true,
+      "stationary_residual_first_and_second_coefficients": true,
+      "complete_wait_second_coefficient_mass_and_mean_zero": true
+    },
+    {
+      "name": "three_hidden_two_modes",
+      "hidden_states": 3,
+      "internal_generator": [
+        [
+          "-1",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "-2",
+          "1"
+        ],
+        [
+          "0",
+          "1",
+          "-1"
+        ]
+      ],
+      "centered_sensitivity": [
+        "1",
+        "-1",
+        "0"
+      ],
+      "kernel_mass": "2/3",
+      "kernel_rates": [
+        "1",
+        "3"
+      ],
+      "kernel_weights": [
+        "1/6",
+        "1/2"
+      ],
+      "visible_switch_rate_k": "3/2",
+      "active_no_exit_coefficients_orders_0_1_2": true,
+      "complete_wait_first_and_second_coefficients": true,
+      "stationary_residual_first_and_second_coefficients": true,
+      "complete_wait_second_coefficient_mass_and_mean_zero": true
+    }
+  ],
+  "active_visible_path": {
+    "normalization": "k=W=1; no-exit coefficient gap scales by W at t=1/k",
+    "gap_orientation": "lambda=3k minus lambda=k",
+    "conditional_B_no_exit_gap_exact": "(-9*exp(2) + 1 + 2*exp(3))*exp(-4)/9",
+    "conditional_B_no_exit_gap_decimal": "-0.051549225321988378173469988128466294840572175952130",
+    "joint_stationary_initial_B_event_gap_exact": "(-9*exp(2) + 1 + 2*exp(3))*exp(-4)/18",
+    "gap_order": "Second Taylor coefficient in active field h",
+    "path_score_normalization": {
+      "ordered_pair_terms_after_common_exponential": [
+        "k**2/2",
+        "-k**2/2",
+        "-k**2/2",
+        "k**2/2"
+      ],
+      "off_diagonal_sum_zero": true,
+      "expected_atomic_diagonal": "k W integral_0^T u(t)^2 dt",
+      "one_half_diagonal_cancels_compensator": true,
+      "scope": "Exact telegraph pair-intensity cancellation for the stated score, not simulation of path samples."
+    }
+  },
+  "two_snapshot_information": {
+    "normalization": "k=W=1; hidden rates lambda=1 and 3",
+    "gap_orientation": "lambda=3k minus lambda=k",
+    "full_markov_states": 3,
+    "exact_finite_field_detailed_balance": true,
+    "resolvent_expansion_through_order": 3,
+    "correlation_second_coefficient_and_mean_third_identity": true,
+    "correlation_second_coefficient_gap_at_t_one": "(1 - exp(2))*exp(-4)/2",
+    "same_endpoint_sign_event_coefficient_gap": "(1 - exp(2))*exp(-4)/4",
+    "scope": "Checks the two-snapshot signal coefficient; does not establish sample complexity."
+  },
+  "near_lumpability_waiting_and_information": {
+    "normalization": "k=1; q=delta sqrt(W), hidden rates lambda=k and 3k",
+    "complete_wait_laplace_exact": "(q**2*z - q**2 + rate + z + 1)/(-q**2 + rate*z + rate + z**2 + 2*z + 1)",
+    "full_wait_mass_exact": "1",
+    "full_wait_mean_exact": "1/k",
+    "residual_density_equals_k_times_complete_survival": true,
+    "hyperbolic_density_transform_identity": true,
+    "quadratic_coefficient_difference": "2*x/3 - 20/9 + 4*exp(-x) - 16*exp(-3*x)/9",
+    "squared_difference_weighted_integral_exact": "8/105",
+    "waiting_KL_q4_coefficient_exact": "4/105",
+    "renewal_cycle_rate": "k/2",
+    "entropy_rate_q4_coefficient_divided_by_k_exact": "2/105",
+    "KL_series_algebra_checked_through_order": 4,
+    "censored_KL_hazard_identity_symbolic": true,
+    "scope": "Checks the analytic quartic coefficient and exact identities; does not prove asymptotic remainder bounds or statistical sample complexity."
+  },
+  "finite_perturbation_density": {
+    "normalization": "k=W=1",
+    "decimal_precision": 90,
+    "hidden_decay_rates": [
+      1,
+      3
+    ],
+    "q_values": [
+      "1/8",
+      "1/4"
+    ],
+    "time_values": [
+      "1/4",
+      "1",
+      "3"
+    ],
+    "density_cases": 12,
+    "largest_killed_matrix_dimension": 2,
+    "maximum_matrix_exponential_formula_error": "1.22727336632443163827394298874656891074380388e-91",
+    "minimum_selected_density": "0.0499359520435331974975477418314370866513501918",
+    "scope": "Deterministic pointwise agreement of two exact representations; no tail, KL, or statistical claim follows from these samples."
+  },
+  "source_sha256": {
+    "verify_path_information.py": "367ac803efaaf75c80c74b4ec22020272da087dda544386842595d08ded63389"
+  }
+}
