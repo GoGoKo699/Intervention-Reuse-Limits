@@ -1,0 +1,220 @@
+{
+  "status": "PASS",
+  "scope": "Exact finite physical identities, sparse all-local Walsh leaves and nonzero global-centering leakage, exhaustive K4 influence/Parseval checks, and all-depth rational probability/clock budgets. No large graph simulation or numerical rank inference.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "small_physical_targets": [
+    {
+      "base_graph": "K3",
+      "base_degree": 2,
+      "full_Markov_states": 7,
+      "local_relaxation_rates_exact": [
+        "0",
+        "3/8",
+        "1/2",
+        "7/8"
+      ],
+      "exact_stationarity_detailed_balance_histogram_filter_and_endpoints": true,
+      "actual_mean_Gram_entries_checked": 4,
+      "scope": "Small physical identities only; these complete graphs do not satisfy the long-girth lower-bound hypotheses."
+    },
+    {
+      "base_graph": "K4",
+      "base_degree": 3,
+      "full_Markov_states": 9,
+      "local_relaxation_rates_exact": [
+        "0",
+        "1/3",
+        "1/2",
+        "5/6"
+      ],
+      "exact_stationarity_detailed_balance_histogram_filter_and_endpoints": true,
+      "actual_mean_Gram_entries_checked": 4,
+      "scope": "Small physical identities only; these complete graphs do not satisfy the long-girth lower-bound hypotheses."
+    },
+    {
+      "base_graph": "K5",
+      "base_degree": 4,
+      "full_Markov_states": 11,
+      "local_relaxation_rates_exact": [
+        "0",
+        "5/16",
+        "1/2",
+        "13/16"
+      ],
+      "exact_stationarity_detailed_balance_histogram_filter_and_endpoints": true,
+      "actual_mean_Gram_entries_checked": 4,
+      "scope": "Small physical identities only; these complete graphs do not satisfy the long-girth lower-bound hypotheses."
+    }
+  ],
+  "sparse_geodesic_Walsh_checks": [
+    {
+      "word_depth_n": 1,
+      "base_cycle_vertices": 13,
+      "base_girth": 13,
+      "physical_states_per_fixed_labeling": 27,
+      "physical_labelings_enumerated": false,
+      "controlled_Gram_dimension": 2,
+      "largest_sparse_column_support": 676,
+      "local_leaf_coefficient_exact": "1/7077888",
+      "all_terminal_all_local_Gram_SOS_floor": "1/100192997081088",
+      "maximum_selected_Walsh_coefficient_leakage_exact": "5/2875392",
+      "maximum_anchor_derivative_Fourier_l1_bound": "34715/479232",
+      "advertised_leakage_bound_B_over_N": "162/13",
+      "scope": "Exact sparse identities on long cycles. These cycles verify geodesic and centering algebra, not a uniform expander gap."
+    },
+    {
+      "word_depth_n": 2,
+      "base_cycle_vertices": 21,
+      "base_girth": 21,
+      "physical_states_per_fixed_labeling": 43,
+      "physical_labelings_enumerated": false,
+      "controlled_Gram_dimension": 4,
+      "largest_sparse_column_support": 7413,
+      "local_leaf_coefficient_exact": "1/260919263232",
+      "all_terminal_all_local_Gram_SOS_floor": "1/136157723851059414171648",
+      "maximum_selected_Walsh_coefficient_leakage_exact": "7727075/42807066624",
+      "maximum_anchor_derivative_Fourier_l1_bound": "17367187025/85614133248",
+      "advertised_leakage_bound_B_over_N": "1215/7",
+      "scope": "Exact sparse identities on long cycles. These cycles verify geodesic and centering algebra, not a uniform expander gap."
+    }
+  ],
+  "small_fixed_label_ensemble_checks": [
+    {
+      "base_graph": "K4",
+      "word_depth_n": 1,
+      "fixed_labelings_checked_exactly": 16,
+      "label_flip_pairs_checked": 64,
+      "controlled_Gram_dimension": 2,
+      "expected_Gram_exact": [
+        [
+          "4225140163/1033121304",
+          "0"
+        ],
+        [
+          "0",
+          "5481181225/132239526912"
+        ]
+      ],
+      "expected_Gram_is_exact_Walsh_sum_of_squares": true,
+      "maximum_counting_l1_vector_influence": "114878/6561",
+      "maximum_physical_Gram_entry_influence": "3708579511/1033121304",
+      "advertised_entry_influence_A_over_N": "729",
+      "scope": "Exhaustive finite algebra and influence checks only. K4 does not meet the theorem girth hypothesis; no theorem leaf floor is asserted here."
+    },
+    {
+      "base_graph": "K4",
+      "word_depth_n": 2,
+      "fixed_labelings_checked_exactly": 16,
+      "label_flip_pairs_checked": 64,
+      "controlled_Gram_dimension": 4,
+      "expected_Gram_exact": [
+        [
+          "10554390377364883/549043018919064",
+          "0",
+          "0",
+          "23337998148235225/70277506421640192"
+        ],
+        [
+          "0",
+          "29731247929075225/70277506421640192",
+          "92231973502605625/1124440102746243072",
+          "0"
+        ],
+        [
+          "0",
+          "92231973502605625/1124440102746243072",
+          "286121085683265625/17991041643939889152",
+          "0"
+        ],
+        [
+          "23337998148235225/70277506421640192",
+          "0",
+          "0",
+          "149971010585816875/4497760410984972288"
+        ]
+      ],
+      "expected_Gram_is_exact_Walsh_sum_of_squares": true,
+      "maximum_counting_l1_vector_influence": "195234062/4782969",
+      "maximum_physical_Gram_entry_influence": "10279868867905351/549043018919064",
+      "advertised_entry_influence_A_over_N": "177147/2",
+      "scope": "Exhaustive finite algebra and influence checks only. K4 does not meet the theorem girth hypothesis; no theorem leaf floor is asserted here."
+    }
+  ],
+  "reused_exact_whole_side_noncommutative_checks": {
+    "maximum_checked_total_degree": 5,
+    "exact_noncommutative_order_and_associativity": true,
+    "propagator_word_length_bounded_by_total_degree": true,
+    "separate_factor_matrix_exact": "Matrix([[1, 1], [1, 1]])",
+    "incorrect_entry_cut_matrix_exact": "Matrix([[1, 1], [1, 0]])",
+    "incorrect_entry_cut_has_rank_two_from_rank_one_factors": true,
+    "scope": "Small exact coefficient check only; no large protocol expansion."
+  },
+  "exact_all_depth_probability_and_clock_budgets": {
+    "parameters": {
+      "base_degree": 4,
+      "G": 1,
+      "W": 1,
+      "exp_h": "65/64",
+      "dwell_a": "1/8"
+    },
+    "all_depth_sufficient_base_order": "N >= 2^[192(n+1)], n>=1",
+    "order_budget_ratio_upper_multiplier": "81/11972621413014756705924586149611790497021399392059392",
+    "concentration_budget_ratio_upper_multiplier": "43046721/10633823966279326983230456482242756608",
+    "fixed_clock_error_ratio_upper_multiplier": "330527984395124299475957654016385519914202341482140609642324397637202895618155672912594605219857642423795606012511679152128/1690018259982572543102790461507263160079798711423918968783706050350234533055544155479014890810974585040129437538246840034734725095872787340321",
+    "all_depth_cutoff": "M=300(n+1)",
+    "all_depth_actual_mean_error_floor": "2^(-1295n-1279)",
+    "all_depth_horizon": "75(n+1), with each positive segment a multiple of 1/8",
+    "failure_probability_bound": "1/4",
+    "induction_certificate": "The exact n=1 checks pass. For n>=1 each displayed requirement divided by its proposed bound contracts by the corresponding rational multiplier; (n+2)/(n+1)<=2, (2n+3)/(2n+1)<=2, and (2n+5)/(2n+3)<=2.",
+    "records": [
+      {
+        "word_depth_n": 1,
+        "sufficient_order_as_power_of_two": 384,
+        "leakage_and_failure_budgets_exact": true,
+        "whole_side_degree_cutoff": 600,
+        "fixed_label_Gram_floor_exact": "1/3283124128353091584",
+        "matrix_error_below_half_Gram_floor": true,
+        "conservative_actual_mean_error_floor": "2^(-2574)"
+      },
+      {
+        "word_depth_n": 2,
+        "sufficient_order_as_power_of_two": 576,
+        "leakage_and_failure_budgets_exact": true,
+        "whole_side_degree_cutoff": 900,
+        "fixed_label_Gram_floor_exact": "1/1142173771558787810195599785984",
+        "matrix_error_below_half_Gram_floor": true,
+        "conservative_actual_mean_error_floor": "2^(-3869)"
+      },
+      {
+        "word_depth_n": 3,
+        "sufficient_order_as_power_of_two": 768,
+        "leakage_and_failure_budgets_exact": true,
+        "whole_side_degree_cutoff": 1200,
+        "fixed_label_Gram_floor_exact": "1/397353518610711455481678071956376213520384",
+        "matrix_error_below_half_Gram_floor": true,
+        "conservative_actual_mean_error_floor": "2^(-5164)"
+      },
+      {
+        "word_depth_n": 10,
+        "sufficient_order_as_power_of_two": 2112,
+        "leakage_and_failure_budgets_exact": true,
+        "whole_side_degree_cutoff": 3300,
+        "fixed_label_Gram_floor_exact": "1/245070605601715110028894941051356537545306673938452190308557669333469180687086612166219416249996543228174946074653762781184",
+        "matrix_error_below_half_Gram_floor": true,
+        "conservative_actual_mean_error_floor": "2^(-14229)"
+      }
+    ],
+    "scope": "Exact all-depth inequality calibration, conditional on a graph with the required order, degree, gap and girth. No graph of the displayed enormous order is constructed or enumerated."
+  },
+  "largest_constructed_physical_generator_dimension": 11,
+  "largest_constructed_controlled_Gram_dimension": 4,
+  "no_large_graph_simulation_or_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_expander_scenery_lower_bound.py": "518e39ce4108677c217242875e6b1808f7857ea21467bbf12f7921ec5b9c57db",
+    "verify_polynomial_controlled_lower_bound.py": "4e0ff7312619aa0c460c6092664c66626ed04de717ceeaf191a5ca8bb24b3df4",
+    "verify_shift_register_lower_bound.py": "2de482d66aa87e9012c769f557b43a17b3657d834542e7da6d261198baa0e485"
+  }
+}

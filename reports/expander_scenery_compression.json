@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "scope": "Exact high-girth prefix comparison, complete-coloring convex reduction, evolving sign-layer physical model, all-ell bounded-difference allocation, refresh amplification and finite error budgets.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "universal_tree_prefixes": {
+    "universal_cases": [
+      {
+        "case": "degree_four",
+        "base_vertices": [
+          8,
+          16
+        ],
+        "ell": 1,
+        "sign_flips": false,
+        "matched_word_count": 4,
+        "total_variation_exact": "0"
+      },
+      {
+        "case": "degree_four",
+        "base_vertices": [
+          8,
+          16
+        ],
+        "ell": 1,
+        "sign_flips": true,
+        "matched_word_count": 4,
+        "total_variation_exact": "0"
+      },
+      {
+        "case": "cycles_length_three",
+        "base_vertices": [
+          7,
+          9
+        ],
+        "ell": 2,
+        "sign_flips": false,
+        "matched_word_count": 8,
+        "total_variation_exact": "0"
+      },
+      {
+        "case": "cycles_length_three",
+        "base_vertices": [
+          7,
+          9
+        ],
+        "ell": 2,
+        "sign_flips": true,
+        "matched_word_count": 8,
+        "total_variation_exact": "0"
+      },
+      {
+        "case": "cycles_length_four",
+        "base_vertices": [
+          9,
+          11
+        ],
+        "ell": 3,
+        "sign_flips": false,
+        "matched_word_count": 16,
+        "total_variation_exact": "0"
+      },
+      {
+        "case": "cycles_length_four",
+        "base_vertices": [
+          9,
+          11
+        ],
+        "ell": 3,
+        "sign_flips": true,
+        "matched_word_count": 16,
+        "total_variation_exact": "0"
+      }
+    ],
+    "low_girth_counterexample_total_variation_exact": "1/64",
+    "method": "Enumerate short walk paths and labels only on visited base vertices."
+  },
+  "whole_coloring_selection": {
+    "initial_whole_colorings": 8,
+    "selected_whole_colorings": 2,
+    "selected_indices": [
+      0,
+      1
+    ],
+    "weights_exact": [
+      "1/4",
+      "3/4"
+    ],
+    "elimination_steps": [
+      [
+        8,
+        7
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        6,
+        5
+      ],
+      [
+        5,
+        4
+      ],
+      [
+        4,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "preserved_prefix_length": 3,
+    "original_dictionary_hidden_states_counted": 48,
+    "selected_physical_states": 13,
+    "relaxation_spectrum_exact": {
+      "0": 1,
+      "3/2": 1,
+      "15/8": 4,
+      "2": 2,
+      "19/8": 4
+    }
+  },
+  "quenched_one_event_for_all_accuracies": {
+    "cases": [
+      {
+        "ell": 1,
+        "largest_single_word_change_exact": "1/12",
+        "theoretical_per_bit_bound_exact": "2/3",
+        "visited_vertex_probability_exact": "5/12"
+      },
+      {
+        "ell": 2,
+        "largest_single_word_change_exact": "7/64",
+        "theoretical_per_bit_bound_exact": "1",
+        "visited_vertex_probability_exact": "47/96"
+      },
+      {
+        "ell": 3,
+        "largest_single_word_change_exact": "167/1536",
+        "theoretical_per_bit_bound_exact": "4/3",
+        "visited_vertex_probability_exact": "425/768"
+      }
+    ],
+    "individual_bit_word_comparisons": 672,
+    "all_ell_failure_bound_as_fraction_of_eta": "3/4",
+    "B_ell": "(ell+2)log(2)+2log(ell+1)+log(1/eta)",
+    "local_TV_bound": "2^ell*(ell+1)*sqrt(B_ell/(2N))",
+    "scope": "One labeling event per fixed supplied graph, simultaneously for all integer ell and all accuracies."
+  },
+  "approximate_prefix_refresh": {
+    "cases": [
+      {
+        "ell": 1,
+        "local_TV_exact": "1/24",
+        "full_TV_exact": "1/60",
+        "largest_flag_TV_over_local_TV_exact": "1",
+        "allowed_run_factor": 2
+      },
+      {
+        "ell": 2,
+        "local_TV_exact": "7/128",
+        "full_TV_exact": "3/160",
+        "largest_flag_TV_over_local_TV_exact": "1",
+        "allowed_run_factor": 3
+      },
+      {
+        "ell": 3,
+        "local_TV_exact": "57/1024",
+        "full_TV_exact": "393/16000",
+        "largest_flag_TV_over_local_TV_exact": "1",
+        "allowed_run_factor": 4
+      }
+    ],
+    "individual_flag_words_checked": 14,
+    "two_length_two_runs_TV_exact": "29/576",
+    "one_length_two_run_TV_exact": "1/24",
+    "frozen_average_versus_annealed_refresh_TV_exact": "1/96",
+    "warning": "Averaging a frozen labeling does not commute with multiplying refreshed local-run probabilities."
+  },
+  "integer_high_girth_graph_certificates": {
+    "cases": [
+      {
+        "reduced_word_length": 1,
+        "words_checked": 4,
+        "integer_modulus": 5,
+        "group_size_upper_bound": 625
+      },
+      {
+        "reduced_word_length": 2,
+        "words_checked": 12,
+        "integer_modulus": 11,
+        "group_size_upper_bound": 14641
+      },
+      {
+        "reduced_word_length": 3,
+        "words_checked": 36,
+        "integer_modulus": 29,
+        "group_size_upper_bound": 707281
+      },
+      {
+        "reduced_word_length": 4,
+        "words_checked": 108,
+        "integer_modulus": 83,
+        "group_size_upper_bound": 47458321
+      },
+      {
+        "reduced_word_length": 5,
+        "words_checked": 324,
+        "integer_modulus": 245,
+        "group_size_upper_bound": 3603000625
+      },
+      {
+        "reduced_word_length": 6,
+        "words_checked": 972,
+        "integer_modulus": 731,
+        "group_size_upper_bound": 285541678321
+      }
+    ],
+    "total_reduced_words_checked": 1456,
+    "scope": "Finite exact certificates support, but do not replace, the all-length ping-pong proof."
+  },
+  "all_protocol_error_budgets": {
+    "R_exact": "3/2",
+    "entry_tilt_amplification_upper_exact": "9/4",
+    "eta_exact": "1/16",
+    "continuation_probability_exact": "15/19",
+    "cases": [
+      {
+        "delta_exact": "1/4",
+        "ell": 16,
+        "B_ell_rational_upper": 54,
+        "concentration_threshold_ceiling": 94926987788845842432,
+        "girth_threshold_exact": 912034456046446591670769941126967809732389880154759674362919253085466672523897586208912607420113148072606337611541329196453281,
+        "prefix_error_exact": "1083787378692626953125/10960773715569604371878",
+        "concentration_mean_error_squared_exact": "1/64",
+        "selected_sign_layer_state_bound": 250348817821683315175128036052488714502309420773490828419174400000001,
+        "exact_retention_state_bound": 1824068912092893183341539882253935619464779760309519348725838506170933345047795172417825214840226296145212675223082658392906563
+      },
+      {
+        "delta_exact": "1/16",
+        "ell": 21,
+        "B_ell_rational_upper": 69,
+        "concentration_threshold_ceiling": 5573910719618109142990848,
+        "girth_threshold_exact": 134806745333774999112544281108398762007604655842244477571882977030779380134578775342851931269350457135570573724739071148715794846730641753406450349374737686315878881,
+        "prefix_error_exact": "823001040694713592529296875/27139960836348181815602743922",
+        "concentration_mean_error_squared_exact": "1/1024",
+        "selected_sign_layer_state_bound": 97397029604685137284572202946811266496369002014641931348694416722312876284528666133659649,
+        "exact_retention_state_bound": 269613490667549998225088562216797524015209311684488955143765954061558760269157550685703862538700914271141147449478142297431589693461283506812900698749475372631757763
+      },
+      {
+        "delta_exact": "1/64",
+        "ell": 27,
+        "B_ell_rational_upper": 87,
+        "concentration_threshold_ceiling": 1208513490317248084145281695744,
+        "girth_threshold_exact": 857732915902130819322162408365711029333798933009081907542010101230713445443489463994526475419504923047841995711407538175719778606068185025275806590271783363644560189299293994213889297048822325404770371325416801,
+        "prefix_error_exact": "9374496229163222014904022216796875/1276823367851497036263210633827885282",
+        "concentration_mean_error_squared_exact": "1/16384",
+        "selected_sign_layer_state_bound": 497216935540389353914616670148550896798825433920287255826554171807721380220400950802995152710091218027539576389633,
+        "exact_retention_state_bound": 1715465831804261638644324816731422058667597866018163815084020202461426890886978927989052950839009846095683991422815076351439557212136370050551613180543566727289120378598587988427778594097644650809540742650833603
+      }
+    ],
+    "method": "Rational powers, squared concentration inequalities and integer ceilings; no simulated trajectories."
+  },
+  "largest_matrix_dimension": 13,
+  "limitations": "The finite checks do not prove the all-size graph theorem, a cap-only result, an all-labeling upper, or a new expander construction. The graph is fixed before the random labeling. The full proof and prior-art qualifications are in the accompanying research note.",
+  "source_sha256": {
+    "verify_expander_scenery_compression.py": "a70ba219251d28809ad52f20b16f6b2d303e6baa8968a1edec13ed71cd5bbeae",
+    "verify_bounded_rate_prediction.py": "e150952554d6fc30005f70e09407ef63009cf482f82f9616ce41ab876986b3f1",
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

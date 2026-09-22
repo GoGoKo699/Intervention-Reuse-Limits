@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-one mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-three mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -242,6 +242,22 @@ The new results classify polynomial growth for the stated local-plus-refresh cla
 
 The full twenty-one-verifier `make check` passed locally in the pinned environment, and all twenty-one fresh reports matched their saved JSON exactly. The nineteen earlier scripts and reports, MIT license, pinned dependencies and workflow were checked byte-for-byte against the starting commit: all 41 protected files are unchanged. Final repository checks passed for 391 local Markdown links and 22 Python files, together with source provenance and whitespace checks. GitHub Actions is checked separately after publication; this local record does not assert its outcome.
 
+## Fixed-label connected-expander checkpoint
+
+This continuation starts from `b9553f7fa3498dcc8dd7210de0b1aa0fc24a93e3`. The twenty-one preceding mathematical verifiers and saved reports remain regression baselines. Two new verifiers supplement the [typical-label reversible upper](EXPANDER_SCENERY_COMPRESSION.md) and [fixed-clock lower](EXPANDER_SCENERY_LOWER_BOUND.md). The proof audits checked the evolving sign layer, the all-length good event, the refresh comparison, global-centering leakage, the physical Gram normalization and the fixed-clock transfer. These are independent internal checks, not external mathematical review.
+
+[verify_expander_scenery_compression.py](../scripts/verify_expander_scenery_compression.py) generates [expander_scenery_compression.json](../reports/expander_scenery_compression.json). Exact short paths compare degree-four graph prefixes and longer cycle prefixes, conditioning on holds, moves, sign flips and repeated visits. A low-girth counterexample has total-variation difference $1/64$. Positive elimination reduces eight complete sign-layer coloring components to two, with weights $1/4,3/4$: 48 counted target hidden states become a 13-state physical surrogate. Full-field identities and an exact internal spectrum in $[3/2,19/8]$ check the original field rule, histogram and reversibility.
+
+The same verifier checks 672 single-label word changes, all 14 refresh-flag strings through three updates, the countable failure allocation and exact rational error thresholds. Two length-two runs have total variation $29/576$, exceeding the single-run value $1/24$, so the runwise error factor is substantive. Averaging frozen-label refreshed laws and refreshing the annealed local reference differ by $1/96$; the proof must not interchange those operations. Another 1,456 reduced integer-matrix words through length six check finite cases of the small high-girth graph certificate. The all-length group argument and all-accuracy theorem come from the written proof, not enumeration.
+
+[verify_expander_scenery_lower_bound.py](../scripts/verify_expander_scenery_lower_bound.py) generates [expander_scenery_lower_bound.json](../reports/expander_scenery_lower_bound.json). Physical targets on $K_3,K_4,K_5$ check stationarity, detailed balance, balanced histograms, local spectra, filter identities and twelve actual-mean Gram entries. The largest constructed physical generator has 11 states. Sparse Walsh calculations on cycles with 13 and 21 vertices verify depths one and two, all-terminal maximal-distance leaves, exact sum-of-squares identities and nonzero global-centering leakage. Their largest sparse column has 7,413 coordinates. These cycle checks establish finite geodesic algebra, not a uniformly expanding family.
+
+Exhausting the 16 labelings of $K_4$ checks physical Gram/Parseval identities and 64 label-flip pairs at each depth. Exact induction ratios at a rational field calibration and clock $a=1/8$ certify sufficient base order $N\ge2^{192(n+1)}$, total-degree cutoff $M=300(n+1)$ and response-error floor $2^{-1295n-1279}$, conditional on the graph hypotheses. No graph of that order is constructed. Morgenstern's established graph-existence theorem supplies the family; the verifier does not prove it. An independent audit reran the lower verifier and reproduced its saved JSON exactly.
+
+Both verifiers use exact rational or symbolic calculations without large simulations or numerical rank inference. Their maximum constructed matrices are 13 and 11; the full suite maximum remains $68\times68$. Neither the finite evidence nor the proof claims arbitrary-label reversible compression, a cap-only theorem, a matched exponent, a statistical acquisition guarantee or publication novelty.
+
+The full twenty-three-verifier `make check` passed locally in the pinned environment. All twenty-three fresh reports matched their saved JSON exactly. The twenty-one preceding scripts and reports, MIT license, dependencies and workflow remain byte-identical to the starting commit: all 45 protected files are unchanged. Final repository checks passed for 436 local Markdown links and 24 Python files, with source provenance and whitespace checks. GitHub Actions is checked separately after publication; this local record does not assert its outcome.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -267,6 +283,8 @@ python scripts/verify_analytic_constant_step.py --output reports/analytic_consta
 python scripts/verify_moment_density_sampling.py --output reports/moment_density_sampling.json
 python scripts/verify_sparse_reversible_compression.py --output reports/sparse_reversible_compression.json
 python scripts/verify_local_walk_lower_bound.py --output reports/local_walk_lower_bound.json
+python scripts/verify_expander_scenery_compression.py --output reports/expander_scenery_compression.json
+python scripts/verify_expander_scenery_lower_bound.py --output reports/expander_scenery_lower_bound.json
 make check
 ```
 
