@@ -1,0 +1,210 @@
+{
+  "status": "PASS",
+  "scope": "Exact six-level register gadget, full physical extraction, compression-compatible port partial isometries, visible palindrome norms, conditional-variance transport, small cube distortion, and fixed-clock budget algebra.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "physical_dictionary": {
+    "hidden_states": 48,
+    "physical_states": 49,
+    "histogram_exact": {
+      "-3/10": "1/6",
+      "-1/5": "1/6",
+      "-1/10": "1/6",
+      "1/10": "1/6",
+      "1/5": "1/6",
+      "3/10": "1/6"
+    },
+    "variance_exact": "7/150",
+    "local_spectral_cap_exact": "5/8",
+    "full_nonzero_spectral_interval_exact": [
+      "3/2",
+      "17/8"
+    ],
+    "field_checks": [
+      {
+        "exp_h_over_ten_exact": "1",
+        "physical_states": 49
+      },
+      {
+        "exp_h_over_ten_exact": "10001/10000",
+        "physical_states": 49
+      }
+    ]
+  },
+  "partial_isometries_and_addresses": {
+    "partial_isometries_checked": 9,
+    "n_one_two_root_bit_truths": 144,
+    "partial_isometry_word_lengths": {
+      "1": {
+        "0": 0,
+        "1": 3
+      },
+      "2": {
+        "0": 0,
+        "2": 3,
+        "1": 5,
+        "3": 8
+      }
+    },
+    "translated_feature_Gram_checks": [
+      {
+        "n": 1,
+        "features": 2,
+        "exact_Gram": "I_r/6",
+        "configuration_sign_address_samples": 16
+      },
+      {
+        "n": 2,
+        "features": 4,
+        "exact_Gram": "I_r/6",
+        "configuration_sign_address_samples": 128
+      }
+    ],
+    "scope": "n=2 uses only four-address maps and individual four-bit truth tables; no 385-state physical matrix."
+  },
+  "all_partition_architecture_checks": {
+    "cases": [
+      {
+        "extra_configuration_bit_in_cells": false,
+        "hidden_cells": 6,
+        "root_address": 0,
+        "letters": 0,
+        "aggregate_norm_squared_exact": "1/6",
+        "palindrome_deficit_exact": "0",
+        "feature_projection_loss_exact": "0"
+      },
+      {
+        "extra_configuration_bit_in_cells": false,
+        "hidden_cells": 6,
+        "root_address": 1,
+        "letters": 3,
+        "aggregate_norm_squared_exact": "0",
+        "palindrome_deficit_exact": "1/6",
+        "feature_projection_loss_exact": "1/6"
+      },
+      {
+        "extra_configuration_bit_in_cells": true,
+        "hidden_cells": 12,
+        "root_address": 0,
+        "letters": 0,
+        "aggregate_norm_squared_exact": "1/6",
+        "palindrome_deficit_exact": "0",
+        "feature_projection_loss_exact": "0"
+      },
+      {
+        "extra_configuration_bit_in_cells": true,
+        "hidden_cells": 12,
+        "root_address": 1,
+        "letters": 3,
+        "aggregate_norm_squared_exact": "0",
+        "palindrome_deficit_exact": "1/6",
+        "feature_projection_loss_exact": "1/6"
+      }
+    ],
+    "compression_compatible_gate_polynomials_checked": 18,
+    "partitions_allow_root_and_nonroot_states_in_one_cell": true
+  },
+  "physical_field_menu": {
+    "frequency_tenths": [
+      -13,
+      -12,
+      -11,
+      -9,
+      -8,
+      -7,
+      0,
+      7,
+      8,
+      9,
+      11,
+      12,
+      13
+    ],
+    "exp_h_step_over_ten_exact": "10001/10000",
+    "exact_inverse_entries_checked": 169,
+    "largest_inverse_coefficient_bit_length": 2880,
+    "maximum_row_mass_numerator_bits": 2466,
+    "scope": "The inverse is exactly verified, not numerically fitted. Large interpolation coefficients are counted in proof constants."
+  },
+  "cube_and_transfer": {
+    "small_cube_partitions": [
+      {
+        "revealed_bits": 0,
+        "cells": 1,
+        "summed_squared_error_exact": "4",
+        "summed_threshold_errors_exact": "2"
+      },
+      {
+        "revealed_bits": 1,
+        "cells": 2,
+        "summed_squared_error_exact": "3",
+        "summed_threshold_errors_exact": "3/2"
+      },
+      {
+        "revealed_bits": 2,
+        "cells": 4,
+        "summed_squared_error_exact": "2",
+        "summed_threshold_errors_exact": "1"
+      },
+      {
+        "revealed_bits": 3,
+        "cells": 8,
+        "summed_squared_error_exact": "1",
+        "summed_threshold_errors_exact": "1/2"
+      },
+      {
+        "revealed_bits": 4,
+        "cells": 16,
+        "summed_squared_error_exact": "0",
+        "summed_threshold_errors_exact": "0"
+      }
+    ],
+    "entropy_constant_certificate": "(16/15)^15<4",
+    "representative_two_model_transfer_budgets": [
+      {
+        "n": 1,
+        "epsilon_exact": "1/1728",
+        "M": 35,
+        "delta_denominator_bit_length": 156,
+        "propagator_side_mass_bit_length": 73,
+        "root_feature_error_budget_exact": "1/96"
+      },
+      {
+        "n": 2,
+        "epsilon_exact": "1/6912",
+        "M": 44,
+        "delta_denominator_bit_length": 196,
+        "propagator_side_mass_bit_length": 92,
+        "root_feature_error_budget_exact": "1/96"
+      },
+      {
+        "n": 3,
+        "epsilon_exact": "1/20736",
+        "M": 52,
+        "delta_denominator_bit_length": 232,
+        "propagator_side_mass_bit_length": 109,
+        "root_feature_error_budget_exact": "1/96"
+      },
+      {
+        "n": 4,
+        "epsilon_exact": "1/55296",
+        "M": 60,
+        "delta_denominator_bit_length": 267,
+        "propagator_side_mass_bit_length": 126,
+        "root_feature_error_budget_exact": "1/96"
+      }
+    ],
+    "transfer_budget_scope": "Exact allocation algebra for representative A=2,B=3,rho=3/2; the theorem retains the actual menu-dependent constants symbolically."
+  },
+  "largest_matrix_dimension": 49,
+  "limitations": "Finite exact checks support the uniform proof; they do not enumerate all partitions or prove asymptotic information inequalities by experiment. The lower bound concerns stationary-flux partitions refining the exact actuator, not every reversible model.",
+  "source_sha256": {
+    "verify_aggregation_state_lower_bound.py": "e992219152a945ba2216c475a4498dc33a98b4252942d060dbce7310a1e252c9",
+    "verify_bounded_rate_prediction.py": "e150952554d6fc30005f70e09407ef63009cf482f82f9616ce41ab876986b3f1",
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "status": "PASS",
+  "scope": "Exact affine address actions and collision equations, visited-address-class annealed prefix laws, positive whole-configuration reduction with small physical models, and rational all-accuracy compression budgets. No simulation or large dictionary matrix.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "affine_dihedral_address_checks": {
+    "formal_words_checked": 121,
+    "maximum_word_length": 4,
+    "literal_small_address_evaluations": 15246,
+    "small_register_widths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "large_width_rank_checks": [
+      {
+        "register_width": 9,
+        "address_space_enumerated": false,
+        "largest_exact_nonidentity_collision_probability": "1/16"
+      },
+      {
+        "register_width": 17,
+        "address_space_enumerated": false,
+        "largest_exact_nonidentity_collision_probability": "1/256"
+      },
+      {
+        "register_width": 65,
+        "address_space_enumerated": false,
+        "largest_exact_nonidentity_collision_probability": "1/4294967296"
+      },
+      {
+        "register_width": 257,
+        "address_space_enumerated": false,
+        "largest_exact_nonidentity_collision_probability": "1/340282366920938463463374607431768211456"
+      }
+    ],
+    "convention": "J:i->-i-1, V=RJ:i->-i, X toggles bit0; actions compose chronologically."
+  },
+  "exact_stationary_prefix_checks": {
+    "records": [
+      {
+        "local_updates": 1,
+        "compared_widths": [
+          5,
+          6
+        ],
+        "potential_choice_paths_per_width": 12,
+        "large_address_spaces_enumerated": false,
+        "local_TV_to_universal_exact": "1/96",
+        "local_TV_between_widths_exact": "1/384",
+        "full_refresh_TV_between_widths_exact": "1/960",
+        "between_width_bound": "2 * 2^(-(5-2)/2)",
+        "six_symbol_word_probabilities_exact": true
+      },
+      {
+        "local_updates": 2,
+        "compared_widths": [
+          9,
+          10
+        ],
+        "potential_choice_paths_per_width": 48,
+        "large_address_spaces_enumerated": false,
+        "local_TV_to_universal_exact": "5/1024",
+        "local_TV_between_widths_exact": "5/4096",
+        "full_refresh_TV_between_widths_exact": "7/15360",
+        "between_width_bound": "6 * 2^(-(9-2)/2)",
+        "six_symbol_word_probabilities_exact": true
+      }
+    ],
+    "independent_small_partition_laws_checked": 27,
+    "scenery_handling": "Assign one fair sign per distinct visited address class, reusing it on every revisit; no full scenery table is enumerated."
+  },
+  "positive_whole_configuration_selection": [
+    {
+      "register_width": 1,
+      "original_fixed_configurations": 4,
+      "original_counted_physical_states": 49,
+      "original_large_physical_matrix_constructed": false,
+      "selected_configurations": [
+        [
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "selected_positive_weights": [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      "two_symbol_prefix_match_exact": true,
+      "longer_prefix_symbols_checked": 3,
+      "longer_prefix_TV_after_selection_exact": "0",
+      "selected_full_physical_states": 37,
+      "exact_histogram_mass_per_level": "1/6",
+      "certified_internal_band": [
+        "3/2",
+        "17/8"
+      ],
+      "local_cap_exact_Gram_certificate": "5/8",
+      "weighted_stationary_flux_and_original_field_rule_verified": true,
+      "full_clock_two_symbol_probabilities_verified": 36
+    },
+    {
+      "register_width": 2,
+      "original_fixed_configurations": 16,
+      "original_counted_physical_states": 385,
+      "original_large_physical_matrix_constructed": false,
+      "selected_configurations": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "selected_positive_weights": [
+        "1/2",
+        "1/2"
+      ],
+      "two_symbol_prefix_match_exact": true,
+      "longer_prefix_symbols_checked": 4,
+      "longer_prefix_TV_after_selection_exact": "1/3072",
+      "selected_full_physical_states": 49,
+      "exact_histogram_mass_per_level": "1/6",
+      "certified_internal_band": [
+        "3/2",
+        "17/8"
+      ],
+      "local_cap_exact_Gram_certificate": "5/8",
+      "weighted_stationary_flux_and_original_field_rule_verified": true,
+      "full_clock_two_symbol_probabilities_verified": 36
+    }
+  ],
+  "all_accuracy_rational_budgets": {
+    "physical_parameters": {
+      "lambda": "1/8",
+      "gamma": [
+        "1/10",
+        "1/5",
+        "3/10"
+      ],
+      "exp_H_over_10": "65/64",
+      "R_exact": "369720589101871337890625/302231454903657293676544",
+      "A_H_exact": "75418890625/68719476736"
+    },
+    "records": [
+      {
+        "delta": "1/2",
+        "prefix_updates_ell": 9,
+        "reference_width_n0": 37,
+        "reset_tail_mean_error_exact": "9443564706896972442486719160336153282796747797305943145683305608360998451205870426140519443898929301342206641559907388026825845138063089431372985498713603811089917281376786872097235680373499205293158981281518462404983161123086021666154304694462879622707252025293200858868658542633056640625/40040444803944082140777934112056906072775580086859325504422367351311883408378711704514337257905430237797725631071217529669036677246525675892459883369068823240901876684815392842332753456068287184545980454184904107598532959186896947274879459214453934931243817556284314909103783639229973659648",
+        "collision_mean_error_at_most_delta_over_two": true,
+        "counted_total_state_bound": "49862447699362578433",
+        "large_reference_model_constructed": false
+      },
+      {
+        "delta": "1/16",
+        "prefix_updates_ell": 17,
+        "reference_width_n0": 69,
+        "reset_tail_mean_error_exact": "1287908726836951177290062233482195909375139003467612499285486182641118922545563791358776037289842857705185001764689554924426680666152895506889339918816434401438116700790401261485547966822880870998677762671114915500189039872200052038096045112001911872182606222044519034692304257080226569537070800167917836456017935809805756624960360984816089236798426849329873063166438328205476047110435175615383109552369528037796306518822248410401946634623094635474505054162364103831350803375244140625/52501601741802560492557418775529072431678034525967075235999394313022078067330445768615665694433142492037553605529990450690043350824945107393760730312263554450257354713609161451808110847848653988565745653076370640785908659627182233540334264633448840802052550644411082202599157968671158239449504285839788042803349065115565532873683211159832072312656709393938972998280050723316471357898841930594837273473386807441428205105878769091143342185674131923754906196069695953865436913442444279808",
+        "collision_mean_error_at_most_delta_over_two": true,
+        "counted_total_state_bound": "359702501529465927489279849400369153",
+        "large_reference_model_constructed": false
+      },
+      {
+        "delta": "1/256",
+        "prefix_updates_ell": 26,
+        "reference_width_n0": 105,
+        "reset_tail_mean_error_exact": "324696683137580048527322998575046121533007353599086305609400756378147501244264963506165673803599235878769544847767400661094721926401101480677508097701072228070772584139891014429623081615767287911885068129474643617248031552961679203253517965352129323583038275391159257056014487509328933480909965107671132954693041209878029670239667798404094241136810970706088907017815474686555920300486534596355471085424075264393074699257087230051450449448647433427082150093165989191210565517244348753396714443462140016999906878044222538283407093682431693516067000920130607038701448168256084214782660153992873491662792470812649559073776370645902329719398972570840538992913455328299943136727279124897904694080352783203125/168871134344820673888734531764422814589044629437659815774539116445578304069558228300988430637471305909998424704942894808463420529940404917287766557907800552221364487827964032101969529779104473458865232176719923346697510170265110183630851752347130696787965615851897325496924135438630811291188919414487539100089994179364961687372181591913179366241084523781524398068726747134343711401709050774792861005545979200681581741229942920408875731504489035976014909617153803246436571452152877247337365486785284335789365184749938409055879160469194213626652425563723784115837796330358912332386732117510839436464093978657014467717200534324428311499485333842336060252025671640020390309482319912399440661145207724555894784",
+        "collision_mean_error_at_most_delta_over_two": true,
+        "counted_total_state_bound": "249106210692262259525385753217874890798580044935462913",
+        "large_reference_model_constructed": false
+      },
+      {
+        "delta": "1/4096",
+        "prefix_updates_ell": 36,
+        "reference_width_n0": 145,
+        "reset_tail_mean_error_exact": "151326246217911586813793174712584295916587973721229616731924631133172969976183800946365748262968741390011374080458503526425368165574250609507605336105598277805688022743923684614171533923868390801707439378319973290269973459401992048636913303488879021210857619805533079863137907832990313427115205111354151903269379884184354208469701858087748379488409273333719317633370709869839840067991806587427715313110225852198528661469667044126675420587436974652027952555579677082683095145787028776789702340627619821084030144283497292499084419973441753166163692045669754599428095489758593619204888373124336507084966269023556649506165262410685776460896679102284647396737661066049872751354313168780149523115175724292102301323048120343040163543079023499833942247429858631100586075031741083689905643397515891806755794690783434190853613581165958843428643283830317064488418454222249511468862166383967714897772935513216581546354355669592450794880278408527374267578125/1332439489883717909104819600347885711918531680978862576256623890246757954654443684502852979862516998587580886044330029878822867804895765475548380067936481659277814147075548096468910159524578011836795638707506784176552751854605483412214226152976045988895095318644406110110371991637162798473337522589127509230919775598579362984456882696825310815103179160126416732895489483456489305230033336912469314254966289247097018142989003768243223677444415517358778122282377962902873979161056651363243841442569398684112423697117562475229818156991854642059304804346084530623714136847339576579705648214693201386544056441470890759299002376920035493086648974918218663060380499565888749242396549370336504283211974135005464838013942813248889138036734843491081859012110904127755274199778428226423462404467478606413929423016518239657728073173294365525033616352176479976918961611297536756386851674138589149939591074854958644446397629146062554636322310399937867145455599616",
+        "collision_mean_error_at_most_delta_over_two": true,
+        "counted_total_state_bound": "16561393869639096051800498356289998833288546488450012880631238895769485313",
+        "large_reference_model_constructed": false
+      }
+    ],
+    "uniform_polynomial_exponent": "log(96)/beta, beta=log(1+1/((5/2)R))",
+    "all_accuracy_power_margin_certificate": "16>(7/5)^6 implies log(96)/beta > 6+log(6)/beta. The extra fourth power absorbs ell^2(ell+1)^2 for every accuracy, using ell<=log(2C_R/delta)/beta and delta^4 log^4(2C_R/delta)<=log^4(2C_R).",
+    "scope": "Exact rational checks of the all-accuracy formulas and symbolic power margin; enormous reference models are counted but never enumerated."
+  },
+  "largest_constructed_physical_generator_dimension": 49,
+  "largest_enumerated_address_space": 64,
+  "largest_enumerated_scenery_dictionary_configurations": 16,
+  "no_large_graph_simulation_or_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_register_scenery_compression.py": "dd7d528d0c9b459883087cde3205496b8ff75ccaa623785ffab7ee426dba0c45"
+  }
+}

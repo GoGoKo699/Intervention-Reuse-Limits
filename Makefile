@@ -29,3 +29,5 @@ check:
 	$(PYTHON) scripts/verify_local_walk_lower_bound.py --output .check-output/local_walk_lower_bound.json
 	$(PYTHON) scripts/verify_expander_scenery_compression.py --output .check-output/expander_scenery_compression.json
 	$(PYTHON) scripts/verify_expander_scenery_lower_bound.py --output .check-output/expander_scenery_lower_bound.json
+	$(PYTHON) scripts/verify_aggregation_state_lower_bound.py --output .check-output/aggregation_state_lower_bound.json
+	$(PYTHON) scripts/verify_register_scenery_compression.py --output .check-output/register_scenery_compression.json
