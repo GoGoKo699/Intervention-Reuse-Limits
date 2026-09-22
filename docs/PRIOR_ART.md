@@ -2,7 +2,7 @@
 
 [Repository overview](../README.md) · [Exact theory](THEORY.md) · [Finite accuracy](FINITE_ACCURACY.md)
 
-**Updated 22 September 2026, including full-text comparisons for sampled-response and unrestricted-rate lower bounds.** This is a bounded audit, not a certification of novelty. A derivation obtained independently here may still be known. Access depth and version are recorded below. Earlier failed retrievals remain provenance; a later successful inspection supersedes the associated access limitation, not the need for a complete novelty audit.
+**Updated 22 September 2026, including the publication-scope comparison.** This is a bounded audit, not a certification of novelty. A derivation obtained independently here may still be known. Access depth and version are recorded below. Earlier failed retrievals remain provenance; a later successful inspection supersedes the associated access limitation, not the need for a complete novelty audit. The [scope assessment](PUBLICATION_SCOPE.md) identifies the candidate combined theorem and its operational interpretation.
 
 ## Claims being screened
 
@@ -10,23 +10,46 @@ The exact target combines: equality of the complete passive visible Markov path 
 
 The extension retains nonvanishing total response with bounded coupling, then gives a protocol-uniform cubic approximation certificate and an explicit reversible Markov realization whose size is independent of the original state count. Sampled and continuous Hankel witnesses give lower bounds against the broad analytic Markov surrogate class, completing the worst-case tolerance order. The coefficient tolerance, known kinetic kernel, and freedom to change microscopic rates are essential assumptions.
 
-The broad claims below are **not** prospective contributions: hidden kinetics affect nonlinear response; one can coarse-grain response; Volterra kernels admit state realizations; positive sums of exponentials can be approximated by shorter sums; Hankel rank and singular values obstruct low-dimensional approximation.
+The broad claims below are **not** prospective contributions: hidden kinetics affect nonlinear response; the same unperturbed process can respond differently under different kinetic implementations of a thermodynamically identical perturbation; one can coarse-grain response; Volterra kernels admit state realizations; positive sums of exponentials can be approximated by shorter sums; Hankel rank and singular values obstruct low-dimensional approximation.
 
 ## Established response theory
 
 **Urna Basu, Matthias Krüger, Alexandre Lazarescu, Christian Maes, “Frenetic aspects of second order response” (2015).** Physical Chemistry Chemical Physics 17, 6653–6666. [Primary full text](https://arxiv.org/html/1410.7450v2), [DOI](https://doi.org/10.1039/C4CP04977B).
 
-The paper distinguishes thermodynamic and time-symmetric kinetic rate changes and shows that nonlinear response depends on dynamical information not fixed by equilibrium linear response. The initialization pass retrieved the primary abstract and full-text framework; this follow-up carries that access record forward. Consequence: the kinetic field factor and the general hidden-kinetics message are established, not new here.
+**Access:** initialization inspected the response framework; the publication-scope follow-up inspected v2 (3 March 2015), especially Section III.1 and Section IV.1, Eqs. (20)–(27) and Figure 3. The zero-range example keeps the unperturbed process fixed and implements the same chemical-potential change through two different entry/exit rate rules. Linear response agrees; second-order response differs. Thus even equality of the complete passive law, together with a common thermodynamic field change, is insufficient as a novelty distinction.
+
+**Comparison:** in our within-family comparisons at fixed state labels, $k,\mu,g$ and their displayed field dependence can remain fixed while the reversible internal generator $K$ varies. The complete microscopic generator is not held fixed. This isolates hidden kinetics without changing the prescribed actuator rule. The state-complexity question, rather than the general kinetic origin of nonlinear response, is the candidate contribution.
 
 **Gregor Diezemann, “Nonlinear response theory for Markov processes: Simple models for glassy relaxation” (2012).** Physical Review E 85, 051502. [Primary record](https://arxiv.org/abs/1203.1785), [DOI](https://doi.org/10.1103/PhysRevE.85.051502).
 
-The primary abstract explicitly states a master-equation perturbation framework through third order and sensitivity of cubic response to kinetic field coupling. The supplied analytical checkpoint recorded full-text inspection; repository initialization reconfirmed the primary record and abstract. This follow-up carries those access records forward. Consequence: cubic response formulas and different nonlinear responses despite matching linear diagnostics are established.
+**Access:** the supplied checkpoint recorded full-text inspection and initialization reconfirmed the abstract. The publication-scope follow-up inspected [v1 full text](https://arxiv.org/html/1203.1785v1), particularly Eqs. (4)–(5), (25), Figure 6, and Appendix A. The general master-equation expansion allows analytic field dependence and gives response through third order. In the trap-model comparison, changing kinetic field-coupling parameters while holding their thermodynamic sum fixed leaves the zero-field generator and linear susceptibility unchanged, but changes cubic response.
+
+**Comparison:** cubic response and passive agreement with different nonlinear behavior are already present when the kinetic actuator implementation changes. Our comparison instead retains the specified rate-rule parameters while varying $K$, and asks for exact and approximate Markov state requirements. The response formulas themselves are not a contribution. The inspected results do not provide the repository's state-budget minimax theorem or its protocol-uniform coefficient norm.
 
 **Fenna Müller, Urna Basu, Peter Sollich, Matthias Krüger, “Coarse-grained second-order response theory” (2020).** Physical Review Research 2, 043123. [Primary record](https://arxiv.org/abs/2005.05169), [DOI](https://doi.org/10.1103/PhysRevResearch.2.043123).
 
 **Access:** the initialization pass reached the abstract only; the follow-up inspected [arXiv v2 full text](https://arxiv.org/html/2005.05169v2) (29 November 2020), especially Sections II–IV, Eq. (30), and Appendix A.4. The paper obtains arbitrary-protocol second-order response from coarse path-weight derivatives measured with step perturbations. Its four-state chain has blocks $\{A,B\}$ and $\{C,D\}$ with only the $B$–$C$ edge crossing blocks. Section IV.1 explicitly identifies the finite-rate passive coarse process as non-Markovian; zero and nonzero cross-block exit rates within a block also show this directly. Appendix A.4 treats a Markov coarse description but does not establish preservation under our hidden-dependent kinetic field rule.
 
 **Comparison:** response reconstruction from reduced observations is established. The displayed example does not give our exactly Markov passive telegraph process or a sharp all-size Markov-surrogate state-count separation. Our equilibrium potential acts on visible states, so the paper's framework is relevant; the order change to cubic is not by itself a novelty argument. Its step measurements include linear response of coarse joint probabilities, which must not be confused with our matching of the single-time mean's linear response.
+
+**Kirsten Engbring, Dima Boriskovsky, Yael Roichman, Benjamin Lindner, “A Nonlinear Fluctuation-Dissipation Test for Markovian Systems” (2023).** Physical Review X 13, 021034. [Author-hosted full text](https://people.physik.hu-berlin.de/~lindner/PDF/Engbring_PhysRevX_2023.pdf), [DOI](https://doi.org/10.1103/PhysRevX.13.021034).
+
+**Access:** published full text inspected, especially Section II.A, Eqs. (3)–(8). Its nonlinear relation compares passive correlations with relaxation after a stationary perturbation is switched off. The conjugate observable is the ratio of perturbed to unperturbed stationary densities minus one. This is a perturbation-arrest diagnostic, not a finite-state approximation theorem for a field that remains on.
+
+**Our comparison, derived from strong lumpability:** prepare our model at any constant field $h_0$, then set $h=0$. For every $K$,
+
+$$
+m_{\mathrm{arrest}}(t)=\tanh(h_0)e^{-2kt}.
+$$
+
+The visible stationary-density ratio gives $z(S)=\tanh(h_0)S$, so
+
+$$
+C_{zz}(t)=\tanh^2(h_0)e^{-2kt}
+=\mathbb E_{\mathrm{arrest}}z(t).
+$$
+
+Thus the family satisfies this diagnostic at every finite $h_0$, while its field-on cubic response can vary with $K$. This distinction follows from our model; it neither contradicts the cited relation nor establishes a new Markovianity test.
 
 ## Aggregation and realization
 
@@ -42,13 +65,25 @@ The initialization pass inspected bibliographic information and the abstract. Th
 
 **Arthur E. Frazho, “A Shift Operator Approach to Bilinear System Theory” (1980).** SIAM Journal on Control and Optimization 18(6), 640–658. [Primary publisher record](https://epubs.siam.org/doi/10.1137/0318049).
 
-The publisher abstract describes bilinear realization of Volterra input-output maps, minimality linked to reachability and observability, and finite realizability through rational transforms. Full text was not obtained in either pass; a theorem-level comparison remains open. The pole-location lemma is standard realization reasoning, not an independent innovation.
+The publisher abstract describes bilinear realization of Volterra input-output maps, minimality linked to reachability and observability, and finite realizability through rational transforms. Full text was not obtained; its precise theorem statements remain unaudited. The accessible full-text successor below establishes the classical framework comparison without requiring that historical access gap to be closed. The pole-location lemma is standard realization reasoning, not an independent innovation.
+
+**Mihály Petreczky, “Realization theory for linear and bilinear switched systems: A formal power series approach. Part II: Bilinear switched systems” (2011).** ESAIM: COCV 17, 446–471. [Primary full text](https://www.numdam.org/item/10.1051/cocv/2010015.pdf).
+
+**Access/comparison:** Section 2.1 and Theorem 2.3 were inspected. For arbitrary switching, minimal bilinear realization dimension equals Hankel rank, equivalently semi-reachability and observability; minimal realizations are isomorphic. A single mode recovers the ordinary bilinear framework. This is exact realization in unrestricted real coordinates, without an approximation norm or Markov constraints. Our signed coefficient lift fits that framework, but its input channels $(u,u^2,u^3)$ are constrained; unrestricted bilinear minimality cannot simply be identified with physical Markov state count.
 
 **Peter Benner and Pawan Goyal, “Balanced Truncation Model Order Reduction For Quadratic-Bilinear Control Systems” (2017 preprint).** [Primary full text](https://arxiv.org/html/1705.00160v1).
 
 **Access:** full-text inspection covers equation (3.1), Volterra kernels (3.2)–(3.5), Theorems 3.1–3.2, Remark 3.3, and Theorem 4.5. The framework supplies Volterra-based reachability/observability Gramians and reduction; setting the quadratic state term to zero gives the bilinear case. It does not impose preservation of a probability simplex, detailed balance, or an exact passive visible path law.
 
-**Our mapping:** write the column generator as $A(h)=\sum_{j\ge0}h^jA_j$, with $A_0p_0=0$. Its coefficient equations are $\dot p_n=A_0p_n+\sum_{j=1}^n A_jp_{n-j}u^j$, $1\le n\le3$. Stacking these states and lifting the input to $(u,u^2,u^3)$ gives a bilinear system; the three lifted inputs are constrained, not independent actuators. Restricting coefficient states to the zero-mass subspace removes the stationary eigenvalue. These signed coefficient states are not Markov probabilities. Thus the formal realization framework is established, while a reduced physical model satisfying our passive-law and reversibility constraints still needs a separate construction.
+**Our mapping:** write the column generator as $A(h)=\sum_{j\ge0}h^jA_j$, with $A_0p_0=0$. Its coefficient equations are $\dot p_n=A_0p_n+\sum_{j=1}^n A_jp_{n-j}u^j$, $1\le n\le3$. Stacking these states and lifting the input to $(u,u^2,u^3)$ gives a bilinear system; the three lifted inputs are constrained, not independent actuators. For an irreducible reference generator, restricting coefficient states to the zero-mass subspace removes the stationary eigenvalue. These signed coefficient states are not Markov probabilities. Thus the formal realization framework is established, while a reduced physical model satisfying our passive-law and reversibility constraints still needs a separate construction.
+
+**Timo Reis and Elena Virnik, “Positivity Preserving Balanced Truncation for Descriptor Systems” (2009).** SIAM Journal on Control and Optimization 48(4), 2600–2619. [DOI](https://doi.org/10.1137/080734200), [full author manuscript](https://www.researchgate.net/profile/Elena_Virnik/publication/220259131_Positivity_Preserving_Balanced_Truncation_for_Descriptor_Systems/links/00b7d5174f1aa6ed84000000.pdf).
+
+**Access/comparison:** Theorems 3.1–3.2 give diagonal Lyapunov-inequality balancing for stable positive LTI systems and positive, stable truncations with $H_\infty$ error bounded by twice the discarded balancing values. These instance-specific values supply no uniform tolerance-to-state bound. Generally $H_\infty$ error does not control absolute damped $L_1$ error; when the impulse error is nonnegative, its $L_1$ norm equals its DC gain and the bound can transfer. The remaining requirements are a uniform state bound and a conservative reversible Markov embedding preserving the prescribed passive law.
+
+**Luca Benvenuti and Lorenzo Farina, “A Tutorial on the Positive Realization Problem” (2004).** IEEE Transactions on Automatic Control 49(5), 651–664. [Full manuscript](https://sites.math.rutgers.edu/~sussmann/papers/res-farina-tutorial-positive-realization.pdf).
+
+**Access/comparison:** Theorem 2 characterizes exact positive realization through an invariant proper polyhedral cone; its extreme rays determine positive realization dimension. Our positive exponential kernel already has a diagonal positive LTI realization with one coordinate per mode. Converting it to an irreducible reversible stationary autocorrelation with bounded readout is a different requirement, addressed by the Jacobi corollary below.
 
 **Fritz Gesztesy and Barry Simon, “m-Functions and inverse spectral analysis for finite and semi-infinite Jacobi matrices” (1997).** Journal d'Analyse Mathématique 73, 267–297. [Author-hosted primary PDF](https://math.caltech.edu/SimonPapers/261.pdf), [DOI](https://doi.org/10.1007/BF02788147).
 
@@ -88,7 +123,9 @@ The two 2026 papers are preprints in the versions inspected. Successful access p
 
 **Georgios Kotsalis and Jeff S. Shamma, “Limits of performance for the model reduction problem of hidden Markov models” (2015).** CDC 2015, 4674–4679. [Primary institutional record](https://experts.illinois.edu/en/publications/limits-of-performance-for-the-model-reduction-problem-of-hidden-m/), [DOI](https://doi.org/10.1109/CDC.2015.7402948).
 
-**Access:** the primary abstract and indexed introduction were inspected. The [KAUST manuscript](https://repository.kaust.edu.sa/bitstreams/f7535c55-d4d3-4ebf-a668-0d3017a43749/download) was located, but full-text retrieval failed. The authors already bound approximation by lower-order hidden Markov models using Hankel singular values. **Comparison:** a general stochastic dimension-witness claim would overlap with this work. Its exact assumptions and norm conversion have not been checked at theorem level; neither equivalence to nor exclusion of our cubic-response result is asserted.
+**Access:** complete PDF retrieval failed. The publication-scope pass inspected indexed primary-manuscript excerpts containing Definitions 2.1–2.3, Lemma 2.1, Section IV.B, and Theorems 4.1–4.2 from the [KAUST manuscript](https://repository.kaust.edu.sa/bitstreams/f7535c55-d4d3-4ebf-a668-0d3017a43749/download). This is theorem-level partial access, not a claim to have read the entire paper. The stationary finite-alphabet process is specified by word probabilities. In the stable controllable/observable tree-system setting, Theorem 4.2 lower-bounds order-$k$ Hankel approximation error by the $(k+1)$st Hankel singular value.
+
+**Comparison:** the stochastic Hankel dimension obstruction is established. Directly applying it to our passive visible word law gives no intervention bound: that law already has an exact two-state realization for every target. A response application first needs the coefficient lift, its norm estimate, and a physical Markov realization. The inspected theorem supplies the rank mechanism, not those additional conclusions. The remaining full-paper access limitation is not evidence for novelty.
 
 **Simon Becker and Carsten Hartmann, “Infinite-dimensional bilinear and stochastic balanced truncation with explicit error bounds” (2019).** Mathematics of Control, Signals, and Systems 31, 1–37. [Primary full text and DOI](https://doi.org/10.1007/s00498-019-0234-8).
 
@@ -128,9 +165,9 @@ For fixed positive $WU^3$, the [finite-accuracy results, Sections 8 and 11](FINI
 
 ## Open publication gates
 
-The first gate is a precise comparison of the combined theorem with the closest response, controlled-reduction, and stochastic-realization results. The exact separation and the matching tolerance orders for unrestricted and capped target rates are specific mathematical statements; their derivation here does not establish publication novelty. The linear lift, Hankel rank obstruction, Cauchy inverse, positive quadrature, and inverse spectral realization are established ingredients. The unavailable HMM full text remains a concrete comparison gap, and further citation tracing could reveal a closer theorem.
+The [publication comparison](PUBLICATION_SCOPE.md) now identifies the candidate contribution more narrowly: optimal-order cubic approximation can retain reversibility, bounded sensitivity, and the prescribed passive and low-order response agreements, even when compared with stationary analytic Markov fits that abandon those agreements. The [class comparison](STRUCTURE_COST.md) makes this a proved corollary. The linear lift, Hankel obstruction, Cauchy inverse, positive quadrature, and inverse spectral realization remain established ingredients. The inspected HMM definitions and lower-bound theorem now permit a concrete comparison despite incomplete full-paper access; further work could still reveal a result covering the combined statement.
 
-The second gate is operational significance: explain what preserving the same actuator, passive path law, and cubic mean response buys a user of the surrogate. The finite-sample witness certifies coefficient-approximation limits; it is not yet a noisy experimental protocol, a statistical reconstruction guarantee, or a finite-amplitude prediction theorem. The active-rate cap needs an explicit physical interpretation if the matching theorem is foregrounded. The third gate is a clear physical account retaining these assumptions without an unsupported turbulence label.
+The scope note also specifies the operational use: compress a supplied kinetic model for reuse across weak protocols, with an active-rate cap describing extra information about hidden relaxation times. Its exact switch-off versus cubic field-on comparison explains which calibration records miss the hidden dynamics. This does not establish a molecular implementation, finite-amplitude prediction theorem, or noisy inference method. The remaining significance question concerns the usefulness and originality of that complete modeling statement, rather than another generic demonstration that nonlinear response detects kinetics.
 
 The unrestricted-rate logarithmic-versus-squared-logarithmic tolerance gap is now closed within the stated model and error norm; sharp constants and an operational interpretation beyond coefficient approximation are not settled by that result. A universal fixed-error lower bound growing with microscopic $N$ remains incompatible with the constructive upper bounds at bounded coupling and protocol amplitude. No conclusion about this project's novelty follows merely because the bounded search did not locate its exact theorem.
 

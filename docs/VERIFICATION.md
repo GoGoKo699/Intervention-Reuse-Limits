@@ -114,6 +114,16 @@ The new verifier's largest matrix is $14\times14$; the complete suite's largest 
 
 The complete six-verifier `make check` passed locally in the pinned environment. All six fresh reports matched their saved JSON reports exactly. The original license, five earlier verifiers, and their reports were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
 
+## Publication-scope and structure-cost checkpoint
+
+This continuation starts from `9cf4e64ca27624ee66bb75d93ba7fd215135ac43`. It adds the [publication comparison](PUBLICATION_SCOPE.md) and [structure-cost corollary](STRUCTURE_COST.md). All six mathematical verifiers, their saved reports, and the MIT license remain unchanged.
+
+The corollary uses the existing lower and upper proofs. The unrestricted lower proof already applies to stationary analytic Markov surrogates with a fixed arbitrary readout. In the capped case, filtering preserves the coefficient-lift rank even without passive matching; the mode count becomes $3D-1$, and the same Vandermonde and filter estimates apply. No new approximation algorithm or computed minimax optimum is introduced.
+
+The switch-off formula follows exactly from the zero-field readout eigenrelation, and the two three-state field-on coefficients follow by substitution in the existing step formula. The public note includes their derivation and precise scope. These are analytic corollaries; no additional simulation or statistical test is used to support them. The source comparisons are literature assessments, not mathematical verification by the programs.
+
+The complete six-verifier `make check` passed locally in the pinned environment. All six fresh reports matched their saved JSON reports exactly. The license, all verification scripts and reports, pinned dependencies, build target, and workflow were checked against the starting commit and remain unchanged. Final repository checks passed. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:

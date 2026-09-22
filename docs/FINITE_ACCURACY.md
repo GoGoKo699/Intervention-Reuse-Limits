@@ -34,6 +34,8 @@ The constructive **upper bounds** produce surrogates in the original reversible 
 
 The norm concerns Taylor coefficients only. None of its quantifiers asserts a Taylor remainder uniform in $T$, $N$, or the field amplitude. Finite-field prediction and kernel acquisition remain separate tasks.
 
+The [structure-cost comparison](STRUCTURE_COST.md) also considers a relaxed cubic-only task without passive or lower-order matching requirements. Its worst-case state-growth orders coincide with those achieved by the reversible constructions here. This is a consequence of the lower proofs and does not change the original definition of $\mathcal A_D(k)$ or $E_D$.
+
 ## 1. A bounded-coupling, nonvanishing-signal exact family
 
 Keep the reflecting path $K$, uniform $\mu$, and $0<\rho<k/4$ from the core note. Write

@@ -39,6 +39,8 @@ In thermal units, state energies $E_A(h)=h$ and $E_{B_j}(h)=-h-\log\mu_j$, with 
 
 This specifies a thermodynamically consistent kinetic coupling; it is not a demonstrated molecular mechanism. The distinction between thermodynamic and kinetic field coupling is established response theory, not a contribution claimed here; see [Basu et al. and Diezemann](PRIOR_ART.md).
 
+The [publication-scope note](PUBLICATION_SCOPE.md) distinguishes this specified actuator from a thermodynamic field alone. It also derives an exact diagnostic boundary: stationary-preparation relaxation after switching the field off is independent of $K$, whereas the cubic field-on response can depend on $K$.
+
 ## 3. Exact passive path law
 
 At $h=0$, the total exit rate from $A$ to the $B$ block is $k$, and the exit rate from every $B_j$ to $A$ is $k$. Thus the partition is strongly lumpable, with visible generator
@@ -306,3 +308,5 @@ checks, not independent validation or a novelty certificate.
 The model, equations, inverse, and state-count construction are derived here and checked by [the executable verification](VERIFICATION.md). Their publication-level novelty remains under audit against response theory, controlled lumpability, and nonlinear realization theory. No experimental application, optimal controller, universal compression impossibility, or journal-level claim follows from this note.
 
 [Finite Accuracy, Sections 9–10](FINITE_ACCURACY.md) adds finite-sample lower bounds against the full analytic Markov surrogate class. The [unrestricted-rate theorem](UNRESTRICTED_RATE_LOWER_BOUND.md) completes the comparison with the constructive upper bounds: the worst-case state requirement grows as the square of the logarithm of inverse tolerance. When active target rates are at most $3k$, the corresponding order is a single logarithm. These are coefficient-approximation statements with conservative constants; their publication-level originality remains under audit.
+
+The [structure-cost corollary](STRUCTURE_COST.md) shows that the same orders are necessary even after removing passive, static, linear, and quadratic matching requirements from stationary analytic Markov surrogates. The constructive models preserve all of them, along with reversibility and bounded sensitivity. The [publication comparison](PUBLICATION_SCOPE.md) identifies this combined compatibility statement as the candidate contribution.

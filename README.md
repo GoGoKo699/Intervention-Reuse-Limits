@@ -4,7 +4,7 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** matching upper and lower bounds now determine the worst-case state-growth order: squared-logarithmic in inverse tolerance for unrestricted target rates, and logarithmic when active target rates are bounded. The proofs use established approximation and realization methods; publication-level novelty remains under audit. Manuscript writing remains on hold.
+**Research status:** matching bounds determine the worst-case state-growth order. The publication comparison narrows the candidate contribution to preserving reversible Markov structure and exact passive behavior at that optimal order. The individual approximation and realization mechanisms are established; originality of the combined theorem remains under assessment. Manuscript writing remains on hold.
 
 ## Current results
 
@@ -29,15 +29,21 @@ for every finite horizon and every admissible protocol, independently of the ori
 
 The second row adds information about the target; it leaves the broad surrogate class unchanged and assumes no lower bound on the hidden spectral gap. These are asymptotic coefficient-tolerance results, with conservative constants. The unrestricted lower bound already holds for targets whose slowest active rate is $5k/2$: access to increasingly fast hidden modes causes the additional worst-case cost. A finite-horizon version uses the step-response curve only up to time $O(\sqrt D/k)$ for a tested budget of $D$ states; it is not a claim about finitely many noisy measurements.
 
+**Preserving structure at the optimal order.** The same two state-growth orders hold even for stationary analytic Markov competitors that are judged only on the cubic coefficient and may abandon passive, static, linear, and quadratic matching. Our reversible construction retains all those agreements and the sensitivity bound at that same asymptotic order. The [comparison proof](docs/STRUCTURE_COST.md) does not claim equal errors at a fixed state budget or equal leading constants.
+
 **The distinction matters:** exact response complexity can grow without bound even at nonvanishing signal strength; that does not imply an equally large state requirement at fixed accuracy. The approximation requires intervention-relevant information that cannot be obtained from the passive binary process alone.
+
+The [operational example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switching-the-field-off-versus-keeping-it-on) makes this concrete: all targets give the same relaxation after a stationary field is switched off, even at finite field strength, yet their cubic response while the field stays on can differ. The intended use is compression of a supplied kinetic model for reuse across weak protocols.
 
 ## Read and inspect
 
 | Question | Document |
 |---|---|
+| What is the candidate contribution, and how does it compare with prior theorems? | [Publication scope and operational interpretation](docs/PUBLICATION_SCOPE.md) |
 | What is the model, and where is the exact proof? | [Core theory and three-state example](docs/THEORY.md) |
 | What survives at nonzero error tolerance? | [Nonvanishing signal, approximation bound, and Markov realization](docs/FINITE_ACCURACY.md) |
 | Why is the squared-logarithmic state count necessary? | [Unrestricted-rate lower bound](docs/UNRESTRICTED_RATE_LOWER_BOUND.md) |
+| Does preserving the physical structure increase the asymptotic state cost? | [Relaxed and structure-preserving comparison](docs/STRUCTURE_COST.md) |
 | What is already known, and what remains to be checked? | [Prior-art and novelty audit](docs/PRIOR_ART.md) |
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
@@ -76,7 +82,7 @@ The checks use symbolic algebra, exact rational calculations, and small determin
 
 The observable is a single-time binary mean; the response is a Taylor coefficient about equilibrium. The exact lower bound applies to analytic finite-state autonomous Markov models. The approximate surrogate may change microscopic topology and rates. Neither result is a general control impossibility, a bit-complexity bound, a noise-robust identification theorem, or a turbulence result.
 
-Nonlinear response revealing hidden kinetics, coarse response theory, minimal realization, exponential-kernel approximation, and Hankel state-dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) identifies those precedents and the precise remaining comparison: the state bounds in this passive-law-constrained, protocol-uniform cubic-response task. A broad passive-versus-altered-dynamics story alone is already present in prior work.
+Nonlinear response revealing hidden kinetics, coarse response theory, minimal realization, positive model reduction, exponential-kernel approximation, and Hankel state-dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) and [theorem comparison](docs/PUBLICATION_SCOPE.md) distinguish those ingredients from the combined constrained-response claim. The logarithmic exponents are approximation costs already present in the relaxed task; demanding the correct passive law does not cause the lower bound.
 
 Manuscript writing is on hold while the novelty and significance questions are resolved. Research contact: **Ruge Lin**, [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
