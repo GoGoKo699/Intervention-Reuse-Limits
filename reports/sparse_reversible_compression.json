@@ -1,0 +1,275 @@
+{
+  "status": "PASS",
+  "scope": "Exact weighted lattice fragmentation, positive whole-component prefix selection, all refresh flags, original physical field identities, retained spectral band, no-refresh repair and finite error budgets; no simulations.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "weighted_fragmentation_and_forcing": {
+    "lattice_cases": [
+      {
+        "graph": "weighted_path",
+        "vertices": 7,
+        "dimension": 1,
+        "side_length": 2,
+        "offsets": 2,
+        "stationary_mean_exit_exact": "3/125",
+        "average_directed_cut_flux_exact": "3/250",
+        "minimum_directed_cut_flux_exact": "3/250",
+        "largest_surviving_component": 2
+      },
+      {
+        "graph": "weighted_path",
+        "vertices": 7,
+        "dimension": 1,
+        "side_length": 3,
+        "offsets": 3,
+        "stationary_mean_exit_exact": "3/125",
+        "average_directed_cut_flux_exact": "1/125",
+        "minimum_directed_cut_flux_exact": "1/250",
+        "largest_surviving_component": 3
+      },
+      {
+        "graph": "weighted_grid",
+        "vertices": 9,
+        "dimension": 2,
+        "side_length": 2,
+        "offsets": 4,
+        "stationary_mean_exit_exact": "21/500",
+        "average_directed_cut_flux_exact": "21/1000",
+        "minimum_directed_cut_flux_exact": "9/500",
+        "largest_surviving_component": 4
+      },
+      {
+        "graph": "weighted_grid",
+        "vertices": 9,
+        "dimension": 2,
+        "side_length": 3,
+        "offsets": 9,
+        "stationary_mean_exit_exact": "21/500",
+        "average_directed_cut_flux_exact": "7/500",
+        "minimum_directed_cut_flux_exact": "0",
+        "largest_surviving_component": 9
+      }
+    ],
+    "offsets_enumerated": 18,
+    "forcing_density_box_vertices": 128,
+    "attained_forcing_L1_exact": "27/1000",
+    "forcing_radius_exact": "3/2",
+    "directed_flux_exact": "3/250",
+    "Duhamel_mean_bound_exact": "81/2000",
+    "gap_one_partition_obstruction_exact": "2/3"
+  },
+  "whole_component_selection": {
+    "original_components": 6,
+    "selected_components": 3,
+    "original_physical_states": 13,
+    "selected_physical_states": 7,
+    "local_flip_rates_exact": [
+      "1/12",
+      "1/6",
+      "1/4",
+      "1/3",
+      "5/12",
+      "1/2"
+    ],
+    "original_component_weights_exact": [
+      "1/20",
+      "1/20",
+      "1/10",
+      "3/20",
+      "1/4",
+      "2/5"
+    ],
+    "selected_original_component_indices": [
+      0,
+      4,
+      5
+    ],
+    "selected_component_weights_exact": [
+      "1/8",
+      "27/40",
+      "1/5"
+    ],
+    "prefix_vector_rank": 3,
+    "nullspace_eliminations": [
+      {
+        "components_before": 6,
+        "components_after": 5,
+        "step_size_exact": "1/60"
+      },
+      {
+        "components_before": 5,
+        "components_after": 4,
+        "step_size_exact": "3/40"
+      },
+      {
+        "components_before": 4,
+        "components_after": 3,
+        "step_size_exact": "1/5"
+      }
+    ],
+    "original_relaxation_spectrum_exact": {
+      "0": 1,
+      "3/2": 5,
+      "5/3": 1,
+      "11/6": 1,
+      "2": 1,
+      "13/6": 1,
+      "7/3": 1,
+      "5/2": 1
+    },
+    "selected_relaxation_spectrum_exact": {
+      "0": 1,
+      "3/2": 2,
+      "5/3": 1,
+      "7/3": 1,
+      "5/2": 1
+    },
+    "specified_spectral_band_exact": [
+      "3/2",
+      "5/2"
+    ],
+    "histogram_exact": {
+      "-1": "1/2",
+      "1": "1/2"
+    }
+  },
+  "prefixes_and_stationary_refresh": {
+    "matched_words_through_length_three": 14,
+    "individual_refresh_flag_laws": 42,
+    "entry_tilt_checks": 28,
+    "length_four_words_checked": 16,
+    "length_four_total_variation_exact": "1/2500",
+    "longer_word_witness": [
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "longer_word_probability_gap_exact": "-1/20000"
+  },
+  "no_refresh_irreducibility_repair": {
+    "theta_exact": "1/10",
+    "physical_states_before_and_after": 7,
+    "absolute_directed_flux_change_exact": "2999/48000",
+    "flux_bound_exact": "1/5",
+    "repaired_relaxation_spectrum_exact": {
+      "0": 1,
+      "1/10": 2,
+      "1/4": 1,
+      "17/20": 1,
+      "1": 1
+    },
+    "scope": "The repair retains the upper cap; no pre-existing larger lower gap is claimed."
+  },
+  "all_protocol_error_budgets": {
+    "R_exact": "3/2",
+    "fixed_clock_exact": "5/2",
+    "regeneration_constant_exact": "11/2",
+    "continuation_probability_exact": "15/19",
+    "full_error_budgets": [
+      {
+        "global_refresh_supplied": true,
+        "delta_exact": "1/4",
+        "deletion_flux_budget_exact": "1/27",
+        "ell": 16,
+        "deletion_error_exact": "1/8",
+        "prefix_error_exact": "1083787378692626953125/10960773715569604371878",
+        "repair_theta_exact": "0",
+        "repair_error_exact": "0",
+        "lattice_side_length": 27,
+        "state_bounds_by_dimension": {
+          "1": 3538945,
+          "2": 95551489
+        }
+      },
+      {
+        "global_refresh_supplied": true,
+        "delta_exact": "1/32",
+        "deletion_flux_budget_exact": "1/216",
+        "ell": 24,
+        "deletion_error_exact": "1/64",
+        "prefix_error_exact": "2777628512344658374786376953125/186152991376512179073219220560998",
+        "repair_theta_exact": "0",
+        "repair_error_exact": "0",
+        "lattice_side_length": 216,
+        "state_bounds_by_dimension": {
+          "1": 7247757313,
+          "2": 1565515579393
+        }
+      },
+      {
+        "global_refresh_supplied": true,
+        "delta_exact": "1/512",
+        "deletion_flux_budget_exact": "1/3456",
+        "ell": 36,
+        "deletion_error_exact": "1/1024",
+        "prefix_error_exact": "360387127497304099451866932213306427001953125/412015193042428820190417116504871679780698188678",
+        "repair_theta_exact": "0",
+        "repair_error_exact": "0",
+        "lattice_side_length": 3456,
+        "state_bounds_by_dimension": {
+          "1": 474989023199233,
+          "2": 1641562064176545793
+        }
+      },
+      {
+        "global_refresh_supplied": false,
+        "delta_exact": "1/4",
+        "deletion_flux_budget_exact": "2/81",
+        "ell": 17,
+        "deletion_error_exact": "1/12",
+        "prefix_error_exact": "16256810680389404296875/208254700595822483065682",
+        "repair_theta_exact": "2/405",
+        "repair_error_exact": "1/12",
+        "lattice_side_length": 102,
+        "state_bounds_by_dimension": {
+          "1": 26738689,
+          "2": 2727346177
+        }
+      },
+      {
+        "global_refresh_supplied": false,
+        "delta_exact": "1/32",
+        "deletion_flux_budget_exact": "1/324",
+        "ell": 26,
+        "deletion_error_exact": "1/96",
+        "prefix_error_exact": "624966415277548134326934814453125/67201229886920896645432138622520278",
+        "repair_theta_exact": "1/1620",
+        "repair_error_exact": "1/96",
+        "lattice_side_length": 810,
+        "state_bounds_by_dimension": {
+          "1": 108716359681,
+          "2": 88060251340801
+        }
+      },
+      {
+        "global_refresh_supplied": false,
+        "delta_exact": "1/512",
+        "deletion_flux_budget_exact": "1/5184",
+        "ell": 38,
+        "deletion_error_exact": "1/1536",
+        "prefix_error_exact": "81087103686893422376670059747993946075439453125/148737484688316804088740579058258676400832046112758",
+        "repair_theta_exact": "1/25920",
+        "repair_error_exact": "1/1536",
+        "lattice_side_length": 12960,
+        "state_bounds_by_dimension": {
+          "1": 7124835347988481,
+          "2": 92337866109930700801
+        }
+      }
+    ],
+    "half_cap_theta_branch_checked": true,
+    "method": "Exact rational powers and integer ceilings; no logarithm rounding or simulation."
+  },
+  "largest_matrix_dimension": 13,
+  "limitations": "Finite exact checks support the stated construction; they do not prove a cap-only theorem, cover all bounded-degree graphs, establish an intrinsic reversibility cost, or replace the uniform analytic proof.",
+  "source_sha256": {
+    "verify_sparse_reversible_compression.py": "cc943a980261c25bb9e11fe4808ca313ecdbb5758ccabc905b2673e1dfb07c05",
+    "verify_bounded_rate_prediction.py": "e150952554d6fc30005f70e09407ef63009cf482f82f9616ce41ab876986b3f1",
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

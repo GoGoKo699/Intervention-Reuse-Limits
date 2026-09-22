@@ -25,3 +25,5 @@ check:
 	$(PYTHON) scripts/verify_bounded_density_sampling.py --output .check-output/bounded_density_sampling.json
 	$(PYTHON) scripts/verify_analytic_constant_step.py --output .check-output/analytic_constant_step.json
 	$(PYTHON) scripts/verify_moment_density_sampling.py --output .check-output/moment_density_sampling.json
+	$(PYTHON) scripts/verify_sparse_reversible_compression.py --output .check-output/sparse_reversible_compression.json
+	$(PYTHON) scripts/verify_local_walk_lower_bound.py --output .check-output/local_walk_lower_bound.json

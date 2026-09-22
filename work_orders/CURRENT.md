@@ -1,5 +1,19 @@
 # Current work order: close the general prediction-complexity gap
 
+## New completed extension: local walks and sparse reversible compression — 22 September 2026
+
+This continuation starts from `2ede88ab4d5cc0be6075e7f881bc66ec07ebb12b`. All nineteen preceding mathematical verifiers and saved reports are preserved.
+
+[Sparse reversible compression](../docs/SPARSE_REVERSIBLE_COMPRESSION.md) replaces a density condition by a stationary-flux fragmentation profile. If local edges can be deleted at directed stationary flux at most `εk`, leaving components of at most `S(ε)` vertices, retain a positive convex combination of at most `m^(ell+1)` whole components matching the stationary actuator prefixes. Restoring the same independent global refresh preserves these prefix laws exactly. The state count is `1+S(ε)m^(ell+1)` and actual all-protocol/all-horizon mean error is at most `R³ε+C_R q_Λ^(ell+1)`.
+
+For nearest-neighbor local networks in fixed dimension `d`, random grid offsets give `S(ε)≤max(1,ceil((Λ-c)/ε))^d` when `K=L+ck(Π−I)`. The reversible upper is `C δ^{-(d+p_Λ)}` and retains the original field rule, exact actuator histogram, upper cap `Λk`, and lower gap `ck` when `c>0`. Paths and cycles have exponent `1+p_Λ`. A cap-preserving small-refresh repair handles `c=0`, without retaining a fixed lower gap.
+
+[The local-walk lower](../docs/LOCAL_WALK_LOWER_BOUND.md) uses hidden states `(x,i)`, with an independent binary string `x` of length `4n+3` and a position on its path. The actuator is `sqrt(W) x_i`; local jumps have rate `k/4`, and stationary refresh has rate `3k/2`. All nonzero internal relaxation rates lie in `[3k/2,5k/2]`. A unique maximal-distance Walsh contribution gives a `2^n` Gram witness with floor `48^(-4n-2)/[2(4n+3)]`. The existing total-degree logarithm transfer gives polynomial necessity at every fixed positive control clock, with horizons `O_a(log(1/δ)/k)`.
+
+The same one-dimensional class therefore has passive cost exactly two, constant-step cost `Θ(log(1/δ))`, and switching cost `δ^(-Θ(1))` both with unrestricted and with reversible predictors. The switching upper preserves the original rate rule and band; the analytic constant-step upper still allows different rate functions. Polynomial exponents are not matched, so equality of the optimal reversibility costs is not proved. Along the switching witnesses, the exact cubic minimum is `4n+5`.
+
+The path dictionary can have unbounded density moments, so this is a separate positive route beyond density clipping. Its small-cut assumption does not follow from a spectral cap or bounded degree alone. A local Poincaré gap gives a direct lower bound on the stationary cost of fragmentation; that limits this construction, not every reversible predictor. No manuscript drafting, scenery-learning guarantee or novelty certification is implied.
+
 ## New completed extension: analytic step models and density tails — 22 September 2026
 
 This continuation starts from `3f2bb0924a269c9ff4ce7ccb582e334e59c48c58`. All seventeen preceding mathematical verifiers and saved reports are preserved.
@@ -92,7 +106,7 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 **Determine the optimal cost of retaining reversible dynamics in the bounded-rate binary class.**
 
-Polynomial necessary growth is established. The density-moment extension handles arbitrary pointwise spikes when their stationary tails are controlled. The precise remaining obstacle is to handle strong transitions with unbounded density moments under a spectral cap alone. The matching example shows that simply discarding those edges can lose the relevant response even when another tiny exact model exists. A reversible predictor of polynomial size under the original cap-only assumptions, or a rigorous lower bound separating reversible from unrestricted predictors, would settle the main question. Retain ordinary detailed balance, the exact actuator histogram, fixed binary readout, and the all-protocol/all-horizon mean guarantee; specify separately whether the spectral band is retained. The current sufficient bounds alone imply no structural penalty. Improving the unmatched polynomial exponents is a secondary quantitative direction.
+Polynomial necessary growth is established, and the one-dimensional local-plus-refresh subclass now has a polynomial reversible upper retaining the original field rule and band. Density moments and small-cost fragmentation are two distinct sufficient routes. The remaining obstacle is to handle strong transitions with unbounded density moments on local graphs that cannot be fragmented cheaply. A reversible predictor of polynomial size under the original cap-only assumptions, or a rigorous lower bound separating reversible from unrestricted predictors, would settle the general question. Retain ordinary detailed balance, the exact actuator histogram, fixed binary readout, and the all-protocol/all-horizon mean guarantee; specify separately whether the spectral band is retained. Neither failed clipping nor failed fragmentation implies an intrinsic structural penalty. Improving the unmatched polynomial exponents, including those in the resolved local growth class, remains a quantitative direction.
 
 Qualitative analytic field dependence is now resolved for the logarithmic constant-step upper. A further refinement would impose the original exponential actuator rule or tolerance-independent derivative bounds; neither is proved. Do not silently present the analytic Jacobi model as belonging to the original rate-rule family.
 

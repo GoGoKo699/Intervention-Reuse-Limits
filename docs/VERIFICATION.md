@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all nineteen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-one mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -224,6 +224,24 @@ Reciprocal internal proof audits checked analytic moment regularization, the com
 
 The complete nineteen-verifier `make check` passed locally in the pinned Python 3.13 environment. All nineteen fresh reports matched their saved JSON evidence exactly. The thirty-four prior mathematical scripts and reports, original MIT license, pinned dependencies and workflow are byte-identical to the starting commit. The largest matrix across the suite remains $68\times68$. GitHub Actions is checked separately after publication.
 
+## Sparse reversible compression and local-walk checkpoint
+
+This continuation starts from `2ede88ab4d5cc0be6075e7f881bc66ec07ebb12b`. The nineteen preceding mathematical verifiers and saved reports remain regression baselines. Two new verifiers cover the sparse upper construction and the local-walk lower witness; the build and provenance checker include both.
+
+[verify_sparse_reversible_compression.py](../scripts/verify_sparse_reversible_compression.py) generates [sparse_reversible_compression.json](../reports/sparse_reversible_compression.json). Exact positive nullspace elimination reduces six two-state components to three, taking the full physical model from 13 states to 7. The selected component weights are $1/8,27/40,1/5$. All 14 binary words through length three, all 42 refresh-flag conditional laws, and 28 field-entry tilt checks agree. The length-four total-variation difference is exactly $1/2500$, so the smaller model is not accidentally an exact all-word realization. Full-field identities verify the original rate rule, stationary histogram, ordinary reversibility, and the retained internal band $[3/2,5/2]$.
+
+The same verifier enumerates 18 weighted path/grid offsets and 128 vertices of the driven-density box. It checks the sharp signed-forcing constant, a gap-one partition obstruction, a cap-preserving irreducibility repair with no added states, and six exact rational error allocations. It uses integer ceilings and rational powers rather than rounded logarithmic cutoffs. Its largest matrix has dimension 13.
+
+[verify_local_walk_lower_bound.py](../scripts/verify_local_walk_lower_bound.py) generates [local_walk_lower_bound.json](../reports/local_walk_lower_bound.json). Exact 9-state and 25-state physical targets check the binary histogram, finite-field detailed balance, path correlation trace and resolvent, seven correlation moments each, and four actual-mean Gram entries each. At word depths $n=1,2,3$, sparse position/Walsh coordinates check every binary control word, its unique maximal-distance leaf, and an exact sum-of-squares Gram remainder. The largest Gram matrix is eight-dimensional, with 10,298 active sparse coordinates across its columns; the corresponding 491,521-state physical dictionary is not enumerated.
+
+A rational field and dwell calibration includes the path factor $4n+3$ in the whole-side logarithm transfer. A base case and contracting exact ratio certify every depth, with the conservative floor $2^{-874n-849}$ at cutoff $M=200(n+1)$ and dwell $1/8$. This is a state-count obstruction, not a claim of practical statistical resolution. Four small rational Cauchy examples check the generic inverse-diagonal and trace bounds used for the constant-step lower; the cosine spacing and general-rank argument remain analytic. Source hashes record the two unchanged imported verifiers. The arbitrary fixed-clock theorem follows from the proof, not extrapolation from this one calibration. The largest newly constructed physical generator is 25-dimensional; the suite maximum remains 68.
+
+Reciprocal internal proof audits checked stationary-flux normalization, component reweighting, exact refresh-prefix factorization, spectral-band preservation, the cap-preserving repair without an initial refresh, lattice and cycle cuts, and the Poincaré obstruction to cheap fragmentation. The lower audits checked the unique origin of the endpoint Walsh bit, the full stationary norm factor, the positive equal-weight path spectrum, the interior-mode Cauchy bound for constant steps, and the total-degree logarithm transfer at every fixed positive clock. These audits belong to the same investigation; they are not external validation or novelty certification.
+
+The new results classify polynomial growth for the stated local-plus-refresh class with unmatched exponents. They do not settle the general cap-only reversible problem. The constant-step upper retains its freedom to use a different analytic rate rule; the switching upper preserves the original rule. Neither scenery reconstruction nor statistically efficient acquisition of the signed mean statistics is proved.
+
+The full twenty-one-verifier `make check` passed locally in the pinned environment, and all twenty-one fresh reports matched their saved JSON exactly. The nineteen earlier scripts and reports, MIT license, pinned dependencies and workflow were checked byte-for-byte against the starting commit: all 41 protected files are unchanged. Final repository checks passed for 391 local Markdown links and 22 Python files, together with source provenance and whitespace checks. GitHub Actions is checked separately after publication; this local record does not assert its outcome.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -247,6 +265,8 @@ python scripts/verify_constant_step_compression.py --output reports/constant_ste
 python scripts/verify_bounded_density_sampling.py --output reports/bounded_density_sampling.json
 python scripts/verify_analytic_constant_step.py --output reports/analytic_constant_step.json
 python scripts/verify_moment_density_sampling.py --output reports/moment_density_sampling.json
+python scripts/verify_sparse_reversible_compression.py --output reports/sparse_reversible_compression.json
+python scripts/verify_local_walk_lower_bound.py --output reports/local_walk_lower_bound.json
 make check
 ```
 
