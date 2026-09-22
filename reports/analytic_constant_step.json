@@ -1,0 +1,162 @@
+{
+  "status": "PASS",
+  "scope": "Exact analytic both-core/reset identities, passive and first-two-response calibration, positive Gaussian regularization, and rational error budgets.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "symbolic_both_core_and_weak_response": {
+    "symbolic_generator_dimension": 4,
+    "analytic_field_substitution": "m=tanh(h), d=sqrt(m^2+tau^2), chi=h^2/(h^2+eta^2)",
+    "shared_stationarity_reversibility_and_commutation": true,
+    "raw_active_rate": "3",
+    "raw_reset_rate": "1/2",
+    "blended_visible_rate": "x + 2",
+    "blended_residual_rate": "2 - 3*x/2",
+    "fixed_preparation_l1_distance_to_half_roots": "tau",
+    "exact_passive_lumpability_and_hidden_stationarity": true,
+    "arbitrary_protocol_response_identities": {
+      "sigma_D0_zero": true,
+      "mass_zero_p1_Q1_zero": true,
+      "pi1_S": "1",
+      "pi2_S": "0",
+      "linear_mean_equation": "m1'=-2m1+2u(t)",
+      "quadratic_mean_equation": "m2'=-2m2, m2(0)=0",
+      "scope": "Exact coefficient equations for every bounded weak protocol, not a constant-step-only derivative check."
+    }
+  },
+  "exact_two_node_both_core_cases": [
+    {
+      "sign": 1,
+      "m_exact": "1/9",
+      "tau": "1/12",
+      "chi": "2/3",
+      "full_generator_dimension": 6,
+      "both_active_root_masses": [
+        "7/8",
+        "71/72"
+      ],
+      "fixed_stationary_zero_field_preparation": [
+        "23/48",
+        "69/3440",
+        "1/1290",
+        "23/48",
+        "69/3440",
+        "1/1290"
+      ],
+      "nonzero_full_rates": [
+        "1",
+        "2",
+        "8/3"
+      ],
+      "exact_half_root_mean_coefficients": [
+        "1/9",
+        "0",
+        "-1/36",
+        "-1/12"
+      ],
+      "stationarity_irreducibility_reversibility": true,
+      "preparation_mean_error_bound_all_times": "1/12"
+    },
+    {
+      "sign": -1,
+      "m_exact": "-1/9",
+      "tau": "1/12",
+      "chi": "2/3",
+      "full_generator_dimension": 6,
+      "both_active_root_masses": [
+        "71/72",
+        "7/8"
+      ],
+      "fixed_stationary_zero_field_preparation": [
+        "23/48",
+        "69/3440",
+        "1/1290",
+        "23/48",
+        "69/3440",
+        "1/1290"
+      ],
+      "nonzero_full_rates": [
+        "1",
+        "2",
+        "8/3"
+      ],
+      "exact_half_root_mean_coefficients": [
+        "-1/9",
+        "0",
+        "1/36",
+        "1/12"
+      ],
+      "stationarity_irreducibility_reversibility": true,
+      "preparation_mean_error_bound_all_times": "1/12"
+    }
+  ],
+  "analytic_regularized_quadrature": {
+    "reference_interval": [
+      "1",
+      "4"
+    ],
+    "reference_weight": "1/8",
+    "uniform_reference_Gram_exact": "Matrix([[1, 5/2], [5/2, 7]])",
+    "uniform_reference_Gram_determinant": "3/4",
+    "analytic_moment_family": "(1-xi)[(1-m^2)delta_2+m^2 delta_3]+xi Uniform[1,4], |m|<1, 0<xi<1",
+    "positive_Gram_decomposition_verified": true,
+    "zero_field_regularized_offdiagonal_squared": "31/256",
+    "rank_collapse_without_reference": true,
+    "analytic_derivatives_checked": [
+      "-1/3",
+      "0",
+      "1/3"
+    ],
+    "Gaussian_moment_degrees_checked": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "scope": "Exact small moment/Jacobi example; arbitrary fixed rank follows from the positive reference moment-Gram argument in the proof."
+  },
+  "rational_uniform_error_budgets": {
+    "calibration_interval": [
+      "1",
+      "4"
+    ],
+    "maximum_abs_tanh_H": "1/2",
+    "splice_inequality": "|h| eta^2/(h^2+eta^2) <= eta/2",
+    "records": [
+      {
+        "tolerance": "1/10",
+        "reference_weight_xi": "1/40",
+        "preparation_distance_tau": "1/80",
+        "splice_scale_eta": "1/80",
+        "quadrature_atoms": 8,
+        "state_count": 18,
+        "combined_error_bound_exact": "177264449/2147483648"
+      },
+      {
+        "tolerance": "1/100",
+        "reference_weight_xi": "1/400",
+        "preparation_distance_tau": "1/800",
+        "splice_scale_eta": "1/800",
+        "quadrature_atoms": 12,
+        "state_count": 26,
+        "combined_error_bound_exact": "5810194193509/703687441776640"
+      },
+      {
+        "tolerance": "1/1000",
+        "reference_weight_xi": "1/4000",
+        "preparation_distance_tau": "1/8000",
+        "splice_scale_eta": "1/8000",
+        "quadrature_atoms": 16,
+        "state_count": 34,
+        "combined_error_bound_exact": "190440692797151897/230584300921369395200"
+      }
+    ]
+  },
+  "largest_generator_dimension": 6,
+  "no_simulation_or_numerical_rank_tests": true,
+  "source_sha256": {
+    "verify_analytic_constant_step.py": "e7b0d1f5634d3805c6196084fe89144b4540ce29481cde45c99a6428cf473c43",
+    "verify_constant_step_compression.py": "90da33d34af1af5c9985525969f76d141b15acec620d5b1c2803814a5a360464"
+  }
+}

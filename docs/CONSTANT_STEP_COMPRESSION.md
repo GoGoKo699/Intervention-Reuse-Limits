@@ -6,6 +6,8 @@
 
 The same state space and preparation serve all amplitudes. The generator may depend on the field through a general, potentially discontinuous function; the original exponential actuator rate rule is not imposed. A matching lower bound gives logarithmic worst-case state order for the menu of all constant steps. Switching requires a positive power of $1/\delta$ for a binary bounded-rate subclass, even against the broader class of arbitrary Markov predictors. These are internal derivations, not a certification of originality.
 
+**Subsequent strengthening.** [Analytic constant-step compression](ANALYTIC_CONSTANT_STEP_COMPRESSION.md) retains the same logarithmic order with real-analytic field dependence and also preserves the universal linear and zero quadratic mean responses for every weak protocol. The simpler proof below and its matching lower bound remain valid.
+
 ## 1. The common-model theorem
 
 Fix $k,G,H,\Lambda>0$ and $0<W\le G^2$. Consider the original reversible target family with $|g|\le G$, $\langle g\rangle_\mu=0$, $\langle g^2\rangle_\mu=W$, and every nonzero internal relaxation rate at most $\Lambda k$. The number of hidden states, the stationary masses, and the number of distinct actuator values are unrestricted. Every experiment starts from the target's zero-field equilibrium.

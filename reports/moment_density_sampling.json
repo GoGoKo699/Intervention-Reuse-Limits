@@ -1,0 +1,271 @@
+{
+  "status": "PASS",
+  "scope": "Exact conductance clipping, signed physical forcing, conditional Bernstein ingredients, fixed-clock reversible rescaling and reset, prefix recursion, and moment-based error budgets; no simulations.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "clipping_and_forcing": {
+    "threshold_exact": "6",
+    "tail_exact": "1/6",
+    "density_moments_exact": {
+      "1": "53/6",
+      "2": "347/6"
+    },
+    "density_box_vertices_checked": 64,
+    "R_exact": "4/3",
+    "attained_signed_forcing_L1_exact": "8/27",
+    "all_horizon_Duhamel_bound_exact": "32/81",
+    "scope": "The normalized witness checks the forcing inequality; it is not asserted to be an actual reachable law."
+  },
+  "conditional_bernstein": {
+    "enumerated_stratified_configurations": 81,
+    "conditional_row_and_exit_checks": 84,
+    "maximum_self_row_bias_exact": "1/18",
+    "maximum_conditional_variance_exact": "17/216",
+    "variance_proxy_exact": "1"
+  },
+  "rescaling_and_prefixes": {
+    "sampled_graphs": [
+      {
+        "samples": [
+          0,
+          1,
+          3,
+          3
+        ],
+        "eta_exact": "1/8",
+        "raw_minimum_update_entry_exact": "-1/12",
+        "final_minimum_update_entry_exact": "1/32",
+        "final_largest_outgoing_rate_exact": "809/288",
+        "final_largest_relaxation_rate_exact": "293/72"
+      },
+      {
+        "samples": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "eta_exact": "1/128",
+        "raw_minimum_update_entry_exact": "1/18",
+        "final_minimum_update_entry_exact": "16643/297216",
+        "final_largest_outgoing_rate_exact": "164495/99072",
+        "final_largest_relaxation_rate_exact": "131209/49536"
+      }
+    ],
+    "word_probabilities_checked": 30,
+    "prefix_TV": [
+      {
+        "length": 1,
+        "TV_exact": "0",
+        "bound_exact": "1/128"
+      },
+      {
+        "length": 2,
+        "TV_exact": "887/297216",
+        "bound_exact": "1/16"
+      },
+      {
+        "length": 3,
+        "TV_exact": "293709649/88337350656",
+        "bound_exact": "7/32"
+      },
+      {
+        "length": 4,
+        "TV_exact": "58001239881433/13127637006286848",
+        "bound_exact": "5/8"
+      }
+    ]
+  },
+  "concentration_and_error_budgets": {
+    "concentration_cases": [
+      {
+        "m": 2,
+        "ell": 1,
+        "b_exact": "1",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 268182,
+        "total_states": 536365,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 2,
+        "ell": 1,
+        "b_exact": "5",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 1604596,
+        "total_states": 3209193,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 2,
+        "ell": 3,
+        "b_exact": "1",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 316943,
+        "total_states": 633887,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 2,
+        "ell": 3,
+        "b_exact": "5",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 1848402,
+        "total_states": 3696805,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 3,
+        "ell": 1,
+        "b_exact": "1",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 301752,
+        "total_states": 905257,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 3,
+        "ell": 1,
+        "b_exact": "5",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 1772451,
+        "total_states": 5317354,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 3,
+        "ell": 3,
+        "b_exact": "1",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 374853,
+        "total_states": 1124560,
+        "union_failure_bound": "< 2^-100"
+      },
+      {
+        "m": 3,
+        "ell": 3,
+        "b_exact": "5",
+        "eta_exact": "1/8",
+        "samples_per_stratum": 2137952,
+        "total_states": 6413857,
+        "union_failure_bound": "< 2^-100"
+      }
+    ],
+    "full_error_budgets": [
+      {
+        "m": 2,
+        "ell": 22,
+        "b_exact": "159/2",
+        "eta_exact": "1/37094424576",
+        "samples_per_stratum": 2772810195912029740487679144,
+        "total_states": 5545620391824059480975358289,
+        "union_failure_bound": "< 2^-100",
+        "alpha": 1,
+        "moment_bound_exact": "53/6",
+        "delta_exact": "1/4",
+        "clipping_threshold_exact": "477/2",
+        "clipping_error_exact": "1/8",
+        "prefix_error_exact": "1/16",
+        "clock_error_exact": "8862938119652501095929/162805498773679522226642"
+      },
+      {
+        "m": 2,
+        "ell": 32,
+        "b_exact": "636",
+        "eta_exact": "1/439942090063872",
+        "samples_per_stratum": 4279370447345778012115052137315736744,
+        "total_states": 8558740894691556024230104274631473489,
+        "union_failure_bound": "< 2^-100",
+        "alpha": 1,
+        "moment_bound_exact": "53/6",
+        "delta_exact": "1/32",
+        "clipping_threshold_exact": "1908",
+        "clipping_error_exact": "1/64",
+        "prefix_error_exact": "1/128",
+        "clock_error_exact": "30903154382632612361920641803529/4222755349070510571091230508419842"
+      },
+      {
+        "m": 2,
+        "ell": 46,
+        "b_exact": "10176",
+        "eta_exact": "1/165264091925987721216",
+        "samples_per_stratum": 13264015192311865559023988378470006999028920686608,
+        "total_states": 26528030384623731118047976756940013998057841373217,
+        "union_failure_bound": "< 2^-100",
+        "alpha": 1,
+        "moment_bound_exact": "53/6",
+        "delta_exact": "1/512",
+        "clipping_threshold_exact": "30528",
+        "clipping_error_exact": "1/1024",
+        "prefix_error_exact": "1/2048",
+        "clock_error_exact": "706965049015104706497203195837614914543357369/1603590641072267147143863069330760466347683067922"
+      },
+      {
+        "m": 2,
+        "ell": 22,
+        "b_exact": "16",
+        "eta_exact": "1/37094424576",
+        "samples_per_stratum": 539978678008152284686884753,
+        "total_states": 1079957356016304569373769507,
+        "union_failure_bound": "< 2^-100",
+        "alpha": 2,
+        "moment_bound_exact": "256/3",
+        "delta_exact": "1/4",
+        "clipping_threshold_exact": "48",
+        "clipping_error_exact": "1/8",
+        "prefix_error_exact": "1/16",
+        "clock_error_exact": "8862938119652501095929/162805498773679522226642"
+      },
+      {
+        "m": 2,
+        "ell": 29,
+        "b_exact": "32",
+        "eta_exact": "1/24945170055168",
+        "samples_per_stratum": 611298954912776613579868602614767,
+        "total_states": 1222597909825553227159737205229535,
+        "union_failure_bound": "< 2^-100",
+        "alpha": 2,
+        "moment_bound_exact": "256/3",
+        "delta_exact": "1/16",
+        "clipping_threshold_exact": "96",
+        "clipping_error_exact": "1/32",
+        "prefix_error_exact": "1/64",
+        "clock_error_exact": "42391158275216203514294433201/3172618594342983148828873409782"
+      },
+      {
+        "m": 2,
+        "ell": 36,
+        "b_exact": "64",
+        "eta_exact": "1/15819773300441088",
+        "samples_per_stratum": 590100367869298745778658974462054833289,
+        "total_states": 1180200735738597491557317948924109666579,
+        "union_failure_bound": "< 2^-100",
+        "alpha": 2,
+        "moment_bound_exact": "256/3",
+        "delta_exact": "1/64",
+        "clipping_threshold_exact": "192",
+        "clipping_error_exact": "1/128",
+        "prefix_error_exact": "1/256",
+        "clock_error_exact": "202755595904452569706561330872953769/61825361065741345271346705873774906722"
+      }
+    ],
+    "fixed_clock_exact": "3",
+    "R_exact": "3/2",
+    "A_H_exact": "3/2",
+    "method": "Exact Fraction arithmetic and rational log enclosures; no floating-point rounding or simulated samples."
+  },
+  "largest_matrix_dimension": 7,
+  "limitations": "These finite checks do not remove the global density-tail/moment hypothesis, preserve the original spectral endpoints, or prove the theorem by sample extrapolation.",
+  "source_sha256": {
+    "verify_moment_density_sampling.py": "975cccf7acf2fd14deb384aef695d9195eb9198a116cf4a1d2bbc8115a916b01",
+    "verify_bounded_density_sampling.py": "2f640179aa443a63f913c77df7638afcbe9ee2e4e5225ac5390debca5a1159ce",
+    "verify_bounded_rate_prediction.py": "e150952554d6fc30005f70e09407ef63009cf482f82f9616ce41ab876986b3f1",
+    "verify_reversible_compression.py": "047553ee11e5dcfcbe26981d855d9e2534d644337addc72ece95e6b80b017565"
+  }
+}

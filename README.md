@@ -4,7 +4,7 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** the same bounded-rate binary target class has three different prediction costs: exactly two states passively, $\Theta(\log(1/\delta))$ states for every constant-field step, and $\delta^{-\Theta(1)}$ states for arbitrary switching. The constant-step upper uses one common reversible predictor with a fixed equilibrium preparation and binary readout. The switching lower survives any fixed control clock; its lower and upper exponents are not matched. Polynomial reversible compression is now proved under an additional bounded transition-rate density assumption, while the spectral-cap-only case remains open. Originality is still under assessment, and manuscript writing remains on hold.
+**Research status:** the same bounded-rate binary target class has three different prediction costs: exactly two states passively, $\Theta(\log(1/\delta))$ states for every constant-field step, and $\delta^{-\Theta(1)}$ states for arbitrary switching. The constant-step upper now uses one common reversible predictor with real-analytic field dependence, fixed equilibrium preparation and binary readout. The switching lower survives any fixed control clock; its lower and upper exponents are not matched. Polynomial reversible compression is proved under a uniform density-moment assumption, allowing unbounded individual transition-rate densities; the spectral-cap-only case remains open. Originality is still under assessment, and manuscript writing remains on hold.
 
 ## Main result: controlled prediction has a larger state cost
 
@@ -16,7 +16,7 @@ For the binary target class below, the experiment menu changes the worst-case ph
 | All constant amplitudes $|h|\le H$, all times, one common predictor | $\Theta(\log(1/\delta))$ |
 | Switching protocols, including any fixed control clock | $\delta^{-\Theta(1)}$ |
 
-The [constant-step theorem](docs/CONSTANT_STEP_COMPRESSION.md) is an actual-mean result, not a small-field expansion. Its predictor can retain ordinary reversibility, irreducibility, stationary zero-field preparation, the exact passive path law and equilibrium mean, and a uniform full-generator spectral band. Its rates may depend discontinuously on the field and need not follow the target's specified exponential rate rule. The state count does not charge the complexity of those field-dependent functions. Thus it fits all constant-step experiments within one model, but supplies no switching guarantee. The polynomial lower applies even to this broad predictor class.
+The [analytic constant-step theorem](docs/ANALYTIC_CONSTANT_STEP_COMPRESSION.md) is an actual-mean result, not a small-field expansion. Its one common predictor retains ordinary reversibility, irreducibility, stationary zero-field preparation, the exact passive path law and equilibrium mean, a uniform full-generator spectral band, and the universal linear and zero quadratic mean responses. All rate functions are real analytic. They need not follow the target's specified exponential rate rule, and their derivatives and description complexity are not bounded uniformly in tolerance. Thus the separation does not rely on discontinuous field dependence. The [earlier construction](docs/CONSTANT_STEP_COMPRESSION.md) remains the source of the matching logarithmic lower; neither step upper supplies a switching guarantee.
 
 Consider reversible targets whose sensitivity is $g=\pm\sqrt W$ and whose nonzero internal relaxation rates lie in $[k,3k]$. Every target has the exact same two-state passive binary path law. One predictor must approximate the actual binary mean under every protocol $|h(t)|\le H$ and at every observation time, starting from zero-field equilibrium.
 
@@ -63,6 +63,22 @@ D_{\rm rev}(\delta)\le C\delta^{-2(1+p_L)}\log^3(2/\delta),
 $$
 
 It uses the original field rule, preserves the exact actuator histogram and all prescribed passive/static/low-order agreements, and works under every bounded protocol at every horizon. Its internal spectrum is capped by $2Lk$; it need not preserve the original spectral band. The additional density bound controls each transition rate relative to the destination's stationary mass. A spectral cap alone does not give that bound, and the shift-register lower targets violate it uniformly as their size grows.
+
+**Individual density spikes are allowed.** The [density-moment extension](docs/MOMENT_DENSITY_REVERSIBLE_COMPRESSION.md) replaces the pointwise bound by
+
+$$
+\sum_{i,j}\mu_i\mu_j q_{ij}^{1+a}\le M,\qquad
+q_{ij}=\frac{K_{ij}}{k\mu_j}\ (i\ne j),\quad q_{ii}=0,
+$$
+
+for fixed $a>0,M<\infty$, together with the internal cap $\Lambda k$. It gives
+
+$$
+D_{\rm rev}(\delta)\le C\delta^{-[2(1+p_\Lambda)+1/a]}\log^3(2/\delta),
+\qquad p_\Lambda=\frac{\log m}{\log(1+1/(\Lambda R))}.
+$$
+
+The predictor preserves the original field rule and exact actuator histogram, with internal cap $2\Lambda k$. The moment condition remains substantive. An exactly three-state-compressible matching example shows that simply clipping large density values can lose a finite driven signal under a spectral cap alone. This is a failure of that approximation method, not a reversibility penalty.
 
 Without a common bound on actuator-alphabet size or internal rates, the [general reversible upper theorem](docs/REVERSIBLE_GENERAL_COMPRESSION.md) still gives
 
@@ -141,8 +157,9 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 
 | Question | Document |
 |---|---|
-| Can every constant-field step be easy while switching is hard? | [Common constant-step compression and the task separation](docs/CONSTANT_STEP_COMPRESSION.md) |
-| When does polynomial compression retain reversibility under switching? | [Bounded transition-rate density theorem](docs/BOUNDED_DENSITY_REVERSIBLE_COMPRESSION.md) |
+| Can every constant-field step be easy while switching is hard, with analytic rates? | [Analytic common predictor and the task separation](docs/ANALYTIC_CONSTANT_STEP_COMPRESSION.md) |
+| When does polynomial compression retain reversibility despite unbounded density spikes? | [Density-moment and tail theorem](docs/MOMENT_DENSITY_REVERSIBLE_COMPRESSION.md) |
+| What was the first reversible sampling construction? | [Bounded transition-rate density theorem](docs/BOUNDED_DENSITY_REVERSIBLE_COMPRESSION.md) |
 | How large can the state cost be with only two actuator values and bounded rates? | [Polynomial lower bound with a fixed control clock](docs/POLYNOMIAL_CONTROLLED_LOWER_BOUND.md) |
 | What upper bounds hold with a finite actuator alphabet and rate cap? | [Polynomial Markov and reversible bounds](docs/BOUNDED_RATE_FINITE_FIELD.md) |
 | What is the physical lower-bound target and its original interpolation proof? | [Shift-register construction and earlier lower bounds](docs/SHIFT_REGISTER_LOWER_BOUND.md) |
@@ -164,7 +181,7 @@ The [switch-off example](docs/PUBLICATION_SCOPE.md#3-a-diagnostic-boundary-switc
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
 
-The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), [general compression identities](scripts/verify_general_compression.py), [reversible compression](scripts/verify_reversible_compression.py), [the earlier controlled lower bound](scripts/verify_general_controlled_lower_bound.py), [the shift-register lower bounds](scripts/verify_shift_register_lower_bound.py), [bounded-rate prediction](scripts/verify_bounded_rate_prediction.py), and [the polynomial controlled lower bound](scripts/verify_polynomial_controlled_lower_bound.py). The new checks cover [constant-step compression](scripts/verify_constant_step_compression.py) and [bounded-density sampling](scripts/verify_bounded_density_sampling.py). Their generated evidence is in [reports](reports).
+The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), [unrestricted-rate lower bounds](scripts/verify_unrestricted_rate_lower_bound.py), [finite-field identities](scripts/verify_finite_field.py), [path information](scripts/verify_path_information.py), [the actuator hierarchy](scripts/verify_actuator_hierarchy.py), [general compression identities](scripts/verify_general_compression.py), [reversible compression](scripts/verify_reversible_compression.py), [the earlier controlled lower bound](scripts/verify_general_controlled_lower_bound.py), [the shift-register lower bounds](scripts/verify_shift_register_lower_bound.py), [bounded-rate prediction](scripts/verify_bounded_rate_prediction.py), and [the polynomial controlled lower bound](scripts/verify_polynomial_controlled_lower_bound.py). The new checks cover [constant-step compression](scripts/verify_constant_step_compression.py) and [bounded-density sampling](scripts/verify_bounded_density_sampling.py). Further checks cover [analytic field dependence](scripts/verify_analytic_constant_step.py) and [density-moment sampling](scripts/verify_moment_density_sampling.py). Their generated evidence is in [reports](reports).
 
 ## Reproduce
 
@@ -199,6 +216,8 @@ python scripts/verify_bounded_rate_prediction.py --output .check-output/bounded_
 python scripts/verify_polynomial_controlled_lower_bound.py --output .check-output/polynomial_controlled_lower_bound.json
 python scripts/verify_constant_step_compression.py --output .check-output/constant_step_compression.json
 python scripts/verify_bounded_density_sampling.py --output .check-output/bounded_density_sampling.json
+python scripts/verify_analytic_constant_step.py --output .check-output/analytic_constant_step.json
+python scripts/verify_moment_density_sampling.py --output .check-output/moment_density_sampling.json
 ```
 
 A failed assertion exits unsuccessfully. Fresh reports go into the ignored `.check-output` directory; the saved reports are not overwritten. Numerical roundoff can differ across platforms. Dependency installation and GitHub Actions setup require network access; the verification calculations themselves do not.
@@ -207,7 +226,7 @@ The checks use symbolic algebra, exact rational calculations, and small determin
 
 ## Scope and attribution
 
-The coefficient theorems cover the original centered-sensitivity family. The sharp all-protocol finite-field state order applies to the specified rank-one subclass. In the broader bounded binary class, the constant-step task has logarithmic state cost and switching has polynomial state cost, even with any fixed control clock. The switching exponents are not matched. A bounded transition-rate density gives a polynomial reversible upper inside the original field-rule family; a spectral cap alone currently gives a singly exponential reversible upper. The unrestricted general family has the larger double-exponential reversible bound. Polynomial reversible sufficiency under a spectral cap alone, and any intrinsic reversibility penalty, remain open. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, field-function complexity, parameter precision, runtime, or experimental sample cost. No turbulence or generic molecular implementation claim is made.
+The coefficient theorems cover the original centered-sensitivity family. The sharp all-protocol finite-field state order applies to the specified rank-one subclass. In the broader bounded binary class, the constant-step task has logarithmic state cost and switching has polynomial state cost, even with any fixed control clock. The switching exponents are not matched. A uniform positive density moment gives a polynomial reversible upper inside the original field-rule family; a spectral cap alone currently gives a singly exponential reversible upper. The unrestricted general family has the larger double-exponential reversible bound. Polynomial reversible sufficiency under a spectral cap alone, and any intrinsic reversibility penalty, remain open. The finite-field approximation norm measures single-time means, while exact path equivalence is a separate theorem. The statistical results concern specified hypotheses and records, not recovery of an arbitrary unknown generator. State counts do not measure bits, field-function complexity, parameter precision, runtime, or experimental sample cost. No turbulence or generic molecular implementation claim is made.
 
 Nonlinear response, aggregated Markov inference from dwell times, minimal realization, positive model reduction, and Hankel dimension witnesses are established subjects. The [audit](docs/PRIOR_ART.md) and [publication scope](docs/PUBLICATION_SCOPE.md) distinguish those ingredients from the new combined claims. Demanding the correct passive law does not cause the approximation lower bound: it already applies to competitors without that requirement.
 

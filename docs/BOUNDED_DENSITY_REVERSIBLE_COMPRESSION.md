@@ -6,6 +6,8 @@
 
 The conductance-density assumption is stronger than a spectral rate cap. Consequently this result does not settle polynomial reversible compression for the full bounded-spectrum binary class. It gives a positive construction in an additional structural subclass; the original spectral band need not be preserved. Stratified sampling, concentration, and reversible weighted graphs are established tools. Their application here is an internal derivation, not a certification of originality.
 
+**Subsequent extension.** [The density-moment and tail theorem](MOMENT_DENSITY_REVERSIBLE_COMPRESSION.md) allows unbounded individual density values under a uniform positive moment bound. With an independently specified spectral cap, it keeps that cap in the sampling clock and polynomial exponent. The pointwise-density construction below remains valid.
+
 ## 1. The theorem and its explicit state bound
 
 Fix $k,L,G,H>0$ and an integer $m\ge2$. Consider any target in the original family with an irreducible internal generator $K$, reversible stationary law $\mu$, and centered sensitivity $g$ taking exactly $m$ positive-mass values $z_1,\ldots,z_m\in[-G,G]$. Write

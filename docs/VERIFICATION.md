@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventeen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all nineteen mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -212,6 +212,18 @@ Independent internal audits checked the equilibrium-tilt identity, positive quad
 
 The complete seventeen-verifier `make check` passed locally in the pinned Python 3.13 environment. All seventeen fresh reports matched their saved JSON evidence exactly. The thirty prior mathematical scripts and reports, original MIT license, pinned dependencies and workflow are byte-identical to the starting commit. The largest matrix across the entire suite remains $68\times68$. GitHub Actions is checked separately after publication.
 
+## Analytic constant-step and density-moment checkpoint
+
+This continuation starts from `3f2bb0924a269c9ff4ce7ccb582e334e59c48c58`. The seventeen preceding mathematical verifiers and saved reports remain regression baselines. Two new verifiers are included in the build and source-provenance checks.
+
+[verify_analytic_constant_step.py](../scripts/verify_analytic_constant_step.py) produces [analytic_constant_step.json](../reports/analytic_constant_step.json). A symbolic four-state calculation checks the two active reversible blocks, their commuting reset interpolation, fixed stationary preparation and exact passive lumpability. It checks the coefficient equations giving the exact linear and zero quadratic mean responses for arbitrary weak protocols. Two exact six-state constructions cover both field signs and two positive spectral atoms. A spectral measure whose rank collapses at zero field checks the positive reference-measure repair, analytic Jacobi coefficients and Gaussian moments through degree three. Three rational tolerance budgets combine reference regularization, quadrature, preparation and interpolation errors. The new largest generator has dimension six.
+
+[verify_moment_density_sampling.py](../scripts/verify_moment_density_sampling.py) produces [moment_density_sampling.json](../reports/moment_density_sampling.json). Exact matching-graph calculations check symmetric clipping, its spectral cap and the full physical signed-forcing identity. All 64 vertices of a density box check the sharp algebraic forcing constant; an attaining normalized probability law is not claimed reachable. Exhaustive enumeration of 81 stratified configurations checks 84 conditional row/exit identities, including the self-row bias and the variance bound linear in the clipping threshold. A sampled update with a genuinely negative diagonal checks the necessity and effectiveness of the common rate rescaling. The final reset restores strict irreducibility while preserving ordinary detailed balance and exact actuator masses. Thirty prefix probabilities and fourteen exact concentration/error budgets check the fixed-clock recursion, Bernstein bounds and moment-dependent clipping allocation. The new largest matrix has dimension seven. No random samples or trajectories are simulated.
+
+Reciprocal internal proof audits checked analytic moment regularization, the common-state realization, arbitrary-protocol low-order calibration, occupation-density control, conditional concentration, fixed-clock rescaling, the all-horizon bound and the finite-field clipping obstruction. The step theorem permits tolerance-dependent field derivatives and does not impose the original actuator rule. The switching theorem requires uniform density-tail control and does not preserve the original spectral endpoints. These results do not settle the cap-only reversible problem or certify publication originality.
+
+The complete nineteen-verifier `make check` passed locally in the pinned Python 3.13 environment. All nineteen fresh reports matched their saved JSON evidence exactly. The thirty-four prior mathematical scripts and reports, original MIT license, pinned dependencies and workflow are byte-identical to the starting commit. The largest matrix across the suite remains $68\times68$. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -233,6 +245,8 @@ python scripts/verify_shift_register_lower_bound.py --output reports/shift_regis
 python scripts/verify_polynomial_controlled_lower_bound.py --output reports/polynomial_controlled_lower_bound.json
 python scripts/verify_constant_step_compression.py --output reports/constant_step_compression.json
 python scripts/verify_bounded_density_sampling.py --output reports/bounded_density_sampling.json
+python scripts/verify_analytic_constant_step.py --output reports/analytic_constant_step.json
+python scripts/verify_moment_density_sampling.py --output reports/moment_density_sampling.json
 make check
 ```
 
