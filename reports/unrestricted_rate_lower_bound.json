@@ -1,0 +1,185 @@
+{
+  "status": "PASS",
+  "scope": "Exact algebra and small deterministic high-precision checks of the continuous-Hankel proof.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "exact_cauchy_inverse": [
+    {
+      "dimension": 2,
+      "geometric_ratio_exact": "2",
+      "inverse_identity": true,
+      "positive_principal_minors": true,
+      "diagonal_product_identities": 2,
+      "trace_inverse_exact": "216"
+    },
+    {
+      "dimension": 3,
+      "geometric_ratio_exact": "2",
+      "inverse_identity": true,
+      "positive_principal_minors": true,
+      "diagonal_product_identities": 3,
+      "trace_inverse_exact": "2296"
+    },
+    {
+      "dimension": 4,
+      "geometric_ratio_exact": "3/2",
+      "inverse_identity": true,
+      "positive_principal_minors": true,
+      "diagonal_product_identities": 4,
+      "trace_inverse_exact": "53002625/361"
+    },
+    {
+      "dimension": 5,
+      "geometric_ratio_exact": "5/4",
+      "inverse_identity": true,
+      "positive_principal_minors": true,
+      "diagonal_product_identities": 5,
+      "trace_inverse_exact": "8495739326701/119072"
+    }
+  ],
+  "log_coth_integral": {
+    "integral": "integral_0^infinity log(coth(x/2)) dx = pi^2/4",
+    "symbolic_positive_series_identity": true,
+    "finite_series_terms": 64,
+    "finite_series_remainder": "0.007812341067859765181206330000414084602495034230334155494",
+    "remainder_lower_bound": "1/129",
+    "remainder_upper_bound": "1/127"
+  },
+  "step_decomposition": {
+    "general_rate_identity": true,
+    "rate_collision_excluded": "lambda/k = 1",
+    "baseline_hankel_factor_dimension": 3,
+    "positive_amplitude": "2 c U^3 / (1-lambda/k)^2"
+  },
+  "root_exponential_witnesses": {
+    "normalization": "W=U=k=1; response bounds scale by W U^3, times by 1/k",
+    "cases": [
+      {
+        "state_budget_D": 2,
+        "target_modes_r": 8,
+        "target_total_states_by_jacobi": 10,
+        "surrogate_stationary_hierarchy_rank_bound": 4,
+        "baseline_plus_surrogate_rank_bound": 7,
+        "working_decimal_digits": 150,
+        "geometric_log_spacing": "0.6855517208472575373223182918846416102784522525571782159",
+        "largest_damped_rate_b": "485.4888915566116970134142514428258492364514408497274924",
+        "target_lambda_over_k_min": "2.5",
+        "target_lambda_over_k_max": "483.9888915566116970134142514428258492364514408497274924",
+        "minimum_positive_amplitude": "0.000001071681475854068660068073643094597590680350335974706285",
+        "inverse_diagonal_max_relative_error": "3.31460595439707108002639764163677520427150197352097443e-148",
+        "computed_inverse_trace": "1301481.977676695422972325371518832761204226250814631282",
+        "analytic_inverse_trace_upper": "13888559311.83250255505519143024098583262182249161057512",
+        "computed_C_smallest_eigenvalue": "0.000000880117152371515117309662125950532551217534249876278707571861789064719193265",
+        "analytic_C_eigenvalue_floor": "0.0000000000720017085680038533154950878971943745646138654267143735322483381958928422906",
+        "computed_positive_Hankel_smallest_eigenvalue": "0.00000000000647679981465915932214370407106749360035881082387191365980259590553739227935",
+        "analytic_response_lower_bound": "0.0000000000000000763702506993222452728049591063978655790162499901833735809213277955502845798",
+        "coth_series_terms": 100,
+        "coth_discrete_tail_upper": "3.423888652087345956844180565364240737027095413186408683e-30",
+        "finite_horizon": {
+          "kernel_variable_cutoff_T": "3.005934805955353526368192127872150133040645501515347103",
+          "required_response_horizon_k_t": "6.011869611910707052736384255744300266081291003030694206",
+          "weighted_measure_mass": "0.950507533155844425661518055725415061432843487298718455",
+          "computed_Gram_tail_trace": "0.000000000004500106785617690697495936982323549201809500648335740561",
+          "analytic_Gram_tail_trace_upper": "0.00000000003600085428400192665774754394859718728230693271335718677",
+          "computed_C_T_smallest_eigenvalue": "0.000000880117151970647344206085812596153674486146510861444855160230037049439700998",
+          "computed_positive_Hankel_smallest_eigenvalue": "0.00000000000647679981362744500170140653082079046610317118893129453622912209531646915974",
+          "analytic_response_lower_bound": "0.0000000000000000381851253496611226364024795531989327895081249950916867904606638977751422899"
+        },
+        "eigenvalue_relative_change_100_to_150_digits": "1.418821210844031352780574221057915648100928616025125204e-92"
+      },
+      {
+        "state_budget_D": 3,
+        "target_modes_r": 11,
+        "target_total_states_by_jacobi": 13,
+        "surrogate_stationary_hierarchy_rank_bound": 7,
+        "baseline_plus_surrogate_rank_bound": 10,
+        "working_decimal_digits": 150,
+        "geometric_log_spacing": "0.573573720954547644183664680725453151222714869704404038",
+        "largest_damped_rate_b": "1238.964923212413470421854174939972175043631685763833032",
+        "target_lambda_over_k_min": "2.5",
+        "target_lambda_over_k_max": "1237.464923212413470421854174939972175043631685763833032",
+        "minimum_positive_amplitude": "0.0000001189251504254871411274296650670465481600831398457473759",
+        "inverse_diagonal_max_relative_error": "2.198484953992490509438706970326179977653443682252874884e-147",
+        "computed_inverse_trace": "40163190.49043797001813507914832051368717932654621212669",
+        "analytic_inverse_trace_upper": "809988310202.5989784249336534349638510161358143038575497",
+        "computed_C_smallest_eigenvalue": "0.000000028929886305640678265120121231725989969052095372410625608736127744695267614",
+        "analytic_C_eigenvalue_floor": "0.00000000000123458571858879567612018668996428363435612000787282279629297363010600766928",
+        "computed_positive_Hankel_smallest_eigenvalue": "0.000000000000038965204377952832625678928097242196241841868457784436412243506937185657097",
+        "analytic_response_lower_bound": "0.000000000000000000146231366090243456187410678660659417697894868024337249576962640201624544253",
+        "coth_series_terms": 100,
+        "coth_discrete_tail_upper": "3.176607985267924403331433040648844944811604157421947276e-25",
+        "finite_horizon": {
+          "kernel_variable_cutoff_T": "3.553985820542324020610963313300820152078438578801406391",
+          "required_response_horizon_k_t": "7.107971641084648041221926626601640304156877157602812781",
+          "weighted_measure_mass": "0.9713896237366071240669045099791751516716726384009822824",
+          "computed_Gram_tail_trace": "0.00000000000005611753267174520424367844258117954043246010053816737842",
+          "analytic_Gram_tail_trace_upper": "0.0000000000006172928592943978380600933449821418171780600039364113981",
+          "computed_C_T_smallest_eigenvalue": "0.0000000289298863053067674055504673490495197195539118134788190157122288591454514168",
+          "computed_positive_Hankel_smallest_eigenvalue": "0.000000000000038965204377817096038883293947002197224196336846355556848776700543340633179",
+          "analytic_response_lower_bound": "0.0000000000000000000731156830451217280937053393303297088489474340121686247884813201008122721265"
+        },
+        "eigenvalue_relative_change_100_to_150_digits": "1.647473583408114394940698200759711676231295228365194755e-90"
+      },
+      {
+        "state_budget_D": 4,
+        "target_modes_r": 14,
+        "target_total_states_by_jacobi": 16,
+        "surrogate_stationary_hierarchy_rank_bound": 10,
+        "baseline_plus_surrogate_rank_bound": 13,
+        "working_decimal_digits": 150,
+        "geometric_log_spacing": "0.503057431626958234977566619641366329240203890757459291",
+        "largest_damped_rate_b": "2768.444730237985886511768954669333777004798509911102396",
+        "target_lambda_over_k_min": "2.5",
+        "target_lambda_over_k_max": "2766.944730237985886511768954669333777004798509911102396",
+        "minimum_positive_amplitude": "0.00000001867303729522161837184319978006863143170326337411623372",
+        "inverse_diagonal_max_relative_error": "7.020992222731148962502551380556230810452495901506646894e-146",
+        "computed_inverse_trace": "797554392.3649157310960893018557187707415885961143892108",
+        "analytic_inverse_trace_upper": "25699311456550.79738091268293033672836908440202376561362",
+        "computed_C_smallest_eigenvalue": "0.00000000147587604641210063680236384439689221754837920836476950542301371057675411116",
+        "analytic_C_eigenvalue_floor": "0.0000000000000389115483381987003024888705404519410367202771810103733137797613751959793154",
+        "computed_positive_Hankel_smallest_eigenvalue": "0.000000000000000446569352635956504578052006200214279525101818544052173370123178599078606234",
+        "analytic_response_lower_bound": "0.00000000000000000000072528510248722522833348342694106669283569343826853092729280278709517817385",
+        "coth_series_terms": 100,
+        "coth_discrete_tail_upper": "4.346087365616275444596851904584021968770728749994820882e-22",
+        "finite_horizon": {
+          "kernel_variable_cutoff_T": "4.016281035549036344661983259076492285498909022704046409",
+          "required_response_horizon_k_t": "8.032562071098072689323966518152984570997818045408092818",
+          "weighted_measure_mass": "0.9819801443170446823665898971917416331409159170331296074",
+          "computed_Gram_tail_trace": "0.000000000000001389698155569169809610001925056415305633667943708229377",
+          "analytic_Gram_tail_trace_upper": "0.00000000000001945577416909935015124443527022597051836013859050518666",
+          "computed_C_T_smallest_eigenvalue": "0.00000000147587604641135134436450009767064147107396273750488813980096892771899116649",
+          "computed_positive_Hankel_smallest_eigenvalue": "0.000000000000000446569352635895814547066353230552464073279778887165823253132953701912558706",
+          "analytic_response_lower_bound": "0.000000000000000000000362642551243612614166741713470533346417846719134265463646401393547589086925"
+        },
+        "eigenvalue_relative_change_100_to_150_digits": "1.256463319239195371111738277657051544571900027413474003e-88"
+      }
+    ],
+    "largest_matrix_dimension": 14,
+    "eigenvalue_scope": "High-precision computed consistency; no interval-certified eigenvalues.",
+    "bound_scope": "The conservative bound follows from the analytic rank and inverse-trace proof, not numerical optimization."
+  },
+  "independent_master_hankel_moments": {
+    "target_states": 3,
+    "master_coefficient_matrix_dimension": 12,
+    "test_functions": [
+      "exp(-s t), s=0",
+      "exp(-s t), s=1/3",
+      "exp(-s t), s=2/3",
+      "exp(-s t), s=1",
+      "exp(-s t), s=4/3",
+      "exp(-s t), s=5/3"
+    ],
+    "probability_weight": "exp(-t) dt on [0,infinity)",
+    "exact_double_resolvent_moments_checked": 36,
+    "exact_baseline_compressed_rank": 3,
+    "exact_positive_component_rank": 1,
+    "master_response_decomposition_exact": true,
+    "scope": "Exact integrated kernel identities; no discretized operator-rank inference."
+  },
+  "source_sha256": {
+    "verify_unrestricted_rate_lower_bound.py": "9fcab4753093d6cd0e764d4aafcb1774cf7abdfc5c1aba9fd0e55c82b1b5f4e9"
+  }
+}

@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all five mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all six mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -100,6 +100,20 @@ The new verifier's largest matrix is $16\times16$; the largest across the comple
 
 The complete five-verifier `make check` passed locally in the pinned environment. All five fresh reports matched their saved JSON reports exactly. The original license, four earlier verifiers, and their reports were also checked against the starting commit and remain unchanged. This records the local result; GitHub Actions is checked separately after publication.
 
+## Unrestricted-rate matching-order checkpoint
+
+This continuation starts from `57c0e12bdde4d8a38dc355d6797126debd7a6e76`. All five earlier mathematical verifiers and their saved reports remain unchanged. The new [unrestricted-rate verifier](../scripts/verify_unrestricted_rate_lower_bound.py) generates [unrestricted_rate_lower_bound.json](../reports/unrestricted_rate_lower_bound.json) in the same pinned environment.
+
+Exact rational calculations check four geometric Cauchy matrices, their inverse-diagonal product formulas, and positive principal minors. Symbolic algebra checks the general-rate cubic-step decomposition into three visible exponential-polynomial terms and a negative hidden exponential. It also checks the positive-series identity giving the integral of `log(coth(x/2))` as `pi^2/4`.
+
+For $D=2,3,4$, the verifier constructs the theorem's $r=8,11,14$ mode witnesses at 100 and 150 decimal digits. It checks the inverse-trace estimate, weight floor, optimized bound, and finite-horizon truncation estimate against computed eigenvalues. Precision agreement is a consistency check, not interval certification; the conservative bound is proved analytically for all $D$. These calculations neither optimize the minimax problem nor discretize the operator to infer its rank.
+
+As a separate check of the response-to-Hankel construction, a three-state analytic master equation supplies a $12\times12$ coefficient hierarchy. Thirty-six probability-weighted double-integral moments, evaluated through exact resolvents, agree with the explicit baseline-minus-positive-kernel formula. This connects the operator identities to the Markov response without estimating the continuous operator's spectrum numerically.
+
+The new verifier's largest matrix is $14\times14$; the complete suite's largest matrix remains $68\times68$. The finite-horizon theorem concerns an entire coefficient curve, not a finite sampling protocol, temporal-resolution guarantee, or noisy measurement procedure. The earlier verifier retains the finite-sample and nonreversible Jordan-block checks.
+
+The complete six-verifier `make check` passed locally in the pinned environment. All six fresh reports matched their saved JSON reports exactly. The original license, five earlier verifiers, and their reports were checked against the starting commit and remain unchanged. GitHub Actions is checked separately after publication.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -109,6 +123,7 @@ python scripts/verify_finite_accuracy.py --output reports/finite_accuracy.json
 python scripts/verify_quadrature.py --output reports/quadrature.json
 python scripts/verify_minimal_realization.py --output reports/minimal_realization.json
 python scripts/verify_response_lower_bounds.py --output reports/response_lower_bounds.json
+python scripts/verify_unrestricted_rate_lower_bound.py --output reports/unrestricted_rate_lower_bound.json
 make check
 ```
 

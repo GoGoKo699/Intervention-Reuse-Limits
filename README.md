@@ -4,7 +4,7 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** the current checkpoint proves upper and lower bounds for finite-accuracy reuse, including matching logarithmic state growth for targets with bounded active rates. The proofs use established approximation and realization methods; publication-level novelty remains under audit. Manuscript writing remains on hold.
+**Research status:** matching upper and lower bounds now determine the worst-case state-growth order: squared-logarithmic in inverse tolerance for unrestricted target rates, and logarithmic when active target rates are bounded. The proofs use established approximation and realization methods; publication-level novelty remains under audit. Manuscript writing remains on hold.
 
 ## Current results
 
@@ -16,18 +16,18 @@ $$
 \sup_{t\le T}|m_3[u](t)-\widetilde m_3[u](t)|\le8U^3W\,16^{-n}
 $$
 
-for every finite horizon and every admissible protocol, independently of the original state count and hidden spectral range. Thus a tolerance $\varepsilon$ needs at most order $\log^2(1/\varepsilon)$ states at fixed $W,U$. The earlier $U^3W/q$ midpoint certificate remains available. These are sufficient bounds obtained from classical quadrature, not optimality or new-approximation-theory claims.
+for every finite horizon and every admissible protocol, independently of the original state count and hidden spectral range. Thus a tolerance $\varepsilon$ needs at most order $\log^2(1/\varepsilon)$ states at fixed $W,U$. The earlier $U^3W/q$ midpoint certificate remains available. Classical quadrature supplies the upper bound; the lower bound below establishes its worst-case state-growth order, without claiming sharp constants or new approximation theory.
 
 **Exact realization of a known kernel.** A kernel with $r$ distinct positive exponential modes has an explicit reversible realization with $r+2$ total states and sensitivity magnitude $\sqrt W$. When no hidden decay rate equals $k$, this meets the exact pole-location lower bound. The construction is a corollary of finite Jacobi inverse spectral theory.
 
-**Finite-accuracy lower bounds.** Two cubic step-response samples of a three-state target force error at least $0.062546\,WU^3$ against every admissible two-state surrogate. More generally, a finite matrix of response samples proves that the worst-case required state count grows at least as $\log(1/\varepsilon)$, even allowing nonreversible surrogates and unrestricted field derivatives. Combined with the upper bounds:
+**Finite-accuracy lower bounds.** Two cubic step-response samples of a three-state target force error at least $0.062546\,WU^3$ against every admissible two-state surrogate. For arbitrary state budgets, geometrically separated hidden rates give a matching obstruction through a weighted Hankel operator of the cubic step response. The proof allows nonreversible surrogates and unrestricted field derivatives. Combined with the upper bounds:
 
 | Target information, at fixed positive $W,U$ | Necessary states | Sufficient states |
 |---|---|---|
-| No common bound on active hidden rates | $\Omega(\log(1/\varepsilon))$ | $O(\log^2(1/\varepsilon))$ |
+| No common bound on active hidden rates | $\Omega(\log^2(1/\varepsilon))$ | $O(\log^2(1/\varepsilon))$ |
 | Active hidden rates at most $3k$ | $\Omega(\log(1/\varepsilon))$ | $O(\log(1/\varepsilon))$ |
 
-The second row adds information about the target; it leaves the broad surrogate class unchanged and assumes no lower bound on the hidden spectral gap. These are asymptotic coefficient-tolerance results, with conservative constants. The lower-bound sample horizon grows with the tested state budget.
+The second row adds information about the target; it leaves the broad surrogate class unchanged and assumes no lower bound on the hidden spectral gap. These are asymptotic coefficient-tolerance results, with conservative constants. The unrestricted lower bound already holds for targets whose slowest active rate is $5k/2$: access to increasingly fast hidden modes causes the additional worst-case cost. A finite-horizon version uses the step-response curve only up to time $O(\sqrt D/k)$ for a tested budget of $D$ states; it is not a claim about finitely many noisy measurements.
 
 **The distinction matters:** exact response complexity can grow without bound even at nonvanishing signal strength; that does not imply an equally large state requirement at fixed accuracy. The approximation requires intervention-relevant information that cannot be obtained from the passive binary process alone.
 
@@ -37,11 +37,12 @@ The second row adds information about the target; it leaves the broad surrogate 
 |---|---|
 | What is the model, and where is the exact proof? | [Core theory and three-state example](docs/THEORY.md) |
 | What survives at nonzero error tolerance? | [Nonvanishing signal, approximation bound, and Markov realization](docs/FINITE_ACCURACY.md) |
+| Why is the squared-logarithmic state count necessary? | [Unrestricted-rate lower bound](docs/UNRESTRICTED_RATE_LOWER_BOUND.md) |
 | What is already known, and what remains to be checked? | [Prior-art and novelty audit](docs/PRIOR_ART.md) |
 | What was actually tested? | [Verification scope and provenance](docs/VERIFICATION.md) |
 | What is the next research task? | [Current work order](work_orders/CURRENT.md) |
 
-The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), and [response lower bounds](scripts/verify_response_lower_bounds.py). Their generated evidence is in [reports](reports).
+The preserved [checkpoint verifier](scripts/verify_checkpoint.py) and [finite-accuracy verifier](scripts/verify_finite_accuracy.py) remain regression baselines. Extensions check [positive quadrature](scripts/verify_quadrature.py), [minimal reversible realization](scripts/verify_minimal_realization.py), [finite-sample response lower bounds](scripts/verify_response_lower_bounds.py), and the [unrestricted-rate lower bound](scripts/verify_unrestricted_rate_lower_bound.py). Their generated evidence is in [reports](reports).
 
 ## Reproduce
 
@@ -64,6 +65,7 @@ python scripts/verify_finite_accuracy.py --output .check-output/finite_accuracy.
 python scripts/verify_quadrature.py --output .check-output/quadrature.json
 python scripts/verify_minimal_realization.py --output .check-output/minimal_realization.json
 python scripts/verify_response_lower_bounds.py --output .check-output/response_lower_bounds.json
+python scripts/verify_unrestricted_rate_lower_bound.py --output .check-output/unrestricted_rate_lower_bound.json
 ```
 
 A failed assertion exits unsuccessfully. Fresh reports go into the ignored `.check-output` directory; the saved reports are not overwritten. Numerical roundoff can differ across platforms. Dependency installation and GitHub Actions setup require network access; the verification calculations themselves do not.

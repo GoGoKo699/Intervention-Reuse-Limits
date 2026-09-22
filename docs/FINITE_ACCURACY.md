@@ -2,9 +2,9 @@
 
 [Repository overview](../README.md) · [Core derivation](THEORY.md) · [Prior art](PRIOR_ART.md)
 
-**Working extension, 22 September 2026.** Sections 8–10 give constructive upper bounds and finite-sample response lower bounds. The broad minimax rate remains between logarithmic and squared-logarithmic state growth; a fixed upper bound on active target rates gives matching logarithmic order. Publication-level originality is not asserted.
+**Working extension, 22 September 2026.** Sections 8–10 give constructive upper bounds and finite-sample response lower bounds. Section 11 and the [unrestricted-rate proof](UNRESTRICTED_RATE_LOWER_BOUND.md) complete the minimax state-growth order: squared-logarithmic in inverse tolerance for unrestricted target rates, and logarithmic when active target rates are bounded. Publication-level originality is not asserted.
 
-The core example has an exact two-state passive description and an $N$-state exact cubic response requirement. This note retains nonvanishing total signal, constructs reversible approximate models independently of $N$, and proves tolerance-dependent lower bounds directly from response samples. The lower bounds allow the full analytic Markov surrogate class defined below.
+The core example has an exact two-state passive description and an $N$-state exact cubic response requirement. This note retains nonvanishing total signal, constructs reversible approximate models independently of $N$, and proves tolerance-dependent lower bounds directly from response curves. The lower bounds allow the full analytic Markov surrogate class defined below.
 
 ## 0. The approximation task and its quantifiers
 
@@ -30,7 +30,7 @@ E_D(k,G,W,U)=
 \mathcal E_U(F,\widehat F).
 $$
 
-The constructive **upper bounds** produce surrogates in the original reversible rate-rule family, with the same $k,W$ and $|\widehat g|\le G$. They also preserve the passive path law under every microscopic initial law with the same visible initial law. Their microscopic rates and topology may change. Sections 9–10 instead prove **lower bounds against all of $\mathcal A_D(k)$** by constraining finite response samples. A lower bound proved only for positive kernels, reversible surrogates, or this rate-rule family would not automatically bound $E_D$.
+The constructive **upper bounds** produce surrogates in the original reversible rate-rule family, with the same $k,W$ and $|\widehat g|\le G$. They also preserve the passive path law under every microscopic initial law with the same visible initial law. Their microscopic rates and topology may change. Sections 9–11 instead give **lower bounds against all of $\mathcal A_D(k)$**, using finite response samples or a weighted Hankel operator of the response curve. A lower bound proved only for positive kernels, reversible surrogates, or this rate-rule family would not automatically bound $E_D$.
 
 The norm concerns Taylor coefficients only. None of its quantifiers asserts a Taylor remainder uniform in $T$, $N$, or the field amplitude. Finite-field prediction and kernel acquisition remain separate tasks.
 
@@ -184,11 +184,11 @@ The $1/q$ error rate is an elementary upper bound, not a minimax or novelty clai
 
 [The executable extension](../scripts/verify_finite_accuracy.py) verifies the normalized spectral weights, nonvanishing signal bound, positive reversible realization, and agreement of its master equation with the memory equations. It also tests the protocol certificate on deterministic sign-changing protocols. See [verification details](VERIFICATION.md).
 
-Still not established: the optimal dependence on tolerance for unrestricted target rates, stable inference from finite noisy data, a finite-field remainder uniform in system size and observation horizon, or a specific fluid or molecular implementation. Sections 9–10 add response-norm lower bounds and determine the state-growth order for the separately defined rate-capped target class. No large simulation is needed. The [next work order](../work_orders/CURRENT.md) records the remaining mathematical and novelty questions.
+The state-growth order is now determined for unrestricted target rates and for the separately defined rate-capped target class. Still not established: sharp constants, stable inference from finite noisy data, a finite-field remainder uniform in system size and observation horizon, or a specific fluid or molecular implementation. No large simulation is needed. The [next work order](../work_orders/CURRENT.md) records the remaining publication and interpretation questions.
 
 ## 8. A stronger bound by positive Gaussian quadrature
 
-The midpoint construction is not the strongest available certificate. Applying classical positive Gaussian quadrature separately on dyadic rate intervals yields a root-exponential bound without imposing a hidden spectral gap, a maximum microscopic rate, or a smooth spectral density. The Gaussian-quadrature machinery is established approximation theory; the result below is its explicit application to the operational response norm and Markov realization used here. It is neither a novelty claim for quadrature nor an optimality claim.
+The midpoint construction is not the strongest available certificate. Applying classical positive Gaussian quadrature separately on dyadic rate intervals yields a root-exponential bound without imposing a hidden spectral gap, a maximum microscopic rate, or a smooth spectral density. The Gaussian-quadrature machinery is established approximation theory; the result below is its explicit application to the operational response norm and Markov realization used here. Section 11 establishes the matching worst-case order; neither sharp constants nor novelty of quadrature is claimed.
 
 **Theorem.** Let $C(t)=\sum_i c_i e^{-\lambda_i t}$ be any finite positive kernel, with $c_i>0$, $\lambda_i>0$, and total mass $W$. For every integer $n\ge1$, there is a positive kernel $\widetilde C_n$ with the same mass and at most
 
@@ -333,7 +333,7 @@ $$
 
 For small budgets the earlier $U^3W/q$ bound can be better; one may choose whichever construction supplies the smaller certificate. If $W=0$, the two-state reference suffices exactly. If $U=0$, there is no response to approximate.
 
-The proof requires the kernel's spectral measure. It supplies no inference method from passive observations, and no statistically stable reconstruction from noisy response data. It permits new rates and new microscopic topology, as does the earlier midpoint construction. Section 10 proves a logarithmic state lower bound, leaving a gap from the squared-logarithmic upper bound for this unrestricted target class. No finite-amplitude guarantee follows from the cubic-coefficient theorem alone.
+The proof requires the kernel's spectral measure. It supplies no inference method from passive observations, and no statistically stable reconstruction from noisy response data. It permits new rates and new microscopic topology, as does the earlier midpoint construction. Section 10 proves a logarithmic state lower bound using rates in a fixed band; Section 11 strengthens it to the matching squared-logarithmic order with unrestricted rates. No finite-amplitude guarantee follows from the cubic-coefficient theorem alone.
 
 ### 8.4 Reduction to established approximation results
 
@@ -669,10 +669,10 @@ $$
 
 For fixed $U^3W>0$, this gives a necessary state count
 $\Omega(\log(U^3W/\varepsilon))$ as $\varepsilon\downarrow0$.
-Together with Section 8, the current unrestricted target class therefore
-has logarithmic necessary and squared-logarithmic sufficient state growth.
-The gap between these orders remains open; neither bound is a minimax
-optimality claim for that class.
+This fixed-band witness gives a logarithmic necessary state count. Section 11
+uses geometrically separated rates to strengthen the unrestricted lower bound
+to squared-logarithmic state growth, matching Section 8. The fixed-band result
+remains useful for the distinct capped-target problem below.
 
 ### 10.5 An upper bound on active rates gives matching logarithmic order
 
@@ -712,6 +712,41 @@ upper bound on $\lambda_j/k$ by using finitely many bins.
 
 The rate cap is additional information about the **targets**, not a
 restriction on the surrogates. It does not narrow the original problem
-$E_D$ or close its logarithmic versus squared-logarithmic gap. The upper
-bound uses the established positive-quadrature method already discussed
-in Section 8; these derivations do not certify publication-level novelty.
+$E_D$, whose squared-logarithmic state-growth order is established separately
+in Section 11. The upper bound uses the established positive-quadrature method
+already discussed in Section 8; these derivations do not certify publication-level novelty.
+
+## 11. Matching order without a target rate cap
+
+The [unrestricted-rate lower-bound proof](UNRESTRICTED_RATE_LOWER_BOUND.md)
+shows that, for $k>0$, $U>0$, $0<W\le G^2$, and $D\ge2$, setting $r=3D+2$ gives
+
+$$
+E_D(k,G,W,U)\ge
+\frac{WU^3}{64r^2}\exp\!\left[-2\pi\sqrt{3(r-1)}\right].
+$$
+
+The witness has $r+2=3D+4$ states, equal kernel weights $W/r$, and geometrically
+separated damped relaxation rates. Its smallest active rate is $5k/2$, so the
+obstruction does not require an arbitrarily small hidden spectral gap.
+
+A constant-protocol cubic coefficient of any allowed $D$-state surrogate has
+a linear lift of dimension at most $3D-2$. Its weighted Hankel operator therefore
+has at most that rank. Removing the target's three-dimensional visible part
+leaves a positive operator whose Gram matrix is a Cauchy matrix. An explicit
+inverse bound gives the displayed root-exponential error floor. The argument
+retains nonreversible surrogates, Jordan blocks, and unrestricted field derivatives.
+
+Together with Section 8, this proves a worst-case state requirement
+
+$$
+\Theta\!\left(\log^2\frac{WU^3}{\varepsilon}\right)
+\qquad(\varepsilon\downarrow0,\quad WU^3>0\text{ fixed}).
+$$
+
+The comparison matches the order, not the constants in the exponent. A version
+with half the displayed error floor uses only the step-response curve through
+time $O(\sqrt D/k)$; see the explicit horizon in the linked proof. That statement
+does not assert a finite set of coefficient samples or a noisy experimental
+procedure. The rank and Cauchy-matrix ingredients are classical; originality
+of the complete constrained-response theorem remains under audit.
