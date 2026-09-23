@@ -1,0 +1,686 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact fractions.Fraction generator, moment, closure, Hankel and formal polynomial identities; no numerical optimization or floating dynamics",
+  "heat_bath_chain_fixtures": {
+    "cases": [
+      {
+        "spins": 2,
+        "physical_states": 4,
+        "attempt_rates_exact": [
+          "1",
+          "1"
+        ],
+        "stationary_probabilities_exact": [
+          [
+            "1/3",
+            "1/6",
+            "1/6",
+            "1/3"
+          ],
+          [
+            "2/9",
+            "1/9",
+            "2/9",
+            "4/9"
+          ]
+        ],
+        "closed_mean_coordinates": [
+          "1",
+          "s0",
+          "s1"
+        ],
+        "full_probability_reachable_rank": 4,
+        "controlled_observable_rank": 3,
+        "generator_Hankel_rank": 3,
+        "independent_reachable_prefixes": [
+          [],
+          [
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "independent_observable_suffixes": [
+          [],
+          [
+            0
+          ],
+          [
+            1
+          ]
+        ],
+        "same_output_distinct_hazards_exact": [
+          "1/3",
+          "2/3"
+        ]
+      },
+      {
+        "spins": 3,
+        "physical_states": 8,
+        "attempt_rates_exact": [
+          "1",
+          "2/3",
+          "1/2"
+        ],
+        "stationary_probabilities_exact": [
+          [
+            "2/9",
+            "1/9",
+            "1/18",
+            "1/9",
+            "1/9",
+            "1/18",
+            "1/9",
+            "2/9"
+          ],
+          [
+            "4/27",
+            "2/27",
+            "1/27",
+            "2/27",
+            "4/27",
+            "2/27",
+            "4/27",
+            "8/27"
+          ]
+        ],
+        "closed_mean_coordinates": [
+          "1",
+          "s0",
+          "s1",
+          "s2"
+        ],
+        "full_probability_reachable_rank": 8,
+        "controlled_observable_rank": 4,
+        "generator_Hankel_rank": 4,
+        "independent_reachable_prefixes": [
+          [],
+          [
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "independent_observable_suffixes": [
+          [],
+          [
+            0
+          ],
+          [
+            1
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "same_output_distinct_hazards_exact": [
+          "1/3",
+          "2/3"
+        ]
+      }
+    ],
+    "scope": "These are exact mean-closure and generator-word rank certificates. They do not identify a lower-dimensional Markov aggregation or prove any finite-accuracy state lower bound."
+  },
+  "universal_positive_three_state_family": {
+    "rational_parameter_fixtures": [
+      {
+        "coupling_tanh_exact": "1/3",
+        "field_tanh_exact": "0",
+        "drift_coefficients_exact": [
+          "0",
+          "1/3"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/2",
+          "2/7",
+          "3/14"
+        ],
+        "predictor_exit_rates_exact": [
+          "4/9",
+          "20/21",
+          "38/63"
+        ],
+        "ordinary_stationary_flux_defect_exact": "1/63",
+        "single_field_derivative_Hankel_determinant_exact": "0",
+        "required_ordinary_conditional_variance_exact": "8/9"
+      },
+      {
+        "coupling_tanh_exact": "1/3",
+        "field_tanh_exact": "1/3",
+        "drift_coefficients_exact": [
+          "3/10",
+          "3/10"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/3",
+          "8/21",
+          "2/7"
+        ],
+        "predictor_exit_rates_exact": [
+          "3/5",
+          "57/70",
+          "41/70"
+        ],
+        "ordinary_stationary_flux_defect_exact": "0",
+        "single_field_derivative_Hankel_determinant_exact": "27/10000",
+        "required_ordinary_conditional_variance_exact": "8/9"
+      },
+      {
+        "coupling_tanh_exact": "1/3",
+        "field_tanh_exact": "3/5",
+        "drift_coefficients_exact": [
+          "5/9",
+          "2/9"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/5",
+          "16/35",
+          "12/35"
+        ],
+        "predictor_exit_rates_exact": [
+          "20/27",
+          "43/63",
+          "109/189"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-8/945",
+        "single_field_derivative_Hankel_determinant_exact": "250/19683",
+        "required_ordinary_conditional_variance_exact": "8/9"
+      },
+      {
+        "coupling_tanh_exact": "1/3",
+        "field_tanh_exact": "9/10",
+        "drift_coefficients_exact": [
+          "80/91",
+          "19/273"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/20",
+          "19/35",
+          "57/140"
+        ],
+        "predictor_exit_rates_exact": [
+          "760/819",
+          "956/1911",
+          "3278/5733"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-323/57330",
+        "single_field_derivative_Hankel_determinant_exact": "9728000/617174649",
+        "required_ordinary_conditional_variance_exact": "8/9"
+      },
+      {
+        "coupling_tanh_exact": "3/5",
+        "field_tanh_exact": "0",
+        "drift_coefficients_exact": [
+          "0",
+          "3/5"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/2",
+          "4/35",
+          "27/70"
+        ],
+        "predictor_exit_rates_exact": [
+          "8/25",
+          "1234/875",
+          "236/875"
+        ],
+        "ordinary_stationary_flux_defect_exact": "18/875",
+        "single_field_derivative_Hankel_determinant_exact": "0",
+        "required_ordinary_conditional_variance_exact": "16/25"
+      },
+      {
+        "coupling_tanh_exact": "3/5",
+        "field_tanh_exact": "1/3",
+        "drift_coefficients_exact": [
+          "2/9",
+          "5/9"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/3",
+          "16/105",
+          "18/35"
+        ],
+        "predictor_exit_rates_exact": [
+          "4/9",
+          "412/315",
+          "26/105"
+        ],
+        "ordinary_stationary_flux_defect_exact": "0",
+        "single_field_derivative_Hankel_determinant_exact": "8/2187",
+        "required_ordinary_conditional_variance_exact": "16/25"
+      },
+      {
+        "coupling_tanh_exact": "3/5",
+        "field_tanh_exact": "3/5",
+        "drift_coefficients_exact": [
+          "15/34",
+          "15/34"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/5",
+          "32/175",
+          "108/175"
+        ],
+        "predictor_exit_rates_exact": [
+          "10/17",
+          "1399/1190",
+          "281/1190"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-36/2975",
+        "single_field_derivative_Hankel_determinant_exact": "30375/1336336",
+        "required_ordinary_conditional_variance_exact": "16/25"
+      },
+      {
+        "coupling_tanh_exact": "3/5",
+        "field_tanh_exact": "9/10",
+        "drift_coefficients_exact": [
+          "1440/1771",
+          "285/1771"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/20",
+          "38/175",
+          "513/700"
+        ],
+        "predictor_exit_rates_exact": [
+          "1520/1771",
+          "56566/61985",
+          "14204/61985"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-2907/309925",
+        "single_field_derivative_Hankel_determinant_exact": "510603264000/9837262146481",
+        "required_ordinary_conditional_variance_exact": "16/25"
+      },
+      {
+        "coupling_tanh_exact": "4/5",
+        "field_tanh_exact": "0",
+        "drift_coefficients_exact": [
+          "0",
+          "4/5"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/2",
+          "3/70",
+          "16/35"
+        ],
+        "predictor_exit_rates_exact": [
+          "9/50",
+          "2987/1750",
+          "99/875"
+        ],
+        "ordinary_stationary_flux_defect_exact": "12/875",
+        "single_field_derivative_Hankel_determinant_exact": "0",
+        "required_ordinary_conditional_variance_exact": "9/25"
+      },
+      {
+        "coupling_tanh_exact": "4/5",
+        "field_tanh_exact": "1/3",
+        "drift_coefficients_exact": [
+          "27/209",
+          "160/209"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/3",
+          "2/35",
+          "64/105"
+        ],
+        "predictor_exit_rates_exact": [
+          "54/209",
+          "12017/7315",
+          "723/7315"
+        ],
+        "ordinary_stationary_flux_defect_exact": "0",
+        "single_field_derivative_Hankel_determinant_exact": "2519424/1908029761",
+        "required_ordinary_conditional_variance_exact": "9/25"
+      },
+      {
+        "coupling_tanh_exact": "4/5",
+        "field_tanh_exact": "3/5",
+        "drift_coefficients_exact": [
+          "135/481",
+          "320/481"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/5",
+          "12/175",
+          "128/175"
+        ],
+        "predictor_exit_rates_exact": [
+          "180/481",
+          "1987/1295",
+          "1539/16835"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-768/84175",
+        "single_field_derivative_Hankel_determinant_exact": "629856000/53527912321",
+        "required_ordinary_conditional_variance_exact": "9/25"
+      },
+      {
+        "coupling_tanh_exact": "4/5",
+        "field_tanh_exact": "9/10",
+        "drift_coefficients_exact": [
+          "405/602",
+          "95/301"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/20",
+          "57/700",
+          "152/175"
+        ],
+        "predictor_exit_rates_exact": [
+          "855/1204",
+          "50719/42140",
+          "909/10535"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-969/105350",
+        "single_field_derivative_Hankel_determinant_exact": "1262172375/16417082402",
+        "required_ordinary_conditional_variance_exact": "9/25"
+      },
+      {
+        "coupling_tanh_exact": "9/10",
+        "field_tanh_exact": "0",
+        "drift_coefficients_exact": [
+          "0",
+          "9/10"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/2",
+          "19/1010",
+          "243/505"
+        ],
+        "predictor_exit_rates_exact": [
+          "19/200",
+          "93533/50500",
+          "5339/101000"
+        ],
+        "ordinary_stationary_flux_defect_exact": "1539/202000",
+        "single_field_derivative_Hankel_determinant_exact": "0",
+        "required_ordinary_conditional_variance_exact": "19/100"
+      },
+      {
+        "coupling_tanh_exact": "9/10",
+        "field_tanh_exact": "1/3",
+        "drift_coefficients_exact": [
+          "19/273",
+          "80/91"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/3",
+          "38/1515",
+          "324/505"
+        ],
+        "predictor_exit_rates_exact": [
+          "38/273",
+          "35761/19695",
+          "2071/45955"
+        ],
+        "ordinary_stationary_flux_defect_exact": "0",
+        "single_field_derivative_Hankel_determinant_exact": "54872/205724883",
+        "required_ordinary_conditional_variance_exact": "19/100"
+      },
+      {
+        "coupling_tanh_exact": "9/10",
+        "field_tanh_exact": "3/5",
+        "drift_coefficients_exact": [
+          "285/1771",
+          "1440/1771"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/5",
+          "76/2525",
+          "1944/2525"
+        ],
+        "predictor_exit_rates_exact": [
+          "380/1771",
+          "222869/127765",
+          "36727/894355"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-24624/4471775",
+        "single_field_derivative_Hankel_determinant_exact": "30001266000/9837262146481",
+        "required_ordinary_conditional_variance_exact": "19/100"
+      },
+      {
+        "coupling_tanh_exact": "9/10",
+        "field_tanh_exact": "9/10",
+        "drift_coefficients_exact": [
+          "90/181",
+          "90/181"
+        ],
+        "predictor_stationary_law_exact": [
+          "1/20",
+          "361/10100",
+          "4617/5050"
+        ],
+        "predictor_exit_rates_exact": [
+          "95/181",
+          "262711/182810",
+          "6959/182810"
+        ],
+        "ordinary_stationary_flux_defect_exact": "-26163/3656200",
+        "single_field_derivative_Hankel_determinant_exact": "59049000/1073283121",
+        "required_ordinary_conditional_variance_exact": "19/100"
+      }
+    ],
+    "coupling_fixtures": 4,
+    "field_fixtures_per_coupling": 4,
+    "positive_field_Hankel_certificates": 12,
+    "nonreversibility_scope": "The shared family is not reversible at zero field; some individual positive-field generators are reversible.",
+    "scope": "These 16 exact instances test the universal formulas and their positivity margins. The proof supplies positivity for every finite J>0, h>=0, fixed-clock rank, and the arbitrary-rival lower bound; a finite set of parameter checks does not prove those universal statements."
+  },
+  "exact_three_state_predictor": {
+    "target_total_states": 4,
+    "predictor_total_states": 3,
+    "predictor_readout_exact": [
+      "1",
+      "-1",
+      "-1"
+    ],
+    "predictor_auxiliary_coordinate_exact": [
+      "1/3",
+      "2/3",
+      "-4/3"
+    ],
+    "ordinary_stationary_flux_defects_exact": [
+      "7/216",
+      "1/24"
+    ],
+    "derivative_Hankel_prefixes": [
+      [],
+      [
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "derivative_Hankel_suffixes": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "derivative_Hankel_exact": [
+      [
+        "0",
+        "0",
+        "3/10"
+      ],
+      [
+        "3/10",
+        "-3/10",
+        "-3/10"
+      ],
+      [
+        "-3/10",
+        "1/3",
+        "33/100"
+      ]
+    ],
+    "derivative_Hankel_determinant_exact": "3/1000",
+    "scope": "Exact closure and matching initial coordinates certify all switched endpoint means in the stated two-field task. Binary-output path-law agreement is not asserted, and no numerical finite-accuracy threshold is computed."
+  },
+  "ordinary_reversible_conditional_moment_obstruction": {
+    "required_conditional_auxiliary_means_exact": [
+      "1/3",
+      "-1/3"
+    ],
+    "required_conditional_auxiliary_second_moments_exact": [
+      "1",
+      "1"
+    ],
+    "required_conditional_auxiliary_variances_exact": [
+      "8/9",
+      "8/9"
+    ],
+    "ordinary_reversible_minimum_total_states": 4,
+    "scope": "This checks the rational moment contradiction conditional on the analytic minimal-realization argument recovering the closed coordinates in every exact three-state rival."
+  },
+  "mean_closure_and_Markov_aggregation_boundary": {
+    "coupled_stationary_conditional_flip_hazard_exact": "4/9",
+    "coupled_entry_conditional_flip_hazard_exact": "1/2",
+    "uncoupled_exact_Markov_quotient_states": 2,
+    "scope": "Neutral equilibrium gives a constant mean even when the coupled visible path is non-Markov. The exact two-state path reduction checked here uses zero coupling."
+  },
+  "finite_clock_observation_menu": {
+    "field_alphabet": {
+      "0": "zero field",
+      "1": "positive field H"
+    },
+    "mean_word_menu": [
+      [
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "distinct_measured_words": 11,
+    "maximum_ticks": 5,
+    "maximum_constant_field_runs": 3,
+    "reconstructed_matrices": [
+      "G[i,j]=m(H^(i+j))",
+      "G_H[i,j]=m(H^(i+j+1))",
+      "G_0[i,j]=m(H^i 0 H^j)"
+    ],
+    "formal_Hankel_determinant_identity": "c0*c1*c2*(x-1)^2*(y-1)^2*(y-x)^2",
+    "formal_polynomial_nonzero_terms": 19,
+    "scope": "Word coverage and the determinant identity are exact. Nonzero physical mode weights, distinct clock bases for every tick a>0, realization recovery and a positive but unquantified tolerance without a rival rate cap are established analytically in the proof; no exponential response values or error margin are computed here."
+  },
+  "largest_dense_matrix_dimension": 8,
+  "large_target_allocated": false,
+  "controlled_responses_simulated": false,
+  "experiment_menu_enumerated": true,
+  "limitations": [
+    "Finite exact checks supplement the analytic arbitrary-rival realization and reversibility arguments.",
+    "A closed system for single-spin means does not imply a smaller Markov state process.",
+    "Generator-Hankel entries are derivatives of mean responses; no finite measured-error threshold is inferred.",
+    "The exact three-state predictor preserves the specified controlled means, not the complete visible path law."
+  ],
+  "source_sha256": {
+    "verify_familiar_switches.py": "aab92b39e8aa15df35277907f427bf2da47f7389dbe93c287dac9ec1847bde7a"
+  },
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+  },
+  "imported_repository_verifiers": [],
+  "checks": 386
+}

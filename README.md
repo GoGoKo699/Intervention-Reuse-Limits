@@ -2,13 +2,19 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-This project studies finite-state stochastic systems whose passive binary output has an exact two-state description. A control changes hidden escape rates and exposes information that the passive description discards. We ask how many physical states a predictor needs, and how the answer changes when the predictor must obey ordinary detailed balance.
+This project asks how many states a stochastic predictor needs when one model must work across changing controls. Our current small example is a familiar physical model: **two coupled conformational switches**, represented by Ising variables with heat-bath dynamics.
 
-The current organizing result is simple: **ordinary reversibility ties a memory state's entry and exit profiles together; a stationary predictor can use different profiles.** This distinction determines exact state counts for a class of controlled models. A separate variance bound explains when hidden complexity barely affects observable means and a two-state predictor is sufficient.
+Their four equilibrium configurations admit an exact **three-state stationary predictor** for the controlled mean of one switch. Every **ordinary-reversible predictor needs four states**, under the same Gibbs control tilt. The result holds for every finite ferromagnetic coupling and positive field. Eleven endpoint experiments, each at most five clock ticks and three field segments, suffice for the exact distinction.
 
-The research target is **Physical Review Letters**. That is a publication goal, not an acceptance assessment. Manuscript drafting remains the last step. The [research dossier](docs/RESEARCH_DOSSIER.md), [claim ledger](docs/CLAIM_LEDGER.md), and [current exploration](docs/PRL_EXPLORATION.md) preserve the assumptions, dependencies, unresolved questions and earlier results.
+The mechanism is short: detailed balance forces a hidden coordinate to fluctuate within **both** observed conformations. Each conformation therefore needs at least two states. A three-state predictor can reproduce the means by allowing stationary circulation.
 
-## One state, two roles
+The [proof and explicit rates](docs/FAMILIAR_SWITCH_STRUCTURE.md), [short-protocol diagnostics](docs/FAMILIAR_SWITCH_PROTOCOLS.md), [source comparison](docs/FAMILIAR_SWITCH_SOURCE_AUDIT.md), and [internal review](docs/FAMILIAR_SWITCH_INTERNAL_REVIEW.md) document this result. The readout is binary; the control couples only to that readout; the switches are time-even conformations. The theorem concerns means. The passive path law already contains memory, and full controlled path-law equality is not asserted.
+
+**Practical precision remains open.** A positive error interval exists on the eleven-experiment menu, but its size is not certified. In the bounded numerical screen, each of twelve stronger-coupling cases had a feasible three-state ordinary-reversible approximation within 0.14% occupancy probability on its 33 tested protocols. The retained comparator from the hardest fitting case has 0.4711% error on the separate eleven-experiment menu at clock one. These are finite-menu upper bounds from saved models, not lower bounds or all-protocol guarantees.
+
+The research target is **Physical Review Letters**; manuscript drafting remains the last step. The [current exploration](docs/PRL_EXPLORATION.md), [research dossier](docs/RESEARCH_DOSSIER.md), and [claim ledger](docs/CLAIM_LEDGER.md) retain the assumptions and unresolved questions. Earlier constructions below address different target families and interfaces.
+
+## Earlier general principle: one state, two roles
 
 The [matrix prediction principle](docs/MATRIX_RANK_PREDICTION_PRINCIPLE.md) starts with a nonnegative, completely positive matrix $H$ of size $n$, normalized so its entries sum to one and every row has positive sum. Its two relevant ranks count the fewest pieces in
 

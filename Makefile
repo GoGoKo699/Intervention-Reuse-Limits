@@ -47,3 +47,5 @@ check:
 	$(PYTHON) scripts/verify_rational_observation.py --output .check-output/rational_observation.json
 	$(PYTHON) scripts/verify_symmetric_compression.py --output .check-output/symmetric_compression.json
 	$(PYTHON) scripts/verify_simple_prediction_principles.py --output .check-output/simple_prediction_principles.json
+	$(PYTHON) scripts/verify_familiar_switches.py --output .check-output/familiar_switches.json
+	$(PYTHON) scripts/screen_familiar_switches.py --verify-saved reports/familiar_switch_screen.json --output .check-output/familiar_switch_screen.json

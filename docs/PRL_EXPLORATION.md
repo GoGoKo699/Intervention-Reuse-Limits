@@ -1,86 +1,60 @@
-# PRL exploration: equilibrium structure and reusable prediction
+# PRL exploration: a familiar model and a short memory mechanism
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Rational observation theorem](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) · [Physical model](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Current proof](FAMILIAR_SWITCH_STRUCTURE.md) · [Verification](VERIFICATION.md)
 
-**Research target, 23 September 2026.** The user selected *Physical Review Letters*. Exploration remains theorem first, with bounded exact checks; manuscript drafting remains the last step. The [official PRL criteria](https://journals.aps.org/prl/about), checked during this phase, emphasize a significant physical advance and impact beyond a narrow technical refinement. This is a research assessment, not an acceptance prediction.
+**Research target, 23 September 2026.** The user selected *Physical Review Letters*, asked for a familiar physical candidate, and emphasized that a strong result should be simple. Manuscript drafting remains the last step. The [official PRL criteria](https://journals.aps.org/prl/about) motivate a significant physical advance beyond a narrow technical refinement; this record makes no acceptance prediction.
 
-## 1. The current result and its physical question
+## 1. Current candidate: two coupled conformational switches
 
-How many states must a reusable stochastic predictor retain if its reduced dynamics must preserve equilibrium structure?
-
-The user emphasizes that a strong result should have a simple mechanism. The new [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) supplies one: a stationary predictor may use distinct incoming and outgoing memory profiles; ordinary detailed balance identifies the two sides of matched reversed tests. For a normalized completely positive $n\times n$ matrix $H$ with positive row sums, the controlled task has exact minima
+Use time-even Ising variables with energy $E_h=-Js_0s_1-hs_0$, heat-bath flips, equal attempt rates, and observed conformation $S=s_0$. Prepare equilibrium at zero field. The target has four configurations. The [new theorem](FAMILIAR_SWITCH_STRUCTURE.md) gives, for every finite $J,H>0$ and every fixed clock $a>0$,
 
 $$
-D_{\rm all}(0)=1+n+\operatorname{rank}_+(H),\qquad
-D_{\rm ord}(0)=1+n+\operatorname{cprank}(H).
+D_{\rm all}(0)=3,\qquad D_{\rm ord}(0)=4.
 $$
 
-Every target retains an exact two-state passive path law, hidden band $[k,3k]$, two fields and a common hidden exit cap $2k$. Rivals may create arbitrary new states and endpoint barriers. Both minima persist on a positive matrix-dependent accuracy interval and finite menu, without a useful general tolerance being asserted. The growing target label count and the specified physical interface remain part of the theorem. The algebraic ingredients have established precedents; the [source comparison](SIMPLE_PREDICTION_SOURCE_AUDIT.md) isolates the controlled realization statement.
+The comparison allows arbitrary new predictor states and rates, but keeps a deterministic binary readout and the Gibbs tilt $\pi_h=\pi_0e^{hS}/\cosh h$. The two zero-field readout masses are one half. This means the applied control couples only to the observed conformation. Arbitrary independent hidden-state force couplings are outside the theorem. Exact lower bounds need no rival rate cap; both explicit upper models have exits below two in attempt-rate units.
 
-The project also retains the small concrete example alongside the asymptotic theorem. A **twelve-state equilibrium target has an exact eleven-state stationary nonreversible predictor**. The [new rational observation theorem](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) proves that every ordinary-reversible rival with at most eleven total states, within the shared kinetic interface and hidden exit cap $2k$, has controlled-mean error greater than $2^{-220}$. The explicit measurement menu has **12,766 protocols**, using only fields $0,\log2$, clock $(\log2)/(8k)$, and at most **66 ticks** each. The target and controls are unchanged. Its passive visible law is exactly two-state and its hidden relaxation band is $[k,3k]$.
-
-The ordinary-reversible minimum is therefore twelve throughout $0\le\delta\le2^{-220}$, while eleven unrestricted states suffice exactly. The [earlier minimality theorem](FINITE_PREDICTOR_MINIMALITY.md) separately proves unrestricted minimum eleven for $\delta\le2^{-1360}$ on the full two-field clock task, already on its 520-tick word family. That unrestricted lower is not claimed for the new smaller menu or throughout the enlarged error interval. No eleven-state generalized-reversible predictor is established. The six-label target is generally uncentered and separate from the nineteen-level family.
-
-The complementary [symmetry-averaged upper](SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md) gives a **nine-state ordinary-reversible predictor with error at most $1/2376$**, uniformly for every two-field switching protocol and every horizon. It retains the hidden exit cap $2k$ and needs no clock restriction. This limits where a useful-precision exclusion could lie, but does not identify the optimal reversible error. A wide interval remains between the certified lower threshold and this upper guarantee; neither a practical precision nor a useful sample bound has been established.
-
-The [new internal review](RATIONAL_OBSERVATION_INTERNAL_REVIEW.md), [exact certificate](../scripts/verify_rational_observation.py), [report](../reports/rational_observation.json) and [source comparison](RATIONAL_OBSERVATION_SOURCE_AUDIT.md) support the current statement. The [construction](FINITE_REVERSIBILITY_ADVANTAGE.md) remains frozen at $2^{-3000}$, and the [previous precision checkpoint](FINITE_PRECISION_INTERNAL_REVIEW.md) preserves the $2^{-1360}$ minimum-count proof. The frozen construction's exact $K_{p,q}$ extension gives an ordinary minimum $pq+p+q+1$ and unrestricted sufficient count $2(p+q)+1$. The alphabet grows with $p+q$; this is not a fixed-alphabet approximation law.
-
-The [kinetic-variance theorem](KINETIC_VARIANCE_COMPRESSION.md) gives the other half of the story. Hidden deviations affect the mean only after heterogeneous barriers excite them and then read them out. An exact memory-kernel identity yields a uniform variance/mixing bound. The unchanged target therefore also admits a **two-state ordinary-reversible predictor at error at most $557/51920<0.01073$**, for every two-field protocol and horizon. Its best error is not determined. This bound and the nine-state upper should accompany claims about the small target's significance.
-
-## 2. Why the small example works
-
-The matrix principle proves the mechanism for any normalized completely positive matrix with positive row sums: every factorization stochastically maps to the same endpoint predictor, while matched positive tests impose the corresponding lower factor count. It also preserves the complete controlled binary-output path law. The earlier target is the case with nonnegative rank five and completely positive rank six. Concretely, it has six memory states indexed by the edges of $K_{2,3}$ and five probe states indexed by its vertices. An edge state can next enter either endpoint probe. The smaller predictor instead keeps five memory states, each storing a preselected probe; internal refresh can redraw that selection. Every memory state has the same kinetic control function, so moving this random choice earlier does not require knowledge of future fields. A stochastic intertwiner proves exact response equality for every protocol.
-
-Ordinary detailed balance supplies a different constraint. Ten nonnegative features have a Gram matrix requiring eleven nonnegative atoms: six for graph edges and five for isolated probe features. Each hidden state supplies one atom. A [square-root witness argument](FINITE_GRAM_ROBUSTNESS.md) tolerates Gram error $1/1500$.
-
-Stable observation of bounded rational selectors is now established. An essential exact rational certificate bounds the smallest singular value of ten specified target clock-word functions. Finite means recover their Gram matrices and give an approximate map intertwining the target and rival sampled dynamics. Resolvent calculus transfers that relation to the hidden barrier diagonal; finite-spectrum divided differences then transfer the bounded rational selectors. This avoids the previous large squared-polynomial values on off-grid rival barriers. The proof remains universal over the allowed reversible rivals.
-
-The older unrestricted lower uses a different positive left/right factorization: the target support needs ten rectangular factors, hence ten hidden states plus the gateway. Its centered-logarithm transfer works without reversible rival spectra and remains valid at its stated $2^{-1360}$ threshold. The new rational argument uses reversibility and does not automatically strengthen that unrestricted lower.
-
-The core $5\times5$ matrix itself is a prior example: Fawzi–Parrilo give it explicitly in their Eq. (55), and the [source supplement](FINITE_PRECISION_SOURCE_AUDIT.md) traces an earlier attribution through Korda and collaborators. The matrix-factorization and intertwining mechanisms are established mathematics. The candidate contribution is their concrete controlled-mean realization, same-interface comparison, and certified positive-error state gap. The [primary-source audit](FINITE_ADVANTAGE_SOURCE_AUDIT.md) compares completely positive rank, structured hidden-Markov realization and response reciprocity. It does not certify exhaustive novelty.
-
-## 3. A physical model class with specified parity
-
-The [single-force conformational network](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) assigns one extension to the visible gateway and another to all hidden conformations. State-dependent external transition-state extensions give the heterogeneous escape response. One applied force then produces both the equilibrium block tilt and the kinetic rate factors. Hidden wells and internal saddles share their extension, leaving internal exchange force independent.
-
-This is a stipulated Bell–Arrhenius network with physically even configuration states. The [nine-source audit](PHYSICAL_REALIZATION_SOURCE_AUDIT.md) provides precedents for its ingredients, including a single-gateway enzyme model and force-dependent conformational exchange. Equal baseline escape rates, coinciding hidden extensions and the chosen graph remain model assumptions. A microscopic landscape or laboratory device realizing the complete network has not been constructed.
-
-Two simpler controls remove the intended effect. Changing only association rates while all off-rates remain equal leaves an exact two-state visible process. Changing only barriers at a fixed common equilibrium, starting from that equilibrium, leaves every endpoint mean constant. A force with heterogeneous transition-state positions avoids both restrictions.
-
-The [uniform perturbation theorem](PHYSICAL_INTERFACE_ROBUSTNESS.md) supplies a quantitative neighborhood: a reference return reset at rate $\alpha$ and maximum generator-row TV defect $\eta$ give endpoint TV at most
+The mechanism uses only two mean equations. Their three-dimensional linear realization identifies an internal coordinate $Z$. Ordinary detailed balance, together with the common control tilt at zero and positive field, forces
 
 $$
-e^{-\alpha T}d_0+(\eta/\alpha)(1-e^{-\alpha T}).
+\operatorname{Var}(Z\mid S=+1)=\operatorname{Var}(Z\mid S=-1)=1-\tanh^2J>0.
 $$
 
-Small control-dependent hidden-rate errors and finite clocked ramps are therefore allowed with explicit response bounds. Nearby-rival lower bounds require a same-state nearby core model. At fixed defects there is an accuracy floor; the theorem does not establish arbitrary-accuracy asymptotics with fixed experimental errors.
+Both observed conformations need at least two underlying states. A three-state stationary predictor avoids that equilibrium constraint; explicit positive rates reproduce the same closed mean equations under every nonnegative field protocol and every horizon.
 
-## 4. The asymptotic reversal boundary remains central
+Eleven endpoint measurements suffice: $H^n$ for $n=1,\ldots,5$, and $H^i0H^j$ for $i=1,2$, $j=0,1,2$. Each experiment starts from the same preparation and uses at most three segments and five ticks. The constant-field Hankel matrix and two shifted response tables identify both propagators. This gives a finite exact witness and a positive, presently unquantified accuracy interval on the same menu, even without a rival rate cap. Compactness of sampled propagators and continuity of their principal logarithms exclude arbitrarily fast zero-error limiting sequences.
 
-On the original nineteen-level equilibrium targets, the [shared-cap theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md) retains
+These are mean predictions, not complete path laws. Passive paths in the coupled pair already reveal hidden memory. At zero coupling the observed switch is autonomous and exactly two-state. The main three-versus-four theorem uses equal attempt rates; a three-spin linear closure alone does not establish a positive Markov realization with four states.
 
-$$
-D_{\rm all}(\delta)=D_{\rm inv}(\delta)=\delta^{-\Theta(1)},\qquad
-D_{\rm id}(\delta)=\exp(\delta^{-\Theta(1)}).
-$$
+## 2. What the bounded numerical screen says
 
-These are growth classes with unmatched exponents. The same two fields and every fixed positive clock suffice under hidden exit cap $3k$, arbitrary bounded rival barrier functions, and the common equilibrium interface. No rival target alphabet or histogram is required. Without a rival cap, the [uncapped comparison](GENERAL_KINETIC_INTERFACE.md) retains polynomial unrestricted growth and a weaker ordinary-reversible lower.
+The [protocol record](FAMILIAR_SWITCH_PROTOCOLS.md) saves feasible equilibrium rivals, their full generators, and every tested endpoint. It distinguishes occupancy error $|\Delta P(S=+1)|$ from spin-mean error, which is twice as large.
 
-The generalized-reversal polynomial predictor can have zero stationary entropy production under its own reversal. Hence the ordinary-reversal lower is not a universal heat or dissipation requirement. The small eleven-state predictor in Section 1 is a separate stationary nonreversible construction. Its one-way edges give infinite ordinary entropy production at exact agreement, but reverse-rate regularization retains eleven states and finite ordinary entropy production at any prescribed positive error, including $2^{-221}$ for the new reversible separation.
+At the rational fixture $J=H=\log2/2$, a shared three-state ordinary-reversible model closely approximates the tested responses. Across twelve stronger-coupling fixtures with $J\in\{0.5,1,1.5,2\}$ and $H\in\{0.5,1,2\}$, all 33-protocol fitting menus admit saved feasible rivals below 0.14% occupancy error. For the retained comparator at $(J,H)=(1.5,2)$, 32 held-out pulses give at most 0.2707% occupancy error, and the eleven-word menu at clock one gives 0.4711%, without refitting. These remain finite samples and achievable uppers. No tested fitting menu establishes a one-percent advantage.
 
-The [even-observation closure result](PHYSICAL_REVERSAL_REALIZATION.md) further specifies the boundary: a reversal-even equilibrium observation that is itself Markov must obey ordinary detailed balance. Stationary flux aggregation alone need not supply that Markov closure. An ordinary-equilibrium hidden phase cannot generate an exactly nonreversible Markov lump without changing these assumptions. A natural physical implementation of the centered word reversal remains open.
+These calculations provide upper bounds on the best finite-menu error. Local optimization cannot certify exclusion of every equilibrium rival. The exact theorem and positive-error existence remain valid, but a useful experimental tolerance, sample budget, and optimal clock remain unresolved. The optional search is small enough for the user's Ryzen AI Max+ 395, 128 GB machine; deterministic replay uses only tiny matrices and does not rerun fitting in CI.
 
-## 5. What to pursue next
+## 3. Evidence and literature boundary
 
-1. **Keep the mechanism simple and test its physical scale.** The general rank formula organizes exact and sufficiently fine prediction, while the variance theorem explains coarse-accuracy collapse. On the current target, nine reversible states suffice at $1/2376$ and two at $557/51920$; the state-gap certificate remains $2^{-220}$. Seek a direct, useful-precision witness or a better-conditioned target with a short physical explanation.
-2. **Broaden a substantive assumption with a clean proof.** A natural next question is whether exact continuous-dwell data force the target barrier palette and remove the rival rate cap from the matrix characterization. This is a research direction, not part of the frozen theorem. Its fixed-clock positive-error version would require separate control.
-3. **A conventional microscopic model.** Test whether a force-controlled conformational system justifies the equal-extension and barrier assumptions over a finite range, using the perturbation budget to quantify deviations. A graph-level Arrhenius assignment alone is insufficient.
-4. **Complete-theorem significance and novelty.** Compare the controlled classification with the closest positive realization results, while retaining the variance bound as a check on finite-precision relevance. Arbitrary interfaces and hidden control dependence remain open for the state-count classification; the variance theorem already permits field-dependent hidden generators with a common stationary law. Sharper identity-reversal entropy frontiers remain a separate problem.
+The [internal review](FAMILIAR_SWITCH_INTERNAL_REVIEW.md) separates independent analytic audits from the [exact finite verifier](../scripts/verify_familiar_switches.py) and [saved report](../reports/familiar_switches.json). The verifier checks rational two- and three-switch fixtures, positive three-state generators, Gibbs stationarity, closure, rank identities, and the finite menu. It supplements the universal proof.
 
-The research story is clearer: the matrix theorem identifies what ordinary reversal changes in the required memory, and the variance theorem identifies when that memory barely changes the measured response. Useful precision, microscopic justification and the broader significance/priority assessment still require work. This is progress toward the PRL target, not an acceptance prediction. Manuscript drafting stays deferred.
+The [source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) attributes Glauber mean closure, heat-bath receptor models, finite-state dynamic disorder, and positive realization theory. It compares their tasks with the controlled Gibbs-family state-count theorem. Falk's 1983 reduced spin-chain paper remains an abstract-only lead requiring full-text comparison. The search is bounded and does not certify novelty. All configurations here are time-even; no universal dissipation or heat requirement follows from an ordinary-reversibility state penalty.
 
-## 6. Evidence and checkpoint history
+## 4. Next scientific work
 
-The preceding published checkpoint is `2923ca8c3992726593ee3111342c1e004cd4b53a`, tree `f74bcbf86f5ce25d3d0863822623ea120c0378c0`, with successful [CI run 35859347383](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35859347383). It supplied forty verifiers, the rational observation certificate and the nine-state symmetry upper.
+1. **Quantify the eleven-experiment margin.** Use the small realization and conditional-variance contradiction to derive stable inequalities in the measured means. Compare any certified lower with the saved feasible ordinary rivals at the same $J,H,a$ and in the same error units.
+2. **Choose a useful clock and physical regime.** Evaluate conditioning and response contrast using bounded calculations. Keep one shared rival across all protocols; avoid interpreting a fitted residual as a universal lower bound. Stop a candidate if a certified simple upper makes its observable advantage negligible.
+3. **Test the substantive interface restriction.** Determine whether the shared Gibbs tilt can be independently calibrated in a familiar conformational or receptor setting. Broader hidden force coupling is a new problem, not an automatic extension.
+4. **Complete the closest-source comparison.** Obtain the unresolved reduced-spin-model full text and compare whole assumptions and claims. External scientific review would improve evidence; it is not a new permission gate for continued research.
 
-This continuation adds two analytic principles and one combined verifier, bringing the verified suite to forty-one. Its 200 exact checks cover factor normalization, stochastic intertwining, matched feature matrices, centered density equations and variance constants, at dense dimension at most twelve. The general matrix and all-protocol theorems have separate internal reviews. The README now presents the short physical story and points to the complete ledger for historical scopes. Earlier proof snapshots, verifiers, reports, recovery files and license remain preserved. [Verification](VERIFICATION.md) records the completed local gate and separate remote CI.
+The immediate objective is a useful precision certificate for the familiar two-switch mechanism. A manuscript remains deferred until the physical scope, accuracy, and contribution are sufficiently clear.
+
+## 5. Earlier results retained as reference
+
+The [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives exact state counts $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ for a separate capped hub-interface family with exact two-state passive paths. The [variance principle](KINETIC_VARIANCE_COMPRESSION.md) bounds all-protocol mean compression through kinetic heterogeneity and hidden mixing. Neither theorem's interface is silently transferred to the coupled-switch model.
+
+The twelve-state incidence target retains its exact eleven-state stationary upper and [ordinary minimum twelve](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) at error $2^{-220}$ on 12,766 experiments of at most 66 ticks. Unrestricted minimum eleven was proved on the narrower $2^{-1360}$ interval and a different witness family. Nine reversible states suffice at $1/2376$, and two at $557/51920$, uniformly over all two-field protocols. Those upper bounds explain why useful precision remained a concern.
+
+The [asymptotic reversal theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md) remains a separate result: unrestricted and generalized-reversible growth are polynomial, ordinary-reversible growth exponential, under its common cap and interface. Generalized reversal can have zero stationary entropy production, so ordinary reversal cannot be equated with a universal heat requirement.
+
+This continuation starts from published `f1a7872fec92353314a06d6f6bd12b79013e79d2`, tree `326d592b4ee47627576a04feb62f3355a3a43c21`, with successful [CI run 35864902730](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35864902730). The 41 earlier verifiers, saved reports, frozen proofs, nine recovery files and original license remain preserved. [Verification](VERIFICATION.md) records local checks and distinguishes publication CI.
