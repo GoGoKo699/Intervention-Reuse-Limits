@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "arithmetic": "Exact fractions.Fraction identities with separately labeled float64 Arrhenius, matrix-exponential and quadrature diagnostics",
+  "single_force_and_erasure": {
+    "hidden_states": 3,
+    "field_cases": [
+      {
+        "exp_half_field_exact": "2/3",
+        "equilibrium_mean_exact": "-65/97"
+      },
+      {
+        "exp_half_field_exact": "1",
+        "equilibrium_mean_exact": "0"
+      },
+      {
+        "exp_half_field_exact": "3/2",
+        "equilibrium_mean_exact": "65/97"
+      }
+    ],
+    "Arrhenius_rate_residuals": [
+      1.33226762955e-15,
+      4.4408920985e-16,
+      2.22044604925e-16
+    ],
+    "common_return_projection_residuals": [
+      1.11022302463e-16,
+      1.11022302463e-16
+    ],
+    "barrier_only_stationary_residual": 5.55111512313e-17,
+    "scope": "Exact finite-graph Bell rates and two erasure mechanisms; no molecular geometry or instantaneous-rate approximation is derived."
+  },
+  "physical_reversal_and_Markov_projection": {
+    "non_Markov_even_fixture_states": 3,
+    "Markov_even_fixture_states": 6,
+    "entry_conditioned_exit_hazard_exact": "3/8",
+    "stationary_conditioned_exit_hazard_exact": "1/2",
+    "ordinary_cycle_EPR": 0.549306144334,
+    "generalized_cycle_EPR": 0,
+    "six_state_projection_propagator_residuals": [
+      1.11022302463e-16,
+      5.55111512313e-17,
+      1.11022302463e-16
+    ],
+    "scope": "The exact fixtures illustrate both sides; stationary Markov projection implies ordinary reversibility by the separate analytic path-law theorem."
+  },
+  "interface_robustness": {
+    "one_sided_reset_rate_exact": "1/2",
+    "one_sided_row_defect_exact": "1/2",
+    "initial_TV_exact": "1/10",
+    "one_sided_cases": [
+      {
+        "horizon": 0.1,
+        "endpoint_TV": 0.0841745224127,
+        "one_sided_bound": 0.143893517949,
+        "Duhamel_residual": 4.60785923306e-18
+      },
+      {
+        "horizon": 0.6000000000000001,
+        "endpoint_TV": 0.0481237633246,
+        "one_sided_bound": 0.333263601386,
+        "Duhamel_residual": 5.03069808033e-17
+      },
+      {
+        "horizon": 0.9,
+        "endpoint_TV": 0.043985048963,
+        "one_sided_bound": 0.42613466354,
+        "Duhamel_residual": 1.35308431126e-16
+      }
+    ],
+    "both_reset_and_weighted_cases": [
+      {
+        "horizon": 0.1,
+        "endpoint_TV": 0.000136477763556,
+        "both_reset_bound": 0.00946962406395,
+        "weighted_bound": 0.00317208606547
+      },
+      {
+        "horizon": 1.0,
+        "endpoint_TV": 0.00305511167157,
+        "both_reset_bound": 0.0606480833002,
+        "weighted_bound": 0.0210706852943
+      },
+      {
+        "horizon": 4.0,
+        "endpoint_TV": 0.00406237854064,
+        "both_reset_bound": 0.0897929690997,
+        "weighted_bound": 0.032722812037
+      }
+    ],
+    "diagonal_omission_counterexample_TV": 0.00245976043486,
+    "relative_rate_certificate": {
+      "epsilon_exact": "1/20",
+      "eta_exact": "1/10",
+      "epsilon_exit_bound_exact": "3/20",
+      "logarithmic_tolerance": 0.0512932943876
+    },
+    "finite_ramp_cases": [
+      {
+        "ramps": 1,
+        "integrated_contraction_kernel": 0.0975411509986
+      },
+      {
+        "ramps": 4,
+        "integrated_contraction_kernel": 0.27874315169
+      },
+      {
+        "ramps": 12,
+        "integrated_contraction_kernel": 0.419010809948
+      }
+    ],
+    "uniform_ramp_kernel_bound": 0.440965173173,
+    "rational_ramp_certificate": [
+      {
+        "ramps": 1,
+        "alpha_times_integral_exact": "1/2"
+      },
+      {
+        "ramps": 3,
+        "alpha_times_integral_exact": "21/32"
+      },
+      {
+        "ramps": 8,
+        "alpha_times_integral_exact": "21845/32768"
+      }
+    ],
+    "scope": "Small finite-time diagnostics check exact defect conventions and theorem branches; they do not replace the uniform analytic proof."
+  },
+  "large_target_allocated": false,
+  "limitations": [
+    "Finite fixtures do not prove the uniform perturbation or stationary projection theorems.",
+    "Arrhenius identities specify mesoscopic rates and do not construct a microscopic molecular device.",
+    "The perturbed one-sided fixture lacks its own common reset; both-reset refinements are tested separately.",
+    "Endpoint robustness does not imply long-time path-law closeness or zero driven entropy production.",
+    "The parity fixtures do not certify a state-count advantage or physical odd-memory realization.",
+    "Fixed rate defects and ramp durations impose accuracy floors rather than all-accuracy robustness.",
+    "Float64 exponentials and quadrature are consistency diagnostics, not interval certificates."
+  ],
+  "source_sha256": {
+    "verify_physical_robustness.py": "b0598a5175b5e4332fd668138c5c2d7031127187da825b54e0f6f325c13b97aa"
+  },
+  "proof_snapshot_sha256": {
+    "docs/PHYSICAL_INTERFACE_ROBUSTNESS.md": "8b003b51e7a98e3752dced5be7d1aad62ca7a08f438bd495003e7bb2cf6f8117",
+    "docs/SINGLE_FORCE_CONFORMATIONAL_MODEL.md": "8703852221c67f1b763c38ab8aa90549b70bba65ec20c1f177df7cc320c59c8d",
+    "docs/PHYSICAL_REVERSAL_REALIZATION.md": "b346f8e550e4f0bac468e38cd89b25e17dc98cf7485084988b87435f339ba727"
+  },
+  "imported_repository_verifiers": [],
+  "largest_dense_matrix_dimension": 6,
+  "checks": 104
+}

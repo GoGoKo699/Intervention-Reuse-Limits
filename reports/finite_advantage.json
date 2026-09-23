@@ -1,0 +1,344 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "arithmetic": "Exact fractions.Fraction identities, rational LDL and support combinatorics; separately labeled float64 matrix-exponential diagnostics",
+  "finite_construction": {
+    "target_hidden_states": 11,
+    "target_total_states": 12,
+    "rival_hidden_states": 10,
+    "rival_total_states": 11,
+    "hidden_exit_cap_exact": "2",
+    "target_nonzero_decay_band_exact": [
+      "1",
+      "3"
+    ],
+    "target_band_lower_LDL_pivots": [
+      "11/144",
+      "5/66",
+      "3/40",
+      "2/27",
+      "7/96",
+      "1/14",
+      "1/16",
+      "1/16",
+      "1/36",
+      "1/48",
+      "0"
+    ],
+    "target_band_upper_LDL_pivots": [
+      "11/144",
+      "5/66",
+      "3/40",
+      "2/27",
+      "7/96",
+      "1/14",
+      "1/16",
+      "1/16",
+      "1/36",
+      "1/48",
+      "0"
+    ],
+    "rival_nonzero_ordinary_flux_defects": 17,
+    "one_ordinary_flux_defect_exact": {
+      "states": [
+        0,
+        5
+      ],
+      "value": "1/16"
+    },
+    "field_cases": [
+      {
+        "equilibrium_bias_exact": "1",
+        "six_label_barriers_exact": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "equilibrium_bias_exact": "4",
+        "six_label_barriers_exact": [
+          "3/8",
+          "7/16",
+          "1/2",
+          "9/16",
+          "5/8",
+          "11/16"
+        ]
+      },
+      {
+        "equilibrium_bias_exact": "9/4",
+        "six_label_barriers_exact": [
+          "2/3",
+          "1/2",
+          "3/4",
+          "4/5",
+          "5/6",
+          "6/7"
+        ]
+      }
+    ],
+    "numerical_switched_mean_law_residuals": [
+      8.32667268469e-17,
+      5.55111512313e-17,
+      1.11022302463e-16
+    ],
+    "scope": "Exact intertwining is certified on the constructed generators; the analytic proof extends it to every admissible blockwise barrier and protocol."
+  },
+  "completely_positive_Gram": {
+    "features": 10,
+    "ordinary_matrix_rank": 9,
+    "exact_CP_atom_count": 11,
+    "positive_support_requirements": [
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ],
+      [
+        8
+      ],
+      [
+        9
+      ]
+    ],
+    "target_Gram_exact": [
+      [
+        "1/16",
+        "0",
+        "1/48",
+        "1/48",
+        "1/48",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/16",
+        "1/48",
+        "1/48",
+        "1/48",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/48",
+        "1/48",
+        "1/24",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/48",
+        "1/48",
+        "0",
+        "1/24",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "1/48",
+        "1/48",
+        "0",
+        "0",
+        "1/24",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/8",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/8",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/12",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/12",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/12"
+      ]
+    ],
+    "robust_entry_tolerance_exact": "1/40000",
+    "excluded_maximum_atoms": 10,
+    "strict_inequality_left_exact": "5001/16000000",
+    "strict_inequality_right_exact": "6235009/14400000000",
+    "forced_forbidden_entry_lower_exact": "6235009/180036000000",
+    "scope": "The positive entry tolerance is a Gram-matrix certificate. Converting controlled-mean error to this tolerance requires the separately proved finite-clock transfer estimate."
+  },
+  "positive_soft_selectors": {
+    "grid_exact": [
+      "3/8",
+      "7/16",
+      "1/2",
+      "9/16",
+      "5/8",
+      "11/16"
+    ],
+    "off_grid_checks_exact": [
+      "0",
+      "1/4",
+      "1/2",
+      "7/8",
+      "1"
+    ],
+    "selector_degree": 10,
+    "selector_coefficient_l1_exact": [
+      "6517332900",
+      "149073210000",
+      "547637000625",
+      "504702259776",
+      "116656402500",
+      "4327008400"
+    ],
+    "declared_selector_coefficient_l1_bound": "2^70",
+    "scope": "These finite polynomial checks certify the six target values and sample off-grid values; global positivity follows analytically because each selector is a square."
+  },
+  "finite_clock_recovery_budget": {
+    "clock_duration": "log(2)/(8k)",
+    "maximum_clock_letters": 1200,
+    "maximum_horizon": "150log(2)/k",
+    "controlled_mean_tolerance": "2^-3000",
+    "barrier_squared_lower_bound_exact": "1/8",
+    "barrier_squared_upper_bound_exact": "1/2",
+    "sensitivity_interval": "(-1/2,1/2)",
+    "minimum_interpolation_denominator_exact": "3/262144",
+    "expanded_Lagrange_coefficient_mass_bound_exact": "21743271936",
+    "Gram_generator_degree_bound": 42,
+    "Gram_coefficient_mass_bound": "2^289",
+    "log_majorant_constant_exact": "32",
+    "projection_recursion_constant_exact": "19/3",
+    "whole_polynomial_majorant_bound": "2^499",
+    "analytic_tail_upper_bound": "2^-100",
+    "propagated_mean_error_upper_bound": "2^-87",
+    "Gram_entry_threshold_exact": "1/40000",
+    "scope": "Exact rational arithmetic checks the stated constants for total bookkeeping-degree truncation of the entire Gram polynomial. The analytic word-recovery theorem, not this arithmetic, supplies the arbitrary-rival implication."
+  },
+  "finite_entropy_regularization": {
+    "fixture_epsilon_exact": "1/10",
+    "fixture_hidden_EPR": 0.548753656741,
+    "fixture_zero_field_full_EPR": 0.27437682837,
+    "theorem_regularization": "epsilon = delta0/22",
+    "theorem_original_rule_R_exact": "11/4",
+    "theorem_mean_error_bound_over_delta0_exact": "1/2",
+    "sharper_generic_interface_mean_error_bound_over_delta0_exact": "16/33",
+    "zero_field_full_EPR_upper_bound": "log(22/delta0), in units k=1",
+    "scope": "The finite rational mixture verifies stationarity, support and EPR conventions. The theorem-scale tolerance is retained symbolically."
+  },
+  "largest_dense_matrix_dimension": 12,
+  "large_target_allocated": false,
+  "limitations": [
+    "The verifier does not independently prove the all-rival controlled-mean transfer theorem.",
+    "The ten-atom obstruction concerns nonnegative Gram representations and is stronger than ordinary matrix rank.",
+    "Numerical protocol comparisons are finite diagnostics; exact generator intertwining is the structural certificate.",
+    "The target has six original-rule Bell sensitivities in (-1/2,1/2); the comparison permits rival endpoint barriers anywhere in[0,1] and is not the earlier fixed nineteen-level target family."
+  ],
+  "source_sha256": {
+    "verify_finite_advantage.py": "9c67163f9200c5af9e04ab172d5cab27c4e42f0010cf57b3d65dde9054838baf"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe"
+  },
+  "checks": 259
+}

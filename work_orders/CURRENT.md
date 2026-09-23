@@ -1,6 +1,17 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: broader kinetics and the reversal convention — 23 September 2026
+## PRL: a small finite advantage and a force-controlled interpretation — 23 September 2026
+
+Continue the PRL exploration with manuscript drafting deferred. This checkpoint starts from published `c6b81946e6e16145a52862b7c96a3986d1d23a69`, tree `5b0b97559088cb0d4f7aa034908f38b95d7a9c07`, with successful [CI run 35847878583](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35847878583). Preserve all seventy-three baseline verifiers/reports/license/dependency/workflow files, every frozen proof snapshot and the nine recovery files. Non-forced publication authorization remains in effect.
+
+The [finite theorem](../docs/FINITE_REVERSIBILITY_ADVANTAGE.md) gives a twelve-state equilibrium target and an exact eleven-state stationary nonreversible predictor. Ordinary-reversible rivals of at most eleven total states have mean error greater than $2^{-3000}$ under the shared interface, hidden exit cap $2k$, two fields and a finite clock. No rival histogram or label promise is imposed. This is a new six-label, generally uncentered target, not the original nineteen-level family. The eleven-state predictor is unrestricted; no same-size generalized-reversible realization is established. Finite ordinary-EPR regularization keeps eleven states. The tolerance and potentially enormous witness menu give no practical measurement guarantee.
+
+The [single-force model](../docs/SINGLE_FORCE_CONFORMATIONAL_MODEL.md) interprets the rate rule through extension-dependent wells and transition states, with ordinary parity for retained configurations. It remains a stipulated Bell network, not a microscopic molecule or device. [Rate/ramp robustness](../docs/PHYSICAL_INTERFACE_ROBUSTNESS.md) permits weak field-dependent hidden-rate errors with an accuracy floor. [Even-observation closure](../docs/PHYSICAL_REVERSAL_REALIZATION.md) explains why an equilibrium even Markov projection obeys ordinary detailed balance. The earlier generalized-reversal boundary and absence of a universal heat claim remain central.
+
+Next: obtain a useful finite tolerance, investigate stronger small positive realizations, and justify the force model within a conventional microscopic setting. The [research roadmap](../docs/PRL_EXPLORATION.md), [ledger](../docs/CLAIM_LEDGER.md), internal reviews, two source audits and two new verifiers organize the checkpoint. Final verification is recorded separately in [Verification](../docs/VERIFICATION.md). No manuscript or collaborator contact is authorized by this work order.
+
+
+## Historical checkpoint: broader kinetics and the reversal convention — 23 September 2026
 
 Continue the PRL exploration with manuscript drafting deferred. This checkpoint starts from published commit `e38dde1171995892e8a34abc7100b6489ab393bd`, tree `0238889a245e1e8f4b94e8edbd814cd0f3e256f5`, with successful [GitHub Actions run 35845007667](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35845007667). Preserve all seventy-one baseline scripts, reports, license, requirements and workflow, all frozen proof snapshots and the nine recovery files. Existing authorization for non-forced publication remains in effect.
 

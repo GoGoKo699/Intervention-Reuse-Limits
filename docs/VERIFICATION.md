@@ -4,9 +4,24 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-two mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-seven mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
+
+## Current checkpoint: finite advantage and physical robustness
+
+The published baseline `c6b81946e6e16145a52862b7c96a3986d1d23a69` had thirty-five verifiers and successful [CI run 35847878583](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35847878583). This continuation adds two mathematical verifiers without modifying any earlier verifier or saved report.
+
+| New verifier and saved report | Bounded evidence | Maximum dense dimension |
+|---|---|---:|
+| [Finite advantage](../scripts/verify_finite_advantage.py), [report](../reports/finite_advantage.json) | 259 checks: exact target/predictor generators, stationary preparation/readout, all-control intertwining identities, rational spectral-band certificates, positive feature Gram and eleven-atom obstruction, explicit total-degree clock budget, and finite-EPR regularization. | 12 |
+| [Physical robustness](../scripts/verify_physical_robustness.py), [report](../reports/physical_robustness.json) | 104 checks: Bell–Arrhenius reconstruction, common-return lumpability, barrier-only stationarity, row-defect normalization, switched Duhamel identity, reset/weighted/ramp bounds, and even Markov-projection fixtures. | 6 |
+
+The finite verifier binds the frozen [finite theorem](FINITE_REVERSIBILITY_ADVANTAGE.md). Its $2^{-3000}$ arithmetic is rational/symbolic; the program does not enumerate the enormous finite protocol menu or represent that tolerance in ordinary floating point. The physical verifier binds the [robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md), [single-force](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) and [reversal-closure](PHYSICAL_REVERSAL_REALIZATION.md) snapshots. Both source programs received separate full code reviews and independent pinned reruns with byte-identical reports. The [finite proof review](FINITE_ADVANTAGE_INTERNAL_REVIEW.md) and [physical proof review](PHYSICAL_MODEL_INTERNAL_REVIEW.md) record analytic review separately.
+
+The completed local `make check PYTHON=.venv/bin/python` gate passed all **37** mathematical verifiers under Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. All 37 fresh reports match their saved bytes. The 73 protected baseline files (35 verifiers, 35 reports, license, requirements and workflow) are unchanged, as are all nine recovery files relative to archive commit `ee4e5173ea6a9dd0a54e2d558e83a0ad3a1ad620`. The repository checker passes 38 Python syntax checks, local documentation links and saved source/proof hashes; `git diff --check` passes. The full suite's earlier maximum dense dimension remains 68.
+
+Remote CI belongs to the actual published commit and must be checked separately from this local result. The preceding run linked above certifies the baseline only. The new checkpoint's workflow is triggered by its non-forced publication; its live result and exact commit are reported after that publication.
 
 ## Original checkpoint
 
@@ -435,6 +450,8 @@ python scripts/verify_binary_uncapped_observability.py --output reports/binary_u
 python scripts/verify_fixed_clock_observability.py --output reports/fixed_clock_observability.json
 python scripts/verify_prl_exploration.py --output reports/prl_exploration.json
 python scripts/verify_kinetic_parity.py --output reports/kinetic_parity.json
+python scripts/verify_finite_advantage.py --output reports/finite_advantage.json
+python scripts/verify_physical_robustness.py --output reports/physical_robustness.json
 make check
 ```
 

@@ -10,6 +10,22 @@ The [new comparison](docs/KINETIC_PARITY_RESOURCE_TRADEOFF.md) allows arbitrary 
 
 **Research package for eventual drafting:** start with the [research dossier](docs/RESEARCH_DOSSIER.md) for the model, quantifiers, assumptions and dependencies. The [claim ledger](docs/CLAIM_LEDGER.md) maps results to proofs, finite checks and source comparisons. [Verification](docs/VERIFICATION.md) records reproducibility. Manuscript drafting remains the final step.
 
+## A small certified example: twelve states versus eleven
+
+The [finite construction](docs/FINITE_REVERSIBILITY_ADVANTAGE.md) gives an equilibrium target with **12 total states** and a stationary nonreversible predictor with **11 total states** that reproduces every controlled mean exactly. Every ordinary-reversible rival with at most 11 total states, in the specified shared kinetic interface and hidden exit budget $2k$, has mean error greater than
+
+$$
+\delta_0=2^{-3000}.
+$$
+
+Only fields $0,\log2$ are needed for the lower, at clock $(\log2)/(8k)$ and with at most 1200 ticks per witness. Rivals need no target labels or histogram. The target has hidden band $[k,3k]$ and an exact two-state passive visible law. Its six kinetic labels form a new, generally uncentered target; it is separate from the nineteen-level asymptotic family below.
+
+The construction compares six edge-memory states of a five-vertex graph with five states that store the next probe. A stochastic intertwiner proves exact controlled equivalence. Ordinary reversibility instead forces a nonnegative Gram representation requiring eleven hidden states, plus the visible state. A robust counting argument and finite-clock scalar recovery turn this into the positive-error certificate. The smaller predictor is **unrestricted, not a proved eleven-state generalized-reversible model**. It can also be regularized on the same states to finite ordinary entropy production at error at most $\delta_0/2$.
+
+This resolves existence of a small finite-accuracy state advantage. The certified tolerance is extremely small and gives no practical measurement or sample guarantee. The [internal review](docs/FINITE_ADVANTAGE_INTERNAL_REVIEW.md), [verifier](scripts/verify_finite_advantage.py), [report](reports/finite_advantage.json) and [source comparison](docs/FINITE_ADVANTAGE_SOURCE_AUDIT.md) distinguish the new controlled certificate from established completely positive matrix theory.
+
+A [single-force conformational model](docs/SINGLE_FORCE_CONFORMATIONAL_MODEL.md) supplies both the equilibrium bias and heterogeneous escape rates through different transition-state extensions. Its configuration states have ordinary physical reversal. This is a stipulated Bell–Arrhenius network, not a demonstrated molecule. [Rate and ramp robustness](docs/PHYSICAL_INTERFACE_ROBUSTNESS.md) permits small interface errors with an explicit accuracy floor; [Markov-closure results](docs/PHYSICAL_REVERSAL_REALIZATION.md) explain why even equilibrium configurations cannot acquire a nonreversible Markov generator by hiding an equilibrium phase.
+
 ## The reversal convention changes prediction state cost
 
 The target is the original nineteen-level family with hidden relaxation band $[k,3k]$ and an exact two-state passive visible law. Rivals may create arbitrary new states and choose state-specific barrier functions in
@@ -48,7 +64,7 @@ Here $\sigma_0^{\rm id}$ is stationary zero-field entropy production under ident
 
 Polynomial predictors can have finite identity-reversal entropy production and exactly zero entropy production under their generalized reversal. Thus the identity-reversal frontier remains meaningful for physically even retained configurations, but cannot be interpreted as an implementation-independent dissipation cost. It is also distinct from total entropy production during a driven protocol.
 
-Without a common rival rate cap, the [general kinetic-interface theorem](docs/GENERAL_KINETIC_INTERFACE.md) retains polynomial unrestricted growth on two fields and the weaker ordinary lower $\exp(\exp(c[\log(1/\delta)]^{1/5}))$. The same target band is retained. Stronger uncapped growth, a small certified finite-accuracy advantage, and a separation in a recognizable physical model class remain open.
+Without a common rival rate cap, the [general kinetic-interface theorem](docs/GENERAL_KINETIC_INTERFACE.md) retains polynomial unrestricted growth on two fields and the weaker ordinary lower $\exp(\exp(c[\log(1/\delta)]^{1/5}))$. The same target band is retained. Stronger uncapped growth, a useful finite tolerance and a demonstrated physical implementation remain open.
 
 The [internal review](docs/KINETIC_PARITY_INTERNAL_REVIEW.md), [bounded verifier](scripts/verify_kinetic_parity.py), [report](reports/kinetic_parity.json) and [primary-source comparison](docs/KINETIC_PARITY_SOURCE_AUDIT.md) record distinct evidence. Word reversal, kinetic-barrier freedom and generalized balance have established antecedents; the complete controlled-prediction comparison is the claim under investigation. The historical results below retain their original scope.
 
