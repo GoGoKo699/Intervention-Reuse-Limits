@@ -1,6 +1,14 @@
 # Current work order: complete the research package before manuscript drafting
 
-## Uncapped reversibility and bounded observation — 23 September 2026
+## Binary uncapped reversibility — 23 September 2026
+
+This continuation starts from published commit 63f6be5f05af145948334324681cfaf48fe715b6, whose tree matches the locally tested checkpoint. [GitHub Actions run 35820205357](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35820205357) passed the preceding thirty-one-verifier gate. Preserve the sixty-five baseline mathematical scripts, reports, license, dependencies and workflow, and the nine recovery files.
+
+The [new binary uncapped theorem](../docs/BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) establishes a polynomial nonreversible sufficient state count and reversible lower $\exp(\exp(c_H\sqrt{\log(1/\delta)}))$ on one new balanced binary target family. Neither rival class has a rate cap. Both retain the original rule, histogram, preparation and readout. The target has a uniform positive gap and fixed cap, but uses rare tags, a distant balancing state and a very large rate-to-gap ratio. Five fixed fields with arbitrarily rapid switching suffice. A matching polynomial unrestricted lower is available on the theorem's explicit union with the older binary family, not claimed on the tagged family alone.
+
+The [target construction](../docs/BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md), [mixed observation interface](../docs/MIXED_KILLED_WORD_OBSERVABILITY.md) and [weighted whole-word repair](../docs/WEIGHTED_WHOLE_WORD_REPAIR.md) have written proofs and separate internal audits. The [word-boundary note](../docs/BINARY_UNCAPPED_RESEARCH_BOUNDARY.md) records exact small counterexamples and the remaining scope of PSD obstructions. The [primary-source comparison](../docs/BINARY_OBSERVATION_PRIOR_ART.md), dossier and ledger distinguish this theorem from binary identification, topology changes and non-Markovian dwell-time reductions. All new code is bounded exact verification; no large target is enumerated. Manuscript drafting remains on hold.
+
+## Historical checkpoint: uncapped reversibility and bounded observation — 23 September 2026
 
 This continuation starts from published `7f127f224eb8fe93d360a0d44b56105f8a388ce0`, whose tree matches the tested checkpoint. [GitHub Actions run 35818141188](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35818141188) passed the preceding thirty-verifier gate. Publication authorization remains in effect; preserve non-forced history.
 
@@ -192,7 +200,7 @@ The original exact and finite-accuracy cubic results, their two-state witnesses,
 
 ## Scientific position
 
-The main candidate is now an uncapped superpolynomial cost of ordinary reversibility for controlled prediction on the nineteen-level family. The balanced binary theorem supplies the stronger exponential-versus-polynomial growth class at budget $6580k$ and band $[k,13160k]$, including each fixed positive control clock. The nineteen-level targets retain band $[k,3k]$; their uncapped lower uses arbitrarily fast switching. The complementary passive/step/switching and aggregation results retain their separate competitor classes.
+The main candidate is now an uncapped superpolynomial cost of ordinary reversibility with a balanced binary actuator. The tagged binary family has a polynomial unrestricted upper and the stated superpolynomial reversible lower; its explicit union with the older binary family has polynomial unrestricted growth. Rare weights and very large fixed target rate-to-gap constants must remain visible. The nineteen-level uncapped result retains band $[k,3k]$, while the older binary fixed-budget result retains the stronger growth class and every fixed positive clock. The new theorem does not inherit those advantages.
 
 All constructors receive a known target. Approximate full path-law error over all horizons, noisy arbitrary-process learning, parameter precision, running time, and a molecular implementation are not established. The model's kinetic field rule is specified; equilibrium detailed balance alone would not determine it.
 
@@ -200,13 +208,13 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 ## Single next research priority
 
-**Extend the uncapped superpolynomial separation to a balanced binary actuator.**
+**Establish an uncapped superpolynomial reversibility penalty at a fixed positive control clock.**
 
-The nineteen-level uncapped penalty is now proved through bounded resolvent observations; it must not remain listed as only qualitative. Its distinct observable port projections have no immediate counterpart in the binary rival, whose marker is a general positive operator. Seek positive, observable bounded words compatible with the binary weighted normalization and transport repair. The existing palindromic heat/resolvent replacement is obstructed by positive semidefiniteness, so that literal substitution does not solve the extension. Keep the original field rule, exact balanced histogram, preparation and readout, count all new states, and state control-clock requirements explicitly.
+Binary uncapped existence is now proved on the tagged family. The remaining clock question concerns the actual mean norm restricted to a fixed five- or thirty-nine-field menu with durations in $(a/k)\mathbb N$, for each fixed $a>0$. Both uncapped observation interfaces use rapid switching for physical convexification; replacing that step needs a new argument. The fixed-target Walsh hierarchy and qualitative fixed-budget closure do not settle a worst-case polynomial-versus-superpolynomial comparison.
 
-The stronger uncapped lower $\exp(c\delta^{-\alpha})$ and a fixed-clock uncapped superpolynomial penalty remain distinct open questions. The new Walsh hierarchy is an all-rival fixed-target rank statement and does not settle either. Direct cap-independent recovery of untrimmed generator moments remains ruled out by the rare-fast-component construction. Keep local verification, live CI and external mathematical review separate.
+Keep the same original field rule, exact histogram, preparation/readout and physical-state count. The stronger uncapped law $\exp(c\delta^{-\alpha})$, a smaller target rate-to-gap ratio, and an uncapped lower on the older binary target family remain separate goals. The rare-fast-state raw-moment obstruction still holds. Neither a negative binary scalar nor a positive partial-flip entropy lemma substitutes for a complete target-to-observation-to-repair proof. Keep local verification, live CI and external mathematical review separate.
 
-A parallel refinement is to reduce the binary gadget's rate-to-gap ratio, especially toward the original target band $[k,3k]$ and common exit budget $3k$. The binary theorem already removes the finite-alphabet obstacle at a larger constant budget; do not describe the general fixed-budget binary question as unresolved. The present number $6580$ is a sufficient construction constant, not an optimal threshold. Arbitrary fixed labels on the earlier expander class remain a separate tight-band subquestion.
+A parallel refinement is to reduce the binary gadget's rate-to-gap ratio, especially toward the original target band $[k,3k]$ and common exit budget $3k$. The binary theorem already removes the finite-alphabet obstacle at a larger constant budget; do not describe the general fixed-budget binary question as unresolved. The old number $6580$ is a sufficient fixed-budget construction constant, not an optimal threshold. The new tagged uncapped family has a much larger fixed ratio and does not improve that numerical budget. Arbitrary fixed labels on the earlier expander class remain a separate tight-band subquestion.
 
 Retain ordinary detailed balance, stationary preparation, exact balanced histogram, original kinetic rule, fixed binary readout, and the all-protocol/all-horizon actual-mean norm. Allowing arbitrary reversible field dependence would change the competitor class further and must be investigated separately. State count does not charge sample complexity, parameter precision or runtime. Constructors receive the full target.
 

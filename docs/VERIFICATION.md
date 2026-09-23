@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-one mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-two mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -334,7 +334,27 @@ Small Walsh examples check orthogonality, physical preparation/readout endpoints
 
 The source and final error budgets received an independent internal static review. The saved report records the verifier source hash and hashes of the three new mathematical proof snapshots. The repository checker validates both kinds of provenance. The [source comparison](BOUNDED_WORD_RECOVERY_PRIOR_ART.md) records verified primary full texts and limits the novelty assessment to the complete constrained theorem.
 
-The complete thirty-one-verifier `make check` passed locally in pinned Python 3.13.5. All thirty-one fresh JSON reports are byte-identical to saved evidence. All sixty-three protected files from the starting commit and all nine recovery files remain byte-identical. Documentation, syntax and source/proof-snapshot provenance checks pass. Live CI for this continuation is checked separately after publication.
+The complete thirty-one-verifier `make check` passed locally in pinned Python 3.13.5. All thirty-one fresh JSON reports are byte-identical to saved evidence. All sixty-three protected files from the starting commit and all nine recovery files remain byte-identical. Documentation, syntax and source/proof-snapshot provenance checks pass. This checkpoint was published as 63f6be5f05af145948334324681cfaf48fe715b6 with tree 3d0ea4f5771a0647a4449fcccadb7dab5234b6e9 matching the tested tree. [GitHub Actions run 35820205357](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35820205357) completed successfully.
+
+## Binary uncapped checkpoint
+
+This continuation starts from published 63f6be5f05af145948334324681cfaf48fe715b6. The preceding thirty-one mathematical scripts and thirty-one reports, MIT license, pinned requirements and workflow are protected baselines. The nine recovery files are preserved separately. Manuscript drafting is excluded.
+
+The [binary uncapped theorem](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) has a complete proof through the [rare-tag construction](BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md), [mixed observation interface](MIXED_KILLED_WORD_OBSERVABILITY.md) and [weighted whole-word repair](WEIGHTED_WHOLE_WORD_REPAIR.md). Separate internal reviews checked all four documents and the combined error budget. The reviews covered exact binary balance, every counted state, uniform gap and cap, distance-weighted killed propagation, two-distance suppression of balancing-state corrections, small selector normalizations, positive gates on arbitrary rival states, vanishing central mass, polynomial word budgets and entropy inversion.
+
+The theorem establishes a polynomial unrestricted upper and an uncapped reversible superpolynomial lower on the new tagged family. Its explicit union with the older binary family adds a polynomial unrestricted lower. The new family has rare states and a very large fixed rate-to-gap ratio; the lower uses arbitrarily fast switching. The older numerical rate budget, fixed-clock uncapped result and stronger $\exp(c\delta^{-\alpha})$ uncapped lower are not claimed. The [source comparison](BINARY_OBSERVATION_PRIOR_ART.md) records primary full-text comparisons and access limits without certifying originality.
+
+[verify_binary_uncapped_observability.py](../scripts/verify_binary_uncapped_observability.py) produces [binary_uncapped_observability.json](../reports/binary_uncapped_observability.json) using only exact standard-library rational arithmetic and finite enumeration. It has no imports from earlier repository verifiers. The saved report records its own source and the five new mathematical proof snapshots; the repository checker validates these hashes.
+
+Three-state balanced examples verify positive binary words with negative quadratic forms for both a resolvent and its square, and the failure of a color-only palindrome test with unequal resolvent parameters. The [boundary note](BINARY_UNCAPPED_RESEARCH_BOUNDARY.md) proves the exact scope of those examples and the remaining PSD subclass. Neither a negative scalar nor these examples alone establishes a state-count lower.
+
+Independent ordered coefficient calculations check mixed resolvent polarization with noncommuting rational contraction factors and cross-color leading cancellation. The contraction factors are finite algebraic proxies: the script does not claim to evaluate the general killed semigroup. Weighted examples include zero support, tiny positive marker values, the exact change of measure and scalar identities; finite stationary couplings check the partial-flip entropy mechanism.
+
+An eight-state tag-and-chain toy checks positive rates, detailed balance, exact histogram, the original field rule and a positive fast-sector certificate. Exact rational exponent inequalities cover all eighteen canonical tag types, their discrimination margins, the distant-state error budgets, and the full theorem's word-count and extraction-tail bounds. The enormous canonical chains and bit tables are counted analytically and never allocated.
+
+The new maximum dense dimension is eight; the suite-wide maximum remains 68. The finite verifier received independent internal static review. Its checks support the displayed algebra and error budgets, while the universal propagation estimates, physical analytic continuation and asymptotic state laws remain analytic proofs. Local verification, remote CI and external mathematical review are distinct forms of evidence.
+
+The complete thirty-two-verifier gate passed locally in pinned Python 3.13.5. All thirty-two fresh reports are byte-identical to saved evidence. The final repository checker passes 1,090 local Markdown links, 33 Python syntax checks, saved-source/proof-snapshot provenance and the unchanged license. All sixty-five protected baseline files and all nine recovery files remain byte-identical. Remote CI for this new continuation is checked separately after publication.
 
 ## Updating evidence after code changes
 
@@ -371,6 +391,7 @@ python scripts/verify_dynamic_lamp_reversibility_lower_bound.py --output reports
 python scripts/verify_binary_reversibility_lower_bound.py --output reports/binary_reversibility_lower_bound.json
 python scripts/verify_state_speed_boundary.py --output reports/state_speed_boundary.json
 python scripts/verify_uncapped_observability.py --output reports/uncapped_observability.json
+python scripts/verify_binary_uncapped_observability.py --output reports/binary_uncapped_observability.json
 make check
 ```
 

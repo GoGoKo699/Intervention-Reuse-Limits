@@ -37,3 +37,4 @@ check:
 	$(PYTHON) scripts/verify_binary_reversibility_lower_bound.py --output .check-output/binary_reversibility_lower_bound.json
 	$(PYTHON) scripts/verify_state_speed_boundary.py --output .check-output/state_speed_boundary.json
 	$(PYTHON) scripts/verify_uncapped_observability.py --output .check-output/uncapped_observability.json
+	$(PYTHON) scripts/verify_binary_uncapped_observability.py --output .check-output/binary_uncapped_observability.json

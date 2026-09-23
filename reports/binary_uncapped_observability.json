@@ -1,0 +1,838 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Standard-library fractions.Fraction and exact integers only",
+  "binary_PSD_route_boundaries": {
+    "hidden_states": 3,
+    "P_word_quadratic_exact": "-1/7986",
+    "P_squared_word_quadratic_exact": "-125989/286992882",
+    "unequal_parameter_quadratic_exact": "-1/14850",
+    "scope": "Mathematical probe and marginal counterexamples only; no physical gate or new readout is asserted."
+  },
+  "mixed_resolvent_parity": [
+    {
+      "pulse_count": 2,
+      "s_exact": "7",
+      "leading_coefficient_exact": "77887232/37570872843",
+      "higher_parity_coefficient_exact": "388618922925824/7151886494087375187",
+      "mixed_word_exact": "77887232/766752507",
+      "fixed_blocks": "Rational contraction proxies, not semigroup evaluations"
+    },
+    {
+      "pulse_count": 3,
+      "s_exact": "7",
+      "leading_coefficient_exact": "153687477248/2316775670258301",
+      "higher_parity_coefficient_exact": "2214353957851136/863042955908952030219",
+      "mixed_word_exact": "-7530686385152/330967952894043",
+      "fixed_blocks": "Rational contraction proxies, not semigroup evaluations"
+    }
+  ],
+  "normalized_cross_color_cancellation": {
+    "target_spectral_cap": 8,
+    "kappa_exact": "1/1000",
+    "examples": [
+      {
+        "s_exact": "8",
+        "cross_error_weighted_Frobenius_squared": "165435049801/555618219552",
+        "normalized_error_weighted_Frobenius_squared": "8387236641694045038181000000/301476177634896948321"
+      },
+      {
+        "s_exact": "32",
+        "cross_error_weighted_Frobenius_squared": "11485286620589581/2582033880739963392",
+        "normalized_error_weighted_Frobenius_squared": "2534661466732287989088979440450880000000/228889811140448301203898962682729"
+      },
+      {
+        "s_exact": "128",
+        "cross_error_weighted_Frobenius_squared": "1406462096563026406788401/49542890462002274632064704512",
+        "normalized_error_weighted_Frobenius_squared": "488118011694883183661438856134071363753629208202929000000/329173832505488449547380420568361822215157768019689"
+      }
+    ],
+    "scope": "Target-side cancellation only; no rival generator norm is used or inferred."
+  },
+  "weighted_whole_word_change_of_measure": {
+    "states": 5,
+    "support_states": 4,
+    "u_exact": [
+      "1/1000",
+      "1/2",
+      "1",
+      "2",
+      "0"
+    ],
+    "normalization_Z_exact": "8/4000021",
+    "changed_law_exact": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "Delta_exact": "1/100000",
+    "max_original_kernel_row_sums_exact": [
+      "1000001/2000",
+      "1000001/1000"
+    ],
+    "scope": "Exact finite change of measure and scalar identities; no minimum coordinate or uniform raw row bound is assumed."
+  },
+  "partial_flip_entropy_combinatorics": [
+    {
+      "support_states": 8,
+      "entropy_exact_bits": "3",
+      "partial_flip_lower_bound_exact_bits": "9/8",
+      "coordinates": [
+        {
+          "coordinate": 0,
+          "p_exact": "1/2",
+          "e_exact": "1/8",
+          "conditional_entropy_exact_bits": "1"
+        },
+        {
+          "coordinate": 1,
+          "p_exact": "1/2",
+          "e_exact": "1/8",
+          "conditional_entropy_exact_bits": "1"
+        },
+        {
+          "coordinate": 2,
+          "p_exact": "1/2",
+          "e_exact": "1/8",
+          "conditional_entropy_exact_bits": "1"
+        }
+      ]
+    },
+    {
+      "support_states": 4,
+      "entropy_exact_bits": "2",
+      "partial_flip_lower_bound_exact_bits": "3/4",
+      "coordinates": [
+        {
+          "coordinate": 0,
+          "p_exact": "1/2",
+          "e_exact": "1/8",
+          "conditional_entropy_exact_bits": "1"
+        },
+        {
+          "coordinate": 1,
+          "p_exact": "1/2",
+          "e_exact": "0",
+          "conditional_entropy_exact_bits": "1"
+        },
+        {
+          "coordinate": 2,
+          "p_exact": "0",
+          "e_exact": "1/8",
+          "conditional_entropy_exact_bits": "0"
+        }
+      ]
+    }
+  ],
+  "rare_tag_balancing_chain_toy": {
+    "hidden_states": 8,
+    "total_physical_states_with_visible": 9,
+    "added_chain_states": 2,
+    "a_exact": "11/10",
+    "stationary_weights_exact": [
+      "50/431",
+      "25/431",
+      "25/431",
+      "1/20688",
+      "1/48272",
+      "55/431",
+      "121/862",
+      "36199/72408"
+    ],
+    "binary_color_zero_indices": [
+      0,
+      1,
+      2,
+      5,
+      6
+    ],
+    "maximum_exit_exact": "3622210/2541",
+    "killing_rate": 1000000000,
+    "fast_sector_gap_certificate": 200,
+    "fast_sector_weighted_LDL_pivots_exact": [
+      "49999990100/431",
+      "999999603063539388927/17239996586480",
+      "222222089805915189727057430046353/3831109590403426458911440",
+      "109999912663941002895879538973674474222197160/861999486357145020951255771149803287",
+      "2541001096544564752211386252194329770156805798524326125/18101985627660545767465558313649593930638299912",
+      "18396287324100915290190477749464046880954718446762416929535/183988807398598844578122055748887029997513994259549406059"
+    ],
+    "full_target_gap_lower_bound_exact": "1/100000",
+    "full_gap_reduced_LDL_pivots_exact": [
+      "86199619/371522000",
+      "3506126640503/74304071578000",
+      "485909932387498069/12089124656454344000",
+      "310531257862810857138093/5361335829990698694118400000",
+      "152049413650499158128082274983/5246487707843761993519508853600000",
+      "7066957872682778897606160457679911/55380251225378989143552220155780000",
+      "2358830278349081287123104963528521780167201771/11795780610652675475217060881752524900600000"
+    ],
+    "rational_physical_field_bases": [
+      "1",
+      "3/2",
+      "2/3"
+    ],
+    "physical_gamma_exact": "1/2",
+    "scope": "An eight-state rational structural toy, with different entrance weights and chain length from the asymptotic target. No killed exponential is evaluated."
+  },
+  "canonical_eighteen_type_exponent_certificates": {
+    "N": 1000000,
+    "eta_exact": "1/1000000",
+    "canonical_chain_states_per_n": 100000000,
+    "canonical_chain_constructed": false,
+    "exponentials_evaluated": false,
+    "canonical_balancing_weight_ratio_upper_exact": "1000003",
+    "port_mass_lower_prefactor_before_exp_minus_100n_exact": "1/18000054",
+    "whole_word_budget": {
+      "cross_port_factors_per_q": 60,
+      "selectors_per_q": 122,
+      "pulses_per_q": 488,
+      "interpolation_degree_per_q": 1200,
+      "fixed_log_mass_coefficient_bound": 1708006364,
+      "tail_log_plus_Nq_squared_coefficients_in_q_minus_2": [
+        -10735994220,
+        -20095997112,
+        -7359000000
+      ]
+    },
+    "types": [
+      {
+        "type": 1,
+        "ell_exact": "21/20",
+        "phi_exact": "1239/400",
+        "log_lambda_upper_per_Nn": "-4761/400",
+        "log_kappa_per_Nn": "-5559/400",
+        "killed_duration_per_Nn": "19/10",
+        "discrimination_powers_per_Nn": [
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400",
+          "-9/25",
+          "-169/400",
+          "-49/100",
+          "-9/16",
+          "-16/25",
+          "-289/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-3629/400",
+          "-1569/16",
+          "-141881/400",
+          "-3169/16"
+        ]
+      },
+      {
+        "type": 2,
+        "ell_exact": "11/10",
+        "phi_exact": "319/100",
+        "log_lambda_upper_per_Nn": "-1181/100",
+        "log_kappa_per_Nn": "-1379/100",
+        "killed_duration_per_Nn": "9/5",
+        "discrimination_powers_per_Nn": [
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400",
+          "-9/25",
+          "-169/400",
+          "-49/100",
+          "-9/16",
+          "-16/25"
+        ],
+        "contamination_powers_per_Nn": [
+          "-913/100",
+          "-2453/25",
+          "-33541/100",
+          "-4953/25"
+        ]
+      },
+      {
+        "type": 3,
+        "ell_exact": "23/20",
+        "phi_exact": "1311/400",
+        "log_lambda_upper_per_Nn": "-4689/400",
+        "log_kappa_per_Nn": "-5471/400",
+        "killed_duration_per_Nn": "17/10",
+        "discrimination_powers_per_Nn": [
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400",
+          "-9/25",
+          "-169/400",
+          "-49/100",
+          "-9/16"
+        ],
+        "contamination_powers_per_Nn": [
+          "-3677/400",
+          "-39273/400",
+          "-126449/400",
+          "-79273/400"
+        ]
+      },
+      {
+        "type": 4,
+        "ell_exact": "6/5",
+        "phi_exact": "84/25",
+        "log_lambda_upper_per_Nn": "-291/25",
+        "log_kappa_per_Nn": "-339/25",
+        "killed_duration_per_Nn": "8/5",
+        "discrimination_powers_per_Nn": [
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400",
+          "-9/25",
+          "-169/400",
+          "-49/100"
+        ],
+        "contamination_powers_per_Nn": [
+          "-463/50",
+          "-393/4",
+          "-7421/25",
+          "-793/4"
+        ]
+      },
+      {
+        "type": 5,
+        "ell_exact": "5/4",
+        "phi_exact": "55/16",
+        "log_lambda_upper_per_Nn": "-185/16",
+        "log_kappa_per_Nn": "-215/16",
+        "killed_duration_per_Nn": "3/2",
+        "discrimination_powers_per_Nn": [
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400",
+          "-9/25",
+          "-169/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-3733/400",
+          "-39329/400",
+          "-4441/16",
+          "-79329/400"
+        ]
+      },
+      {
+        "type": 6,
+        "ell_exact": "13/10",
+        "phi_exact": "351/100",
+        "log_lambda_upper_per_Nn": "-1149/100",
+        "log_kappa_per_Nn": "-1331/100",
+        "killed_duration_per_Nn": "7/5",
+        "discrimination_powers_per_Nn": [
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400",
+          "-9/25"
+        ],
+        "contamination_powers_per_Nn": [
+          "-941/100",
+          "-492/5",
+          "-25829/100",
+          "-992/5"
+        ]
+      },
+      {
+        "type": 7,
+        "ell_exact": "27/20",
+        "phi_exact": "1431/400",
+        "log_lambda_upper_per_Nn": "-4569/400",
+        "log_kappa_per_Nn": "-5271/400",
+        "killed_duration_per_Nn": "13/10",
+        "discrimination_powers_per_Nn": [
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4",
+          "-121/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-3797/400",
+          "-39393/400",
+          "-95609/400",
+          "-79393/400"
+        ]
+      },
+      {
+        "type": 8,
+        "ell_exact": "7/5",
+        "phi_exact": "91/25",
+        "log_lambda_upper_per_Nn": "-284/25",
+        "log_kappa_per_Nn": "-326/25",
+        "killed_duration_per_Nn": "6/5",
+        "discrimination_powers_per_Nn": [
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400",
+          "-1/4"
+        ],
+        "contamination_powers_per_Nn": [
+          "-479/50",
+          "-9857/100",
+          "-5494/25",
+          "-19857/100"
+        ]
+      },
+      {
+        "type": 9,
+        "ell_exact": "29/20",
+        "phi_exact": "1479/400",
+        "log_lambda_upper_per_Nn": "-4521/400",
+        "log_kappa_per_Nn": "-5159/400",
+        "killed_duration_per_Nn": "11/10",
+        "discrimination_powers_per_Nn": [
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25",
+          "-81/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-3869/400",
+          "-7893/80",
+          "-80201/400",
+          "-15893/80"
+        ]
+      },
+      {
+        "type": 10,
+        "ell_exact": "3/2",
+        "phi_exact": "15/4",
+        "log_lambda_upper_per_Nn": "-45/4",
+        "log_kappa_per_Nn": "-51/4",
+        "killed_duration_per_Nn": "1",
+        "discrimination_powers_per_Nn": [
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400",
+          "-4/25"
+        ],
+        "contamination_powers_per_Nn": [
+          "-977/100",
+          "-2469/25",
+          "-725/4",
+          "-4969/25"
+        ]
+      },
+      {
+        "type": 11,
+        "ell_exact": "31/20",
+        "phi_exact": "1519/400",
+        "log_lambda_upper_per_Nn": "-4481/400",
+        "log_kappa_per_Nn": "-5039/400",
+        "killed_duration_per_Nn": "9/10",
+        "discrimination_powers_per_Nn": [
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100",
+          "-49/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-3949/400",
+          "-7909/80",
+          "-64801/400",
+          "-15909/80"
+        ]
+      },
+      {
+        "type": 12,
+        "ell_exact": "8/5",
+        "phi_exact": "96/25",
+        "log_lambda_upper_per_Nn": "-279/25",
+        "log_kappa_per_Nn": "-311/25",
+        "killed_duration_per_Nn": "4/5",
+        "discrimination_powers_per_Nn": [
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16",
+          "-9/100"
+        ],
+        "contamination_powers_per_Nn": [
+          "-499/50",
+          "-9897/100",
+          "-3569/25",
+          "-19897/100"
+        ]
+      },
+      {
+        "type": 13,
+        "ell_exact": "33/20",
+        "phi_exact": "1551/400",
+        "log_lambda_upper_per_Nn": "-4449/400",
+        "log_kappa_per_Nn": "-4911/400",
+        "killed_duration_per_Nn": "7/10",
+        "discrimination_powers_per_Nn": [
+          "-9/25",
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25",
+          "-1/16"
+        ],
+        "contamination_powers_per_Nn": [
+          "-4037/400",
+          "-39633/400",
+          "-49409/400",
+          "-79633/400"
+        ]
+      },
+      {
+        "type": 14,
+        "ell_exact": "17/10",
+        "phi_exact": "391/100",
+        "log_lambda_upper_per_Nn": "-1109/100",
+        "log_kappa_per_Nn": "-1211/100",
+        "killed_duration_per_Nn": "3/5",
+        "discrimination_powers_per_Nn": [
+          "-169/400",
+          "-9/25",
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400",
+          "-1/25"
+        ],
+        "contamination_powers_per_Nn": [
+          "-1021/100",
+          "-496/5",
+          "-10429/100",
+          "-996/5"
+        ]
+      },
+      {
+        "type": 15,
+        "ell_exact": "7/4",
+        "phi_exact": "63/16",
+        "log_lambda_upper_per_Nn": "-177/16",
+        "log_kappa_per_Nn": "-191/16",
+        "killed_duration_per_Nn": "1/2",
+        "discrimination_powers_per_Nn": [
+          "-49/100",
+          "-169/400",
+          "-9/25",
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100",
+          "-9/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-4133/400",
+          "-39729/400",
+          "-1361/16",
+          "-79729/400"
+        ]
+      },
+      {
+        "type": 16,
+        "ell_exact": "9/5",
+        "phi_exact": "99/25",
+        "log_lambda_upper_per_Nn": "-276/25",
+        "log_kappa_per_Nn": "-294/25",
+        "killed_duration_per_Nn": "2/5",
+        "discrimination_powers_per_Nn": [
+          "-9/16",
+          "-49/100",
+          "-169/400",
+          "-9/25",
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400",
+          "-1/100"
+        ],
+        "contamination_powers_per_Nn": [
+          "-523/50",
+          "-1989/20",
+          "-1646/25",
+          "-3989/20"
+        ]
+      },
+      {
+        "type": 17,
+        "ell_exact": "37/20",
+        "phi_exact": "1591/400",
+        "log_lambda_upper_per_Nn": "-4409/400",
+        "log_kappa_per_Nn": "-4631/400",
+        "killed_duration_per_Nn": "3/10",
+        "discrimination_powers_per_Nn": [
+          "-16/25",
+          "-9/16",
+          "-49/100",
+          "-169/400",
+          "-9/25",
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0",
+          "-1/400"
+        ],
+        "contamination_powers_per_Nn": [
+          "-4237/400",
+          "-39833/400",
+          "-18649/400",
+          "-79833/400"
+        ]
+      },
+      {
+        "type": 18,
+        "ell_exact": "19/10",
+        "phi_exact": "399/100",
+        "log_lambda_upper_per_Nn": "-1101/100",
+        "log_kappa_per_Nn": "-1139/100",
+        "killed_duration_per_Nn": "1/5",
+        "discrimination_powers_per_Nn": [
+          "-289/400",
+          "-16/25",
+          "-9/16",
+          "-49/100",
+          "-169/400",
+          "-9/25",
+          "-121/400",
+          "-1/4",
+          "-81/400",
+          "-4/25",
+          "-49/400",
+          "-9/100",
+          "-1/16",
+          "-1/25",
+          "-9/400",
+          "-1/100",
+          "-1/400",
+          "0"
+        ],
+        "contamination_powers_per_Nn": [
+          "-1073/100",
+          "-2493/25",
+          "-2741/100",
+          "-4993/25"
+        ]
+      }
+    ],
+    "scope": "Exact coefficients of n in exponent bounds; fixed constants and polynomial factors still require the sufficiently-large-n argument in the proof."
+  },
+  "largest_dense_matrix_dimension": 8,
+  "full_asymptotic_target_allocated": false,
+  "limitations": [
+    "Finite exact fixtures do not prove analytic continuation, all-model mixed-word observability, semigroup estimates, whole-word repair, or the asymptotic lower theorem.",
+    "Inserted rational contractions test the ordered algebra and are not numerical evaluations of killed semigroups.",
+    "The short-chain eight-state toy is not the asymptotic target and does not validate its uniform gap or distant-boundary estimates by simulation.",
+    "Canonical exponent arithmetic does not evaluate tiny rates, long-chain matrices, or asymptotic thresholds that absorb fixed constants.",
+    "No fixed positive control clock, finite switching budget, or rate cap on a rival is inferred."
+  ],
+  "source_sha256": {
+    "verify_binary_uncapped_observability.py": "c3b018baeac092a7f30dfc47930dc64ecd5158fb6cd9a77d2d06ef6dba5b3a10"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/MIXED_KILLED_WORD_OBSERVABILITY.md": "f90e3e811b77f072147664424132e47ecb120aa7d3aabec2e1456241065f7179",
+    "docs/WEIGHTED_WHOLE_WORD_REPAIR.md": "0696d5ea5fb3e8aba1b13fb9a7966c4bfaa66d1fc24a6fcc159c279ebecd34d0",
+    "docs/BINARY_UNCAPPED_RESEARCH_BOUNDARY.md": "86e28e6433be641259140e2abf6896a36de23d99577e2d0d76a4dac8fb61bd3d",
+    "docs/BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md": "e80f4d4f61e1783b72bd810a884c5603a5466a732d1d4b5037a27a60fd448ee5",
+    "docs/BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "f5291c164ea87fa26c4ae64f15498951db3d17f32ec95bcea9ac64786eef35d2"
+  },
+  "exact_checks": 1020
+}
