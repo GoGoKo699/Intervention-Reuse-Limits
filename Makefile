@@ -44,3 +44,5 @@ check:
 	$(PYTHON) scripts/verify_finite_advantage.py --output .check-output/finite_advantage.json
 	$(PYTHON) scripts/verify_physical_robustness.py --output .check-output/physical_robustness.json
 	$(PYTHON) scripts/verify_finite_minimality.py --output .check-output/finite_minimality.json
+	$(PYTHON) scripts/verify_rational_observation.py --output .check-output/rational_observation.json
+	$(PYTHON) scripts/verify_symmetric_compression.py --output .check-output/symmetric_compression.json

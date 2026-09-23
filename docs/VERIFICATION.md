@@ -4,11 +4,43 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-eight mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: finite minimality and improved precision
+## Current checkpoint: rational observation and symmetry compression
+
+The published baseline `a60dee50b8728fb15717d9f06f3876fdf9f67b4a`, tree `41ce1198905603e5d9061060510d5066fe102a6b`, had thirty-eight verifiers and successful [CI run 35856173987](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35856173987). This continuation adds two verifiers while preserving all 79 baseline verifiers, saved reports, license, dependency and workflow files, all earlier bound proof snapshots, and all nine recovery files.
+
+| New verifier and saved report | Evidence | Checks | Maximum dense dimension |
+|---|---|---:|---:|
+| [Rational observation](../scripts/verify_rational_observation.py), [report](../reports/rational_observation.json) | Essential exact certificate for the ten-function target basis, complete 12,766-word menu enumeration, rational selector identities and universal-transfer constants. | 98 | 12 |
+| [Symmetry compression](../scripts/verify_symmetric_compression.py), [report](../reports/symmetric_compression.json) | Exact target/quotient and detailed-balance identities, cap/band, all 66 contraction pairs per field, odd-sector/source constants, plus bounded switched-propagator implementation diagnostics. | 283 | 12 |
+
+The rational basis premise is computer-assisted with rigorous integer/fraction arithmetic. A dyadic matrix enclosure with explicit logarithm, Taylor and rounding errors establishes a weighted Gram lower bound $2^{-52}I$. No floating eigensolver or exponential is used as proof. The rest of the [new observation theorem](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) analytically transfers finite mean agreement to positive features in every admissible reversible rival. The report binds that proof and six frozen prerequisites. Its arithmetic establishes ordinary minimum twelve at mean error $2^{-220}$, with an unrestricted sufficient count eleven. It does not extend the older unrestricted minimum to this larger tolerance.
+
+The finite menu is completely reproducible without storing a large word list. From the repository root:
+
+```sh
+python scripts/verify_rational_observation.py --output .check-output/rational_observation.json --menu-output .check-output/rational_observation_menu.json
+```
+
+The export has 12,766 words, maximum length 66, and SHA-256 `03b25dbba22ad0f560ea023464921b71d011843bea5fce354c056d341e64a079`. Independent enumeration from the raw word grammar reproduced the entire menu and checksum. This is an explicit experiment specification, not a practical precision or sample guarantee.
+
+The [symmetry proof](SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md) gives a nine-state ordinary-reversible approximation at uniform two-field error $1/2376$. Its all-protocol bound is analytic. The verifier's seven deterministic protocol samples, at most 64 segments, and three amplitude comparisons check the implementation only; they neither optimize over rivals nor establish the uniform theorem. The separate all-field bound permits arithmetic averages of barrier curves and is distinguished from the exponential endpoint implementation.
+
+Both programs received independent full source reviews and pinned Python 3.13.5 reruns with byte-identical reports. The symmetry report schema was aligned with the repository's `source_sha256` and `proof_snapshot_sha256` provenance fields before the full gate; the mathematical assertions were unchanged. Final source and report digests are:
+
+| Verifier | Source SHA-256 | Report SHA-256 |
+|---|---|---|
+| Rational observation | `ce9e33d7bba0c863b809cde813db91f3f968a1702e2e6952d3e9c2010c26ad0c` | `e708e1b6fd53ef3995fd9f1089f0ec635833234b6f6c08b57c172a246f7c2d43` |
+| Symmetry compression | `e91d00de4654e6ca89e05de29dfb5593cb7f214dc93515ee7ecdd05abd8aecad` | `40cab5d956e15ba3f4ae5592262757b40bafd5c75065c9c4f0d6b555255c03ad` |
+
+The [internal review](RATIONAL_OBSERVATION_INTERNAL_REVIEW.md) records independent mathematical review separately from code checks. The [source comparison](RATIONAL_OBSERVATION_SOURCE_AUDIT.md) records six inspected primary full texts and one passage-level source, with explicit access and novelty limits. The fixed matrix and general realization, functional-calculus and response ingredients remain attributed to prior work.
+
+The completed `make check PYTHON=.venv/bin/python` gate passed all **40** mathematical verifiers under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. All forty fresh reports match the saved reports byte for byte. The 79 protected baseline files and all nine recovery files are unchanged. The repository checker passes 41 Python syntax checks, local Markdown links, source/proof provenance and the original MIT license; `git diff --check` passes. The full suite's historical maximum dense dimension remains 68. Remote CI belongs to the published commit and must be checked separately. The baseline run above certifies only `a60dee5`; the new live result is reported after non-forced publication.
+
+## Historical checkpoint: finite minimality and improved precision
 
 The published baseline `720962175fc76e2062e7f2aa4deb1938ba111c77`, tree `e9e51a49936be496f39a3384a8053ee26280eb4c`, had thirty-seven verifiers and successful [CI run 35853478678](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35853478678). This continuation adds one verifier while preserving all 77 baseline verifiers, saved reports, license, dependency and workflow files.
 

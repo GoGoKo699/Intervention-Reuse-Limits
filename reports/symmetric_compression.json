@@ -1,0 +1,134 @@
+{
+  "analytic_constants": {
+    "all_field_mean_upper_exact": "4096/200475",
+    "all_field_scope": "Arithmetic-average barrier curves, not one exponential sensitivity over the full interval.",
+    "eta_over_k_exact": "1/32",
+    "full_law_decay_over_k_exact": "9/8",
+    "odd_decay_over_k_exact": "11/8",
+    "two_field_mean_upper_decimal": 0.000420875420875,
+    "two_field_mean_upper_exact": "1/2376"
+  },
+  "bounded_propagator_diagnostics": {
+    "deterministic_protocol_count": 7,
+    "maximum_segments": 64,
+    "quotient_closure_residuals": [
+      0.0,
+      5.55111512313e-17,
+      1.38777878078e-16,
+      1.38777878078e-16,
+      5.55111512313e-16,
+      8.32667268469e-16,
+      1.11022302463e-15
+    ],
+    "sample_mean_errors": [
+      0.0,
+      5.94822983448e-06,
+      8.31180614916e-06,
+      1.59116546763e-05,
+      1.06085730923e-05,
+      7.21883867619e-06,
+      2.59433740643e-07
+    ],
+    "scope": "Bounded deterministic implementation checks; neither an exhaustive protocol search nor an estimate of optimal rival error.",
+    "symmetry_amplitude_diagnostics": [
+      {
+        "amplitude": 1.0,
+        "mean_error": 1.59116546764e-05
+      },
+      {
+        "amplitude": 0.5,
+        "mean_error": 3.97720642871e-06
+      },
+      {
+        "amplitude": 0.25,
+        "mean_error": 9.9425740907e-07
+      }
+    ]
+  },
+  "checks": 283,
+  "construction": {
+    "Dobrushin_exact_table": {
+      "A-memory": {
+        "high": "37/24",
+        "pairs": 6,
+        "zero": "41/24"
+      },
+      "A-probe": {
+        "high": "57/32",
+        "pairs": 5,
+        "zero": "5/3"
+      },
+      "memory-memory": {
+        "high": "11/8",
+        "pairs": 15,
+        "zero": "2"
+      },
+      "memory-probe incident": {
+        "high": "41/24",
+        "pairs": 12,
+        "zero": "7/3"
+      },
+      "memory-probe nonincident": {
+        "high": "9/8",
+        "pairs": 18,
+        "zero": "7/4"
+      },
+      "probe-probe": {
+        "high": "23/16",
+        "pairs": 10,
+        "zero": "2"
+      }
+    },
+    "quotient_band_lower_LDL_pivots": [
+      "5/36",
+      "3/40",
+      "7/54",
+      "1/14",
+      "1/16",
+      "1/16",
+      "1/36",
+      "0"
+    ],
+    "quotient_band_upper_LDL_pivots": [
+      "5/36",
+      "3/40",
+      "7/54",
+      "1/14",
+      "1/16",
+      "1/16",
+      "1/36",
+      "0"
+    ],
+    "quotient_hidden_exit_max_exact": "11/6",
+    "quotient_hidden_masses_exact": [
+      "1/6",
+      "1/12",
+      "1/6",
+      "1/12",
+      "1/8",
+      "1/8",
+      "1/6",
+      "1/12"
+    ],
+    "quotient_total_states": 9,
+    "target_hidden_exit_max_exact": "11/6",
+    "target_total_states": 12
+  },
+  "limitations": [
+    "The all-protocol guarantee is proved in the companion note, not by finite trajectories.",
+    "This sufficient nine-state approximation does not identify an optimal state count or optimal error.",
+    "The all-field upper uses averaged barrier curves; exponential endpoint matching supports only the two-field claim."
+  ],
+  "maximum_dense_dimension": 12,
+  "numpy_version": "2.3.5",
+  "proof_snapshot_sha256": {
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe",
+    "docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md": "38bc3447bbe6578eb37a6917d5e6ef700696077a3c98c499be47ed1dbff357cf"
+  },
+  "python_version": "3.13.5",
+  "scipy_version": "1.17.0",
+  "source_sha256": {
+    "verify_symmetric_compression.py": "e91d00de4654e6ca89e05de29dfb5593cb7f214dc93515ee7ecdd05abd8aecad"
+  },
+  "status": "PASS"
+}

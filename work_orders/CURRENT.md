@@ -1,6 +1,18 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: exact minimum counts and the observation bottleneck — 23 September 2026
+## PRL: finite rational observation and a reversible approximation — 23 September 2026
+
+Continue theory-first exploration with manuscript drafting deferred. This checkpoint starts from published `a60dee50b8728fb15717d9f06f3876fdf9f67b4a`, tree `41ce1198905603e5d9061060510d5066fe102a6b`, with successful [CI run 35856173987](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35856173987). Preserve the 79 baseline verifiers/reports/license/dependency/workflow files, every frozen proof snapshot and all nine recovery files. Existing non-forced public-main publication authorization remains in effect.
+
+The [new rational observation theorem](../docs/BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) resolves the previous stable-selector question for the unchanged twelve-state target. Ordinary reversibility requires twelve total states at mean error $\delta\le2^{-220}$ on an explicit menu of 12,766 experiments of at most 66 ticks. A certified ten-function basis transfers finite means to bounded positive rational features in every admissible reversible rival. The target, interface, hidden cap $2k$, fields and clock are unchanged. The eleven-state unrestricted exact upper persists; unrestricted minimum eleven is still proved only on the earlier interval $\delta\le2^{-1360}$ and earlier witness family.
+
+The [symmetry upper](../docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md) averages two probe barriers and quotients three state pairs, giving nine ordinary-reversible states with uniform mean error at most $1/2376$ on every two-field switching protocol and horizon. The first-order perturbation cancels under symmetry; an occupation bound and two contraction estimates control the finite remaining error. This sufficient upper is not claimed optimal and does not extend the state-gap lower to useful precision.
+
+Both proofs have separate internal analytic reviews and new bounded verifiers. The exact rational basis enclosure is an essential computer-assisted premise; sampled trajectories in the symmetry verifier are implementation diagnostics only. The [source comparison](../docs/RATIONAL_OBSERVATION_SOURCE_AUDIT.md) records six inspected primary full texts and one source inspected only at passage level, attributing the established realization, operator-calculus, nonlinear-response and contraction ingredients.
+
+**Next priority:** narrow the wide precision interval between $2^{-220}$ and $1/2376$, or construct a better-conditioned small target. Investigate basis conditioning and direct positive finite-time features with explicit control, rate and timing budgets. Keep the nine-state upper as a check on claims of practical separation. A microscopic physical realization, broader hidden field dependence and a natural generalized-reversal implementation remain open. No universal heat claim follows. See [Verification](../docs/VERIFICATION.md) for the local and separate remote-CI evidence. Manuscript drafting remains deferred; collaborator contact has not been authorized.
+
+## Historical checkpoint: exact minimum counts and the observation bottleneck — 23 September 2026
 
 Continue theory-first exploration with manuscript drafting deferred. This checkpoint starts from published `720962175fc76e2062e7f2aa4deb1938ba111c77`, tree `e9e51a49936be496f39a3384a8053ee26280eb4c`, with successful [CI run 35853478678](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35853478678). Preserve the 77 baseline verifiers/reports/license/dependency/workflow files, every frozen proof snapshot and all nine recovery files. Existing non-forced publication authorization remains in effect.
 
