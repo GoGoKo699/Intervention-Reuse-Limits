@@ -4,11 +4,25 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-one mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: rational observation and symmetry compression
+## Current checkpoint: simple prediction principles
+
+The published baseline `2923ca8c3992726593ee3111342c1e004cd4b53a`, tree `f74bcbf86f5ce25d3d0863822623ea120c0378c0`, had forty verifiers and successful [CI run 35859347383](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35859347383). This continuation adds one combined verifier while preserving all 83 baseline verifiers, saved reports, license, dependency and workflow files, all bound earlier proof snapshots, and all nine recovery files.
+
+The [new verifier](../scripts/verify_simple_prediction_principles.py) and [report](../reports/simple_prediction_principles.json) contain **200 exact checks**, with maximum dense dimension **12**. Rational arithmetic checks a positive rank-two example with reversible and nonreversible factorizations, the general normalization and canonical stochastic maps, full controlled-generator and output-projector intertwining, matched positive features, the established incidence rank counts, centered master equations, reversible/nonreversible energy estimates, and both variance constants. No numerical fitting, trajectory simulation or large target enumeration is used.
+
+The [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) analytically proves both minimum counts for arbitrary normalized completely positive matrices with positive row sums, including the positive-error existence corollary and the exact controlled binary path-law upper. The finite verifier does not solve arbitrary matrix ranks or replace the universal proof. The [variance theorem](KINETIC_VARIANCE_COMPRESSION.md) analytically proves uniform mean bounds, including the two-state upper $557/51920$ and a conditional-variance derivation of the previous nine-state upper $1/2376$. Its common-law, preparation, invariant-partition and mean-only limitations are explicit.
+
+The source received root and two separate full code reviews. Independent pinned Python 3.13.5 runs reproduced the saved report byte for byte. The final report binds both new proof notes and three frozen prerequisites. Source SHA-256 is `66408ebc8581fbf23910c945a1aed6cfbb2ca1a72ec55b147dc33c60cb676c02`; report SHA-256 is `e90edaf0ee18045706fb65164fe47a5e09ed4f5e03514e0eac91e0e38869f433`.
+
+The [internal review](SIMPLE_PREDICTION_INTERNAL_REVIEW.md) records independent complete mathematical reviews separately. The [source comparison](SIMPLE_PREDICTION_SOURCE_AUDIT.md) records six primary full texts and distinguishes static factorization, generic discrete-time HMM pair realization, continuous-time Gram identities and the controlled theorem. The README has been shortened to the physical question, current results and navigation; all historical proofs and their scopes remain in the linked ledger and dossier.
+
+The completed `make check PYTHON=.venv/bin/python` gate passed all **41** mathematical verifiers under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. All 41 fresh reports match the saved reports byte for byte. The 83 protected baseline files and all nine recovery files are unchanged. The repository checker passes 42 Python syntax checks, local Markdown links, source/proof provenance and the original MIT license; `git diff --check` passes. The full suite's historical maximum dense dimension remains 68. Remote CI must be checked on the actual published commit; the baseline run above certifies only `2923ca8`. Its new live result is reported after the authorized non-forced publication.
+
+## Historical checkpoint: rational observation and symmetry compression
 
 The published baseline `a60dee50b8728fb15717d9f06f3876fdf9f67b4a`, tree `41ce1198905603e5d9061060510d5066fe102a6b`, had thirty-eight verifiers and successful [CI run 35856173987](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35856173987). This continuation adds two verifiers while preserving all 79 baseline verifiers, saved reports, license, dependency and workflow files, all earlier bound proof snapshots, and all nine recovery files.
 

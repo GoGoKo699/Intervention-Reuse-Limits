@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact fractions.Fraction, rational matrix products and LDL certificates, with a bounded support enumeration; no numerical optimization",
+  "matrix_rank_realization_principle": {
+    "positive_rank_two_example_H_exact": [
+      [
+        "2/25",
+        "3/25",
+        "2/25"
+      ],
+      [
+        "3/25",
+        "1/5",
+        "3/25"
+      ],
+      [
+        "2/25",
+        "3/25",
+        "2/25"
+      ]
+    ],
+    "positive_rank_two_realizations": {
+      "CP": {
+        "probe_labels": 3,
+        "memory_factors": 2,
+        "total_states": 6,
+        "memory_conditional_law_exact": [
+          "9/25",
+          "16/25"
+        ],
+        "maximum_ordinary_flux_defect_exact": "0",
+        "reversible_band_certificate": {
+          "lower_LDL_pivots": [
+            "369/2500",
+            "8/41",
+            "1/10",
+            "21/250",
+            "0"
+          ],
+          "upper_LDL_pivots": [
+            "369/2500",
+            "8/41",
+            "1/10",
+            "21/250",
+            "0"
+          ]
+        }
+      },
+      "asymmetric_NMF": {
+        "probe_labels": 3,
+        "memory_factors": 2,
+        "total_states": 6,
+        "memory_conditional_law_exact": [
+          "6/25",
+          "19/25"
+        ],
+        "maximum_ordinary_flux_defect_exact": "1/100",
+        "reversible_band_certificate": null
+      }
+    },
+    "positive_rank_two_minimum_total_states": 6,
+    "K23_CP_realization": {
+      "probe_labels": 5,
+      "memory_factors": 6,
+      "total_states": 12,
+      "memory_conditional_law_exact": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "maximum_ordinary_flux_defect_exact": "0",
+      "reversible_band_certificate": {
+        "lower_LDL_pivots": [
+          "11/144",
+          "5/66",
+          "3/40",
+          "2/27",
+          "7/96",
+          "1/14",
+          "1/16",
+          "1/16",
+          "1/36",
+          "1/48",
+          "0"
+        ],
+        "upper_LDL_pivots": [
+          "11/144",
+          "5/66",
+          "3/40",
+          "2/27",
+          "7/96",
+          "1/14",
+          "1/16",
+          "1/16",
+          "1/36",
+          "1/48",
+          "0"
+        ]
+      }
+    },
+    "K23_ordinary_rank": 4,
+    "K23_nonnegative_rank": 5,
+    "K23_completely_positive_rank": 6,
+    "K23_unrestricted_minimum_total_states": 11,
+    "K23_ordinary_minimum_total_states": 12,
+    "scope": "Finite normalization, intertwining, feature and support certificates supplement the general matrix principle. The all-rival lower and existence of a positive error interval remain analytic."
+  },
+  "centered_hidden_memory_identities": {
+    "master_equation_initial_basis_states": 4,
+    "field_biases_exact": [
+      "1",
+      "4"
+    ],
+    "reversible_and_nonreversible_cases": [
+      {
+        "clockwise_rate_exact": "1/2",
+        "counterclockwise_rate_exact": "1/2",
+        "symmetric_centered_gap_exact": "3/2",
+        "centered_damping_lower_exact": "15/8",
+        "restricted_damping_LDL_pivots": [
+          "1/24",
+          "5/48"
+        ]
+      },
+      {
+        "clockwise_rate_exact": "3/4",
+        "counterclockwise_rate_exact": "1/4",
+        "symmetric_centered_gap_exact": "3/2",
+        "centered_damping_lower_exact": "15/8",
+        "restricted_damping_LDL_pivots": [
+          "1/24",
+          "5/48"
+        ]
+      }
+    ],
+    "scope": "Exact master-equation identities and centered quadratic forms check the finite memory-kernel ingredients. The uniform time-dependent Volterra and error bounds remain analytic."
+  },
+  "variance_compression_constants": {
+    "active_barrier_mean_exact": "59/128",
+    "active_barrier_variance_exact": "557/49152",
+    "visible_boundary_derivative_upper_exact": "-37/64",
+    "active_source_bound_exact": "3/2",
+    "active_hidden_damping_exact": "11/8",
+    "active_scalar_decay_exact": "295/128",
+    "two_state_uniform_mean_error_upper_exact": "557/51920",
+    "two_state_predictor_hidden_states": 1,
+    "two_state_predictor_total_states": 2,
+    "conditional_variance_exact": "1/6144",
+    "nine_state_mean_error_upper_exact": "1/2376",
+    "scope": "Exact constants use the stated active-field invariance and analytic variance theorem. Endpoint exponential matching is asserted only on the original two queried fields, not on a whole control interval."
+  },
+  "largest_dense_matrix_dimension": 12,
+  "large_target_allocated": false,
+  "controlled_responses_simulated": false,
+  "limitations": [
+    "Finite fixtures do not prove the arbitrary-matrix prediction-rank theorem or its positive-error existence corollary.",
+    "The variance estimates concern controlled means, not a uniform approximation to full output-path laws.",
+    "The two-state bound is a sufficient upper estimate, not an optimal-error claim.",
+    "Exact rank counts and coarse-precision compression concern different requested accuracies."
+  ],
+  "source_sha256": {
+    "verify_simple_prediction_principles.py": "66408ebc8581fbf23910c945a1aed6cfbb2ca1a72ec55b147dc33c60cb676c02"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/MATRIX_RANK_PREDICTION_PRINCIPLE.md": "6d13e4f33b8166c1f125eaaf582692dc0523f7e39c23152bf0f82aa105bd8ab2",
+    "docs/KINETIC_VARIANCE_COMPRESSION.md": "642b2e907dcf37c289af1e2cfc09c98a3b56412fe847d892579c18e09b6646f1",
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe",
+    "docs/FINITE_PREDICTOR_MINIMALITY.md": "393714abcd79e5c9b7d7c4184c4dd892ebd635265aff3edab5be3c7ed5f527e5",
+    "docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md": "38bc3447bbe6578eb37a6917d5e6ef700696077a3c98c499be47ed1dbff357cf"
+  },
+  "checks": 200
+}
