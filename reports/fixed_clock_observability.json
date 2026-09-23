@@ -1,0 +1,288 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "arithmetic": "Exact fractions.Fraction and integer identities plus explicitly separated float64 matrix exponentials, quadrature and sampled polynomial residuals",
+  "A_start_and_stationary_adjoint": {
+    "total_physical_states": 4,
+    "word_cases": 340,
+    "max_word_length": 4,
+    "tick_exact": "2/5",
+    "rational_field_bases": [
+      "1",
+      "3/2",
+      "2",
+      "4/3"
+    ],
+    "max_exponential_A_start_residual": 2.22044604925e-16,
+    "inserted_projector_cases": 4,
+    "reconstructed_Gram_exact": "469642438132843000/105234656414673721803",
+    "Gram_expansion_terms": 32,
+    "max_Gram_forward_ticks": 4,
+    "scope": "Exact rational stationarity fixtures and numerical actual-semigroup words; no arbitrary-width reconstruction claim is inferred."
+  },
+  "physical_Schur_and_binary_elimination": {
+    "hidden_states": 3,
+    "total_physical_states": 4,
+    "physical_field_bases": [
+      "1",
+      "2"
+    ],
+    "examples": [
+      {
+        "s_exact": "1",
+        "R_AA_exact": "192/911",
+        "binary_coefficient_difference_exact": [
+          "-7/8",
+          "-1/2"
+        ],
+        "label_contraction_certificates": [
+          {
+            "I_minus_F_weighted_LDL_exact": [
+              "703/3456",
+              "555551/2429568",
+              "66840919/142221056"
+            ],
+            "I_plus_F_weighted_LDL_exact": [
+              "1025/3456",
+              "38327/141696",
+              "128163711/245292800"
+            ]
+          },
+          {
+            "I_minus_F_weighted_LDL_exact": [
+              "3415/13824",
+              "2266435/9441792",
+              "243826303/580207360"
+            ],
+            "I_plus_F_weighted_LDL_exact": [
+              "3497/13824",
+              "12555599/48342528",
+              "1838225531/3214233344"
+            ]
+          }
+        ]
+      },
+      {
+        "s_exact": "7",
+        "R_AA_exact": "26667/44735",
+        "binary_coefficient_difference_exact": [
+          "-7/8",
+          "-1/2"
+        ],
+        "label_contraction_certificates": [
+          {
+            "I_minus_F_weighted_LDL_exact": [
+              "188549/2346696",
+              "63672900167/442467184104",
+              "1419914179375/3056299208016"
+            ],
+            "I_plus_F_weighted_LDL_exact": [
+              "984799/2346696",
+              "821904457943/2311023874104",
+              "10108458651637/19725706990632"
+            ]
+          },
+          {
+            "I_minus_F_weighted_LDL_exact": [
+              "1168987/4693392",
+              "5307132674015/21946056935616",
+              "37016574955683/169828245568480"
+            ],
+            "I_plus_F_weighted_LDL_exact": [
+              "1177709/4693392",
+              "335695960207/1300576470336",
+              "139201443503907/182618602352608"
+            ]
+          }
+        ]
+      },
+      {
+        "s_exact": "31",
+        "R_AA_exact": "1218903/1412939",
+        "binary_coefficient_difference_exact": [
+          "-7/8",
+          "-1/2"
+        ],
+        "label_contraction_certificates": [
+          {
+            "I_minus_F_weighted_LDL_exact": [
+              "4561833/196881856",
+              "22758168218880671/396080687180703168",
+              "265590201926247511/546196037253136104"
+            ],
+            "I_plus_F_weighted_LDL_exact": [
+              "93879095/196881856",
+              "721396786188594259/1630208578854268224",
+              "86842263347259592183/173135228685262622160"
+            ]
+          },
+          {
+            "I_minus_F_weighted_LDL_exact": [
+              "688816455/2756345984",
+              "485648248252289125/1952862654293862912",
+              "1277373002141339469/15540743944073252000"
+            ],
+            "I_plus_F_weighted_LDL_exact": [
+              "689356537/2756345984",
+              "129254177720959043/514314168443214336",
+              "71758208617553221761/78586540054343098144"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "positive_selector_leading_identity": {
+    "resolvent_scales": [
+      10,
+      40,
+      160
+    ],
+    "normalized_selector_operator_residuals": [
+      4.62267313501,
+      2.79848121,
+      0.988060722231
+    ],
+    "non_PSD_selector_determinant_exact": "-9/87616",
+    "scope": "Exact leading-order identities and three numerical residuals on a small fixture; these do not certify an all-model asymptotic error rate."
+  },
+  "fractional_and_physical_resolvent_polynomials": {
+    "exact_fractional_cases": 96,
+    "max_fractional_degree": 12,
+    "physical_resolvent_polynomial": {
+      "tick": 0.4,
+      "s": 1.3,
+      "M": 12,
+      "J": 12,
+      "clock_degree": 24,
+      "quadrature_tolerance": 1e-13,
+      "largest_quadrature_error_estimate": 5.07217275635e-15,
+      "polynomial_spectral_extrema": [
+        0.168841299942,
+        0.998840770826
+      ],
+      "vector_residuals": [
+        {
+          "residual": 0.0011592291739,
+          "bound": 0.0011592291739
+        },
+        {
+          "residual": 0.000308872323546,
+          "bound": 0.0162361468644
+        },
+        {
+          "residual": 0.00319869777798,
+          "bound": 0.205379637348
+        }
+      ],
+      "averaged_fractional_spectral_residuals": [
+        0.0146037790555,
+        0.000103214382392,
+        4.81842128197e-07,
+        0.0
+      ]
+    },
+    "scope": "Rational fractional identities are exact; averaged physical coefficients and matrix residuals use labeled float64 quadrature. Spectral PSD does not assert entrywise positivity."
+  },
+  "natural_heat_and_polynomial_calculus": {
+    "toy_eta_exact": "2/27",
+    "toy_old_killing_exact": "5",
+    "natural_heat_factorization_residual": 2.21577413273e-17,
+    "heat_from_resolvent_spectral_residual": 2.47621283007e-17,
+    "max_exact_shifted_Chebyshev_degree": 64,
+    "max_exact_Stirling_order": 16,
+    "sampled_heat_polynomial": {
+      "degrees": [
+        8,
+        16,
+        32,
+        64
+      ],
+      "cosine_samples": 512,
+      "test_grid_points": 1001,
+      "maximum_grid_residuals": [
+        0.0015020416732,
+        3.69933883278e-05,
+        1.16570217822e-07,
+        1.25366691661e-11
+      ]
+    },
+    "scope": "Rational rescaling identity and finite coefficient majorants are exact. Spectral and sampled-grid heat errors are numerical diagnostics, not uniform-error certificates; the toy killing rate is five, not the target constant 10^9."
+  },
+  "fixed_clock_exponent_bookkeeping": {
+    "representative_cases": [
+      {
+        "n": 1,
+        "resolvent_word_length": 96,
+        "fractional_degree_M": 6400,
+        "integer_cutoff_J": 12800,
+        "maximum_tick_bound": 3699206,
+        "deterministic_filter_log_upper_exact": "-1280",
+        "deterministic_integer_log_upper_exact": "-11521/4",
+        "noise_log_upper": 3725122
+      },
+      {
+        "n": 2,
+        "resolvent_word_length": 729,
+        "fractional_degree_M": 72900,
+        "integer_cutoff_J": 218700,
+        "maximum_tick_bound": 425298606,
+        "deterministic_filter_log_upper_exact": "-15309",
+        "deterministic_integer_log_upper_exact": "-201205/6",
+        "noise_log_upper": 425738918
+      },
+      {
+        "n": 4,
+        "resolvent_word_length": 9375,
+        "fractional_degree_M": 1562500,
+        "integer_cutoff_J": 7812500,
+        "maximum_tick_bound": 175784375006,
+        "deterministic_filter_log_upper_exact": "-340625",
+        "deterministic_integer_log_upper_exact": "-7312501/10",
+        "noise_log_upper": 175800050002
+      },
+      {
+        "n": 8,
+        "resolvent_word_length": 177147,
+        "fractional_degree_M": 53144100,
+        "integer_cutoff_J": 478296900,
+        "maximum_tick_bound": 188286463942206,
+        "deterministic_filter_log_upper_exact": "-11868849",
+        "deterministic_integer_log_upper_exact": "-452787733/18",
+        "noise_log_upper": 188287421953178
+      },
+      {
+        "n": 16,
+        "resolvent_word_length": 4259571,
+        "fractional_degree_M": 2413756900,
+        "integer_cutoff_J": 41033867300,
+        "maximum_tick_bound": 370136484949950206,
+        "deterministic_filter_log_upper_exact": "-546644945",
+        "deterministic_integer_log_upper_exact": "-39102861781/34",
+        "noise_log_upper": 370136567074479082
+      }
+    ],
+    "scope": "Exact arithmetic for explicitly stated representative constants only. This checks the degree and normalization accounting, not the theorem constants, asymptotic starting index, or universal proof."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "large_target_allocated": false,
+  "limitations": [
+    "Finite fixtures and small numerical residuals do not prove the fixed-clock theorem or uniform reconstruction estimates.",
+    "The exact recursion fixture uses rational stationary kernels; actual fixed-clock semigroups are checked separately in floating-point arithmetic.",
+    "No large logical target, long chain, or extremely small asymptotic rate is simulated."
+  ],
+  "source_sha256": {
+    "verify_fixed_clock_observability.py": "e04d88a1cf05d1ad9447a8e32cac3c9c0d604c71a0c721fea51d4d357b9d45a7"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/FIXED_CLOCK_GRAM_OBSERVABILITY.md": "df1b820b3273511888ab6f1d4faabd495fd41fa0112fce97591c9c597c0285d8",
+    "docs/FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md": "141637f469431f9f9c28f7a75efa12bbf470d7c3a8b40de90f557b048cd992dd",
+    "docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "40bd20f44f638a938300968b64c0be41f19412e342c99e89e0fc5be38fbefe5c"
+  },
+  "checks": 1543
+}

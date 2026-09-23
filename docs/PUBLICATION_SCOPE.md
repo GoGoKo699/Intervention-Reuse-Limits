@@ -1,18 +1,20 @@
 # Publication scope and closest-theorem comparison
 
-The [research dossier](RESEARCH_DOSSIER.md) and [claim ledger](CLAIM_LEDGER.md) supply the model, quantified statements, dependencies, reproducibility and source links for eventual drafting. The latest result is a [binary superpolynomial reversibility penalty without a rival rate cap](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md). On a new uniformly mixing, exactly balanced binary target family,
+The [research dossier](RESEARCH_DOSSIER.md) and [claim ledger](CLAIM_LEDGER.md) supply the model, quantified statements, dependencies, reproducibility and source links for eventual drafting. The latest result is a [two-field fixed-clock binary reversibility penalty without a rival rate cap](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md): for every fixed positive clock $a/k$, the prescribed rescaled tagged family satisfies
 
 $$
-D_{\rm all}^{\rm tag,unc}(\delta)\le C\delta^{-p},\qquad
-D_{\rm rev}^{\rm tag,unc}(\delta)\ge\exp\!\left(\exp\!\left(c_H\sqrt{\log(1/\delta)}\right)\right).
+D_{\rm all}^{a,\{0,H\}}(\delta)\le C\delta^{-p},\qquad
+D_{\rm rev}^{a,\{0,H\}}(\delta)\ge
+\exp\!\left(\exp\!\left(c_a[\log(1/\delta)]^{1/12}\right)\right).
 $$
 
-Both classes preserve the original field rule, exact histogram, preparation and readout, and may construct their own states. Five fixed fields with arbitrarily rapid switching suffice. The target has a uniform positive gap and fixed cap, with a very large rate-to-gap ratio and rare diagnostic states. No rival rate cap or lower gap is imposed. The exact unrestricted polynomial growth class follows on the theorem's explicitly enlarged union family; the tagged-family statement itself supplies a polynomial upper. The reversible lower and upper are unmatched.
+Both classes preserve the original field rule, exactly balanced binary histogram, stationary preparation and binary readout, and may construct their own states. No rival rate cap or lower gap is imposed. The target retains a fixed positive gap and cap, with rare diagnostic states and a very large rate-to-gap ratio. The required fixed rescaling ties the hidden dynamics to natural field-induced killing; a unit hidden gap in external-rate units is not claimed. Only the two fields $0,H$ and clock-endpoint means are needed. The hard target at index $n$ has a witnessing horizon of at most $C_a(n+1)^{12}$ ticks at error $e^{-C_a(n+1)^{12}}$. This does not bound experimental sample cost.
 
-The [nineteen-level uncapped theorem](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) retains target band $[k,3k]$. The older binary theorem gives the stronger singly exponential growth class at budget $6580k$ and every fixed positive control clock. The new binary construction removes the rival cap on a different target family; it does not combine all these numerical and clock advantages.
+The [Gram recovery](FIXED_CLOCK_GRAM_OBSERVABILITY.md), [positive resolvent calculus](FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md), rescaled [rare-tag construction](BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md), and [weighted repair](WEIGHTED_WHOLE_WORD_REPAIR.md) form the proof chain. The [internal audit](FIXED_CLOCK_INTERNAL_REVIEW.md), [bounded verifier](../scripts/verify_fixed_clock_observability.py), [report](../reports/fixed_clock_observability.json), and [primary-source comparison](FIXED_CLOCK_PRIOR_ART.md) have separate evidentiary roles. They do not constitute external validation or priority certification.
 
-The [tagged construction](BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md), [mixed observation theorem](MIXED_KILLED_WORD_OBSERVABILITY.md), and [weighted repair](WEIGHTED_WHOLE_WORD_REPAIR.md) form the new proof chain. The [binary source comparison](BINARY_OBSERVATION_PRIOR_ART.md) records primary full-text precedents and limits the novelty assessment. A fixed-clock uncapped superpolynomial separation, a smaller target rate-to-gap ratio and the stronger uncapped lower $\exp(c\delta^{-\alpha})$ remain open. Manuscript drafting remains the final step.
+The earlier [binary uncapped theorem](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) gives the stronger inner exponent $1/2$ with arbitrarily rapid switching on its original tagged family. The [nineteen-level uncapped theorem](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) retains target band $[k,3k]$. The older binary fixed-budget theorem supplies a singly exponential inverse-error lower at every fixed positive clock. These guarantees concern different assumptions or target scalings and are not merged.
 
+The two-field tagged-family result gives a polynomial unrestricted **upper**, not a matching lower. A separate union with the older binary family gives polynomial unrestricted growth when the observation menu includes that older proof's five fields. Reversible upper and lower growth remain unmatched. The next quantitative priority is to sharpen the fixed-clock accuracy budget; smaller target rate-to-gap ratio, an uncapped lower on the older binary family, and the stronger uncapped law $\exp(c\delta^{-\alpha})$ remain open. Manuscript drafting remains the final step.
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 

@@ -356,6 +356,20 @@ The new maximum dense dimension is eight; the suite-wide maximum remains 68. The
 
 The complete thirty-two-verifier gate passed locally in pinned Python 3.13.5. All thirty-two fresh reports are byte-identical to saved evidence. The final repository checker passes 1,090 local Markdown links, 33 Python syntax checks, saved-source/proof-snapshot provenance and the unchanged license. All sixty-five protected baseline files and all nine recovery files remain byte-identical. Remote CI for this new continuation is checked separately after publication.
 
+## Fixed-clock uncapped checkpoint
+
+This continuation starts from published `33f23b7cacb65b5e17692771022286f1b94c6999`, whose tree `6503c39327c5171dd88ea9f1a03b5f6e2ae86c8e` matched the preceding tested checkpoint. [GitHub Actions run 35837920760](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35837920760) passed its thirty-two-verifier gate. The sixty-seven baseline mathematical scripts, saved reports, license, requirements and workflow are protected, as are all previously hash-bound proof snapshots and the nine recovery files. Manuscript drafting is excluded.
+
+The [fixed-clock theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md), [Gram interface](FIXED_CLOCK_GRAM_OBSERVABILITY.md), and [positive resolvent calculus](FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md) establish the two-field uncapped penalty with a conservative inner logarithmic exponent $1/12$. The [internal proof review](FIXED_CLOCK_INTERNAL_REVIEW.md) covers finite row recovery, sampled Gram norms, target-sensitive vector remainders, model-dependent Schur denominators, binary insertions, uniform heat approximation, natural-killing scaling, entropy normalization, the polynomial error budget and finite clock horizon. These are internal reviews, distinct from executable checks and external validation.
+
+[verify_fixed_clock_observability.py](../scripts/verify_fixed_clock_observability.py) produces [fixed_clock_observability.json](../reports/fixed_clock_observability.json). It adds 1,543 finite checks, using exact rational arithmetic for algebraic identities and explicitly labeled float64 calculations for actual semigroups, integrated polynomial coefficients and heat residuals. Dense matrices have dimension at most four. It constructs no large tagged graph and imports no earlier repository verifier.
+
+The exact fixtures check visible-row recursion including zero fields, stationary adjoints, inserted-projector and Gram identities, the physical Schur complement, two-field binary insertion, contractive symmetrized label factors and their possible failure of positive semidefiniteness. The leading cross-color coefficient two and sandwich normalization four are verified separately. Fractional-binomial tail identities, coefficient mass, natural-killing scaling and shifted-Chebyshev recurrence checks supplement the written analytic bounds. A separate representative exponent calculation verifies the powers $4,5,6,7,12$; it does not estimate the theorem's potentially enormous physical constants. The actual numerical errors are recorded beside their bounds, not presented as universal estimates.
+
+The report records its verifier source hash and the three new proof snapshot hashes. The repository checker validates these alongside all existing saved evidence. A separate internal reviewer inspected and ran the new verifier. The [primary-source comparison](FIXED_CLOCK_PRIOR_ART.md) distinguishes embedding and matrix-function results, scalar mean recovery, and observable-operator learning; it neither certifies originality nor converts the weaker logarithmic transfer route into an impossibility theorem.
+
+The complete thirty-three-verifier `make check PYTHON=.venv/bin/python` gate passed locally in pinned Python 3.13.5. All thirty-three fresh JSON reports are byte-identical to saved evidence. All sixty-seven protected baseline files and all nine recovery files remain byte-identical; earlier proof snapshots also pass their saved hash checks. The repository checker passes 1,190 local Markdown links and 34 Python syntax checks, with valid source/proof provenance and an unchanged license. Remote CI is separate evidence, associated with the published commit in GitHub Actions.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -392,6 +406,7 @@ python scripts/verify_binary_reversibility_lower_bound.py --output reports/binar
 python scripts/verify_state_speed_boundary.py --output reports/state_speed_boundary.json
 python scripts/verify_uncapped_observability.py --output reports/uncapped_observability.json
 python scripts/verify_binary_uncapped_observability.py --output reports/binary_uncapped_observability.json
+python scripts/verify_fixed_clock_observability.py --output reports/fixed_clock_observability.json
 make check
 ```
 

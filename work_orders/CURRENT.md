@@ -1,6 +1,18 @@
 # Current work order: complete the research package before manuscript drafting
 
-## Binary uncapped reversibility — 23 September 2026
+## Fixed-clock uncapped reversibility — 23 September 2026
+
+This continuation starts from published commit `33f23b7cacb65b5e17692771022286f1b94c6999`, tree `6503c39327c5171dd88ea9f1a03b5f6e2ae86c8e`, with [GitHub Actions run 35837920760](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35837920760) successful. Preserve the sixty-seven baseline mathematical scripts, reports, license, pinned requirements and workflow, all frozen proof snapshots, and the nine recovery files. Existing authorization for non-forced publication remains in effect.
+
+The [fixed-clock theorem](../docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) establishes the uncapped binary superpolynomial penalty with just two fields $0,H$ at every fixed positive clock. Its prescribed scaled tagged family has a polynomial unrestricted sufficient count and reversible lower $\exp(\exp(c_a[\log(1/\delta)]^{1/12}))$. At target index $n$, error $e^{-C_a(n+1)^{12}}$ forces at least $2^{3\cdot2^n/4}$ reversible states using at most $C_a(n+1)^{12}$ witnessing ticks. Rival state spaces and finite hidden rates are unrestricted; the original rule, exact histogram, preparation and readout remain fixed.
+
+The [Gram lemma](../docs/FIXED_CLOCK_GRAM_OBSERVABILITY.md) transfers vector-specific resolvent remainders from the capped target to arbitrary rivals through sampled means. The [positive calculus](../docs/FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md) supplies hidden Schur complements, binary label insertions and a proved heat approximation. Natural field-induced killing reproduces the frozen rare-tag construction after one specified fixed rate scaling. The target retains a uniform positive gap, not a gap normalized to the external rate. The two-field tagged-family task has an unrestricted upper only; the separate union growth-class corollary uses five fields.
+
+The [internal audit](../docs/FIXED_CLOCK_INTERNAL_REVIEW.md), [primary-source comparison](../docs/FIXED_CLOCK_PRIOR_ART.md), new [bounded verifier](../scripts/verify_fixed_clock_observability.py) and [saved report](../reports/fixed_clock_observability.json) record their respective evidence and limits. The dossier, ledger and publication scope distinguish the new clock guarantee from the older stronger inner exponent. The next quantitative priority is to sharpen the conservative fixed-clock allocation; smaller rate-to-gap ratios, the older binary target family, rule/histogram robustness and stronger uncapped growth remain open. Manuscript drafting stays last.
+
+The full thirty-three-verifier local gate passes, all thirty-three regenerated reports match saved bytes, and the sixty-seven baseline files and nine recovery files are unchanged. See [Verification](../docs/VERIFICATION.md) for the pinned environment, proof audits and report scope.
+
+## Historical checkpoint: binary uncapped reversibility — 23 September 2026
 
 This continuation starts from published commit 63f6be5f05af145948334324681cfaf48fe715b6, whose tree matches the locally tested checkpoint. [GitHub Actions run 35820205357](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35820205357) passed the preceding thirty-one-verifier gate. Preserve the sixty-five baseline mathematical scripts, reports, license, dependencies and workflow, and the nine recovery files.
 
