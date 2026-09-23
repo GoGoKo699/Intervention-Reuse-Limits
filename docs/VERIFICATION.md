@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-one mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -318,7 +318,23 @@ A separate three-hidden-state, four-physical-state Poisson fixture checks the sa
 
 The verifier received a separate static review and passed under pinned Python 3.13.5. Its report records its own source hash and separate hashes of the three proof snapshots used by its fixtures. The repository checker validates both kinds of provenance; a changed proof snapshot requires review and regeneration of this new report. Earlier reports retain their existing schemas and checkpoint-specific scope.
 
-The complete thirty-verifier `make check` passed locally in the pinned Python 3.13.5 environment. All thirty fresh reports are byte-identical to their saved evidence. All sixty-one protected baseline files from `e21c454ec1a0eef8ceba8bd7e3d01defc62b53a5` (twenty-nine mathematical scripts, twenty-nine reports, license, dependencies and workflow) and all nine recovery files remain byte-identical. Final documentation, syntax and report-provenance checks pass. Remote CI for this new checkpoint is checked separately after publication; the earlier successful binary run is recorded above.
+The complete thirty-verifier `make check` passed locally in the pinned Python 3.13.5 environment. All thirty fresh reports are byte-identical to their saved evidence. All sixty-one protected baseline files from `e21c454ec1a0eef8ceba8bd7e3d01defc62b53a5` (twenty-nine mathematical scripts, twenty-nine reports, license, dependencies and workflow) and all nine recovery files remain byte-identical. Final documentation, syntax and report-provenance checks pass. This checkpoint was published as `7f127f224eb8fe93d360a0d44b56105f8a388ce0`, with tree `325d09618926f12634b45608682b96ea74a5bcb5` matching the locally tested tree. [GitHub Actions run 35818141188](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35818141188) completed successfully for that published commit.
+
+## Uncapped reversibility and Walsh observability checkpoint
+
+This continuation starts from published `7f127f224eb8fe93d360a0d44b56105f8a388ce0`. The preceding thirty mathematical scripts and thirty reports, MIT license, pinned requirements and workflow are protected baselines. The nine recovery files remain preserved. The new [bounded-control resolvent theorem](BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md), [uncapped reversibility lower](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) and [Walsh hierarchy](UNCAPPED_WALSH_OBSERVABILITY.md) have separate written proofs and internal reviews. Manuscript drafting is excluded from this checkpoint.
+
+The full proof reviews cover physical convexification for each target/rival pair, one-variable analytic continuation of an entire protocol, ordered resolvent coefficient extraction, interpolation constants, positive gate approximation, whole-word repair, entropy and inversion of the accuracy threshold. They also cover all-port Walsh normalization, target-only fixed-clock transfer, and the exact width-one quotient. The uncapped reversibility lower requires arbitrarily fast switching; the Walsh hierarchy supplies a separate fixed-target rank result at fixed clock. Neither establishes a binary uncapped penalty, a fixed-clock uncapped superpolynomial separation, or the stronger uncapped lower $\exp(c\delta^{-\alpha})$. Internal reviews remain part of this investigation, not external mathematical validation or novelty certification.
+
+[verify_uncapped_observability.py](../scripts/verify_uncapped_observability.py) produces [uncapped_observability.json](../reports/uncapped_observability.json) using exact standard-library rational arithmetic and integer enumeration. Independent coefficient recurrences check ordered sign-polarized resolvent expansions, including signed endpoint features and an internal speed of one million. The fixtures distinguish the required squared-resolvent word from a single-resolvent substitution.
+
+A seven-hidden-state reversible generator checks positive conditional gates, reverse adjoints, a genuinely negative nonpalindromic flip correlation, and the spectral-cap and $216/s$ approximation certificates. Exact Chebyshev coefficients and rational budgets check the constants 1458 and 186624, the interpolation cutoff $M=3m$, and the error allocation leading to $\Delta\le1/(1024r^2)$. No numerical interpolation of the physical field matrix or empirical estimate of its constants is used.
+
+Small Walsh examples check orthogonality, physical preparation/readout endpoints and exact fiber lumpability of the width-one target to 38 states. Sparse enumeration is used for these state spaces; the new maximum dense matrix dimension is seven, and the suite-wide maximum remains 68. These checks support finite algebraic identities; the general analytic continuation, all-width entropy bound and asymptotic state laws come from the written proofs. There is no large simulation, search over rivals, or extrapolation of numerical ranks.
+
+The source and final error budgets received an independent internal static review. The saved report records the verifier source hash and hashes of the three new mathematical proof snapshots. The repository checker validates both kinds of provenance. The [source comparison](BOUNDED_WORD_RECOVERY_PRIOR_ART.md) records verified primary full texts and limits the novelty assessment to the complete constrained theorem.
+
+The complete thirty-one-verifier `make check` passed locally in pinned Python 3.13.5. All thirty-one fresh JSON reports are byte-identical to saved evidence. All sixty-three protected files from the starting commit and all nine recovery files remain byte-identical. Documentation, syntax and source/proof-snapshot provenance checks pass. Live CI for this continuation is checked separately after publication.
 
 ## Updating evidence after code changes
 
@@ -354,6 +370,7 @@ python scripts/verify_exact_reversible_prefix_obstruction.py --output reports/ex
 python scripts/verify_dynamic_lamp_reversibility_lower_bound.py --output reports/dynamic_lamp_reversibility_lower_bound.json
 python scripts/verify_binary_reversibility_lower_bound.py --output reports/binary_reversibility_lower_bound.json
 python scripts/verify_state_speed_boundary.py --output reports/state_speed_boundary.json
+python scripts/verify_uncapped_observability.py --output reports/uncapped_observability.json
 make check
 ```
 

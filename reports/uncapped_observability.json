@@ -1,0 +1,252 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Python standard-library fractions.Fraction; exact integer enumeration; no floating-point matrices",
+  "ordered_resolvent_parity": [
+    {
+      "internal_speed": 1,
+      "signed_feature": false,
+      "s_exact": "8",
+      "feature_count": 3,
+      "leading_parity_coefficient_exact": "-424649/18612266496",
+      "higher_parity_coefficient_exact": "-3072335515/4146515179044864",
+      "ordered_color_word_exact": "424649/36352083"
+    },
+    {
+      "internal_speed": 1,
+      "signed_feature": true,
+      "s_exact": "8",
+      "feature_count": 3,
+      "leading_parity_coefficient_exact": "247/581633328",
+      "higher_parity_coefficient_exact": "-665245/16197324918144",
+      "ordered_color_word_exact": "-7904/36352083"
+    },
+    {
+      "internal_speed": 1000000,
+      "signed_feature": false,
+      "s_exact": "8",
+      "feature_count": 3,
+      "leading_parity_coefficient_exact": "-16764342791855382442646026931762939453125/231750274757080790042068366968761250009000003",
+      "higher_parity_coefficient_exact": "-49115857196391059564732100427510322130204959871078491943359375/130361615314454793562154921654590500804939044064525001728000864000192",
+      "ordered_color_word_exact": "8583343509429955810634765789062625000000000/231750274757080790042068366968761250009000003"
+    },
+    {
+      "internal_speed": 1000000,
+      "signed_feature": true,
+      "s_exact": "8",
+      "feature_count": 3,
+      "leading_parity_coefficient_exact": "-2145812988418579101562255859375/927001099028323160168273467875045000036000012",
+      "higher_parity_coefficient_exact": "-16764532788064450979750157459259784697998046142578125/521446461257819174248619686618362003219756176258100006912003456000768",
+      "ordered_color_word_exact": "274664062517578124999968750000000/231750274757080790042068366968761250009000003"
+    }
+  ],
+  "positive_smoothed_flip": {
+    "hidden_states": 7,
+    "full_states_with_A": 8,
+    "mu_exact": [
+      "1/12",
+      "1/12",
+      "1/12",
+      "1/12",
+      "1/12",
+      "1/12",
+      "1/2"
+    ],
+    "spectral_cap": 3,
+    "positive_weighted_cap_LDL_pivots_exact": [
+      "5/32",
+      "5/32",
+      "899/5760",
+      "899/5760",
+      "4485/28768",
+      "6293/40365",
+      "3/4"
+    ],
+    "raw_cycle_exact": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "cases": [
+      {
+        "s_exact": "8",
+        "signed_cycle_eigenvalue_exact": "-7080153165760500334592/23846154740293504515625",
+        "cycle_row_sum_exact": "9753815817735667712/4256844624645046875",
+        "edge_error_frobenius_squared_exact": [
+          "147727002141566715366698/696339047825225129611125",
+          "147727002141566715366698/696339047825225129611125",
+          "147727002141566715366698/696339047825225129611125"
+        ]
+      },
+      {
+        "s_exact": "64",
+        "signed_cycle_eigenvalue_exact": "-12682477151357893709161037824000/14899910404317401048893521295563",
+        "cycle_row_sum_exact": "54679914273571566544343793664/44890377130319634309031545987",
+        "edge_error_frobenius_squared_exact": [
+          "77156676767752065157465972562873170/10491326727098023726628565575863470249",
+          "77156676767752065157465972562873170/10491326727098023726628565575863470249",
+          "77156676767752065157465972562873170/10491326727098023726628565575863470249"
+        ]
+      },
+      {
+        "s_exact": "1024",
+        "signed_cycle_eigenvalue_exact": "-172462464674787958108367218731066064896000/174223017264808166518455375791053719911161",
+        "cycle_row_sum_exact": "9717782579620126242628084273653366950723584/9585343132428698295486664653209291797230147",
+        "edge_error_frobenius_squared_exact": [
+          "4566404837039529590598299784226999657538673294164050/140758770046349517692211113181169582459011849841729343529",
+          "4566404837039529590598299784226999657538673294164050/140758770046349517692211113181169582459011849841729343529",
+          "4566404837039529590598299784226999657538673294164050/140758770046349517692211113181169582459011849841729343529"
+        ]
+      }
+    ],
+    "scope": "A three-port miniature checks ordered smoothing and the surviving negative flip eigenvalue. It is not the complete nineteen-level target."
+  },
+  "Chebyshev_and_error_budget": {
+    "max_Chebyshev_degree": 64,
+    "coefficient_majorant_checks": 134,
+    "parameter_examples": [
+      {
+        "n": 1,
+        "r": 2,
+        "max_edges": 60,
+        "m": 61,
+        "representative_b_an": 0,
+        "C_H": 4000000,
+        "s": 976000000,
+        "interpolation_degree": 183,
+        "smoothing_below_allocation": true,
+        "tail_below_allocation": true,
+        "allocation_exact": "1/36864",
+        "noise_amplification_bit_length": 4090,
+        "scope": "Canonical equations (18)-(21) bookkeeping at representative b_an values; no physical-menu analytic-continuation constant is numerically asserted."
+      },
+      {
+        "n": 2,
+        "r": 4,
+        "max_edges": 114,
+        "m": 115,
+        "representative_b_an": 1,
+        "C_H": 4000002,
+        "s": 7360003680,
+        "interpolation_degree": 345,
+        "smoothing_below_allocation": true,
+        "tail_below_allocation": true,
+        "allocation_exact": "1/147456",
+        "noise_amplification_bit_length": 8401,
+        "scope": "Canonical equations (18)-(21) bookkeeping at representative b_an values; no physical-menu analytic-continuation constant is numerically asserted."
+      },
+      {
+        "n": 4,
+        "r": 16,
+        "max_edges": 222,
+        "m": 223,
+        "representative_b_an": 1000000,
+        "C_H": 6000000,
+        "s": 342528000000,
+        "interpolation_degree": 669,
+        "smoothing_below_allocation": true,
+        "tail_below_allocation": true,
+        "allocation_exact": "1/2359296",
+        "noise_amplification_bit_length": 18784,
+        "scope": "Canonical equations (18)-(21) bookkeeping at representative b_an values; no physical-menu analytic-continuation constant is numerically asserted."
+      },
+      {
+        "n": 8,
+        "r": 256,
+        "max_edges": 438,
+        "m": 439,
+        "representative_b_an": 1000000000000,
+        "C_H": 2000004000000,
+        "s": 57540723081216000000,
+        "interpolation_degree": 1317,
+        "smoothing_below_allocation": true,
+        "tail_below_allocation": true,
+        "allocation_exact": "1/603979776",
+        "noise_amplification_bit_length": 60975,
+        "scope": "Canonical equations (18)-(21) bookkeeping at representative b_an values; no physical-menu analytic-continuation constant is numerically asserted."
+      }
+    ]
+  },
+  "relative_Walsh_orthogonality": [
+    {
+      "n": 1,
+      "addresses": 2,
+      "central_triples_enumerated": 16,
+      "Walsh_features": 4,
+      "scalar_Gram_pairs_checked": 16,
+      "physical_left_endpoint_cancellations_checked": 4,
+      "independent_port_hub_A_feature_count": 38,
+      "dense_feature_Gram_allocated": false
+    },
+    {
+      "n": 2,
+      "addresses": 4,
+      "central_triples_enumerated": 128,
+      "Walsh_features": 16,
+      "scalar_Gram_pairs_checked": 256,
+      "physical_left_endpoint_cancellations_checked": 16,
+      "independent_port_hub_A_feature_count": 146,
+      "dense_feature_Gram_allocated": false
+    }
+  ],
+  "one_bit_exact_38_state_quotient": {
+    "original_total_states_n1": 146,
+    "quotient_total_states_n1": 38,
+    "relative_table_fibres": {
+      "(-1, -1)": 4,
+      "(-1, 1)": 4,
+      "(1, -1)": 4,
+      "(1, 1)": 4
+    },
+    "quotient_leaf_mu_exact": "1/72",
+    "hub_mu_exact": "1/2",
+    "hub_to_quotient_rate_exact": "1/36",
+    "gate_rate_exact": "1/16",
+    "histogram_exact": {
+      "-9/100": "1/36",
+      "-2/25": "1/36",
+      "-7/100": "1/36",
+      "-3/50": "1/36",
+      "-1/20": "1/36",
+      "-1/25": "1/36",
+      "-3/100": "1/36",
+      "-1/50": "1/36",
+      "-1/100": "1/36",
+      "0": "1/2",
+      "1/100": "1/36",
+      "1/50": "1/36",
+      "3/100": "1/36",
+      "1/25": "1/36",
+      "1/20": "1/36",
+      "3/50": "1/36",
+      "7/100": "1/36",
+      "2/25": "1/36",
+      "9/100": "1/36"
+    },
+    "scope": "Gate equivariance, equal labels and exact fluxes verify this finite lumping. No dense 38-state generator or numerical rank is used."
+  },
+  "largest_dense_matrix_dimension": 7,
+  "full_target_matrix_allocated": false,
+  "limitations": [
+    "Finite certificates do not prove the complete all-model analytic continuation, convexification, resolvent transfer or asymptotic lower theorem.",
+    "The fixtures do not justify a fixed positive control clock: the new physical convexification argument uses arbitrarily short dwell times.",
+    "The miniature smoothing example is not the complete nineteen-level target.",
+    "The exact finite Walsh feature identities are checked, not a large numerical rank."
+  ],
+  "source_sha256": {
+    "verify_uncapped_observability.py": "6cb7a2f33b5610702f30e06250dae1e0054bbddb466950c07e8a8787a6aaa19f"
+  },
+  "proof_snapshot_sha256": {
+    "docs/BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md": "b20617277b47a6b51ecc5fa7c972859f7f6bcadb0ede0f734ea340c46d4c0ce0",
+    "docs/UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "677676f0e88b3c6704d5a1e9e2b7f283034cd88854ac3874c6ca07ffdb6da427",
+    "docs/UNCAPPED_WALSH_OBSERVABILITY.md": "5a0464acb375ca05b6a3d26c0aed51cdf8254bce8374028bbd877dc08024af5b"
+  },
+  "imported_repository_verifiers": []
+}

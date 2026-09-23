@@ -1,6 +1,16 @@
 # Current work order: complete the research package before manuscript drafting
 
-## State, speed and research readiness — 23 September 2026
+## Uncapped reversibility and bounded observation — 23 September 2026
+
+This continuation starts from published `7f127f224eb8fe93d360a0d44b56105f8a388ce0`, whose tree matches the tested checkpoint. [GitHub Actions run 35818141188](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35818141188) passed the preceding thirty-verifier gate. Publication authorization remains in effect; preserve non-forced history.
+
+The [uncapped nineteen-level theorem](../docs/UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) now proves polynomial unrestricted state cost and reversible cost at least $\exp(\exp(c_H\sqrt{\log(1/\delta)}))$. It retains the original rule, exact histogram, preparation and readout, permits arbitrary new rival states and rates, and requires arbitrarily rapid switching among thirty-nine fixed fields. This resolves the existence of an uncapped superpolynomial reversibility penalty. A binary extension, fixed-clock version and stronger $\exp(c\delta^{-\alpha})$ lower remain open.
+
+The [bounded-control observability theorem](../docs/BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md) recovers positive squared-resolvent words with constants independent of rival rates, dimension and minimum stationary mass. Convexification and one global analytic-continuation variable avoid repeated exponent loss; resolvent parity extraction then feeds the existing whole-word repair and entropy argument. No negative control is physically supplied. The [Walsh hierarchy](../docs/UNCAPPED_WALSH_OBSERVABILITY.md) separately gives explicit fixed-clock state thresholds for each target against arbitrary Markov rivals and an exact 38-state realization for width one.
+
+All three proofs passed separate internal reviews. The [focused exact verifier](../scripts/verify_uncapped_observability.py) and [saved report](../reports/uncapped_observability.json) cover the bounded algebra and small target identities, with dense dimension at most seven. The [source comparison](../docs/BOUNDED_WORD_RECOVERY_PRIOR_ART.md), [dossier](../docs/RESEARCH_DOSSIER.md) and [ledger](../docs/CLAIM_LEDGER.md) record the claim scope and drafting inputs. See [Verification](../docs/VERIFICATION.md) for the full regression and publication evidence. Manuscript drafting remains on hold.
+
+## Historical checkpoint: state, speed and research readiness — 23 September 2026
 
 The user requests that the repository contain the research materials needed for eventual manuscript drafting, with drafting itself kept as the last step. This continuation starts from published commit `e21c454ec1a0eef8ceba8bd7e3d01defc62b53a5`. Start with the [research dossier](../docs/RESEARCH_DOSSIER.md) and [claim ledger](../docs/CLAIM_LEDGER.md): these fix the common model, exact error and quantifiers, counted resources, theorem hierarchy, dependency map, assumptions, reproducibility and source comparisons. They are research records, not manuscript prose.
 
@@ -182,7 +192,7 @@ The original exact and finite-accuracy cubic results, their two-state witnesses,
 
 ## Scientific position
 
-The main candidate is now an intrinsic reversibility cost for controlled prediction with a balanced binary actuator: exponential versus polynomial state growth under the same field rule, histogram and outgoing-rate budget. The binary construction uses budget $6580k$ and band $[k,13160k]$; the nineteen-level version retains budget $3k$ and band $[k,3k]$. The separation between passive simplicity, cubic-response complexity, and full controlled prediction remains complementary. The tighter numerical binary band remains open. The sharp rank-one theorem identifies a tractable structural subclass; it must not be silently extended to all two-level actuators.
+The main candidate is now an uncapped superpolynomial cost of ordinary reversibility for controlled prediction on the nineteen-level family. The balanced binary theorem supplies the stronger exponential-versus-polynomial growth class at budget $6580k$ and band $[k,13160k]$, including each fixed positive control clock. The nineteen-level targets retain band $[k,3k]$; their uncapped lower uses arbitrarily fast switching. The complementary passive/step/switching and aggregation results retain their separate competitor classes.
 
 All constructors receive a known target. Approximate full path-law error over all horizons, noisy arbitrary-process learning, parameter precision, running time, and a molecular implementation are not established. The model's kinetic field rule is specified; equilibrium detailed balance alone would not determine it.
 
@@ -190,9 +200,11 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 ## Single next research priority
 
-**Determine whether the exponential reversible lower survives without a rival rate cap.**
+**Extend the uncapped superpolynomial separation to a balanced binary actuator.**
 
-The new qualitative fixed-target uncapped error floor is proved, but its dependence on target width and rival state budget is unknown. The next task is to quantify that floor or construct a faster reversible compression scheme in the same actual-mean norm. Direct cap-independent recovery of the untrimmed generator moments is now ruled out by the rare-fast-component example. A continuation of this positivity/entropy route must control bounded observables or discard low-mass fast contributions with an explicit error budget; a different proof route is also possible. A successful alternative construction must count every added state and retain the original field rule and exact histogram. The variable-cap tradeoff and same-state regularization are constraints on either route; their present combination does not decide the uncapped growth law. Keep local verification, live CI and independent mathematical review separate.
+The nineteen-level uncapped penalty is now proved through bounded resolvent observations; it must not remain listed as only qualitative. Its distinct observable port projections have no immediate counterpart in the binary rival, whose marker is a general positive operator. Seek positive, observable bounded words compatible with the binary weighted normalization and transport repair. The existing palindromic heat/resolvent replacement is obstructed by positive semidefiniteness, so that literal substitution does not solve the extension. Keep the original field rule, exact balanced histogram, preparation and readout, count all new states, and state control-clock requirements explicitly.
+
+The stronger uncapped lower $\exp(c\delta^{-\alpha})$ and a fixed-clock uncapped superpolynomial penalty remain distinct open questions. The new Walsh hierarchy is an all-rival fixed-target rank statement and does not settle either. Direct cap-independent recovery of untrimmed generator moments remains ruled out by the rare-fast-component construction. Keep local verification, live CI and external mathematical review separate.
 
 A parallel refinement is to reduce the binary gadget's rate-to-gap ratio, especially toward the original target band $[k,3k]$ and common exit budget $3k$. The binary theorem already removes the finite-alphabet obstacle at a larger constant budget; do not describe the general fixed-budget binary question as unresolved. The present number $6580$ is a sufficient construction constant, not an optimal threshold. Arbitrary fixed labels on the earlier expander class remain a separate tight-band subquestion.
 
