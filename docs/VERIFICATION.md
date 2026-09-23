@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-eight mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-nine mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -290,6 +290,20 @@ The same program checks all 741 factors of an exact 39-node Vandermonde determin
 
 All three fresh verifier sources received independent static review and passed individual runs in Python 3.13.5 with the unchanged pinned dependencies. The full twenty-eight-verifier `make check` passes, and all twenty-eight fresh reports match their saved evidence. The repository checker passes 591 local Markdown links and 29 Python syntax checks, including report provenance. A byte comparison preserves all fifty-three protected files from `80253e1462d618ccc435f2394aba240e858496b5` (twenty-five verifiers, twenty-five reports, license, dependencies and workflow) and all nine recovery files from `ee4e5173ea6a9dd0a54e2d558e83a0ad3a1ad620`. The suite still has maximum dense dimension 68; the new dynamic-lamp check separately constructs 146 physical states as a sparse graph. GitHub Actions is recorded separately from these local checks.
 
+## Binary reversibility checkpoint
+
+This extension starts from local commit `da0073b`, which integrates the recovered nineteen-level theorem and its twenty-eight-verifier gate. The [binary theorem](BINARY_REVERSIBILITY_LOWER_BOUND.md) and [exact verifier](../scripts/verify_binary_reversibility_lower_bound.py) add the balanced two-level construction and the positive-normalization argument. Its [saved report](../reports/binary_reversibility_lower_bound.json) is generated in the unchanged pinned Python 3.13.5 environment using the standard library and records its own source hash.
+
+The verifier constructs the complete width-one weighted hidden graph: 1,795 hidden vertices, plus the counted visible state. Sparse dynamic programming checks every possible marker starting vertex in both directions, leaving exactly the intended root-to-tip map and its reverse. Root-restricted words of lengths 5, 9, 13 and 17 implement the four logical gates; lengths 21 and 25 select the two complementary probes, including the inactive scrambled cycles. Their exact normalization gives root mass `1/18` and query Gram `I/18`.
+
+Degree counts certify the balanced binary histogram and variance `1/100` for sensitivity `±1/10`. Explicit routes certify basin volume 235, maximum route length 28 and maximum load-to-conductance ratio 235, the finite instance of the analytic gap proof. Original-rule edge fluxes satisfy exact detailed balance at three rational exponential fields, and the zero-field rates give exact passive telegraph lumpability. The physical scalar endpoint normalization is checked on the root selector. The theorem's five-field interpolation and all-width inequalities remain analytic statements.
+
+Two-, three- and five-state exact algebraic cases check the new mixed-norm transport repair and normalization identities. One has raw row sum 10 but an L2 operator cap below 2. Another has a positive nonprojector selector with a zero row and a small positive row sum. The five-state case uses `u=(1/1000,1,1,1,0)` and a nonselfadjoint transport: weighted adjoints, both clipping stages, positive deficit filling, bounded path errors and positive outer-selector probe clipping are all checked exactly. These examples do not add any state during normalization or repair, and do not simulate arbitrary physical rivals.
+
+The new verifier's largest dense matrix has dimension five. The suite's earlier maximum dense dimension remains 68; the 1,795-vertex graph is stored sparsely. This is bounded exact verification, not a large simulation or an enumeration proof of the asymptotic lower bound. The complete binary proof and the verifier received separate internal reviews with no outstanding mathematical issue. Its scope is the common exit budget `6580k`, target/reversible-upper band `[k,13160k]`, exact binary histogram and original field rule. The earlier numerical binary band `[k,3k]`, uncapped reversible rivals and matched exponents remain open. Earlier saved reports retain their checkpoint-specific limitations, including statements of questions that this later theorem resolves.
+
+The full twenty-nine-verifier `make check` passes in pinned Python 3.13.5. All twenty-nine fresh reports are byte-identical to their saved evidence. The final repository checker passes 630 local Markdown links, 30 Python syntax checks and saved-source provenance. All fifty-nine protected files from `da0073b` (twenty-eight verifiers, twenty-eight reports, license, dependencies and workflow) and all nine recovery files are byte-identical to their preceding checkpoints. Public-main publication was blocked by automatic approval review, which requires explicit authorization for that public side effect. These commits have local verification; no new GitHub Actions result is claimed.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -322,6 +336,7 @@ python scripts/verify_register_scenery_compression.py --output reports/register_
 python scripts/verify_soft_aggregation_lower_bound.py --output reports/soft_aggregation_lower_bound.json
 python scripts/verify_exact_reversible_prefix_obstruction.py --output reports/exact_reversible_prefix_obstruction.json
 python scripts/verify_dynamic_lamp_reversibility_lower_bound.py --output reports/dynamic_lamp_reversibility_lower_bound.json
+python scripts/verify_binary_reversibility_lower_bound.py --output reports/binary_reversibility_lower_bound.json
 make check
 ```
 

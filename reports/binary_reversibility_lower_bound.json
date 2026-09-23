@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "scope": "Exact bounded certificates for the balanced binary temporal-marker construction and the positive-selector L2 repair bridge.",
+  "weighted_graph_and_physical_model": {
+    "logical_triples": 16,
+    "hidden_states": 1795,
+    "physical_states": 1796,
+    "stored_directed_edges": 3780,
+    "total_degree": 4032,
+    "root_degree": 14,
+    "root_stationary_mass_exact": "1/18",
+    "binary_stationary_histogram_exact": {
+      "-1/10": "1/2",
+      "1/10": "1/2"
+    },
+    "variance_exact": "1/100",
+    "maximum_route_edges": 28,
+    "root_basin_degree_volume": 235,
+    "maximum_load_over_conductance": 235,
+    "gap_lower_certificate_exact": "1/6580",
+    "P_relaxation_cap": 2,
+    "physical_internal_exit_budget_k_units": 6580,
+    "physical_gap_lower_k_units": 1,
+    "physical_spectral_cap_k_units": 13160,
+    "physical_field_checks": [
+      {
+        "exp_h_over_ten_exact": "1",
+        "visible_edges_checked": 1795
+      },
+      {
+        "exp_h_over_ten_exact": "10001/10000",
+        "visible_edges_checked": 1795
+      },
+      {
+        "exp_h_over_ten_exact": "10000/10001",
+        "visible_edges_checked": 1795
+      }
+    ],
+    "scope": "Exact n=1 graph, path-load, and original-field checks. The dimension-independent construction and Poincare inequality are proved separately."
+  },
+  "positive_marker_gate_and_probe_words": {
+    "marker": {
+      "all_start_vertices_checked_each_direction": 1795,
+      "nonzero_forward_rows": 16,
+      "nonzero_reverse_rows": 16,
+      "forward_probability_exact": "1/939524096",
+      "reverse_probability_exact": "1/67108864",
+      "TT_adjoint_root_factor_exact": "1/63050394783186944",
+      "positive_projector_polynomial_scale_exact": "63050394783186944"
+    },
+    "gate_and_probe_words": [
+      {
+        "name": "J",
+        "edges": 5,
+        "normalization_kappa_exact": "1/112",
+        "positive_polynomial_scale_exact": "112",
+        "nonzero_root_rows": 16
+      },
+      {
+        "name": "V",
+        "edges": 9,
+        "normalization_kappa_exact": "1/1792",
+        "positive_polynomial_scale_exact": "1792",
+        "nonzero_root_rows": 16
+      },
+      {
+        "name": "X",
+        "edges": 13,
+        "normalization_kappa_exact": "1/28672",
+        "positive_polynomial_scale_exact": "28672",
+        "nonzero_root_rows": 16
+      },
+      {
+        "name": "F",
+        "edges": 17,
+        "normalization_kappa_exact": "1/458752",
+        "positive_polynomial_scale_exact": "458752",
+        "nonzero_root_rows": 16
+      },
+      {
+        "name": "plus_probe",
+        "edges": 21,
+        "normalization_kappa_exact": "1/7340032",
+        "positive_polynomial_scale_exact": "7340032",
+        "nonzero_root_rows": 8
+      },
+      {
+        "name": "minus_probe",
+        "edges": 25,
+        "normalization_kappa_exact": "1/117440512",
+        "positive_polynomial_scale_exact": "117440512",
+        "nonzero_root_rows": 8
+      }
+    ],
+    "hidden_query_gram_diagonal_exact": "1/18",
+    "word_check_scope": "Every possible starting vertex is checked for the marker. Gates and probes are checked on both target root endpoints, as prescribed by their outer marker projectors."
+  },
+  "L2_transport_repair": {
+    "states_before_and_after": 2,
+    "L2_cap_exact": "2",
+    "maximum_raw_row_sum_exact": "10",
+    "maximum_row_mse_exact": "81/10000",
+    "maximum_repair_dual_norm_squared_exact": "50628937/6249375000",
+    "bounded_left_corners_checked": 4,
+    "path_endpoint_corner_pairs_checked": 16,
+    "maximum_path_scalar_error_exact": "944815559/49995000000",
+    "path_length": 3,
+    "scope": "The exact 2x2 positive-definiteness certificate and box-corner checks establish the stated inequalities for this example; the general L2 repair lemma is a separate proof."
+  },
+  "positive_selector_Doob_transform": {
+    "actual_selector_states": 3,
+    "retained_positive_support_states": 2,
+    "selector_row_sum_u_exact": [
+      "1/1000",
+      "2",
+      "0"
+    ],
+    "normalization_Z_exact": "4000001/3000000",
+    "Doob_stationary_law_exact": [
+      "1/4000001",
+      "4000000/4000001"
+    ],
+    "selector_is_projection": false,
+    "scaled_kernel_examples": [
+      {
+        "scale_exact": "1",
+        "positive_outer_A_coefficient_exact": "4004001000000/16000008000001",
+        "both_normalized_defects_squared_exact": "0",
+        "exact_L2_operator_norm": "1"
+      },
+      {
+        "scale_exact": "17/16",
+        "positive_outer_A_coefficient_exact": "4254251062500/16000008000001",
+        "both_normalized_defects_squared_exact": "1/256",
+        "exact_L2_operator_norm": "17/16"
+      }
+    ],
+    "clipping_error_squared_exact": "9/4000001",
+    "envelope_error_bound_squared_exact": "1000009/4000001",
+    "scope": "A tiny non-idempotent selector with one zero row and a small positive u entry checks support, conjugation, adjoints, normalization and clipping. It is an algebraic illustration, not a constructed physical rival."
+  },
+  "non_selfadjoint_Doob_and_repair": {
+    "actual_states": 5,
+    "positive_support_states": 4,
+    "t_exact": "1/1000",
+    "selector_row_sums_exact": [
+      "1/1000",
+      "1",
+      "1",
+      "1",
+      "0"
+    ],
+    "normalization_Z_exact": "3000001/5000000",
+    "Doob_stationary_law_exact": [
+      "1/3000001",
+      "1000000/3000001",
+      "1000000/3000001",
+      "1000000/3000001"
+    ],
+    "L2_cap_exact": "1001/1000",
+    "transport_differs_from_its_adjoint": true,
+    "both_row_defects_squared_exact": [
+      "13679759628507691751/24000008000000000000000000",
+      "13679759628507691751/24000008000000000000000000"
+    ],
+    "row_defect_bound_epsilon_exact": "1/1000",
+    "mixed_repair_left_corners": 16,
+    "maximum_mixed_repair_dual_norm_squared_exact": "60016183073503218993879035130901843939194636267616131377672938387880253329240190035340623432443879763063294540159161144292210754763217172240413831/105224640174952975355670890078251097462864889757393363898710099341393543955040345902417962307673329478736123636879050448248942657648648000000000000000000",
+    "mixed_repair_bound_squared_exact": "6255001/250000000000",
+    "path_length": 3,
+    "path_terminal_corners": 16,
+    "maximum_bounded_path_error_exact": "126123154891083717847622168523935823451283535671003095901660288843395815574593179886875469627825048041858602836934804206066537258489625253395428451719711777083972172487815403356061002159430055103196830928687798881464684404003/63013922409706980587629091696618562307656497186131013516420947245235304879943069694175001601358665118133207381764930878412843725312201388835578713729273881546796119205026858195602537188448044515404048000000000000000000000000000",
+    "path_error_bound_exact": "7518013503/500000000000",
+    "clipped_feature_exact": [
+      "1003001/2000000",
+      "1",
+      "1",
+      "1"
+    ],
+    "clipping_error_squared_exact": "40994006998001/12000004000000000000",
+    "positive_envelope_bound_squared_exact": "20994011006009/6000002000000000000",
+    "scope": "An exact five-state algebraic example tests distinct adjoints, both clipping stages, positive fill, and outer-selector probes. Operator caps follow from the certified selector contraction and permutation isometry, with no inverse-small-u factor."
+  },
+  "largest_matrix_dimension": 5,
+  "largest_sparse_hidden_state_count": 1795,
+  "largest_counted_physical_state_count": 1796,
+  "dense_physical_matrix_allocated": false,
+  "limitations": "The verifier builds only n=1 and does not establish an all-n theorem by enumeration. It does not calibrate the asymptotic fixed-clock constants or simulate arbitrary reversible rivals. The intended theorem keeps a fixed common rate budget and the original binary field rule; it does not remove that budget or retain the earlier numerical [k,3k] band.",
+  "source_sha256": {
+    "verify_binary_reversibility_lower_bound.py": "30e2d1f86fdbb8d365badfd43b63997e633cca86c4504adc3f36740c2839e5aa"
+  }
+}

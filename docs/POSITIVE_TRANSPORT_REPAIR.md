@@ -2,7 +2,7 @@
 
 [Checkpoint](../README.md) · [Dynamic-lamp application](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md)
 
-This self-contained note proves a quantitative transport repair lemma. The corrected kernels act on exactly the original state sets.
+This note bounds a standard transport repair on the original state sets. Altschuler–Weed–Rigollet, [Algorithm 2, Lemma 7 and Appendix A.4](https://arxiv.org/pdf/1705.09634) (NeurIPS 2017; inspected preprint v2), already clip marginal excesses and fill deficits by an outer product. Their sequential clipping gives an entrywise $L^1$ estimate. Here both factors use the original marginals; the displayed bounds and controlled-word applications are proved directly.
 
 ## 1. Statement
 
@@ -112,6 +112,32 @@ $$
 
 Every path functional bounded in absolute value by one has expectation error at most (4), and in particular endpoint products of bounded features do. This scalar estimate avoids taking an unnecessary further square root.
 
-## 4. Scope
+## 4. A mixed-norm estimate without a row cap
 
-The repair is algebraic and may create positive edges that were absent. It preserves state sets and stationary marginals. In the dynamic-lamp proof it supplies couplings on the rival's existing states; it is not asserted to be a new physical surrogate obeying the original rates. The rate bound is used to control raw suffix mass, not to bound the repaired transition probabilities beyond stochasticity.
+The [binary proof, Section 5](BINARY_REVERSIBILITY_LOWER_BOUND.md#5-repair-under-an-operator-norm-bound), establishes the following variant on one finite probability space $(I,\nu)$. If $T\ge0$, $\|T\|_{2\to2}\le C$ with $C\ge1$, and
+
+$$
+\|T1-1\|_2,\ \|T^*1-1\|_2\le\varepsilon,
+$$
+
+the same clipping and deficit-fill construction gives stationary $U,U^*$ on the existing states with
+
+$$
+|\langle f,(T-U)g\rangle_\nu|
+\le(2C+3)\varepsilon\|g\|_2,
+\qquad |f|\le1.
+\tag{6}
+$$
+
+For a product of $L$ kernels satisfying these hypotheses with common constants and bounded endpoint functions, the scalar product error is at most
+
+$$
+L(2C+3)C^{L-1}\varepsilon.
+\tag{7}
+$$
+
+Repaired prefixes preserve the bounded left function under their adjoints; raw suffixes are controlled in $L^2$. Thus no pointwise raw row cap is needed. The full elementary proof is given in the linked section. This mixed-norm estimate is separate from the standard marginal $L^1$ repair guarantee cited above. It is used after positive diagonal normalization in the binary theorem, where a small normalizing vector could make raw row sums large.
+
+## 5. Scope
+
+The repair is algebraic and may create positive edges that were absent. It preserves state sets and stationary marginals. In the dynamic-lamp proof it supplies couplings on the rival's existing states; it is not asserted to be a new physical surrogate obeying the original rates. In Section 3, a row bound controls raw suffix mass; Section 4 instead uses an operator norm. Neither step bounds repaired transition probabilities beyond stochasticity. The rival rate cap in the physical applications is separately needed for the transfer from actual means to word scalars.

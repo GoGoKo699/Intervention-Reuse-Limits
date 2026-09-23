@@ -42,7 +42,7 @@ Both lower bounds already hold on thirty-nine fixed field values, with all posit
 
 The reversible lower holds for any fixed $\Lambda\ge3$ for all original-rule reversible rivals with histogram (1) and hidden relaxation cap $\Lambda k$, with constants depending on $\Lambda$. Rivals need not preserve a lower gap or the target topology. Taking $\Lambda=6$ covers every reversible rival with internal exit budget $3k$, because its real spectrum lies in $[-6k,0]$. The reversible upper models retain the narrower target band $[k,3k]$, hence also obey the common exit budget.
 
-The result uses nineteen actuator values and a fixed rate budget. It does not establish the same lower for binary actuators, unbounded-rate reversible rivals, or reversible rivals with arbitrary field dependence. There is no partition, encoder, inherited-coordinate, or target-state labeling restriction on the reversible rivals in (2).
+This construction uses nineteen actuator values and a fixed rate budget. The [binary extension](BINARY_REVERSIBILITY_LOWER_BOUND.md) proves the same growth-class separation with two actuator values at a larger fixed rate budget. The binary target band $[k,3k]$, unbounded-rate reversible rivals, and reversible rivals with arbitrary field dependence remain outside these results. There is no partition, encoder, inherited-coordinate, or target-state labeling restriction on the reversible rivals in (2).
 
 ## 2. A uniformly mixing table-and-register target
 
