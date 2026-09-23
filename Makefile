@@ -40,3 +40,4 @@ check:
 	$(PYTHON) scripts/verify_binary_uncapped_observability.py --output .check-output/binary_uncapped_observability.json
 	$(PYTHON) scripts/verify_fixed_clock_observability.py --output .check-output/fixed_clock_observability.json
 	$(PYTHON) scripts/verify_prl_exploration.py --output .check-output/prl_exploration.json
+	$(PYTHON) scripts/verify_kinetic_parity.py --output .check-output/kinetic_parity.json

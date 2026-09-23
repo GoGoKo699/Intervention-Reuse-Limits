@@ -1,77 +1,68 @@
-# PRL exploration: prediction states and stationary irreversibility
+# PRL exploration: reusable prediction and time-reversal structure
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Source comparison](PRL_EXPLORATION_SOURCE_AUDIT.md) · [Internal review](PRL_EXPLORATION_INTERNAL_REVIEW.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Source comparison](KINETIC_PARITY_SOURCE_AUDIT.md) · [Internal review](KINETIC_PARITY_INTERNAL_REVIEW.md) · [Verification](VERIFICATION.md)
 
-**Target decision, 23 September 2026.** The user selected *Physical Review Letters* as the target for a new exploration phase. Manuscript drafting remains the last step. This record sets the research direction and documents the first completed advances; it is not a manuscript, submission decision or prediction of acceptance.
+**Research target, 23 September 2026.** The user selected *Physical Review Letters*. The present exploration is theory first, with bounded exact checks; manuscript drafting remains the last step. The [official PRL criteria](https://journals.aps.org/prl/about), checked on this date, emphasize a significant physical advance and impact beyond a narrow technical refinement. This record sets research priorities, not an acceptance prediction.
 
-The [official PRL criteria](https://journals.aps.org/prl/about), checked on this date, call for a significant physical advance through a new avenue, a critical problem, an impactful method or unusual broad interest. Our working test is whether the results expose a useful physical limitation on reusable stochastic models, beyond a technically stronger state-count construction.
+## 1. The current physical question
 
-## 1. Physical question
+How does a reduced stochastic model's time-reversal structure affect the number of states it needs to predict interventions?
 
-Can an equilibrium stochastic system require an irreversible reduced model if the reduced model must remain small and predict interventions accurately?
+The targets are finite equilibrium systems with an exact two-state passive visible law. Interventions expose hidden structure. The latest comparison permits arbitrary rival barrier functions within a shared equilibrium interface, arbitrary new states and no target histogram promise. It distinguishes ordinary detailed balance, where time reversal fixes each retained configuration, from generalized reversal, which can exchange memory states.
 
-The targets are reversible finite-state systems. Their complete passive visible law has an exact two-state realization. Intervention exposes hidden information. The new results connect the cost of retaining that information to ordinary detailed balance and to the stationary entropy production of a predictor. The target itself remains at equilibrium at zero field; it is the reduced predictor whose irreversible currents are at issue.
+The generalized class changes the conclusion materially. Its polynomial predictor has exactly zero stationary path entropy production under its specified reversal. Thus the preceding identity-reversal resource theorem must not be presented as a universal thermodynamic dissipation requirement. The limitation is a proved construction, not merely a missing proof route.
 
-All comparisons use one predictor for every allowed protocol and horizon, the original exponential field rule, stationary zero-field preparation and binary readout. State count includes every retained memory coordinate. The results concern a specified model class, not every possible physical implementation of prediction.
+## 2. Completed advances in this continuation
 
-## 2. What this phase established
-
-| Result | Advance | Scope that must remain visible |
+| Result | What is established | Essential boundary |
 |---|---|---|
-| [Positive label selectors](POSITIVE_LABEL_SELECTORS.md) | Two physical fields recover positive approximate selectors for the target's nineteen actuator levels. | Rival labels may vary anywhere in the same bounded interval. Exact rival histogram matching is unnecessary. |
-| [Tight-band fixed-clock separation](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) | The original target band remains $[k,3k]$, with no new target states or rate rescaling. Ordinary reversible prediction is superpolynomial while unrestricted prediction has a polynomial sufficient count. | Two fields and any fixed positive clock suffice; arbitrary finite rival rates and new states are permitted. The original kinetic field rule remains essential. |
-| [Uniform entropy-production reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) | Replacing $K$ by $(K+K^*)/2$ preserves every state, label, stationary mass and exit rate, with an all-protocol, all-horizon mean-error bound. | The constant depends only on the external interface, with no hidden rate, dimension or minimum-mass factor. The result concerns endpoint responses, not entire long path distributions. |
-| [State–entropy-production tradeoff](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) | Reversible state lower bounds extend to predictors with a bounded stationary entropy-production rate. Polynomial predictors can also be regularized to have finite entropy production. | The stronger quantitative frontier keeps the older common cap and exact histogram; it is separate from the broader uncapped frontier. Bounds are not matched. |
+| [General kinetic interface](GENERAL_KINETIC_INTERFACE.md) | The uncapped ordinary-reversibility lower extends to arbitrary barrier curves with shared equilibrium tilt and bounded queried rates. Two-field unrestricted growth is now polynomially matched. | Curves between the two queried fields are invisible to that task; on the original endpoint interval this is an exact reparameterization. |
+| [General endpoint entropy bound](GENERAL_INTERFACE_ENTROPY_BOUND.md) | A common return lower bound and bounded injection density give an all-protocol, all-horizon comparison with hidden additive reversibilization. A general initial-density bound and a qualified distributed-reset extension are included. | Local balance is additionally needed for a fully reversible comparator; entropy uses ordinary reversal. |
+| [Capped two-field separation](CAPPED_KINETIC_INTERFACE_SEPARATION.md) | At shared hidden exit cap $3k$, ordinary prediction cost is exponential while unrestricted cost is polynomial on the same two-field task. No rival kinetic formula, alphabet or histogram is prescribed. | The hub geometry, field-independent hidden generator, baseline rates, equilibrium tilt and preparation remain fixed. |
+| [Generalized-reversal predictor](GENERALIZED_REVERSAL_PREDICTION.md) | Reversing an odd memory word and reading its middle symbol preserves the polynomial predictor's exact controlled response and supplies generalized detailed balance. | The involution is mathematically explicit; a natural physical implementation of that parity is not supplied. |
+| [Combined resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) | Ordinary and generalized reversal have different state-growth classes; the identity-reversal entropy frontier extends to the broader capped kinetic class. | Zero generalized entropy production coexists with positive identity-reversal entropy production. Neither is automatically driven heat. |
 
-The two-field state comparison is
-
-$$
-D_{\rm all}^{(2,a)}(\delta)\le C\delta^{-p},\qquad
-D_{\rm rev}^{(2,a)}(\delta)\ge
-\exp\!\left(\exp\!\left(c_{a,H}[\log(1/\delta)]^{1/5}\right)\right).
-$$
-
-At target index $n$, accuracy $e^{-C(n+1)^5}$ forces at least $2^{3\cdot2^n/4}$ reversible states, witnessed by finite clock experiments of at most $C(n+1)^5$ ticks. No bound on experiment count, sample size or parameter precision follows. A separate thirty-nine-field corollary supplies polynomial unrestricted necessity on the same target family. A two-field matching unrestricted lower is not claimed.
-
-For any original-rule stationary predictor with $|g|\le G$, let $R=e^{(1+G)H}$ and let $\sigma_0$ be its full zero-field stationary entropy-production rate in nats per unit time. The new bridge is
+On the original nineteen-level targets, with hidden band $[k,3k]$, any fixed positive clock and the two fields $0,H$, the common-cap comparison is
 
 $$
-\mathcal D_H(F,F_{\rm sym})\le
-R^{3/2}\sqrt{\sigma_0/k},\qquad
-D_{\le\Sigma}(\delta)\ge
-D_{\rm rev}\!\left(\delta+R^{3/2}\sqrt{\Sigma/k}\right).
+D_{\rm all}(\delta)=\delta^{-\Theta(1)},\qquad
+D_{\rm inv}(\delta)=\delta^{-\Theta(1)},\qquad
+D_{\rm id}(\delta)=\exp(\delta^{-\Theta(1)}).
 $$
 
-Under the common exit cap $3k$ and exact nineteen-level histogram, this gives
+The exponents are not matched, and equality of growth classes does not assert equal minimum sizes. Every memory coordinate counts. Witness horizons are logarithmic in inverse error, but their constants and required accuracy can be severe; experiment count and sample complexity are not bounded.
 
-$$
-D_{\le\Sigma}(\delta)\ge
-\exp\!\left(c[\delta+R^{3/2}\sqrt{\Sigma/k}]^{-\alpha}\right).
-$$
+Without a common rival rate cap, the same two-field class has polynomial unrestricted growth and ordinary necessity at least $\exp(\exp(c[\log(1/\delta)]^{1/5}))$. The stronger capped exponent must not be assigned to that uncapped class.
 
-A uniform polynomial state budget then requires a worst-case stationary entropy-production budget at least $c'k[\log(1/\delta)]^{-2/\alpha}$. Conversely a polynomial predictor with $\sigma_0\le(3k/2)\log(12R/\delta)$ exists. This gap is explicit. Neither a nonzero asymptotic floor nor an optimal tradeoff is asserted.
+## 3. Why the proofs now differ
 
-## 3. Contribution and prior work
+The capped lower uses squared Lagrange polynomials of the return-rate diagonal. These are exact selectors on the finite target grid and nonnegative diagonal operators on arbitrary rival values. The common cap makes $I+K/(3k)$ a positive Markov kernel. Their products recover exact target transports, with finite clock observations controlling all repair and entropy tests. The separate rank lower truncates only target-side clock polynomials, so it does not need a rival cap or reversibility.
 
-The [source audit](PRL_EXPLORATION_SOURCE_AUDIT.md) compares complete theorem scopes. Additive reversibilization and its entropy-controlled proximity to an equilibrium analogue are established ideas. In particular, Kolchinsky–Ohga–Ito bound spectral differences using entropy production and a normalized edge-activity factor. The candidate addition here is a uniform controlled endpoint-response estimate with constants supplied by the visible interface, followed by a state-budget obstruction. The source record also distinguishes autonomous positive realization and compression, causal asymmetry, and thermodynamic prediction-information bounds.
+The generalized upper changes the interpretation of retained memory. Stationary word probabilities of a reversible target obey word-reversal symmetry. An odd word's middle symbol is unchanged by reversal. Its stationary output process is an index shift of the usual endpoint-labeled word process, so their complete stationary actuator-path laws agree. That equality preserves the original controlled response, including the entry tilts and repeated hidden visits. No controller knows future applied fields, and no uncounted clock is introduced.
 
-The reset representation supplies the physical mechanism behind uniformity in time. Every hidden state returns to the visible state at a rate bounded below by the fixed external interface. This limits how long differences in internal irreversible dynamics can influence an endpoint response. The written proof conditions on the most recent common reset and bounds path relative entropy only over that interval.
+The broader entropy comparison instead uses the last common return to the visible state. This limits the duration over which different internal dynamics affect an endpoint. It needs neither the exponential barrier formula nor a hidden rate cap. Its state-budget consequences still depend on the separate ordinary-reversibility lower.
 
-Four proof notes have passed separate internal mathematical audits. A bounded exact verifier supplements operator identities and error bookkeeping; it does not prove universal theorems by finite enumeration. See the verification record for the current regression and publication evidence. The novelty comparison and internal audits do not constitute independent peer review.
+## 4. Prior work and physical interpretation
 
-## 4. Priorities before drafting
+The [new source audit](KINETIC_PARITY_SOURCE_AUDIT.md) gives precise primary-source comparisons. Reversible higher-order processes and word-reversal fluxes are established in Bacallado; non-selfadjoint trajectory-reversible lifts appear in Diaconis–Miclo; odd-parity entropy accounting is addressed by Lee–Kwon–Park. These prevent claiming word reversal or the distinction between ordinary and generalized reversibility as new principles.
 
-1. **Broaden or sharply delimit the physical interface.** Determine which kinetic field rules and preparation mechanisms retain the uniform entropy bridge and state obstruction. Test generalized reversal conventions separately; the present results use ordinary identity reversal.
-2. **Find a transparent finite-accuracy example.** Seek a small, certified controlled-mean state advantage with a useful tolerance. A drawing of the lamp mechanism is insufficient: the smallest existing target has a 38-state exact realization and matching general rank threshold, so it does not establish a tiny reversible-versus-irreversible gap.
-3. **Narrow the entropy-production frontier.** Improve the inverse-polylogarithmic lower or logarithmic upper under the common cap, or identify the correct additional parameter. Merely sharpening the fifth-root bookkeeping exponent is a secondary priority.
-4. **Stress-test the claimed distinction from the closest theorems.** Compare the full controlled-response and minimax resource statements, including state parity, protocol class and activity dependence. Update claims if a closer result subsumes an ingredient.
+The claim under investigation is the combined quantitative controlled-prediction comparison: the same target, two-field observation task, counted state space, finite accuracy and common kinetic budget. The audit also separates standard local detailed balance and barrier freedom from this project's deliberately chosen hub geometry, unchanged hidden dynamics and preparation. Ten relevant papers do not make the entire chosen architecture a community convention.
 
-These are research priorities, not new permission gates. Continue with bounded analytic work and small exact checks; large simulations and manuscript prose remain deferred.
+For physically even retained configurations, ordinary detailed balance is the relevant reversal constraint and the identity-reversal state/entropy bounds apply. If a nontrivial physical reversal is available, the generalized construction prevents a universal heat-cost conclusion. A device-level interpretation would have to justify the actual parity and reservoirs. State count is not the stationary Shannon entropy, and stationary entropy production is not total entropy generated during an arbitrary driving protocol.
 
-## 5. Physical interpretation limits
+## 5. What to pursue next
 
-The entropy-production rate uses ordinary time reversal of the counted configurations. A thermodynamic reading presumes those variables have that reversal convention. Generalized detailed balance with odd variables has not been analyzed. Stationary zero-field entropy production is distinct from total entropy production during a driven protocol and is not automatically a heat or power estimate for a specified device.
+1. **A recognizable physical model class or realization.** Seek conventional local dynamics or a concrete memory realization for which the relevant reversal parity is physically fixed. Show which part of the state advantage survives there.
+2. **A small, certified finite-accuracy advantage.** Produce a stated tolerance and an explicit smaller predictor with a rigorous lower against all ordinary-reversible rivals. The present small checks illustrate identities; they do not establish that finite example. The smallest earlier lamp target has equal 38-state exact minima in the compared broad classes.
+3. **Relax a substantive remaining interface assumption.** Field-dependent hidden generators, nonuniform baseline return rates or more general equilibrium weights require new arguments. Freedom at unqueried field values is not, by itself, operational generality.
+4. **Sharpen the resource frontier where identity reversal is physically justified.** Its necessary inverse-polylogarithmic and sufficient logarithmic entropy-production budgets remain unmatched. Improving that gap is more consequential than only sharpening the uncapped fifth-root bookkeeping exponent.
 
-The entropy in the state lower proof belongs to an auxiliary decoded law on the rival's states. It is not the predictor's stationary Shannon entropy. Thus the result does not identify $\log D$ with stored thermodynamic information or invoke a Landauer bound. The targets are constructed worst-case examples, and the necessary entropy production at a fixed accuracy can be extremely small.
+These are research priorities, not permission gates. The current assessment is to continue the PRL-directed exploration with the parity boundary central. The mathematics is stronger and the thermodynamic claim is more sharply delimited; broad physical significance still needs a convincing model class or finite-accuracy instance.
 
-The current assessment is to **continue the PRL-directed exploration**: the physical resource question is materially stronger than at the preceding checkpoint, while generality, a transparent finite-accuracy example and the quantitative frontier remain the most consequential open work.
+## 6. Evidence and checkpoint history
+
+All five new proof notes received separate internal mathematical audits. The [bounded verifier](../scripts/verify_kinetic_parity.py) and [saved report](../reports/kinetic_parity.json) cover finite word-reversal, kinetic-selector and entropy-bound identities; universal conclusions remain analytic. [Verification](VERIFICATION.md) records the completed local gate and separately identified remote CI. Internal audits and bounded source comparisons are not external peer review or priority certification.
+
+The preceding published checkpoint is e38dde1171995892e8a34abc7100b6489ab393bd, with thirty-four verifiers. It established the original tight-band two-field lower and the identity-reversal entropy-production bridge. Its four proof snapshots, all earlier verifiers/reports and the license remain preserved. The present notes extend those results and supply the generalized-reversal boundary that the preceding assessment explicitly left open.
+
+Manuscript drafting remains deferred.

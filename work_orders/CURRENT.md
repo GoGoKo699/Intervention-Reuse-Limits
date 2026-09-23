@@ -1,6 +1,20 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: prediction states and stationary entropy production — 23 September 2026
+## PRL: broader kinetics and the reversal convention — 23 September 2026
+
+Continue the PRL exploration with manuscript drafting deferred. This checkpoint starts from published commit `e38dde1171995892e8a34abc7100b6489ab393bd`, tree `0238889a245e1e8f4b94e8edbd814cd0f3e256f5`, with successful [GitHub Actions run 35845007667](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35845007667). Preserve all seventy-one baseline scripts, reports, license, requirements and workflow, all frozen proof snapshots and the nine recovery files. Existing authorization for non-forced publication remains in effect.
+
+The [new capped theorem](../docs/CAPPED_KINETIC_INTERFACE_SEPARATION.md) compares the same original target, two fields and any fixed positive clock under the shared hidden exit cap $3k$. Arbitrary bounded kinetic barriers and new states are allowed, without a target alphabet or histogram promise. General prediction has polynomial state growth and ordinary detailed balance has exponential growth. The separate target-only two-field rank proof needs no rival cap or reversibility, also upgrading the [uncapped interface comparison](../docs/GENERAL_KINETIC_INTERFACE.md) to matching polynomial unrestricted growth.
+
+The [generalized-reversal construction](../docs/GENERALIZED_REVERSAL_PREDICTION.md) is the main physical boundary found in this continuation. An odd-length word predictor with its middle symbol as actuator has exactly the established polynomial predictor's controlled response, and obeys generalized detailed balance under word reversal. It has zero stationary entropy production under that reversal. Ordinary entropy production can be made finite while retaining the generalized symmetry. The [combined resource theorem](../docs/KINETIC_PARITY_RESOURCE_TRADEOFF.md) distinguishes these classes and extends the ordinary-entropy frontier to broader capped kinetics. Do not present it as a heat or dissipation requirement independent of physical reversal parity.
+
+The [general hub entropy bound](../docs/GENERAL_INTERFACE_ENTROPY_BOUND.md) separately extends the all-horizon endpoint comparison to bounded injection density and a positive return lower bound, including nonstationary preparations and a qualified distributed-reset corollary. A common local-balance ratio is additionally needed for a fully reversible comparator. The original exponential barrier formula is unnecessary for that bound.
+
+All five new proofs passed separate [internal audits](../docs/KINETIC_PARITY_INTERNAL_REVIEW.md). The [source comparison](../docs/KINETIC_PARITY_SOURCE_AUDIT.md) attributes word-reversal, trajectory-reversible lifts, barrier freedom and odd-parity entropy accounting. The new [bounded verifier](../scripts/verify_kinetic_parity.py) and [report](../reports/kinetic_parity.json) add 166 checks at dense dimension at most nine, with five proof hashes; they do not establish a small finite-accuracy state advantage. Local regression and published CI are recorded separately in [Verification](../docs/VERIFICATION.md).
+
+Next priorities are a recognizable physical model with justified reversal parity, a small certified finite-accuracy advantage, and relaxing substantive remaining assumptions such as field-independent hidden dynamics or uniform baseline returns. The existing hub geometry and engineered target remain special. Ordinary entropy-production bounds are unmatched. The [current PRL record](../docs/PRL_EXPLORATION.md) makes the new physical boundary central; manuscript drafting remains last.
+
+## Historical checkpoint: PRL prediction states and stationary entropy production — 23 September 2026
 
 The user selected **Physical Review Letters** as the new exploration target. Continue theory-first research toward a broadly meaningful physical result; manuscript drafting remains the last step. The [exploration record](../docs/PRL_EXPLORATION.md) fixes the physical question, reviewed advances, limits and next priorities.
 

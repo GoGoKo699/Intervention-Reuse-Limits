@@ -1,0 +1,303 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "arithmetic": "Exact fractions.Fraction and finite symbol enumeration, with separately labeled float64 matrix-exponential/quadrature residuals",
+  "generalized_word_reversal": {
+    "target_hidden_states": 3,
+    "predictor_hidden_states": 8,
+    "total_predictor_states": 9,
+    "word_length": 3,
+    "word_stationary_weights_exact": {
+      "(0, 0, 0)": "65/256",
+      "(0, 0, 1)": "23/256",
+      "(0, 1, 0)": "25/512",
+      "(0, 1, 1)": "55/512",
+      "(1, 0, 0)": "23/256",
+      "(1, 0, 1)": "17/256",
+      "(1, 1, 0)": "55/512",
+      "(1, 1, 1)": "121/512"
+    },
+    "prefix_comparisons": [
+      {
+        "length": 1,
+        "target_prefix_TV_exact": "0"
+      },
+      {
+        "length": 2,
+        "target_prefix_TV_exact": "0"
+      },
+      {
+        "length": 3,
+        "target_prefix_TV_exact": "0"
+      },
+      {
+        "length": 4,
+        "target_prefix_TV_exact": "0"
+      },
+      {
+        "length": 5,
+        "target_prefix_TV_exact": "441/33280"
+      },
+      {
+        "length": 6,
+        "target_prefix_TV_exact": "247401/8652800"
+      }
+    ],
+    "ordinary_hidden_EPR": "infinity",
+    "generalized_hidden_EPR": 0,
+    "regularization_epsilon_exact": "1/10",
+    "regularized_ordinary_hidden_EPR": 8.39923426321,
+    "regularized_generalized_hidden_EPR": 0,
+    "full_field_cases": [
+      {
+        "field_base_exact": "1",
+        "generalized_full_EPR": 0.0
+      },
+      {
+        "field_base_exact": "3/2",
+        "generalized_full_EPR": 0.0
+      },
+      {
+        "field_base_exact": "2/3",
+        "generalized_full_EPR": 0.0
+      }
+    ],
+    "exact_generator_word_cases": 30,
+    "numerical_controlled_mean_residuals": [
+      1.11022302463e-16,
+      0.0,
+      1.11022302463e-16
+    ],
+    "limitations": [
+      "This small fixture validates identities and scope; it is not a state-count advantage example.",
+      "Finite checks do not prove the all-word stationary index-shift identity or all-protocol response equivalence.",
+      "Generalized stationary EPR is different from the ordinary reversal used by the existing state/EPR lower bounds.",
+      "No thermodynamic device realization or zero total entropy production under time-dependent driving is asserted."
+    ]
+  },
+  "generic_barrier_soft_Lagrange": {
+    "target_barrier_grid_exact": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5",
+      "1"
+    ],
+    "field_equilibrium_ratio_exact": "4",
+    "cases": [
+      {
+        "fixture": "target",
+        "hidden_states": 5,
+        "full_states": 6,
+        "stationary_hidden_law_exact": [
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5",
+          "1/5"
+        ],
+        "barriers_exact": [
+          "1/5",
+          "2/5",
+          "3/5",
+          "4/5",
+          "1"
+        ],
+        "hidden_exit_cap_exact": "1/4",
+        "selector_diagonals_exact": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      },
+      {
+        "fixture": "off_grid_rival",
+        "hidden_states": 3,
+        "full_states": 4,
+        "stationary_hidden_law_exact": [
+          "1/6",
+          "1/3",
+          "1/2"
+        ],
+        "barriers_exact": [
+          "1/3",
+          "2/3",
+          "5/6"
+        ],
+        "hidden_exit_cap_exact": "1",
+        "selector_diagonals_exact": [
+          [
+            "1225/59049",
+            "25/59049",
+            "207025/967458816"
+          ],
+          [
+            "78400/59049",
+            "1225/59049",
+            "442225/60466176"
+          ],
+          [
+            "1225/6561",
+            "4900/6561",
+            "1525225/26873856"
+          ],
+          [
+            "1600/59049",
+            "4900/59049",
+            "74736025/60466176"
+          ],
+          [
+            "49/59049",
+            "49/59049",
+            "2989441/967458816"
+          ]
+        ]
+      }
+    ],
+    "scope": "Exact finite two-field barrier algebra and bounded-rate positive selectors; no unlimited-rate soft-Lagrange or all-model separation is asserted by these fixtures."
+  },
+  "generic_interface_reset_constants": {
+    "birth_upper_exact": "4",
+    "return_lower_exact": "1/5",
+    "reset_rate_exact": "1/5",
+    "endpoint_KL_multiplier_exact": "100",
+    "density_cases": [
+      {
+        "equilibrium_ratio_exact": "1",
+        "duration": 0.1,
+        "maximum_hidden_density": 0.509151654922,
+        "density_upper_bound": 0.9
+      },
+      {
+        "equilibrium_ratio_exact": "1",
+        "duration": 0.7,
+        "maximum_hidden_density": 0.539796998528,
+        "density_upper_bound": 3.3
+      },
+      {
+        "equilibrium_ratio_exact": "1",
+        "duration": 3.0,
+        "maximum_hidden_density": 0.555304634392,
+        "density_upper_bound": 12.5
+      },
+      {
+        "equilibrium_ratio_exact": "4",
+        "duration": 0.1,
+        "maximum_hidden_density": 0.613058636502,
+        "density_upper_bound": 0.9
+      },
+      {
+        "equilibrium_ratio_exact": "4",
+        "duration": 0.7,
+        "maximum_hidden_density": 0.830097134326,
+        "density_upper_bound": 3.3
+      },
+      {
+        "equilibrium_ratio_exact": "4",
+        "duration": 3.0,
+        "maximum_hidden_density": 0.880274145394,
+        "density_upper_bound": 12.5
+      }
+    ],
+    "age_cases": [
+      {
+        "horizon": 0.2,
+        "age_factor": 0.173977272074,
+        "uniform_age_factor": "100"
+      },
+      {
+        "horizon": 1.0,
+        "age_factor": 2.16167500718,
+        "uniform_age_factor": "100"
+      },
+      {
+        "horizon": 8.0,
+        "age_factor": 48.3144913934,
+        "uniform_age_factor": "100"
+      }
+    ],
+    "general_initialization_Psi_cases": [
+      {
+        "initial_density_bound_exact": "0",
+        "beta_over_alpha_exact": "1",
+        "maximizing_scaled_age": null,
+        "Psi": 1.0
+      },
+      {
+        "initial_density_bound_exact": "1/2",
+        "beta_over_alpha_exact": "1",
+        "maximizing_scaled_age": null,
+        "Psi": 1.0
+      },
+      {
+        "initial_density_bound_exact": "2",
+        "beta_over_alpha_exact": "1/4",
+        "maximizing_scaled_age": 1.1428571428571428,
+        "Psi": 0.808086475317
+      },
+      {
+        "initial_density_bound_exact": "3",
+        "beta_over_alpha_exact": "1",
+        "maximizing_scaled_age": 1.5,
+        "Psi": 1.4462603203
+      }
+    ],
+    "scope": "Exact rate-envelope checks and finite numerical density/age diagnostics; proof constants for a general kinetic interface remain symbolic."
+  },
+  "largest_dense_matrix_dimension": 9,
+  "large_target_allocated": false,
+  "limitations": [
+    "Finite fixtures do not prove uniform prediction or all-model state-complexity theorems.",
+    "The parity fixture is not a small state-count advantage; it checks the generalized-reversal construction and its exact physical interface.",
+    "Generalized stationary entropy production depends on the specified physical reversal and is not ordinary identity-reversal entropy production.",
+    "No thermodynamic implementation or zero entropy under arbitrary time-dependent driving is asserted."
+  ],
+  "source_sha256": {
+    "verify_kinetic_parity.py": "e08f841ef0af66195320a7c35d33fb85a2ae57b9176942a00e526907c9fc7a8a"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/GENERAL_KINETIC_INTERFACE.md": "4d53f3b2fed9bdde375d16037c4f9b40339658cf176ffeb75244b81b348160f0",
+    "docs/GENERAL_INTERFACE_ENTROPY_BOUND.md": "e8e6c2c9a962fe97608a1f79cfdcaedffa151d263e15184ce9fed4e81d0c6a22",
+    "docs/CAPPED_KINETIC_INTERFACE_SEPARATION.md": "765331a6ac08e6b939654c8c676b91870ac82b243313fe784f329ebbae656cdc",
+    "docs/GENERALIZED_REVERSAL_PREDICTION.md": "3cd8c267323a68f4719ea73662cd2aa7433a864b0c1bb0bfabb65ca37e846b7d",
+    "docs/KINETIC_PARITY_RESOURCE_TRADEOFF.md": "87ce16f1eadffa9dfd3356388323b6293f545cfd5ab95930d576e5ebfe9c6c78"
+  },
+  "checks": 166
+}

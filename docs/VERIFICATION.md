@@ -382,6 +382,20 @@ The new report binds its verifier source and all four new proof snapshots. It co
 
 The complete thirty-four-verifier `make check PYTHON=.venv/bin/python` gate passed locally in pinned Python 3.13.5. All thirty-four fresh reports are byte-identical to saved evidence. All sixty-nine protected baseline files and nine recovery files remain byte-identical, and all earlier proof snapshots pass their recorded hash checks. The final repository checker passes 1,317 local Markdown links and 35 Python syntax checks, with valid source/proof provenance and unchanged license. Remote CI is separate evidence tied to the published commit in GitHub Actions.
 
+## Kinetic-interface and generalized-reversal checkpoint
+
+This continuation starts from published `e38dde1171995892e8a34abc7100b6489ab393bd`, tree `0238889a245e1e8f4b94e8edbd814cd0f3e256f5`. [GitHub Actions run 35845007667](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35845007667) passed the preceding thirty-four-verifier gate. The seventy-one baseline mathematical scripts, reports, license, requirements and workflow, all prior proof snapshots and the nine recovery files remain protected. PRL remains the research target, and manuscript drafting remains deferred.
+
+Five new proof notes cover [general kinetics](GENERAL_KINETIC_INTERFACE.md), the [general endpoint entropy bound](GENERAL_INTERFACE_ENTROPY_BOUND.md), the [capped two-field separation](CAPPED_KINETIC_INTERFACE_SEPARATION.md), [generalized-reversal prediction](GENERALIZED_REVERSAL_PREDICTION.md), and the [combined resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md). The [internal review](KINETIC_PARITY_INTERNAL_REVIEW.md) records separate checks of exact nonnegative selectors, capped uniformization, inserted-projector clock recovery, target-only rank factorization, reset-age constants and initial-density dependence, the centered-word path-law identity, and ordinary versus generalized entropy-production quantifiers. The [source audit](KINETIC_PARITY_SOURCE_AUDIT.md) attributes established higher-order word reversal and physical parity conventions rather than presenting them as new mechanisms.
+
+[verify_kinetic_parity.py](../scripts/verify_kinetic_parity.py) produces [kinetic_parity.json](../reports/kinetic_parity.json), with 166 bounded checks. A three-hidden-state reversible target has a non-Markov binary actuator process. Its eight-hidden-state length-three word predictor checks exact generalized flux balance, the even middle actuator, equality of center/endpoint stationary output laws through six symbols, target-prefix agreement through four symbols and genuine mismatch at longer prefixes. Exact generator-word calculations and labeled numerical switched propagators supplement the analytic all-protocol response identity. The full fixture has nine states and is not a state-count advantage example.
+
+A reverse-mixture fixture verifies finite positive ordinary entropy production alongside zero generalized entropy production. Separate rational barrier fixtures recover the hidden diagonal and generator from two physical generators, check squared-Lagrange positivity on off-grid rival values, and verify positive adjoint-paired transports under a common cap. General reset fixtures check rate envelopes, residual positivity, finite occupation bounds and both branches of the initial-density-dependent age constant. Numerical exponentials and quadrature are explicitly distinguished from rational certificates.
+
+The new report binds the verifier source and all five frozen proof snapshots. A separate internal reviewer inspected the complete program and its final binding changes, ran pinned Python 3.13.5, and reproduced the report byte-for-byte. The largest new dense matrix has dimension nine; the suite-wide maximum remains 68. No large target is allocated. Finite checks do not enumerate the universal state-complexity or entropy theorems, and no physical device realization is claimed.
+
+The complete thirty-five-verifier `make check PYTHON=.venv/bin/python` gate passed locally in pinned Python 3.13.5. All thirty-five fresh reports are byte-identical to saved evidence. All seventy-one protected baseline files and nine recovery files remain byte-identical, and earlier proof snapshots pass their recorded hashes. The repository checker passes all local Markdown links and 36 Python syntax checks, with valid source/proof provenance and unchanged license. Remote CI remains separate evidence associated with the published commit.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -420,6 +434,7 @@ python scripts/verify_uncapped_observability.py --output reports/uncapped_observ
 python scripts/verify_binary_uncapped_observability.py --output reports/binary_uncapped_observability.json
 python scripts/verify_fixed_clock_observability.py --output reports/fixed_clock_observability.json
 python scripts/verify_prl_exploration.py --output reports/prl_exploration.json
+python scripts/verify_kinetic_parity.py --output reports/kinetic_parity.json
 make check
 ```
 

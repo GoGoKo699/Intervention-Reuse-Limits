@@ -1,5 +1,7 @@
 # Equilibrium prediction and the cost of detailed balance: PRL exploration audit
 
+**Historical checkpoint notice, 23 September 2026.** The subsequent [kinetic/parity audit](KINETIC_PARITY_SOURCE_AUDIT.md) and [generalized-reversal theorem](GENERALIZED_REVERSAL_PREDICTION.md) resolve the previously open parity boundary: the polynomial predictor can obey generalized detailed balance. References below to an unavailable generalized extension describe this earlier checkpoint. The [current resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) keeps ordinary and generalized reversal distinct and does not assert a universal thermodynamic dissipation cost.
+
 [Repository overview](../README.md) · [Fixed-clock theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) · [Uniform reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) · [State–entropy-production tradeoff](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [Fixed-clock source comparison](FIXED_CLOCK_PRIOR_ART.md) · [Binary source comparison](BINARY_OBSERVATION_PRIOR_ART.md) · [Earlier source audit](PRIOR_ART.md)
 
 **Research date: 23 September 2026.** This note audits five core primary papers and one foundational entropy-production paper against the proposed physical claim and identifies research advances that would strengthen a Physical Review Letters case. It is an assessment of scientific scope, not a priority certification or a prediction of editorial acceptance. All six papers were opened in full text; inspection depth is stated below. No manuscript or external correspondence is produced.
