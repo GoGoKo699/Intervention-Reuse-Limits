@@ -1,6 +1,16 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: a small finite advantage and a force-controlled interpretation — 23 September 2026
+## PRL: exact minimum counts and the observation bottleneck — 23 September 2026
+
+Continue theory-first exploration with manuscript drafting deferred. This checkpoint starts from published `720962175fc76e2062e7f2aa4deb1938ba111c77`, tree `e9e51a49936be496f39a3384a8053ee26280eb4c`, with successful [CI run 35853478678](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35853478678). Preserve the 77 baseline verifiers/reports/license/dependency/workflow files, every frozen proof snapshot and all nine recovery files. Existing non-forced publication authorization remains in effect.
+
+The [new finite theorem](../docs/FINITE_PREDICTOR_MINIMALITY.md) proves both minimum counts on the unchanged twelve-state target: eleven for stationary predictors and twelve for ordinary-reversible predictors, throughout $0\le\delta\le2^{-1360}$. It keeps the interface, hidden cap $2k$, two fields and clock, and reduces the maximum witness length to 520 ticks. Positive rectangular factorizations prove unrestricted necessity; a shifted Markov-semigroup logarithm improves the observation estimate without assuming reversibility.
+
+The [stronger Gram obstruction](../docs/FINITE_GRAM_ROBUSTNESS.md) tolerates intermediate matrix error $1/1500$. The [observation diagnosis](../docs/FINITE_OBSERVATION_BOTTLENECK.md) proves why the current exact polynomial selectors need degree ten, supplies bounded rational selectors with an unresolved observation step, and records a strong-gate reinjection floor. The [source supplement](../docs/FINITE_PRECISION_SOURCE_AUDIT.md) identifies direct prior instances of the exact core matrix; no novelty claim attaches to that matrix or its positive-rank gap.
+
+Useful measured-mean tolerance remains open. Next: develop stable recovery of bounded rational words or directly certify finite-time probability features. Explore stronger small mechanisms only while explicitly counting added controls, rates and timing requirements. The single-force interpretation remains a stipulated network, not a microscopic implementation. The asymptotic parity boundary and absence of a universal heat claim remain unchanged. [Verification](../docs/VERIFICATION.md) records local and publication evidence. No manuscript drafting or collaborator contact is authorized by this work order.
+
+## Historical checkpoint: a small finite advantage and a force-controlled interpretation — 23 September 2026
 
 Continue the PRL exploration with manuscript drafting deferred. This checkpoint starts from published `c6b81946e6e16145a52862b7c96a3986d1d23a69`, tree `5b0b97559088cb0d4f7aa034908f38b95d7a9c07`, with successful [CI run 35847878583](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35847878583). Preserve all seventy-three baseline verifiers/reports/license/dependency/workflow files, every frozen proof snapshot and the nine recovery files. Non-forced publication authorization remains in effect.
 

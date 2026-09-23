@@ -4,11 +4,25 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-seven mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty-eight mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: finite advantage and physical robustness
+## Current checkpoint: finite minimality and improved precision
+
+The published baseline `720962175fc76e2062e7f2aa4deb1938ba111c77`, tree `e9e51a49936be496f39a3384a8053ee26280eb4c`, had thirty-seven verifiers and successful [CI run 35853478678](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35853478678). This continuation adds one verifier while preserving all 77 baseline verifiers, saved reports, license, dependency and workflow files.
+
+The [finite-minimality verifier](../scripts/verify_finite_minimality.py) and [saved report](../reports/finite_minimality.json) contain **3272 exact checks**, with maximum dense dimension **11**. They enumerate the 18 maximal positive rectangles of the five-by-five support and all 3060 four-rectangle candidates, reconstruct the explicit predictor's positive left/right factorization, distinguish formal reversal from its actual Gram, check the stronger Schur obstruction and centered-log budget, and verify selector and reinjection identities. All arithmetic uses rational fractions and integers; no optimizer, large target or controlled protocol enumeration is used. The source received both root and separate full code reviews. An independent pinned Python 3.13.5 run reproduced the canonical report byte for byte. Source SHA-256 is `f68d0d6e8d944b389ded95015f963bbef39e3bf188ac339c19d2a1e6c58843c7`; report SHA-256 is `c6f2c58959eb8546f5d07670ea57286ec89868cffd39828cf1593b556c7f1b28`.
+
+The report binds the [minimum-count theorem](FINITE_PREDICTOR_MINIMALITY.md), [Gram refinement](FINITE_GRAM_ROBUSTNESS.md) and [observation boundary](FINITE_OBSERVATION_BOTTLENECK.md). The [internal review](FINITE_PRECISION_INTERNAL_REVIEW.md) records analytic audits separately from these finite checks. The [source supplement](FINITE_PRECISION_SOURCE_AUDIT.md) attributes the exact core matrix to prior work. The finite ordinary-EPR corollary is an analytic parameter substitution into the preserved earlier bound, not a new numerical fixture.
+
+The controlled-mean certificate is $2^{-1360}$ with at most 520 ticks. The matrix tolerance $1/1500$ concerns an intermediate Gram only. Bounded rational selectors have no observation-recovery bound in this checkpoint, and the selective-gate example is not a new target satisfying the hard hidden band. These limitations are explicit in the notes and report.
+
+The completed `make check PYTHON=.venv/bin/python` gate passed all **38** mathematical verifiers under the pinned Python 3.13.5 environment (NumPy 2.3.5 and SciPy 1.17.0 for earlier numerical verifiers). All 38 regenerated reports are byte-identical to the saved reports. The 77 protected baseline files and all nine recovery files are unchanged. Local documentation links, 39 Python syntax checks, saved source/proof hashes and the MIT license pass the repository checker; `git diff --check` passes. The full suite's historical maximum dense dimension remains 68.
+
+Remote CI belongs to the published commit and must be checked separately. The baseline run above certifies only `7209621`; publication and the new run's live result are reported after the non-forced branch update.
+
+## Historical checkpoint: finite advantage and physical robustness
 
 The published baseline `c6b81946e6e16145a52862b7c96a3986d1d23a69` had thirty-five verifiers and successful [CI run 35847878583](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35847878583). This continuation adds two mathematical verifiers without modifying any earlier verifier or saved report.
 

@@ -1,0 +1,305 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact fractions.Fraction, integer support enumeration, rational matrix products and coefficientwise polynomial identities; no numerical optimization",
+  "sharper_nonnegative_Gram_obstruction": {
+    "entry_tolerance_exact": "1/1500",
+    "auxiliary_witness_vectors": 11,
+    "excluded_maximum_nonnegative_Gram_atoms": 10,
+    "toy_factor_atoms": 3,
+    "edge_pair_types": {
+      "shared_U": 6,
+      "shared_V": 3,
+      "disjoint": 6
+    },
+    "strict_edge_spectral_lower_exact": "1/6000",
+    "isolated_spectral_lower_exact": "2/25",
+    "Schur_correction_upper_exact": "1/6000",
+    "improvement_factor_exact": "80/3",
+    "scope": "Exact rational constants certify the strict Schur argument. The three-atom overlap fixture is not claimed close to the target Gram, and no measured-mean tolerance of 1/1500 is asserted."
+  },
+  "robust_nonnegative_factorization_obstruction": {
+    "leading_block_positive_cells": 17,
+    "maximal_positive_rectangles": [
+      {
+        "rows": [
+          0
+        ],
+        "columns": [
+          0,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "rows": [
+          0,
+          1
+        ],
+        "columns": [
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "rows": [
+          0,
+          1,
+          2
+        ],
+        "columns": [
+          2
+        ]
+      },
+      {
+        "rows": [
+          0,
+          1,
+          3
+        ],
+        "columns": [
+          3
+        ]
+      },
+      {
+        "rows": [
+          0,
+          1,
+          4
+        ],
+        "columns": [
+          4
+        ]
+      },
+      {
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          2
+        ]
+      },
+      {
+        "rows": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "columns": [
+          0
+        ]
+      },
+      {
+        "rows": [
+          0,
+          3
+        ],
+        "columns": [
+          0,
+          3
+        ]
+      },
+      {
+        "rows": [
+          0,
+          4
+        ],
+        "columns": [
+          0,
+          4
+        ]
+      },
+      {
+        "rows": [
+          1
+        ],
+        "columns": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "rows": [
+          1,
+          2
+        ],
+        "columns": [
+          1,
+          2
+        ]
+      },
+      {
+        "rows": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "columns": [
+          1
+        ]
+      },
+      {
+        "rows": [
+          1,
+          3
+        ],
+        "columns": [
+          1,
+          3
+        ]
+      },
+      {
+        "rows": [
+          1,
+          4
+        ],
+        "columns": [
+          1,
+          4
+        ]
+      },
+      {
+        "rows": [
+          2
+        ],
+        "columns": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "rows": [
+          2,
+          3,
+          4
+        ],
+        "columns": [
+          0,
+          1
+        ]
+      },
+      {
+        "rows": [
+          3
+        ],
+        "columns": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "rows": [
+          4
+        ],
+        "columns": [
+          0,
+          1,
+          4
+        ]
+      }
+    ],
+    "all_positive_rectangles_checked": 99,
+    "four_rectangle_combinations_checked": 3060,
+    "maximum_cells_covered_by_four_rectangles": 16,
+    "uncovered_cell_certificate_sha256": "dd1b56923ab9e132dd9ee8c7f92b262b9c91b15de40fc35826939a64495d3c7a",
+    "leading_block_Boolean_rank": 5,
+    "full_Boolean_rank": 10,
+    "robust_entry_tolerance_exact": "1/40000",
+    "excluded_maximum_nonnegative_factor_atoms": 9,
+    "strict_product_inequality_margin_exact": "16183/90000000",
+    "scope": "A complete bounded support enumeration supplies the five-rectangle lower. The analytic dominant-atom argument converts the positive error tolerance to this support obstruction."
+  },
+  "explicit_predictor_factorization": {
+    "predictor_hidden_states": 10,
+    "predictor_total_states": 11,
+    "exact_nonnegative_factor_atoms": 10,
+    "actual_Gram_difference_max_exact": "1/16",
+    "scope": "The positive factorization is reconstructed from the earlier explicit predictor. Its all-control generator intertwining is covered by the frozen finite-advantage verifier."
+  },
+  "selector_observation_boundary": {
+    "target_labels_exact": [
+      "3/8",
+      "7/16",
+      "1/2",
+      "9/16",
+      "5/8",
+      "11/16"
+    ],
+    "minimum_positive_polynomial_selector_degree": 10,
+    "selector_2_denominator_exact": "-3/262144",
+    "selector_2_leading_coefficient_exact": "68719476736/9",
+    "selector_2_at_zero_exact": "12006225",
+    "rational_selector_denominator_lower_exact": "1/6",
+    "polynomial_identity": "6 sum_j L_j(x)^2 - 1 = sum_(i<j) (L_i(x)-L_j(x))^2",
+    "scope": "Exact coefficient identities support the selector boundary and rational normalization. No controlled-mean recovery inequality for inverse denominator insertions is asserted."
+  },
+  "selective_gate_reinjection_boundary": {
+    "states": 4,
+    "gate_equilibrium_bias_exact": "4",
+    "active_return_rate_exact": "3",
+    "observation_time": "log(2)/3",
+    "selected_block_exact": [
+      [
+        "29/48",
+        "5/48"
+      ],
+      [
+        "5/48",
+        "29/48"
+      ]
+    ],
+    "selected_block_row_sum_exact": "17/24",
+    "killed_selected_row_sum_exact": "1/2",
+    "scope": "This small selective-gate example isolates hub reinjection. It is not an additional controlled-mean certificate for the fixed two-field target."
+  },
+  "nonreversible_clock_recovery": {
+    "clock_duration": "log(2)/(8k)",
+    "full_exit_cap_in_k_units": 4,
+    "centered_infinity_norm_clock_defect": "sqrt(2)-1<5/12",
+    "operator_majorant_ratio": "4+3sqrt(2)<9",
+    "coefficient_majorant_ratio": "3+3sqrt(2)<9",
+    "logarithm_majorant_upper": "8log_2(9)<32",
+    "whole_polynomial_majorant": "2^499",
+    "maximum_clock_letters": 520,
+    "controlled_mean_tolerance": "2^-1360",
+    "recovered_entry_error_upper": "2^-21+2^-17<2^-16<1/40000",
+    "scope": "This exact arithmetic checks the nonreversible norm and total-degree constants; uniform word recovery and the all-rival quantifier are supplied by the analytic proof."
+  },
+  "finite_EPR_corollary": {
+    "regularization_parameter": "eta = delta/22 for 0<delta<=2^-1360",
+    "controlled_mean_error_upper": "delta/2",
+    "full_zero_field_identity_EPR_upper": "k log(22/delta)",
+    "verification_scope": "Analytic parameter substitution into the previously verified finite-advantage regularization; no new EPR fixture is claimed here."
+  },
+  "largest_dense_matrix_dimension": 11,
+  "large_target_allocated": false,
+  "controlled_protocols_enumerated": false,
+  "limitations": [
+    "Finite certificates do not replace the analytic arbitrary-rival controlled-mean transfer proof.",
+    "The stronger 1/1500 bound concerns an intermediate Gram matrix, not measured means.",
+    "The rational selectors have no proved observation-recovery budget here.",
+    "The explicit state advantage remains at a rigorously positive but impractical tolerance 2^-1360."
+  ],
+  "source_sha256": {
+    "verify_finite_minimality.py": "f68d0d6e8d944b389ded95015f963bbef39e3bf188ac339c19d2a1e6c58843c7"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/FINITE_GRAM_ROBUSTNESS.md": "430735bd478fd76d9ce964bd51cc88b63c2055d988a379052a16e524dd7084b8",
+    "docs/FINITE_PREDICTOR_MINIMALITY.md": "393714abcd79e5c9b7d7c4184c4dd892ebd635265aff3edab5be3c7ed5f527e5",
+    "docs/FINITE_OBSERVATION_BOTTLENECK.md": "360361d398d33270242b835d9705efd798dc60c328c769cb615fafd63748e427"
+  },
+  "checks": 3272
+}

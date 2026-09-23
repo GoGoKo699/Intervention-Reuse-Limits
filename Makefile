@@ -43,3 +43,4 @@ check:
 	$(PYTHON) scripts/verify_kinetic_parity.py --output .check-output/kinetic_parity.json
 	$(PYTHON) scripts/verify_finite_advantage.py --output .check-output/finite_advantage.json
 	$(PYTHON) scripts/verify_physical_robustness.py --output .check-output/physical_robustness.json
+	$(PYTHON) scripts/verify_finite_minimality.py --output .check-output/finite_minimality.json
