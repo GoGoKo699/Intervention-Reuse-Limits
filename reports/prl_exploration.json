@@ -1,0 +1,932 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0"
+  },
+  "arithmetic": "Exact fractions/integer identities; separately labeled float64 matrix exponentials/quadrature/logarithms and 80-digit scalar label checks",
+  "arithmetic_reversibilization_and_EPR": {
+    "biased_cycle_cases": [
+      {
+        "hidden_law_exact": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "bias_exact": "0",
+        "hidden_EPR": 0.0,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.0,
+        "full_zero_field_EPR": 0.0
+      },
+      {
+        "hidden_law_exact": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "bias_exact": "1/100",
+        "hidden_EPR": 0.000400013334133,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.000100001666733,
+        "full_zero_field_EPR": 0.000200006667067
+      },
+      {
+        "hidden_law_exact": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "bias_exact": "1/5",
+        "hidden_EPR": 0.162186043243,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.0402710271014,
+        "full_zero_field_EPR": 0.0810930216216
+      },
+      {
+        "hidden_law_exact": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "bias_exact": "1/2",
+        "hidden_EPR": 1.09861228867,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.261624071882,
+        "full_zero_field_EPR": 0.549306144334
+      },
+      {
+        "hidden_law_exact": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "bias_exact": "9/10",
+        "hidden_EPR": 5.2999901625,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.989263874428,
+        "full_zero_field_EPR": 2.64999508125
+      },
+      {
+        "hidden_law_exact": [
+          "1/3",
+          "1/3",
+          "1/3"
+        ],
+        "bias_exact": "1",
+        "hidden_EPR": "infinity",
+        "stationary_KL_rate_to_arithmetic_reverse": 1.38629436112,
+        "full_zero_field_EPR": "infinity"
+      },
+      {
+        "hidden_law_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "bias_exact": "0",
+        "hidden_EPR": 0.0,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.0,
+        "full_zero_field_EPR": 0.0
+      },
+      {
+        "hidden_law_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "bias_exact": "1/100",
+        "hidden_EPR": 0.000400013334133,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.000100001666733,
+        "full_zero_field_EPR": 0.000200006667067
+      },
+      {
+        "hidden_law_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "bias_exact": "1/5",
+        "hidden_EPR": 0.162186043243,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.0402710271014,
+        "full_zero_field_EPR": 0.0810930216216
+      },
+      {
+        "hidden_law_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "bias_exact": "1/2",
+        "hidden_EPR": 1.09861228867,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.261624071882,
+        "full_zero_field_EPR": 0.549306144334
+      },
+      {
+        "hidden_law_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "bias_exact": "9/10",
+        "hidden_EPR": 5.2999901625,
+        "stationary_KL_rate_to_arithmetic_reverse": 0.989263874428,
+        "full_zero_field_EPR": 2.64999508125
+      },
+      {
+        "hidden_law_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "bias_exact": "1",
+        "hidden_EPR": "infinity",
+        "stationary_KL_rate_to_arithmetic_reverse": 1.38629436112,
+        "full_zero_field_EPR": "infinity"
+      }
+    ],
+    "quarter_EPR_pairwise_function": [
+      {
+        "t_exact": "0",
+        "F_second_derivative_exact": "0",
+        "F_numeric": 0.0
+      },
+      {
+        "t_exact": "1/10",
+        "F_second_derivative_exact": "400/9801",
+        "F_numeric": 3.36021607877e-05
+      },
+      {
+        "t_exact": "1/3",
+        "F_second_derivative_exact": "9/16",
+        "F_numeric": 0.00451701112612
+      },
+      {
+        "t_exact": "1/2",
+        "F_second_derivative_exact": "16/9",
+        "F_numeric": 0.0260580005695
+      },
+      {
+        "t_exact": "9/10",
+        "F_second_derivative_exact": "32400/361",
+        "F_numeric": 0.671467332394
+      }
+    ],
+    "scope": "Exact generator, stationarity and exit identities plus finite logarithmic evaluations; the all-pair inequality is proved analytically in the companion note."
+  },
+  "reset_age_and_controlled_means": {
+    "R_exact": "1331/1000",
+    "reset_rate_exact": "1000/1331",
+    "minimum_density_domination_slack": 0.00259054489839,
+    "age_cases": [
+      {
+        "R_exact": "1",
+        "horizon": 0.1,
+        "age_factor": 0.0499207110622,
+        "uniform_factor_R_cubed": 1.0,
+        "quadrature_error_estimate": 1.71699399437e-18
+      },
+      {
+        "R_exact": "1",
+        "horizon": 1.0,
+        "age_factor": 0.448180838243,
+        "uniform_factor_R_cubed": 1.0,
+        "quadrature_error_estimate": 8.91524599382e-16
+      },
+      {
+        "R_exact": "1",
+        "horizon": 10.0,
+        "age_factor": 0.999727600421,
+        "uniform_factor_R_cubed": 1.0,
+        "quadrature_error_estimate": 1.10714837774e-14
+      },
+      {
+        "R_exact": "1331/1000",
+        "horizon": 0.1,
+        "age_factor": 0.0527119485788,
+        "uniform_factor_R_cubed": 2.357947691,
+        "quadrature_error_estimate": 1.74917493793e-18
+      },
+      {
+        "R_exact": "1331/1000",
+        "horizon": 1.0,
+        "age_factor": 0.645741872837,
+        "uniform_factor_R_cubed": 2.357947691,
+        "quadrature_error_estimate": 1.06494851473e-15
+      },
+      {
+        "R_exact": "1331/1000",
+        "horizon": 10.0,
+        "age_factor": 2.34971963866,
+        "uniform_factor_R_cubed": 2.357947691,
+        "quadrature_error_estimate": 9.45292383158e-14
+      },
+      {
+        "R_exact": "3",
+        "horizon": 0.1,
+        "age_factor": 0.0630316015761,
+        "uniform_factor_R_cubed": 27.0,
+        "quadrature_error_estimate": 1.80472353512e-18
+      },
+      {
+        "R_exact": "3",
+        "horizon": 1.0,
+        "age_factor": 1.56313847463,
+        "uniform_factor_R_cubed": 27.0,
+        "quadrature_error_estimate": 1.44413207484e-15
+      },
+      {
+        "R_exact": "3",
+        "horizon": 10.0,
+        "age_factor": 23.0045127451,
+        "uniform_factor_R_cubed": 27.0,
+        "quadrature_error_estimate": 1.94011959568e-13
+      }
+    ],
+    "finite_protocol_cases": [
+      {
+        "protocol": [
+          [
+            "11/10",
+            0.1
+          ]
+        ],
+        "endpoint_KL": 5.82987432653e-10,
+        "KL_bound": 0.0949569753679,
+        "absolute_mean_difference": 1.24795695999e-09,
+        "mean_bound": 0.437279204958
+      },
+      {
+        "protocol": [
+          [
+            "11/10",
+            1.0
+          ]
+        ],
+        "endpoint_KL": 1.45551605325e-08,
+        "KL_bound": 0.0949569753679,
+        "absolute_mean_difference": 7.82981507963e-07,
+        "mean_bound": 0.437279204958
+      },
+      {
+        "protocol": [
+          [
+            "11/10",
+            0.3
+          ],
+          [
+            "10/11",
+            0.7
+          ],
+          [
+            "11/10",
+            1.1
+          ]
+        ],
+        "endpoint_KL": 3.62028103899e-08,
+        "KL_bound": 0.0949569753679,
+        "absolute_mean_difference": 2.00489444069e-06,
+        "mean_bound": 0.437279204958
+      },
+      {
+        "protocol": [
+          [
+            "10/11",
+            0.2
+          ],
+          [
+            "11/10",
+            0.4
+          ],
+          [
+            "1",
+            3.0
+          ]
+        ],
+        "endpoint_KL": 1.52294633809e-15,
+        "KL_bound": 0.0949569753679,
+        "absolute_mean_difference": 9.87021020471e-10,
+        "mean_bound": 0.437279204958
+      }
+    ],
+    "scope": "Residual generators and reset rates are exact; density, quadrature and endpoint diagnostics use finite float64 examples. They do not verify all protocols or the path relative-entropy theorem by simulation."
+  },
+  "finite_EPR_regularization": {
+    "cases": [
+      {
+        "epsilon_exact": "1/1000",
+        "exit_cap_exact": "8/3",
+        "hidden_EPR": 13.7858825382,
+        "hidden_EPR_upper": 18.4180127431
+      },
+      {
+        "epsilon_exact": "1/20",
+        "exit_cap_exact": "8/3",
+        "hidden_EPR": 5.2999901625,
+        "hidden_EPR_upper": 7.85183727778
+      },
+      {
+        "epsilon_exact": "1/4",
+        "exit_cap_exact": "8/3",
+        "hidden_EPR": 1.09861228867,
+        "hidden_EPR_upper": 2.92963276978
+      }
+    ],
+    "original_hidden_EPR": "infinity",
+    "scope": "Finite flux/rate certificates for regularization. The all-horizon mean perturbation bound is proved through common-reset coupling in the accompanying note."
+  },
+  "positive_soft_label_selectors": {
+    "exact_beta_cases": [
+      {
+        "target_feature_exact": "0",
+        "a": 0,
+        "b": 1,
+        "w_exact": "1",
+        "rho_exact": "9/16"
+      },
+      {
+        "target_feature_exact": "1/4",
+        "a": 1,
+        "b": 3,
+        "w_exact": "729/65536",
+        "rho_exact": "256/729"
+      },
+      {
+        "target_feature_exact": "1/2",
+        "a": 1,
+        "b": 1,
+        "w_exact": "1/16",
+        "rho_exact": "9/16"
+      },
+      {
+        "target_feature_exact": "3/4",
+        "a": 3,
+        "b": 1,
+        "w_exact": "729/65536",
+        "rho_exact": "256/729"
+      },
+      {
+        "target_feature_exact": "1",
+        "a": 1,
+        "b": 0,
+        "w_exact": "1",
+        "rho_exact": "9/16"
+      }
+    ],
+    "matrix_examples": [
+      {
+        "fixture": "bounded_target",
+        "hidden_states": 5,
+        "feature_values_exact": [
+          "0",
+          "1/4",
+          "1/2",
+          "3/4",
+          "1"
+        ],
+        "s_exact": "4096",
+        "largest_hidden_exit_exact": "2/5",
+        "selector_entrywise_nonnegative": true,
+        "selector_exact_Gram_factorization": true
+      },
+      {
+        "fixture": "fast_off_grid_rival",
+        "hidden_states": 5,
+        "feature_values_exact": [
+          "0",
+          "1/7",
+          "2/5",
+          "7/9",
+          "1"
+        ],
+        "s_exact": "4",
+        "largest_hidden_exit_exact": "900",
+        "selector_entrywise_nonnegative": true,
+        "selector_exact_Gram_factorization": true
+      }
+    ],
+    "off_grid_normalized_scalar_gain_exact": "625/576",
+    "scope": "Five-state rational feature fixtures and a fast off-grid reversible rival; the canonical nineteen-level target is checked only through scalar label/exponent calculations below."
+  },
+  "canonical_label_and_fifth_power_budgets": {
+    "canonical_field_H": 1,
+    "scalar_precision_decimal_digits": 80,
+    "nineteen_label_cases": [
+      {
+        "gamma": "-9/100",
+        "a": 0,
+        "b": 1,
+        "log_w": "0.0",
+        "log_rho": "-0.10460834546227",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 2295,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 3442,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 5736,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-2/25",
+        "a": 1,
+        "b": 17,
+        "log_w": "-7.7317763266993",
+        "log_rho": "-0.49959065889221",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 481,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 721,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 1201,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-7/100",
+        "a": 2,
+        "b": 16,
+        "log_w": "-12.572349614136",
+        "log_rho": "-0.26742058904405",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 898,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 1347,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 2244,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-3/50",
+        "a": 3,
+        "b": 15,
+        "log_w": "-16.240445677174",
+        "log_rho": "-0.16714244241082",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 1436,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 2154,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 3590,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-1/20",
+        "a": 4,
+        "b": 14,
+        "log_w": "-19.094613791658",
+        "log_rho": "-0.11272386233192",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 2130,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 3194,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 5323,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-1/25",
+        "a": 5,
+        "b": 13,
+        "log_w": "-21.299560350098",
+        "log_rho": "-0.080144148709374",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 2995,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 4492,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 7487,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-3/100",
+        "a": 6,
+        "b": 12,
+        "log_w": "-22.94689872496",
+        "log_rho": "-0.060114428104904",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 3993,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 5989,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 9981,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-1/50",
+        "a": 7,
+        "b": 11,
+        "log_w": "-24.091583315569",
+        "log_rho": "-0.04843418690921",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 4956,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 7433,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 12388,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "-1/100",
+        "a": 8,
+        "b": 10,
+        "log_w": "-24.766604564115",
+        "log_rho": "-0.043131640807285",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 5565,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 8347,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 13911,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "0",
+        "a": 9,
+        "b": 9,
+        "log_w": "-24.989736204922",
+        "log_rho": "-0.043455420829266",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 5523,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 8285,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 13808,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "1/100",
+        "a": 10,
+        "b": 8,
+        "log_w": "-24.766604564115",
+        "log_rho": "-0.04954891395858",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 4844,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 7266,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 12110,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "1/50",
+        "a": 11,
+        "b": 7,
+        "log_w": "-24.091583315569",
+        "log_rho": "-0.062509635543036",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 3840,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 5760,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 9599,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "3/100",
+        "a": 12,
+        "b": 6,
+        "log_w": "-22.94689872496",
+        "log_rho": "-0.084884321246234",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 2828,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 4242,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 7069,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "1/25",
+        "a": 13,
+        "b": 5,
+        "log_w": "-21.299560350098",
+        "log_rho": "-0.12207911363385",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 1966,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 2949,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 4915,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "1/20",
+        "a": 14,
+        "b": 4,
+        "log_w": "-19.094613791658",
+        "log_rho": "-0.18650735950922",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 1287,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 1931,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 3218,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "3/50",
+        "a": 15,
+        "b": 3,
+        "log_w": "-16.240445677174",
+        "log_rho": "-0.31288656550677",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 768,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 1151,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 1918,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "7/100",
+        "a": 16,
+        "b": 2,
+        "log_w": "-12.572349614136",
+        "log_rho": "-0.62742058904405",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 383,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 574,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 957,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "2/25",
+        "a": 17,
+        "b": 1,
+        "log_w": "-7.7317763266993",
+        "log_rho": "-0.85959065889221",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 280,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 419,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 699,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      },
+      {
+        "gamma": "9/100",
+        "a": 1,
+        "b": 0,
+        "log_w": "0.0",
+        "log_rho": "-0.12460834546227",
+        "allocations": [
+          {
+            "q": 2,
+            "power_m": 1927,
+            "log_target_error_upper": "-240.0"
+          },
+          {
+            "q": 3,
+            "power_m": 2890,
+            "log_target_error_upper": "-360.0"
+          },
+          {
+            "q": 5,
+            "power_m": 4816,
+            "log_target_error_upper": "-600.0"
+          }
+        ]
+      }
+    ],
+    "representative_fifth_power_budgets": [
+      {
+        "n": 1,
+        "word_length": 12,
+        "fractional_degree": 800,
+        "integer_cutoff": 0,
+        "noise_log_upper": 20842,
+        "maximum_ticks": 20802
+      },
+      {
+        "n": 2,
+        "word_length": 27,
+        "fractional_degree": 2700,
+        "integer_cutoff": 0,
+        "noise_log_upper": 151310,
+        "maximum_ticks": 151202
+      },
+      {
+        "n": 4,
+        "word_length": 75,
+        "fractional_degree": 12500,
+        "integer_cutoff": 0,
+        "noise_log_upper": 1900402,
+        "maximum_ticks": 1900002
+      },
+      {
+        "n": 8,
+        "word_length": 243,
+        "fractional_degree": 72900,
+        "integer_cutoff": 0,
+        "noise_log_upper": 35577146,
+        "maximum_ticks": 35575202
+      },
+      {
+        "n": 16,
+        "word_length": 867,
+        "fractional_degree": 491300,
+        "integer_cutoff": 0,
+        "noise_log_upper": 852908362,
+        "maximum_ticks": 852896802
+      }
+    ],
+    "scope": "Canonical label allocations are finite high-precision scalar checks at H=1. Degree budgets use explicitly representative constants and do not determine the theorem constants or starting index for arbitrary H and clock."
+  },
+  "largest_dense_matrix_dimension": 5,
+  "large_target_allocated": false,
+  "limitations": [
+    "Finite fixtures do not prove the all-model path-KL comparison, fixed-clock transfer, selector asymptotics, or state/EPR frontier.",
+    "The fast off-grid rival checks positivity without an inherited target label set; it is not a fitted small predictor.",
+    "All numerical protocol comparisons concern the listed small matrices and finite protocols only.",
+    "The fifth-power bookkeeping uses representative constants; no practical experimental accuracy or horizon is claimed."
+  ],
+  "source_sha256": {
+    "verify_prl_exploration.py": "6211b2c6af3979a71d863bc883786b60660e0c3ad674fc5476220251b2f509bc"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/POSITIVE_LABEL_SELECTORS.md": "f0dcebd4a46c3f6e59514b4183b4a0fb0574d3ddca19229919ab43a778720fbe",
+    "docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md": "ec6c643e3d391ae414b35a709fd6a00b3949ff3e93afa71ff061f93cbf26eb83",
+    "docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md": "e4ad0d9a4dad9283f44291d88cac8fa9a109bc8c947dfa950d055408c4ba6f97",
+    "docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md": "efde9d7726e234c4a960772334cbafd8b49bdb8f7cc46be523ab4ef8066de249"
+  },
+  "checks": 561
+}

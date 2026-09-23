@@ -4,17 +4,45 @@
 
 This theory-first project studies finite-state stochastic dynamics. A system can have an exact two-state description when left alone, while hidden kinetic modes become visible in its nonlinear response. The objective is to characterize what a reusable model must retain, and how that requirement changes when exact equality is replaced by a specified accuracy.
 
-**Research status:** a balanced binary actuator forces superpolynomial reversible prediction cost even with unrestricted rival rates and a fixed positive control clock. The [fixed-clock theorem](docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uses only the two fields $0,H$ and proves a reversible lower $\exp(\exp(c_a[\log(1/\delta)]^{1/12}))$, alongside a polynomial sufficient state count without reversibility. Both classes preserve the original field rule, exact histogram, preparation and readout, and may construct entirely new states. Targets have rare diagnostic states, a fixed positive gap and a very large fixed rate-to-gap ratio. The theorem uses a specified fixed rescaling of the tagged family; its gap is not normalized to the external rate.
+**Research target: Physical Review Letters.** The [new exploration phase](docs/PRL_EXPLORATION.md) asks whether accurately predicting an equilibrium system with few states can require irreversible dynamics. A [new fixed-clock theorem](docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) retains the original target relaxation band $[k,3k]$, uses only two fields, and permits arbitrary finite rival rates and arbitrary sensitivities within the same bounded range. It removes exact rival histogram matching and needs no rare-tag construction or hidden-rate rescaling. Reversible prediction has a superpolynomial state lower bound; unrestricted prediction has a polynomial sufficient count.
+
+A [uniform reversibilization bound](docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md) now turns this distinction into a quantitative [state–entropy-production tradeoff](docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md). Low stationary entropy production makes an original-rule predictor close to a reversible predictor on exactly the same states, uniformly over bounded protocols and all horizons. This supplies a physical resource constraint on compression. The original kinetic rule and ordinary time reversal remain explicit assumptions; entropy-production bounds are unmatched.
 
 **Research package for eventual drafting:** start with the [research dossier](docs/RESEARCH_DOSSIER.md) for the common model, quantifiers, assumptions, theorem dependencies and review requirements. The [claim ledger](docs/CLAIM_LEDGER.md) maps each result to its proof, verifier, saved evidence and source comparison. [Verification](docs/VERIFICATION.md) gives the reproducibility record. These are research materials; manuscript drafting remains the final step.
 
-The [binary uncapped theorem](docs/BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) combines a [rare-tag construction](docs/BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md), [mixed resolvent and killing-filter observations](docs/MIXED_KILLED_WORD_OBSERVABILITY.md), and [weighted whole-word repair](docs/WEIGHTED_WHOLE_WORD_REPAIR.md). It needs only five fixed physical field values. The earlier [nineteen-level uncapped theorem](docs/UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) keeps the much smaller target band $[k,3k]$. The new fixed-clock extension resolves the clock restriction on a rescaled tagged family, with a weaker inner exponent. The stronger lower $\exp(c\delta^{-\alpha})$ remains open.
+The earlier [binary uncapped theorem](docs/BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) combines a rare-tag construction, mixed resolvent observations and weighted whole-word repair. Its [fixed-clock extension](docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) retains a binary actuator on a prescribed rescaled tagged family. The present principal theorem instead uses the original nineteen-level target and positive label selectors. Two physical field values are distinct from two actuator levels. The stronger uncapped lower $\exp(c\delta^{-\alpha})$ remains open.
 
 The earlier [state–speed tradeoff](docs/STATE_SPEED_ACCURACY_TRADEOFF.md), [same-state rate regularization](docs/RATE_REGULARIZATION.md), and [fast-rate closure](docs/FINITE_STATE_FAST_RATE_CLOSURE.md) remain supporting results with their original scope. A new [Walsh observability hierarchy](docs/UNCAPPED_WALSH_OBSERVABILITY.md) gives explicit fixed-target state thresholds against arbitrary Markov rivals at every fixed positive clock, including an exact 38-state realization for the smallest target. This target-specific rank result is distinct from the uncapped reversibility comparison.
 
 The earlier bounded-rate binary target class has three different prediction costs: exactly two states passively, $\Theta(\log(1/\delta))$ states for every constant-field step, and $\delta^{-\Theta(1)}$ states for arbitrary switching. This separation holds already for one-dimensional local walks with global refresh, where a polynomial switching predictor can preserve reversibility, the original field rule and spectral band. The constant-step upper has analytic field dependence but allows a different rate rule. Polynomial reversible switching cost also holds for typical labels on connected sparse expanders with a uniform local mixing gap. The binary reversibility separation uses a larger fixed rate budget than this earlier class. Its sharp-band refinement and an uncapped extension on that same older binary target family remain open. Exponents remain unmatched. Originality is still under assessment, and manuscript writing remains on hold.
 
-## Two physical fields suffice at a fixed clock
+## Equilibrium targets, prediction states and irreversible currents
+
+For the original nineteen-level targets with hidden band $[k,3k]$, any fixed clock $a/k>0$ and the two fields $0,H$, the [tight-band theorem](docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) gives
+
+$$
+D_{\rm all}^{(2,a)}(\delta)\le C\delta^{-p},\qquad
+D_{\rm rev}^{(2,a)}(\delta)\ge
+\exp\!\left(\exp\!\left(c_{a,H}[\log(1/\delta)]^{1/5}\right)\right).
+$$
+
+Both rival classes may create any finite state space and use any finite hidden rates and sensitivities in $[-9/100,9/100]$. They retain the original external rule, stationary zero-field preparation and binary readout; only one additionally requires ordinary detailed balance. At index $n$, accuracy $e^{-C(n+1)^5}$ forces at least $2^{3\cdot2^n/4}$ reversible states, using mean experiments of at most $C(n+1)^5$ ticks. A separate thirty-nine-field result supplies polynomial unrestricted necessity on the same family. The two-field claim gives only unrestricted sufficiency.
+
+[Positive label selectors](docs/POSITIVE_LABEL_SELECTORS.md) recover the target's ports from two fields while remaining positive on arbitrary bounded-label rivals. Fixed-clock Gram recovery, transport repair and entropy then force the state lower. The original equilibrium targets remain unchanged.
+
+For any stationary original-rule predictor, put $R=e^{(1+G)H}$ and let $\sigma_0$ be its full zero-field stationary entropy-production rate. Additive reversibilization preserves all states, stationary masses, labels and exit rates, and satisfies
+
+$$
+\mathcal D_H(F,F_{\rm sym})\le R^{3/2}\sqrt{\sigma_0/k},\qquad
+D_{\le\Sigma}(\delta)\ge
+D_{\rm rev}\!\left(\delta+R^{3/2}\sqrt{\Sigma/k}\right).
+$$
+
+This [uniform comparison](docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md) has no hidden rate, dimension or minimum-mass factor. It yields an uncapped state–entropy-production frontier. With the older common exit cap $3k$ and exact histogram, it gives a stronger inverse-polylogarithmic necessary entropy-production budget for polynomial state budgets. A finite-entropy-production polynomial predictor has a logarithmic sufficient budget. These curves are not matched, and no order-one dissipation floor is claimed. The entropy rate uses ordinary identity reversal; it is not an automatic heat bound or the total entropy production of a driven protocol.
+
+The [internal review](docs/PRL_EXPLORATION_INTERNAL_REVIEW.md), [bounded verifier](scripts/verify_prl_exploration.py), [saved report](reports/prl_exploration.json) and [primary-source audit](docs/PRL_EXPLORATION_SOURCE_AUDIT.md) distinguish proof evidence from finite checks and prior work. Manuscript drafting remains deferred.
+
+## Earlier binary result: two physical fields at a fixed clock
 
 Fix any $a>0$. The [new theorem](docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uses only held segments in $(a/k)\mathbb N$ and observations at clock endpoints. On its precisely defined rescaled binary tagged family,
 

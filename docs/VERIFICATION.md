@@ -370,6 +370,18 @@ The report records its verifier source hash and the three new proof snapshot has
 
 The complete thirty-three-verifier `make check PYTHON=.venv/bin/python` gate passed locally in pinned Python 3.13.5. All thirty-three fresh JSON reports are byte-identical to saved evidence. All sixty-seven protected baseline files and all nine recovery files remain byte-identical; earlier proof snapshots also pass their saved hash checks. The repository checker passes 1,190 local Markdown links and 34 Python syntax checks, with valid source/proof provenance and an unchanged license. Remote CI is separate evidence, associated with the published commit in GitHub Actions.
 
+## PRL exploration checkpoint
+
+This phase starts from published `04d34df8de8643a44515725c1330d55e8c6f53bc`, tree `22e0def6b56d6339de9a720a872e7743270a242f`. [GitHub Actions run 35841494249](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35841494249) passed the preceding thirty-three-verifier gate. The sixty-nine baseline scripts, reports, license, requirements and workflow, earlier proof snapshots and nine recovery files remain protected. PRL is the user's research target; manuscript drafting remains deferred.
+
+The new proofs are [positive label selectors](POSITIVE_LABEL_SELECTORS.md), [the original tight-band fixed-clock separation](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md), [uniform entropy-production reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) and [the state–entropy-production consequence](STATE_ENTROPY_PRODUCTION_TRADEOFF.md). Their [internal review](PRL_EXPLORATION_INTERNAL_REVIEW.md) checks positivity versus positive semidefiniteness, normalized selector powers, the unchanged target band, the fifth-power observation budget, uniform last-reset entropy bounds, entropy-rate conventions and minimax quantifiers. The [source audit](PRL_EXPLORATION_SOURCE_AUDIT.md) attributes the established symmetrization and entropy-comparison ingredients.
+
+[verify_prl_exploration.py](../scripts/verify_prl_exploration.py) produces [prl_exploration.json](../reports/prl_exploration.json). Its bounded fixtures test the positive selector identities, exact positive-semidefinite certificates, off-grid rival labels, conservative power budgets, arithmetic reversibilization, preservation of exits and stationary masses, the sharpened relative-entropy factor, reset-age integration, and finite-entropy-production regularization. It uses exact rational identities, with numerical matrix exponentials, quadrature and logarithms explicitly labeled; the nineteen-level scalar selector check uses 80-digit arithmetic. It allocates no large target graph.
+
+The new report binds its verifier source and all four new proof snapshots. It contains 561 checks, and passed a separate internal code review and independent pinned-environment rerun with a byte-identical report. Dense matrices have dimension at most five; the suite-wide maximum remains 68. Finite checks supplement the universal analytic claims and do not certify them by enumeration. Local regression, remote CI and mathematical review remain separate evidence.
+
+The complete thirty-four-verifier `make check PYTHON=.venv/bin/python` gate passed locally in pinned Python 3.13.5. All thirty-four fresh reports are byte-identical to saved evidence. All sixty-nine protected baseline files and nine recovery files remain byte-identical, and all earlier proof snapshots pass their recorded hash checks. The final repository checker passes 1,317 local Markdown links and 35 Python syntax checks, with valid source/proof provenance and unchanged license. Remote CI is separate evidence tied to the published commit in GitHub Actions.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -407,6 +419,7 @@ python scripts/verify_state_speed_boundary.py --output reports/state_speed_bound
 python scripts/verify_uncapped_observability.py --output reports/uncapped_observability.json
 python scripts/verify_binary_uncapped_observability.py --output reports/binary_uncapped_observability.json
 python scripts/verify_fixed_clock_observability.py --output reports/fixed_clock_observability.json
+python scripts/verify_prl_exploration.py --output reports/prl_exploration.json
 make check
 ```
 

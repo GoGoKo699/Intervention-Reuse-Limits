@@ -1,6 +1,20 @@
-# Current work order: complete the research package before manuscript drafting
+# Current work order: PRL exploration before manuscript drafting
 
-## Fixed-clock uncapped reversibility — 23 September 2026
+## PRL: prediction states and stationary entropy production — 23 September 2026
+
+The user selected **Physical Review Letters** as the new exploration target. Continue theory-first research toward a broadly meaningful physical result; manuscript drafting remains the last step. The [exploration record](../docs/PRL_EXPLORATION.md) fixes the physical question, reviewed advances, limits and next priorities.
+
+This phase starts from published commit `04d34df8de8643a44515725c1330d55e8c6f53bc`, tree `22e0def6b56d6339de9a720a872e7743270a242f`, with successful [GitHub Actions run 35841494249](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35841494249). Preserve all sixty-nine baseline mathematical scripts, reports, license, requirements and workflow, earlier frozen proof snapshots, and the nine recovery files. Existing non-forced publication authorization remains in effect.
+
+The [tight-band theorem](../docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) now uses the original nineteen-level targets with band $[k,3k]$, two fields and any fixed positive clock. Its reversible lower is $\exp(\exp(c_{a,H}[\log(1/\delta)]^{1/5}))$, alongside a polynomial unrestricted sufficient count. Rivals may use any finite rates and any sensitivities in $[-9/100,9/100]$, without histogram matching. No rare tags, target changes or rate rescaling are required. The separate thirty-nine-field corollary supplies polynomial unrestricted necessity on the same family.
+
+The [entropy-production bridge](../docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md) reversibilizes an original-rule predictor on the same states and with the same exits, giving uniform mean error at most $R^{3/2}\sqrt{\sigma_0/k}$. The [resource consequence](../docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md) gives $D_{\le\Sigma}(\delta)\ge D_{\rm rev}(\delta+R^{3/2}\sqrt{\Sigma/k})$. Its stronger capped frontier keeps the older exact histogram and common exit budget; the broad uncapped frontier does not inherit those stronger exponents. Polynomial predictors can have finite entropy production bounded logarithmically in inverse error. Necessary and sufficient entropy budgets are unmatched.
+
+Four new proof notes passed separate [internal audits](../docs/PRL_EXPLORATION_INTERNAL_REVIEW.md). The [source comparison](../docs/PRL_EXPLORATION_SOURCE_AUDIT.md) identifies prior additive reversibilization and entropy-controlled spectral comparisons; the candidate new ingredient is the all-horizon controlled endpoint bound with interface-only constants and its state-budget consequence. The [bounded verifier](../scripts/verify_prl_exploration.py) and [saved report](../reports/prl_exploration.json) supplement specific identities. Full regression and publication evidence are recorded in [Verification](../docs/VERIFICATION.md).
+
+Next priorities are physical-interface generality, a transparent certified finite-accuracy state advantage, a sharper entropy-production frontier, and full-theorem comparison with the closest literature. Ordinary identity reversal and stationary zero-field entropy production remain explicit; no generalized odd-variable reversal, driven heat bound, optimal frontier or practical sample-cost claim is established. Continue bounded analytic exploration; drafting stays deferred.
+
+## Historical checkpoint: fixed-clock uncapped reversibility — 23 September 2026
 
 This continuation starts from published commit `33f23b7cacb65b5e17692771022286f1b94c6999`, tree `6503c39327c5171dd88ea9f1a03b5f6e2ae86c8e`, with [GitHub Actions run 35837920760](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35837920760) successful. Preserve the sixty-seven baseline mathematical scripts, reports, license, pinned requirements and workflow, all frozen proof snapshots, and the nine recovery files. Existing authorization for non-forced publication remains in effect.
 
