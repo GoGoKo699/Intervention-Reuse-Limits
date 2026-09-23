@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-nine mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all thirty mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -302,7 +302,23 @@ Two-, three- and five-state exact algebraic cases check the new mixed-norm trans
 
 The new verifier's largest dense matrix has dimension five. The suite's earlier maximum dense dimension remains 68; the 1,795-vertex graph is stored sparsely. This is bounded exact verification, not a large simulation or an enumeration proof of the asymptotic lower bound. The complete binary proof and the verifier received separate internal reviews with no outstanding mathematical issue. Its scope is the common exit budget `6580k`, target/reversible-upper band `[k,13160k]`, exact binary histogram and original field rule. The earlier numerical binary band `[k,3k]`, uncapped reversible rivals and matched exponents remain open. Earlier saved reports retain their checkpoint-specific limitations, including statements of questions that this later theorem resolves.
 
-The full twenty-nine-verifier `make check` passes in pinned Python 3.13.5. All twenty-nine fresh reports are byte-identical to their saved evidence. The final repository checker passes 630 local Markdown links, 30 Python syntax checks and saved-source provenance. All fifty-nine protected files from `da0073b` (twenty-eight verifiers, twenty-eight reports, license, dependencies and workflow) and all nine recovery files are byte-identical to their preceding checkpoints. Public-main publication was blocked by automatic approval review, which requires explicit authorization for that public side effect. These commits have local verification; no new GitHub Actions result is claimed.
+The full twenty-nine-verifier `make check` passes in pinned Python 3.13.5. All twenty-nine fresh reports are byte-identical to their saved evidence. The final repository checker passes 630 local Markdown links, 30 Python syntax checks and saved-source provenance. All fifty-nine protected files from `da0073b` (twenty-eight verifiers, twenty-eight reports, license, dependencies and workflow) and all nine recovery files are byte-identical to their preceding checkpoints. After explicit user authorization, the nineteen-level and binary checkpoints were published on `main` as `9f4a815808e55e4e699a7fae9407c1e0be4a701d` and `e21c454ec1a0eef8ceba8bd7e3d01defc62b53a5`. The binary published tree `17cecbfa8461dc139f7e8d0c55cba89dea584adf` matches the locally tested tree exactly. [GitHub Actions run 35811660258](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35811660258) completed successfully for the published binary commit, separately confirming the twenty-nine-verifier gate.
+
+## State–speed and uncapped-boundary checkpoint
+
+This continuation starts from published `e21c454ec1a0eef8ceba8bd7e3d01defc62b53a5`. The [research dossier](RESEARCH_DOSSIER.md) and [claim ledger](CLAIM_LEDGER.md) organize the model, assumptions, theorem dependencies, sources and drafting inputs. Manuscript drafting is not part of this checkpoint.
+
+The [state–speed theorem](STATE_SPEED_ACCURACY_TRADEOFF.md), [unbounded-rate boundary](UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md), [uniform rate regularization](RATE_REGULARIZATION.md) and [finite-state fast-rate closure](FINITE_STATE_FAST_RATE_CLOSURE.md) have separate written proofs and internal audits. The audits cover the uniform cap dependence and clock quantifiers, whole-word repair without an operator cap, the PSD substitution obstruction, reset-based Volterra estimates, vanishing-mass states and uniform convergence under arbitrary switching. Internal audits are part of this investigation, not external mathematical validation. The [source follow-up](RATE_BOUNDARY_PRIOR_ART.md) explicitly attributes classical spectral compactification and Markov aggregation and records full-text access limits.
+
+[verify_state_speed_boundary.py](../scripts/verify_state_speed_boundary.py) produces [state_speed_boundary.json](../reports/state_speed_boundary.json) using only exact standard-library rational arithmetic. It checks all-width affine exponent inequalities, sufficient coefficient majorants, rigorously enclosed adaptive-clock constants, and finite forward/inverse width crossovers. It does not numerically invert the exponential field-interpolation matrix or estimate its potentially large constants.
+
+A three-state reversible resolvent verifies both palindrome factorizations and the negative-involution obstruction. Five-state positive-kernel examples have exact raw operator norms 16, 1,000 and 1,000,000 while satisfying the measured whole-word hypotheses; they check nontrivial endpoint clipping, stationary flux repair and rounded-bit couplings. Their high norm is carried by a small-mass state, so these cases test the absence of a global norm assumption. They are algebraic kernels, not physical fast rivals.
+
+A separate three-hidden-state, four-physical-state Poisson fixture checks the same-state rate transformation by exact projector functional calculus, preserves the actuator histogram and original external rates, and certifies the extra zero-field decay factor. It does not prove the general all-protocol Volterra bound. The compactness, purity and rare-fast-contamination arguments are analytic; no finite simulation is presented as their proof. The new verifier has maximum dense dimension five, and the unchanged suite-wide maximum remains 68.
+
+The verifier received a separate static review and passed under pinned Python 3.13.5. Its report records its own source hash and separate hashes of the three proof snapshots used by its fixtures. The repository checker validates both kinds of provenance; a changed proof snapshot requires review and regeneration of this new report. Earlier reports retain their existing schemas and checkpoint-specific scope.
+
+The complete thirty-verifier `make check` passed locally in the pinned Python 3.13.5 environment. All thirty fresh reports are byte-identical to their saved evidence. All sixty-one protected baseline files from `e21c454ec1a0eef8ceba8bd7e3d01defc62b53a5` (twenty-nine mathematical scripts, twenty-nine reports, license, dependencies and workflow) and all nine recovery files remain byte-identical. Final documentation, syntax and report-provenance checks pass. Remote CI for this new checkpoint is checked separately after publication; the earlier successful binary run is recorded above.
 
 ## Updating evidence after code changes
 
@@ -337,6 +353,7 @@ python scripts/verify_soft_aggregation_lower_bound.py --output reports/soft_aggr
 python scripts/verify_exact_reversible_prefix_obstruction.py --output reports/exact_reversible_prefix_obstruction.json
 python scripts/verify_dynamic_lamp_reversibility_lower_bound.py --output reports/dynamic_lamp_reversibility_lower_bound.json
 python scripts/verify_binary_reversibility_lower_bound.py --output reports/binary_reversibility_lower_bound.json
+python scripts/verify_state_speed_boundary.py --output reports/state_speed_boundary.json
 make check
 ```
 

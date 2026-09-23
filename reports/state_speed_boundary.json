@@ -1,0 +1,363 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Python standard-library fractions.Fraction; no numerical rank or floating-point matrix operations",
+  "uniform_cap_bookkeeping": {
+    "affine_exponent_gaps": {
+      "36n+5 <= 36(n+1)": {
+        "slope": 0,
+        "constant": 31
+      },
+      "108n+11 <= 108(n+1)": {
+        "slope": 0,
+        "constant": 97
+      },
+      "91n+57 <= 91(n+1)": {
+        "slope": 0,
+        "constant": 34
+      }
+    },
+    "coefficient_mass_rational_examples": [
+      {
+        "V_exact": "1",
+        "P_exact": "64"
+      },
+      {
+        "V_exact": "3/2",
+        "P_exact": "216"
+      },
+      {
+        "V_exact": "7",
+        "P_exact": "21952"
+      }
+    ],
+    "square_root_majorant_squared": {
+      "27": 27,
+      "36": 36
+    },
+    "induction_step_difference_coefficients": [
+      55080,
+      4374
+    ],
+    "C_star_times_theta_exact": 220,
+    "threshold_exponent_after_substitution": "-(n+1)",
+    "whole_word_largest_degree": "162n+20",
+    "scope": "Exact exponent identities and rational sufficient majorants only. V_H is symbolic; no exponential Vandermonde inverse or actual enormous interpolation constant is evaluated."
+  },
+  "clock_constants": {
+    "method": "Exact factorial tail for e and exact atanh-series geometric tails for logarithms; outward rational reporting, no binary floating point.",
+    "e_certified_interval": {
+      "lower_exact": "6795704571/2500000000",
+      "upper_exact": "5436563657/2000000000"
+    },
+    "theta_star_certified_interval": {
+      "lower_exact": "251572447/2500000000",
+      "upper_exact": "1006289789/10000000000"
+    },
+    "C_star_certified_interval": {
+      "lower_exact": "10931244780129/5000000000",
+      "upper_exact": "21862489560259/10000000000"
+    },
+    "fixed_clock_examples": [
+      {
+        "epsilon_exact": "1/4",
+        "theta_certified_interval": {
+          "lower_exact": "325607583/5000000000",
+          "upper_exact": "651215167/10000000000"
+        }
+      },
+      {
+        "epsilon_exact": "1/8",
+        "theta_certified_interval": {
+          "lower_exact": "62353109/2000000000",
+          "upper_exact": "155882773/5000000000"
+        }
+      },
+      {
+        "epsilon_exact": "1/64",
+        "theta_certified_interval": {
+          "lower_exact": "37730133/10000000000",
+          "upper_exact": "18865067/5000000000"
+        }
+      },
+      {
+        "epsilon_exact": "1/1024",
+        "theta_certified_interval": {
+          "lower_exact": "1174377/5000000000",
+          "upper_exact": "469751/2000000000"
+        }
+      }
+    ],
+    "scope": "The constant enclosures and listed epsilon cases are certified. The universal fixed-clock asymptotic claim and all protocol quantifiers remain analytic statements in the note."
+  },
+  "width_selection_and_crossover": {
+    "forward_crossover_cases": [
+      {
+        "x_exact": "0",
+        "branch": "twenty-state histogram"
+      },
+      {
+        "x_exact": "1/2",
+        "branch": "twenty-state histogram"
+      },
+      {
+        "x_exact": "199/100",
+        "branch": "twenty-state histogram"
+      },
+      {
+        "x_exact": "2",
+        "branch": "selected target width",
+        "n": 1
+      },
+      {
+        "x_exact": "201/100",
+        "branch": "selected target width",
+        "n": 1
+      },
+      {
+        "x_exact": "3",
+        "branch": "selected target width",
+        "n": 2
+      },
+      {
+        "x_exact": "17/4",
+        "branch": "selected target width",
+        "n": 3
+      },
+      {
+        "x_exact": "10",
+        "branch": "selected target width",
+        "n": 9
+      }
+    ],
+    "inverse_width_cases": [
+      {
+        "state_budget": 2,
+        "n_D": 1,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": true
+      },
+      {
+        "state_budget": 3,
+        "n_D": 2,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": true
+      },
+      {
+        "state_budget": 19,
+        "n_D": 3,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": true
+      },
+      {
+        "state_budget": 20,
+        "n_D": 3,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": false
+      },
+      {
+        "state_budget": 64,
+        "n_D": 4,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": false
+      },
+      {
+        "state_budget": 1000,
+        "n_D": 4,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": false
+      },
+      {
+        "state_budget": 16777216,
+        "n_D": 6,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": false
+      },
+      {
+        "state_budget": 281474976710656,
+        "n_D": 7,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": false
+      },
+      {
+        "state_budget": 79228162514264337593543950336,
+        "n_D": 8,
+        "strict_threshold_check": "2^(3*2^n_D) > D^4",
+        "histogram_excludes_rival": false
+      }
+    ],
+    "inverse_method": "Find the least n>=1 with 2^(3*2^n)>D^4. By monotonicity of logarithms this equals floor(log2((4/3)*log2(D)))+1, including equality boundaries.",
+    "scope": "Finite exact floor/crossover examples and an integer-power reformulation; no enormous target state space is allocated."
+  },
+  "PSD_palindromes_and_resolvent_obstruction": {
+    "matrix_dimension": 3,
+    "resolvent_exact": [
+      [
+        "2/3",
+        "1/6",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "2/3",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "1/6",
+        "2/3"
+      ]
+    ],
+    "resolvent_principal_minors_exact": [
+      "2/3",
+      "2/3",
+      "2/3",
+      "5/12",
+      "5/12",
+      "5/12",
+      "1/4"
+    ],
+    "palindrome_edge_counts": [
+      2,
+      3
+    ],
+    "even_factorization": "B D B*",
+    "odd_factorization": "B (D S D) B*",
+    "positive_sandwich_scale_exact": "7/3",
+    "probe_norm_squared_exact": "2/3",
+    "involution_probe_scalar_exact": "-2/3",
+    "replacement_probe_scalar_exact": "7/216",
+    "scope": "Exact 3x3 examples certify both parity factorizations, a positive resolvent and the negative-involution obstruction. They concern the literal PSD replacement route, not all possible uncapped constructions."
+  },
+  "whole_word_repair_without_norm_cap": {
+    "states": 5,
+    "bits": 2,
+    "epsilon_exact": "1/128",
+    "Delta_exact": "1/16384",
+    "bounded_feature_corners_per_kernel": 32,
+    "examples": [
+      {
+        "raw_L2_operator_norm_exact": "16",
+        "small_stationary_mass_exact": "1/14745600",
+        "query_main_block_scale_exact": "131073/131072",
+        "largest_stationary_flux_repair_error_exact": "1/983040",
+        "repair_infinity_to_L2_norm_squared_exact": "1/65536",
+        "largest_rounded_bit_failure_exact": "1/14745600"
+      },
+      {
+        "raw_L2_operator_norm_exact": "1000",
+        "small_stationary_mass_exact": "1/65404993536",
+        "query_main_block_scale_exact": "131073/131072",
+        "largest_stationary_flux_repair_error_exact": "1/65470464",
+        "repair_infinity_to_L2_norm_squared_exact": "1/65536",
+        "largest_rounded_bit_failure_exact": "1/65404993536"
+      },
+      {
+        "raw_L2_operator_norm_exact": "1000000",
+        "small_stationary_mass_exact": "1/65535868928065536",
+        "query_main_block_scale_exact": "131073/131072",
+        "largest_stationary_flux_repair_error_exact": "1/65535934464",
+        "repair_infinity_to_L2_norm_squared_exact": "1/65536",
+        "largest_rounded_bit_failure_exact": "1/65535868928065536"
+      }
+    ],
+    "scope": "Five-state algebraic examples satisfy every whole-word lemma hypothesis with nontrivial clipping and arbitrarily scalable raw norms through a small-mass state. They are proof-kernel examples, not physical rivals or a cap-free observable-transfer theorem."
+  },
+  "same_state_poisson_capping": {
+    "hidden_states_before_and_after": 3,
+    "total_physical_states_before_and_after": 4,
+    "mu_exact": [
+      "1/4",
+      "1/4",
+      "1/2"
+    ],
+    "actuator_labels_exact": [
+      "-1/10",
+      "-1/10",
+      "1/10"
+    ],
+    "Delta_exact": "1",
+    "original_internal_rate_symbol": "log(2)",
+    "capped_internal_rate_exact": "1/2",
+    "capped_hidden_generator_exact": [
+      [
+        "-3/8",
+        "1/8",
+        "1/4"
+      ],
+      [
+        "1/8",
+        "-3/8",
+        "1/4"
+      ],
+      [
+        "1/8",
+        "1/8",
+        "-1/4"
+      ]
+    ],
+    "zero_field_spectral_identity": "Q(lambda) = -2 P_visible - (1+lambda) P_hidden",
+    "semigroup_difference_identity": "T_capped(u)-T_original(u) = exp(-u) [exp(-u/2)-exp(-u log(2))] P_hidden",
+    "field_examples": [
+      {
+        "exp_h_over_10_exact": "1",
+        "A_to_hidden_rates_exact": [
+          "1/4",
+          "1/4",
+          "1/2"
+        ],
+        "hidden_to_A_rates_exact": [
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "exp_h_over_10_exact": "11/10",
+        "A_to_hidden_rates_exact": [
+          "2357947691/4000000000",
+          "2357947691/4000000000",
+          "285311670611/200000000000"
+        ],
+        "hidden_to_A_rates_exact": [
+          "100000000000/285311670611",
+          "100000000000/285311670611",
+          "1000000000/2357947691"
+        ]
+      },
+      {
+        "exp_h_over_10_exact": "10/11",
+        "A_to_hidden_rates_exact": [
+          "250000000/2357947691",
+          "250000000/2357947691",
+          "50000000000/285311670611"
+        ],
+        "hidden_to_A_rates_exact": [
+          "285311670611/100000000000",
+          "285311670611/100000000000",
+          "2357947691/1000000000"
+        ]
+      }
+    ],
+    "scope": "Projection functional calculus and exact rational 3x3/4x4 identities certify this same-state Poisson transformation, preserved histogram/rule, and the extra zero-field exp(-u) factor. They do not verify the general driven all-horizon Volterra estimate or its asymptotic cap law."
+  },
+  "largest_matrix_dimension": 5,
+  "physical_target_matrix_allocated": false,
+  "limitations": [
+    "Finite examples and symbolic exponent identities do not prove the complete all-n, all-model, all-protocol analytic theorems.",
+    "No actual exponential interpolation inverse or numerical value of V_H is computed.",
+    "No cap-free recovery of raw generator-word scalars from mean accuracy is established.",
+    "The Poisson fixture certifies only the displayed small projection example, not the general controlled all-horizon regularization theorem."
+  ],
+  "source_sha256": {
+    "verify_state_speed_boundary.py": "7815ab8056b6cd8e2f9abae22b73db1ba0a78c6ff76751e93729e24be27b6667"
+  },
+  "proof_snapshot_sha256": {
+    "docs/STATE_SPEED_ACCURACY_TRADEOFF.md": "0a977c8df54dd4d822aaf4333e4fb134e3aeeb644e21f06e81e2bf3522932e7a",
+    "docs/UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md": "3dc473085c9c2367a58c8575640f059e4ab42f0840ccc64ffca520b20f01d3a6",
+    "docs/RATE_REGULARIZATION.md": "cdba9262f8c23875a42d690db22083207825173b4f37286589769a03b1658ec5"
+  },
+  "imported_repository_verifiers": []
+}

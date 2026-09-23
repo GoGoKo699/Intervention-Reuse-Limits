@@ -35,3 +35,4 @@ check:
 	$(PYTHON) scripts/verify_exact_reversible_prefix_obstruction.py --output .check-output/exact_reversible_prefix_obstruction.json
 	$(PYTHON) scripts/verify_dynamic_lamp_reversibility_lower_bound.py --output .check-output/dynamic_lamp_reversibility_lower_bound.json
 	$(PYTHON) scripts/verify_binary_reversibility_lower_bound.py --output .check-output/binary_reversibility_lower_bound.json
+	$(PYTHON) scripts/verify_state_speed_boundary.py --output .check-output/state_speed_boundary.json
