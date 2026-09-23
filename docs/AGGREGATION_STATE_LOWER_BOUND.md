@@ -335,7 +335,7 @@ For the aggregation upper in (5), apply the existing [reversible prediction part
 
 ## 10. Scope, proof audits and verification
 
-This is an architecture lower bound for every exact-actuator stationary-flux aggregate. It is stronger than failure of a particular partition-finding algorithm or of a sufficient reconstruction criterion: actual controlled-mean accuracy itself forces (18). It remains narrower than a lower bound on general reversible realizations, as demonstrated by the upper theorem on the same family.
+This is an architecture lower bound for every exact-actuator stationary-flux aggregate. It is stronger than failure of a particular partition-finding algorithm or of a sufficient reconstruction criterion: actual controlled-mean accuracy itself forces (18). It remains narrower than a lower bound on general reversible realizations, as demonstrated by the upper theorem on the same family. The separate [dynamic-lamp theorem](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) adds active table-flip dynamics and uses nineteen actuator values to obtain an intrinsic reversibility cost under a common rate budget; it does not change the static six-level comparison here.
 
 The six fixed actuator values are intentional. No binary-alphabet reduction is claimed. The large exponent and constants are sufficient bounds, not practical state budgets. Constructors know the supplied target; learning, parameter precision and efficient computation are outside the result.
 

@@ -6,7 +6,7 @@
 
 This class can violate both the earlier density-moment condition and the small-stationary-flux fragmentation condition. The construction replaces finite local scenery statistics by those of a small high-girth graph, then selects complete physical components with positive weights. It does not obtain a small surrogate by cutting most strong transitions from the target.
 
-The result concerns a precisely defined, high-probability labeling class. It is not a theorem for arbitrary fixed labels or for a spectral cap alone. The graph construction, concentration, finite convex reduction, and regeneration are established ingredients; their constrained prediction consequence and combination with the [lower bound](EXPANDER_SCENERY_LOWER_BOUND.md) are the research claims assessed here. No intrinsic asymptotic penalty for reversibility or optimal exponent is proved.
+The result concerns a precisely defined, high-probability labeling class. It is not a theorem for arbitrary fixed labels or for a spectral cap alone. The graph construction, concentration, finite convex reduction, and regeneration are established ingredients; their constrained prediction consequence and combination with the [lower bound](EXPANDER_SCENERY_LOWER_BOUND.md) are the research claims assessed here. This expander theorem proves neither an intrinsic asymptotic penalty for reversibility nor an optimal exponent.
 
 ## 1. Fixed-label physical model
 
@@ -379,4 +379,4 @@ Choosing $\ell=\max\{1,\lceil\log(C_R/\delta)/\beta\rceil-1\}$ gives the same po
 
 The good event is target-specific but defined uniformly over all lengths. At $\eta=1/4$ it has probability greater than $3/4$ for each supplied base graph. It can therefore be intersected with a separately proved lower-bound event of probability at least $3/4$, producing fixed labels that satisfy both conclusions. The [expander lower-bound theorem](EXPANDER_SCENERY_LOWER_BOUND.md) carries out that intersection.
 
-Arbitrary deterministic scenery, the general cap-only reversible problem, a proved intrinsic cost of reversibility, and matching polynomial exponents remain open. All constructors receive the supplied target. Manuscript drafting and claims of established publication novelty do not follow from this theorem.
+Arbitrary deterministic binary scenery, the binary cap-only reversible problem, and matching polynomial exponents remain open. A separate [nineteen-level dynamic-lamp family](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) proves an intrinsic reversibility cost under the prescribed rule, exact histogram and common rate budget; it does not resolve those binary questions. All constructors receive the supplied target. Manuscript drafting and claims of established publication novelty do not follow from this theorem.

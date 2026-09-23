@@ -6,7 +6,7 @@
 
 The surrogate uses the original exponential field rule and preserves the exact actuator histogram and original upper spectral cap. A supplied positive global refresh also preserves its corresponding lower spectral endpoint. In particular, the binary path-and-refresh class in the [local-walk theorem](LOCAL_WALK_LOWER_BOUND.md) has polynomial reversible switching complexity within its original spectral band. The exponent need not match the lower-bound exponent.
 
-Graph fragmentation, positive finite cubature, and regeneration are established ideas; see [the prior-art discussion](PRIOR_ART.md). The contribution assessed here is their combination with the physical constraints and the uniform controlled-mean guarantee. A spectral cap alone does not imply the fragmentation hypothesis, and the general cap-only reversible compression problem remains open.
+Graph fragmentation, positive finite cubature, and regeneration are established ideas; see [the prior-art discussion](PRIOR_ART.md). The contribution assessed here is their combination with the physical constraints and the uniform controlled-mean guarantee. A spectral cap alone does not imply the fragmentation hypothesis. The binary cap-only reversible problem remains open; a separate [nineteen-level dynamic-lamp family](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) has exponential reversible cost under the prescribed rule, exact histogram and common rate budget.
 
 ## 1. Model and fragmentation hypothesis
 
@@ -438,4 +438,4 @@ $$
 
 Uniformly mixing local graphs with small individual stationary masses therefore cannot be fragmented into target-size-independent small components at vanishing stationary-flux cost. Bounded-degree expander families are one obstruction to inferring this property from sparsity and a cap alone.
 
-This is a limitation of the fragmentation method, not a lower bound on optimal controlled-mean predictor size. A different reversible reduction could retain or reorganize transitions without such cuts. The general spectral-cap-only reversible problem, an intrinsic asymptotic cost of reversibility, and optimal exponents remain open.
+This is a limitation of the fragmentation method, not a lower bound on optimal controlled-mean predictor size. A different reversible reduction could retain or reorganize transitions without such cuts. The binary spectral-cap-only reversible problem and optimal exponents remain open. The separate [dynamic-lamp theorem](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) proves an intrinsic asymptotic cost for nineteen actuator values under its fixed competitor rate budget; the fragmentation obstruction is not that lower bound.

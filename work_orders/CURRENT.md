@@ -1,6 +1,29 @@
-# Current work order: close the general prediction-complexity gap
+# Current work order: integrate the reversibility separation and reduce its actuator alphabet
 
-## New completed extension: aggregation versus fresh realization — 22 September 2026
+## Recovery and current result — 22 September 2026
+
+The preceding integrated baseline is `80253e1462d618ccc435f2394aba240e858496b5`, with twenty-five mathematical verifiers. After the workspace disconnected, the new proof material was preserved in commit `ee4e5173ea6a9dd0a54e2d558e83a0ad3a1ad620`, under [the recovery checkpoint](../research_checkpoints/2026-09-22-reversibility/README.md). This continuation promotes those notes into the main documentation and completes their verification. The expanded twenty-eight-verifier gate passes in pinned Python 3.13.5; all twenty-eight fresh reports match their saved evidence. A byte comparison preserves the fifty-three protected baseline files and all nine recovery files. Local verification and GitHub Actions are separate evidence. Preserve the twenty-five baseline scripts and reports, MIT license, pinned dependencies, workflow and unrelated work.
+
+The main candidate is the [dynamic-lamp reversibility theorem](../docs/DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md). On one common target family, the worst-case minimal state counts satisfy
+
+$$
+D_{\rm all}^{(3)}(\delta)=\delta^{-\Theta(1)},\qquad
+D_{\rm rev}^{(3)}(\delta)=\exp(\delta^{-\Theta(1)}).
+$$
+
+Both predictor classes retain the original exponential kinetic rule, exact nineteen-level histogram, stationary zero-field preparation, binary readout, and internal outgoing-rate budget $3k$. The histogram is mass $1/2$ at zero and mass $1/36$ at each of $\pm j/100$, $j=1,\ldots,9$, with $G=9/100$ and $W=19/12000$. Only the second class additionally requires ordinary reversibility. Rivals may use arbitrary new states, with no partition, encoder or inherited-coordinate restriction. Targets and the reversible upper retain the internal band $[k,3k]$. The reversible lower at cap $6k$ covers all reversible rivals with internal exits at most $3k$; no lower gap is imposed on those rivals. Do not assign a reversible spectral band to the nonreversible word-chain upper.
+
+Both lower bounds hold already on thirty-nine fixed field values, at every fixed positive clock $a/k$, with witnessing horizons $O_a(\log(1/\delta)/k)$. The uppers serve all bounded protocols and horizons. Constants can depend on the clock, and exponents are unmatched. This is a state-count statement, not a bound on samples, parameter precision or runtime.
+
+For width $n$, the target has $r=2^n$ addresses and $18r2^r+2$ counted physical states. Positive gate blocks query and independently flip table bits. Ordinary reversibility and the fixed cap transfer mean accuracy to reverse-word moments. [Balanced transport repair](../docs/POSITIVE_TRANSPORT_REPAIR.md) builds stationary couplings on the rival's existing states; deterministic rounding then yields an $r$-bit law nearly invariant under each separate bit flip. Entropy forces exponential support. A distinct target-only Gram-rank argument supplies polynomial necessity even for arbitrary Markov rivals. Keep these two lower arguments and their different competitor assumptions separate.
+
+Supporting extensions are the [soft-aggregation lower](../docs/SOFT_AGGREGATION_LOWER_BOUND.md), [observable aggregation rigidity](../docs/OBSERVABLE_AGGREGATION_RIGIDITY.md), [general reversible word observability](../docs/REVERSIBLE_WORD_OBSERVABILITY.md), and [exact fifteen-symbol reversible-prefix obstruction](../docs/EXACT_REVERSIBLE_PREFIX_OBSTRUCTION.md). The soft architecture is the established Bayes-reversed stochastic encoder, and the exact-prefix result is a zero-error statement. Neither substitutes for the positive-error dynamic-lamp proof.
+
+The proof has passed internal audits; the [primary-source comparison](../docs/PRIOR_ART.md) identifies established lamp-growth, entropy, positive-realization and aggregation ingredients. Internal audits and bounded literature search do not certify originality. Binary actuators, unbounded-rate reversible rivals and arbitrary reversible field rules remain outside the separation. Manuscript drafting remains on hold.
+
+The entries below record earlier research states. Their statements of what was then open are historical; the current nineteen-level theorem and the next priority below supersede the old general finite-alphabet question.
+
+## Historical checkpoint: aggregation versus fresh realization — 22 September 2026
 
 This continuation starts from `cd8f21a8f8f9d25cd1645ee6a165d1061e0ff3e0`. All twenty-three preceding mathematical verifiers and saved reports are preserved.
 
@@ -12,7 +35,7 @@ The lower target contains a binary register, three ports, a sign and a complete 
 
 The qualitative distinction between aggregation and realization is known. The publication candidate is the robust exponential-versus-polynomial state law under these shared physical restrictions. Arbitrary fitted rates on partition cells and a binary-actuator architecture theorem remain outside this lower. The general cap-only reversible question and arbitrary frozen labels on expanders remain open. Manuscript drafting stays on hold.
 
-## New completed extension: fixed-label connected expanders — 22 September 2026
+## Historical checkpoint: fixed-label connected expanders — 22 September 2026
 
 This continuation starts from `b9553f7fa3498dcc8dd7210de0b1aa0fc24a93e3`. All twenty-one preceding mathematical verifiers and saved reports are preserved.
 
@@ -24,7 +47,7 @@ The lower uses geodesic Walsh leaves, an explicit global-centering leakage bound
 
 These local generators have a uniform positive gap, so bounded-size fragmentation has nonvanishing stationary-flux cost. Every positive conductance-density moment diverges with size. The theorem therefore goes beyond both preceding sufficient hypotheses. It does not cover all deterministic labelings or solve the general cap-only reversible problem. The graph constructions, concentration, convex selection and rank methods are established ingredients; publication novelty is not certified. Manuscript drafting remains on hold.
 
-## New completed extension: local walks and sparse reversible compression — 22 September 2026
+## Historical checkpoint: local walks and sparse reversible compression — 22 September 2026
 
 This continuation starts from `2ede88ab4d5cc0be6075e7f881bc66ec07ebb12b`. All nineteen preceding mathematical verifiers and saved reports are preserved.
 
@@ -38,7 +61,7 @@ The same one-dimensional class therefore has passive cost exactly two, constant-
 
 The path dictionary can have unbounded density moments, so this is a separate positive route beyond density clipping. Its small-cut assumption does not follow from a spectral cap or bounded degree alone. A local Poincaré gap gives a direct lower bound on the stationary cost of fragmentation; that limits this construction, not every reversible predictor. No manuscript drafting, scenery-learning guarantee or novelty certification is implied.
 
-## New completed extension: analytic step models and density tails — 22 September 2026
+## Historical checkpoint: analytic step models and density tails — 22 September 2026
 
 This continuation starts from `3f2bb0924a269c9ff4ce7ccb582e334e59c48c58`. All seventeen preceding mathematical verifiers and saved reports are preserved.
 
@@ -50,7 +73,7 @@ The key sampling change keeps the clock at `Λk`: after clipping, Bernstein conc
 
 A matching-plus-refresh target proves that a spectral cap alone cannot justify uniform density clipping: it retains a finite driven signal as its density spikes grow, yet is exactly compressible to three physical states. This rules out that shortcut, not a general polynomial reversible predictor. The cap-only question remains open. No manuscript drafting or novelty certification follows from these extensions.
 
-## New completed extension: experiment menus and reversible sampling — 22 September 2026
+## Historical checkpoint: experiment menus and reversible sampling — 22 September 2026
 
 This continuation starts from `c2740b58734deda54f30463395362ef7368cb034`. All fifteen preceding mathematical verifiers and saved reports are preserved.
 
@@ -62,7 +85,7 @@ For switching, [bounded-density reversible sampling](../docs/BOUNDED_DENSITY_REV
 
 These results improve the conceptual task comparison and resolve a concrete reversible subclass. They do not settle polynomial reversible sufficiency under a spectral cap alone, identify the optimal switching exponent, or certify publication novelty. Manuscript writing remains on hold.
 
-## New completed extension — 22 September 2026
+## Historical checkpoint — 22 September 2026
 
 This continuation starts from `b143adad62c8ec0d8b51733760d5c1c82bcaa213`. All fourteen preceding mathematical verifiers and reports are preserved. The polynomial-necessity target is now proved, including fixed control resolution.
 
@@ -120,7 +143,7 @@ The original exact and finite-accuracy cubic results, their two-state witnesses,
 
 ## Scientific position
 
-The main candidate is the separation between passive simplicity, cubic-response complexity, and full controlled prediction, with general lower and structure-preserving upper bounds. Binary sensitivity and a fixed rate band already allow the stronger general obstruction. The sharp rank-one theorem identifies a tractable structural subclass; it must not be silently extended to all two-level actuators.
+The main candidate is now an intrinsic reversibility cost for controlled prediction: exponential versus polynomial state growth under the same field rule, histogram and outgoing-rate budget, using nineteen fixed actuator values. The separation between passive simplicity, cubic-response complexity, and full controlled prediction remains complementary. Binary sensitivity and a fixed rate band already allow polynomial switching necessity, but the exponential reversible lower has not been reduced to two actuator values. The sharp rank-one theorem identifies a tractable structural subclass; it must not be silently extended to all two-level actuators.
 
 All constructors receive a known target. Approximate full path-law error over all horizons, noisy arbitrary-process learning, parameter precision, running time, and a molecular implementation are not established. The model's kinetic field rule is specified; equilibrium detailed balance alone would not determine it.
 
@@ -128,17 +151,19 @@ Response expansions, Hankel rank, positive approximation, reversible conditional
 
 ## Single next research priority
 
-**Determine the optimal cost of retaining reversible dynamics in the bounded-rate binary class.**
+**Reduce the nineteen-value actuator alphabet in the intrinsic reversibility separation, aiming for a binary actuator.**
 
-Polynomial necessary growth is established. The new architecture theorem also rules out a universal polynomial construction based only on actuator-respecting stationary-flux partitions: some targets require exponentially many cells despite a polynomial fresh-state reversible realization. Polynomial reversible sufficiency now has several distinct routes: density moments, small-cost fragmentation, and typical fixed labels on logarithmic-girth graphs. The last route includes connected uniformly mixing sparse local expanders where the first two assumptions fail. The next concrete boundary is arbitrary fixed scenery on those graphs: can a genuinely new reversible finite-prefix realization replace the concentration hypothesis, or can an adversarial labeling force a larger reversible cost? Do not mistake the proved partition penalty for the still-open cost of reversibility itself. A binary-actuator version of the six-level architecture separation is a separate useful refinement. A polynomial reversible predictor under the original cap-only assumptions, or a rigorous lower bound separating reversible from unrestricted predictors, would settle the general question. Retain ordinary detailed balance, the exact actuator histogram, fixed binary readout, and the all-protocol/all-horizon mean guarantee; specify separately whether the spectral band is retained. Failed clipping, fragmentation, concentration or a particular realization certificate does not imply an intrinsic structural penalty. Improving the unmatched polynomial exponents remains a quantitative direction.
+First finish the recovered checkpoint's exact small-model checks, integrate all new verifier/report pairs, and run the pinned complete suite while preserving the prior evidence. Record local and CI outcomes separately. The mathematical next step then targets the alphabet: separate port sensitivities currently make gate extraction a fixed Vandermonde interpolation. A binary replacement needs another way for actual mean experiments to expose positive gate blocks on every allowed rival. Merely encoding a port label in an auxiliary target coordinate does not supply a corresponding observable port in an arbitrary new-state predictor. All auxiliary coordinates must be counted.
 
-Qualitative analytic field dependence is now resolved for the logarithmic constant-step upper. A further refinement would impose the original exponential actuator rule or tolerance-independent derivative bounds; neither is proved. Do not silently present the analytic Jacobi model as belonging to the original rate-rule family.
+Keep ordinary detailed balance, stationary preparation, exact actuator histogram, the prescribed field rule, fixed binary readout and the all-protocol/all-horizon actual-mean norm. Seek a common outgoing-rate budget for the reversible and nonreversible comparison, and state separately any retained spectral band. The existing binary positive routes through density moments, small-cost fragmentation and typical fixed labels on logarithmic-girth graphs help identify structural boundaries. They do not prove a universal binary upper. Arbitrary fixed expander labels remain a concrete subquestion.
 
-Two exploratory routes did not settle that question. Exact reversible three-symbol matching has a small realization, but its extension needs consistent transition relations between conditional prediction profiles. Matching only their Gram and projected one-step moments is insufficient: dynamics outside the retained profile space can return and change later correlations. These are limitations of proposed certificates, not impossibility results for polynomial reversible compression. Do not substitute finite-prefix success or moment matching alone for a controlled-mean approximation proof.
+A second major boundary is removal of the competitor rate cap. The current scalar logarithm transfer controls both models and depends on fixed reversible spectral caps. Failure of that transfer without a cap is a limitation of the proof, not a cap-free theorem. Allowing arbitrary reversible field dependence is a further distinct change of competitor class. Sharp exponents and simpler physical constructions remain useful refinements after the main scope is secure.
 
-Maintain the primary-source comparison for the complete physical theorem. Matrix logarithms, formal power series, finite-word rank, the de Bruijn/Walsh spectrum, uniformization and canonical word approximation are classical. The candidate contribution is their constrained quantitative consequence: a fixed-resolution intervention task with polynomial physical state cost behind an exact two-state passive law. A growth-class theorem does not certify publication originality. The all-sensitivity, unrestricted-rate upper theorem concerns a broader class and remains a separate question.
+The exact fifteen-symbol result rules out a dimension bound for exact reversible prefix realization depending only on fixed alphabet and prefix length. It does not by itself give a positive-error lower. The soft-aggregation result extends the prior partition obstruction to a specified stochastic-encoder architecture, while the dynamic-lamp lower already handles arbitrary new-state reversible rivals under the fixed budget. Keep these results distinct.
 
-Do not replace this quantitative question with more examples of a merely nonzero high-order coefficient, duplicate the weaker varying-moment construction, or silently change the prediction norm. Retain every completed theorem if a proposed improvement fails. Journal selection and manuscript drafting remain separate from the research task.
+Maintain the primary-source comparison for the whole theorem. Lamp/Følner growth, entropy, positive realization, stationary transport repair, matrix logarithms, uniformization, word approximation, and finite-word rank have established antecedents. The candidate contribution is the constrained quantitative bridge from actual controlled means to exponentially many reversible predictor states. Do not infer publication originality from a growth-class theorem or the absence of a match in a bounded search.
+
+The analytic constant-step construction's original-rule and uniform-derivative refinements concern a separate task. The all-sensitivity, unrestricted-rate reversible upper also remains broader and quantitatively unresolved. Do not replace the present question with another merely nonzero high-order response coefficient or change the prediction norm. Retain every completed theorem if an attempted improvement fails. Journal selection and manuscript drafting remain separate from research development.
 
 ## Evidence discipline
 

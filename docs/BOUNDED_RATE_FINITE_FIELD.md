@@ -395,4 +395,4 @@ $$
 
 Therefore $d_\ell=O(\varepsilon^{-p})$ and $\log J_\zeta=O(\log(2/\varepsilon))$. Taking the logarithm of (15) proves (10). For the binary case, use $m=2$, $G=s$, and the same $p_{\rm bin}$ appearing in (9).
 
-The polynomial nonreversible construction and this singly exponential reversible construction are sufficient bounds, not a proved separation between optimal predictor classes. Whether a polynomial-size reversible predictor always suffices remains open.
+The two constructions here are sufficient bounds. The separate [dynamic-lamp lower](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) proves a polynomial-versus-exponential separation on one nineteen-level target family, under the original field rule, exact histogram and common internal exit budget $3k$. Its reversible upper is the construction in this section, retaining the target band $[k,3k]$. The binary question from Section 6 remains open, as do removal of the rival rate cap and arbitrary reversible field rules.

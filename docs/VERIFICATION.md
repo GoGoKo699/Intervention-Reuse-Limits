@@ -4,7 +4,7 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-five mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all twenty-eight mathematical verifiers. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
@@ -274,6 +274,22 @@ The selected physical models satisfy the exact histogram, stationary flux and fi
 
 The full twenty-five-verifier `make check` passed locally in the pinned environment. All twenty-five fresh JSON reports matched their saved evidence exactly. All 49 protected files—the twenty-three preceding scripts and reports, MIT license, dependencies and workflow—remain byte-identical to the starting commit. Repository checks passed for 478 local Markdown links and 26 Python files, including saved-source provenance and whitespace checks. GitHub Actions is checked separately after publication; this local record does not assert its outcome.
 
+## Intrinsic reversibility, soft aggregation, and exact-prefix checkpoint
+
+This integration starts from the recovered research commit `ee4e5173ea6a9dd0a54e2d558e83a0ad3a1ad620`, whose parent is the fully tested twenty-five-verifier main commit `80253e1462d618ccc435f2394aba240e858496b5`. The nine archived proof and recovery files remain unchanged. The disconnected workspace lost the uncommitted verifier sources; the three new programs below are fresh implementations with newly generated reports and their own source hashes. They are not represented as byte-for-byte recovery of the earlier sources.
+
+The [main theorem](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) compares ordinary reversible and stationary nonreversible prediction under a common internal exit budget, original field rule and exact nineteen-level histogram. Independent internal proof audits checked physical endpoint normalization, positive off-diagonal gate extraction, all-clock scalar transfer, balanced-flux repair, the deterministic decoded entropy bound, and the unrestricted whole-side rank lower. Separate audits checked the recovered soft-lift and Ritz arguments. These are internal checks, not external review or novelty certification.
+
+[verify_dynamic_lamp_reversibility_lower_bound.py](../scripts/verify_dynamic_lamp_reversibility_lower_bound.py) produces [dynamic_lamp_reversibility_lower_bound.json](../reports/dynamic_lamp_reversibility_lower_bound.json). The width-one target is represented as 146 physical states and 672 directed sparse internal edges, with no dense 146-dimensional generator. Exact stationary flux checks cover the full nineteen-level histogram, variance, three rational exponential fields and passive telegraph lumpability. All 24 oriented port blocks, 48 first/second physical endpoint moments, and four gate cycles are checked. Width-one and width-two literal tables verify XOR query and lamp-flip relations and Gram matrices I_r/36. The width-two 1154-state physical model is counted but not constructed.
+
+The same program checks all 741 factors of an exact 39-node Vandermonde determinant, factorized star and gate Dirichlet bounds, four rectangular transport repairs and their full path errors, and bit-law entropy inequalities using exact integer powers. An explicit stationary approximate-flip coupling acts on eight actual decoded states. Rational allocations exercise the scalar-transfer and entropy thresholds; they do not calibrate the much larger interpolation-dependent asymptotic constants. Its largest dense matrix is eight-dimensional.
+
+[verify_soft_aggregation_lower_bound.py](../scripts/verify_soft_aggregation_lower_bound.py) produces [soft_aggregation_lower_bound.json](../reports/soft_aggregation_lower_bound.json). A genuinely overlapping four-state binary encoder has eight joint hidden states and nine physical states. Exact checks establish the Bayes reverse, BPA dynamics, full-field physical intertwining, stationary-flux compression, and the extra relaxation modes at 5/2. BKA has negative off-diagonal entries -15/64, so omitting the resampling term is observably a different construction. A two-generator physical feature has nonzero squared projection loss 27/32768. A 27-dimensional auxiliary path matrix verifies the positive Ritz energy identity with a nonzero discarded component. This clock is an algebraic device, not a free model coordinate. The finite binary fixture tests general identities; the asymptotic soft lower still concerns the six-level dictionary.
+
+[verify_exact_reversible_prefix_obstruction.py](../scripts/verify_exact_reversible_prefix_obstruction.py) produces [exact_reversible_prefix_obstruction.json](../reports/exact_reversible_prefix_obstruction.json). Exact rational instances N=3,4,6 have at most twenty states. Detailed balance, five equal color masses, half-laziness and the star comparison certify the target spectral band. Forty-eight distinct prefix probabilities per instance recover the row moments, feature norm 1/10 and zero recurrence norm. The longest prefix has exactly fifteen symbols. The extracted eigenvalue has primitive order N. The all-N state bound follows from the analytic positivity argument, not extrapolation from these cases, and it is a zero-error theorem.
+
+All three fresh verifier sources received independent static review and passed individual runs in Python 3.13.5 with the unchanged pinned dependencies. The full twenty-eight-verifier `make check` passes, and all twenty-eight fresh reports match their saved evidence. The repository checker passes 591 local Markdown links and 29 Python syntax checks, including report provenance. A byte comparison preserves all fifty-three protected files from `80253e1462d618ccc435f2394aba240e858496b5` (twenty-five verifiers, twenty-five reports, license, dependencies and workflow) and all nine recovery files from `ee4e5173ea6a9dd0a54e2d558e83a0ad3a1ad620`. The suite still has maximum dense dimension 68; the new dynamic-lamp check separately constructs 146 physical states as a sparse graph. GitHub Actions is recorded separately from these local checks.
+
 ## Updating evidence after code changes
 
 Do not edit saved metrics by hand. After reviewing and running a changed extension, regenerate the saved evidence with:
@@ -303,6 +319,9 @@ python scripts/verify_expander_scenery_compression.py --output reports/expander_
 python scripts/verify_expander_scenery_lower_bound.py --output reports/expander_scenery_lower_bound.json
 python scripts/verify_aggregation_state_lower_bound.py --output reports/aggregation_state_lower_bound.json
 python scripts/verify_register_scenery_compression.py --output reports/register_scenery_compression.json
+python scripts/verify_soft_aggregation_lower_bound.py --output reports/soft_aggregation_lower_bound.json
+python scripts/verify_exact_reversible_prefix_obstruction.py --output reports/exact_reversible_prefix_obstruction.json
+python scripts/verify_dynamic_lamp_reversibility_lower_bound.py --output reports/dynamic_lamp_reversibility_lower_bound.json
 make check
 ```
 

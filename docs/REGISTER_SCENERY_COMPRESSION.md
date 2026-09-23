@@ -6,7 +6,7 @@
 
 The actuator has **six fixed values**, not a binary alphabet. The target contains all independent scenery configurations as counted hidden states. A shorter register reproduces their finite-prefix statistics with an explicit collision error; positive selection of complete configuration models then removes almost all of its dictionary. This uniform upper is stronger than a size bound only at a specially chosen sequence of witness accuracies.
 
-The result does not cover arbitrary frozen scenery or resolve the general cap-only problem. Ordinary reversibility is retained throughout. Its comparison with aggregation is a comparison between two reversible model architectures, not a lower bound against every reversible predictor.
+The result does not cover arbitrary frozen scenery or resolve the binary cap-only problem. Ordinary reversibility is retained throughout. Its comparison with aggregation is a comparison between two reversible model architectures, not a lower bound against every reversible predictor.
 
 ## 1. The counted dictionary and physical model
 
@@ -298,7 +298,7 @@ Selecting complete configurations of the original register alone gives a factor 
 
 Consequently the entire target family has the uniform upper (9). The [aggregation lower bound](AGGREGATION_STATE_LOWER_BOUND.md) addresses the more restrictive architecture obtained by partitioning the original hidden states and using its conditional-expectation generator. Its actual-mean lower bound must be established separately; failure of a stronger reconstruction certificate would not suffice.
 
-The original and replacement models both remain reversible and obey the same physical rate rule and histogram constraints. This theorem does not establish a reversible-versus-irreversible separation. It also does not remove the independent full-dictionary assumption or cover arbitrary frozen scenery. The general cap-only polynomial reversible question remains open.
+The original and replacement models both remain reversible and obey the same physical rate rule and histogram constraints. This theorem does not establish a reversible-versus-irreversible separation. It also does not remove the independent full-dictionary assumption or cover arbitrary frozen scenery. The binary cap-only polynomial reversible question remains open. Adding independently addressed table-flip dynamics gives a separate [nineteen-level family](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) with exponential cost for arbitrary new-state reversible rivals under the prescribed rule, exact histogram and common rate budget; the static dictionary upper here remains valid.
 
 ## 10. Verification and evidence
 

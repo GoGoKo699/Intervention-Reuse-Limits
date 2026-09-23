@@ -1,0 +1,395 @@
+{
+  "status": "PASS",
+  "scope": "Exact bounded checks of the dynamic-lamp target, physical positive transports, flip entropy, balanced repair, and proof-budget algebra.",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "physical_target": {
+    "physical_states": 146,
+    "hidden_states": 145,
+    "stored_internal_directed_edges": 672,
+    "dense_physical_matrix_allocated": false,
+    "histogram_exact": {
+      "-9/100": "1/36",
+      "-2/25": "1/36",
+      "-7/100": "1/36",
+      "-3/50": "1/36",
+      "-1/20": "1/36",
+      "-1/25": "1/36",
+      "-3/100": "1/36",
+      "-1/50": "1/36",
+      "-1/100": "1/36",
+      "0": "1/2",
+      "1/100": "1/36",
+      "1/50": "1/36",
+      "3/100": "1/36",
+      "1/25": "1/36",
+      "1/20": "1/36",
+      "3/50": "1/36",
+      "7/100": "1/36",
+      "2/25": "1/36",
+      "9/100": "1/36"
+    },
+    "variance_exact": "19/12000",
+    "central_pi0_mass_exact": "1/36",
+    "maximum_internal_exit_exact": "3/2",
+    "maximum_gate_exit_exact": "1/2",
+    "factorized_star_band_exact": [
+      "1",
+      "2"
+    ],
+    "gate_form_cap_exact": "1",
+    "full_hidden_band_certificate_exact": [
+      "1",
+      "3"
+    ],
+    "common_exit_budget": "3",
+    "reversible_rival_cap_from_budget": "6",
+    "finite_field_flux_checks": [
+      {
+        "exp_h_over_100_exact": "1",
+        "balanced_visible_edges": 145
+      },
+      {
+        "exp_h_over_100_exact": "100001/100000",
+        "balanced_visible_edges": 145
+      },
+      {
+        "exp_h_over_100_exact": "100000/100001",
+        "balanced_visible_edges": 145
+      }
+    ],
+    "field_scope": "|h|=100 log(100001/100000)<1/1000<1/50, plus h=0.",
+    "band_scope": "Exact coefficient and degree certificates for the all-vector Dirichlet proof; no large-matrix eigenvalue approximation."
+  },
+  "literal_queries_and_lamps": {
+    "instances": [
+      {
+        "n": 1,
+        "addresses": 2,
+        "enumerated_triples": 16,
+        "physical_state_count_formula": 146,
+        "constructed_physical_model": true,
+        "xor_gate_words": {
+          "0": [],
+          "1": [
+            "X"
+          ]
+        },
+        "maximum_cross_port_word_length": 3,
+        "lamp_feature_sign_equalities": 64,
+        "gram_diagonal_exact": "1/36",
+        "gram_off_diagonal_exact": "0"
+      },
+      {
+        "n": 2,
+        "addresses": 4,
+        "enumerated_triples": 128,
+        "physical_state_count_formula": 1154,
+        "constructed_physical_model": false,
+        "xor_gate_words": {
+          "0": [],
+          "2": [
+            "X"
+          ],
+          "1": [
+            "J",
+            "X",
+            "J"
+          ],
+          "3": [
+            "J",
+            "X",
+            "J",
+            "X"
+          ]
+        },
+        "maximum_cross_port_word_length": 12,
+        "lamp_feature_sign_equalities": 2048,
+        "gram_diagonal_exact": "1/36",
+        "gram_off_diagonal_exact": "0"
+      }
+    ],
+    "word_budget_scope": "The exhaustive word check is for n=1,2; the all-n construction is proved in the accompanying note."
+  },
+  "full_physical_endpoint_identities": {
+    "oriented_cross_port_transports": 24,
+    "first_and_second_endpoint_moments": 48,
+    "full_generator_gate_cycles": 4,
+    "signed_endpoint_normalization": "18",
+    "central_conditional_to_physical_gram_factor": "36"
+  },
+  "balanced_transport_repair": {
+    "examples": [
+      {
+        "case": "excess_sparse_rectangular",
+        "row_L1_defect_exact": "1/2",
+        "column_L1_defect_exact": "1/2",
+        "repair_L1_exact": "5/6",
+        "row_mse_bound_exact": "1/2",
+        "filled_mass_exact": "1/3",
+        "path_length": 3,
+        "enumerated_full_paths": 36,
+        "raw_row_cap_exact": "2",
+        "full_path_L1_exact": "4097/1152",
+        "edge_telescope_bound_exact": "35/6"
+      },
+      {
+        "case": "zero_rows_and_columns",
+        "row_L1_defect_exact": "1",
+        "column_L1_defect_exact": "1",
+        "repair_L1_exact": "1",
+        "row_mse_bound_exact": "1",
+        "filled_mass_exact": "1",
+        "path_length": 3,
+        "enumerated_full_paths": 36,
+        "raw_row_cap_exact": "1",
+        "full_path_L1_exact": "1",
+        "edge_telescope_bound_exact": "3"
+      },
+      {
+        "case": "already_balanced",
+        "row_L1_defect_exact": "0",
+        "column_L1_defect_exact": "0",
+        "repair_L1_exact": "0",
+        "row_mse_bound_exact": "0",
+        "filled_mass_exact": "0",
+        "path_length": 3,
+        "enumerated_full_paths": 36,
+        "raw_row_cap_exact": "1",
+        "full_path_L1_exact": "0",
+        "edge_telescope_bound_exact": "0"
+      },
+      {
+        "case": "small_row_defects",
+        "row_L1_defect_exact": "1/24",
+        "column_L1_defect_exact": "0",
+        "repair_L1_exact": "1/24",
+        "row_mse_bound_exact": "1/512",
+        "filled_mass_exact": "1/48",
+        "path_length": 3,
+        "enumerated_full_paths": 36,
+        "raw_row_cap_exact": "17/16",
+        "full_path_L1_exact": "43/512",
+        "edge_telescope_bound_exact": "817/6144"
+      }
+    ],
+    "state_sets_before_and_after": [
+      2,
+      3
+    ],
+    "scope": "The repair supplies proof couplings on unchanged states; it is not asserted to be a physical predictor."
+  },
+  "deterministic_flip_entropy": {
+    "entropy_laws": [
+      {
+        "law": "uniform",
+        "bits": 3,
+        "integer_masses": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "support": 8,
+        "coordinate_flip_TV_exact": [
+          "0",
+          "0",
+          "0"
+        ],
+        "entropy_lower_bound_bits_exact": "3",
+        "certificate": "Exact integer powers certify the entropy inequalities without floating logarithms."
+      },
+      {
+        "law": "small_atom_bias",
+        "bits": 3,
+        "integer_masses": [
+          135,
+          127,
+          127,
+          127,
+          127,
+          127,
+          127,
+          127
+        ],
+        "support": 8,
+        "coordinate_flip_TV_exact": [
+          "1/128",
+          "1/128",
+          "1/128"
+        ],
+        "entropy_lower_bound_bits_exact": "381/128",
+        "certificate": "Exact integer powers certify the entropy inequalities without floating logarithms."
+      },
+      {
+        "law": "even_parity",
+        "bits": 3,
+        "integer_masses": [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "support": 4,
+        "coordinate_flip_TV_exact": [
+          "1",
+          "1",
+          "1"
+        ],
+        "entropy_lower_bound_bits_exact": "0",
+        "certificate": "Exact integer powers certify the entropy inequalities without floating logarithms."
+      }
+    ],
+    "decoded_coupling": {
+      "actual_states": 8,
+      "scale_exact": "127/128",
+      "eta_exact": "32449/1048576",
+      "threshold_exact": "1/18",
+      "no_auxiliary_decoding_randomness": true,
+      "flip_couplings": 3,
+      "feature_correlations": 9
+    }
+  },
+  "field_menu_and_error_budgets": {
+    "field_menu": {
+      "frequency_hundredths": [
+        -109,
+        -108,
+        -107,
+        -106,
+        -105,
+        -104,
+        -103,
+        -102,
+        -101,
+        -100,
+        -99,
+        -98,
+        -97,
+        -96,
+        -95,
+        -94,
+        -93,
+        -92,
+        -91,
+        0,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ],
+      "exact_node_base": "1000001/1000000",
+      "positive_determinant_factors_checked": 741,
+      "largest_node_fraction_bit_length": 2173,
+      "scope": "Exact nonsingularity and field range only. The 39x39 inverse and its coefficient masses are not computed."
+    },
+    "representative_fixed_clock_allocations": [
+      {
+        "M": 2,
+        "generator_degree": 1,
+        "delta_exact": "1/576",
+        "delta_to_theta_exact": "1/4",
+        "theta_symbolic": "log(2)/log(24)",
+        "retained_part_vanishes_if_M_below_degree": false
+      },
+      {
+        "M": 2,
+        "generator_degree": 4,
+        "delta_exact": "1/576",
+        "delta_to_theta_exact": "1/4",
+        "theta_symbolic": "log(2)/log(24)",
+        "retained_part_vanishes_if_M_below_degree": true
+      },
+      {
+        "M": 5,
+        "generator_degree": 3,
+        "delta_exact": "1/7962624",
+        "delta_to_theta_exact": "1/32",
+        "theta_symbolic": "log(2)/log(24)",
+        "retained_part_vanishes_if_M_below_degree": false
+      },
+      {
+        "M": 9,
+        "generator_degree": 5,
+        "delta_exact": "1/2641807540224",
+        "delta_to_theta_exact": "1/512",
+        "theta_symbolic": "log(2)/log(24)",
+        "retained_part_vanishes_if_M_below_degree": false
+      }
+    ],
+    "common_budget_entropy_allocations": [
+      {
+        "n": 1,
+        "addresses": 2,
+        "maximum_correlation_edges": 39,
+        "maximum_generator_degree": 119,
+        "raw_row_cap": 96,
+        "moment_error_denominator_bits": 525,
+        "entropy_threshold_exact": "1/12",
+        "path_repair_allocation_exact": "1/24"
+      },
+      {
+        "n": 2,
+        "addresses": 4,
+        "maximum_correlation_edges": 75,
+        "maximum_generator_degree": 227,
+        "raw_row_cap": 96,
+        "moment_error_denominator_bits": 1003,
+        "entropy_threshold_exact": "1/24",
+        "path_repair_allocation_exact": "1/48"
+      },
+      {
+        "n": 3,
+        "addresses": 8,
+        "maximum_correlation_edges": 111,
+        "maximum_generator_degree": 335,
+        "raw_row_cap": 96,
+        "moment_error_denominator_bits": 1481,
+        "entropy_threshold_exact": "1/48",
+        "path_repair_allocation_exact": "1/96"
+      },
+      {
+        "n": 4,
+        "addresses": 16,
+        "maximum_correlation_edges": 147,
+        "maximum_generator_degree": 443,
+        "raw_row_cap": 96,
+        "moment_error_denominator_bits": 1958,
+        "entropy_threshold_exact": "1/96",
+        "path_repair_allocation_exact": "1/192"
+      }
+    ],
+    "budget_scope": "Rational allocation checks do not calibrate the theorem constants A, B, theta from the actual field menu; those remain symbolic in the proof."
+  },
+  "largest_matrix_dimension": 8,
+  "largest_sparse_physical_state_count": 146,
+  "largest_literal_triple_enumeration": 128,
+  "limitations": "These finite exact certificates accompany, and do not replace, the all-n proof or quantify its asymptotic constants. No arbitrary rival is simulated. The claimed separation requires nineteen actuator levels, the original field rule, exact histogram, and a fixed internal rate budget; binary actuators and unbounded-rate reversible rivals remain open.",
+  "source_sha256": {
+    "verify_dynamic_lamp_reversibility_lower_bound.py": "e20a4431f4817828930dbca96691f2ecd044284bce46a78c0f5543c62967b797"
+  }
+}

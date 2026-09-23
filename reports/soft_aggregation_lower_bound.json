@@ -1,0 +1,145 @@
+{
+  "status": "PASS",
+  "scope": "Exact overlapping Bayes encoder, Markov joint lift, full physical intertwining, genuinely lost observable feature, positive Ritz energy identity, and representative reconstruction budgets.",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "bayes_and_physical_lift": {
+    "hidden_target_states": 4,
+    "retained_hidden_labels": 4,
+    "joint_hidden_states": 8,
+    "joint_physical_states": 9,
+    "nonzero_encoder_entries": 8,
+    "actuator_histogram_exact": {
+      "-1/2": "1/2",
+      "1/2": "1/2"
+    },
+    "target_relaxation_spectrum_exact": {
+      "0": 1,
+      "3/2": 2,
+      "2": 1
+    },
+    "joint_extra_relaxation_rate_exact": "5/2",
+    "joint_extra_modes": 4,
+    "aggregate_relaxation_spectrum_exact": {
+      "9/4": 1,
+      "sqrt(97)/32 + 65/32": 1,
+      "65/32 - sqrt(97)/32": 1,
+      "0": 1
+    },
+    "negative_BKA_off_diagonals": [
+      {
+        "row": 0,
+        "column": 1,
+        "value_exact": "-15/64"
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "value_exact": "-15/64"
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "value_exact": "-15/64"
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "value_exact": "-15/64"
+      }
+    ],
+    "physical_field_checks": [
+      {
+        "exp_h_over_two_exact": "1/2",
+        "physical_states": [
+          5,
+          9,
+          5
+        ],
+        "detailed_balance": "exact",
+        "controlled_intertwining": "exact"
+      },
+      {
+        "exp_h_over_two_exact": "1",
+        "physical_states": [
+          5,
+          9,
+          5
+        ],
+        "detailed_balance": "exact",
+        "controlled_intertwining": "exact"
+      },
+      {
+        "exp_h_over_two_exact": "2",
+        "physical_states": [
+          5,
+          9,
+          5
+        ],
+        "detailed_balance": "exact",
+        "controlled_intertwining": "exact"
+      }
+    ],
+    "observable_squared_projection_loss_exact": "27/32768"
+  },
+  "auxiliary_ritz_identity": {
+    "clock_sites": 3,
+    "physical_space_dimension": 9,
+    "auxiliary_matrix_dimension": 27,
+    "compressed_auxiliary_dimension": 15,
+    "generator_norm_bound_exact": "84",
+    "resolvent_parameter_exact": "1/16",
+    "ritz_energy_identity": "exact",
+    "scalar_deficit_exact": "36818400323552263133152991501287421909967617251883493298147332/1165654333184184705079734047504383864480167391723369991350908750470372577564961",
+    "discarded_resolvent_squared_norm_exact": "4602605842418573826607688142961136044557761033353138263421665/145707062945451325020214604378846922096106888228743746708046333572718391709618",
+    "lower_bound_margin_exact": "19856344002014256241356556908628597420053975011165026486584819825051242322207850551759400765946483997/10068043075766137291770827113187582512731237963070455601854622117879538376369294126612638007751090780057335611078557856",
+    "scope": "A rational finite-dimensional test of the proof identity. Clock coordinates are an algebraic device, not free physical states."
+  },
+  "entropy_and_budgets": {
+    "entropy_certificate": "(16/15)^15 < 4",
+    "representative_budgets": [
+      {
+        "n": 1,
+        "r": 2,
+        "delta_exact": "1/3869835264",
+        "per_feature_squared_loss_exact": "1/192",
+        "root_event_mass_exact": "1/12",
+        "conditional_summed_distortion_exact": "1/8"
+      },
+      {
+        "n": 2,
+        "r": 4,
+        "delta_exact": "1/1253826625536",
+        "per_feature_squared_loss_exact": "1/384",
+        "root_event_mass_exact": "1/24",
+        "conditional_summed_distortion_exact": "1/4"
+      },
+      {
+        "n": 3,
+        "r": 8,
+        "delta_exact": "1/406239826673664",
+        "per_feature_squared_loss_exact": "1/768",
+        "root_event_mass_exact": "1/48",
+        "conditional_summed_distortion_exact": "1/2"
+      },
+      {
+        "n": 4,
+        "r": 16,
+        "delta_exact": "1/131621703842267136",
+        "per_feature_squared_loss_exact": "1/1536",
+        "root_event_mass_exact": "1/96",
+        "conditional_summed_distortion_exact": "1"
+      }
+    ],
+    "scope": "Exact algebra at C=2, B=3, kappa=1/4; actual theorem constants remain symbolic and may be much larger."
+  },
+  "largest_physical_state_count": 9,
+  "largest_matrix_dimension": 27,
+  "limitations": "The four-state binary example checks general aggregation and observability identities; it is not the six-level asymptotic dictionary. The growing state lower bound and all-clock transfer are analytic arguments in the companion proofs, not conclusions from finite enumeration.",
+  "provenance": "Fresh verifier reconstructed after workspace recovery; no claim of byte identity with the inaccessible earlier script.",
+  "source_sha256": {
+    "verify_soft_aggregation_lower_bound.py": "d2120fdbf5000dc0140f4a7af64aace7f6a7a920ab770ab33d6d8bf694e14c2b"
+  }
+}
