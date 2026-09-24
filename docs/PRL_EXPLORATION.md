@@ -1,8 +1,8 @@
-# PRL exploration: memory advantage beyond ideal kinetics
+# PRL exploration: a memory advantage with one-percent kinetic uncertainty
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Kinetic tolerance](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md) · [Five-million-trial test](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md) · [Protected readout](FAMILIAR_SWITCH_PROTECTED_READOUT.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [One-percent kinetic tolerance](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md) · [Local three-state realization](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md) · [Five-million-trial test](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The current advance is a finite three-versus-four memory advantage despite bounded departures from heat-bath kinetics, with the same two opposite field words and initial/final bits. Five million fresh independent trials suffice for this enlarged target family and an ordinary-null prediction allowance of $0.0002$. A protected initial readout can allow unrestricted hidden motion while preserving the required equilibrium joint law. Its physical blocking control, full preparation and independent electronic channel remain explicit premises. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The current advance permits eight independent one-percent edge-rate changes in the same two-word, two-bit experiment. A direct witness bound preserves the three-versus-four advantage; an explicit three-state CTMC fits the two nominal-field snapshot laws even when the target's heat-bath coordinate closure fails. Five million fresh independent trials suffice with an ordinary-null prediction allowance of $0.0002$. Preparation, the initial joint instrument and independent symmetric electronics remain premises. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
 
 ## 1. The short physical mechanism
 
@@ -43,7 +43,46 @@ probabilities anywhere in $[0,1/2]$. There is no inverse-contrast
 singularity or rival rate cap. Symmetry, independence, no readout feedback
 and one fixed detector across both protocols remain required.
 
-**Current extension: bounded kinetic departures.** Keep $J=\log3$,
+**Current extension: independent one-percent kinetic departures.** Keep
+$J=\log3$, $H=\log2$ and both dwells $5/4$. The
+[direct robustness theorem](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md)
+allows one independent prefactor in $[.99,1.01]$ on each undirected
+transition edge at each plateau: eight factors, with both directions
+of an edge scaled together. Fixed plateau generators and the Gibbs
+laws are preserved. No new observations, states or protocol types
+are introduced. The ordinary rival class still allows arbitrary
+reversible kernels without a rate cap.
+
+A degree-two perturbation expansion with a rigorous remainder bounds
+the recorded witness directly over the entire box. The
+[local realization](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md)
+fits four moment coefficients and certifies positive three-state
+kernels whose logarithms are genuine Markov generators. This gives
+exact nominal-field snapshot prediction without assuming target
+mean closure. The fitted model is fixed across the two words;
+other words and full trajectories are outside this local theorem.
+
+At nominal fields and times, stationary preparation and ideal initial
+instrument, the state minima are three versus four on $[0,.001]$.
+With all six preparation, field, timing and initial-instrument
+allowances $10^{-5}$, the target table displacement is
+$b_T=.000078025101$ and the rival allowance remains $.00002$.
+Thus the actual state interval is **$[.00008,.0009]$**.
+The stationary bias, tilt and independent symmetric detector
+promises remain those of the reference experiment.
+
+The [new score test](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) uses
+2.5 million fresh independent trials per arm, **five million total**
+and ten million binary readouts. It retains the integer scores below,
+with new gates and threshold .0021, for size below 5% and power
+above 95%. Its null joint-TV allowance $.0002$ exceeds the
+constructive three-state error. Relative to the preceding kinetic
+test, the sufficient relative rate allowance grows 500-fold from
+20 ppm to 1%, with unchanged total trial count and null allowance.
+This is a new proof for an enlarged family, not an optimal tolerance
+or a demonstrated device capability.
+
+**Preserved integrated-error extension.** Keep $J=\log3$,
 $H=\log2$ and both dwell times $5/4$. The
 [kinetic tolerance theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md)
 allows a fixed perturbed generator at each actual plateau, shared
@@ -65,7 +104,7 @@ plateau is excluded because an ordered product of reversible kernels
 need not itself be reversible. The rivals already allow arbitrary
 reversible kernels, so they receive no extra kinetic restriction.
 
-The [new sampling theorem](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md)
+The [earlier sampling theorem](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md)
 retains the scores and empirical gates below, uses threshold .0022,
 and collects 2.5 million fresh independent trials per arm. Its
 **five-million total**, or ten million binary readouts, gives false
@@ -280,14 +319,21 @@ The earlier calibration-value theorem remains tied to its original
 field and dwell. No lower bound or calibrated trial count is transferred
 to the new point merely by changing parameters.
 
-The next priority is to make the rate requirement physically credible.
-The sufficient 20-ppm prefactor tolerance is very tight; seek a less
-conservative structural kinetic bound or a quantified calibration route
-in a concrete charge model. A separate follow-up must justify
-conditional sampling for a reused device with finite resets before
-the fresh-trial count can be treated as a serial acquisition budget.
-Further field or score-constant optimization is secondary. Extra
-controls and preparation checks require their own resource accounting.
+The one-percent result removes the earlier very small sufficient rate
+allowance as the immediate mathematical bottleneck. The next priority
+is a conditional sampling theorem for a reused device with finite
+resets, including preparation time and its assumptions. A finite
+target mixing estimate alone does not justify independent trials or
+prepare arbitrary slow rivals. In parallel, a concrete physical model
+must support the joint instrument, stationary-law and independent
+electronic-channel premises. Further field or score-constant tuning
+is secondary. Extra controls and preparation checks require their own
+resource accounting.
+
+The [percent-kinetic source comparison](FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md)
+and [internal review](FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md)
+separate standard perturbation and embedding tools from the local
+snapshot construction and certified physical error box.
 
 The [kinetic-interface source comparison](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md) and [internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md) distinguish structural conditions and conservative perturbation estimates from demonstrated device capabilities. The [weaker-field comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and [review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) preserve the operating-point argument and established statistical tools. The [earlier statistical comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) retains the calibration-information attribution. The unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
 
@@ -309,10 +355,14 @@ The weaker-field continuation started from published commit
 7e41d378e87ce5d7524e585c387707638c391ae1, tree
 eafae1855a511389c4d07e8fe730a3f6795ff3dc, with successful
 [CI run 35969236097](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35969236097).
-The kinetic-interface continuation starts from published commit
+The kinetic-interface continuation started from published commit
 2ffed6de204354e257a344359497fb1e059cc04e, tree
 bcccfafdc14dc8abbc3b5187bf4751f424c297e9, with successful
 [CI run 35972519604](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35972519604).
+The percent-kinetic continuation starts from published commit
+24c2cc3185dbff17ce23c366413484fe94e25656, tree
+cce6133f62ead44e27d346491075b92d984884f1, with successful
+[CI run 35975279317](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35975279317).
 Earlier protected proofs, certificate bindings, recovery files and the
 original license remain preserved. The
 [physical-interface verifier](../scripts/verify_switch_physical_interface.py)
@@ -330,5 +380,8 @@ The [kinetic-interface verifier](../scripts/verify_switch_kinetic_interface.py)
 and [report](../reports/switch_kinetic_interface.json) check the new
 kinetic budgets, five-million-trial allocation and protected-readout
 finite identities; the linked proofs carry the universal arguments.
+The [percent-kinetic verifier](../scripts/verify_switch_percent_kinetics.py)
+and [report](../reports/switch_percent_kinetics.json) cover the entire
+one-percent parameter box, local CTMC realization and revised score.
 [Verification](VERIFICATION.md) distinguishes local completion from
 publication CI.

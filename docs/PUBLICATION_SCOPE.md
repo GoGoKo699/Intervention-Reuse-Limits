@@ -6,7 +6,43 @@ The [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) now supplies the simplest
 
 The current lead combines the [direct two-snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) with its [unknown symmetric detector extension](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md). Both chronological orders $0H,H0$ start from the same low-field equilibrium and record the initial and final binary conformation. The endpoint mean and initial/final correlation of each table determine a conditional covariance of two response propensities. A singleton conformation sector has zero covariance; the target has positive covariance in both sectors. This excludes all ordinary rivals with at most three states, including arbitrary reversible tick kernels without a rate cap. The positive three-state predictor matches the two joint laws by matching their conditional initial coordinates and subsequent mean evolution; no full multitime path-law equality is claimed.
 
-**Current extension beyond ideal kinetics.** The
+**Current extension: one-percent rates without exact target closure.** The
+[direct kinetic proof](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md)
+keeps $J=\log3$, $H=\log2$, both dwells $5/4$ and the two
+initial/final joint laws. It permits independent prefactors in
+$[.99,1.01]$ on all four undirected transition edges at each field.
+Both directions of an edge share the factor, preserving Gibbs
+detailed balance; the eight factors are otherwise independent.
+Each plateau generator remains fixed across both words.
+
+Direct moment and witness bounds cover this entire box, including
+neighbor-dependent kinetics that destroy heat-bath coordinate closure.
+The [local three-state construction](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md)
+fits four moment coefficients and certifies positive kernels with
+genuine CTMC logarithms. It exactly matches both nominal-field
+snapshot laws, without claiming full trajectories or other control
+words. The nominal state minima are three versus four on $[0,.001]$.
+With preparation, field, timing and initial-instrument allowances
+$10^{-5}$, the target TV budget is $.000078025101$, the rival
+budget $.00002$, and actual minima are **three versus four on
+$[.00008,.0009]$**. The stationary-law and electronic-channel promises
+remain substantive assumptions.
+
+The [new score test](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) uses
+**five million fresh independent trials** and ten million binary
+readouts, with size below 5% and power above 95%. It retains the
+integer scores, introduces new gates and threshold .0021, and allows
+ordinary-null observed-joint-TV error $.0002$, above the constructive
+three-state upper. Compared with the earlier kinetic test, the
+sufficient relative rate allowance grows 500-fold from 20 ppm to
+1%, with the same trial count and null allowance. This is a new
+uniform guarantee, not an optimized tolerance or a device specification.
+The [source audit](FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md),
+[internal review](FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md),
+[verifier](../scripts/verify_switch_percent_kinetics.py) and
+[report](../reports/switch_percent_kinetics.json) record its evidence.
+
+**Preserved integrated-error extension beyond ideal kinetics.** The
 [kinetic tolerance theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md)
 keeps $J=\log3$, $H=\log2$ and dwell $5/4$ while permitting a
 fixed perturbed generator per actual plateau. Each preserves the same
@@ -179,7 +215,7 @@ The [measurement-cost note](FAMILIAR_SWITCH_MEASUREMENT_COST.md) turns the deter
 
 These are conservative sufficient counts, not optimal budgets or a claim that every test needs billions of samples. A separate change-of-measure argument gives $\mathbb E_*N\ge270000\log19\approx794998.52$ for any valid adaptive fresh-endpoint test using these seven words in the ideal nominal case; a fixed budget must contain at least 794,999 endpoints. It does not bound richer path observations. Sampling does not establish the preparation and control assumptions required under the null and alternative.
 
-The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field unknown-detector test now supplies a larger observed gap and a two-million-trial design, below the old experiment's information lower. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should address a supported joint instrument and preparation conditions, and measured departures from heat-bath rates. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
+The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field heat-bath test supplies a two-million-trial design below the old experiment's information lower; the one-percent kinetic family has its own five-million guarantee. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should support the joint instrument and finite-reset preparation/sampling conditions in that model. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
 
 The [matrix prediction principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives a simple organizing statement for a whole target class. A general stationary predictor can separate its incoming and outgoing memory profiles; ordinary detailed balance identifies the factors in matched reversed tests. For any normalized completely positive matrix $H$ of size $n$ with positive row sums, the exact state minima are $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ under the shared interface and cap. The targets still have two-state passive paths. Both counts persist on a positive matrix-dependent accuracy interval, whose useful scale remains unknown in general. This is a controlled realization theorem, not a new matrix-rank definition or a generic HMM-order characterization.
 
@@ -240,7 +276,7 @@ The [source comparison](KINETIC_PARITY_SOURCE_AUDIT.md), [bounded verifier](../s
 
 Earlier comparisons retain their historical assumptions. The [original-rule tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) supplied the uncapped fixed-clock foundation. The [binary fixed-clock uncapped theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uses a rescaled tagged target and inner exponent $1/12$. Earlier [binary](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) and [nineteen-level](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uncapped routes give inner exponent $1/2$ with arbitrarily rapid switching. The older fixed-budget results below remain valid at their stated menus and histograms.
 
-The immediate priorities are a supported initial joint instrument and preparation conditions, and robust treatment of measured kinetic departures in the conditional charge model. The weaker-field design already improves the measured effect and crosses the old experiment's sampling lower bound; further tuning of field or statistical constants is secondary. The optional five-type response-preparation check needs its own statistical budget. Existing finite state gaps and sample bounds do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
+The immediate priority is conditional sampling with finite serial resets and explicit preparation cost, while supporting the joint instrument and remaining physical promises in the conditional charge model. The one-percent kinetic result already strengthens robustness substantially; further tuning of fields or statistical constants is secondary. The optional five-type response-preparation check needs its own statistical budget. Existing finite state gaps and fresh-trial bounds do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 
@@ -581,6 +617,6 @@ The bounds are asymptotic at fixed physical parameters, and the upper exponent $
 
 The leading publication question is how the physical reversal assigned to a reduced representation changes the memory needed for accurate controlled prediction. The present results separate ordinary and generalized reversibility on the same target and task, while extending the ordinary state and entropy-production lower bounds beyond a prescribed exponential kinetic curve. The positive results also identify a limit: generalized equilibrium can coexist with polynomial prediction, so a generic dissipation narrative is excluded. The passive/step/switching comparison and other positive compression routes remain supporting results with their own assumptions.
 
-The next priority is to make the kinetic tolerance physically credible. A sufficient 20-ppm rate tolerance is very tight; a less conservative structural estimate or quantified device calibration would materially improve the physical case. Conditional sampling for a reused device with finite resets is a separate necessary step before interpreting the five-million fresh-trial count as serial acquisition. Further field or score-constant optimization is secondary. The optional preparation checks still need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the source audits.
+The one-percent kinetic theorem removes the earlier very small sufficient rate allowance as the immediate mathematical bottleneck. The next priority is conditional sampling for a reused device with finite resets, including preparation cost, before interpreting the five-million fresh-trial count as serial acquisition. The joint instrument, stationary laws and independent electronics still need support in a concrete device model. Further field or score-constant optimization is secondary. The optional preparation checks still need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the source audits.
 
 The constructor receives a known target. Observation results concern specified-model tests with the stated preparation and readout. Continue with bounded analytic work and small exact checks. PRL is the user's selected target, while complete-theorem novelty, natural physical relevance and the journal's significance threshold remain matters for further assessment. Manuscript writing remains the final step.

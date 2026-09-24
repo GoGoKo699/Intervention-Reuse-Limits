@@ -1,0 +1,485 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction matrix polynomials and outward rational intervals",
+  "perturbation_certificate": {
+    "independent_edge_count": 8,
+    "relative_edge_interval_exact": [
+      "99/100",
+      "101/100"
+    ],
+    "edge_order_per_plateau": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "perturbation_polynomial_degree": 2,
+    "matrix_taylor_degree": 96,
+    "plateau_coefficient_count": 15,
+    "coefficient_norm": "max_i sum_j sum_alpha abs(A_alpha[i,j])",
+    "two_plateau_Dyson_argument_exact": "19/200",
+    "two_plateau_moment_remainder_upper_exact": "146372172429/1000000000000000",
+    "one_plateau_moment_remainder_upper_exact": "9038319629/500000000000000",
+    "Taylor_coefficient_error_upper_exact": "1/100000000000000000000000000000000000000000000000000000",
+    "moment_order": [
+      "m",
+      "c",
+      "l",
+      "d"
+    ],
+    "latent_moment_enclosures_exact": [
+      [
+        "219031746947607/1000000000000000",
+        "111124453598167/500000000000000"
+      ],
+      [
+        "239877240863013/500000000000000",
+        "30375933255399/62500000000000"
+      ],
+      [
+        "124153737609707/1000000000000000",
+        "127827094304661/1000000000000000"
+      ],
+      [
+        "62294769315747/125000000000000",
+        "504595046724313/1000000000000000"
+      ]
+    ],
+    "moment_polynomial_certificates": [
+      {
+        "coefficient_sha256": "728370c6c5ac424e9df7d8e5bdc2408ee0f30f4c05432ff5be87f32b8878b2dc",
+        "nonzero_coefficients": 15,
+        "constant_enclosure_exact": [
+          "22064032707197/100000000000000",
+          "220640327071971/1000000000000000"
+        ],
+        "coefficient_l1_by_degree_upper_exact": {
+          "1": "2905738329837/20000000000000",
+          "2": "93387870161331/1000000000000000"
+        }
+      },
+      {
+        "coefficient_sha256": "6744b491cdd9f84b897c90a653693dfe377100968bfe2d4a7adc8e860f2a796c",
+        "nonzero_coefficients": 45,
+        "constant_enclosure_exact": [
+          "120721176726551/250000000000000",
+          "96576941381241/200000000000000"
+        ],
+        "coefficient_l1_by_degree_upper_exact": {
+          "1": "9235969818199/31250000000000",
+          "2": "14171332963073/50000000000000"
+        }
+      },
+      {
+        "coefficient_sha256": "ba7726c6c9c19ab082b83d81fe4679b965a4f7eefee5db93e3eed2c8a0ae7bf2",
+        "nonzero_coefficients": 45,
+        "constant_enclosure_exact": [
+          "125990415957183/1000000000000000",
+          "1968600249331/15625000000000"
+        ],
+        "coefficient_l1_by_degree_upper_exact": {
+          "1": "3347626886173/20000000000000",
+          "2": "32985463922921/200000000000000"
+        }
+      },
+      {
+        "coefficient_sha256": "e92aaad66ade1f4e38d1e306e5c40f56a8cdc6aba585e25f9bb746a0c1be3d24",
+        "nonzero_coefficients": 45,
+        "constant_enclosure_exact": [
+          "62684575078143/125000000000000",
+          "100295320125029/200000000000000"
+        ],
+        "coefficient_l1_by_degree_upper_exact": {
+          "1": "147069105681649/500000000000000",
+          "2": "9591191595841/31250000000000"
+        }
+      }
+    ]
+  },
+  "local_snapshot_realization": {
+    "coordinate_matrix_exact": [
+      [
+        "1",
+        "-1",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "-12/5"
+      ],
+      [
+        "1",
+        "1",
+        "6/25"
+      ]
+    ],
+    "stationary_laws_exact": [
+      [
+        "1/2",
+        "1/22",
+        "5/11"
+      ],
+      [
+        "1/5",
+        "4/55",
+        "8/11"
+      ]
+    ],
+    "fitted_parameter_order": [
+      "x",
+      "a",
+      "b",
+      "c"
+    ],
+    "fitted_parameter_enclosures_exact": [
+      [
+        "354720126232523/500000000000000",
+        "44592562623491/62500000000000"
+      ],
+      [
+        "314899490280697/500000000000000",
+        "634733262532037/1000000000000000"
+      ],
+      [
+        "132829405540617/500000000000000",
+        "139851343929223/500000000000000"
+      ],
+      [
+        "29947356489403/200000000000000",
+        "78514530353277/500000000000000"
+      ]
+    ],
+    "fitted_parameter_variation_upper_exact": [
+      "2021/1000000",
+      "617/250000",
+      "3511/500000",
+      "3647/1000000"
+    ],
+    "low_kernel_box_order": [
+      "x",
+      "y",
+      "z",
+      "w"
+    ],
+    "high_kernel_box_order": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "embedding_certificates": [
+      {
+        "parameter_box_exact": [
+          [
+            "353/500",
+            "717/1000"
+          ],
+          [
+            "1683/5000",
+            "421/1250"
+          ],
+          [
+            "1211/10000",
+            "1213/10000"
+          ],
+          [
+            "863/5000",
+            "1729/10000"
+          ]
+        ],
+        "nonconstant_eigenvalue_lower_bounds_exact": [
+          "1/10",
+          "77/100"
+        ],
+        "kappa_lower_exact": "171/200",
+        "off_diagonal_stationary_ratio_lower_exact": "181/1000",
+        "minimum_corner_ratio_exact": "2183/12000",
+        "minimum_corner_diagonal_exact": "500827/3300000",
+        "affine_corner_count": 16
+      },
+      {
+        "parameter_box_exact": [
+          [
+            "627/1000",
+            "319/500"
+          ],
+          [
+            "13/50",
+            "57/200"
+          ],
+          [
+            "73/500",
+            "161/1000"
+          ],
+          [
+            "1959/10000",
+            "1961/10000"
+          ]
+        ],
+        "nonconstant_eigenvalue_lower_bounds_exact": [
+          "107/1000",
+          "7/10"
+        ],
+        "kappa_lower_exact": "203/250",
+        "off_diagonal_stationary_ratio_lower_exact": "191/1000",
+        "minimum_corner_ratio_exact": "191/1000",
+        "minimum_corner_diagonal_exact": "3101/15000",
+        "affine_corner_count": 16
+      }
+    ],
+    "scope": "One fixed three-state CTMC pair exactly reproduces both ideal stationary initial/final joint laws for every allowed physical edge tuple. The constructed generators depend on that tuple, not on the selected word. No full path-law or arbitrary-field-word reproduction is asserted."
+  },
+  "direct_witness_certificate": {
+    "target_detector_contrast_interval_exact": [
+      "49/50",
+      "1"
+    ],
+    "recorded_moment_public_enclosures_exact": [
+      [
+        "4293/20000",
+        "889/4000"
+      ],
+      [
+        "1843/4000",
+        "24301/50000"
+      ],
+      [
+        "12167/100000",
+        "12783/100000"
+      ],
+      [
+        "23931/50000",
+        "2523/5000"
+      ]
+    ],
+    "latent_c_minus_d_enclosure_exact": [
+      "-2451/125000",
+      "-2197/125000"
+    ],
+    "witness_polynomial_certificate": {
+      "coefficient_sha256": "5fc24a448c310e64fd28aadfee0e361c4a685e04296e91de51211861eacf2992",
+      "nonzero_coefficients": 360,
+      "constant_enclosure_exact": [
+        "2192721012997/500000000000000",
+        "877088405199/200000000000000"
+      ],
+      "coefficient_l1_by_degree_upper_exact": {
+        "1": "21506995164077/1000000000000000",
+        "2": "6282297774741/200000000000000",
+        "3": "1337908497077/62500000000000",
+        "4": "7031274751127/1000000000000000"
+      }
+    },
+    "score_polynomial_certificate": {
+      "coefficient_sha256": "8ff901af5731755607416476b463cca64e3c0557d73db04edcd299b66c9c2a47",
+      "nonzero_coefficients": 45,
+      "constant_enclosure_exact": [
+        "4183547589241/1000000000000000",
+        "2091773794621/500000000000000"
+      ],
+      "coefficient_l1_by_degree_upper_exact": {
+        "1": "23329941193237/1000000000000000",
+        "2": "5348795722651/125000000000000"
+      }
+    },
+    "witness_lower_exact": "389/100000",
+    "score_lower_exact": "367/100000",
+    "witness_gradient_l1_upper_exact": "19/10",
+    "stationary_ordinary_three_state_gap_lower_exact": "1/1000",
+    "stationary_general_three_state_error_exact": "0",
+    "stationary_state_count_interval_exact": [
+      "0",
+      "1/1000"
+    ],
+    "target_external_TV_allowance_exact": "78025101/1000000000000",
+    "rival_external_TV_allowance_exact": "1/50000",
+    "actual_ordinary_gap_lower_exact": "9/10000",
+    "actual_general_three_state_error_upper_exact": "1/12500",
+    "actual_state_count_interval_exact": [
+      "1/12500",
+      "9/10000"
+    ]
+  },
+  "fixed_score_design": {
+    "score_coefficients_exact": [
+      [
+        "2/5",
+        "3/5",
+        "-3/10"
+      ],
+      [
+        "-2/5",
+        "-12/25",
+        "3/10"
+      ]
+    ],
+    "integer_score_lookup_divisor": 50,
+    "integer_score_lookup": [
+      [
+        35,
+        -65,
+        5,
+        25
+      ],
+      [
+        -29,
+        59,
+        -11,
+        -19
+      ]
+    ],
+    "outcome_order": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "constant_subtracted_exact": "2/25",
+    "paired_trials_per_arm": 2500000,
+    "total_fresh_paired_trials": 5000000,
+    "total_bit_readouts": 10000000,
+    "observed_joint_TV_model_allowance_exact": "1/5000",
+    "conservative_target_external_TV_allowance_exact": "79/1000000",
+    "null_displacement_exact": "11/50000",
+    "null_score_mean_upper_exact": "2243/2500000",
+    "target_score_mean_lower_exact": "21081/6250000",
+    "rejection_cutoff_exact": "21/10000",
+    "null_variance_ceilings_exact": [
+      "31/100",
+      "27/100"
+    ],
+    "target_variance_ceilings_exact": [
+      "3/10",
+      "27/100"
+    ],
+    "gate_coordinate_order": [
+      "M",
+      "C",
+      "L",
+      "D",
+      "A=L+3D/5",
+      "Q=C-D"
+    ],
+    "population_gate_intervals_exact": [
+      [
+        "207/1000",
+        "23/100"
+      ],
+      [
+        "453/1000",
+        "247/500"
+      ],
+      [
+        "57/500",
+        "17/125"
+      ],
+      [
+        "471/1000",
+        "513/1000"
+      ],
+      [
+        "401/1000",
+        "439/1000"
+      ],
+      [
+        "-31/1000",
+        "-3/500"
+      ]
+    ],
+    "empirical_gate_intervals_exact": [
+      [
+        "211/1000",
+        "113/500"
+      ],
+      [
+        "457/1000",
+        "49/100"
+      ],
+      [
+        "59/500",
+        "33/250"
+      ],
+      [
+        "19/40",
+        "509/1000"
+      ],
+      [
+        "81/200",
+        "87/200"
+      ],
+      [
+        "-1/40",
+        "-3/250"
+      ]
+    ],
+    "target_gate_failure_upper_exact": "1918594368329/500000000000000",
+    "type_I_error_upper_exact": "1/20",
+    "type_II_error_upper_exact": "11/250",
+    "scope": "Fresh independent trials; no independence assumption within a paired trial. Physical promises are supplied assumptions, not consequences of the empirical gates. The approximation allowance enlarges only the ordinary null."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_percent_kinetics.py": "6e59c54164d8bef4cca9a45b88a8b70c7dfcbfbd20afbaebc52d7aa7e9358525",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_weak_field.json": "6289576de985afec146faeef47ef504105bc98ca986c6ce8a8bed70dbb2c6a5d",
+    "reports/switch_kinetic_interface.json": "cfb051fbac02d96c5ae3912f80ab42610be426a90127d70173d8e3bbd33e4472"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8"
+  },
+  "checks": 170
+}

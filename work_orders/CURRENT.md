@@ -1,6 +1,73 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: finite memory advantage beyond ideal kinetics — 24 September 2026
+## PRL: one-percent kinetics and a local three-state realization — 24 September 2026
+
+Continue from published commit 24c2cc3185dbff17ce23c366413484fe94e25656,
+tree cce6133f62ead44e27d346491075b92d984884f1, successful
+[CI run 35975279317](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35975279317).
+Preserve the 113 protected baseline files, historical claim rows
+R1–R54 byte-for-byte, proof bindings, nine recovery files and the
+MIT license. Manuscript drafting remains deferred. Existing
+authorization covers non-forced public-main publication; collaborator
+contact is not authorized.
+
+The [direct kinetic theorem](../docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md)
+keeps $J=\log3$, $H=\log2$, both dwells $5/4$, the two words
+$0H,H0$ and initial/final binary readouts. Every undirected transition
+edge at each field receives an independent prefactor in $[.99,1.01]$.
+The eight factors preserve Gibbs detailed balance and fixed plateau
+generators, but may destroy heat-bath coordinate closure. Exact
+coefficient bounds and a rigorous remainder cover the full box.
+
+The [local snapshot construction](../docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md)
+fits four moment coefficients with one shared three-state model. Its
+positive kernels have genuine CTMC logarithms and the specified
+stationary laws, so both nominal-field, nominal-time stationary joint
+laws are matched exactly. Other words, full trajectories, learning
+and a single universal predictor for all targets are outside the claim.
+The nominal state minima are **three versus four on $[0,.001]$**.
+
+With all six preparation, field, timing and initial-instrument
+allowances $10^{-5}$, target joint-TV displacement is
+$.000078025101$ and the rival budget $.00002$. Actual minima are
+**three versus four on $[.00008,.0009]$**. Stationary bias and tilt
+uncertainty $10^{-4}$, tilt defect $10^{-5}$, shared model and
+preparation, and independent symmetric electronic channels remain
+requirements. Arbitrary slow reversible rivals still have no rate cap.
+
+The [percent-kinetic score test](../docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md)
+uses **five million fresh independent trials**, 2.5 million per arm
+and ten million binary readouts. The inherited integer scores have
+new gates and threshold .0021. The new proof gives size below 5%
+and power above 95%, with ordinary-null observed-TV prediction
+allowance $.0002$ per word, exceeding the constructive general upper.
+The sufficient relative rate allowance increases 500-fold from
+20 ppm to 1%, with unchanged trial count and null allowance. Neither
+tolerance nor sample optimality or device feasibility is claimed.
+
+The [verifier](../scripts/verify_switch_percent_kinetics.py),
+[report](../reports/switch_percent_kinetics.json),
+[source audit](../docs/FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md)
+separate the finite certificate from its analytic and physical scope.
+Full-suite and publication evidence belong to
+[Verification](../docs/VERIFICATION.md). The previous kinetic and
+protected-readout checkpoint remains preserved below.
+
+**Next scientific priority:** justify conditional sampling with finite
+serial resets and price preparation, while retaining an explicit
+joint-instrument and electronic-channel model. The one-percent result
+removes the earlier very small sufficient rate allowance as the
+immediate mathematical bottleneck. The reference target's 62-unit
+mixing estimate does not establish independent repeated trials,
+uniform reset of arbitrary slow rivals or a bound for this whole
+kinetic family. A concrete device must still support the stationary-law,
+preparation, protected-readout and detector promises. Further field
+or score-constant tuning is secondary. Continue analytic tiny-matrix
+work; device feasibility and PRL readiness remain unestablished.
+Manuscript drafting remains the last step.
+
+## Historical checkpoint: finite memory advantage beyond ideal kinetics — 24 September 2026
 
 Continue from published commit 2ffed6de204354e257a344359497fb1e059cc04e,
 tree bcccfafdc14dc8abbc3b5187bf4751f424c297e9, successful
