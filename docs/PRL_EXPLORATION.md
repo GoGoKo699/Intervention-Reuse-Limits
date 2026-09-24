@@ -1,8 +1,8 @@
-# PRL exploration: a memory advantage with one-percent kinetic uncertainty
+# PRL exploration: a short memory test with finite serial resets
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [One-percent kinetic tolerance](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md) · [Local three-state realization](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md) · [Five-million-trial test](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Serial sampling](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) · [Finite reset](FAMILIAR_SWITCH_FINITE_RESET.md) · [One-percent kinetic tolerance](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The current advance permits eight independent one-percent edge-rate changes in the same two-word, two-bit experiment. A direct witness bound preserves the three-versus-four advantage; an explicit three-state CTMC fits the two nominal-field snapshot laws even when the target's heat-bath coordinate closure fails. Five million fresh independent trials suffice with an ordinary-null prediction allowance of $0.0002$. Preparation, the initial joint instrument and independent symmetric electronics remain premises. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The two-word, two-bit experiment tolerates eight independent one-percent edge-rate changes and retains its three-versus-four state advantage. The latest extension permits five million serial trials with dependence between trials, under a uniform history-conditional joint-law promise relative to one fixed reference pair. An actual 63-unit reset supplies the target preparation term, with nominal reset-plus-active exposure 327.5 million attempt-time units. Arbitrarily slow rivals still require a separate operational preparation guarantee; the initial joint instrument and electronic-channel model remain premises. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
 
 ## 1. The short physical mechanism
 
@@ -43,7 +43,40 @@ probabilities anywhere in $[0,1/2]$. There is no inverse-contrast
 singularity or rival rate cap. Symmetry, independence, no readout feedback
 and one fixed detector across both protocols remain required.
 
-**Current extension: independent one-percent kinetic departures.** Keep
+**Current extension: serial sampling and finite target preparation.** The
+[serial theorem](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) retains the
+one-percent score test's five million trials, empirical gates and
+threshold .0021, with deterministic alternating arms. Conditional on
+every previous history, the actual recorded pair must be within TV
+$.000079$ of one fixed nominal target reference pair, or $.00022$
+of one fixed stationary ordinary reference pair. The latter includes
+the $.0002$ approximation allowance. Reference generators and detector
+channels remain fixed throughout the experiment. Unconditional or
+time-averaged closeness, and changing reference models with the history,
+do not satisfy this premise.
+
+Conditional concentration proves size below 5% and power above 95%
+without assuming independent trials. The [finite-reset bound](FAMILIAR_SWITCH_FINITE_RESET.md)
+gives preparation TV below $10^{-5}$ after an actual low-field wait
+of 63 units, from every preceding hidden-state law and history, for
+the full one-percent target family with $|h_0|\le10^{-5}$. This
+replaces the allocated preparation allowance; it is not an additional
+error charge. Five million resets plus the nominal active pulses cost
+327.5 million attempt-time units, 26.2 times the active-only exposure,
+before readout and switching overhead. No physical attempt rate is
+assumed.
+
+The target reset does not give a uniform mixing time for arbitrarily
+slow rivals. The serial statistical null explicitly requires the
+conditional preparation promise for its own fixed model, separately
+from the uncapped stationary population theorem. The latter remains
+unchanged. The [verifier](../scripts/verify_switch_serial_reset.py),
+[report](../reports/switch_serial_reset.json),
+[source audit](FAMILIAR_SWITCH_SERIAL_RESET_SOURCE_AUDIT.md) and
+[internal review](FAMILIAR_SWITCH_SERIAL_RESET_INTERNAL_REVIEW.md)
+record this distinction and the finite checks.
+
+**Preserved extension: independent one-percent kinetic departures.** Keep
 $J=\log3$, $H=\log2$ and both dwells $5/4$. The
 [direct robustness theorem](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md)
 allows one independent prefactor in $[.99,1.01]$ on each undirected
@@ -320,15 +353,16 @@ field and dwell. No lower bound or calibrated trial count is transferred
 to the new point merely by changing parameters.
 
 The one-percent result removes the earlier very small sufficient rate
-allowance as the immediate mathematical bottleneck. The next priority
-is a conditional sampling theorem for a reused device with finite
-resets, including preparation time and its assumptions. A finite
-target mixing estimate alone does not justify independent trials or
-prepare arbitrary slow rivals. In parallel, a concrete physical model
-must support the joint instrument, stationary-law and independent
-electronic-channel premises. Further field or score-constant tuning
-is secondary. Extra controls and preparation checks require their own
-resource accounting.
+allowance as the immediate mathematical bottleneck. Conditional serial
+sampling and the finite target reset now account for dependence and
+preparation exposure without an exact-independence claim. The next
+priority is operational justification or statistical certification of
+rival preparation and the joint-instrument and detector assumptions
+in a concrete physical model. The target's mixing bound cannot supply
+those rival guarantees, and visible equilibrium does not certify hidden
+preparation. Further field or score-constant tuning is secondary.
+Extra controls and preparation checks require their own resource
+accounting.
 
 The [percent-kinetic source comparison](FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md)
 and [internal review](FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md)
@@ -363,6 +397,10 @@ The percent-kinetic continuation starts from published commit
 24c2cc3185dbff17ce23c366413484fe94e25656, tree
 cce6133f62ead44e27d346491075b92d984884f1, with successful
 [CI run 35975279317](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35975279317).
+The serial-reset continuation starts from published commit
+e80ebbf78f92332e911d35818ae8c6fe659cc77a, tree
+36b901a2782b43885af315055c0f603055f850bb, with successful
+[CI run 35979212122](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35979212122).
 Earlier protected proofs, certificate bindings, recovery files and the
 original license remain preserved. The
 [physical-interface verifier](../scripts/verify_switch_physical_interface.py)
@@ -383,5 +421,9 @@ finite identities; the linked proofs carry the universal arguments.
 The [percent-kinetic verifier](../scripts/verify_switch_percent_kinetics.py)
 and [report](../reports/switch_percent_kinetics.json) cover the entire
 one-percent parameter box, local CTMC realization and revised score.
+The [serial-reset verifier](../scripts/verify_switch_serial_reset.py)
+and [report](../reports/switch_serial_reset.json) check the enlarged
+conditional variance boxes, unchanged sampling margins, uniform reset
+bound and exposure arithmetic.
 [Verification](VERIFICATION.md) distinguishes local completion from
 publication CI.

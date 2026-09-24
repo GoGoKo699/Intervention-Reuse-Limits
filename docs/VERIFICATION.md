@@ -4,11 +4,29 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-two mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-three mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: one-percent kinetics and a local three-state realization
+## Current checkpoint: serial trials and finite reset
+
+The published baseline `e80ebbf78f92332e911d35818ae8c6fe659cc77a`, tree `36b901a2782b43885af315055c0f603055f850bb`, had 52 mathematical verifiers, four saved-model replays and successful [CI run 35979212122](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35979212122). This continuation protects all **115** baseline verifier/report/license/dependency/workflow files, earlier proof bindings, nine recovery files and historical claim rows R1–R56.
+
+The [serial sampling theorem](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) retains five million trials, the existing gates and threshold $.0021$, with false rejection below 5% and power above 95%. It replaces fresh-trial independence by a uniform conditional TV promise relative to one fixed stationary reference pair. A fixed-reference case split and widened conditional variance boxes justify the martingale concentration argument. The serial approximate null is conditional on the past; a marginal approximation promise alone is insufficient.
+
+The [finite-reset theorem](FAMILIAR_SWITCH_FINITE_RESET.md) proves that 63 actual low-field attempt units prepare every member of the one-percent four-state family within TV $10^{-5}$, conditional on any pre-reset history. The target gap is at least $99/500$ and minimum stationary mass exceeds $1/21$. The constructive three-state predictor also meets that reset duration through a separate weighted-kernel bound. Its finite-preparation one-trial comparison with the target is below $.00009$, without a full-sequence TV assertion. Arbitrarily slow ordinary rivals require their own conditional preparation guarantee; the broad population lower bound is unchanged.
+
+Reset plus active evolution costs **327.5 million nominal attempt units**, 26.2 times active-only exposure. Active-clock allowance adds at most 100 units; reset-clock allowance, ten million readouts and control overhead are accounted for separately. No laboratory frequency or device capability is assumed.
+
+The [new verifier](../scripts/verify_switch_serial_reset.py) produces [switch_serial_reset.json](../reports/switch_serial_reset.json) with **79 exact checks**, largest dense dimension four, no floating arithmetic and no optimization. Source SHA-256: `b72d58664fed11d9965aea292a938b330118ea8deb491fc13fe11ad40e066526`; report SHA-256: `9c9f662e63d94d518d3e01bf0aa179dffa6f06d78a2333660e3668582d972fb6`. Both new proof hashes are unconditionally bound: sampling `773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f` and reset `93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00`. The report binds 22 proof snapshots, the frozen percent-kinetic input report and the inherited rational helper. The source and proof bindings in that prerequisite are checked against their frozen expected values.
+
+The separate reviewer and coordinator inspected both proofs and the full final source, including the constructive predictor's reset. An independent production replay passed all **79 checks** and reproduced the canonical report byte for byte. The [internal review](FAMILIAR_SWITCH_SERIAL_RESET_INTERNAL_REVIEW.md) separates conditional-law, gate, mixing and resource checks; the [source audit](FAMILIAR_SWITCH_SERIAL_RESET_SOURCE_AUDIT.md) attributes the standard martingale and Dirichlet-form tools. These finite checks support the analytic arguments; they do not enumerate all possible histories or rival models. Manuscript drafting remains deferred.
+
+**Completed local gate:** `make check PYTHON=.venv/bin/python` passed **53 mathematical verifiers and four saved-model replays** under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. The captured log contains all **58** commands, including the repository checker and final snapshot replay. All **57** fresh reports are PASS and byte-identical to saved evidence. All 115 protected baseline files, earlier proof bindings, nine recovery files and historical claim rows R1–R56 remain unchanged. After final documentation integration, the repository checker passes **2,431 local Markdown links**, **58 Python syntax checks**, report/source/proof/input provenance and the original MIT license; `git diff --check` passes. New work uses maximum dense dimension four; the historical suite maximum remains 68.
+
+Published-commit CI is checked separately after non-forced publication; the baseline CI above certifies only that earlier commit. Manuscript drafting remains deferred.
+
+## Historical checkpoint: one-percent kinetics and a local three-state realization
 
 The published baseline `24c2cc3185dbff17ce23c366413484fe94e25656`, tree `cce6133f62ead44e27d346491075b92d984884f1`, had 51 mathematical verifiers, four saved-model replays and successful [CI run 35975279317](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35975279317). This continuation protects all **113** baseline verifier/report/license/dependency/workflow files, earlier proof bindings, nine recovery files and historical claim rows R1–R54.
 

@@ -1,6 +1,82 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: one-percent kinetics and a local three-state realization — 24 September 2026
+## PRL: serial sampling and finite target preparation — 24 September 2026
+
+Continue from published commit e80ebbf78f92332e911d35818ae8c6fe659cc77a,
+tree 36b901a2782b43885af315055c0f603055f850bb, successful
+[CI run 35979212122](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35979212122).
+Preserve the 115 protected baseline files, historical claim rows
+R1–R56 byte-for-byte, proof bindings, nine recovery files and the
+MIT license. Manuscript drafting remains deferred. Existing
+authorization covers non-forced public-main publication; collaborator
+contact is not authorized.
+
+The [serial sampling theorem](../docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md)
+retains the one-percent kinetic test's five million trials, ten million
+binary readouts, empirical gates and threshold .0021. Use deterministic
+alternation of the two arms with 2.5 million trials each. Independence
+between trials is replaced by a uniform history-conditional recorded-law
+promise: TV at most $.000079$ from one fixed nominal target reference
+pair, or $.00022$ from one fixed stationary ordinary reference pair.
+The null budget includes $.0002$ observed-law prediction allowance.
+The reference generators, preparation, instrument and detector channels
+remain fixed; different references cannot be chosen for different
+histories. Unconditional average closeness is insufficient.
+
+The proof splits the null using its fixed reference and bounds the
+martingale fluctuations about history-dependent predictable means.
+Larger conditional variance boxes retain the same conservative
+variance ceilings, so size remains below 5% and power above 95%.
+The original independent-trial theorem and the broader stationary
+three-versus-four state-count result keep their previous scopes.
+
+The [finite-reset theorem](../docs/FAMILIAR_SWITCH_FINITE_RESET.md)
+gives target spectral gap at least $99/500$ and hidden-state preparation
+TV below $10^{-5}$ after an actual 63-unit low-field wait. This is
+uniform over all independent one-percent edge factors, actual low
+fields $|h_0|\le10^{-5}$ and every preceding state or measurement
+history. The wait supplies the already allocated preparation term
+once; exact independence is neither obtained nor needed. It assumes
+the fixed four-state Markov model during reset.
+
+The constructive general three-state predictor can use the same actual
+63-unit reset, preparing within $10^{-5}$ and retaining conditional
+pair-table error below $.00009$ relative to the actual target. This
+does not bound full serial-record TV or assert new serial state minima.
+
+Five million resets cost 315 million attempt-time units. Nominal active
+pulses add 12.5 million, for **327.5 million units**, 26.2 times the
+active-only exposure. The two active timing errors add at most 100
+units to the upper total. Readout, switching and any reset-clock
+uncertainty have additional explicitly stated costs. No physical
+attempt rate, time in seconds or device feasibility is asserted.
+
+Arbitrarily slow ordinary rivals cannot be uniformly prepared by the
+target's wait. The serial statistical null requires its own operational
+conditional preparation guarantee. This does not add a rival rate cap
+or silently narrow the separate stationary population theorem. Initial
+visible balance alone is insufficient, and the joint instrument and
+independent symmetric electronics still require support.
+
+The [verifier](../scripts/verify_switch_serial_reset.py),
+[report](../reports/switch_serial_reset.json),
+[source audit](../docs/FAMILIAR_SWITCH_SERIAL_RESET_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_SERIAL_RESET_INTERNAL_REVIEW.md)
+separate analytic scope, finite checks and physical assumptions.
+Full-suite and publication evidence belong to
+[Verification](../docs/VERIFICATION.md).
+
+**Next scientific priority:** operationally justify or statistically
+certify rival preparation and the joint-instrument and detector
+assumptions in the conditional charge model. The optional five-type
+response-preparation check needs its own statistical budget and does
+not certify the instrument. The target mixing theorem alone cannot
+remove those rival promises. Further small improvements to field,
+reset or score constants are secondary. Continue analytic small-model
+work; device feasibility and PRL readiness remain unestablished.
+Manuscript drafting remains the last step.
+
+## Historical checkpoint: one-percent kinetics and a local three-state realization — 24 September 2026
 
 Continue from published commit 24c2cc3185dbff17ce23c366413484fe94e25656,
 tree cce6133f62ead44e27d346491075b92d984884f1, successful

@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction identities, small polynomial matrices, rational intervals, and positive exponential series",
+  "serial_sampling_certificate": {
+    "paired_trials_per_arm": 2500000,
+    "total_serial_paired_trials": 5000000,
+    "total_bit_readouts": 10000000,
+    "fixed_schedule_required": true,
+    "fresh_independence_required": false,
+    "conditional_null_TV_allowance_exact": "11/50000",
+    "conditional_target_TV_allowance_exact": "79/1000000",
+    "fixed_reference_gate_intervals_exact": [
+      [
+        "1291/6250",
+        "5761/25000"
+      ],
+      [
+        "5657/12500",
+        "12361/25000"
+      ],
+      [
+        "2839/25000",
+        "3411/25000"
+      ],
+      [
+        "2941/6250",
+        "3209/6250"
+      ],
+      [
+        "50037/125000",
+        "54963/125000"
+      ],
+      [
+        "-797/25000",
+        "-16/3125"
+      ]
+    ],
+    "conditional_variance_moment_order": [
+      "M",
+      "C",
+      "L",
+      "D"
+    ],
+    "conditional_variance_boxes_exact": [
+      [
+        "5153/25000",
+        "1443/6250"
+      ],
+      [
+        "11303/25000",
+        "3093/6250"
+      ],
+      [
+        "707/6250",
+        "1711/12500"
+      ],
+      [
+        "11753/25000",
+        "12847/25000"
+      ]
+    ],
+    "conditional_initial_mean_absolute_bound_exact": "27/50000",
+    "null_conditional_variance_maxima_exact": [
+      "75635985159/250000000000",
+      "1636861894119/6250000000000"
+    ],
+    "null_variance_ceilings_exact": [
+      "31/100",
+      "27/100"
+    ],
+    "target_variance_ceilings_exact": [
+      "3/10",
+      "27/100"
+    ],
+    "rejection_cutoff_exact": "21/10000",
+    "null_score_mean_upper_exact": "2243/2500000",
+    "target_score_mean_lower_exact": "21081/6250000",
+    "target_gate_failure_upper_exact": "1918594368329/500000000000000",
+    "type_I_error_upper_exact": "1/20",
+    "type_II_error_upper_exact": "11/250",
+    "scope": "One fixed model and fixed stationary reference pair, with a conditional comparison promise for every prior history. The universal martingale bounds are analytic; passing empirical gates does not establish the reset or detector promises."
+  },
+  "finite_reset_certificate": {
+    "target_low_field_tanh_absolute_bound_exact": "1/100000",
+    "target_relative_edge_floor_exact": "99/100",
+    "target_spectral_gap_lower_exact": "99/500",
+    "target_stationary_minimum_mass_lower_exact": "1/21",
+    "actual_reset_duration_attempt_units": 63,
+    "squared_TV_decay_prefactor_upper_exact": "5",
+    "reset_decay_exponent_exact": "6237/250",
+    "reset_TV_upper_exact": "1/100000",
+    "exponential_positive_series_degree": 28,
+    "shared_rival_conditional_reset_TV_promise_exact": "1/100000",
+    "total_nominal_reset_attempt_units": 315000000,
+    "total_nominal_active_attempt_units": 12500000,
+    "total_nominal_reset_plus_active_attempt_units": 327500000,
+    "active_dwell_error_total_upper_attempt_units": 100,
+    "reset_plus_active_with_active_clock_allowance_upper_attempt_units": 327500100,
+    "optional_reset_clock_error_exact": "1/100000",
+    "optional_reset_clock_nominal_duration_exact": "6300001/100000",
+    "reset_plus_active_with_both_clock_allowances_upper_attempt_units": 327500200,
+    "general_three_state_reset": {
+      "weighted_coordinate_norm_weights_exact": [
+        "1",
+        "14/25"
+      ],
+      "weighted_kernel_row_sum_upper_exact": [
+        "24529/31250",
+        "54203/70000"
+      ],
+      "one_tick_contraction_upper_exact": "157/200",
+      "initial_coordinate_norm_upper_exact": "293/125",
+      "probability_reconstruction_factor_exact": "625/462",
+      "TV_prefactor_exact": "1465/924",
+      "complete_low_ticks": 50,
+      "remaining_reset_attempt_units_exact": "1/2",
+      "reset_TV_upper_exact": "1/100000",
+      "actual_target_to_finitely_prepared_predictor_conditional_joint_TV_upper_exact": "88025101/1000000000000",
+      "scope": "The same 63-unit reset suffices for every constructed general three-state predictor. The comparison is per-history for a single trial; it is not a total-variation guarantee for the full serial record and does not alter the static state-count interval."
+    },
+    "scope": "The finite reset time is proved for the one-percent physical target family. Every rival must separately satisfy the shared conditional reset promise; no finite uniform reset time is asserted for unrestricted slow rivals. Readout durations and laboratory conversion of attempt time are not included."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_serial_reset.py": "b72d58664fed11d9965aea292a938b330118ea8deb491fc13fe11ad40e066526",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_percent_kinetics.json": "4ddbddfef6c3c31fc5785a21e51aeac521b0b8c5685e595a7b86c615d6ee807e"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00"
+  },
+  "checks": 79
+}

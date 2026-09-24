@@ -6,7 +6,42 @@ The [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) now supplies the simplest
 
 The current lead combines the [direct two-snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) with its [unknown symmetric detector extension](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md). Both chronological orders $0H,H0$ start from the same low-field equilibrium and record the initial and final binary conformation. The endpoint mean and initial/final correlation of each table determine a conditional covariance of two response propensities. A singleton conformation sector has zero covariance; the target has positive covariance in both sectors. This excludes all ordinary rivals with at most three states, including arbitrary reversible tick kernels without a rate cap. The positive three-state predictor matches the two joint laws by matching their conditional initial coordinates and subsequent mean evolution; no full multitime path-law equality is claimed.
 
-**Current extension: one-percent rates without exact target closure.** The
+**Current extension: serial sampling and a finite target reset.** The
+[conditional theorem](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) keeps five
+million trials, ten million readouts, the percent-score gates and
+threshold .0021 under deterministic alternation of the two arms.
+The trials may be dependent: after every history, their conditional
+recorded joint laws must stay within $.000079$ of one fixed nominal
+target reference pair, or $.00022$ of one fixed stationary ordinary
+reference pair. The latter includes observed-TV prediction allowance
+$.0002$. Conditional variance and concentration bounds retain size
+below 5% and power above 95%. Unconditional average error control
+does not suffice, and the reference model cannot change with history.
+
+The [finite-reset theorem](FAMILIAR_SWITCH_FINITE_RESET.md) prepares
+the full one-percent target family within hidden-state TV $10^{-5}$
+after an actual low-field wait of 63 attempt-time units, from any
+preceding state or measurement history, with $|h_0|\le10^{-5}$.
+This supplies the existing preparation term once. Five million resets
+and nominal active pulses total **327.5 million attempt-time units**,
+26.2 times active-only exposure; readout and control durations are
+additional. The active timing allowance raises that total by at most
+100 units. No physical attempt rate or wall-clock acquisition time
+is inferred.
+
+A fixed target reset cannot uniformly prepare arbitrarily slow
+ordinary rivals. The serial statistical null requires a separate
+conditional preparation guarantee for its own fixed model. This
+operational restriction does not change the broader stationary
+population lower, which remains free of a rival rate cap. The
+joint-instrument and electronic-channel promises remain substantive.
+The [source audit](FAMILIAR_SWITCH_SERIAL_RESET_SOURCE_AUDIT.md),
+[internal review](FAMILIAR_SWITCH_SERIAL_RESET_INTERNAL_REVIEW.md),
+[verifier](../scripts/verify_switch_serial_reset.py) and
+[report](../reports/switch_serial_reset.json) record the analytic
+and finite-certificate scope.
+
+**Preserved extension: one-percent rates without exact target closure.** The
 [direct kinetic proof](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md)
 keeps $J=\log3$, $H=\log2$, both dwells $5/4$ and the two
 initial/final joint laws. It permits independent prefactors in
@@ -215,7 +250,7 @@ The [measurement-cost note](FAMILIAR_SWITCH_MEASUREMENT_COST.md) turns the deter
 
 These are conservative sufficient counts, not optimal budgets or a claim that every test needs billions of samples. A separate change-of-measure argument gives $\mathbb E_*N\ge270000\log19\approx794998.52$ for any valid adaptive fresh-endpoint test using these seven words in the ideal nominal case; a fixed budget must contain at least 794,999 endpoints. It does not bound richer path observations. Sampling does not establish the preparation and control assumptions required under the null and alternative.
 
-The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field heat-bath test supplies a two-million-trial design below the old experiment's information lower; the one-percent kinetic family has its own five-million guarantee. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should support the joint instrument and finite-reset preparation/sampling conditions in that model. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
+The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field heat-bath test supplies a two-million-trial design below the old experiment's information lower; the one-percent kinetic family has its own five-million guarantee, now extended to serial acquisition under uniform conditional control. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should operationally justify or statistically certify rival preparation and the joint-instrument and detector conditions in that model. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
 
 The [matrix prediction principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives a simple organizing statement for a whole target class. A general stationary predictor can separate its incoming and outgoing memory profiles; ordinary detailed balance identifies the factors in matched reversed tests. For any normalized completely positive matrix $H$ of size $n$ with positive row sums, the exact state minima are $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ under the shared interface and cap. The targets still have two-state passive paths. Both counts persist on a positive matrix-dependent accuracy interval, whose useful scale remains unknown in general. This is a controlled realization theorem, not a new matrix-rank definition or a generic HMM-order characterization.
 
@@ -276,7 +311,7 @@ The [source comparison](KINETIC_PARITY_SOURCE_AUDIT.md), [bounded verifier](../s
 
 Earlier comparisons retain their historical assumptions. The [original-rule tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) supplied the uncapped fixed-clock foundation. The [binary fixed-clock uncapped theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uses a rescaled tagged target and inner exponent $1/12$. Earlier [binary](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) and [nineteen-level](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uncapped routes give inner exponent $1/2$ with arbitrarily rapid switching. The older fixed-budget results below remain valid at their stated menus and histograms.
 
-The immediate priority is conditional sampling with finite serial resets and explicit preparation cost, while supporting the joint instrument and remaining physical promises in the conditional charge model. The one-percent kinetic result already strengthens robustness substantially; further tuning of fields or statistical constants is secondary. The optional five-type response-preparation check needs its own statistical budget. Existing finite state gaps and fresh-trial bounds do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
+The immediate priority is operational justification or statistical certification of rival preparation and the joint-instrument and detector promises in the conditional charge model. Conditional serial sampling and finite target preparation are now proved under their explicit scopes, including the reset exposure; the target reset does not establish those rival premises. Further tuning of fields or statistical constants is secondary. The optional five-type response-preparation check needs its own statistical budget. The finite state gaps and serial guarantee do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 
@@ -617,6 +652,6 @@ The bounds are asymptotic at fixed physical parameters, and the upper exponent $
 
 The leading publication question is how the physical reversal assigned to a reduced representation changes the memory needed for accurate controlled prediction. The present results separate ordinary and generalized reversibility on the same target and task, while extending the ordinary state and entropy-production lower bounds beyond a prescribed exponential kinetic curve. The positive results also identify a limit: generalized equilibrium can coexist with polynomial prediction, so a generic dissipation narrative is excluded. The passive/step/switching comparison and other positive compression routes remain supporting results with their own assumptions.
 
-The one-percent kinetic theorem removes the earlier very small sufficient rate allowance as the immediate mathematical bottleneck. The next priority is conditional sampling for a reused device with finite resets, including preparation cost, before interpreting the five-million fresh-trial count as serial acquisition. The joint instrument, stationary laws and independent electronics still need support in a concrete device model. Further field or score-constant optimization is secondary. The optional preparation checks still need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the source audits.
+The one-percent kinetic theorem removes the earlier very small sufficient rate allowance as the immediate mathematical bottleneck. The serial theorem now permits reuse of one device without assuming independent trials, and the finite target reset makes its preparation exposure explicit. The next priority is operational justification or statistical certification of rival preparation and the joint-instrument and detector assumptions in a concrete device model. The target reset cannot supply a uniform rival mixing guarantee. Further field or score-constant optimization is secondary. The optional preparation checks still need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the source audits.
 
 The constructor receives a known target. Observation results concern specified-model tests with the stated preparation and readout. Continue with bounded analytic work and small exact checks. PRL is the user's selected target, while complete-theorem novelty, natural physical relevance and the journal's significance threshold remain matters for further assessment. Manuscript writing remains the final step.
