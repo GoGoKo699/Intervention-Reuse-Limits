@@ -4,11 +4,29 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-two mathematical verifiers and a separate deterministic replay of the saved familiar-switch numerical models. The optional optimizer is not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-three mathematical verifiers and two separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: familiar coupled switches
+## Current checkpoint: seven-experiment finite margin
+
+The published baseline `ed66b72eb2e1ddf6a6e9a0397cbdb5304139f335`, tree `ffcc9ba636ac6dc72e9ae03c5ccf558008fe94a1`, had forty-two mathematical verifiers, one saved-model replay and successful [CI run 35887218370](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35887218370). This continuation preserves all **89** protected baseline verifier/report/license/dependency/workflow files, earlier proof bindings and nine recovery files.
+
+The [new proof](FAMILIAR_SWITCH_FINITE_MARGIN.md) derives two quartic polynomials in seven endpoint means. At least one vanishes in every ordinary-reversible rival with at most three states. The necessity includes singular response tables, arbitrarily fast rates, and even reversible discrete-time kernels that do not embed in continuous time. The coupled target violates both; an analytic coefficient bound gives a positive occupation-error lower $\Delta/(2L)$ at every positive coupling, field and clock.
+
+The [new verifier](../scripts/verify_familiar_switch_margin.py) and [canonical report](../reports/familiar_switch_margin.json) provide **103 exact checks**, with maximum dense dimension **4**. At $J=H=\log3$, clock two, rational Taylor enclosures and exact polynomial translation exclude the entire seven-mean error box corresponding to occupation error $1/2000$. This finite arithmetic is an essential premise of the explicit numerical threshold. The same verifier proves a fixed rational ordinary three-state upper below $837/10^6<1/1000$ on the identical seven-word menu. The upper is not an eleven-word or all-protocol guarantee; neither bound is an optimizer result.
+
+The proof and full source received root and separate reviews. A separately coded three-dimensional rational exponential enclosure independently confirms the lower; a final pinned Python 3.13.5 rerun reproduced the canonical report byte for byte. Source SHA-256: `e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397`; report: `dfe9757f74a6fc2d45f239e65292cfc613f913685f895896a9b229cc16067141`; new proof: `77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02`. The report also binds the unchanged structure proof.
+
+The separate [numerical script](../scripts/screen_short_switch_witnesses.py) and [saved diagnostic](../reports/short_switch_witness_screen.json) retain four bounded target panels, eight fitted rivals and one rounded rational model. Full generators, stationary laws, explicit words and endpoint predictions are saved. Default/CI replay performs no fitting. Exact schema and provenance checks are combined with numeric tolerance $2\times10^{-11}$; environment versions are informational. Independent complete source review and pinned replay passed. Source SHA-256: `9f87b7fdbb87e125dc2fb207ded1e19a98b8892400905a568f8f952950bd9e27`; report: `3081d9a2a2c2175a0e9fa5173f810e3bbf15b3af1f2751f160f2faea1895236c`. Both frozen proof notes and the old helper source are bound. Fits are achieved numerical uppers, not global optima or lower certificates.
+
+The [internal review](FAMILIAR_SWITCH_MARGIN_INTERNAL_REVIEW.md) distinguishes analytic proof, essential exact finite certification and numerical diagnostics. The [source audit](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) records primary full-text comparisons and bounded priority scope. The margin is 0.05 percentage points in occupancy, with a same-menu ordinary-three-state upper below 0.1 percentage points; calibration robustness and sample costs remain open. No manuscript was drafted.
+
+**Completed local gate:** `make check PYTHON=.venv/bin/python` passed all **43 mathematical verifiers and two saved-model replays** under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. The complete log contains all 45 commands and the final replay PASS; all **45** regenerated reports match their saved counterparts byte for byte. An earlier truncated execution log was not accepted as completion. All 89 protected baseline files and nine recovery files match their preserved hashes/archive. The repository checker passes **1,717 local Markdown links**, **46 Python syntax checks**, source/proof provenance and the unchanged MIT license; `git diff --check` passes. The historical suite's maximum dense dimension remains 68; the new work uses at most four.
+
+The published baseline CI above certifies only the preceding commit. The exact non-forced publication commit receives a separate live CI check, whose result is reported after publication rather than inferred from this local PASS.
+
+## Historical checkpoint: familiar coupled switches
 
 The published baseline `f1a7872fec92353314a06d6f6bd12b79013e79d2`, tree `326d592b4ee47627576a04feb62f3355a3a43c21`, had forty-one verifiers and successful [CI run 35864902730](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35864902730). This continuation preserves all **85** baseline verifier/report/license/dependency/workflow files, all earlier proof bindings, and all nine recovery files.
 

@@ -1,6 +1,18 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: familiar coupled switches — 23 September 2026
+## PRL: seven-experiment finite margin — 24 September 2026
+
+Continue theory-first research with manuscript drafting deferred. The user prefers a familiar physical model and a short, simple mechanism. Existing authorization for non-forced public-main publication remains in effect; no collaborator contact is authorized. The published baseline is `ed66b72eb2e1ddf6a6e9a0397cbdb5304139f335`, tree `ffcc9ba636ac6dc72e9ae03c5ccf558008fe94a1`, with successful [CI run 35887218370](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35887218370). Preserve all 89 protected baseline files, earlier proof bindings and nine recovery files.
+
+The [new finite-margin theorem](../docs/FAMILIAR_SWITCH_FINITE_MARGIN.md) uses seven endpoint means, at most four ticks and three segments per experiment. A quartic necessary identity for every ordinary-reversible model with at most three states is violated by the coupled heat-bath target. It permits arbitrary reversible stochastic tick kernels, not only continuous-time propagators, and needs no rate cap. Singular response tables are included by an adjugate identity. The analytic positive lower bound holds for all positive coupling, field and clock.
+
+For $J=H=\log3$ and clock two, the [exact rational certificate](../reports/familiar_switch_margin.json) proves ordinary minimum four and unrestricted minimum three at occupation error $\delta_P\le1/2000$. A fixed rational ordinary three-state comparator achieves $<837/10^6<1/1000$ on the same seven words. These bounds place its best error between 0.05 and 0.1 percentage points; no one-percentage-point advantage or practical sampling guarantee is claimed. The numerical upper does not extend to eleven words or arbitrary protocols. Equal attempt rates, deterministic binary readout, balanced zero-field preparation and the shared Gibbs tilt remain substantive assumptions. The target's passive path already has memory; this is a mean-prediction result.
+
+The [new verifier](../scripts/verify_familiar_switch_margin.py) supplies 103 exact checks at maximum dense dimension four, including essential computer-assisted quantitative bounds. A separate [four-panel diagnostic](../reports/short_switch_witness_screen.json) retains bounded fits and replays them without optimization. Independent mathematical derivations, complete source reviews and a differently implemented rational enclosure support the checkpoint; see [internal review](../docs/FAMILIAR_SWITCH_MARGIN_INTERNAL_REVIEW.md). The [source comparison](../docs/FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) attributes finite realization, polynomial invariants and dimension witnesses, without certifying novelty. Falk 1983 remains unresolved at full-text level.
+
+**Next priority:** quantify preparation, field and clock calibration tolerances; separately study violations of the rival shared Gibbs tilt; then assess simultaneous measurement cost and physical significance. Keep the feasible ordinary-three-state upper beside every lower-bound claim. The user's Ryzen AI Max+ 395 / 128 GB machine is ample for the bounded tiny-matrix work; do not launch large simulations. [Verification](../docs/VERIFICATION.md) records local regression separately from publication CI. Manuscript drafting remains last.
+
+## Historical checkpoint: familiar coupled switches — 23 September 2026
 
 The user authorized continued exploration, prefers a candidate familiar to PRL readers, and emphasizes that a strong result should be simple. Manuscript drafting remains deferred. Available user hardware is a Ryzen AI Max+ 395 ROG Flow Z13 / 幻X 2025 with 128 GB RAM and 1 TB storage; bounded CPU algebra and tiny-matrix calculations suffice for this checkpoint. No large simulation or cloud compute is needed.
 

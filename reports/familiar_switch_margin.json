@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction sparse polynomials, rational matrix Taylor remainder bounds, outward dyadic intervals and full local polynomial-box bounds",
+  "mean_word_order": [
+    [
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0,
+      1
+    ]
+  ],
+  "field_alphabet": {
+    "0": "zero field",
+    "1": "H=log(3)"
+  },
+  "distinct_experiments": 7,
+  "maximum_ticks": 4,
+  "maximum_elapsed_time_exact": "8",
+  "symbolic_identity": {
+    "degree": 4,
+    "monomials_per_singleton_sign": 25,
+    "division_by_response_determinant": false,
+    "checks": "Generic adjugate identity, Gram-product skew extraction, singleton moment elimination, independent scalar expression, positive reversible kernel fixtures and singular two-state cases"
+  },
+  "certified_target_margin": {
+    "target_parameters": {
+      "tanh_J": "4/5",
+      "tanh_H": "4/5",
+      "J": "log(3)",
+      "H": "log(3)",
+      "attempt_rates": [
+        "1",
+        "1"
+      ],
+      "clock_tick": "2"
+    },
+    "zero_field_exponential_certificate": {
+      "taylor_degree": 96,
+      "clock_matrix_row_norm_exact": "36/5",
+      "matrix_tail_upper": "2^-180",
+      "entry_dyadic_bits": 160,
+      "certified_entry_radius": "2^-160"
+    },
+    "high_field_exponential_certificate": {
+      "taylor_degree": 96,
+      "clock_matrix_row_norm_exact": "1548/205",
+      "matrix_tail_upper": "2^-180",
+      "entry_dyadic_bits": 160,
+      "certified_entry_radius": "2^-160"
+    },
+    "target_mean_centers_exact": [
+      "165847541462318461459799690130040405143/340282366920938463463374607431768211456",
+      "55716423641168912195128760462749061545/85070591730234615865843651857942052864",
+      "248957319991701726904791868931900721689/340282366920938463463374607431768211456",
+      "42850709484019298387824620437293600849/170141183460469231731687303715884105728",
+      "31874335149956600880594599873911698485/85070591730234615865843651857942052864",
+      "100935342198656366112936632306783048003/170141183460469231731687303715884105728",
+      "109834442555873668832549749253695961679/170141183460469231731687303715884105728"
+    ],
+    "target_mean_uniform_enclosure_radius": "2^-120",
+    "excluded_uniform_mean_error_exact": "1/1000",
+    "excluded_uniform_occupation_error_exact": "1/2000",
+    "whole_box_radius_exact": "166153499473114484112975882535043197/166153499473114484112975882535043072000",
+    "singleton_sign_certificates": {
+      "-1": {
+        "target_polynomial_sign": 1,
+        "target_and_center_absolute_lower_bound_exact": "291/2000000",
+        "whole_box_variation_upper_bound_exact": "359/2500000",
+        "variation_by_degree_outward_upper_exact": {
+          "1": "65531542513/500000000000000",
+          "2": "12415781487/1000000000000000",
+          "3": "8416813/500000000000000",
+          "4": "4501/1000000000000000"
+        },
+        "polynomial_terms": 25,
+        "total_degree": 4
+      },
+      "1": {
+        "target_polynomial_sign": -1,
+        "target_and_center_absolute_lower_bound_exact": "291/2000000",
+        "whole_box_variation_upper_bound_exact": "17/400000",
+        "variation_by_degree_outward_upper_exact": {
+          "1": "796530041/20000000000000",
+          "2": "13156107/5000000000000",
+          "3": "355277/125000000000000",
+          "4": "501/1000000000000000"
+        },
+        "polynomial_terms": 25,
+        "total_degree": 4
+      }
+    },
+    "strict_polynomial_slack_lower_bound_exact": "19/10000000",
+    "scope": "Every response vector within mean error 1/1000 of the physical target makes both necessary singleton-sector polynomials nonzero. The analytic necessary-identity theorem therefore excludes all admissible ordinary models with at most three states, without a rival rate cap. This certificate performs no optimization and asserts no optimal error margin."
+  },
+  "rational_ordinary_three_state_upper_witness": {
+    "total_states": 3,
+    "readout_exact": [
+      "-1",
+      "1",
+      "1"
+    ],
+    "zero_field_stationary_law_exact": [
+      "1/2",
+      "30629/500000",
+      "219371/500000"
+    ],
+    "high_field_stationary_law_exact": [
+      "1/10",
+      "275661/2500000",
+      "1974339/2500000"
+    ],
+    "stationary_flux_pair_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "stationary_flux_numerators": [
+      [
+        110734,
+        2,
+        72990
+      ],
+      [
+        34039,
+        15082,
+        50885
+      ]
+    ],
+    "stationary_flux_denominator": 1000000,
+    "generators_exact": [
+      [
+        [
+          "-6921/31250",
+          "55367/250000",
+          "1/250000"
+        ],
+        [
+          "55367/30629",
+          "-91862/30629",
+          "36495/30629"
+        ],
+        [
+          "1/219371",
+          "36495/219371",
+          "-36496/219371"
+        ]
+      ],
+      [
+        [
+          "-49121/100000",
+          "34039/100000",
+          "7541/50000"
+        ],
+        [
+          "170195/551322",
+          "-23590/30629",
+          "254425/551322"
+        ],
+        [
+          "37705/1974339",
+          "254425/3948678",
+          "-109945/1316226"
+        ]
+      ]
+    ],
+    "maximum_exit_rate_exact": "91862/30629",
+    "exponential_certificates": [
+      {
+        "taylor_degree": 128,
+        "clock_matrix_row_norm_exact": "367448/30629",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      },
+      {
+        "taylor_degree": 128,
+        "clock_matrix_row_norm_exact": "94360/30629",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      }
+    ],
+    "occupation_error_outward_upper_by_word_exact": [
+      "33431550179/40000000000000",
+      "104505335693/125000000000000",
+      "418033700551/500000000000000",
+      "836627794083/1000000000000000",
+      "41765144791/50000000000000",
+      "648183488047/1000000000000000",
+      "836616316927/1000000000000000"
+    ],
+    "certified_uniform_occupation_error_upper": "1/1000",
+    "scope": "This one rational shared ordinary three-state model is certified on the same seven-word menu. It was proposed by a separate exploratory fit and then rounded; this verifier only checks its fixed exact rates and certified responses. No eleven-word, all-protocol or optimality upper claim is made."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "numerical_optimization_used": false,
+  "floating_arithmetic_used": false,
+  "limitations": [
+    "The necessary-identity proof supplies the universal link from ordinary reversible rivals to one of the two vanishing polynomials. The exact target/error-box and fixed-model exponential certificates are essential premises of the stated numerical lower and upper bounds.",
+    "The independent reversible stochastic-kernel fixtures are algebra tests; they are not asserted to be exponentials of continuous-time generators.",
+    "The explicit margin is sufficient and is not claimed to be optimal.",
+    "The comparison uses deterministic binary readout, stationary preparation and the shared Gibbs tilt; it concerns seven endpoint means, not complete path laws."
+  ],
+  "source_sha256": {
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+  },
+  "imported_repository_verifiers": [],
+  "checks": 103
+}
