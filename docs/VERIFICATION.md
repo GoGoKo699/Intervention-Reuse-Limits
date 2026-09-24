@@ -4,11 +4,54 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-seven mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-eight mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: endpoint registration and relative force error
+## Current checkpoint: a source-grounded generic four-word theorem
+
+The published baseline is `8c59beb11b4e4e19915ca31fefa7f5b8b0b37bdd`, tree
+`5a450530164e6aa678e884deb327f8721a32c30f`, with successful
+[CI run 36031718988](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36031718988).
+The continuation adds the [minimal theorem](FAMILIAR_SWITCH_MINIMAL_THEOREM.md),
+[community model](FAMILIAR_SWITCH_COMMUNITY_MODEL.md),
+[equilibrium reduction derivation](FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md),
+[central comparison](FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md), and
+[internal scope review](FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md).
+Older proof snapshots, mathematical verifiers, saved reports, dependency
+pins, workflow and MIT license remain unchanged, as do claim rows R1–R65.
+
+The [new verifier](../scripts/verify_switch_physical_core.py) performs
+**95 exact symbolic, rational and provenance checks**, with largest matrix
+dimension four. Its [report](../reports/switch_physical_core.json) binds
+32 proof snapshots, including the three new model/theory derivations,
+and the frozen preparation-free input certificate. It checks target and
+predictor stationarity and moment closure independently, initial conditional
+means, covariance and radius identities, rate positivity factorizations,
+the charge-energy substitution, compensated gate control, equilibrium
+force inheritance, and two counterexamples to dropping reduction hypotheses.
+The full positivity and semigroup arguments are in the bound proofs;
+finite rational fixtures are not a universal parameter sweep.
+
+The proof and verifier received separate internal review. An independent
+run reproduced the new report byte for byte using pinned Python 3.13.5
+and SymPy 1.14.0. The verifier source SHA-256 is
+`0bc9e8be9abf10987ebd1158d2509f938b779fcd861134bfabb38158937952df`;
+the saved report SHA-256 is
+`4b5da0f863c60f09dc656451528c97a1c768089a6d63074e1bfb31e2816c622b`.
+No optimization, stochastic simulation or new detector assumption is used.
+Physical acquisition accuracy, literature priority and PRL significance
+are outside this certificate.
+
+The complete local `make check` passed: all 58 mathematical verifiers and
+four saved-model replays regenerated **62 reports byte for byte**. The
+baseline manifest confirmed that all 289 files outside the nine intended
+navigation/build-integration edits were unchanged, and all 65 historical
+R rows were unchanged. The new checkpoint adds five notes, one verifier
+and one report. Remote CI for the resulting commit must be checked
+separately; the successful run linked above belongs to the baseline.
+
+## Historical checkpoint: endpoint registration and relative force error
 
 The published baseline is `77efdedb42b2ff18e54344617f6da25c016fe0ad`, tree
 `cf2e2dec2b537a28a66bf38cf5a40f81cad0bf73`, with successful

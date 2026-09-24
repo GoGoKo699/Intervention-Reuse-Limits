@@ -2,11 +2,52 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current physical core — 24 September 2026
+
+The [community model contract](FAMILIAR_SWITCH_COMMUNITY_MODEL.md) grounds
+the target in published capacitively coupled single-level-dot dynamics,
+with an explicit equilibrium specialization, compensated gate control and
+pulse-limit convention. Ideal occupation-pair laws are model observables;
+acquiring them at a specified experimental accuracy remains a separate
+instrument question. No extra detector capability is used to establish
+the main theorem.
+
+The [minimal four-word theorem](FAMILIAR_SWITCH_MINIMAL_THEOREM.md) now
+states the result for every finite positive coupling, field and pair of
+dwell times in the equal-attempt family. Its minimum state counts are
+three for positive stationary predictors and four for ordinary reversible
+predictors, with a positive parameter-dependent TV interval. Rivals keep
+the same deterministic binary readout and Gibbs force relation but may
+prepare each word arbitrarily. The positive upper matches initial/final
+pair laws under all finite nonnegative-field words from low equilibrium;
+intermediate-observation and full-path equality are not asserted.
+
+The [equilibrium reduction note](FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md)
+derives force inheritance from a fixed readout-compatible equilibrium
+map. This standard fact gives the comparison class a physical basis;
+it does not establish Markov closure or make the circulating predictor
+a physical coarse-graining. The result quantifies a cost in Markov state
+count of retaining equilibrium structure in controlled prediction.
+
+The [primary-source comparison](FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
+and [scope review](FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md) identify the
+complete positive-realization separation as the candidate contribution.
+The return identity and broad artificial-irreversibility warning have
+strong precedents. PRL significance and complete priority assessment
+remain open. The next research priority is to establish a broader modeling
+consequence or accept a narrower publication scope. Further detector
+engineering, minor numerical tuning and manuscript drafting are deferred.
+
+[Exact symbolic certificate](../reports/switch_physical_core.json) ·
+[Verification](VERIFICATION.md).
+
+## Historical development and conditional extensions
+
 **Owner's physical-model requirement, 24 September 2026.** The next step is to ground the target, controls, measurement and rival comparison in one independently established community model. A favorable accepted idealization is allowed; adding unsupported physical capabilities to rescue a theorem is not. The [assumption ledger](PHYSICAL_ASSUMPTION_ALIGNMENT.md) distinguishes published physics, derived specializations, our numerical design choices and operational premises still needing justification. This model comparison precedes further device feasibility engineering. Existing conditional results remain unchanged; manuscript drafting remains last.
 
 **Research target, 24 September 2026.** The new [endpoint-registration theorem](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md) measures the initial sign after acquisition and the final sign before acquisition. Arbitrary initial measurement dynamics then join the rival's arbitrary preparation. A known conditional endpoint-error bound $5\times10^{-6}$ replaces exact protection, fixed symmetric electronics and repeated-read freshness. A finite integrating detector supplies a sufficient signal/noise/leakage contract, including switching time; its demanding numerical specification is not a device result. The [relative-force theorem](FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md) permits residual likelihood-ratio spread $1.001$ without a stationary-mass floor. The same nine-million-trial test has size below $4\%$ and target miss below $1.4\%$, using 18 million integration windows and binary decisions. Ideal four-pair state minima remain three versus four through TV $.0009$. Target postmeasurement marginal preparation, fixed active dynamics and calibrated conditional bounds remain substantive. Manuscript drafting stays last; device feasibility and a complete priority comparison remain open.
 
-## Current advance: register the actual active boundaries
+## Historical advance: register the actual active boundaries
 
 The initial oracle sign is the sign of the state entering the active word, after the entire acquisition operation; the final oracle sign is taken immediately when the word ends, before the final acquisition. Conditional on a singleton initial sign, any preceding disturbance disappears from the ordinary model's conditional response. The detector only needs to identify these boundaries with a known uniform conditional error bound. This is a calibrated alternative to the previous unknown-fixed-error repetition scheme, not an automatic enlargement of that scheme's detector class.
 

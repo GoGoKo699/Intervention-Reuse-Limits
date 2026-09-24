@@ -1,6 +1,53 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: inherit the physical model from the community — 24 September 2026
+## Current priority: establish the significance of the physical core — 24 September 2026
+
+This checkpoint starts from published commit
+`8c59beb11b4e4e19915ca31fefa7f5b8b0b37bdd`, tree
+`5a450530164e6aa678e884deb327f8721a32c30f`, with successful
+[CI run 36031718988](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36031718988).
+Preserve all older proof snapshots, mathematical verifiers, reports,
+license and claim rows R1–R65. Existing authorization covers non-forced
+public-main publication; collaborator contact is not authorized.
+Manuscript drafting remains last.
+
+The [community model](../docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) and
+[equilibrium reduction derivation](../docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md)
+complete the present model-level grounding. A published weak-tunneling
+coupled-dot family supplies the target; the fixed readout-compatible
+reduction inherits the Gibbs force interface. Control and measurement
+idealizations are explicit. The circulating three-state predictor is
+not asserted to be a passive single-bath device.
+
+The [minimal theorem](../docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md) is the
+lead: four ideal pair laws, arbitrary rival preparation, and minimum
+state counts three versus four for all finite positive coupling, field
+and dwell times in the equal-attempt family. Its positive accuracy
+radius depends on those parameters. Historical one-percent kinetic
+neighborhoods and detector certificates retain their separate scopes.
+The [exact checker](../scripts/verify_switch_physical_core.py) binds the
+new derivations and the frozen preparation-free certificate.
+
+**Single next scientific priority:** determine whether this complete
+shared-control positive-realization separation gives a useful general
+constraint on equilibrium model reduction. Compare it at theorem level
+with simultaneous reversible/positive realization results, and identify
+a concrete modeling decision changed by the obstruction. The
+[focused comparison](../docs/FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
+already establishes precedents for the lower identity and broad warning;
+those alone cannot carry the novelty claim. Falk's inaccessible full text
+remains a stated audit gap. Inspect existing unequal-rate and realization
+results before treating extensions as new work.
+
+A useful outcome is either a defensible broader physical consequence or
+a candid narrower publication scope. More parameter sweeps, detector
+assumptions or threshold improvements do not answer that question.
+PRL readiness is not established. Do not infer full-path equivalence,
+hardware-bit savings, target dissipation or a predictor heat cost from
+the state-count theorem. See the
+[internal scope review](../docs/FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md).
+
+## Historical priority: inherit the physical model from the community — 24 September 2026
 
 Continue from published commit `ff52faf80bc0339a0836a77258ef093618198608`, tree
 `36ebfbaf033206993a22c516b005c164048d91e1`, with successful

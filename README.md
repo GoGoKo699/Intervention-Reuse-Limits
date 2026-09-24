@@ -2,9 +2,19 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-Our current small example is familiar: **two coupled conformational switches**, represented by time-even Ising variables with heat-bath dynamics. Their four equilibrium configurations admit an exact **three-state stationary predictor** for the controlled mean of one switch. Every **ordinary-reversible predictor needs four states**, under the same Gibbs control tilt.
+The current example uses a [published model of two capacitively coupled quantum dots](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md). In its equilibrium, single-level, weak-tunneling and wide-band specialization, the four charge configurations are equivalent to two interacting time-even switches with energy $-JSZ-hS$. The source map distinguishes accepted approximations, compensated gate control, our parameter choices and unvalidated instrument premises.
 
-**Physical assumptions must have independent community support.** We may select a favorable established model and derive a new prediction task within it. The next step is to align the target, controls, readout and rival comparison with a coherent published model before further device engineering. The [assumption ledger](docs/PHYSICAL_ASSUMPTION_ALIGNMENT.md) distinguishes established approximations, our parameter choices, proved tolerances and operational premises that still need justification. The current numerical detector requirements are sufficient conditions for our test, not evidence that those conditions are standard physics or achieved device performance.
+**Four experiments have minimum predictive state counts three and four.** Prepare the target at low-field equilibrium and record its initial and final visible charge for $0,H,0H,H0$. For every finite $J,H,\tau_0,\tau_H>0$ with equal attempt rates, a positive three-state Markov predictor exactly matches all four pair laws. Every ordinary reversible predictor needs four states, even with different arbitrary preparations for each experiment. Both classes retain a deterministic binary readout, fixed field kernels, positive stationary laws and the same Gibbs force coupling. The [minimal theorem](docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md) also gives a positive parameter-dependent interval of allowed TV error. It does not claim one numerical tolerance uniformly over all parameters.
+
+The force requirement has a physical basis: a fixed equilibrium reduction that retains the measured charge [inherits its Gibbs tilt](docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md). Such a reduction need not close as a Markov process. The three-state construction is a different predictive realization and necessarily has stationary currents at at least one held field. The physical target has none at either held field; the pulse sequence itself is driven. The theorem concerns endpoint-pair prediction, not complete paths, hardware storage or thermodynamic implementation cost.
+
+The [closest-result comparison](docs/FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md) identifies substantial precedents for reciprocity, singleton inference, reversible reduction and artificial-irreversibility warnings. The candidate contribution is the complete shared-control three-versus-four positive-realization separation. **PRL significance remains unestablished.** The next research decision concerns its broader value for equilibrium model reduction. Detector feasibility is a separate conditional extension; further threshold tuning and manuscript drafting remain deferred.
+
+[Internal scope review](docs/FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md) · [Exact certificate](reports/switch_physical_core.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+
+## Preserved finite-accuracy and detector extensions
+
+The following results retain their original operating points and observation contracts. Numerical margins and acquisition counts below are separate from the generic ideal-model theorem above.
 
 **The current four-experiment test removes the rival preparation promise.** Add the single pulses $0$ and $H$ to the opposite orders $0H,H0$. Any binary model with at most three states has a visible sector containing only one hidden state. Conditioning on its initial sign therefore fixes its starting state, however it was prepared. Detailed balance and the common Gibbs tilt imply
 

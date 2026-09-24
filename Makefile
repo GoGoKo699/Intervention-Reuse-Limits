@@ -63,6 +63,7 @@ check:
 	$(PYTHON) scripts/verify_switch_repeated_readout.py --output .check-output/switch_repeated_readout.json
 	$(PYTHON) scripts/verify_switch_preparation_free.py --output .check-output/switch_preparation_free.json
 	$(PYTHON) scripts/verify_switch_endpoint_registration.py --output .check-output/switch_endpoint_registration.json
+	$(PYTHON) scripts/verify_switch_physical_core.py --output .check-output/switch_physical_core.json
 	$(PYTHON) scripts/screen_familiar_switches.py --verify-saved reports/familiar_switch_screen.json --output .check-output/familiar_switch_screen.json
 	$(PYTHON) scripts/screen_short_switch_witnesses.py --verify-saved reports/short_switch_witness_screen.json --output .check-output/short_switch_witness_screen.json
 	$(PYTHON) scripts/screen_switch_preparation_witness.py --verify-saved reports/switch_preparation_screen.json --output .check-output/switch_preparation_screen.json

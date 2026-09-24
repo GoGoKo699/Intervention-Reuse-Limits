@@ -1,5 +1,46 @@
 # Publication scope and closest-theorem comparison
 
+## Current physical core — 24 September 2026
+
+The [community model contract](FAMILIAR_SWITCH_COMMUNITY_MODEL.md) grounds
+the target in published capacitively coupled single-level-dot dynamics,
+with an explicit equilibrium specialization, compensated gate control and
+pulse-limit convention. Ideal occupation-pair laws are model observables;
+acquiring them at a specified experimental accuracy remains a separate
+instrument question. No extra detector capability is used to establish
+the main theorem.
+
+The [minimal four-word theorem](FAMILIAR_SWITCH_MINIMAL_THEOREM.md) now
+states the result for every finite positive coupling, field and pair of
+dwell times in the equal-attempt family. Its minimum state counts are
+three for positive stationary predictors and four for ordinary reversible
+predictors, with a positive parameter-dependent TV interval. Rivals keep
+the same deterministic binary readout and Gibbs force relation but may
+prepare each word arbitrarily. The positive upper matches initial/final
+pair laws under all finite nonnegative-field words from low equilibrium;
+intermediate-observation and full-path equality are not asserted.
+
+The [equilibrium reduction note](FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md)
+derives force inheritance from a fixed readout-compatible equilibrium
+map. This standard fact gives the comparison class a physical basis;
+it does not establish Markov closure or make the circulating predictor
+a physical coarse-graining. The result quantifies a cost in Markov state
+count of retaining equilibrium structure in controlled prediction.
+
+The [primary-source comparison](FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
+and [scope review](FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md) identify the
+complete positive-realization separation as the candidate contribution.
+The return identity and broad artificial-irreversibility warning have
+strong precedents. PRL significance and complete priority assessment
+remain open. The next research priority is to establish a broader modeling
+consequence or accept a narrower publication scope. Further detector
+engineering, minor numerical tuning and manuscript drafting are deferred.
+
+[Exact symbolic certificate](../reports/switch_physical_core.json) ·
+[Verification](VERIFICATION.md).
+
+## Historical development and conditional extensions
+
 **PRL target decision, 23 September 2026.** The user selected *Physical Review Letters* as the target for the next exploration phase. The [PRL exploration record](PRL_EXPLORATION.md) sets the physical question and research priorities. The [research dossier](RESEARCH_DOSSIER.md) and [claim ledger](CLAIM_LEDGER.md) supply the quantified statements, dependencies, reproducibility and source links for eventual drafting. Manuscript drafting remains the last step; this assessment does not predict acceptance or certify priority.
 
 The [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) now supplies the simplest physical example. Two interacting heat-bath conformational switches have four configurations, yet their controlled single-switch mean has an exact three-state stationary predictor. Ordinary detailed balance requires four states, for every finite positive coupling $J$ and queried field $H$, with equal attempt rates. The configurations are even under physical time reversal. Rivals retain a deterministic binary readout, balanced zero-field equilibrium preparation and the shared Gibbs tilt $\pi_h\propto\pi_0e^{hS}$; they may otherwise choose arbitrary new states and endpoint generators.
