@@ -1,6 +1,73 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: observable preparation and the readout calibration boundary — 24 September 2026
+## PRL: repeated readout controls error-correlated backaction — 24 September 2026
+
+Continue from published commit `3f7a368f072f03add7e0fcb6e233556cc31b8a39`,
+tree `3747fc54b6b12c7c42f192b220e85667c166fafc`, successful
+[CI run 35986291952](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35986291952).
+Preserve all 119 baseline verifier/report/license/dependency/workflow files,
+62 bound proof files and historical claim rows R1–R60. Existing authorization
+covers non-forced public-main publication. Manuscript drafting remains last;
+collaborator contact is not authorized.
+
+The [repeated-readout theorem](../docs/FAMILIAR_SWITCH_REPEATED_READOUT.md)
+keeps the two active words and replaces the initial bit by the majority of
+seven readings. Each use is a fixed classical joint instrument: it preserves
+the visible sector, its nonselective kernel preserves the low-field law,
+and its error probability is the same fixed $p$ conditional on every
+pre-use hidden state and history. Errors may be correlated with the
+same-use hidden kick. No error/backaction factorization is assumed.
+Future active dynamics depend only on the postblock hidden state; the
+record does not feed back into control or a retained detector memory.
+
+At equilibrium the majority-label/poststate TV error equals the binomial
+majority error exactly. At $p\le.02$ it is at most $.0000053356544$,
+within the inherited $10^{-5}$ initial-instrument allowance. Preparation
+is charged once. A first-pair disagreement gate $\widehat q\le.03$
+separates the fixed null cases $p\le.02$ and $p>.02$ without conditioning
+the score proof on passing calibration. With five million trials, the
+bad-detector gate probability is at most $e^{-846.4}$; target gate failure
+is at most $e^{-1040.4}$ for $p\le.01$.
+
+Together with the prior serial proof, this gives size below 5% and power
+above 95% using the same integer score, threshold $.0021$, empirical
+moment gates and deterministic alternating arms. There are **40 million
+raw binary readings**, eight per trial, and ten million scored bits.
+The extra readings and barrier/detector reset durations are physical
+resources. The prior reset-plus-active exposure remains 327.5 million
+nominal attempt units before those readout costs.
+
+The final independent symmetric channel, equilibrium-preserving protected
+instrument and every-history preparation promise remain required. The
+disagreement gate cannot certify freshness: a common error shared by all
+seven readings produces zero disagreements without reducing its error.
+The $.0002$ approximate-null allowance concerns only the retained pair;
+the calibration stream must separately obey its conditional law or a
+stated drift bound. No full eight-reading predictor or augmented-data
+state minima are proved. The optional five-type preparation experiment
+and its large scalar-precision budget remain a separate unfinished task.
+
+[Verifier](../scripts/verify_switch_repeated_readout.py),
+[report](../reports/switch_repeated_readout.json),
+[source comparison](../docs/FAMILIAR_SWITCH_REPEATED_READOUT_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_REPEATED_READOUT_INTERNAL_REVIEW.md)
+separate the analytic result, finite exact checks and physical assumptions.
+Repetition decoding and concentration are established methods; this is
+an instrument repair for the existing witness, not a new headline
+principle or a device demonstration. See [Verification](../docs/VERIFICATION.md)
+for local and remote status.
+
+**Single next scientific priority:** determine whether a small extension
+of the two-word data can certify the needed response preparation while
+retaining a three-state predictor for all scored data and a manageable
+sampling budget. The repeated-readout result addresses one joint-instrument
+obstruction, but does not prepare arbitrary slow rivals. Keep physical
+freshness and sector-stationarity assumptions explicit; do not restart
+minor field or score tuning, adopt the sixty-billion precision allocation
+as necessary, or claim full-record state minima. PRL readiness remains
+unestablished and manuscript drafting remains deferred.
+
+## Historical checkpoint: observable preparation and the readout calibration boundary — 24 September 2026
 
 Continue from published commit f026f67d26b8f5617ff5a27ea1c99648b4a85e69,
 tree 0d88522949938e6ccc5b5cbeae4802130dd3ffa5, successful

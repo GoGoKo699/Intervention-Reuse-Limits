@@ -2,7 +2,7 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The two-word, two-bit experiment remains the core: it tolerates independent one-percent rate changes and has a conditional five-million serial-trial guarantee. The latest exploration gives an optional response-specific preparation certificate without a rival mixing-time estimate, under an exactly protected instrument. Randomized assignment handles history-dependent preparations, but the present 60-billion-trial calculation certifies only scalar precision, not a complete expanded test. Repeated-readout and endpoint checks still cannot establish independence of electronic errors from hidden measurement kicks. We retain the short core while seeking sharper calibration and physical readout justification. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters* and emphasizes strength through simplicity. The [repeated-readout theorem](FAMILIAR_SWITCH_REPEATED_READOUT.md) now controls a same-use correlation between electronic error and hidden measurement backaction. Seven protected initial readings produce a majority whose equilibrium joint-label/state defect is exactly its binomial error. A first-two-reading disagreement gate on the same five million trials guards unknown rival error probabilities, while the original score retains size below 5% and power above 95%. The cost is 40 million raw readings. This requires one fixed error probability conditional on every pre-use state and history, a sector-preserving nonselective stationary instrument, and an independent final detector. Neither freshness nor stationarity follows from the gate. The old three-state fit concerns retained two-bit laws, not the full eight-reading transcript. Preparation remains separately promised; the optional five-type experiment remains unfinished. Manuscript drafting stays last and PRL readiness is not claimed.
 
 ## 1. The short physical mechanism
 
@@ -43,7 +43,7 @@ probabilities anywhere in $[0,1/2]$. There is no inverse-contrast
 singularity or rival rate cap. Symmetry, independence, no readout feedback
 and one fixed detector across both protocols remain required.
 
-**Current calibration result and its cost.** The
+**Earlier preparation calibration result and its cost.** The
 [observable preparation theorem](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md)
 extends the earlier exact-balance lemma to arbitrary preparation
 $\nu$ and stationary imbalance $|\pi S|\le V<1$ for models with

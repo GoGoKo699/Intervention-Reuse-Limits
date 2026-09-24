@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction arithmetic, polynomial coefficients, three-state instrument enumeration and positive exponential series",
+  "majority_certificate": {
+    "block_length": 7,
+    "majority_error_threshold": 4,
+    "tail_polynomial_coefficients_ascending_exact": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "35",
+      "-84",
+      "70",
+      "-20"
+    ],
+    "derivative_factorization": "140*p^3*(1-p)^3",
+    "two_percent_error_tail_exact": "26053/4882812500",
+    "one_percent_error_tail_exact": "1708349/5000000000000",
+    "five_read_one_percent_error_tail_exact": "49253/5000000000",
+    "remaining_whole_block_defect_margin_exact": "182201/39062500000",
+    "inherited_joint_instrument_allowance_exact": "1/100000"
+  },
+  "disagreement_and_sampling_certificate": {
+    "total_serial_trials": 5000000,
+    "paired_trials_per_arm": 2500000,
+    "disagreement_observable": "First two initial readings differ",
+    "disagreement_acceptance_threshold_exact": "3/100",
+    "two_percent_disagreement_exact": "49/1250",
+    "one_percent_disagreement_exact": "99/5000",
+    "large_noise_null_gate_exponent_exact": "4232/5",
+    "target_gate_failure_exponent_exact": "5202/5",
+    "conservative_imperfect_block_calibration_slack_exact": "1/50000",
+    "shifted_large_noise_null_gate_exponent_exact": "210681/250",
+    "shifted_target_gate_failure_exponent_exact": "259081/250",
+    "old_small_noise_null_exponent": 3,
+    "null_rejection_upper_rational": "370812682240000/7447971820629961",
+    "target_miss_upper_rational": "80772277654423174325780302236144435426821766788757831795472624287/1835733583055072143767734141730555350609540521646922983533024841750",
+    "old_score_rejection_cutoff_exact": "21/10000",
+    "conditional_null_TV_allowance_exact": "11/50000",
+    "conditional_target_TV_allowance_exact": "79/1000000",
+    "initial_raw_bit_readouts": 35000000,
+    "total_raw_bit_readouts": 40000000,
+    "scope": "Fixed instrument with state-independent fresh per-use error p in [0,1/2], sector preservation and nonselective stationarity; fixed-reference conditional preparation and the old independent final detector remain premises. The gate is analyzed jointly with the score by case splitting and a union bound, not by conditioning on gate acceptance."
+  },
+  "correlated_backaction_fixture": {
+    "per_use_error_exact": "1/100",
+    "instrument_error_branches_exact": {
+      "0": [
+        [
+          "99/100",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "49/100",
+          "1/2"
+        ],
+        [
+          "0",
+          "49/100",
+          "1/2"
+        ]
+      ],
+      "1": [
+        [
+          "1/100",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1/100",
+          "0"
+        ],
+        [
+          "0",
+          "1/100",
+          "0"
+        ]
+      ]
+    },
+    "stationary_law_exact": [
+      "1/2",
+      "1/4",
+      "1/4"
+    ],
+    "majority_label_order": [
+      -1,
+      1
+    ],
+    "majority_label_poststate_joint_exact": [
+      [
+        "4999998291651/10000000000000",
+        "334831/2500000000000",
+        "14761/400000000000"
+      ],
+      [
+        "1708349/10000000000000",
+        "624999665169/2500000000000",
+        "99999985239/400000000000"
+      ]
+    ],
+    "perfect_label_poststate_joint_exact": [
+      [
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/4",
+        "1/4"
+      ]
+    ],
+    "joint_majority_state_TV_to_perfect_exact": "1708349/5000000000000",
+    "joint_majority_state_TV_to_independent_BSC_exact": "970299/10000000000000",
+    "word_certificates": [
+      {
+        "word": "0H",
+        "actual_joint_table_exact": [
+          "5406249313241/30000000000000",
+          "9593750686759/30000000000000",
+          "3218750686759/30000000000000",
+          "11781249313241/30000000000000"
+        ],
+        "perfect_initial_label_table_exact": [
+          "173/960",
+          "307/960",
+          "103/960",
+          "377/960"
+        ],
+        "joint_table_TV_exact": "686759/15000000000000"
+      },
+      {
+        "word": "H0",
+        "actual_joint_table_exact": [
+          "6999999313241/30000000000000",
+          "8000000686759/30000000000000",
+          "4812500686759/30000000000000",
+          "10187499313241/30000000000000"
+        ],
+        "perfect_initial_label_table_exact": [
+          "7/30",
+          "4/15",
+          "77/480",
+          "163/480"
+        ],
+        "joint_table_TV_exact": "686759/15000000000000"
+      }
+    ],
+    "scope": "Exact seven-use enumeration of the previous three-state outcome-correlated instrument. Universal contractivity for arbitrary future channels is proved in the bound note, not established by enumerating these two words."
+  },
+  "stationarity_defect_fixture": {
+    "per_read_stationary_defects_exact": [
+      "1/4000000",
+      "1/2000000",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "accumulated_stationary_defect_upper_exact": "3/4000000",
+    "actual_final_stationary_defect_exact": "500001/2000000000000",
+    "majority_plus_defect_upper_exact": "1901767/312500000000",
+    "scope": "Finite fixed-channel illustration of the analytic telescoping bound. The channels are fixed in advance and do not depend on recorded outcomes."
+  },
+  "freshness_counterexample": {
+    "marginal_per_read_error_exact": "1/4",
+    "first_pair_disagreement_exact": "0",
+    "majority_error_exact": "1/4",
+    "scope": "The disagreement gate alone cannot establish temporal freshness. All seven readings may share a latent common-mode error even with an identity hidden-state instrument."
+  },
+  "outcome_hidden_update_independence_required": false,
+  "per_use_conditional_freshness_required": true,
+  "nonselective_stationarity_and_sector_preservation_required": true,
+  "rival_preparation_certified_by_disagreement_gate": false,
+  "full_raw_record_state_count_minimum_claimed": false,
+  "new_device_implementation_claimed": false,
+  "largest_dense_matrix_dimension": 3,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_repeated_readout.py": "cc900a338ef0463206e9c0a2832008ed4a751c47de613850c4b88660a12c028f"
+  },
+  "input_report_sha256": {
+    "reports/switch_serial_reset.json": "9c9f662e63d94d518d3e01bf0aa179dffa6f06d78a2333660e3668582d972fb6",
+    "reports/switch_observable_calibration.json": "5883635e5d44264c9cc72ba585f16aa65b2441837ef3cf4d69e54ba3b878ae1c"
+  },
+  "imported_repository_verifiers": [],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182"
+  },
+  "checks": 158
+}

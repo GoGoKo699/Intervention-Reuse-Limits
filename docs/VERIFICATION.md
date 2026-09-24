@@ -4,11 +4,77 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-four mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-five mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: observable preparation and readout boundaries
+## Current checkpoint: repeated protected readout
+
+The published baseline `3f7a368f072f03add7e0fcb6e233556cc31b8a39`, tree
+`3747fc54b6b12c7c42f192b220e85667c166fafc`, has successful
+[CI run 35986291952](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35986291952).
+A fresh baseline `make check PYTHON=.venv/bin/python` passed 54
+mathematical verifiers and four saved-model replays in the pinned Python
+3.13.5 environment. All 58 outputs were PASS and byte-identical to their
+saved reports. This continuation preserves 119 baseline verifier/report/
+license/dependency/workflow files, 62 bound proof files and claim rows
+R1–R60.
+
+The [repeated-readout proof](FAMILIAR_SWITCH_REPEATED_READOUT.md) gives
+an exact equilibrium joint-TV identity, including errors correlated with
+the hidden update of the same read. Seven fresh sector-preserving reads
+with a stationary nonselective kernel have joint defect equal to their
+binomial majority error. At raw error $.02$, the defect is
+$.0000053356544$, below the existing $10^{-5}$ instrument allowance.
+One first-pair disagreement statistic on the same five million trials
+handles unknown rival errors in $[0,1/2]$. The old serial score keeps
+size below 5% and power above 95%, with 40 million raw readings.
+
+The [new verifier](../scripts/verify_switch_repeated_readout.py) and
+[report](../reports/switch_repeated_readout.json) check exact tail,
+calibration and sampling arithmetic and propagate the earlier correlated-
+kick instrument through a repeated block. The universal proof supplies
+the arbitrary-state, history-conditional statements; finite fixtures do
+not enumerate them. The [internal review](FAMILIAR_SWITCH_REPEATED_READOUT_INTERNAL_REVIEW.md)
+and [source comparison](FAMILIAR_SWITCH_REPEATED_READOUT_SOURCE_AUDIT.md)
+keep standard repetition/concentration tools distinct from this
+witness-specific repair.
+
+The new verifier passes **158 exact checks** with largest dense matrix
+dimension three, no floating arithmetic, no optimizer and no imported
+repository helper. It binds 26 proof snapshots and the two frozen serial-
+reset and observable-calibration reports. Source SHA-256:
+`cc900a338ef0463206e9c0a2832008ed4a751c47de613850c4b88660a12c028f`;
+report SHA-256:
+`488a3e39aca64284acc388a91fd38d479b14b727eec0fbf6b21772225391d086`;
+new proof SHA-256:
+`4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182`.
+
+Fresh errors conditional on the full preceding history, sector protection,
+nonselective stationarity and final independent electronics remain
+substantive premises. The old approximate-null TV allowance concerns
+retained pairs; the diagnostic needs its own conditional-mean guarantee.
+The old three-state predictor does not establish a predictor for the full
+eight-reading transcript. Preparation and device feasibility remain open
+operational questions, and manuscript drafting remains deferred.
+
+**Completed local gate:** `make check PYTHON=.venv/bin/python` exited
+successfully under Python 3.13.5 with pinned NumPy 2.3.5, SciPy 1.17.0,
+SymPy 1.14.0 and mpmath 1.3.0. All **55 mathematical verifiers and four
+saved-model replays** passed. The **59 fresh reports** are PASS and
+byte-identical to their canonical reports. Separate review reproduced
+the new 158-check report exactly. All 119 protected baseline files,
+62 prior proof snapshots and historical rows R1–R60 are unchanged.
+The repository checker and `git diff --check` pass. The new calculation
+uses at most three states in its matrix fixtures; the historical suite
+maximum remains 68. No large simulation was run.
+
+Publication and GitHub Actions are separate evidence. The baseline CI
+linked above certifies only the previous commit; the new commit's status
+is checked after non-forced publication. Manuscript drafting remains
+deferred.
+
+## Historical checkpoint: observable preparation and readout boundaries
 
 The published baseline `f026f67d26b8f5617ff5a27ea1c99648b4a85e69`, tree `0d88522949938e6ccc5b5cbeae4802130dd3ffa5`, had 53 mathematical verifiers, four saved-model replays and successful [CI run 35981239851](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35981239851). This continuation protects all **117** baseline verifier/report/license/dependency/workflow files, earlier proof bindings, nine recovery files and historical claim rows R1–R58.
 
