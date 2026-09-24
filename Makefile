@@ -50,5 +50,7 @@ check:
 	$(PYTHON) scripts/verify_familiar_switches.py --output .check-output/familiar_switches.json
 	$(PYTHON) scripts/verify_familiar_switch_margin.py --output .check-output/familiar_switch_margin.json
 	$(PYTHON) scripts/verify_switch_calibration.py --output .check-output/switch_calibration.json
+	$(PYTHON) scripts/verify_switch_preparation_witness.py --output .check-output/switch_preparation_witness.json
 	$(PYTHON) scripts/screen_familiar_switches.py --verify-saved reports/familiar_switch_screen.json --output .check-output/familiar_switch_screen.json
 	$(PYTHON) scripts/screen_short_switch_witnesses.py --verify-saved reports/short_switch_witness_screen.json --output .check-output/short_switch_witness_screen.json
+	$(PYTHON) scripts/screen_switch_preparation_witness.py --verify-saved reports/switch_preparation_screen.json --output .check-output/switch_preparation_screen.json

@@ -1,0 +1,728 @@
+{
+  "clock": 1.5,
+  "comparators": [
+    {
+      "diagnostics": {
+        "detailed_balance_residual": 6.93889390391e-18,
+        "generators": [
+          [
+            [
+              -0.15561693608572355,
+              0.14874113478221485,
+              0.006875801303508702
+            ],
+            [
+              0.33045866711883254,
+              -0.5728883454570604,
+              0.24242967833822784
+            ],
+            [
+              0.012503846518906063,
+              0.19843580857194526,
+              -0.21093965509085133
+            ]
+          ],
+          [
+            [
+              -0.06926771556811535,
+              0.06919907295883833,
+              6.864260927702371e-05
+            ],
+            [
+              1.3836582667186812,
+              -1.9501154904991806,
+              0.5664572237804996
+            ],
+            [
+              0.001123457400604698,
+              0.463661866784641,
+              -0.4647853241852457
+            ]
+          ]
+        ],
+        "initial_law": [
+          0.5,
+          0.22505255510324945,
+          0.27494744489675055
+        ],
+        "maximum_exit": 1.9501154905,
+        "minimum_off_diagonal": 6.8642609277e-05,
+        "occupation_readout": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "stationarity_residual": 5.11262596139e-18,
+        "stationary_laws": [
+          [
+            0.5,
+            0.22505255510324945,
+            0.27494744489675055
+          ],
+          [
+            0.9000000000000001,
+            0.04501051102064988,
+            0.054989488979350104
+          ]
+        ]
+      },
+      "fit_diagnostics": {
+        "epigraph_iterations": 7,
+        "epigraph_success": true,
+        "least_squares_nfev": [
+          30,
+          40,
+          32
+        ],
+        "least_squares_success": [
+          true,
+          true,
+          true
+        ]
+      },
+      "model": {
+        "conductances_by_field": [
+          [
+            0.07437056739110742,
+            0.003437900651754351,
+            0.05455941854287706
+          ],
+          [
+            0.06227916566295451,
+            6.177834834932136e-05,
+            0.025496529113698912
+          ]
+        ],
+        "kind": "reversible_three_state",
+        "singleton_sign": 1,
+        "split_mass": 0.22505255510324945
+      },
+      "responses": {
+        "maximum_occupation_error": 0.00635867820119,
+        "occupation_errors": [
+          -0.00635867820119,
+          -0.00635867820118,
+          0.00635867820119,
+          0.00635867820118
+        ],
+        "occupations": [
+          0.702019569102,
+          0.763024101754,
+          0.85291508837,
+          0.621333674381
+        ]
+      },
+      "role": "bounded_local_fit",
+      "witness_residual": -1.11022302463e-16
+    },
+    {
+      "diagnostics": {
+        "detailed_balance_residual": 3.46944695195e-18,
+        "generators": [
+          [
+            [
+              -0.14361041296801225,
+              0.07249177368875999,
+              0.07111863927925226
+            ],
+            [
+              0.5389675695322996,
+              -0.8289345920962746,
+              0.289967022563975
+            ],
+            [
+              0.08217069460478371,
+              0.04506176732899904,
+              -0.12723246193378274
+            ]
+          ],
+          [
+            [
+              -0.49625643021289356,
+              0.311022964304095,
+              0.18523346590879858
+            ],
+            [
+              0.25693534683661906,
+              -0.26273621802216784,
+              0.005800871185548799
+            ],
+            [
+              0.023779924038091586,
+              0.0009014732273944118,
+              -0.024681397265486
+            ]
+          ]
+        ],
+        "initial_law": [
+          0.5,
+          0.0672505896334971,
+          0.4327494103665029
+        ],
+        "maximum_exit": 0.828934592096,
+        "minimum_off_diagonal": 0.000901473227394,
+        "occupation_readout": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "stationarity_residual": 4.81085552405e-18,
+        "stationary_laws": [
+          [
+            0.5,
+            0.0672505896334971,
+            0.4327494103665029
+          ],
+          [
+            0.09999999999999998,
+            0.12105106134029478,
+            0.7789489386597053
+          ]
+        ]
+      },
+      "fit_diagnostics": {
+        "epigraph_iterations": 6,
+        "epigraph_success": true,
+        "least_squares_nfev": [
+          31,
+          27,
+          31
+        ],
+        "least_squares_success": [
+          true,
+          true,
+          true
+        ]
+      },
+      "model": {
+        "conductances_by_field": [
+          [
+            0.036245886844379994,
+            0.03555931963962613,
+            0.01950045324169688
+          ],
+          [
+            0.03110229643040949,
+            0.018523346590879855,
+            0.0007022016137090162
+          ]
+        ],
+        "kind": "reversible_three_state",
+        "singleton_sign": -1,
+        "split_mass": 0.0672505896334971
+      },
+      "responses": {
+        "maximum_occupation_error": 0.00181064916967,
+        "occupation_errors": [
+          0.00181064916967,
+          0.00181064916967,
+          -0.00181064916967,
+          -0.00181064916967
+        ],
+        "occupations": [
+          0.710188896473,
+          0.771193429125,
+          0.844745760999,
+          0.61316434701
+        ]
+      },
+      "role": "bounded_local_fit",
+      "witness_residual": 2.77555756156e-17
+    },
+    {
+      "diagnostics": {
+        "detailed_balance_residual": 0.0,
+        "generators": [
+          [
+            [
+              -0.14361000000000002,
+              0.072492,
+              0.071118
+            ],
+            [
+              0.5389659633314002,
+              -0.8289244769594504,
+              0.28995851362805014
+            ],
+            [
+              0.0821700338995584,
+              0.04506076270540198,
+              -0.1272307966049604
+            ]
+          ],
+          [
+            [
+              -0.49625000000000014,
+              0.3110200000000001,
+              0.18523000000000006
+            ],
+            [
+              0.2569313302239207,
+              -0.26273050049648167,
+              0.0057991702725610035
+            ],
+            [
+              0.023779501640802305,
+              0.0009012152541080396,
+              -0.024680716894910346
+            ]
+          ]
+        ],
+        "initial_law": [
+          0.5,
+          0.067251,
+          0.432749
+        ],
+        "maximum_exit": 0.828924476959,
+        "minimum_off_diagonal": 0.000901215254108,
+        "occupation_readout": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "stationarity_residual": 8.17481071209e-18,
+        "stationary_laws": [
+          [
+            0.5,
+            0.067251,
+            0.432749
+          ],
+          [
+            0.09999999999999998,
+            0.1210518,
+            0.7789482
+          ]
+        ]
+      },
+      "exact_feasibility": {
+        "generators": [
+          [
+            [
+              "-14361/100000",
+              "18123/250000",
+              "35559/500000"
+            ],
+            [
+              "12082/22417",
+              "-18582/22417",
+              "6500/22417"
+            ],
+            [
+              "35559/432749",
+              "19500/432749",
+              "-55059/432749"
+            ]
+          ],
+          [
+            [
+              "-397/800",
+              "15551/50000",
+              "18523/100000"
+            ],
+            [
+              "155510/605259",
+              "-159020/605259",
+              "130/22417"
+            ],
+            [
+              "92615/3894741",
+              "390/432749",
+              "-96125/3894741"
+            ]
+          ]
+        ],
+        "maximum_exit": "18582/22417",
+        "scope": "Exact positivity, Gibbs tilt, detailed balance, stationarity and exit feasibility; response replay below is floating arithmetic.",
+        "stationary_laws": [
+          [
+            "1/2",
+            "67251/1000000",
+            "432749/1000000"
+          ],
+          [
+            "1/10",
+            "605259/5000000",
+            "3894741/5000000"
+          ]
+        ]
+      },
+      "model": {
+        "conductances_by_field": [
+          [
+            0.036246,
+            0.035559,
+            0.0195
+          ],
+          [
+            0.031102,
+            0.018523,
+            0.000702
+          ]
+        ],
+        "kind": "reversible_three_state",
+        "singleton_sign": -1,
+        "split_mass": 0.067251
+      },
+      "rational_parameters": {
+        "denominator": 1000000,
+        "flux_numerators_by_field": [
+          [
+            36246,
+            35559,
+            19500
+          ],
+          [
+            31102,
+            18523,
+            702
+          ]
+        ],
+        "split_numerator": 67251
+      },
+      "responses": {
+        "maximum_occupation_error": 0.00181168745693,
+        "occupation_errors": [
+          0.00180901358007,
+          0.00181104846812,
+          -0.00181095853597,
+          -0.00181168745693
+        ],
+        "occupations": [
+          0.710187260883,
+          0.771193828423,
+          0.844745451632,
+          0.613163308723
+        ]
+      },
+      "role": "rounded_rational_upper",
+      "scope": "Rounded retained fit. This replay checks feasibility exactly and responses numerically; the separate exact verifier supplies the rigorous upper certificate.",
+      "witness_residual": -5.55111512313e-17
+    }
+  ],
+  "exact_stationary_triangle": {
+    "diagnostics": {
+      "affine_closure_residual": 4.4408920985e-16,
+      "detailed_balance_residual": 0.0137142857143,
+      "generators": [
+        [
+          [
+            -0.17999999999999997,
+            0.1251428571428571,
+            0.054857142857142854
+          ],
+          [
+            1.1400000000000001,
+            -1.706857142857143,
+            0.566857142857143
+          ],
+          [
+            0.09000000000000001,
+            0.02314285714285709,
+            -0.11314285714285709
+          ]
+        ],
+        [
+          [
+            -0.548780487804878,
+            0.3815331010452961,
+            0.16724738675958187
+          ],
+          [
+            0.6463414634146342,
+            -1.3636469221835077,
+            0.7173054587688735
+          ],
+          [
+            0.006097560975609761,
+            0.08147502903600459,
+            -0.08757259001161435
+          ]
+        ]
+      ],
+      "initial_law": [
+        0.5,
+        0.042857142857142844,
+        0.45714285714285724
+      ],
+      "maximum_exit": 1.70685714286,
+      "minimum_off_diagonal": 0.00609756097561,
+      "occupation_readout": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "stationarity_residual": 3.06045954208e-17,
+      "stationary_laws": [
+        [
+          0.5,
+          0.042857142857142844,
+          0.45714285714285724
+        ],
+        [
+          0.09999999999999998,
+          0.07714285714285712,
+          0.822857142857143
+        ]
+      ]
+    },
+    "model": {
+      "J": 1.0986122886681098,
+      "kind": "exact_stationary_triangle"
+    },
+    "responses": {
+      "maximum_occupation_error": 1.11022302463e-16,
+      "occupation_errors": [
+        1.11022302463e-16,
+        -1.11022302463e-16,
+        0.0,
+        1.11022302463e-16
+      ],
+      "occupations": [
+        0.708378247303,
+        0.769382779955,
+        0.846556410168,
+        0.61497499618
+      ]
+    }
+  },
+  "experiments": [
+    {
+      "name": "m",
+      "preparation_field": 0,
+      "word": [
+        1
+      ]
+    },
+    {
+      "name": "a",
+      "preparation_field": 1,
+      "word": [
+        0
+      ]
+    },
+    {
+      "name": "b",
+      "preparation_field": 1,
+      "word": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "l",
+      "preparation_field": 0,
+      "word": [
+        1,
+        0
+      ]
+    }
+  ],
+  "exploration": {
+    "CPU_seconds": 120,
+    "description": "Six deterministic least-squares starts and two epigraph refinements, with total exit cap3 imposed only to find feasible comparators. No random starts, no extra target grid, no refits in replay.",
+    "discovery_runtime_seconds": 0.13323500099795638,
+    "discovery_versions": {
+      "numpy": "2.3.5",
+      "python": "3.13.5",
+      "scipy": "1.17.0"
+    },
+    "epigraph_ftol": 2e-13,
+    "epigraph_maxiter": 150,
+    "least_squares_max_nfev": 300,
+    "least_squares_tolerances": {
+      "ftol": 3e-12,
+      "gtol": 3e-12,
+      "xtol": 3e-12
+    },
+    "random_seed": null,
+    "raw_flux_log_bounds": [
+      -16,
+      6
+    ],
+    "raw_flux_starts_by_field": [
+      [
+        [
+          0.15,
+          0.1,
+          0.05
+        ],
+        [
+          0.12,
+          0.08,
+          0.04
+        ]
+      ],
+      [
+        [
+          0.25,
+          0.03,
+          0.1
+        ],
+        [
+          0.2,
+          0.05,
+          0.12
+        ]
+      ],
+      [
+        [
+          0.08,
+          0.22,
+          0.02
+        ],
+        [
+          0.05,
+          0.18,
+          0.03
+        ]
+      ]
+    ],
+    "signs": 2,
+    "split_logit_bounds": [
+      -12,
+      12
+    ],
+    "split_logit_starts": [
+      0,
+      1,
+      -1
+    ],
+    "starts_per_sign": 3
+  },
+  "fields": [
+    0,
+    1.0986122886681098
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+  },
+  "schema_version": 1,
+  "scope": "Four endpoint occupations at t=u=4/5 and clock3/2, using low-field and high-field stationary preparations. Saved feasible ordinary models only; no optimization lower bound or global optimum.",
+  "source_sha256": {
+    "screen_familiar_switches.py": "13d3abcdbaa0730c18540c56b35c4d0e06c8e14dd110cf856cf0c4459af93b6d",
+    "screen_switch_preparation_witness.py": "e305c5336c5754af64780e230386407fb3aed62ed8f6432af0c6d2976af43524"
+  },
+  "status": "PASS",
+  "summary": {
+    "best_achieved_fit_occupation_error": 0.00181064916967,
+    "endpoint_experiments": 4,
+    "equilibrium_preparations": 2,
+    "maximum_dense_dimension": 4,
+    "retained_fitted_models": 2,
+    "rounded_rational_models": 1,
+    "scope": "Achieved numerical errors on four specified endpoints only; no fitted lower bound, global optimum, or all-protocol upper."
+  },
+  "target": {
+    "alphas": [
+      1,
+      1
+    ],
+    "couplings": [
+      1.0986122886681098
+    ],
+    "kind": "ising"
+  },
+  "target_diagnostics": {
+    "affine_closure_residual": 2.22044604925e-16,
+    "detailed_balance_residual": 1.38777878078e-17,
+    "generators": [
+      [
+        [
+          -0.19999999999999996,
+          0.09999999999999998,
+          0.09999999999999998,
+          0.0
+        ],
+        [
+          0.8999999999999999,
+          -1.7999999999999998,
+          0.0,
+          0.8999999999999999
+        ],
+        [
+          0.8999999999999999,
+          0.0,
+          -1.7999999999999998,
+          0.8999999999999999
+        ],
+        [
+          0.0,
+          0.09999999999999998,
+          0.09999999999999998,
+          -0.19999999999999996
+        ]
+      ],
+      [
+        [
+          -0.6,
+          0.5,
+          0.09999999999999998,
+          0.0
+        ],
+        [
+          0.5,
+          -1.4,
+          0.0,
+          0.8999999999999999
+        ],
+        [
+          0.8999999999999999,
+          0.0,
+          -1.8878048780487804,
+          0.9878048780487805
+        ],
+        [
+          0.0,
+          0.09999999999999998,
+          0.012195121951219507,
+          -0.11219512195121949
+        ]
+      ]
+    ],
+    "initial_law": [
+      0.44999999999999996,
+      0.04999999999999999,
+      0.04999999999999999,
+      0.44999999999999996
+    ],
+    "maximum_exit": 1.88780487805,
+    "minimum_off_diagonal": 0.0,
+    "occupation_readout": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "stationarity_residual": 1.58321865103e-17,
+    "stationary_laws": [
+      [
+        0.44999999999999996,
+        0.04999999999999999,
+        0.04999999999999999,
+        0.44999999999999996
+      ],
+      [
+        0.08999999999999998,
+        0.08999999999999998,
+        0.009999999999999997,
+        0.81
+      ]
+    ]
+  },
+  "target_occupations": [
+    0.708378247303,
+    0.769382779955,
+    0.846556410168,
+    0.61497499618
+  ],
+  "target_witness_values": {
+    "-1": 0.00811481045501,
+    "1": -0.0730332940951
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  }
+}

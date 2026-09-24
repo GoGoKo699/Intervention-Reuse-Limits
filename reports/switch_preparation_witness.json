@@ -1,0 +1,403 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction polynomial identities, physical generators, rational Taylor enclosures and bilinear whole-box bounds",
+  "protocol_order": [
+    {
+      "stationary_preparation_field": 0,
+      "chronological_fields": [
+        1
+      ]
+    },
+    {
+      "stationary_preparation_field": 1,
+      "chronological_fields": [
+        0
+      ]
+    },
+    {
+      "stationary_preparation_field": 1,
+      "chronological_fields": [
+        0,
+        1
+      ]
+    },
+    {
+      "stationary_preparation_field": 0,
+      "chronological_fields": [
+        1,
+        0
+      ]
+    }
+  ],
+  "mean_order": [
+    "m",
+    "a",
+    "b",
+    "l"
+  ],
+  "target_certificate": {
+    "target_parameters": {
+      "tanh_J": "4/5",
+      "tanh_H": "4/5",
+      "J": "log(3)",
+      "H": "log(3)",
+      "attempt_rates": [
+        "1",
+        "1"
+      ],
+      "common_clock_tick": "3/2"
+    },
+    "stationary_preparations_exact": [
+      [
+        "9/20",
+        "1/20",
+        "1/20",
+        "9/20"
+      ],
+      [
+        "9/100",
+        "1/100",
+        "9/100",
+        "81/100"
+      ]
+    ],
+    "zero_field_exponential_certificate": {
+      "taylor_degree": 96,
+      "clock_matrix_row_norm_exact": "27/5",
+      "matrix_tail_upper": "2^-180",
+      "entry_dyadic_bits": 160,
+      "certified_entry_radius": "2^-160"
+    },
+    "high_field_exponential_certificate": {
+      "taylor_degree": 96,
+      "clock_matrix_row_norm_exact": "1161/205",
+      "matrix_tail_upper": "2^-180",
+      "entry_dyadic_bits": 160,
+      "certified_entry_radius": "2^-160"
+    },
+    "target_mean_centers_exact": [
+      "141814886414451206727632523496425791279/340282366920938463463374607431768211456",
+      "183332419941665205951521180502093366223/340282366920938463463374607431768211456",
+      "235854071047474919389440074271456026021/340282366920938463463374607431768211456",
+      "78247927673654713475192095969822630459/340282366920938463463374607431768211456"
+    ],
+    "target_mean_uniform_enclosure_radius": "2^-120",
+    "excluded_uniform_occupation_error_exact": "9/5000",
+    "mean_box_radius_exact": "2990762990516060714033565885630775921/830767497365572420564879412675215360000",
+    "singleton_sign_certificates": {
+      "-1": {
+        "constant_exact": "4698154281754018069814292227365831208685457897018577578597436446033498952709/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+        "linear_coefficient_mass_exact": "1909390669477216676009112599457847797893/850705917302346158658436518579420528640",
+        "quadratic_coefficient_mass_exact": "1",
+        "whole_box_variation_outward_upper_exact": "404654030187/50000000000000",
+        "polynomial_slack_lower_exact": "217/10000000"
+      },
+      "1": {
+        "constant_exact": "-42283388535786162628328630046292480877447977827718635561737508149176300033029/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+        "linear_coefficient_mass_exact": "4896256668941552593258379549177516431227/850705917302346158658436518579420528640",
+        "quadratic_coefficient_mass_exact": "1",
+        "whole_box_variation_outward_upper_exact": "20732839396261/1000000000000000",
+        "polynomial_slack_lower_exact": "217/10000000"
+      }
+    },
+    "exact_three_state_upper": {
+      "total_states": 3,
+      "readout_exact": [
+        "-1",
+        "1",
+        "1"
+      ],
+      "stationary_preparations_exact": [
+        [
+          "1/2",
+          "3/70",
+          "16/35"
+        ],
+        [
+          "1/10",
+          "27/350",
+          "144/175"
+        ]
+      ],
+      "generators_exact": [
+        [
+          [
+            "-9/50",
+            "219/1750",
+            "48/875"
+          ],
+          [
+            "57/50",
+            "-2987/1750",
+            "496/875"
+          ],
+          [
+            "9/100",
+            "81/3500",
+            "-99/875"
+          ]
+        ],
+        [
+          [
+            "-45/82",
+            "219/574",
+            "48/287"
+          ],
+          [
+            "53/82",
+            "-11741/8610",
+            "3088/4305"
+          ],
+          [
+            "1/164",
+            "1403/17220",
+            "-377/4305"
+          ]
+        ]
+      ],
+      "scope": "The exact common mean closure and matching initial coordinates at both equilibria imply identical controlled means for either preparation. This does not claim equality of observed path laws."
+    }
+  },
+  "ordinary_three_state_upper": {
+    "total_states": 3,
+    "readout_exact": [
+      "-1",
+      "1",
+      "1"
+    ],
+    "stationary_preparations_exact": [
+      [
+        "1/2",
+        "67251/1000000",
+        "432749/1000000"
+      ],
+      [
+        "1/10",
+        "605259/5000000",
+        "3894741/5000000"
+      ]
+    ],
+    "stationary_flux_pair_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "stationary_flux_numerators": [
+      [
+        36246,
+        35559,
+        19500
+      ],
+      [
+        31102,
+        18523,
+        702
+      ]
+    ],
+    "stationary_flux_denominator": 1000000,
+    "generators_exact": [
+      [
+        [
+          "-14361/100000",
+          "18123/250000",
+          "35559/500000"
+        ],
+        [
+          "12082/22417",
+          "-18582/22417",
+          "6500/22417"
+        ],
+        [
+          "35559/432749",
+          "19500/432749",
+          "-55059/432749"
+        ]
+      ],
+      [
+        [
+          "-397/800",
+          "15551/50000",
+          "18523/100000"
+        ],
+        [
+          "155510/605259",
+          "-159020/605259",
+          "130/22417"
+        ],
+        [
+          "92615/3894741",
+          "390/432749",
+          "-96125/3894741"
+        ]
+      ]
+    ],
+    "exponential_certificates": [
+      {
+        "taylor_degree": 96,
+        "clock_matrix_row_norm_exact": "55746/22417",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      },
+      {
+        "taylor_degree": 96,
+        "clock_matrix_row_norm_exact": "1191/800",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      }
+    ],
+    "maximum_exit_rate_exact": "18582/22417",
+    "occupation_error_outward_upper_by_protocol_exact": [
+      "1809013580069/1000000000000000",
+      "45276211703/25000000000000",
+      "1810958535967/1000000000000000",
+      "1811687456927/1000000000000000"
+    ],
+    "certified_uniform_occupation_error_upper_exact": "1/550",
+    "upper_to_lower_bracket_ratio_exact": "100/99",
+    "scope": "These fixed rational parameters originated from a separate exploratory fit. Their validity and four-experiment upper error are certified without fitting here; no all-protocol approximation or exact optimum is claimed."
+  },
+  "two_snapshot_corollary": {
+    "stationary_preparation_field": 0,
+    "chronological_words": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "observations_per_run": "initial and final binary readouts",
+    "joint_law_TV_separation_lower_exact": "1/1000",
+    "scope": "This corollary assumes exact stationary preparation and exact Gibbs tilt. The three-state construction matches these two-time joint laws by the separately checked conditional initial coordinates. No full trajectory, calibrated snapshot or snapshot sample-count claim is made."
+  },
+  "calibrated_witness": {
+    "mean_radius_about_nominal_target_exact": "17/5000",
+    "inherited_target_mean_center_radius": "2^-120",
+    "stationary_baseline_bias_absolute_bound_exact": "1/10000",
+    "tanh_increment_center_exact": "4/5",
+    "tanh_increment_radius_exact": "1/10000",
+    "high_field_stationary_TV_mismatch_bound_exact": "1/100000",
+    "stationary_preparation_occupation_error_exclusion_exact": "17/10000",
+    "sign_certificates": {
+      "-1": {
+        "center_absolute_lower_exact": "4057/500000",
+        "whole_box_variation_upper_exact": "767/100000",
+        "approximate_force_residual_upper_exact": "9/100000",
+        "remaining_slack_lower_exact": "177/500000"
+      },
+      "1": {
+        "center_absolute_lower_exact": "73033/1000000",
+        "whole_box_variation_upper_exact": "9807/500000",
+        "approximate_force_residual_upper_exact": "569/1000000",
+        "remaining_slack_lower_exact": "177/500000"
+      }
+    },
+    "scope": "The exact box is an essential premise of the analytic biased/approximate-force exclusion. Each experiment uses the stationary law of its designated preparation field before separate preparation-error allowances."
+  },
+  "execution_and_two_preparation_resets": {
+    "preparation_TV_tolerance_exact": "1/100000",
+    "field_tolerance_exact": "1/100000",
+    "per_tick_duration_tolerance_exact": "1/100000",
+    "combined_occupation_displacement_exact": "800001/10000000000",
+    "actual_occupation_separation_lower_exact": "1/625",
+    "target_preparation_reset_certificates": [
+      {
+        "field": "low",
+        "actual_wait_lower_exact": "62",
+        "spectral_gap_lower_exact": "1/5",
+        "squared_TV_prefactor_upper_exact": "5",
+        "exponential_lower_sum_degree": 64
+      },
+      {
+        "field": "high",
+        "actual_wait_lower_exact": "36",
+        "spectral_gap_lower_exact": "3/8",
+        "squared_TV_prefactor_upper_exact": "25",
+        "exponential_lower_sum_degree": 64
+      }
+    ],
+    "nominal_active_duration_sum_exact": "9",
+    "preparation_duration_sum_exact": "196",
+    "calibrated_serial_exposure_per_common_replicate_upper_exact": "10250003/50000",
+    "scope": "The universal perturbation and target spectral arguments are analytic. These checks certify their numerical budget and reset inequalities. No finite reset time is inferred for arbitrary uncapped rivals, and the positive three-state upper for imperfect target preparations has error at most the preparation TV tolerance."
+  },
+  "sampling": {
+    "type_I_error_bound_exact": "1/20",
+    "type_II_error_bound_exact": "1/20",
+    "target_center_gap_charge": "2^-120",
+    "logarithm_method": "32-term positive atanh series with exact range reduction and geometric remainder",
+    "sufficient_counts": [
+      {
+        "case": "nominal",
+        "occupation_separation_exact": "9/5000",
+        "model_allowance_exact": "0",
+        "trials_per_experiment": 3132824,
+        "total_trials_four_experiments": 12531296,
+        "serial_exposure_with_two_resets_upper_exact": "4013931924809/6250"
+      },
+      {
+        "case": "calibrated",
+        "occupation_separation_exact": "1/625",
+        "model_allowance_exact": "0",
+        "trials_per_experiment": 3964980,
+        "total_trials_four_experiments": 15859920,
+        "serial_exposure_with_two_resets_upper_exact": "2032052844747/2500"
+      },
+      {
+        "case": "calibrated_with_model_allowance",
+        "occupation_separation_exact": "1/625",
+        "model_allowance_exact": "1/10000",
+        "trials_per_experiment": 4511266,
+        "total_trials_four_experiments": 18045064,
+        "serial_exposure_with_two_resets_upper_exact": "23120245016899/25000"
+      }
+    ],
+    "per_observation_KL_upper_exact": "8/529375",
+    "adaptive_expected_total_trials_strict_lower_exact": "59400*log(19)",
+    "fixed_integer_total_trials_lower": 174900,
+    "scope": "These numbers certify the analytic four-cell Hoeffding and information bounds under the stated preparation/readout assumptions. The sufficient allocation is not claimed optimal; the information lower bound uses only this four-experiment menu and the explicit nearby reversible witness."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "numerical_optimization_used": false,
+  "limitations": [
+    "The universal ordinary-rival implication is an analytic singleton-sector identity; the exact target and local-box calculations are essential numerical premises.",
+    "The comparison requires both corresponding stationary preparations and the shared Gibbs force tilt.",
+    "The rational reversible-kernel fixtures test the necessary algebra; continuous-time embeddability of those fixtures is not asserted.",
+    "The positive three-state realization preserves controlled means, not entire output trajectories."
+  ],
+  "source_sha256": {
+    "verify_switch_preparation_witness.py": "27be838c09ebca86af5c2f0ec29e6b06a772bd63caaa2d8daa5094097d3f51b6",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/familiar_switch_margin.json": "dfe9757f74a6fc2d45f239e65292cfc613f913685f895896a9b229cc16067141"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+  },
+  "checks": 132
+}

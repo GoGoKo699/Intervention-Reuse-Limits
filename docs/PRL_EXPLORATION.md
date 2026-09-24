@@ -1,69 +1,70 @@
-# PRL exploration: a familiar model and seven short experiments
+# PRL exploration: four endpoints and two equilibrium preparations
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Calibration proof](FAMILIAR_SWITCH_CALIBRATION.md) · [Measurement cost](FAMILIAR_SWITCH_MEASUREMENT_COST.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Four-endpoint proof](FAMILIAR_SWITCH_PREPARATION_WITNESS.md) · [Measurement cost](FAMILIAR_SWITCH_PREPARATION_COST.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, asked for a familiar physical candidate, and emphasized that a strong result should be simple. Manuscript drafting remains the last step. The [official PRL criteria](https://journals.aps.org/prl/about) are a publication reference, not an acceptance prediction. The immediate scientific test is whether the simple state-count mechanism has a physically meaningful, robust observable consequence.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. Manuscript drafting remains the last step. The [official PRL criteria](https://journals.aps.org/prl/about) are a publication reference, not an acceptance prediction. This checkpoint finds a simpler experimental identity and a larger certified gap by adding a second equilibrium preparation.
 
-## 1. Current result: two coupled conformational switches
+## 1. A short physical mechanism and four measurements
 
-Use time-even Ising variables with energy $E_h=-Js_0s_1-hs_0$, heat-bath flips, equal unit attempt rates, and observed conformation $S=s_0$. Prepare zero-field equilibrium. The target has four configurations. The [structure theorem](FAMILIAR_SWITCH_STRUCTURE.md) gives an exact three-state stationary predictor of its controlled mean, whereas ordinary detailed balance requires four states. This holds for every finite $J,H>0$.
-
-Rivals may choose arbitrary new states and rates, but retain a deterministic binary readout, balanced zero-field preparation, and the shared Gibbs tilt $\pi_H=\pi_0(1+uS)$, $u=\tanh H$. Thus control couples only to the observed conformation. Arbitrary independent hidden-state force couplings are outside the theorem. The lower has no rival rate cap. The exact three-state upper works for every nonnegative-field protocol and horizon, with exits below two.
-
-The mechanism is conditional variance: detailed balance at two fields forces a latent coordinate to fluctuate within both observed conformations. Each sector therefore needs at least two states. A stationary nonreversible predictor can instead use three states. These are mean predictions, not complete binary path laws; the target's passive path already reveals hidden memory.
-
-## 2. Seven experiments and a certified error bracket
-
-The [finite-margin theorem](FAMILIAR_SWITCH_FINITE_MARGIN.md) replaces the previous eleven-word reconstruction by a direct quartic identity in seven measured means. In chronological order, the words are
+The target is the same pair of time-even conformational switches: energy $-JSZ-hS$, heat-bath flips and equal attempt rates. Observe only $S$. Prepare equilibrium at either $0$ or $H$, and measure the four means
 
 $$
-H,\quad H^2,\quad H^3,\quad H0,\quad H^20,\quad H0H,\quad H^20H.
+m=\pi_0E_HS,\quad a=\pi_HE_0S,\quad
+b=\pi_HE_0E_HS,\quad \ell=\pi_0E_HE_0S.
 $$
 
-Each letter lasts one clock tick, adjacent equal fields form one segment, and every experiment starts from the same preparation. The longest experiment has four ticks and three segments. Every ordinary rival with at most three states satisfies at least one of two quartic equalities. The target violates both with opposite nonzero signs. An adjugate identity includes singular response tables; no inverse, generator logarithm or rate compactification is required. Necessity even holds for arbitrary reversible stochastic tick kernels with the shared Gibbs tilt, whether or not they embed in continuous time.
-
-The proof gives an analytic positive occupation-error lower bound $\Delta/(2L)$ for every $J,H,a>0$. For the simple choice $J=H=\log3$ and clock $a=2$, a sharper exact rational whole-box certificate proves
+Every ordinary model obeying the shared force relation $\pi_H=\pi_0(1+uS)$, $u=\tanh H$, satisfies the exact conditional-covariance identity
 
 $$
-D_{\rm all}(\delta_P)=3,\qquad D_{\rm ord}(\delta_P)=4,
-\qquad 0\le\delta_P\le1/2000.
+b-m-a+\ell+\sigma(u\ell-am)
+=-\frac{\sigma u^2}{1-\sigma u}
+\operatorname{Cov}_{\pi_0}(E_HS,E_0S\mid S=\sigma).
 $$
 
-Here $\delta_P$ is the maximum absolute error in $P(S=+1)$ across the seven experiments; spin-mean error is twice as large. The tolerance is **0.05 percentage points**, not one percentage point. The maximum horizon is eight attempt-rate units.
+A binary-readout model with at most three states has a singleton sector, whose conditional covariance vanishes. In the physical pair, the hidden conformation changes both response propensities within both visible sectors, so both conditional covariances are positive. Every ordinary rival therefore needs four states. The known positive three-state stationary predictor matches the closed mean dynamics from both equilibrium preparations, so it still suffices.
 
-The same [exact verifier](../scripts/verify_familiar_switch_margin.py) certifies a fixed rational ordinary three-state model with maximum occupation error below $837/10^6<1/1000$ on these same seven words. Thus the best ordinary-three-state error lies between 0.05 and 0.1 percentage points. This feasible upper is not an optimality claim, an eleven-word bound, or an all-protocol guarantee. Its exits are below three. The numerical thresholds rely on computer-assisted exact arithmetic; the universal polynomial necessity and all-parameter positive bound have analytic proofs.
+The lower permits arbitrary rival graphs, masses and rates, even reversible stochastic kernels without continuous-time embeddability. It uses no determinant, generator reconstruction or matrix logarithm. One shared model explains all four experiments. The preparation relation and ordinary detailed balance remain essential; this is not a device-independent state witness or an entropy-production test. The physical target is itself reversible at both fixed fields.
 
-## 3. Evidence and practical limitations
+## 2. A nearly sharp quantitative example
 
-The [103-check certificate](../reports/familiar_switch_margin.json) uses matrices of dimension at most four, rational matrix-exponential enclosures and exact shifted-polynomial coefficient bounds. Root and separate reviewers inspected the proof and source; an independently coded three-dimensional rational enclosure confirms the lower certificate. The [internal review](FAMILIAR_SWITCH_MARGIN_INTERNAL_REVIEW.md) separates those analytic and arithmetic checks from exploratory fitting.
+Retain $J=H=\log3$ and choose a common tick $3/2$. The four active sequences last $3/2,3/2,3,3$ attempt-time units, with at most one field switch. The [exact rational certificate](../reports/switch_preparation_witness.json) proves that the best ordinary-three-state maximum occupation error lies in
 
-The [new saved-model screen](../reports/short_switch_witness_screen.json) contains four bounded panels, eight fitted rivals and the rounded rational upper. It replays without optimization. Direct refitting on the old eleven-word menu at $(J,H,a)=(1.5,2,1)$ reaches occupation error about $0.00017745$, substantially below the older retained model's $0.00471093$ without refitting. Neither number is a universal lower bound. Earlier 33-word screens and held-out evaluations remain preserved in the [original protocol record](FAMILIAR_SWITCH_PROTOCOLS.md).
+$$
+\left(\frac9{5000},\frac1{550}\right).
+$$
 
-The [calibration theorem](FAMILIAR_SWITCH_CALIBRATION.md) now extends the polynomial to stationary baseline bias and uncertain relative Gibbs tilt, and bounds its residual when the actual high-field stationary law differs slightly from that tilt. At full-law preparation error $10^{-5}$, fixed field-level errors $10^{-5}$ and fixed field-specific tick errors $10^{-5}$, the actual ordinary-three-state occupation gap exceeds $3/10000$. The comparison retains stationary low-field readout bias at most $10^{-4}$ and one fixed preparation per model across all seven words. A high-field stationary-law discrepancy of $10^{-5}$ in total variation is also allowed. The three-state predictor remains positive for the slightly negative actual low field and approximates the actual target within $10^{-5}$; both state minima therefore persist for $10^{-5}\le\delta_P\le3/10000$.
+This is 0.18 to 0.181819 percentage points, a bracket of ratio $100/99$. The lower excludes an entire response cube for both possible singleton identities. The upper is a fixed positive rational ordinary model, rigorously enclosed on the identical four cells. No global optimality of a numerical fit is claimed. The unrestricted minimum is three and the ordinary minimum four throughout $0\le\delta_P\le9/5000$.
 
-These are simultaneous sufficient budgets. A fixed unknown tick per field, or independent timing draws from one distribution per field, preserves the repeated-kernel identity. Per-occurrence field drift and finite ramps are not automatically covered by the uncapped theorem. Checking the initial visible occupation cannot certify full hidden-distribution preparation accuracy. A 62-unit wait suffices for this target, but no uniform wait prepares every arbitrarily slow rival. The statistical comparison must retain an explicit preparation guarantee.
+The [saved-model diagnostic](../reports/switch_preparation_screen.json) retains the two bounded local fits and the rounded comparator; replay runs no optimizer. Exploratory clock tuning on the old seven-word design suggested only modest gains. The useful change is the second preparation and the resulting direct covariance identity. It is an added experimental resource, not a stronger bound for the unchanged single-preparation task.
 
-The [measurement-cost theorem](FAMILIAR_SWITCH_MEASUREMENT_COST.md) distinguishes a conservative design from an information lower bound. At 5% false-positive and false-negative rates, equal allocation uses 315,548,219 ideal endpoints, 876,522,829 under the calibration budget for exact-null rejection, or 1,972,176,367 to exclude ordinary models at additional occupation-error allowance $10^{-4}$. A nearby certified ordinary model forces an expected endpoint count at least $270000\log19\approx794998.52$ even under ideal calibration and adaptive selection among the seven words. A fixed count must be at least 794,999. The upper and lower are not matched. Richer trajectory observations are a different statistical task.
+## 3. Calibration and measurement cost remain visible
 
-The tiny matrices and bounded exact calculations fit the user's Ryzen AI Max+ 395 / 128 GB hardware; no large simulation or GPU is needed. The endpoint sample burden is a property of the physical inference task, not a computational resource demand on that machine. The [new exact report](../reports/switch_calibration.json), [review](FAMILIAR_SWITCH_CALIBRATION_INTERNAL_REVIEW.md) and [source audit](FAMILIAR_SWITCH_CALIBRATION_SOURCE_AUDIT.md) document the deterministic and statistical premises separately.
+The biased-reference polynomial and approximate-tilt residual in the [proof](FAMILIAR_SWITCH_PREPARATION_WITNESS.md) cover stationary low-field bias and relative tilt-parameter uncertainty $10^{-4}$, and high-stationary-law TV discrepancy $10^{-5}$. With simultaneous preparation TV, fixed field-level and fixed tick errors $10^{-5}$, the actual ordinary-small-model separation exceeds $1/625=0.0016$. Each model uses one fixed preparation law per field across its two cells. The calibrated state minima are three versus four for $10^{-5}\le\delta_P\le1/625$.
 
-The [new source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) examines primary full texts on finite realization, observable polynomial invariants and robust dimension witnesses. Those ingredients are attributed, not claimed as new. The [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) covers familiar closure and dynamic-disorder models; Falk's 1983 reduced spin-chain paper remains an unresolved full-text comparison. The searches are bounded and do not certify priority. Time-even conformation and ordinary reversal are explicit: no universal heat requirement or generalized-reversal separation follows.
+The [cost analysis](FAMILIAR_SWITCH_PREPARATION_COST.md) gives conservative four-cell designs at 5% false-positive and false-negative probabilities:
 
-## 4. Next scientific decision
+| Task | Sufficient endpoints |
+|---|---:|
+| Nominal exact-null rejection | 12,531,296 |
+| Calibrated exact-null rejection | 15,859,920 |
+| Calibrated exclusion at occupation allowance $10^{-4}$ | 18,045,064 |
 
-1. **Seek a larger observable gap with a short explanation.** The present tolerances and sample bounds are explicit, but the close ordinary comparator creates a genuine endpoint-information bottleneck. Test a better short protocol or more informative readout before enlarging the microscopic model.
-2. **Improve the statistical design without changing its claim.** The sufficient and necessary counts are far apart. A sharper test or allocation may reduce the upper substantially, but cannot evade the endpoint-only information lower. Count any additional trajectory data, preparation access or control as a changed experiment.
-3. **Keep the calibration assumptions testable.** The new theorem permits small stationary-law errors; it does not infer hidden-state total variation from visible balance. Establishing a preparation method or covering field drift and ramps remains a separate physical task.
-4. **Complete the closest-source comparison.** Resolve the outstanding full text and compare whole assumptions and claims. External scientific scrutiny would strengthen evidence; no collaborator contact is part of this checkpoint.
+The calibrated exact-null count is more than 55 times smaller than the preceding sufficient seven-cell design, under the changed preparation resource. A separate nominal information lower requires at least 174,900 endpoints for fixed-budget tests; the upper and lower are still far apart. These are physical sampling demands, not computational demands on the user's Ryzen AI Max+ 395 / 128 GB machine.
 
-The result is simple enough to explain and now has a complete sufficient calibration and sampling budget. The large sample burden remains an obstacle to physical significance; the theorem does not by itself establish experimental practicality or PRL readiness. Manuscript drafting stays deferred.
+Target-specific waits of 62 and 36 attempt-time units suffice for the low and high preparation budgets. No uniform wait prepares arbitrary slow rivals, and visible balance cannot certify full hidden-state TV. Fixed field-specific kernels are assumed; arbitrary drift and finite ramps remain separate. A noninvasive initial snapshot can replace the high-field preparation through weighting, but its observation model and sampling cost need a separate analysis. The three-state predictor matches those initial/final joint laws under exact preparation, not arbitrary multitime trajectories.
+
+## 4. Scientific assessment and next priority
+
+The result is now simpler at its core: four probabilities recover a conditional covariance, and a singleton sector cannot support it. The deterministic gap is almost pinned down for the selected experiment. The source comparison and internal reviews remain [explicit](FAMILIAR_SWITCH_PREPARATION_SOURCE_AUDIT.md); reciprocity, change of measure and dimension witnesses are established ingredients. A bounded search does not certify novelty. The earlier unresolved Falk full-text comparison remains open.
+
+The next focused task should be a statistically sharper test for these four cells, including unequal allocation or direct use of the quadratic identity. A physical implementation also needs credible preparation and force-law calibration. The optional initial-snapshot experiment offers a concrete preparation/readout trade to price separately. Another broad microscopic-model search is less informative until these specific bottlenecks are understood.
+
+This is progress toward a concise physics result, but it does not establish experimental practicality or PRL readiness. Manuscript drafting stays deferred, and no collaborator contact is part of this checkpoint.
 
 ## 5. Earlier results retained separately
 
-The [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives exact state counts $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ for a separate capped hub-interface family with exact two-state passive paths. The [variance principle](KINETIC_VARIANCE_COMPRESSION.md) bounds all-protocol compression through kinetic heterogeneity and hidden mixing. Neither interface is silently transferred to the coupled pair.
+The [seven-endpoint theorem](FAMILIAR_SWITCH_FINITE_MARGIN.md), [calibration theorem](FAMILIAR_SWITCH_CALIBRATION.md) and [measurement analysis](FAMILIAR_SWITCH_MEASUREMENT_COST.md) retain their single-preparation statements. Their nominal gap exceeds $1/2000$; the calibrated gap exceeds $3/10000$. They are not overwritten by the two-preparation comparison.
 
-The twelve-state target retains an exact eleven-state stationary upper and [ordinary minimum twelve](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) at mean error $2^{-220}$ on 12,766 experiments of at most 66 ticks. Unrestricted minimum eleven is established on the narrower $2^{-1360}$ interval and a different menu. Nine reversible states suffice at $1/2376$, and two at $557/51920$, uniformly over its two-field protocols.
+The [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives exact counts $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ for a separate capped hub-interface family. The [variance principle](KINETIC_VARIANCE_COMPRESSION.md) supplies all-protocol compression through kinetic heterogeneity and hidden mixing. The [asymptotic reversal theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md) remains a separate polynomial-versus-exponential result with its own interface and reversal convention.
 
-The [asymptotic reversal theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md) remains a separate result: unrestricted and generalized-reversible growth are polynomial, ordinary-reversible growth exponential, under its common cap and interface. Generalized reversal can have zero stationary entropy production.
-
-This continuation starts from published commit c05f2b099e815146646f2c4df8e16f8f0cbe6a04, tree 2c1f3cdad1f15b9ed3832b09148c8b93448378dd, with successful [CI run 35941179639](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35941179639). The 93 protected baseline files, earlier proof bindings, nine recovery files and original license remain preserved. [Verification](VERIFICATION.md) distinguishes local completion from publication CI.
+This continuation starts from published commit 3c56fd45ff5f5988e59c0a4aff833663b53ded53, tree 6195a00f28c296b9e7b38309e604559e7c1f0068, with successful [CI run 35944183992](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35944183992). The 95 protected baseline files, earlier proof bindings, nine recovery files and original license remain preserved. [Verification](VERIFICATION.md) distinguishes local completion from publication CI.
