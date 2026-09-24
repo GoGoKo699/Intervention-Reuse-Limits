@@ -1,6 +1,52 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: establish the significance of the physical core — 24 September 2026
+## Current priority: test whether the state-count mechanism extends — 25 September 2026
+
+This checkpoint starts from published commit
+`2243fbedf8ae1a2ba944d6e33507d2e1613179d8`, tree
+`8813fec08175fb15397499edc658ce44ef827f4b`, with successful
+[CI run 36035495643](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36035495643).
+Preserve all older proof snapshots, verifiers, reports and claim rows
+R1–R66, along with the license, dependencies and workflow. Existing
+authorization covers non-forced public-main publication. Collaborator
+contact is not authorized. Manuscript drafting remains last.
+
+The [control-scope assessment](../docs/FAMILIAR_SWITCH_CONTROL_SCOPE.md)
+records two completed boundaries. Passive pair laws have state minima
+three/three; one passive triple has minima four/four, even without rival
+stationarity or reversibility. The exact signed-control criterion gives
+three general states only below a threshold determined by coupling, field
+range and the hidden/visible attempt-rate ratio. Above it the general
+minimum is four, although linear mean order remains three. Ordinary
+reversible models require four throughout the nondegenerate signed task.
+
+The signed result holds for all endpoint protocols and for a finite
+23-pair menu of at most five ticks, with one common arbitrary preparation.
+For a three-state exact fit, positive equilibrium preparation and Gibbs
+stationary tilt follow from the data. Positive finite-menu TV margins
+exist without a rival rate cap, but numerical values are not certified.
+The old four-word arbitrary-preparation result retains its distinct force
+premise; endpoint detector contracts do not supply an ideal middle readout.
+
+**Single next scientific priority:** determine whether the same mechanism
+gives a useful structural statement for a broader established kinetic
+family. Start with the three-switch open chain already described in
+FAMILIAR_SWITCH_STRUCTURE, and check its physical model sources and exact
+realization constraints before adding assumptions. Its known four-dimensional
+mean closure is not a four-state positive realization. Seek a simple
+state-count or control-range principle; a more complicated isolated example
+or a larger numerical table is not enough.
+
+The [new source audit](../docs/FAMILIAR_SWITCH_CONTROL_SCOPE_SOURCE_AUDIT.md)
+identifies established shared-realization and cone methods and records
+the Taghavian normalization correction. Preserve those attributions.
+The candidate contribution is the exact physical-model criterion and
+task-dependent state count, not a new general realization technique.
+PRL significance remains unestablished. Do not infer physical-bit savings,
+target dissipation, a predictor heat cost or complete-path equivalence.
+Further detector tuning and manuscript drafting stay deferred.
+
+## Historical priority: establish the significance of the physical core — 24 September 2026
 
 This checkpoint starts from published commit
 `8c59beb11b4e4e19915ca31fefa7f5b8b0b37bdd`, tree

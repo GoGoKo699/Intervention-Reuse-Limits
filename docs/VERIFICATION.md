@@ -4,11 +4,62 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-eight mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-nine mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: a source-grounded generic four-word theorem
+## Current checkpoint: temporal records and signed-control feasibility
+
+The published baseline is `2243fbedf8ae1a2ba944d6e33507d2e1613179d8`, tree
+`8813fec08175fb15397499edc658ce44ef827f4b`, with successful
+[CI run 36035495643](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36035495643).
+The new [scope assessment](FAMILIAR_SWITCH_CONTROL_SCOPE.md) links the
+[passive/triple proof](FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md),
+[signed-control proof](FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md), and
+[primary-source comparison](FAMILIAR_SWITCH_CONTROL_SCOPE_SOURCE_AUDIT.md).
+The signed theorem includes every positive hidden/visible attempt-rate
+ratio, the equality boundary, a finite 23-pair menu, and positive-margin
+existence without a rival rate cap. Common preparation is essential and
+differs from the old four-word arbitrary-preparation comparison.
+
+The [new verifier](../scripts/verify_switch_control_scope.py) passes
+**166 exact symbolic, rational, algebraic and provenance checks** under
+pinned Python 3.13.5 and SymPy 1.14.0. Its largest matrix dimension is four.
+The [report](../reports/switch_control_scope.json) binds 34 proof snapshots,
+including the two new universal notes and the frozen physical-core input.
+It checks the passive birth–death law and detailed balance, conditional
+slice determinants and TV algebra, exact pair-preserving triple errors,
+the signed triangle and threshold, arbitrary-rate closure independently
+for the physical and reduced generators, and all entries of the 23-word
+Hankel/shifted-table menu. Feasible, equality and infeasible fixtures use
+exact arithmetic. There is no optimization, sampling or parameter sweep.
+
+The two universal derivations and the unequal-rate appendix received
+independent internal review. The positive-rate inequalities, transfer to
+arbitrary three-state CTMC rivals, simple-spectrum logarithm argument and
+compactness proof supply statements that finite fixtures cannot prove.
+In particular, no numerical value is claimed for the signed finite-menu
+TV margin. The temporal theorem's explicit lower margin is distinct from
+its exact optimum under fixed pair marginals.
+
+New verifier SHA-256:
+`1343df7a5a3397ed7270f39fcbed2fcd98c6e9d5b79505b4913f7df12aa2e22c`.
+New report SHA-256:
+`93d74f9c605fbfcc69a70f825b722cc67f1ce39fd3aee4b4d4f460f792f0ac7d`.
+All earlier proof snapshots, mathematical scripts, saved reports, license,
+dependencies, workflow and claim rows R1–R66 remain unchanged.
+These checks do not establish ideal sensor performance, hardware savings,
+thermodynamic cost, literature priority or PRL significance.
+
+The complete local `make check` passed: all 59 mathematical verifiers and
+four saved-model replays regenerated **63 reports byte for byte**.
+The baseline manifest confirmed all 296 files outside the nine intended
+navigation/build edits and all 66 historical R rows were unchanged.
+This checkpoint adds four notes, one verifier and one report. Remote CI
+for the resulting commit is checked separately; the successful run linked
+above belongs to the published baseline.
+
+## Historical checkpoint: a source-grounded generic four-word theorem
 
 The published baseline is `8c59beb11b4e4e19915ca31fefa7f5b8b0b37bdd`, tree
 `5a450530164e6aa678e884deb327f8721a32c30f`, with successful

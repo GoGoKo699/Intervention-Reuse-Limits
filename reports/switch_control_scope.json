@@ -1,0 +1,240 @@
+{
+  "arithmetic": "Exact rational and algebraic matrices and symbolic identities; no floating point or search",
+  "checks": 166,
+  "exact_fixtures": {
+    "clock": "a=b=5 log(2), t=4/5",
+    "outside_scope": "The negative rate is a construction check; the bound proof, not this fixture, excludes every three-state rival.",
+    "pair_correlation_a": "461/1024",
+    "signed_fixtures": [
+      {
+        "criterion_value": "19/25",
+        "region": "inside",
+        "t": "4/5",
+        "u": "1/3"
+      },
+      {
+        "criterion_value": "1",
+        "region": "boundary",
+        "t": "sqrt(10)/5",
+        "u": "1/2"
+      },
+      {
+        "criterion_value": "1047/625",
+        "region": "outside",
+        "t": "4/5",
+        "u": "3/5"
+      }
+    ],
+    "target_D": "23409/1048576",
+    "triple_fits": [
+      {
+        "model": "passive_reversible",
+        "triple_TV": "23409/2097152"
+      },
+      {
+        "model": "one_sided_stationary",
+        "triple_TV": "23409/2097152"
+      }
+    ],
+    "unequal_rate_fixtures": [
+      {
+        "criterion_slack": "-53/50",
+        "ratio": "1/2"
+      },
+      {
+        "criterion_slack": "-422/625",
+        "ratio": "1"
+      },
+      {
+        "criterion_slack": "0",
+        "ratio": "903/481"
+      },
+      {
+        "criterion_slack": "59/625",
+        "ratio": "2"
+      }
+    ]
+  },
+  "finite_signed_menu": {
+    "count": 23,
+    "max_ticks": 5,
+    "scope": "One common arbitrary preparation across words; exact CTMC threshold and parameter-dependent positive-error existence. No per-word preparation freedom or optimized experiment count is claimed.",
+    "words": [
+      [
+        "-H"
+      ],
+      [
+        "0"
+      ],
+      [
+        "H"
+      ],
+      [
+        "-H",
+        "H"
+      ],
+      [
+        "0",
+        "H"
+      ],
+      [
+        "H",
+        "-H"
+      ],
+      [
+        "H",
+        "0"
+      ],
+      [
+        "H",
+        "H"
+      ],
+      [
+        "-H",
+        "H",
+        "H"
+      ],
+      [
+        "0",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "-H",
+        "H"
+      ],
+      [
+        "H",
+        "0",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "-H"
+      ],
+      [
+        "H",
+        "H",
+        "0"
+      ],
+      [
+        "H",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "-H",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "0",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "-H",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "0",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "-H",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "0",
+        "H",
+        "H"
+      ],
+      [
+        "H",
+        "H",
+        "H",
+        "H",
+        "H"
+      ]
+    ]
+  },
+  "input_report_sha256": {
+    "reports/switch_physical_core.json": "4b5da0f863c60f09dc656451528c97a1c768089a6d63074e1bfb31e2816c622b"
+  },
+  "largest_matrix_dimension": 4,
+  "limitations": "Mathematical checks do not establish sensor nondisturbance, a thermodynamic implementation, literature priority or PRL significance.",
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md": "9573c9a70ac82c319a49f09e7f7d72024c0f6816091a54a2aff6228fee871342",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md": "63e18ab4e4d059cab98cb687f8e5926452c86a5e3c1cceebe83ea7e9036336a4",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md": "4618b2f6882bbc0d4bfe7161b71d14c8c3f16fa0600dc9a3f0324417066b896c",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md": "eb35e4b689e6a06573eea0fa12e91e19a41c08c23ec14bf0d5262c0b1846a5b9",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md": "311ddad97cfec6ab09a733565e5655532a4449f2b1ff4c33a37516565ed592fa",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md": "42530472f40412d9e1f93d868a4df1dd2d833ba34ee89f8531df1cb1679dec0a",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md": "b9cefb9caa480b7e60271de6e6093c24766d30c6b1a1832d8c8f1c91cdbdadc3",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md": "126fbcb68b9d552d461134f0f56853592a0cf34e6b16fa06f253ffb110cb9365",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f"
+  },
+  "source_sha256": {
+    "verify_switch_control_scope.py": "1343df7a5a3397ed7270f39fcbed2fcd98c6e9d5b79505b4913f7df12aa2e22c",
+    "verify_switch_physical_core.py": "0bc9e8be9abf10987ebd1158d2509f938b779fcd861134bfabb38158937952df"
+  },
+  "status": "PASS",
+  "symbolic_certificate": {
+    "domain": "0<t<1, 0<u<1, -u<=m<=u; continuous-time models, one common preparation",
+    "nominal_signed_expression": "1047/625 > 1",
+    "scope": "Universal positivity, transfer to arbitrary rivals, and positive-error existence are proved in the bound notes.",
+    "signed_criterion": "3*t^2*u^2+(1+t^2)*u <= 1",
+    "triple_TV_if_pairs_exact": "D/2",
+    "triple_TV_lower": "(sqrt(1+D/2)-1)/2",
+    "triple_covariance": "(1-t^2)*exp(-a-b)*sinh(t*a)*sinh(t*b)",
+    "unequal_rate_criterion": "(ratio+2)*t^2*u^2+(1+t^2)*u <= ratio"
+  },
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  }
+}

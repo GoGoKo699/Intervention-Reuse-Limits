@@ -2,15 +2,32 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-The current example uses a [published model of two capacitively coupled quantum dots](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md). In its equilibrium, single-level, weak-tunneling and wide-band specialization, the four charge configurations are equivalent to two interacting time-even switches with energy $-JSZ-hS$. The source map distinguishes accepted approximations, compensated gate control, our parameter choices and unvalidated instrument premises.
+The [published coupled-dot model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) now gives a precise example of **how control range and temporal observations change the minimum number of predictive Markov states**. Its four configurations have three-dimensional closed mean dynamics, but a positive three-state model cannot serve every prediction task.
 
-**Four experiments have minimum predictive state counts three and four.** Prepare the target at low-field equilibrium and record its initial and final visible charge for $0,H,0H,H0$. For every finite $J,H,\tau_0,\tau_H>0$ with equal attempt rates, a positive three-state Markov predictor exactly matches all four pair laws. Every ordinary reversible predictor needs four states, even with different arbitrary preparations for each experiment. Both classes retain a deterministic binary readout, fixed field kernels, positive stationary laws and the same Gibbs force coupling. The [minimal theorem](docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md) also gives a positive parameter-dependent interval of allowed TV error. It does not claim one numerical tolerance uniformly over all parameters.
+| Required ideal data | General Markov states | Ordinary reversible states |
+| --- | ---: | ---: |
+| Passive endpoint pairs at two lags; also all passive pairs | 3 | 3 |
+| Four controlled pairs $0,H,0H,H0$ | 3 | 4 |
+| One passive three-time law | 4 | 4 |
+| Signed-control endpoint pairs | 3 or 4, with an exact threshold | 4 |
 
-The force requirement has a physical basis: a fixed equilibrium reduction that retains the measured charge [inherits its Gibbs tilt](docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md). Such a reduction need not close as a Markov process. The three-state construction is a different predictive realization and necessarily has stationary currents at at least one held field. The physical target has none at either held field; the pulse sequence itself is driven. The theorem concerns endpoint-pair prediction, not complete paths, hardware storage or thermodynamic implementation cost.
+The [passive/triple theorem](docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md) supplies an explicit reversible three-state model for passive pairs. Adding one ideal intermediate observation forces four states even without detailed balance: a singleton middle-sign sector would make past and future independent, while the target retains dependence in both sectors. This gives a positive TV margin and an exact triple error when all pair marginals must remain correct.
 
-The [closest-result comparison](docs/FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md) identifies substantial precedents for reciprocity, singleton inference, reversible reduction and artificial-irreversibility warnings. The candidate contribution is the complete shared-control three-versus-four positive-realization separation. **PRL significance remains unestablished.** The next research decision concerns its broader value for equilibrium model reduction. Detector feasibility is a separate conditional extension; further threshold tuning and manuscript drafting remain deferred.
+The [signed-control theorem](docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md) supplies the other boundary. Write $t=\tanh J$, $u=\tanh H$, and let $r=\Gamma_Z/\Gamma_S>0$ be the hidden/visible attempt-rate ratio. One positive three-state model matches every endpoint pair under all protocols in $[-H,H]$ **if and only if**
 
-[Internal scope review](docs/FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md) · [Exact certificate](reports/switch_physical_core.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+$$
+ (r+2)t^2u^2+(1+t^2)u\le r.
+$$
+
+Otherwise the general minimum is four. The linear mean dimension stays three across this boundary; nonnegative rates under the enlarged control range cause the additional state requirement. At the previous equal-rate operating point, allowing both field signs removes the three-state advantage. Faster hidden relaxation can restore it.
+
+The same boundary is determined by **23 endpoint-pair experiments**, each at most five ticks long, from one common arbitrary initial preparation. The data force equilibrium preparation and the stationary Gibbs tilt for any exact three-state fit; those laws need not be assumed separately. Positive finite-menu TV margins exist, but their numerical sizes are not yet calculated. This reuse condition differs from the [four-word theorem](docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md), which permits arbitrary per-word preparation while imposing the common force interface. The passive/triple rows likewise retain their own kernel and observation conditions.
+
+The [scope assessment](docs/FAMILIAR_SWITCH_CONTROL_SCOPE.md) explains which smaller model is valid for which task. The [primary-source comparison](docs/FAMILIAR_SWITCH_CONTROL_SCOPE_SOURCE_AUDIT.md) attributes the established realization, cone and conditional-independence tools. The candidate contribution is this explicit control-range criterion and complete state-count comparison in a familiar physical model. PRL significance remains unestablished; the next research question is whether the mechanism extends to a broader established kinetic family. Detector engineering and manuscript drafting remain deferred.
+
+These are ideal state-process theorems, with no claim of hardware-bit savings, predictor heat cost or complete-path equivalence. The shared physical model, control assumptions and limits are stated in the [community model contract](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md).
+
+[Exact certificate](reports/switch_control_scope.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
 
 ## Preserved finite-accuracy and detector extensions
 

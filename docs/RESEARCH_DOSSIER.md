@@ -2,43 +2,46 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
-## Current physical core — 24 September 2026
+## Current result: control range and observation scope — 25 September 2026
 
-The [community model contract](FAMILIAR_SWITCH_COMMUNITY_MODEL.md) grounds
-the target in published capacitively coupled single-level-dot dynamics,
-with an explicit equilibrium specialization, compensated gate control and
-pulse-limit convention. Ideal occupation-pair laws are model observables;
-acquiring them at a specified experimental accuracy remains a separate
-instrument question. No extra detector capability is used to establish
-the main theorem.
+The [scope assessment](FAMILIAR_SWITCH_CONTROL_SCOPE.md) now gives a
+concrete model-selection result for the same published coupled-dot family.
+Passive pairs have a reversible three-state realization; one passive
+three-time law requires four states even without equilibrium or stationary
+preparation premises on the rival. The [temporal proof](FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md)
+gives a positive unrestricted TV margin and the exact error when all
+pair marginals are retained. A model of endpoint pairs is therefore not
+automatically a model after intermediate observations.
 
-The [minimal four-word theorem](FAMILIAR_SWITCH_MINIMAL_THEOREM.md) now
-states the result for every finite positive coupling, field and pair of
-dwell times in the equal-attempt family. Its minimum state counts are
-three for positive stationary predictors and four for ordinary reversible
-predictors, with a positive parameter-dependent TV interval. Rivals keep
-the same deterministic binary readout and Gibbs force relation but may
-prepare each word arbitrarily. The positive upper matches initial/final
-pair laws under all finite nonnegative-field words from low equilibrium;
-intermediate-observation and full-path equality are not asserted.
+The [signed-control theorem](FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md)
+proves an exact threshold: with $t=\tanh J$, $u=\tanh H$, and attempt
+ratio $r=\Gamma_Z/\Gamma_S>0$, three states suffice exactly when
+$(r+2)t^2u^2+(1+t^2)u\le r$. Above it, even the general class needs
+four. Ordinary reversible models always need four for positive coupling
+and field. The linear mean dimension stays three across the threshold.
+The criterion is equivalent for all signed-field endpoint protocols and
+a fixed 23-word pair menu of at most five ticks. The latter has positive,
+unquantified TV margins and permits an arbitrary common preparation.
+Any exact three-state fit must inherit positive equilibrium preparation
+and the Gibbs stationary family from the data.
 
-The [equilibrium reduction note](FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md)
-derives force inheritance from a fixed readout-compatible equilibrium
-map. This standard fact gives the comparison class a physical basis;
-it does not establish Markov closure or make the circulating predictor
-a physical coarse-graining. The result quantifies a cost in Markov state
-count of retaining equilibrium structure in controlled prediction.
+The new common-preparation requirement differs from the four-word lower's
+arbitrary per-word preparations and declared force rule. The temporal
+result separately requires an ideal nondisturbing middle observation.
+No detector guarantee, full-path compression, hardware-bit saving or
+thermodynamic implementation cost is inferred.
 
-The [primary-source comparison](FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
-and [scope review](FAMILIAR_SWITCH_PHYSICAL_CORE_REVIEW.md) identify the
-complete positive-realization separation as the candidate contribution.
-The return identity and broad artificial-irreversibility warning have
-strong precedents. PRL significance and complete priority assessment
-remain open. The next research priority is to establish a broader modeling
-consequence or accept a narrower publication scope. Further detector
-engineering, minor numerical tuning and manuscript drafting are deferred.
+The [source audit](FAMILIAR_SWITCH_CONTROL_SCOPE_SOURCE_AUDIT.md) compares
+the complete claims with switched realization, common-cone and hidden-state
+factorization results, and corrects older Taghavian normalization wording.
+These are established methods; the candidate contribution is the explicit
+physical-model criterion and state-count map. Broader significance remains
+open. The next research task is to test whether the mechanism survives a
+small, independently established extension of the kinetic family, beginning
+with the already-recorded three-switch chain. Do not equate its linear
+closure with a positive Markov upper. Manuscript drafting stays last.
 
-[Exact symbolic certificate](../reports/switch_physical_core.json) ·
+[Exact certificate](../reports/switch_control_scope.json) ·
 [Verification](VERIFICATION.md).
 
 ## Historical development and conditional extensions
