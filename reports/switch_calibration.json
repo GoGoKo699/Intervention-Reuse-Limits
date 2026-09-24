@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction polynomial algebra, certified coefficient boxes, rational exponential lower sums and rational logarithm enclosures",
+  "calibration_box": {
+    "variable_order": [
+      "mH",
+      "mHH",
+      "mHHH",
+      "mH0",
+      "mHH0",
+      "mH0H",
+      "mHH0H",
+      "stationary_baseline_mean",
+      "tanh_field_increment"
+    ],
+    "mean_radius_about_nominal_target_exact": "1/1250",
+    "inherited_target_center_mean_radius": "2^-120",
+    "baseline_mean_absolute_bound_exact": "1/10000",
+    "tanh_field_increment_center_exact": "4/5",
+    "tanh_field_increment_radius_exact": "1/10000",
+    "approximate_Gibbs_stationary_TV_bound_exact": "1/100000",
+    "nominal_occupation_error_exclusion_exact": "1/2500",
+    "adjugate_diagonal_difference_absolute_upper_exact": "5427/500000",
+    "adjugate_lower_entry_absolute_upper_exact": "4771/250000",
+    "sign_certificates": {
+      "-1": {
+        "center_absolute_lower_exact": "291/2500000",
+        "whole_box_variation_upper_exact": "457/5000000",
+        "exact_tilt_slack_lower_exact": "1/40000",
+        "approximate_tilt_residual_upper_exact": "1/300000",
+        "remaining_polynomial_slack_lower_exact": "13/600000"
+      },
+      "1": {
+        "center_absolute_lower_exact": "291/2500000",
+        "whole_box_variation_upper_exact": "17/625000",
+        "exact_tilt_slack_lower_exact": "1/40000",
+        "approximate_tilt_residual_upper_exact": "1/300000",
+        "remaining_polynomial_slack_lower_exact": "13/600000"
+      }
+    },
+    "scope": "This exact local box excludes both necessary approximate-Gibbs residual bands. The analytic stationary-law and reversibility argument supplies the universal connection to arbitrary ordinary rivals; baseline bias is not a substitute for controlling nonstationary preparation."
+  },
+  "positive_three_state_extension": {
+    "tanh_field_interval_exact": [
+      "-1/10000",
+      "9/10"
+    ],
+    "total_states": 3,
+    "strict_total_exit_cap": 2,
+    "scope": "The positive generator family matches the physical target exactly from corresponding stationary preparations, including the slightly negative low field. For target preparation within TV epsilon_p of equilibrium, only an occupation-error upper bound epsilon_p is inferred."
+  },
+  "physical_transfer_and_reset": {
+    "preparation_TV_tolerance_exact": "1/100000",
+    "field_error_tolerance_exact": "1/100000",
+    "per_tick_time_error_tolerance_exact": "1/100000",
+    "combined_occupation_displacement_exact": "400300697/4100000000000",
+    "combined_displacement_upper_exact": "1/10000",
+    "actual_occupation_separation_lower_exact": "3/10000",
+    "minimum_state_count_tolerance_interval_exact": [
+      "1/100000",
+      "3/10000"
+    ],
+    "reset_actual_wait_lower_exact": "62",
+    "reset_stationary_mass_lower_exact": "99999/2000000",
+    "reset_spectral_gap_lower_exact": "1/5",
+    "reset_exponential_lower_bound_degree": 64,
+    "nominal_reset_actual_wait_lower_exact": "55",
+    "nominal_reset_exponential_lower_bound_degree": 32,
+    "scope": "These are exact arithmetic checks of the analytic perturbation and mixing bounds, not an exhaustive verification of all time-dependent physical protocols. The reset bound concerns the physical target; no finite universal reset wait is inferred for uncapped rivals."
+  },
+  "sampling": {
+    "type_I_error_bound_exact": "1/20",
+    "type_II_error_bound_exact": "1/20",
+    "target_probability_center_error": "2^-121",
+    "sufficient_count_gap_correction": "2^-120",
+    "logarithm_certificate": {
+      "method": "Positive atanh series with rational range reduction and geometric tail",
+      "terms_per_reduced_log": 32,
+      "uniform_interval_width_upper": "1/10^30"
+    },
+    "sufficient_sample_counts": [
+      {
+        "case": "nominal",
+        "occupation_separation_exact": "1/2000",
+        "additional_occupation_bias_bound_exact": "0",
+        "model_error_allowance_exact": "0",
+        "sufficient_trials_per_word": 45078317,
+        "sufficient_trials_total_seven_words": 315548219
+      },
+      {
+        "case": "calibrated",
+        "occupation_separation_exact": "3/10000",
+        "additional_occupation_bias_bound_exact": "0",
+        "model_error_allowance_exact": "0",
+        "sufficient_trials_per_word": 125217547,
+        "sufficient_trials_total_seven_words": 876522829
+      },
+      {
+        "case": "calibrated_with_model_error",
+        "occupation_separation_exact": "3/10000",
+        "additional_occupation_bias_bound_exact": "0",
+        "model_error_allowance_exact": "1/10000",
+        "sufficient_trials_per_word": 281739481,
+        "sufficient_trials_total_seven_words": 1972176367
+      },
+      {
+        "case": "nominal_with_additional_bias",
+        "occupation_separation_exact": "1/2000",
+        "additional_occupation_bias_bound_exact": "1/100000",
+        "model_error_allowance_exact": "0",
+        "sufficient_trials_per_word": 48913105,
+        "sufficient_trials_total_seven_words": 342391735
+      }
+    ],
+    "per_observation_KL_upper_exact": "700569/218750000000",
+    "fixed_integer_total_trials_lower": 794999,
+    "adaptive_expected_total_trials_strict_lower_exact": "270000*log(19)",
+    "adaptive_expected_total_trials_outward_lower_exact": "198749631/250",
+    "nominal_sum_word_durations_exact": "36",
+    "calibrated_sum_word_durations_upper_exact": "1800009/50000",
+    "nominal_55_wait_example_serial_exposure_exact": "20592417205",
+    "calibrated_62_wait_example_serial_exposure_upper_exact": "2942613481457923/50000",
+    "scope": "The analytic testing argument supplies the concentration and adaptive-information inequalities. These exact checks certify their numerical constants and distinguish integer trial counts from a real-valued expected stopping time. The lower bound uses the nominal target and frozen explicit ordinary witness on this seven-word menu; it is not a lower bound for every possible experiment design."
+  },
+  "largest_dense_matrix_dimension": 3,
+  "floating_arithmetic_used": false,
+  "numerical_optimization_used": false,
+  "limitations": [
+    "The exact box computation is an essential computer-assisted premise; the all-rival residual identity, perturbation and statistical arguments are analytic.",
+    "Baseline bias refers to a stationary law. Preparation errors are separate total-variation assumptions.",
+    "A fixed propagator per field or independent identically distributed timing mixtures are covered; correlated occurrence-dependent drift is not automatically covered.",
+    "The rational stochastic-kernel fixtures test algebra and are not claimed to be continuous-time exponential realizations.",
+    "The finite physical reset wait supplies a target preparation guarantee, not a universal preparation procedure for arbitrary uncapped rivals."
+  ],
+  "source_sha256": {
+    "verify_switch_calibration.py": "64ed3efabee62971b3ecb4d4a932fb337e1af887ccab2a07bfb5e3e0a7fae9b2",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/familiar_switch_margin.json": "dfe9757f74a6fc2d45f239e65292cfc613f913685f895896a9b229cc16067141"
+  },
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_MEASUREMENT_COST.md": "e5ea44b5dfebc74b6071fc1f2faa302dae47ff52fac67745b4022ccab3d02317",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "checks": 112
+}
