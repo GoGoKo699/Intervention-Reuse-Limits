@@ -4,11 +4,27 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-seven mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-eight mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: direct snapshots and fixed-score tests
+## Current checkpoint: unknown detector contrasts and a charge-model bridge
+
+The published baseline `778954f18164c3a228b845be07298ba1a33326eb`, tree `e08a840c71d2474a5ad4866d9daf1c39969e92f6`, had 47 mathematical verifiers, four saved-model replays and successful [CI run 35962664555](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35962664555). This continuation protects all **105** baseline verifier/report/license/dependency/workflow files, all earlier proof bindings, nine recovery files and historical claim rows R1–R45.
+
+The [unknown-detector proof](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) eliminates the two independent symmetric detector contrasts using four corners of a bilinear polynomial. Its numerical guarantee allows target bit errors anywhere in $[0,0.01]$ and rival errors anywhere in $[0,0.5]$, with the specified channel form fixed across protocols. It certifies nominal recorded joint-TV gap $>3/8000$ and, under the existing physical/stationary allowances, actual gap $>1/5000$. The general-three upper is $1/50000$. A new localized confidence-box test has both error probabilities below 5% with 508 million independent paired trials, or 1.016 billion binary readouts. This is a conservative sufficient allocation for the enlarged exact-null class, not a transfer of the old calibrated score budget.
+
+The [charge-model derivation](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) gives an exact sequential-tunneling specialization and a positive three-state predictor for attempt ratios $[2/3,2]$, with common exit cap three in observed-attempt units. The old numerical gap and sample counts remain restricted to equal attempts. The [preparation boundary](FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) gives two continuous-time counterexamples to insufficient observable checks and an optional five-protocol response-preparation bound. The [primary-source audit](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) does not claim a demonstrated device meeting all tolerances.
+
+[verify_switch_physical_interface.py](../scripts/verify_switch_physical_interface.py) and [switch_physical_interface.json](../reports/switch_physical_interface.json) bind the three new mathematical notes and the inherited exact snapshot premise. They use rational arithmetic, small formal polynomials and matrices of dimension at most four. The [internal review](FAMILIAR_SWITCH_PHYSICAL_INTERFACE_INTERNAL_REVIEW.md) records the independent proof/source checks and the statistical localization correction. Universal conclusions still depend on the analytic arguments, rather than enumeration of rivals.
+
+The final new source SHA-256 is `d15d2066419b98e6994d31a120d869b6cc2d3820b7f93d7482bda8b6e45af523`; report SHA-256 is `b0ada0ff7f600d974fdffc52ea315a071394eb0d7b487d6b8a1ba3d37e303157`. Its **108 exact checks** include three unconditional expected-proof-hash checks. The report binds all three new proof notes and seven inherited snapshots, imports the frozen snapshot report `b8ee6fb70d37d104ea89fe04e28c8872a8c81f97d108771bd89d14ef2ad9e2cb`, and identifies the frozen rational helper. An independent final pinned replay reproduced the canonical report byte for byte.
+
+**Completed local gate:** `make check PYTHON=.venv/bin/python` passed **48 mathematical verifiers and four saved-model replays** under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. The complete captured log contains all **53** commands, including the repository checker and final snapshot replay. All **52** fresh reports are PASS and byte-identical to saved evidence. All 105 protected baseline files, earlier proof bindings, nine recovery files and historical claim rows R1–R45 remain unchanged. The checker passes **2,036 local Markdown links**, **53 Python syntax checks**, report/source/proof/input provenance and the original MIT license; `git diff --check` passes. New work uses maximum dense dimension four; the historical suite maximum remains 68.
+
+Published-commit CI is separate evidence and is checked after non-forced publication. The baseline CI cited above certifies only that earlier commit. No manuscript was drafted.
+
+## Historical checkpoint: direct snapshots and fixed-score tests
 
 The published baseline `5ad525792de4e4fe6c681b067d7185e018265082`, tree `cdfa71f58ca37c832f5631e5c21484ae88b25805`, had 45 mathematical verifiers, three saved-model replays and successful [CI run 35958827202](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35958827202). This continuation protects all **99** baseline verifier/report/license/dependency/workflow files, all earlier proof bindings and nine recovery files.
 

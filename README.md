@@ -21,11 +21,22 @@ $$
 
 where $u=\tanh H$. The coupled pair violates both. This necessity has no rival rate cap and includes arbitrary reversible stochastic tick kernels. One fixed model, preparation, instrument and readout must explain both protocols. Shared Gibbs stationary laws and the specified measurement model are substantive assumptions.
 
-**The nominal gap is almost pinned down.** At $J=H=\log3$ and tick $3/2$, the best ordinary-three-state maximum joint-law TV error lies strictly between **0.00184 and 0.00185**, a bracket of ratio $185/184$. The lower covers the entire rival class; the upper is one certified feasible ordinary model. Three general stationary states are exact for these two joint laws. The longest active experiment lasts three attempt-time units. This does not assert arbitrary multitime path-law equality.
+**New: the detector contrasts need not be calibrated.** Let $(M,C,L,D)$ be the four recorded moments, after independent symmetric bit flips. The [unknown-readout witness](docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) uses
+
+$$
+ R=u(C-D)+uMD-(u-M)L>0,
+ \qquad 0<M<u,\quad L,D>0,\quad C<D.
+$$
+
+These conditions exclude every ordinary model with at most three states even if each rival chooses its own initial and final error probabilities anywhere in $[0,1/2]$. Its detector must still be memoryless, symmetric, independent across the two bits, and fixed across protocols. For a target whose two bit-error probabilities are at most 1%, the nominal recorded-table gap is **greater than 0.000375**. With the stated preparation, control, force-law and disturbance allowances, it remains **greater than 0.0002**, while three general states suffice within **0.00002**. Thus the state minima are three and four for $0.00002\le\delta_{\rm obs}\le0.0002$.
+
+A first conservative test for this enlarged class uses **508 million fresh paired trials**, with false rejection below 5% and target power above 95%. It covers the stated physical allowances without a separate model-approximation allowance. This establishes a finite sufficient cost; it is not an efficient or optimal design. The much smaller calibrated-detector counts below do not apply to this unknown-contrast null.
+
+**The earlier calibrated gap is almost pinned down.** At $J=H=\log3$ and tick $3/2$, the best ordinary-three-state maximum joint-law TV error with ideal readout lies strictly between **0.00184 and 0.00185**, a bracket of ratio $185/184$. The lower covers the entire stated rival class; the upper is one certified feasible ordinary model. Three general stationary states are exact for these two joint laws. The longest active experiment lasts three attempt-time units. This does not assert arbitrary multitime path-law equality.
 
 **Preparation, controls and measurement are included.** With simultaneous preparation TV, fixed field/tick errors and initial-readout disturbance budgets $10^{-5}$, stationary low-field bias and relative tilt uncertainty $10^{-4}$, and high-stationary-law discrepancy $10^{-5}$, the witness tolerates independent symmetric readout error probabilities **$0.01\pm10^{-5}$** at both observations. The recorded joint-law gap remains above **0.0015**; the state minima are three versus four for $4\times10^{-5}\le\delta\le0.0015$. Known detector noise, uncertainty in its calibration, and hidden-state disturbance are separate quantities. This 1% detector example is a mathematical operating point, not a device specification.
 
-The [fixed-score tests](docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) improve the measurement budget. Each design has false rejection below 5% and target power above 95%, under its stated class:
+The earlier [fixed-score tests](docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) improve the measurement budget for their specified detector classes. These counts do not transfer to the detector-unknown result. Each design has false rejection below 5% and target power above 95%, under its stated class:
 
 | Snapshot design | Fresh paired trials | Binary readouts |
 |---|---:|---:|
@@ -39,6 +50,12 @@ A separate ideal information lower requires at least **79,500 paired trials** fo
 The earlier **two-preparation, four-endpoint experiment** remains useful when initial observation is costly. Its [new score test](docs/FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md) needs **1,450,000**, **1,670,000**, or **1,890,000** single-readout trials for nominal, calibrated and calibrated finite-accuracy testing. These replace earlier sufficient confidence-box counts of 12,531,296, 15,859,920 and 18,045,064 on those same classes. Its [deterministic theorem](docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md) and [preparation costs](docs/FAMILIAR_SWITCH_PREPARATION_COST.md) remain unchanged. Preparation types, readouts and calibration premises differ between the designs; neither dominates every resource.
 
 The [exact snapshot certificate](reports/switch_snapshot_design.json), [endpoint certificate](reports/switch_endpoint_score.json), [saved-model replay](reports/switch_snapshot_screen.json), [source comparison](docs/FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md), and [internal review](docs/FAMILIAR_SWITCH_SNAPSHOT_INTERNAL_REVIEW.md) separate analytic proof, essential rational bounds and statistical assumptions. No large simulation is needed.
+
+**A conditional charge-state realization removes equal-rate tuning.** Two capacitively coupled nondegenerate dots, each exchanging electrons with an equilibrium reservoir, map exactly to the switches under the specified sequential Fermi-tunneling model. The [charge derivation](docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md) gives an exact three-state predictor for hidden-to-observed tunneling-rate ratios at least $2/3$ over the selected field range. Ratios from $2/3$ to $2$ also retain a common exit cap of three observed-attempt units. The numerical gaps and sample counts above remain tied to equal attempts. The [primary-source audit](docs/FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) distinguishes demonstrated device components from the unestablished complete experimental specification.
+
+**Preparation and the initial instrument remain real assumptions.** The [preparation boundary](docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) constructs a biased ordinary model whose entire low-field binary record looks equilibrated, and a disturbance that preserves every endpoint distribution while corrupting the initial/final correlation. It also gives an optional response-specific preparation check for at-most-three-state rivals, adding three protocol types under exact balance. This does not remove the instrument premise or inherit a previous trial count.
+
+The new combined [physical-interface verifier](scripts/verify_switch_physical_interface.py) and [report](reports/switch_physical_interface.json) pass 108 exact checks. The [internal review](docs/FAMILIAR_SWITCH_PHYSICAL_INTERFACE_INTERNAL_REVIEW.md) and [verification record](docs/VERIFICATION.md) distinguish analytic review, finite checks and the complete repository gate.
 
 The research target is **Physical Review Letters**; manuscript drafting remains the last step. The [current exploration](docs/PRL_EXPLORATION.md), [research dossier](docs/RESEARCH_DOSSIER.md), and [claim ledger](docs/CLAIM_LEDGER.md) retain the assumptions and unresolved questions. This is a controlled realization comparison, not an implementation-independent heat-cost result or a PRL-readiness claim.
 
@@ -120,4 +137,4 @@ For reproducibility, use the pinned environment and the [Makefile](Makefile):
 make check PYTHON=.venv/bin/python
 ```
 
-[Verification](docs/VERIFICATION.md) records the full suite and its limits. The certificates bound entire error boxes and fixed comparison models; they do not optimize over rival generators. The next scientific priority is a concrete realization with credible full-state preparation and a sufficiently gentle initial readout, alongside the closest-source comparison. The remaining sampling burden and calibration assumptions are obstacles to physical significance. Manuscript drafting remains deferred.
+[Verification](docs/VERIFICATION.md) records the full suite and its limits. The certificates bound entire error boxes and fixed comparison models; they do not optimize over rival generators. The next scientific priorities are a more efficient test for the enlarged detector-unknown class and independently supported preparation and initial-readout conditions for the charge candidate. The remaining sampling burden and instrument assumptions are obstacles to physical significance. Manuscript drafting remains deferred.

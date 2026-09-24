@@ -1,6 +1,74 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: opposite pulse orders, one preparation, and sharper tests — 24 September 2026
+## PRL: unknown symmetric readout noise and a charge-state bridge — 24 September 2026
+
+Continue from published commit 778954f18164c3a228b845be07298ba1a33326eb,
+tree e08a840c71d2474a5ad4866d9daf1c39969e92f6. Manuscript drafting
+remains deferred. Preserve every earlier proof, certificate binding and
+historical claim. Existing authorization for non-forced public-main
+publication remains in effect; collaborator contact is not authorized.
+
+The strongest new result is the
+[unknown symmetric-readout witness](../docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md).
+The same two protocols $0H,H0$, one equilibrium preparation and initial/final
+binary observations give four recorded moments $(M,C,L,D)$. The sign gates
+$0<M<u$, $L,D>0$, $C<D$, together with
+$u(C-D)+uMD-(u-M)L>0$, exclude all ordinary models with at most three
+states even if each chooses arbitrary independent symmetric detector
+error probabilities in $[0,1/2]$. Each detector remains fixed across
+the two protocols; its channel form, absence of feedback, and instrument
+properties are substantive assumptions.
+
+For the selected equal-rate target with bit-error probabilities at most
+one percent, the nominal recorded-table gap exceeds $3/8000$.
+With the specified $10^{-5}$ execution/preparation/disturbance allowances,
+$10^{-4}$ stationary bias and force-parameter tolerances, and $10^{-5}$
+high-law defect, it exceeds $1/5000$. A constructive general three-state
+predictor has error at most $2\times10^{-5}$, giving state minima three
+versus four for $2\times10^{-5}\le\delta_{\rm obs}\le2\times10^{-4}$.
+The new conservative test uses 254 million fresh paired trials per
+protocol, 508 million total, with false rejection below 5% and target
+power above 95% under its stated assumptions. This is a sufficient
+existence bound, not an efficient or optimal experimental design.
+The earlier calibrated score-test allocations do not apply to this
+enlarged null.
+
+The [charge realization](../docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md)
+maps nondegenerate single-level dots with capacitive repulsion and
+sequential Fermi tunneling to the switch model. A new positive triangle
+allows hidden-to-observed attempt ratios $r\ge2/3$ over the selected
+field range; $r\le2$ also gives common exit cap three in observed-attempt
+units. This exact compression removes equal-rate tuning but does not
+extend the previously certified finite-gap or sample constants to
+unequal attempts. The
+[realization source audit](../docs/FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md)
+separates established component physics from the unestablished complete
+device and its required error budgets.
+
+The [preparation/instrument boundary](../docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md)
+proves that low-only binary observations can miss hidden preparation
+bias, and endpoint-only disturbance checks can miss lost record/state
+correlation. Its optional response-specific preparation bound adds
+three protocol types and assumes exact balance. It does not remove
+the instrument premise or inherit a previous statistical design.
+
+The new [combined verifier](../scripts/verify_switch_physical_interface.py)
+and [report](../reports/switch_physical_interface.json) pass 108 exact
+checks at maximum dense dimension four. The
+[internal review](../docs/FAMILIAR_SWITCH_PHYSICAL_INTERFACE_INTERNAL_REVIEW.md)
+records the mathematical and source audits; final full-suite and
+published-commit evidence belong to [Verification](../docs/VERIFICATION.md).
+Keep analytic statements, exact finite certificates, physical
+approximations and source evidence distinct.
+
+**Next scientific priority:** reduce the conservative cost of testing the
+enlarged null and identify independently supportable preparation/instrument
+conditions for the charge candidate. Detector contrast calibration has
+been relaxed; symmetry, independence and cross-protocol constancy have
+not. No implementation-independent heat claim or laboratory feasibility
+claim follows.
+
+## Historical checkpoint: opposite pulse orders, one preparation, and sharper tests — 24 September 2026
 
 Continue the familiar coupled-switch project, with manuscript drafting deferred. Existing authorization covers non-forced public-main publication; no collaborator contact is authorized. This continuation starts from `5ad525792de4e4fe6c681b067d7185e018265082`, tree `cdfa71f58ca37c832f5631e5c21484ae88b25805`, successful [CI run 35958827202](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35958827202). Preserve all 99 protected baseline files, all earlier proof bindings and nine recovery files.
 
