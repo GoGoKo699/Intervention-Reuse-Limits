@@ -1,6 +1,66 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: repeated readout controls error-correlated backaction — 24 September 2026
+## PRL: four words remove rival preparation — 24 September 2026
+
+Continue from published commit `6f545598cd86bf8795eca8e58325c15e860a0889`, tree
+`4aa478b1a9c5f6c2f3c1b1192b4d336eb4e0bc80`, successful
+[CI run 35991112119](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35991112119).
+Preserve the 121 baseline source/report/license/dependency/workflow files,
+63 bound proof snapshots and historical claim rows R1–R61. Existing
+authorization covers non-forced publication to public main. Collaborator
+contact is not authorized; manuscript drafting remains last.
+
+The [four-word theorem](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md)
+adds single pulses $0,H$ to $0H,H0$. Any ordinary binary model with at most
+three states has a singleton visible sector. Conditional on that initial
+sign, arbitrary preparation disappears. Detailed balance and the common
+exact Gibbs tilt force one conditional-return residual to vanish. There
+is no rival balance, mixing-time, reset, shared-preparation or stationary
+initial-instrument promise. The initial instrument must preserve the
+visible sign exactly, and both stationary laws must be strictly positive.
+
+Throughout the independent one-percent kinetic target box, both residuals
+have the required signs with magnitude greater than $.009$. The
+[existing three-state realization extends](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md)
+to all four complete ideal pair laws, giving state minima three versus
+four for maximum pair-table TV error $0\le\delta\le.001$, even with arbitrary
+per-word rival preparations. This does not assert full-trajectory equality.
+
+The fixed test cycles through the four words for **nine million trials**,
+retains the first million records of each word/sign group, and rejects
+only when both signed residuals exceed $.004$. Incomplete quotas imply
+nonrejection. Ideal-bit size is below $.005$ and target miss below $.004$.
+Target power retains the conditional execution budget $79\times10^{-6}$;
+the physical target still requires preparation. Stopped martingale bounds
+avoid conditioning on quota completion.
+
+The [readout extension](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md)
+uses seven protected readings at both endpoints and two first-pair
+disagreement gates. Its size is below $.015$ and target miss below $.014$,
+at a cost of **126 million raw readings**. Same-use error/kick correlations
+are allowed. Exact sector protection and a fixed error probability given
+every pre-use state and history remain structural. Initial nonselective
+stationarity is needed for target power, not for the rival null; final
+stationarity is unnecessary. Calibration does not prove freshness. Neither
+fourteen-reading state minima nor the old approximate-null allowance is
+asserted for this new statistical experiment.
+
+[Exact verifier](../scripts/verify_switch_preparation_free.py),
+[report](../reports/switch_preparation_free.json),
+[source comparison](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_INTERNAL_REVIEW.md)
+separate universal arguments, finite certificates and prior tools. See
+[Verification](../docs/VERIFICATION.md) for final suite and publication status.
+
+**Single next scientific priority:** establish a concrete physical control
+and measurement specification for this four-word task, with explicit sector
+protection, conditional detector freshness, common stationary Gibbs tilt,
+and complete readout/reset exposure. Compare the combined state-cost theorem
+carefully with established detailed-balance reciprocity. Keep the elementary
+singleton mechanism central; do not restart minor score tuning, claim a device
+demonstration, infer an optimal sample count, or draft the manuscript yet.
+
+## Historical checkpoint: repeated readout controls error-correlated backaction — 24 September 2026
 
 Continue from published commit `3f7a368f072f03add7e0fcb6e233556cc31b8a39`,
 tree `3747fc54b6b12c7c42f192b220e85667c166fafc`, successful

@@ -1,0 +1,248 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction sparse polynomials, finite matrices and positive exponential series",
+  "singleton_and_concentration_identities": {
+    "unbalanced_reversible_symbolic_fixtures": [
+      {
+        "singleton_sign": -1,
+        "low_law_exact": [
+          "1/5",
+          "3/10",
+          "1/2"
+        ],
+        "high_law_exact": [
+          "1/17",
+          "6/17",
+          "10/17"
+        ],
+        "low_imbalance_exact": "3/5"
+      },
+      {
+        "singleton_sign": 1,
+        "low_law_exact": [
+          "1/5",
+          "3/10",
+          "1/2"
+        ],
+        "high_law_exact": [
+          "1/2",
+          "3/16",
+          "5/16"
+        ],
+        "low_imbalance_exact": "-3/5"
+      }
+    ],
+    "symbolic_flux_variable_count": 6,
+    "residual_linear_l1_upper_exact": "22/5",
+    "residual_linear_squared_l2_upper_exact": "28/5",
+    "scope": "Universal singleton and stopped-sampling arguments are in the bound proofs; the symbolic flux fixtures demonstrate both singleton orientations without a balanced stationary law."
+  },
+  "four_word_general_realization": {
+    "additional_word_order": [
+      "0",
+      "H"
+    ],
+    "single_word_mean_identities": [
+      "0",
+      "m"
+    ],
+    "single_word_correlation_identities": [
+      "(l+u*d)/u",
+      "1-m/u"
+    ],
+    "general_three_state_four_pair_error_exact": "0",
+    "scope": "The same inherited general three-state CTMC pair matches all four stationary ideal-bit pair laws. No intermediate-record or full repeated-readout transcript upper is claimed."
+  },
+  "percent_kinetic_residual_margin": {
+    "independent_edge_count": 8,
+    "relative_kinetic_interval_exact": [
+      "99/100",
+      "101/100"
+    ],
+    "moment_remainder_upper_exact": "146372172429/1000000000000000",
+    "propagated_residual_remainder_upper_exact": "585552964154584754723280123/1000000000000000000000000000000",
+    "expanded_containing_moment_box_exact": [
+      [
+        "218853627827571/1000000000000000",
+        "223146372172429/1000000000000000"
+      ],
+      [
+        "478853627827571/1000000000000000",
+        "487146372172429/1000000000000000"
+      ],
+      [
+        "123853627827571/1000000000000000",
+        "128146372172429/1000000000000000"
+      ],
+      [
+        "497853627827571/1000000000000000",
+        "505146372172429/1000000000000000"
+      ]
+    ],
+    "signed_residual_certificates": [
+      {
+        "sign": -1,
+        "polynomial_certificate": {
+          "coefficient_sha256": "624f83ed1d7dd2c8fb97c9af8336b133eca6275014d1bdebfb91452d93d637e4",
+          "nonzero_coefficients": 225,
+          "constant_enclosure_exact": [
+            "9915676650101/1000000000000000",
+            "4957838325051/500000000000000"
+          ],
+          "coefficient_l1_by_degree_upper_exact": {
+            "1": "7177528425951/250000000000000",
+            "2": "42675699743959/1000000000000000",
+            "3": "29796525451083/1000000000000000",
+            "4": "2399713197231/250000000000000"
+          }
+        },
+        "gradient_l1_upper_exact": "587833872172429/234375000000000",
+        "range_enclosure_exact": [
+          "451936254321/50000000000000",
+          "10792628213783/1000000000000000"
+        ]
+      },
+      {
+        "sign": 1,
+        "polynomial_certificate": {
+          "coefficient_sha256": "2dafbe146f96696235f0c259a92c637a247cd77dd00fb418308718964996758a",
+          "nonzero_coefficients": 225,
+          "constant_enclosure_exact": [
+            "-4957838325051/500000000000000",
+            "-9915676650101/1000000000000000"
+          ],
+          "coefficient_l1_by_degree_upper_exact": {
+            "1": "5726724579059/250000000000000",
+            "2": "15008620294053/500000000000000",
+            "3": "7449131362771/1000000000000000",
+            "4": "2399713197231/1000000000000000"
+          }
+        },
+        "gradient_l1_upper_exact": "670708872172429/937500000000000",
+        "range_enclosure_exact": [
+          "-5366653897303/500000000000000",
+          "-2274511376399/250000000000000"
+        ]
+      }
+    ],
+    "signed_uniform_margin_lower_exact": "9/1000",
+    "imported_perturbation_checks": 27,
+    "scope": "Exact coefficient bounds over the full eight-dimensional kinetic box, not a parameter grid or floating-point optimization."
+  },
+  "conditional_TV_and_memory_gap": {
+    "pair_TV_gap_lower_exact": "1/1000",
+    "conditional_error_at_gap_exact": "1/499",
+    "residual_displacement_at_gap_upper_exact": "22/2495",
+    "uniform_residual_margin_lower_exact": "9/1000",
+    "target_execution_TV_exact": "78025101/1000000000000",
+    "conservative_target_TV_exact": "79/1000000",
+    "target_conditional_return_error_upper_exact": "79/499921",
+    "general_state_minimum": 3,
+    "ordinary_state_minimum": 4,
+    "scope": "Four ideal initial/final pair laws with arbitrary per-word rival preparation, shared exact tilt and fixed dynamics; the general and ordinary upper models use stationary target preparation."
+  },
+  "ideal_sampling_certificate": {
+    "total_trials": 9000000,
+    "trials_per_word": 2250000,
+    "records_per_word_sign": 1000000,
+    "binary_readouts": 18000000,
+    "rejection_residual_threshold_exact": "1/250",
+    "quadratic_control_radius_exact": "1/100",
+    "quadratic_residual_bound_exact": "3/25000",
+    "null_linear_exponent_exact": "9409/1750",
+    "target_linear_exponent_exact": "1367663932665522/218680880460875",
+    "target_quota_exponent_exact": "249289505521/18000000",
+    "null_rejection_upper_exact": "1/200",
+    "target_miss_upper_exact": "1/250",
+    "scope": "Retain the first fixed quota in each observed true-sign group at a fixed horizon; incomplete groups cause nonrejection. Conditional Hoeffding is applied before conditioning on quota completion."
+  },
+  "repeated_readout_sampling_certificate": {
+    "total_trials": 9000000,
+    "trials_per_word": 2250000,
+    "records_per_word_sign": 1000000,
+    "initial_reads_per_trial": 7,
+    "final_reads_per_trial": 7,
+    "total_physical_binary_reads": 126000000,
+    "per_word_stage_error_cap": 50,
+    "number_of_count_tail_events": 8,
+    "error_count_mean_upper_exact": "937908/78125",
+    "per_count_tail_upper_exact": "450283905890997363/1267650600228229401496703205376",
+    "retained_mean_shift_upper_exact": "1/10000",
+    "residual_shift_upper_exact": "11/25000",
+    "null_linear_margin_exact": "43/12500",
+    "target_linear_margin_exact": "46801231/12498025000",
+    "null_linear_exponent_exact": "3698/875",
+    "target_linear_exponent_exact": "2190355223115361/437361760921750",
+    "per_stage_disagreement_gate_threshold_exact": "3/100",
+    "large_noise_null_gate_exponent_exact": "38088/25",
+    "target_gate_exponent_exact": "46818/25",
+    "target_observed_quota_exponent_exact": "6232160871873647470769881/450000000000000000000",
+    "null_rejection_upper_exact": "3/200",
+    "target_miss_upper_exact": "7/500",
+    "target_nominal_reset_attempt_units": 567000000,
+    "target_nominal_active_attempt_units": 16875000,
+    "target_nominal_reset_plus_active_attempt_units": 583875000,
+    "resource_cost_excludes_readout_and_barrier_durations": true,
+    "scope": "Two protected seven-read blocks with fixed fresh stage-specific errors, exact sector preservation, fixed hidden dynamics and a target true-bit pair budget. The true-sign comparison arrays are padded after the horizon if needed; the proof does not condition an oracle sampling law on observed completion. The raw transcript is not covered by the three-state upper."
+  },
+  "rival_preparation_promise_required": false,
+  "target_execution_promise_required": true,
+  "strictly_positive_stationary_laws_required": true,
+  "shared_exact_stationary_tilt_required": true,
+  "readout_conditional_freshness_required_for_noisy_test": true,
+  "full_raw_transcript_state_count_claimed": false,
+  "device_feasibility_claimed": false,
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_preparation_free.py": "cbd3a0cf4a1617f1c85653e6b5e2bbfd82687a4df202bec925dbcdc7da4da356",
+    "verify_switch_percent_kinetics.py": "6e59c54164d8bef4cca9a45b88a8b70c7dfcbfbd20afbaebc52d7aa7e9358525",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_percent_kinetics.json": "4ddbddfef6c3c31fc5785a21e51aeac521b0b8c5685e595a7b86c615d6ee807e",
+    "reports/switch_repeated_readout.json": "488a3e39aca64284acc388a91fd38d479b14b727eec0fbf6b21772225391d086"
+  },
+  "imported_repository_verifiers": [
+    "verify_switch_percent_kinetics.py",
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md": "42530472f40412d9e1f93d868a4df1dd2d833ba34ee89f8531df1cb1679dec0a",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md": "311ddad97cfec6ab09a733565e5655532a4449f2b1ff4c33a37516565ed592fa",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md": "eb35e4b689e6a06573eea0fa12e91e19a41c08c23ec14bf0d5262c0b1846a5b9"
+  },
+  "direct_checks": 182,
+  "imported_perturbation_checks": 27,
+  "checks": 209
+}

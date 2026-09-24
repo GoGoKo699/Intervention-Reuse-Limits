@@ -2,7 +2,23 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters* and emphasizes strength through simplicity. The [repeated-readout theorem](FAMILIAR_SWITCH_REPEATED_READOUT.md) now controls a same-use correlation between electronic error and hidden measurement backaction. Seven protected initial readings produce a majority whose equilibrium joint-label/state defect is exactly its binomial error. A first-two-reading disagreement gate on the same five million trials guards unknown rival error probabilities, while the original score retains size below 5% and power above 95%. The cost is 40 million raw readings. This requires one fixed error probability conditional on every pre-use state and history, a sector-preserving nonselective stationary instrument, and an independent final detector. Neither freshness nor stationarity follows from the gate. The old three-state fit concerns retained two-bit laws, not the full eight-reading transcript. Preparation remains separately promised; the optional five-type experiment remains unfinished. Manuscript drafting stays last and PRL readiness is not claimed.
+**Research target, 24 September 2026.** The new [four-word test](FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md) removes every rival preparation and mixing promise: condition on a singleton visible sector and test a detailed-balance return identity across $0,H,0H,H0$. The [exact three-state realization](FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md) matches all four ideal pair laws throughout the one-percent kinetic box, giving state minima three versus four for joint-table TV error through $.001$. The finite allocation is nine million trials, with ideal size below $.005$ and miss probability below $.004$. The [seven-plus-seven readout extension](FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md) costs 126 million raw readings and keeps size below $.015$ and miss below $.014$, under fresh fixed conditional errors and exact sector protection. Arbitrary rival preparation is allowed even with this readout. Target preparation/execution, the shared exact Gibbs tilt and fixed dynamics remain substantive. The four ideal-pair realization does not establish a predictor of the fourteen-reading transcript. Manuscript drafting stays last; device feasibility, complete novelty comparison and PRL readiness remain open.
+
+## Current advance: conditioning replaces rival preparation
+
+Write $r_{w,s}=\Pr(S_f=s\mid S_i=s,w)$. An ordinary model with at most three states and both visible signs has a singleton sector $s$. Sign-preserving initial observation leaves its hidden state fixed. For arbitrary per-word and history-dependent preparation,
+
+$$
+ (1-su)r_{0H,s}-(1+su)r_{H0,s}+2su r_{0,s}r_{H,s}=0.
+$$
+
+No balanced rival equilibrium, rival mixing estimate, stationary-mass lower bound or stationary rival instrument is needed. Strictly positive stationary laws, exact Gibbs tilt and the same two field kernels remain required. At the stationary target, both signed residual magnitudes exceed $.009$ over the independent one-percent edge box. The added single-word correlations are $a=1-m/u$ and $x=(\ell+ud)/u$, precisely the two coordinates already fitted by the general three-state construction. This is a stronger experimental comparison using the same conditional-covariance mechanism.
+
+Nine million trials cycle through the four words. Each word/sign group retains its first million observations. Missing quotas imply nonrejection; completed groups reject only when $\widehat R_->.004$ and $\widehat R_+<-.004$. Stopped martingale bounds handle serial dependence without conditioning on successful completion. The target reference-pair execution budget is $79\times10^{-6}$ after every history. It applies only to target power, never to the rival null.
+
+With seven protected reads per endpoint, a disagreement gate at each stage handles unknown rival error rates in $[0,1/2]$. Under the low-error case, a deterministic comparison of noisy and true-sign retained lists controls selection errors; the null needs no stationary preparation even when measurement errors correlate with hidden kicks. The 126-million-read construction is sufficient, not an optimized or practical budget. Only the four ideal binary pair laws have the exact three-state upper; the extra calibration transcript has no claimed state minimum.
+
+[Proof and certificate](FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md) · [Readout proof](FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md) · [Source comparison](FAMILIAR_SWITCH_PREPARATION_FREE_SOURCE_AUDIT.md) · [Internal review](FAMILIAR_SWITCH_PREPARATION_FREE_INTERNAL_REVIEW.md).
 
 ## 1. The short physical mechanism
 
@@ -391,18 +407,7 @@ The earlier calibration-value theorem remains tied to its original
 field and dwell. No lower bound or calibrated trial count is transferred
 to the new point merely by changing parameters.
 
-The one-percent result removes the earlier very small sufficient rate
-allowance as the immediate mathematical bottleneck. Conditional serial
-sampling and finite target reset account for dependence and preparation
-exposure. The new optional calibration replaces a mixing premise with
-observable response bounds under a stronger instrument contract, but its
-current scalar precision calculation is expensive and incomplete as a
-test. Keep the two-word core. The next priority is a sharper joint
-calibration analysis and a physical justification of electronic errors
-independent of hidden measurement updates. A target mixing bound cannot
-prepare arbitrary slow rivals, and repeatable visible readout alone
-cannot establish that independence. Further field or score-constant
-tuning is secondary; extra controls require resource accounting.
+The four-word singleton experiment now removes the rival preparation bottleneck directly. Its complete ideal-pair realization and explicit statistical theorem replace the need to finish the costly five-type calibration route for this task. The next priority is a physically justified specification of sector protection, conditional detector freshness and the shared stationary force relation, including readout and reset exposure. The [new source audit](FAMILIAR_SWITCH_PREPARATION_FREE_SOURCE_AUDIT.md) compares the result with established detailed-balance reciprocity; the candidate contribution is the combined preparation-independent state-cost comparison. Further minor field or score tuning is secondary.
 
 The [percent-kinetic source comparison](FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md)
 and [internal review](FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md)

@@ -4,11 +4,72 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-five mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-six mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: repeated protected readout
+## Current checkpoint: preparation-independent four-word test
+
+The published baseline is `6f545598cd86bf8795eca8e58325c15e860a0889`, tree
+`4aa478b1a9c5f6c2f3c1b1192b4d336eb4e0bc80`, with successful
+[CI run 35991112119](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35991112119).
+The baseline has 55 mathematical verifiers and four saved-model replays;
+all 59 canonical outputs were reproduced in the preceding checkpoint.
+This continuation preserves 121 baseline source/report/license/dependency/
+workflow files, 63 bound proof snapshots, and claim rows R1–R61 byte for byte.
+
+The new [four-word proof](FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md)
+removes rival preparation and mixing promises by conditioning on a singleton
+visible sector. The [realization](FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md)
+fits all four complete ideal pair laws with the existing positive three-state
+CTMC, throughout the full one-percent edge-prefactor box. Exact bounds certify
+both signed residual magnitudes above $.009$ and state minima three versus
+four for maximum pair-table TV error through $.001$. The comparison retains
+strictly positive stationary laws, exact Gibbs tilt, fixed field kernels and
+sign-preserving initial observation.
+
+Nine million trials give ideal size below $.005$ and target miss below $.004$.
+The [readout proof](FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md) uses seven
+protected readings at both endpoints and two disagreement gates, retaining
+size below $.015$ and miss below $.014$ at 126 million raw readings. It permits
+same-use error/kick correlation but requires fixed fresh conditional error
+probabilities and exact sector protection. The null needs no equilibrium
+preservation by its instrument. Target power still needs its uniform conditional
+execution budget and stationary initial block. The exact three-state upper
+concerns four ideal pair tables, not the full fourteen-reading transcript.
+
+The [new verifier](../scripts/verify_switch_preparation_free.py) and
+[report](../reports/switch_preparation_free.json) bind the three new proofs,
+frozen prerequisite reports and exact helper sources. The [internal review](FAMILIAR_SWITCH_PREPARATION_FREE_INTERNAL_REVIEW.md)
+covers the universal algebra, completed-quota probability argument and noisy
+selection bound. The [source comparison](FAMILIAR_SWITCH_PREPARATION_FREE_SOURCE_AUDIT.md)
+distinguishes established conditional-return/reciprocity methods from this
+combined preparation-independent state-count comparison.
+
+The new certificate passes **209 exact checks**: 182 direct checks and 27
+recomputed inherited perturbation checks, under pinned Python 3.13.5. The
+largest dense matrix has dimension four; no floating arithmetic, optimizer
+or parameter-grid simulation is used. It binds 29 proof snapshots, both
+prerequisite reports and two frozen source imports. Source SHA-256:
+`cbd3a0cf4a1617f1c85653e6b5e2bbfd82687a4df202bec925dbcdc7da4da356`;
+canonical report SHA-256:
+`dc10d2baf22899ef663faa4406d720998771e7c40c4de7ef4e8a7b2a3bed3df1`.
+The coordinator inspected the full final source and the three universal
+proofs. The Makefile and both checker registries include the new report.
+A fresh complete `make check` passed **56 mathematical verifiers and four
+saved-model replays**. All **60** generated reports were PASS and byte-identical
+to their canonical reports, including an independent production replay of the
+209-check new certificate. Final repository checks passed 2626 local Markdown
+links, 61 Python syntax checks, report/proof/source provenance and the unchanged
+MIT license. All 184 protected baseline files and historical rows R1–R61 remain
+byte-identical; no historical proof or report was rewritten.
+
+These are local checks of the final source snapshot. The successful CI run
+linked above belongs to the named baseline, not automatically to a new commit.
+Publication uses a non-forced main update, and the resulting remote commit and
+its own workflow are checked separately after publication.
+
+## Historical checkpoint: repeated protected readout
 
 The published baseline `3f7a368f072f03add7e0fcb6e233556cc31b8a39`, tree
 `3747fc54b6b12c7c42f192b220e85667c166fafc`, has successful
