@@ -1,6 +1,78 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: a weaker field and shorter pulses — 24 September 2026
+## PRL: finite memory advantage beyond ideal kinetics — 24 September 2026
+
+Continue from published commit 2ffed6de204354e257a344359497fb1e059cc04e,
+tree bcccfafdc14dc8abbc3b5187bf4751f424c297e9, successful
+[CI run 35972519604](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35972519604).
+Preserve the 111 protected baseline files, historical claim rows
+R1–R52 byte-for-byte, proof bindings, nine recovery files and the
+MIT license. Manuscript drafting remains deferred. Existing
+authorization covers non-forced public-main publication; collaborator
+contact is not authorized.
+
+The [kinetic tolerance theorem](../docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md)
+keeps $J=\log3$, $H=\log2$, both dwell times $5/4$, and the same
+two words $0H,H0$ with initial/final bits. Each actual plateau has
+one fixed perturbed generator, shared across the words, preserving
+the Gibbs stationary law and ordinary detailed balance. The integrated
+signed generator-row TV defect $\kappa\le10^{-4}$, together with
+the inherited $10^{-5}$ physical allowances, gives a general-three-state
+upper $0.00012$ and ordinary-three-state gap greater than $0.0009274999$.
+Actual state minima are **three versus four on $[0.00012,0.0009]$**.
+Exact three-state compression of the perturbed target is not claimed.
+
+Symmetric edge-prefactor errors at most 20 ppm suffice, including
+neighbor-dependent factors that break affine closure. A separate
+100-ppm allowance leaves the population interval $[0.0005,0.00055]$;
+it has no transferred sample budget. Stationary energy, four target
+states and a fixed generator on each active plateau are substantive
+conditions. The ordinary rival class already allows arbitrary
+reversible kernels and receives no new rate cap.
+
+The [kinetic score test](../docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md)
+uses **five million fresh independent trials**, 2.5 million per arm
+and ten million binary readouts. The inherited integer scores and
+gates, with threshold .0022, give false rejection below 5% and target
+power above 95% against an ordinary null with observed-joint-TV
+prediction allowance $0.0002$ per arm. This exceeds the constructive
+upper $0.00012$. The enlarged family's sample budget does not inherit
+the two-million reference count or its comparison below the old
+experiment's information lower bound.
+
+The [protected-readout theorem](../docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md)
+holds the observed sector fixed and preserves its conditional
+equilibrium law. Arbitrarily large hidden motion then preserves the
+initial-label/postmeasurement-state joint law at equilibrium.
+Preparation TV is charged once, and visible leakage plus conditional
+stationary-flux defects bound the added error. In the charge model,
+blocking visible tunneling adds a barrier actuator, controlled switching
+and measurement duration to the instrument resources; no recorded bit
+or tested word is added. Correct preparation, the protected operation
+for every admitted model and independent symmetric electronics remain
+premises. The old 62-unit wait applies to the reference heat-bath
+target only, not the new kinetic family or arbitrary slow rivals,
+and does not establish independent serial trials.
+
+The [new verifier](../scripts/verify_switch_kinetic_interface.py),
+[report](../reports/switch_kinetic_interface.json),
+[source audit](../docs/FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md)
+separate exact finite premises, analytic proofs and physical precedents.
+Full-suite and publication evidence belong to
+[Verification](../docs/VERIFICATION.md).
+
+**Next scientific priority:** make the kinetic tolerance physically
+credible. The sufficient 20-ppm rate tolerance is very tight; seek
+a less conservative structural robustness bound or quantify the
+required calibration in a concrete charge model. A separate conditional
+sampling argument must justify finite serial resets before treating
+the fresh-trial count as an acquisition budget. Further field or
+score-constant tuning is secondary. Continue analytic tiny-matrix
+work, without large simulation. Device feasibility and PRL readiness
+remain unestablished; manuscript drafting remains the last step.
+
+## Historical checkpoint: a weaker field and shorter pulses — 24 September 2026
 
 Continue from published commit 7e41d378e87ce5d7524e585c387707638c391ae1,
 tree eafae1855a511389c4d07e8fe730a3f6795ff3dc, successful

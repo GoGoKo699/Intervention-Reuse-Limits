@@ -4,11 +4,31 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-one mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: a weaker field, a larger gap and fewer trials
+## Current checkpoint: kinetic tolerance and protected initial readout
+
+The published baseline `2ffed6de204354e257a344359497fb1e059cc04e`, tree `bcccfafdc14dc8abbc3b5187bf4751f424c297e9`, had 50 mathematical verifiers, four saved-model replays and successful [CI run 35972519604](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35972519604). This continuation protects all **111** baseline verifier/report/license/dependency/workflow files, earlier proof bindings, nine recovery files and historical claim rows R1–R52.
+
+The [kinetic theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md) permits fixed plateau generators with the same stationary Gibbs laws and detailed balance, while abandoning exact heat-bath closure. Integrated full-row generator TV defect at most $10^{-4}$ leaves the general-three-state error at most $0.00012$ and ordinary-three error greater than $0.0009274999$. Thus the exact minimum counts are three and four on $[0.00012,0.0009]$. A sufficient relative symmetric-edge allowance is 20 ppm; the separate 100-ppm row retains only the narrower population interval $[0.0005,0.00055]$.
+
+The [score extension](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md) reuses the frozen integer lookup tables and gates with 2.5 million fresh independent trials per arm, **five million total**. Threshold $0.0022$ gives false rejection below 5% and power above 95%, including ordinary-null observed-TV allowance $0.0002$, which exceeds the constructive general-three upper. This covers a larger target family and is not an improvement on the earlier two-million-trial count.
+
+The [protected-readout theorem](FAMILIAR_SWITCH_PROTECTED_READOUT.md) preserves the initial-label/postmeasurement-state joint law whenever the instrument preserves the observed sector and its conditional equilibrium law. Hidden transitions need no common upper rate bound. Leakage and conditional flux imbalance supply an explicit joint-error budget, with preparation charged once. The operation requires barrier control as an instrument resource. Independent electronics and adequate preparation remain premises; finite waiting does not establish independent trials.
+
+[verify_switch_kinetic_interface.py](../scripts/verify_switch_kinetic_interface.py) produces [switch_kinetic_interface.json](../reports/switch_kinetic_interface.json) with **90 exact checks**, largest dense dimension four, no floating arithmetic and no optimization. Source SHA-256: `1adcc35e8698d7758625c7c38875fde9c3c1686722ab73c1bcbd4437ee381de9`; report SHA-256: `cfb051fbac02d96c5ae3912f80ab42610be426a90127d70173d8e3bbd33e4472`. The three new proof hashes are unconditionally bound: kinetic `fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd`, score `fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3`, and protected readout `7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309`. The report binds 17 proof snapshots, the frozen weak-field input report and the rational helper. The inherited source/proof snapshots are checked against the frozen input's expected values.
+
+Separate analytic and source review is recorded in the [internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md). The [primary-source audit](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md) distinguishes barrier-control precedents from an achieved device specification. The exact fixtures include nonuniform reversible edge factors that break the original affine closure and a protected instrument with large hidden-state disturbance but zero equilibrium joint disturbance.
+
+The separate reviewer inspected the final source, including its explicit affine-closure failure fixture, and independently reproduced the canonical report byte for byte with all 90 checks passing. The coordinator's additional replay also matched exactly. These finite checks support the analytic arguments and do not enumerate all admissible rivals.
+
+**Completed local gate:** `make check PYTHON=.venv/bin/python` passed **51 mathematical verifiers and four saved-model replays** under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. The captured log contains all **56** commands, including the repository checker and final snapshot replay. All **55** fresh reports are PASS and byte-identical to saved evidence. All 111 protected baseline files, earlier proof bindings, nine recovery files and historical claim rows R1–R52 remain unchanged. After final documentation integration, the repository checker passes **2,276 local Markdown links**, **56 Python syntax checks**, report/source/proof/input provenance and the original MIT license; `git diff --check` passes. New work uses maximum dense dimension four; the historical suite maximum remains 68.
+
+Published-commit CI is separate evidence, checked after non-forced publication. The baseline CI cited above certifies only that earlier commit. Manuscript drafting remains deferred.
+
+## Historical checkpoint: a weaker field, a larger gap and fewer trials
 
 The published baseline `7e41d378e87ce5d7524e585c387707638c391ae1`, tree `eafae1855a511389c4d07e8fe730a3f6795ff3dc`, had 49 mathematical verifiers, four saved-model replays and successful [CI run 35969236097](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35969236097). This continuation protects all **109** baseline verifier/report/license/dependency/workflow files, earlier mathematical proof bindings, nine recovery files and historical claim rows R1–R50.
 
@@ -658,6 +678,7 @@ python scripts/verify_prl_exploration.py --output reports/prl_exploration.json
 python scripts/verify_kinetic_parity.py --output reports/kinetic_parity.json
 python scripts/verify_finite_advantage.py --output reports/finite_advantage.json
 python scripts/verify_physical_robustness.py --output reports/physical_robustness.json
+python scripts/verify_switch_kinetic_interface.py --output reports/switch_kinetic_interface.json
 make check
 ```
 

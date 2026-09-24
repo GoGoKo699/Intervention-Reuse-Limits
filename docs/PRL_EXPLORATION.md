@@ -1,8 +1,8 @@
-# PRL exploration: a weaker field gives a stronger observed memory advantage
+# PRL exploration: memory advantage beyond ideal kinetics
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Weaker-field robustness](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md) · [Two-million-trial test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) · [Snapshot proof](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Kinetic tolerance](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md) · [Five-million-trial test](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md) · [Protected readout](FAMILIAR_SWITCH_PROTECTED_READOUT.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. Manuscript drafting remains the last step. Lowering the field to $H=\log2$ and shortening both dwells to $5/4$, with $J=\log3$ unchanged, raises the certified robust recorded-table gap above $0.001$ and gives a two-million-trial test. The protocol still uses one preparation, two opposite field orders and two binary observations. This sufficient count is below the necessary count for every test confined to the old $H=\log3$, dwell-$3/2$ design. The conditional charge-state realization and explicit preparation and initial-instrument boundaries remain in place.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The current advance is a finite three-versus-four memory advantage despite bounded departures from heat-bath kinetics, with the same two opposite field words and initial/final bits. Five million fresh independent trials suffice for this enlarged target family and an ordinary-null prediction allowance of $0.0002$. A protected initial readout can allow unrestricted hidden motion while preserving the required equilibrium joint law. Its physical blocking control, full preparation and independent electronic channel remain explicit premises. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
 
 ## 1. The short physical mechanism
 
@@ -43,7 +43,39 @@ probabilities anywhere in $[0,1/2]$. There is no inverse-contrast
 singularity or rival rate cap. Symmetry, independence, no readout feedback
 and one fixed detector across both protocols remain required.
 
-**Current operating point.** At $J=\log3$, $H=\log2$ and equal dwell
+**Current extension: bounded kinetic departures.** Keep $J=\log3$,
+$H=\log2$ and both dwell times $5/4$. The
+[kinetic tolerance theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md)
+allows a fixed perturbed generator at each actual plateau, shared
+across the words, preserving the Gibbs stationary law and ordinary
+detailed balance. The integrated signed generator-row TV defect
+$\kappa\le10^{-4}$ transfers both full recorded joint laws. Alongside
+the $10^{-5}$ physical allowances below, the general-three-state
+error is at most $0.00012$ and the ordinary-three-state error is
+greater than $0.0009274999$. Hence the state minima remain three and
+four throughout **$[0.00012,0.0009]$**. Exact compression of the
+perturbed model is not required or claimed.
+
+Symmetric edge-prefactor changes of at most 20 ppm are one sufficient
+condition. They can depend on neighboring charge and break affine
+closure while preserving detailed balance. A 100-ppm allowance
+separately leaves the population interval $[0.0005,0.00055]$, with
+no sampling guarantee. Arbitrary time variation inside an active
+plateau is excluded because an ordered product of reversible kernels
+need not itself be reversible. The rivals already allow arbitrary
+reversible kernels, so they receive no extra kinetic restriction.
+
+The [new sampling theorem](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md)
+retains the scores and empirical gates below, uses threshold .0022,
+and collects 2.5 million fresh independent trials per arm. Its
+**five-million total**, or ten million binary readouts, gives false
+rejection below 5% and target power above 95%, allowing null joint-TV
+prediction error $0.0002$ per word. This exceeds the constructive
+general-three-state upper. The enlarged family's budget is separate
+from the two-million reference guarantee and the old-design lower
+bound; no cheaper-experiment claim follows from this extension.
+
+**Preserved heat-bath reference.** At $J=\log3$, $H=\log2$ and equal dwell
 $5/4$, the [new robustness proof](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
 certifies nominal recorded joint-TV separation $>0.00115$ when each
 target detector error is at most one percent. Preparation, field,
@@ -214,6 +246,27 @@ can replace a preparation premise after adding three protocol types
 and assuming exact balance. It leaves the instrument premise in place
 and has no inherited sampling allocation.
 
+The [protected-readout theorem](FAMILIAR_SWITCH_PROTECTED_READOUT.md)
+now supplies a structural sufficient condition for that instrument.
+Hold the observed sector fixed and preserve its conditional equilibrium
+law. The joint law of the retained initial label and postmeasurement
+hidden state is then exactly the ideal one at equilibrium, even with
+arbitrarily large hidden rearrangement. Preparation TV is charged once.
+With imperfect protection, the integrated visible-jump hazard and
+conditional stationary-flux defects bound the joint error. This
+condition concerns correlations, not only the postmeasurement marginal.
+
+For the charge model, the proposed operation blocks observed-dot
+tunneling while the spectator relaxes at unchanged conditional odds.
+It adds a barrier actuator, switching accuracy and readout time to the
+instrument resources, although it adds no recorded bit or tested word.
+Whether it protects every admitted rival is still a premise; target
+control alone does not establish that. Constant-state detector errors
+must remain independent symmetric channels. The old 62-unit reset
+bound applies only to the specified reference heat-bath target, not
+the new kinetic family or arbitrary slow rivals, and does not turn
+serial measurements into independent trials.
+
 ## 6. Scientific assessment and next priority
 
 The mechanism is concise: reversed pulse order measures a conditional covariance, and a singleton sector cannot support it. Direct treatment of the paired data strengthens the previous $0.001$ snapshot corollary and gives its own nuisance and sampling guarantees. The endpoint task retains its original deterministic theorem and gains a more efficient test.
@@ -227,14 +280,16 @@ The earlier calibration-value theorem remains tied to its original
 field and dwell. No lower bound or calibrated trial count is transferred
 to the new point merely by changing parameters.
 
-The next useful work is independently supported preparation and
-initial-instrument conditions for the charge candidate, together with
-robust treatment of kinetic departures from its heat-bath assumptions.
-Further sampling-constant optimization is secondary to these physical
-questions. Extra protocols, observations and preparation checks must
-have their own resource accounting and statistical guarantees.
+The next priority is to make the rate requirement physically credible.
+The sufficient 20-ppm prefactor tolerance is very tight; seek a less
+conservative structural kinetic bound or a quantified calibration route
+in a concrete charge model. A separate follow-up must justify
+conditional sampling for a reused device with finite resets before
+the fresh-trial count can be treated as a serial acquisition budget.
+Further field or score-constant optimization is secondary. Extra
+controls and preparation checks require their own resource accounting.
 
-The [new source comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and [internal review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) separate the operating-point argument from the established covariance, variance-reduction and concentration tools. The [earlier statistical comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) retains the calibration-information attribution. The unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
+The [kinetic-interface source comparison](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md) and [internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md) distinguish structural conditions and conservative perturbation estimates from demonstrated device capabilities. The [weaker-field comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and [review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) preserve the operating-point argument and established statistical tools. The [earlier statistical comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) retains the calibration-information attribution. The unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
 
 ## 7. Preserved results and provenance
 
@@ -250,10 +305,14 @@ e08a840c71d2474a5ad4866d9daf1c39969e92f6. The score/information continuation sta
 published commit 9983da2206c0a84e1ce5e111a9d132331afe70f5, tree
 5da1fadc9fe9877e916a5b2a2c775ea6dcfe256d, with successful
 [CI run 35966287099](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35966287099).
-The present weaker-field continuation starts from published commit
+The weaker-field continuation started from published commit
 7e41d378e87ce5d7524e585c387707638c391ae1, tree
 eafae1855a511389c4d07e8fe730a3f6795ff3dc, with successful
 [CI run 35969236097](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35969236097).
+The kinetic-interface continuation starts from published commit
+2ffed6de204354e257a344359497fb1e059cc04e, tree
+bcccfafdc14dc8abbc3b5187bf4751f424c297e9, with successful
+[CI run 35972519604](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35972519604).
 Earlier protected proofs, certificate bindings, recovery files and the
 original license remain preserved. The
 [physical-interface verifier](../scripts/verify_switch_physical_interface.py)
@@ -264,8 +323,12 @@ records the proof and source audits.
 The preserved [score/information verifier](../scripts/verify_switch_uncalibrated_score.py)
 and [report](../reports/switch_uncalibrated_score.json) certify the fixed
 test and the rational ordinary comparator.
-The new [weaker-field verifier](../scripts/verify_switch_weak_field.py)
+The preserved [weaker-field verifier](../scripts/verify_switch_weak_field.py)
 and [report](../reports/switch_weak_field.json) certify the target
 enclosures, robust gap and both trial allocations.
+The [kinetic-interface verifier](../scripts/verify_switch_kinetic_interface.py)
+and [report](../reports/switch_kinetic_interface.json) check the new
+kinetic budgets, five-million-trial allocation and protected-readout
+finite identities; the linked proofs carry the universal arguments.
 [Verification](VERIFICATION.md) distinguishes local completion from
 publication CI.

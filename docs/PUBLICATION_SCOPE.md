@@ -6,7 +6,58 @@ The [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) now supplies the simplest
 
 The current lead combines the [direct two-snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) with its [unknown symmetric detector extension](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md). Both chronological orders $0H,H0$ start from the same low-field equilibrium and record the initial and final binary conformation. The endpoint mean and initial/final correlation of each table determine a conditional covariance of two response propensities. A singleton conformation sector has zero covariance; the target has positive covariance in both sectors. This excludes all ordinary rivals with at most three states, including arbitrary reversible tick kernels without a rate cap. The positive three-state predictor matches the two joint laws by matching their conditional initial coordinates and subsequent mean evolution; no full multitime path-law equality is claimed.
 
-**Current certified operating point.** The
+**Current extension beyond ideal kinetics.** The
+[kinetic tolerance theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md)
+keeps $J=\log3$, $H=\log2$ and dwell $5/4$ while permitting a
+fixed perturbed generator per actual plateau. Each preserves the same
+Gibbs law and ordinary detailed balance; both words use the same pair
+of generators. With integrated generator-row TV defect
+$\kappa\le10^{-4}$ and the reference $10^{-5}$ physical allowances,
+the general-three-state upper is $0.00012$ and the ordinary-three-state
+error exceeds $0.0009274999$. This gives actual state minima three
+and four throughout **$[0.00012,0.0009]$**, even when exact affine
+closure fails. The actual target remains an ordinary four-state model.
+
+Relative symmetric edge-prefactor errors of at most 20 ppm are a
+sufficient condition; dependence on the neighboring charge is allowed.
+A 100-ppm bound separately retains $[0.0005,0.00055]$ at population
+level, without a sampling guarantee. The rate perturbation preserves
+the stationary energy and introduces no hidden states. Arbitrary
+time dependence within an active plateau is excluded because products
+of reversible propagators need not be reversible. These are
+conservative tolerances, not demonstrated device specifications.
+
+The [kinetic score test](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md)
+uses **five million fresh independent trials**, 2.5 million per word
+and ten million readouts. The original integer scores and gates, with
+threshold .0022, give false rejection below 5% and power above 95%
+against the ordinary class with observed-joint-TV prediction allowance
+$0.0002$ per word, exceeding the constructive three-state error.
+The increased family has a separate sample budget. The earlier
+two-million guarantee does not transfer and the old-design lower bound
+does not imply a sampling advantage for this extension.
+
+The [protected-readout theorem](FAMILIAR_SWITCH_PROTECTED_READOUT.md)
+gives a sufficient instrument condition: fix the observed sector and
+preserve its conditional equilibrium law. This preserves the retained
+initial-label/postmeasurement-state joint law despite arbitrarily
+large hidden motion, charging preparation TV only once. Leakage and
+conditional stationary-flux defects receive explicit bounds. Blocking
+observed-dot tunneling is an additional barrier control during the
+measurement stage, with switching and duration resources; no recorded
+bit or tested word is added. Full preparation, the instrument property
+for every admitted model and independent symmetric electronic errors
+remain premises. The reference heat-bath target's 62-unit reset bound
+does not cover the enlarged kinetic family, arbitrary slow rivals or
+independence of serial trials.
+
+The [source comparison](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md),
+[internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md),
+[verifier](../scripts/verify_switch_kinetic_interface.py) and
+[report](../reports/switch_kinetic_interface.json) distinguish these
+conditional statements from achieved physical performance.
+
+**Preserved heat-bath operating point.** The
 [weaker-field theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
 keeps $J=\log3$, lowers the high field to $H=\log2$, and shortens
 both dwell times to $5/4$. No field, preparation, readout or protocol
@@ -530,6 +581,6 @@ The bounds are asymptotic at fixed physical parameters, and the upper exponent $
 
 The leading publication question is how the physical reversal assigned to a reduced representation changes the memory needed for accurate controlled prediction. The present results separate ordinary and generalized reversibility on the same target and task, while extending the ordinary state and entropy-production lower bounds beyond a prescribed exponential kinetic curve. The positive results also identify a limit: generalized equilibrium can coexist with polynomial prediction, so a generic dissipation narrative is excluded. The passive/step/switching comparison and other positive compression routes remain supporting results with their own assumptions.
 
-The next work should quantify the preparation and initial joint instrument, and evaluate kinetic mismatch within the conditional charge model. The weaker-field design already improves the observed separation and crosses the old experiment's necessary trial count; further optimization of field or sampling constants is secondary. The optional preparation checks need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the new source audit.
+The next priority is to make the kinetic tolerance physically credible. A sufficient 20-ppm rate tolerance is very tight; a less conservative structural estimate or quantified device calibration would materially improve the physical case. Conditional sampling for a reused device with finite resets is a separate necessary step before interpreting the five-million fresh-trial count as serial acquisition. Further field or score-constant optimization is secondary. The optional preparation checks still need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the source audits.
 
 The constructor receives a known target. Observation results concern specified-model tests with the stated preparation and readout. Continue with bounded analytic work and small exact checks. PRL is the user's selected target, while complete-theorem novelty, natural physical relevance and the journal's significance threshold remain matters for further assessment. Manuscript writing remains the final step.

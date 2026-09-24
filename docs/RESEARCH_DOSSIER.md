@@ -2,7 +2,7 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
-**Planning record, 24 September 2026.** The user asks that strength come with simplicity. The current lead is a conditional-covariance test on a familiar conformational pair: two opposite control orders, each with initial/final binary readouts, distinguish three stationary predictive states from four ordinarily reversible states. Keeping $J=\log3$, lowering $H$ to $\log2$, and shortening both dwells to $5/4$ gives a robust recorded-table gap greater than $0.001$ under unknown independent symmetric detector errors. Two million paired trials suffice, less than the necessary count for any test confined to the previous field and dwell. A conditional capacitively coupled quantum-dot model supplies the physical mapping, and an explicit construction allows unequal tunneling attempts. Preparation and the initial joint instrument remain substantive assumptions, accompanied by counterexamples and an optional response-preparation check. PRL remains the research target, readiness is not claimed, and manuscript drafting remains deferred. See [Verification](VERIFICATION.md) for local and separate remote evidence; internal review is not external validation or priority certification.
+**Planning record, 24 September 2026.** The user asks that strength come with simplicity. The lead remains a conditional-covariance test on a familiar conformational pair: two opposite control orders and initial/final binary readouts distinguish three stationary predictive states from four ordinarily reversible states. The current extension retains that finite advantage under a bounded kinetic departure that can destroy exact heat-bath closure, with a separate five-million-trial test. A protected readout permits large hidden motion while preserving the equilibrium joint law; its barrier actuator, preparation and independent electronics remain substantive resources. The earlier two-million test is preserved for the narrower heat-bath reference. PRL remains the research target, readiness is not claimed, and manuscript drafting remains deferred. See [Verification](VERIFICATION.md) for local and separate remote evidence; internal review is not external validation or priority certification.
 
 ## 1. Recommended scientific focus and result hierarchy
 
@@ -16,7 +16,59 @@ $$
 
 The expression is proportional to a conditional covariance of two response propensities in the readout sector $S=\sigma$. A singleton sector cannot carry this covariance. The target has nonzero covariance in both sectors, while a positive three-state model reproduces the two joint laws through matching conditional initial coordinates and closed mean equations. This is equality of two-time laws, not of complete paths.
 
-**Current operating point: weaker field, shorter equal pulses.** The
+**Current extension: kinetic error and protected readout.** At
+$J=\log3$, $H=\log2$ and dwell $5/4$, the
+[kinetic theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md) permits a
+fixed perturbed generator on each plateau, preserving its Gibbs law
+and ordinary detailed balance. Integrating the full signed generator-row
+TV defect over either word gives $\kappa$. With $\kappa\le10^{-4}$
+and the reference $10^{-5}$ physical allowances, the target table
+budget is $0.0001775001$, the general-three-state upper is $0.00012$,
+and every admissible ordinary-three-state error exceeds $0.0009274999$.
+The exact state minima are therefore three and four on
+**$[0.00012,0.0009]$**. The actual four-state target is ordinary;
+the comparison does not require exact compression of its perturbed laws.
+
+Symmetric relative edge-prefactor errors of at most 20 ppm suffice,
+including neighbor dependence that breaks affine closure. At 100 ppm,
+the separate population interval is $[0.0005,0.00055]$, without a
+sampling guarantee. These bounds preserve the stationary energy;
+extra microscopic states or arbitrary driven nonreversible kinetics
+are outside their scope. A common fixed generator on each plateau
+also matters: time-ordered products of reversible kernels need not
+be reversible.
+
+The [kinetic score theorem](FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md)
+uses the same integer scores and gates as the reference test, threshold
+.0022, and 2.5 million fresh independent trials in each arm. The
+**five-million total** and ten million binary readouts give false
+rejection below 5% and target power above 95%, with ordinary-null
+observed-joint-TV allowance $0.0002$ per word. That allowance exceeds
+the constructive upper $0.00012$. This is the cost for a larger target
+family, not an improvement on the two-million reference count or a
+new comparison below the old experiment's information lower bound.
+
+The [protected-readout theorem](FAMILIAR_SWITCH_PROTECTED_READOUT.md)
+preserves the initial-label/postmeasurement-state joint law when the
+observed sector is fixed and its conditional equilibrium law is
+preserved. Hidden transition rates and measurement duration need not
+be small. Preparation TV is charged once; sector leakage and
+conditional stationary-flux defects bound the added joint error.
+For the charge candidate, blocking observed-dot tunneling requires a
+barrier actuator, controlled switching and measurement time, although
+the two recorded bits and two tested words are unchanged. The operation
+and independent symmetric electronics remain premises for every
+admitted model. The reference target's existing 62-unit preparation
+bound neither covers the new kinetic family nor supplies independent
+serial trials or a uniform reset for arbitrary slow rivals.
+
+The [new verifier](../scripts/verify_switch_kinetic_interface.py),
+[report](../reports/switch_kinetic_interface.json),
+[source audit](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md) and
+[internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md)
+separate exact finite checks, universal proofs and physical precedents.
+
+**Preserved heat-bath reference: weaker field, shorter equal pulses.** The
 [new robustness theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
 fixes $J=\log3$, $H=\log2$ and both dwell times $5/4$. Target
 independent symmetric bit-error probabilities may each lie in $[0,.01]$;
@@ -189,7 +241,7 @@ The interval $2^{-220}<\delta<1/2376$ remains unresolved, and none of the suffic
 
 A [single-force network](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) makes the ordinary parity and kinetic actuation concrete within a stipulated conformational model. Equal well extensions, calibrated zero-force returns and internal saddle extensions remain model assumptions, not a demonstrated molecule. [Uniform robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md) permits small deviations, including weak control-dependent hidden rates and finite ramps, at an explicit accuracy floor. The [closure theorem](PHYSICAL_REVERSAL_REALIZATION.md) explains why an even equilibrium observation that is Markov must obey ordinary detailed balance.
 
-The snapshot witness gives a short covariance explanation and one equilibrium preparation. The weaker-field point now improves the observed gap and has a sufficient trial count below the earlier design's necessary count. Its original calibration-value theorem remains attached to the earlier field and dwell. The charge mapping identifies a familiar conditional realization. The next priorities are a supported initial joint instrument and preparation conditions, and robustness to measured kinetic departures. Further optimization of fields or sampling constants is secondary. The optional five-type preparation check needs a finite-sample budget before it can replace an operational preparation promise. A demonstrated device, broader physical interfaces and continued source comparison remain separate tasks; the Falk full-text comparison remains unresolved. Arbitrary interfaces, unrestricted control-dependent hidden dynamics, matching entropy-production frontiers and the older-family binary uncapped problem remain open. Manuscript drafting remains the last step.
+The snapshot witness gives a short covariance explanation and one equilibrium preparation. The weaker-field reference improves the observed gap and has a sufficient trial count below the earlier design's necessary count. Its original calibration-value theorem remains attached to the earlier field and dwell. The new kinetic and protected-readout results clarify physical requirements without demonstrating a device. The next priority is to make the rate requirement credible: the sufficient 20-ppm tolerance is very tight, so seek a less conservative structural robustness bound or a quantified calibration route. Conditional sampling for finite serial resets is a separate needed extension; the fresh-trial theorem does not follow from the 62-unit target mixing bound. Further field or score-constant optimization is secondary. The optional five-type preparation check still needs a finite-sample budget. A demonstrated device, broader physical interfaces and continued source comparison remain separate tasks; the Falk full-text comparison remains unresolved. Arbitrary interfaces, unrestricted control-dependent hidden dynamics, matching entropy-production frontiers and the older-family binary uncapped problem remain open. Manuscript drafting remains the last step.
 
 ## 2. Earlier hub models and notation
 

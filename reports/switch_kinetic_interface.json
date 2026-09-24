@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction matrices, polynomial identities, outward rational intervals and concentration arithmetic",
+  "kinetic_tolerance": {
+    "integrated_generator_row_TV_allowance_exact": "1/10000",
+    "inherited_target_joint_TV_allowance_exact": "775001/10000000000",
+    "target_joint_TV_allowance_with_kinetics_exact": "1775001/10000000000",
+    "rival_joint_TV_allowance_exact": "1/50000",
+    "ordinary_joint_TV_separation_lower_exact": "9/10000",
+    "general_three_state_joint_TV_upper_exact": "3/25000",
+    "state_count_interval_exact": [
+      "3/25000",
+      "9/10000"
+    ],
+    "relative_symmetric_edge_tolerance_exact": "1/50000",
+    "heat_bath_exit_upper_exact": "387/205",
+    "duration_upper_exact": "125001/50000",
+    "relative_edge_integrated_charge_upper_exact": "2375019/25000000000",
+    "nonuniform_edge_example_QS_SZ_coefficient_exact": "1/100000",
+    "larger_kinetic_population_only": {
+      "relative_symmetric_edge_tolerance_exact": "1/10000",
+      "integrated_charge_upper_exact": "2375019/5000000000",
+      "state_count_interval_exact": [
+        "1/2000",
+        "11/20000"
+      ],
+      "sampling_budget_transferred": false
+    },
+    "scope": "The law-transfer and predictor-existence implications are analytic. The kinetic allowance is half the full signed generator-row l1 discrepancy, including its diagonal. The four-state ordinary upper uses a fixed time-homogeneous generator on each field plateau. Symmetric edge factors preserve the Gibbs law; arbitrary rate changes need a separate stationary-law promise."
+  },
+  "fixed_score_design": {
+    "score_coefficients_exact": [
+      [
+        "2/5",
+        "3/5",
+        "-3/10"
+      ],
+      [
+        "-2/5",
+        "-12/25",
+        "3/10"
+      ]
+    ],
+    "integer_score_lookup_divisor": 50,
+    "integer_score_lookup": [
+      [
+        35,
+        -65,
+        5,
+        25
+      ],
+      [
+        -29,
+        59,
+        -11,
+        -19
+      ]
+    ],
+    "outcome_order": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "constant_subtracted_exact": "2/25",
+    "score_range_widths_exact": [
+      "2",
+      "44/25"
+    ],
+    "paired_trials_0H": 2500000,
+    "paired_trials_H0": 2500000,
+    "total_fresh_paired_trials": 5000000,
+    "total_bit_readouts": 10000000,
+    "observed_joint_TV_model_allowance_exact": "1/5000",
+    "target_execution_TV_allowance_exact": "1775001/10000000000",
+    "null_displacement_exact": "11/50000",
+    "initial_mean_absolute_bound_exact": "27/50000",
+    "null_score_mean_upper_exact": "2243/2500000",
+    "target_score_mean_lower_exact": "879/250000",
+    "rejection_cutoff_exact": "11/5000",
+    "null_variance_ceilings_exact": [
+      "299/1000",
+      "13/50"
+    ],
+    "target_variance_ceilings_exact": [
+      "29/100",
+      "253/1000"
+    ],
+    "null_variance_corners_exact": [
+      "134695197260663814319633566449089891163635672201620668666214211264498377187842009384871/452312848583266388373324160190187140051835877600158453279131187530910662656000000000000",
+      "73205753300305748736116098874855367847673233432741101962155310328533092245549420799/282695530364541492733327600118866962532397423500099033299456992206819164160000000000"
+    ],
+    "target_variance_upper_bounds_exact": [
+      "5220117932532415657409515014875250967779396144268137731150109722091407356888521486271/18092513943330655534932966407607485602073435104006338131165247501236426506240000000000",
+      "44362923855704386225590102713714834674901399151549814107425006057103206921376791940751/176684706477838432958329750074291851582748389687561895812160620129261977600000000000000"
+    ],
+    "gate_coordinate_order": [
+      "M",
+      "L+(3/5)D",
+      "C",
+      "L",
+      "D",
+      "C-D"
+    ],
+    "population_gate_intervals_exact": [
+      [
+        "8920822136823618804973089174486798719757/42535295865117307932921825928971026432000",
+        "4830740507452897223504996466424824403029/21267647932558653966460912964485513216000"
+      ],
+      [
+        "1711796758958286614381491925486492788637543/4253529586511730793292182592897102643200000",
+        "1858266592377345786399910313224836978277/4253529586511730793292182592897102643200"
+      ],
+      [
+        "387719832250918170193569149316139080365981/850705917302346158658436518579420528640000",
+        "20879926243916822442161658732003532299081/42535295865117307932921825928971026432000"
+      ],
+      [
+        "9823152919217814667791259001650618494693/85070591730234615865843651857942052864000",
+        "5699321985828944379135827779122663577581/42535295865117307932921825928971026432000"
+      ],
+      [
+        "402909743385054344923570288047949992167311/850705917302346158658436518579420528640000",
+        "21670737943944736578459094109544708465331/42535295865117307932921825928971026432000"
+      ],
+      [
+        "-9/250",
+        "-1/500"
+      ]
+    ],
+    "empirical_gate_intervals_exact": [
+      [
+        "9027160376486412074805393739309226285837/42535295865117307932921825928971026432000",
+        "4777571387621500588588844184013610619989/21267647932558653966460912964485513216000"
+      ],
+      [
+        "1728810877304333537554660655858081199210343/4253529586511730793292182592897102643200000",
+        "9206262370156494316133707914266242838521/21267647932558653966460912964485513216000"
+      ],
+      [
+        "391122655920127554828202895390456762480541/850705917302346158658436518579420528640000",
+        "20709785060456353210429971428287648193353/42535295865117307932921825928971026432000"
+      ],
+      [
+        "10163435286138753131254633609082386706149/85070591730234615865843651857942052864000",
+        "5529180802368475147404140475406779471853/42535295865117307932921825928971026432000"
+      ],
+      [
+        "406312567054263729558204034122267674281871/850705917302346158658436518579420528640000",
+        "21500596760484267346727406805828824359603/42535295865117307932921825928971026432000"
+      ],
+      [
+        "-3/100",
+        "-1/125"
+      ]
+    ],
+    "target_joint_gate_failure_upper_exact": "1596797161/1000000000000000",
+    "target_joint_gate_failure_public_upper_exact": "1/500000",
+    "type_I_error_upper_exact": "1/20",
+    "type_II_error_upper_exact": "1/20",
+    "scope": "Fresh independent paired trials are required. The model allowance enlarges the ordinary null and is not charged to the target. The kinetic charge belongs to the target; the ordinary kinetic class was already arbitrary."
+  },
+  "protected_readout": {
+    "conditional_polarization_exact": "4/5",
+    "conditional_law_example_exact": [
+      "9/10",
+      "1/10"
+    ],
+    "example_initial_state_joint_exact": [
+      [
+        "9/20",
+        "1/20",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/20",
+        "9/20"
+      ]
+    ],
+    "example_protected_kernel_exact": [
+      [
+        "19/20",
+        "1/20",
+        "0",
+        "0"
+      ],
+      [
+        "9/20",
+        "11/20",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "11/20",
+        "9/20"
+      ],
+      [
+        "0",
+        "0",
+        "1/20",
+        "19/20"
+      ]
+    ],
+    "example_worst_row_TV_disturbance_exact": "9/20",
+    "example_equilibrium_joint_disturbance_exact": "0",
+    "conditional_heat_bath_flux_identity": "gamma*(1-t*t)/4",
+    "binary_conditional_stationarity_defect": "abs(pi_minus*q_minus-pi_plus*q_plus)",
+    "instrument_allowance_exact": "1/100000",
+    "recalled_equal_attempt_target_reset_time": 62,
+    "recalled_target_reset_squared_TV_upper_exact": "1/10000000000",
+    "scope": "The general joint-instrument invariance, contraction, leakage, and flux-defect statements are analytic. The reset bound is target-specific and is not transferred to perturbed kinetics or arbitrary rivals. Protected readout does not establish preparation, independent trials, or an independent electronic channel."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_kinetic_interface.py": "1adcc35e8698d7758625c7c38875fde9c3c1686722ab73c1bcbd4437ee381de9",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_weak_field.json": "6289576de985afec146faeef47ef504105bc98ca986c6ce8a8bed70dbb2c6a5d"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309"
+  },
+  "checks": 90
+}
