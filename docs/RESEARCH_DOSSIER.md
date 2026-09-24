@@ -2,7 +2,7 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
-**Planning record, 24 September 2026.** The user asks that strength come with simplicity. The lead remains a conditional-covariance test on a familiar conformational pair: two opposite control orders and initial/final binary readouts distinguish three stationary predictive states from four ordinarily reversible states. Independent one-percent kinetic changes may destroy heat-bath closure while retaining an exact local three-state CTMC fit of the two nominal-field joint laws. The latest extension gives the same five-million-trial test for a serially reused device under uniform history-conditional error control. An actual 63-unit reset supplies the target preparation term and makes nominal reset-plus-active exposure 327.5 million attempt-time units. Rival preparation, the joint instrument and the electronic-channel model remain substantive promises. The earlier two-million test is preserved for the narrower heat-bath reference. PRL remains the research target, readiness is not claimed, and manuscript drafting remains deferred. See [Verification](VERIFICATION.md) for local and separate remote evidence; internal review is not external validation or priority certification.
+**Planning record, 24 September 2026.** The user asks that strength come with simplicity. The lead remains a conditional-covariance test on a familiar conformational pair: two opposite control orders and initial/final binary readouts distinguish three stationary predictive states from four ordinarily reversible states. Independent one-percent rate changes retain a local three-state fit and a conditional five-million serial-trial test. The latest exploration supplies an optional observable preparation bound without a rival mixing-time premise, under an exactly protected instrument. Its randomized calibration construction handles history-dependent preparations, but the present 60-billion-trial calculation is only a scalar precision guarantee. A separate counterexample shows why repeatable readout and unchanged endpoints do not establish independence of electronic errors from hidden kicks. Retain the short two-word core while seeking sharper joint calibration and physical readout justification. PRL remains the research target, readiness is not claimed, and manuscript drafting remains deferred. See [Verification](VERIFICATION.md) for local and separate remote evidence; internal review is not external validation or priority certification.
 
 ## 1. Recommended scientific focus and result hierarchy
 
@@ -16,7 +16,82 @@ $$
 
 The expression is proportional to a conditional covariance of two response propensities in the readout sector $S=\sigma$. A singleton sector cannot carry this covariance. The target has nonzero covariance in both sectors, while a positive three-state model reproduces the two joint laws through matching conditional initial coordinates and closed mean equations. This is equality of two-time laws, not of complete paths.
 
-**Current extension: serial observations with a finite target reset.** The
+**Current supporting result: observable preparation and its cost.** The
+[new preparation theorem](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md)
+applies to a fixed stochastic kernel $K$ on at most three states,
+stationary law $\pi$, deterministic binary readout $S$, and arbitrary
+preparation $\nu$. Let $v=\pi S$, $b=\nu S$, $a=\nu KS$,
+$r=1-\nu SKS>0$, $|v|\le V<1$, and let $f$ have oscillation
+$L$. With $C_V=(1+V)/(1-V)$, it proves
+
+$$
+ |(\nu-\pi)f|\le\frac{4C_V}{r}
+ \left[|\nu(K-I)f|+\frac L2|a-b|\right]
+ +\frac{L}{1-V}|b-v|.
+$$
+
+The imbalance term is not amplified by $1/r$. The result controls
+specified response biases, without a reversible-kernel assumption,
+rival rate cap, stationary mass floor or hidden-state mixing estimate.
+It does not certify full hidden-state TV.
+
+The observable implementation uses five types: the two original words,
+a low calibration pair and two low-prefixed words. Its initial
+instrument $D$ must exactly preserve both the visible sectors and
+$\pi$, and its fixed symmetric electronic errors must be independent
+of the hidden update. Each prefix applies the same $D$ silently before
+the low evolution $P$, so the measured calibration kernel is $K=DP$.
+The extra instrument operation, low wait and protocol types are counted
+resources. The earlier nonzero joint-instrument allowance is not
+automatically covered by this exact structural contract.
+
+An original observed pair correlation at least $.45$ in magnitude and
+low-pair correlation at most $.15$ give $r\ge2/3$ even with unknown
+detector contrasts. At $V=10^{-4}$, the resulting score correction has
+coefficients approximately $6.0012$ on the summed response drift,
+$11.2823$ on the low final mean and $33.4281$ on the low initial mean.
+Its conservative zero-data floor is $94/249975\simeq.00037604$.
+Separate moment bounds are needed to localize the stationary reference
+before using the existing ordinary score ceiling.
+
+The [sampling note](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md)
+chooses each type randomly after preparation, independently of the
+prepared state and history. Inverse assignment-probability weights
+then estimate responses of one common pathwise averaged preparation.
+This remains valid for history-dependent preparations and does not
+condition on the final random averaged law. With its fixed allocation,
+**60 billion trials and 120 billion recorded bits** give simultaneous
+absolute precision $.001$ for eight corrected scalar functionals with
+probability above 96%. This conservative sufficient construction is
+12,000 times the old five-million trial count, but it is neither a
+necessary calibration cost nor a complete size/power theorem. Guard
+confidence, stationary localization, target acceptance, approximate
+instrument errors and the enlarged physical error budget remain open.
+The earlier $.0002$ approximation allowance and three-state upper do
+not transfer to the added data.
+
+The [readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md)
+uses three ordinary reversible states at the same fields and active
+dwells. Arbitrary immediate repeat-readout, all low-only records and
+stationary endpoint-insertion checks agree with ideal independent
+electronics, while an error-correlated hidden kick changes the two
+snapshot tables by TV $1/4800$ each. It is not a fit to the selected
+target or a false rejection by its gated score. Under genuine electronic
+independence, a sector-preserving instrument on at most three states
+instead satisfies an exact endpoint-to-joint TV identity. The listed
+calibration records cannot establish that missing structural premise.
+
+The [verifier](../scripts/verify_switch_observable_calibration.py),
+[report](../reports/switch_observable_calibration.json),
+[source audit](FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_SOURCE_AUDIT.md)
+and [internal review](FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_INTERNAL_REVIEW.md)
+separate the response bound, finite precision calculation and instrument
+counterexample. The general marginal-versus-joint distinction is prior
+work; a close recent full-text comparison remains unresolved. Keep the
+two-word core as the current research design rather than claiming a
+completed five-type memory-separation experiment.
+
+**Preserved extension: serial observations with a finite target reset.** The
 [conditional sampling theorem](FAMILIAR_SWITCH_SERIAL_SAMPLING.md)
 keeps the five-million total, ten million readouts, gates and .0021
 threshold of the percent-kinetic score. The deterministic schedule
@@ -294,6 +369,7 @@ The [new capped frontier](KINETIC_PARITY_RESOURCE_TRADEOFF.md) uses $\exp(c\vare
 
 | Role | Results to retain | Reason for inclusion |
 |---|---|---|
+| Current calibration tradeoff | [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md); [randomized precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md); [readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) | A five-type response certificate can avoid a rival mixing premise under exact protected readout; the conservative 60-billion allocation is scalar precision only, and electronic/hidden-update independence still needs physical support. |
 | Current serial sampling and preparation cost | [Conditional sampling](FAMILIAR_SWITCH_SERIAL_SAMPLING.md); [63-unit reset](FAMILIAR_SWITCH_FINITE_RESET.md) | Same five-million test under every-history control against one fixed reference pair; target reset plus active exposure 327.5 million nominal attempt units. The constructive three-state predictor uses the same reset with conditional pair error below $.00009$. Ordinary-rival preparation remains separately promised. |
 | Current kinetic robustness and realization | [One-percent box](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md); [local three-state CTMC](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md) | Eight independent edge factors may break target closure; exact nominal snapshot fitting and actual three-versus-four minima on $[.00008,.0009]$. |
 | Earlier independent-trial observation cost | [Five-million-trial score](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) | Same two bit pairs, new gates and threshold .0021, observed-TV null allowance $.0002$; the separate serial theorem replaces independence by conditional control. |
@@ -332,7 +408,7 @@ The interval $2^{-220}<\delta<1/2376$ remains unresolved, and none of the suffic
 
 A [single-force network](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) makes the ordinary parity and kinetic actuation concrete within a stipulated conformational model. Equal well extensions, calibrated zero-force returns and internal saddle extensions remain model assumptions, not a demonstrated molecule. [Uniform robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md) permits small deviations, including weak control-dependent hidden rates and finite ramps, at an explicit accuracy floor. The [closure theorem](PHYSICAL_REVERSAL_REALIZATION.md) explains why an even equilibrium observation that is Markov must obey ordinary detailed balance.
 
-The snapshot witness gives a short covariance explanation and one equilibrium preparation. The weaker-field reference has a sufficient trial count below the earlier design's necessary count; that comparison remains attached to its stated target class. The one-percent kinetic certificate removes the former very small sufficient rate allowance as the immediate mathematical bottleneck. The serial theorem now handles dependence and the 63-unit target reset prices preparation within the four-state Markov model. The next priority is operational justification or statistical certification of rival preparation and the joint-instrument and detector assumptions in a concrete physical model. A target mixing bound does not prepare arbitrary slow rivals, and visible stationarity does not certify hidden preparation. Further field or score-constant tuning is secondary. The optional five-type preparation check still needs a finite-sample budget. A demonstrated device, broader physical interfaces and continued source comparison remain separate tasks; the Falk full-text comparison remains unresolved. Arbitrary interfaces, unrestricted control-dependent hidden dynamics, matching entropy-production frontiers and the older-family binary uncapped problem remain open. Manuscript drafting remains the last step.
+The snapshot witness gives a short covariance explanation and one equilibrium preparation. The weaker-field reference has a sufficient trial count below the earlier design's necessary count; that comparison remains attached to its stated target class. The one-percent certificate, conditional serial theorem and finite target reset retain their separate guarantees. Observable response calibration now avoids a rival mixing-time premise under a stronger instrument contract, but its scalar precision construction is expensive and still lacks a complete testing analysis. Keep the two-word core. The next priority is sharper joint calibration and a physical justification of electronic errors independent of hidden measurement updates. The added types still lack a matching three-state predictor and full size/power proof. Further field or score-constant tuning is secondary. A demonstrated device, broader physical interfaces and continued source comparison remain separate tasks; the Falk full-text lead and the close recent conditional-disturbance comparison remain unresolved. Arbitrary interfaces, unrestricted control-dependent hidden dynamics, matching entropy-production frontiers and the older-family binary uncapped problem remain open. Manuscript drafting remains the last step.
 
 ## 2. Earlier hub models and notation
 

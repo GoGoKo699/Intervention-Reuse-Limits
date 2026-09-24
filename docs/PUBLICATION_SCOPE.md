@@ -6,7 +6,51 @@ The [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) now supplies the simplest
 
 The current lead combines the [direct two-snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) with its [unknown symmetric detector extension](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md). Both chronological orders $0H,H0$ start from the same low-field equilibrium and record the initial and final binary conformation. The endpoint mean and initial/final correlation of each table determine a conditional covariance of two response propensities. A singleton conformation sector has zero covariance; the target has positive covariance in both sectors. This excludes all ordinary rivals with at most three states, including arbitrary reversible tick kernels without a rate cap. The positive three-state predictor matches the two joint laws by matching their conditional initial coordinates and subsequent mean evolution; no full multitime path-law equality is claimed.
 
-**Current extension: serial sampling and a finite target reset.** The
+**Current supporting result: observable preparation and a readout boundary.**
+The [preparation inequality](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md)
+controls the equilibrium bias of specified responses for any shared
+preparation of an at-most-three-state model, including approximate
+stationary balance. Its five-type implementation uses the two original
+words, a low calibration pair and two prefixed words. It avoids a rival
+mixing-time bound but requires an exactly sector-preserving,
+stationary-law-preserving instrument and independent fixed symmetric
+electronics. Each prefix must include a silent copy of that same
+instrument before the extra low evolution. This is not an observation-only
+certification of the instrument or of full hidden-state equilibrium.
+
+The [randomized sampling argument](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md)
+assigns the type after preparation, independently of the prepared state.
+It yields one common averaged preparation for all predictable response
+functionals even when preparations depend on past trials. Under the
+specified population guards, 60 billion trials suffice for simultaneous
+precision $.001$ on eight corrected scalar statistics with probability
+above 96%. This conservative allocation is not a cost lower bound or
+a full rejection/power theorem. The existing five-million guarantee,
+nonzero instrument tolerance, $.0002$ approximate-null allowance and
+three-state construction are not transferred to the added calibration
+data. The two-word experiment remains the current core.
+
+The [instrument counterexample](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md)
+has three ordinary reversible states, exact equilibrium preparation and
+unchanged visible sectors. It passes immediate repeat-readout, low-only
+and stationary endpoint-insertion checks, yet an electronic-error-linked
+hidden update changes each original snapshot law by TV $1/4800$.
+The example does not fit the selected target or establish false rejection
+by its gated score. A positive endpoint-to-joint identity does hold for
+sector-preserving instruments on at most three states when the missing
+electronic independence is genuinely supplied. The listed records do
+not establish that independence.
+
+The [source audit](FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_SOURCE_AUDIT.md),
+[internal review](FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_INTERNAL_REVIEW.md),
+[verifier](../scripts/verify_switch_observable_calibration.py) and
+[report](../reports/switch_observable_calibration.json) record these
+supporting claims. Marginal invariance versus conditional disturbance
+is an established distinction. A close July 2026 preprint's full text
+was unavailable; the comparison remains unresolved, with no novelty
+claim inferred from this search.
+
+**Preserved extension: serial sampling and a finite target reset.** The
 [conditional theorem](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) keeps five
 million trials, ten million readouts, the percent-score gates and
 threshold .0021 under deterministic alternation of the two arms.
@@ -250,7 +294,7 @@ The [measurement-cost note](FAMILIAR_SWITCH_MEASUREMENT_COST.md) turns the deter
 
 These are conservative sufficient counts, not optimal budgets or a claim that every test needs billions of samples. A separate change-of-measure argument gives $\mathbb E_*N\ge270000\log19\approx794998.52$ for any valid adaptive fresh-endpoint test using these seven words in the ideal nominal case; a fixed budget must contain at least 794,999 endpoints. It does not bound richer path observations. Sampling does not establish the preparation and control assumptions required under the null and alternative.
 
-The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field heat-bath test supplies a two-million-trial design below the old experiment's information lower; the one-percent kinetic family has its own five-million guarantee, now extended to serial acquisition under uniform conditional control. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should operationally justify or statistically certify rival preparation and the joint-instrument and detector conditions in that model. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
+The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field heat-bath test supplies a two-million-trial design below the old experiment's information lower; the one-percent kinetic family has its own five-million guarantee, extended to serial acquisition under uniform conditional control. The optional five-type calibration now bounds response preparation under an exact instrument contract, but its conservative scalar precision count does not complete an expanded test. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should sharpen joint calibration and physically justify independent readout electronics. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
 
 The [matrix prediction principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives a simple organizing statement for a whole target class. A general stationary predictor can separate its incoming and outgoing memory profiles; ordinary detailed balance identifies the factors in matched reversed tests. For any normalized completely positive matrix $H$ of size $n$ with positive row sums, the exact state minima are $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ under the shared interface and cap. The targets still have two-state passive paths. Both counts persist on a positive matrix-dependent accuracy interval, whose useful scale remains unknown in general. This is a controlled realization theorem, not a new matrix-rank definition or a generic HMM-order characterization.
 
@@ -311,7 +355,7 @@ The [source comparison](KINETIC_PARITY_SOURCE_AUDIT.md), [bounded verifier](../s
 
 Earlier comparisons retain their historical assumptions. The [original-rule tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) supplied the uncapped fixed-clock foundation. The [binary fixed-clock uncapped theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uses a rescaled tagged target and inner exponent $1/12$. Earlier [binary](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) and [nineteen-level](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uncapped routes give inner exponent $1/2$ with arbitrarily rapid switching. The older fixed-budget results below remain valid at their stated menus and histograms.
 
-The immediate priority is operational justification or statistical certification of rival preparation and the joint-instrument and detector promises in the conditional charge model. Conditional serial sampling and finite target preparation are now proved under their explicit scopes, including the reset exposure; the target reset does not establish those rival premises. Further tuning of fields or statistical constants is secondary. The optional five-type response-preparation check needs its own statistical budget. The finite state gaps and serial guarantee do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
+The immediate priority is sharper joint calibration and physically justified independence between electronic readout errors and hidden measurement updates. The optional five-type response bound can avoid a rival mixing assumption, but its conservative scalar precision construction is not a completed testing budget and does not remove its exact instrument premise. Retain the two-word core and its explicit assumptions. Further tuning of fields or statistical constants is secondary. The finite state gaps and serial guarantee do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 
@@ -652,6 +696,6 @@ The bounds are asymptotic at fixed physical parameters, and the upper exponent $
 
 The leading publication question is how the physical reversal assigned to a reduced representation changes the memory needed for accurate controlled prediction. The present results separate ordinary and generalized reversibility on the same target and task, while extending the ordinary state and entropy-production lower bounds beyond a prescribed exponential kinetic curve. The positive results also identify a limit: generalized equilibrium can coexist with polynomial prediction, so a generic dissipation narrative is excluded. The passive/step/switching comparison and other positive compression routes remain supporting results with their own assumptions.
 
-The one-percent kinetic theorem removes the earlier very small sufficient rate allowance as the immediate mathematical bottleneck. The serial theorem now permits reuse of one device without assuming independent trials, and the finite target reset makes its preparation exposure explicit. The next priority is operational justification or statistical certification of rival preparation and the joint-instrument and detector assumptions in a concrete device model. The target reset cannot supply a uniform rival mixing guarantee. Further field or score-constant optimization is secondary. The optional preparation checks still need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the source audits.
+The one-percent kinetic theorem removes the earlier very small sufficient rate allowance as the immediate mathematical bottleneck. The serial theorem permits reuse of one device without assuming independent trials, and the finite target reset makes its preparation exposure explicit. The new observable preparation result provides a separate calibration route under exact protected readout, while the counterexample isolates electronic/hidden-update independence as a remaining physical premise. Keep the two-word core; the next priority is sharper joint calibration and physical readout justification. The 60-billion scalar precision construction neither establishes a necessary cost nor completes a five-type size/power theorem, and no matching three-state upper has been supplied for the added observations. Further field or score-constant optimization is secondary. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text and recent conditional-disturbance lead recorded in the source audits.
 
 The constructor receives a known target. Observation results concern specified-model tests with the stated preparation and readout. Continue with bounded analytic work and small exact checks. PRL is the user's selected target, while complete-theorem novelty, natural physical relevance and the journal's significance threshold remain matters for further assessment. Manuscript writing remains the final step.

@@ -1,8 +1,8 @@
-# PRL exploration: a short memory test with finite serial resets
+# PRL exploration: a short memory test and its calibration boundary
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Serial sampling](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) · [Finite reset](FAMILIAR_SWITCH_FINITE_RESET.md) · [One-percent kinetic tolerance](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The two-word, two-bit experiment tolerates eight independent one-percent edge-rate changes and retains its three-versus-four state advantage. The latest extension permits five million serial trials with dependence between trials, under a uniform history-conditional joint-law promise relative to one fixed reference pair. An actual 63-unit reset supplies the target preparation term, with nominal reset-plus-active exposure 327.5 million attempt-time units. Arbitrarily slow rivals still require a separate operational preparation guarantee; the initial joint instrument and electronic-channel model remain premises. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. The two-word, two-bit experiment remains the core: it tolerates independent one-percent rate changes and has a conditional five-million serial-trial guarantee. The latest exploration gives an optional response-specific preparation certificate without a rival mixing-time estimate, under an exactly protected instrument. Randomized assignment handles history-dependent preparations, but the present 60-billion-trial calculation certifies only scalar precision, not a complete expanded test. Repeated-readout and endpoint checks still cannot establish independence of electronic errors from hidden measurement kicks. We retain the short core while seeking sharper calibration and physical readout justification. Manuscript drafting stays last; neither an achieved device specification nor PRL readiness is asserted.
 
 ## 1. The short physical mechanism
 
@@ -43,7 +43,46 @@ probabilities anywhere in $[0,1/2]$. There is no inverse-contrast
 singularity or rival rate cap. Symmetry, independence, no readout feedback
 and one fixed detector across both protocols remain required.
 
-**Current extension: serial sampling and finite target preparation.** The
+**Current calibration result and its cost.** The
+[observable preparation theorem](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md)
+extends the earlier exact-balance lemma to arbitrary preparation
+$\nu$ and stationary imbalance $|\pi S|\le V<1$ for models with
+at most three states. It controls the equilibrium bias of specified
+responses through a low-pair relaxation guard and their change after
+an extra low preparation step. No rival mixing time, rate cap or
+minimum stationary mass is used. The instrument must exactly preserve
+the visible sectors and stationary law, with independent fixed symmetric
+electronics. Prefixed types include a silent copy of that same instrument
+before the calibration low wait; the added operation has a physical cost.
+
+The optional experiment has five types. The
+[sampling theorem](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md)
+randomizes the type after preparation, independently of its hidden state,
+and uses known assignment probabilities. All response estimates then
+refer to one pathwise averaged preparation even when the individual
+preparations depend on the history. Under the stated population guards,
+60 billion trials suffice to estimate eight corrected score functionals
+simultaneously within $.001$ with probability above 96%. This is a
+conservative precision construction, not a cost lower bound or a full
+rejection/power guarantee. Localization, guard confidence, target
+acceptance and the larger physical error budget remain to be analyzed.
+The original three-state upper, five-million count and approximate-null
+allowance do not transfer to the added calibration data.
+
+The [readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md)
+gives a three-state counterexample that preserves the visible bit and
+passes arbitrary immediate repeat-readout, low-only and stationary
+endpoint-insertion checks. Electronic errors correlated with hidden
+kicks nevertheless change each original joint table by TV $1/4800$.
+This does not fit the selected target or falsify its gated score. Under
+the additional independence premise, sector-preserving instruments on
+at most three states do admit an endpoint-to-joint TV identity. The
+premise itself is not established by the listed calibration records.
+The [source audit](FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_SOURCE_AUDIT.md)
+records established disturbance and sampling ideas and an unresolved
+recent full-text comparison; no priority claim follows.
+
+**Preserved extension: serial sampling and finite target preparation.** The
 [serial theorem](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) retains the
 one-percent score test's five million trials, empirical gates and
 threshold .0021, with deterministic alternating arms. Conditional on
@@ -354,15 +393,16 @@ to the new point merely by changing parameters.
 
 The one-percent result removes the earlier very small sufficient rate
 allowance as the immediate mathematical bottleneck. Conditional serial
-sampling and the finite target reset now account for dependence and
-preparation exposure without an exact-independence claim. The next
-priority is operational justification or statistical certification of
-rival preparation and the joint-instrument and detector assumptions
-in a concrete physical model. The target's mixing bound cannot supply
-those rival guarantees, and visible equilibrium does not certify hidden
-preparation. Further field or score-constant tuning is secondary.
-Extra controls and preparation checks require their own resource
-accounting.
+sampling and finite target reset account for dependence and preparation
+exposure. The new optional calibration replaces a mixing premise with
+observable response bounds under a stronger instrument contract, but its
+current scalar precision calculation is expensive and incomplete as a
+test. Keep the two-word core. The next priority is a sharper joint
+calibration analysis and a physical justification of electronic errors
+independent of hidden measurement updates. A target mixing bound cannot
+prepare arbitrary slow rivals, and repeatable visible readout alone
+cannot establish that independence. Further field or score-constant
+tuning is secondary; extra controls require resource accounting.
 
 The [percent-kinetic source comparison](FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md)
 and [internal review](FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md)
@@ -401,6 +441,10 @@ The serial-reset continuation starts from published commit
 e80ebbf78f92332e911d35818ae8c6fe659cc77a, tree
 36b901a2782b43885af315055c0f603055f850bb, with successful
 [CI run 35979212122](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35979212122).
+The observable-calibration continuation starts from published commit
+f026f67d26b8f5617ff5a27ea1c99648b4a85e69, tree
+0d88522949938e6ccc5b5cbeae4802130dd3ffa5, with successful
+[CI run 35981239851](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35981239851).
 Earlier protected proofs, certificate bindings, recovery files and the
 original license remain preserved. The
 [physical-interface verifier](../scripts/verify_switch_physical_interface.py)
@@ -425,5 +469,9 @@ The [serial-reset verifier](../scripts/verify_switch_serial_reset.py)
 and [report](../reports/switch_serial_reset.json) check the enlarged
 conditional variance boxes, unchanged sampling margins, uniform reset
 bound and exposure arithmetic.
+The [observable-calibration verifier](../scripts/verify_switch_observable_calibration.py)
+and [report](../reports/switch_observable_calibration.json) check the
+new finite preparation, precision and instrument fixtures; the analytic
+proofs carry their universal and sequential claims.
 [Verification](VERIFICATION.md) distinguishes local completion from
 publication CI.

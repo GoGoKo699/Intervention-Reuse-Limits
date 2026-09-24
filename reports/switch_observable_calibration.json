@@ -1,0 +1,216 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction matrices, polynomial identities, and finite concentration arithmetic",
+  "observable_preparation_certificate": {
+    "stationary_bias_absolute_bound_exact": "1/10000",
+    "observed_detector_product_guard_exact": "9/20",
+    "observed_low_correlation_upper_exact": "3/20",
+    "latent_relaxation_lower_exact": "2/3",
+    "uniform_balance_factor_exact": "10001/9999",
+    "response_drift_multiplier_exact": "20002/3333",
+    "score_span_over_final_contrast_exact": "94/25",
+    "score_correction_coefficients_order": [
+      "abs(score_drift)",
+      "abs(low_final_mean)",
+      "abs(initial_mean)"
+    ],
+    "score_correction_coefficients_exact": [
+      "20002/3333",
+      "940094/83325",
+      "15041128/449955"
+    ],
+    "score_stationary_bias_floor_exact": "94/249975",
+    "endpoint_and_correlation_stationary_bias_floor_exact": "2/9999",
+    "scope": "At most three states and an exactly stationary, readout-preserving, error-independent instrument. The general response lemma does not require reversibility. These observable inequalities do not establish five-type state-count separation or a complete statistical test."
+  },
+  "readout_boundary_certificate": {
+    "stationary_laws_exact": [
+      [
+        "1/2",
+        "1/4",
+        "1/4"
+      ],
+      [
+        "1/5",
+        "2/5",
+        "2/5"
+      ]
+    ],
+    "low_kernel_exact": [
+      [
+        "3/4",
+        "1/8",
+        "1/8"
+      ],
+      [
+        "1/4",
+        "5/8",
+        "1/8"
+      ],
+      [
+        "1/4",
+        "1/8",
+        "5/8"
+      ]
+    ],
+    "high_kernel_exact": [
+      [
+        "13/30",
+        "11/30",
+        "1/5"
+      ],
+      [
+        "11/60",
+        "37/60",
+        "1/5"
+      ],
+      [
+        "1/10",
+        "1/5",
+        "7/10"
+      ]
+    ],
+    "electronic_error_probability_exact": "1/100",
+    "nonselective_instrument_exact": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "1/2"
+      ],
+      [
+        "0",
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "joint_record_state_TV_exact": "1/200",
+    "finite_half_reset_joint_record_state_TV_exact": "1/400",
+    "finite_half_reset_word_joint_table_TV_exact": "1/9600",
+    "word_order": [
+      "0H",
+      "H0"
+    ],
+    "word_joint_table_certificates": [
+      {
+        "actual_joint_table_exact": [
+          "431/2400",
+          "769/2400",
+          "259/2400",
+          "941/2400"
+        ],
+        "independent_error_reference_table_exact": [
+          "1723/9600",
+          "3077/9600",
+          "1037/9600",
+          "3763/9600"
+        ],
+        "joint_table_TV_exact": "1/4800"
+      },
+      {
+        "actual_joint_table_exact": [
+          "1117/4800",
+          "1283/4800",
+          "773/4800",
+          "1627/4800"
+        ],
+        "independent_error_reference_table_exact": [
+          "2233/9600",
+          "2567/9600",
+          "1547/9600",
+          "3253/9600"
+        ],
+        "joint_table_TV_exact": "1/4800"
+      }
+    ],
+    "all_zero_delay_repeat_words_have_iid_BSC_law": true,
+    "all_future_endpoint_laws_unchanged_at_equilibrium": true,
+    "positive_independent_error_fixture_joint_and_endpoint_TV_exact": "1/96",
+    "positive_leakage_repair_fixture_sector_change_probability_exact": "1/200",
+    "scope": "The negative fixture couples the otherwise fresh electronic error to hidden backaction. It therefore violates error/backaction independence, despite perfect marginal and repeated-readout checks. The positive lemma explicitly assumes this independence and readout-sector preservation."
+  },
+  "scalar_sampling_cost_certificate": {
+    "type_order": [
+      "0H",
+      "H0",
+      "K then 0H",
+      "K then H0",
+      "K"
+    ],
+    "type_worst_range_widths_exact": [
+      "46670/3333",
+      "18668/1515",
+      "40004/3333",
+      "80008/7575",
+      "201176356/2249775"
+    ],
+    "type_assignment_probabilities_exact": [
+      "15751125/155582831",
+      "13860990/155582831",
+      "13501350/155582831",
+      "11881188/155582831",
+      "2140174/3310273"
+    ],
+    "total_range_width_exact": "311165662/2249775",
+    "total_range_width_upper_exact": "139",
+    "signed_linear_functionals": 8,
+    "paired_trials": 60000000000,
+    "binary_readouts": 120000000000,
+    "simultaneous_absolute_scalar_precision_exact": "1/1000",
+    "simultaneous_failure_probability_upper_exact": "1/25",
+    "multiple_of_previous_five_million_trial_count": 12000,
+    "scope": "Only precision of eight scalar correction functionals under randomized type selection after preparation is certified. Observable guards, reference gates, target power, systematic errors, and a complete five-type rejection rule are not certified."
+  },
+  "new_five_type_state_count_advantage_claimed": false,
+  "previous_five_million_trial_guarantee_transferred": false,
+  "previous_approximation_allowance_transferred": false,
+  "full_five_type_test_size_or_power_claimed": false,
+  "largest_dense_matrix_dimension": 3,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_observable_calibration.py": "6bf14a993246a3770aa829cd65cc9c2dedb9aff516c1072af1ec939392acfdab",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_serial_reset.json": "9c9f662e63d94d518d3e01bf0aa179dffa6f06d78a2333660e3668582d972fb6"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56"
+  },
+  "checks": 75
+}

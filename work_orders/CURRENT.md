@@ -1,6 +1,82 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: serial sampling and finite target preparation — 24 September 2026
+## PRL: observable preparation and the readout calibration boundary — 24 September 2026
+
+Continue from published commit f026f67d26b8f5617ff5a27ea1c99648b4a85e69,
+tree 0d88522949938e6ccc5b5cbeae4802130dd3ffa5, successful
+[CI run 35981239851](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35981239851).
+Preserve the 117 protected baseline files, historical claim rows
+R1–R58 byte-for-byte, proof bindings, nine recovery files and the
+MIT license. Manuscript drafting remains deferred. Existing
+authorization covers non-forced public-main publication; collaborator
+contact is not authorized.
+
+The [observable preparation theorem](../docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md)
+controls equilibrium response bias for an at-most-three-state model
+with arbitrary shared hidden preparation and stationary visible
+imbalance at most $10^{-4}$. It requires no rival mixing time, rate
+cap or minimum stationary mass. Its optional five-type experiment
+adds a low calibration pair and two low-prefixed versions of the
+original words. The initial instrument must exactly preserve the
+readout sectors and stationary law, with fixed independent symmetric
+electronics. A silent copy of that same instrument is performed
+before each calibration prefix; omitting it changes the tested kernel.
+
+An original recorded correlation of magnitude at least $.45$ and a
+low-pair correlation at most $.15$ imply latent relaxation at least
+$2/3$. Observable original-to-prefix response drifts and low initial
+and final means then bound the score's preparation bias. The stationary
+imbalance contributes a conservative floor $94/249975\simeq.00037604$.
+Separate moment bounds must place the stationary reference inside
+the local witness box. These are response guarantees, not hidden-state
+TV certification or a complete rejection test.
+
+The [sampling analysis](../docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md)
+randomly assigns a type only after preparation, independently of
+the prepared state and history. Known-probability weighting recovers
+responses of one common pathwise averaged preparation, even for
+history-dependent preparation. Its explicit conservative allocation
+is **60 billion trials and 120 billion recorded bits** for simultaneous
+precision $.001$ on eight corrected scalar functionals with probability
+above 96%. The count is a sufficient precision construction, not a
+cost lower bound or full five-type size/power guarantee. Contrast and
+relaxation guards, localization, target acceptance and the full changed
+physical error budget still require analysis. No old five-million
+allocation, approximate instrument tolerance, $.0002$ null allowance
+or three-state upper transfers to these added data.
+
+The [readout boundary](../docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md)
+constructs three ordinary reversible states with an instrument that
+preserves the visible bit and passes arbitrary immediate repeated
+readouts, low-only records and stationary endpoint-insertion checks.
+Correlating an electronic error with a hidden measurement kick still
+changes each original joint table by TV $1/4800$. This is not a
+target fit or false rejection by the existing gated test. Under the
+missing electronic-independence premise, an at-most-three-state
+sector-preserving instrument does admit an exact endpoint-to-joint TV
+identity. The listed binary checks do not establish that premise.
+
+The [verifier](../scripts/verify_switch_observable_calibration.py),
+[report](../reports/switch_observable_calibration.json),
+[source audit](../docs/FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_OBSERVABLE_CALIBRATION_INTERNAL_REVIEW.md)
+separate analytic claims, finite fixtures and physical assumptions.
+Full-suite and publication evidence belong to
+[Verification](../docs/VERIFICATION.md). The general marginal-versus-joint
+disturbance distinction and sampling tools are established prior work;
+a close recent full-text comparison remains unresolved.
+
+**Next scientific priority:** retain the simple two-word core and
+investigate a physically justified separation of readout errors from
+hidden backaction, or a sharper joint calibration before adopting the
+large conservative five-type precision allocation. That allocation
+does not show calibration must be so expensive. A complete expanded
+test and a three-state predictor for its added data remain separate
+tasks. Further tiny changes to field, reset or score constants are
+secondary. Device feasibility and PRL readiness remain unestablished;
+manuscript drafting remains the last step.
+
+## Historical checkpoint: serial sampling and finite target preparation — 24 September 2026
 
 Continue from published commit e80ebbf78f92332e911d35818ae8c6fe659cc77a,
 tree 36b901a2782b43885af315055c0f603055f850bb, successful
