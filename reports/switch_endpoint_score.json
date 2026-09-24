@@ -1,0 +1,278 @@
+{
+  "status": "PASS",
+  "checks": 59,
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction polynomial boxes, variance and Bernstein exponent bounds, positive exponential sums",
+  "cell_order": [
+    "m",
+    "a",
+    "b",
+    "l"
+  ],
+  "reference_occupation_centers_exact": [
+    "482097253335389670191007130928194002735/680564733841876926926749214863536422912",
+    "523614786862603669414895787933861577679/680564733841876926926749214863536422912",
+    "576136437968413382852814681703224237477/680564733841876926926749214863536422912",
+    "418530294594593176938566703401590841915/680564733841876926926749214863536422912"
+  ],
+  "reference_occupation_enclosure_radius": "2^-121",
+  "empirical_gate_halfwidths_exact": [
+    "1/250",
+    "1/250",
+    "3/500",
+    "3/500"
+  ],
+  "population_localization_halfwidths_exact": [
+    "1/125",
+    "1/125",
+    "3/250",
+    "3/250"
+  ],
+  "calibrated_local_bands": {
+    "stationary_response_mean_radii": [
+      "811/50000",
+      "811/50000",
+      "1211/50000",
+      "1211/50000"
+    ],
+    "baseline_bias_radius": "1/10000",
+    "tanh_increment_radius": "1/10000",
+    "stationary_high_law_TV_radius": "1/100000",
+    "maximum_preparation_plus_model_transfer": "11/100000",
+    "sign_bounds": {
+      "-1": {
+        "nominal_witness_band_exact": "1/8000",
+        "nuisance_drift_outward_upper": "1927443171/62500000000000",
+        "approximate_tilt_residual_outward_upper": "2805927021/31250000000000"
+      },
+      "1": {
+        "nominal_witness_band_exact": "1/1600",
+        "nuisance_drift_outward_upper": "2313184971/50000000000000",
+        "approximate_tilt_residual_outward_upper": "56905923677/100000000000000"
+      }
+    }
+  },
+  "failure_budgets": {
+    "inside_null_exponent_lower": "3",
+    "target_minus_exponent_lower": "31/10",
+    "target_plus_exponent_lower": "8",
+    "gate_exponent_lower": "10",
+    "exponential_lower_sum_degree": 32,
+    "type_I_error_strict_upper": "1/20",
+    "type_II_components_strict_upper": [
+      "49/1000",
+      "1/2000",
+      "1/2000"
+    ],
+    "type_II_error_strict_upper": "1/20"
+  },
+  "designs": [
+    {
+      "case": "nominal",
+      "allocation_m_a_b_l": [
+        350000,
+        400000,
+        550000,
+        150000
+      ],
+      "total_fresh_endpoints": 1450000,
+      "preparation_TV_bound": "0",
+      "model_accuracy_allowance": "0",
+      "additional_observation_bias": "0",
+      "target_physical_displacement_bound": "0",
+      "target_radius_including_center_error": "1/2658455991569831745807614120560689152",
+      "nominal_active_exposure_exact": "3225000",
+      "calibrated_serial_exposure_upper_exact": null,
+      "scores": {
+        "-1": {
+          "reference_intercept_exact": "4698154281754018069814292227365831208685457897018577578597436446033498952709/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+          "occupation_coefficients_exact": [
+            "-156949946979273257511853426929674845233/170141183460469231731687303715884105728",
+            "-198467480506487256735742083935342420177/170141183460469231731687303715884105728",
+            "2",
+            "2/5"
+          ],
+          "coefficient_absolute_sum_exact": "1909390669477216676009112599457847797893/425352958651173079329218259289710264320",
+          "cutoff_exact": "41/10000",
+          "stationary_null_band_exact": "0",
+          "curvature_bound_exact": "4/15625",
+          "null_center_outward_upper": "4/15625",
+          "target_center_outward_lower": "1622962091/200000000000",
+          "null_variance_outward_upper": "1193870040867/500000000000000000",
+          "target_variance_outward_upper": "2303113160243/1000000000000000000",
+          "summand_absolute_bound_outward_upper": "3636363637/1000000000000000",
+          "null_exponent_lower": "3",
+          "target_exponent_lower": "31/10"
+        },
+        "1": {
+          "reference_intercept_exact": "42283388535786162628328630046292480877447977827718635561737508149176300033029/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+          "occupation_coefficients_exact": [
+            "523614786862603669414895787933861577679/170141183460469231731687303715884105728",
+            "482097253335389670191007130928194002735/170141183460469231731687303715884105728",
+            "-2",
+            "-18/5"
+          ],
+          "coefficient_absolute_sum_exact": "4896256668941552593258379549177516431227/425352958651173079329218259289710264320",
+          "cutoff_exact": "3/200",
+          "stationary_null_band_exact": "0",
+          "curvature_bound_exact": "4/15625",
+          "null_center_outward_upper": "4/15625",
+          "target_center_outward_lower": "14606658819/200000000000",
+          "null_variance_outward_upper": "15506633931453/500000000000000000",
+          "target_variance_outward_upper": "30554137116877/1000000000000000000",
+          "summand_absolute_bound_outward_upper": "3/125000",
+          "null_exponent_lower": "3",
+          "target_exponent_lower": "8"
+        }
+      }
+    },
+    {
+      "case": "calibrated",
+      "allocation_m_a_b_l": [
+        400000,
+        460000,
+        630000,
+        180000
+      ],
+      "total_fresh_endpoints": 1670000,
+      "preparation_TV_bound": "1/100000",
+      "model_accuracy_allowance": "0",
+      "additional_observation_bias": "0",
+      "target_physical_displacement_bound": "700001/10000000000",
+      "target_radius_including_center_error": "1817306496635618937399487980475207975673/25961484292674138142652481646100480000000000",
+      "nominal_active_exposure_exact": "3720000",
+      "calibrated_serial_exposure_upper_exact": "394600124/5",
+      "scores": {
+        "-1": {
+          "reference_intercept_exact": "4698154281754018069814292227365831208685457897018577578597436446033498952709/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+          "occupation_coefficients_exact": [
+            "-156949946979273257511853426929674845233/170141183460469231731687303715884105728",
+            "-198467480506487256735742083935342420177/170141183460469231731687303715884105728",
+            "2",
+            "2/5"
+          ],
+          "coefficient_absolute_sum_exact": "1909390669477216676009112599457847797893/425352958651173079329218259289710264320",
+          "cutoff_exact": "1/250",
+          "stationary_null_band_exact": "1/8000",
+          "curvature_bound_exact": "641601/2500000000",
+          "null_center_outward_upper": "426529959/1000000000000",
+          "target_center_outward_lower": "7800583093/1000000000000",
+          "null_variance_outward_upper": "2073281540763/1000000000000000000",
+          "target_variance_outward_upper": "400008316991/200000000000000000",
+          "summand_absolute_bound_outward_upper": "126984127/40000000000000",
+          "null_exponent_lower": "3",
+          "target_exponent_lower": "31/10"
+        },
+        "1": {
+          "reference_intercept_exact": "42283388535786162628328630046292480877447977827718635561737508149176300033029/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+          "occupation_coefficients_exact": [
+            "523614786862603669414895787933861577679/170141183460469231731687303715884105728",
+            "482097253335389670191007130928194002735/170141183460469231731687303715884105728",
+            "-2",
+            "-18/5"
+          ],
+          "coefficient_absolute_sum_exact": "4896256668941552593258379549177516431227/425352958651173079329218259289710264320",
+          "cutoff_exact": "3/200",
+          "stationary_null_band_exact": "1/1600",
+          "curvature_bound_exact": "641601/2500000000",
+          "null_center_outward_upper": "498375421/500000000000",
+          "target_center_outward_lower": "4514219991/62500000000",
+          "null_variance_outward_upper": "26252972054813/1000000000000000000",
+          "target_variance_outward_upper": "6466011163243/250000000000000000",
+          "summand_absolute_bound_outward_upper": "1/50000",
+          "null_exponent_lower": "3",
+          "target_exponent_lower": "8"
+        }
+      }
+    },
+    {
+      "case": "calibrated_model_error",
+      "allocation_m_a_b_l": [
+        450000,
+        520000,
+        720000,
+        200000
+      ],
+      "total_fresh_endpoints": 1890000,
+      "preparation_TV_bound": "1/100000",
+      "model_accuracy_allowance": "1/10000",
+      "additional_observation_bias": "0",
+      "target_physical_displacement_bound": "700001/10000000000",
+      "target_radius_including_center_error": "1817306496635618937399487980475207975673/25961484292674138142652481646100480000000000",
+      "nominal_active_exposure_exact": "4215000",
+      "calibrated_serial_exposure_upper_exact": "891550281/10",
+      "scores": {
+        "-1": {
+          "reference_intercept_exact": "4698154281754018069814292227365831208685457897018577578597436446033498952709/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+          "occupation_coefficients_exact": [
+            "-156949946979273257511853426929674845233/170141183460469231731687303715884105728",
+            "-198467480506487256735742083935342420177/170141183460469231731687303715884105728",
+            "2",
+            "2/5"
+          ],
+          "coefficient_absolute_sum_exact": "1909390669477216676009112599457847797893/425352958651173079329218259289710264320",
+          "cutoff_exact": "17/4000",
+          "stationary_null_band_exact": "1/8000",
+          "curvature_bound_exact": "657721/2500000000",
+          "null_center_outward_upper": "881873549/1000000000000",
+          "target_center_outward_lower": "7800583093/1000000000000",
+          "null_variance_outward_upper": "183080903983/100000000000000000",
+          "target_variance_outward_upper": "883225430063/500000000000000000",
+          "summand_absolute_bound_outward_upper": "1388888889/500000000000000",
+          "null_exponent_lower": "3",
+          "target_exponent_lower": "31/10"
+        },
+        "1": {
+          "reference_intercept_exact": "42283388535786162628328630046292480877447977827718635561737508149176300033029/578960446186580977117854925043439539266349923328202820197287920039565648199680",
+          "occupation_coefficients_exact": [
+            "523614786862603669414895787933861577679/170141183460469231731687303715884105728",
+            "482097253335389670191007130928194002735/170141183460469231731687303715884105728",
+            "-2",
+            "-18/5"
+          ],
+          "coefficient_absolute_sum_exact": "4896256668941552593258379549177516431227/425352958651173079329218259289710264320",
+          "cutoff_exact": "3/200",
+          "stationary_null_band_exact": "1/1600",
+          "curvature_bound_exact": "657721/2500000000",
+          "null_center_outward_upper": "538575813/250000000000",
+          "target_center_outward_lower": "4514219991/62500000000",
+          "null_variance_outward_upper": "11750882549581/500000000000000000",
+          "target_variance_outward_upper": "23155002785637/1000000000000000000",
+          "summand_absolute_bound_outward_upper": "9/500000",
+          "null_exponent_lower": "3",
+          "target_exponent_lower": "8"
+        }
+      }
+    }
+  ],
+  "floating_arithmetic_used": false,
+  "numerical_optimization_used": false,
+  "samples_simulated": 0,
+  "limitations": [
+    "The universal identity and statistical gate partition are analytic premises, not inferred from fitted models.",
+    "Fresh independent Bernoulli endpoints and fixed reference/design choices are assumed.",
+    "The additional readout-bias budget is zero in the certified rows; preparation allowances are charged explicitly.",
+    "The nominal design assumes exact stationary preparation. Finite target reset waits support only the calibrated rows.",
+    "These sufficient target-specific tests are not asserted optimal and do not apply unchanged to initial/final snapshot data."
+  ],
+  "source_sha256": {
+    "verify_switch_endpoint_score.py": "130b97e081bafae5e03979db6f4da6987ec6069770701e31ebcc84d1dfce67f0",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_preparation_witness.json": "3c4e563f598c1cbdd9b70a24d2251a052e8577d286a7e0733f061c600bb35b88"
+  },
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md": "071ad896935eb188f3865f69d1e6e2756027feba48963873cad80bfeb0d52705"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ]
+}

@@ -1,0 +1,875 @@
+{
+  "clock": 1.5,
+  "comparators": [
+    {
+      "diagnostics": {
+        "detailed_balance_residual": 0.0,
+        "generators": [
+          [
+            [
+              -0.1367171622780994,
+              7.164387018844466e-05,
+              0.13664551840791098
+            ],
+            [
+              0.0002073376303446084,
+              -0.004522232621191971,
+              0.004314894990847363
+            ],
+            [
+              0.20879189987292787,
+              0.0022781871196233964,
+              -0.21107008699255128
+            ]
+          ],
+          [
+            [
+              -0.04818107193739301,
+              0.0034682968384499224,
+              0.044712775098943086
+            ],
+            [
+              0.09033537709953297,
+              -0.8171392194371577,
+              0.7268038423376247
+            ],
+            [
+              0.6148828613806123,
+              0.3837393854586491,
+              -0.9986222468392614
+            ]
+          ]
+        ],
+        "initial_law": [
+          0.5,
+          0.17277102586097848,
+          0.3272289741390215
+        ],
+        "maximum_exit": 0.998622246839,
+        "minimum_off_diagonal": 7.16438701884e-05,
+        "occupation_readout": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "stationarity_residual": 7.42101042548e-18,
+        "stationary_laws": [
+          [
+            0.5,
+            0.17277102586097848,
+            0.3272289741390215
+          ],
+          [
+            0.9000000000000001,
+            0.03455420517219569,
+            0.0654457948278043
+          ]
+        ]
+      },
+      "fit_diagnostics": {
+        "epigraph_iterations": 9,
+        "epigraph_success": true,
+        "least_squares_nfev": [
+          39,
+          47,
+          32
+        ],
+        "least_squares_success": [
+          true,
+          true,
+          true
+        ]
+      },
+      "model": {
+        "conductances_by_field": [
+          [
+            3.582193509422233e-05,
+            0.06832275920395549,
+            0.0007454888340510963
+          ],
+          [
+            0.0031214671546049306,
+            0.04024149758904878,
+            0.025114129088074456
+          ]
+        ],
+        "kind": "reversible_three_state",
+        "singleton_sign": 1,
+        "split_mass": 0.17277102586097848
+      },
+      "ordinary_witness_residual": -1.63064006742e-16,
+      "responses": {
+        "TV_by_word": [
+          0.0127657348885,
+          0.0127657348885
+        ],
+        "balanced_feature_TV_identity_residual": 6.93889390391e-18,
+        "feature_errors": [
+          -0.025531469777,
+          0.025531469777,
+          0.025531469777,
+          -0.025531469777
+        ],
+        "features": [
+          0.39122502483,
+          0.37097687694,
+          0.255481462137,
+          0.360487989661
+        ],
+        "joint_laws": [
+          [
+            [
+              0.24493796302749782,
+              0.2550620369725022
+            ],
+            [
+              0.05944952455765096,
+              0.44055047544234904
+            ]
+          ],
+          [
+            [
+              0.27625163188096213,
+              0.2237483681190379
+            ],
+            [
+              0.09600763705060901,
+              0.40399236294939106
+            ]
+          ]
+        ],
+        "maximum_TV": 0.0127657348885
+      },
+      "role": "bounded_local_fit"
+    },
+    {
+      "diagnostics": {
+        "detailed_balance_residual": 0.0,
+        "generators": [
+          [
+            [
+              -0.14612510288351654,
+              0.07946414749458416,
+              0.06666095538893238
+            ],
+            [
+              0.6305427839287205,
+              -0.9714372590352349,
+              0.34089447510651444
+            ],
+            [
+              0.07627329678803346,
+              0.049156122300869694,
+              -0.12542941908890315
+            ]
+          ],
+          [
+            [
+              -0.4612373041898255,
+              0.22757587288449915,
+              0.23366143130532635
+            ],
+            [
+              0.20064439815925314,
+              -0.20248400339471304,
+              0.0018396052354599083
+            ],
+            [
+              0.029706091059159657,
+              0.00026526642859592476,
+              -0.029971357487755583
+            ]
+          ]
+        ],
+        "initial_law": [
+          0.5,
+          0.06301249456814588,
+          0.4369875054318541
+        ],
+        "maximum_exit": 0.971437259035,
+        "minimum_off_diagonal": 0.000265266428596,
+        "occupation_readout": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "stationarity_residual": 2.81395608513e-18,
+        "stationary_laws": [
+          [
+            0.5,
+            0.06301249456814588,
+            0.4369875054318541
+          ],
+          [
+            0.09999999999999998,
+            0.11342249022266258,
+            0.7865775097773373
+          ]
+        ]
+      },
+      "fit_diagnostics": {
+        "epigraph_iterations": 4,
+        "epigraph_success": true,
+        "least_squares_nfev": [
+          37,
+          33,
+          44
+        ],
+        "least_squares_success": [
+          true,
+          true,
+          true
+        ]
+      },
+      "model": {
+        "conductances_by_field": [
+          [
+            0.03973207374729208,
+            0.03333047769446619,
+            0.02148061126096018
+          ],
+          [
+            0.02275758728844991,
+            0.02336614313053263,
+            0.00020865260683251036
+          ]
+        ],
+        "kind": "reversible_three_state",
+        "singleton_sign": -1,
+        "split_mass": 0.06301249456814588
+      },
+      "ordinary_witness_residual": 2.77555756156e-17,
+      "responses": {
+        "TV_by_word": [
+          0.00184825927579,
+          0.00184825927579
+        ],
+        "balanced_feature_TV_identity_residual": 1.73472347598e-17,
+        "feature_errors": [
+          -0.00369651855157,
+          -0.00369651855157,
+          0.00369651855157,
+          0.00369651855157
+        ],
+        "features": [
+          0.413059976055,
+          0.341748888611,
+          0.233646510911,
+          0.389715977989
+        ],
+        "joint_laws": [
+          [
+            [
+              0.23217222813898436,
+              0.26782777186101564
+            ],
+            [
+              0.06129778383343796,
+              0.4387022161665621
+            ]
+          ],
+          [
+            [
+              0.2890173667694758,
+              0.21098263323052419
+            ],
+            [
+              0.09415937777482211,
+              0.4058406222251779
+            ]
+          ]
+        ],
+        "maximum_TV": 0.00184825927579
+      },
+      "role": "bounded_local_fit"
+    },
+    {
+      "diagnostics": {
+        "detailed_balance_residual": 2.71050543121e-20,
+        "generators": [
+          [
+            [
+              -0.146124,
+              0.079464,
+              0.06666
+            ],
+            [
+              0.6305465625595126,
+              -0.9714498825620518,
+              0.3409033200025392
+            ],
+            [
+              0.07627211731214587,
+              0.04915695625509167,
+              -0.12542907356723754
+            ]
+          ],
+          [
+            [
+              -0.4612400000000001,
+              0.22758000000000006,
+              0.23366000000000006
+            ],
+            [
+              0.20064961171417087,
+              -0.20249229423672388,
+              0.0018426825225530236
+            ],
+            [
+              0.02970587547280729,
+              0.00026570777941524964,
+              -0.029971583252222538
+            ]
+          ]
+        ],
+        "initial_law": [
+          0.5,
+          0.063012,
+          0.436988
+        ],
+        "maximum_exit": 0.971449882562,
+        "minimum_off_diagonal": 0.000265707779415,
+        "occupation_readout": [
+          0.0,
+          1.0,
+          1.0
+        ],
+        "stationarity_residual": 4.76033636602e-18,
+        "stationary_laws": [
+          [
+            0.5,
+            0.063012,
+            0.436988
+          ],
+          [
+            0.09999999999999998,
+            0.1134216,
+            0.7865784
+          ]
+        ]
+      },
+      "exact_feasibility": {
+        "generators": [
+          [
+            [
+              "-36531/250000",
+              "9933/125000",
+              "3333/50000"
+            ],
+            [
+              "3311/5251",
+              "-61213/63012",
+              "21481/63012"
+            ],
+            [
+              "16665/218494",
+              "21481/436988",
+              "-54811/436988"
+            ]
+          ],
+          [
+            [
+              "-11531/25000",
+              "11379/50000",
+              "11683/50000"
+            ],
+            [
+              "18965/94518",
+              "-114835/567108",
+              "1045/567108"
+            ],
+            [
+              "58415/1966446",
+              "1045/3932892",
+              "-117875/3932892"
+            ]
+          ]
+        ],
+        "maximum_exit": "61213/63012",
+        "scope": "Exact positivity, Gibbs tilt, detailed balance, stationarity and exit feasibility; joint-response replay is floating arithmetic.",
+        "stationary_laws": [
+          [
+            "1/2",
+            "15753/250000",
+            "109247/250000"
+          ],
+          [
+            "1/10",
+            "141777/1250000",
+            "983223/1250000"
+          ]
+        ]
+      },
+      "model": {
+        "conductances_by_field": [
+          [
+            0.039732,
+            0.03333,
+            0.021481
+          ],
+          [
+            0.022758,
+            0.023366,
+            0.000209
+          ]
+        ],
+        "kind": "reversible_three_state",
+        "singleton_sign": -1,
+        "split_mass": 0.063012
+      },
+      "ordinary_witness_residual": 1.38777878078e-17,
+      "rational_parameters": {
+        "denominator": 1000000,
+        "flux_numerators_by_field": [
+          [
+            39732,
+            33330,
+            21481
+          ],
+          [
+            22758,
+            23366,
+            209
+          ]
+        ],
+        "split_numerator": 63012
+      },
+      "responses": {
+        "TV_by_word": [
+          0.00184792312973,
+          0.00184906808924
+        ],
+        "balanced_feature_TV_identity_residual": 6.93889390391e-18,
+        "feature_errors": [
+          -0.00369565234091,
+          -0.00369584625947,
+          0.00369716651606,
+          0.00369813617848
+        ],
+        "features": [
+          0.413060842266,
+          0.341749560903,
+          0.233647158876,
+          0.389717595616
+        ],
+        "joint_laws": [
+          [
+            [
+              0.23217217965934547,
+              0.26782782034065455
+            ],
+            [
+              0.061297399207745275,
+              0.43870260079225476
+            ]
+          ],
+          [
+            [
+              0.28901760918508124,
+              0.21098239081491882
+            ],
+            [
+              0.09415881137697275,
+              0.40584118862302726
+            ]
+          ]
+        ],
+        "maximum_TV": 0.00184906808924
+      },
+      "role": "rounded_rational_upper"
+    }
+  ],
+  "exact_stationary_triangle": {
+    "conditional_coordinate_means_target_triangle": [
+      [
+        -0.8,
+        0.8
+      ],
+      [
+        -0.8,
+        0.8
+      ]
+    ],
+    "diagnostics": {
+      "affine_closure_residual": 4.4408920985e-16,
+      "detailed_balance_residual": 0.0137142857143,
+      "generators": [
+        [
+          [
+            -0.17999999999999997,
+            0.1251428571428571,
+            0.054857142857142854
+          ],
+          [
+            1.1400000000000001,
+            -1.706857142857143,
+            0.566857142857143
+          ],
+          [
+            0.09000000000000001,
+            0.02314285714285709,
+            -0.11314285714285709
+          ]
+        ],
+        [
+          [
+            -0.548780487804878,
+            0.3815331010452961,
+            0.16724738675958187
+          ],
+          [
+            0.6463414634146342,
+            -1.3636469221835077,
+            0.7173054587688735
+          ],
+          [
+            0.006097560975609761,
+            0.08147502903600459,
+            -0.08757259001161435
+          ]
+        ]
+      ],
+      "initial_law": [
+        0.5,
+        0.042857142857142844,
+        0.45714285714285724
+      ],
+      "maximum_exit": 1.70685714286,
+      "minimum_off_diagonal": 0.00609756097561,
+      "occupation_readout": [
+        0.0,
+        1.0,
+        1.0
+      ],
+      "stationarity_residual": 3.06045954208e-17,
+      "stationary_laws": [
+        [
+          0.5,
+          0.042857142857142844,
+          0.45714285714285724
+        ],
+        [
+          0.09999999999999998,
+          0.07714285714285712,
+          0.822857142857143
+        ]
+      ]
+    },
+    "model": {
+      "J": 1.0986122886681098,
+      "kind": "exact_stationary_triangle"
+    },
+    "responses": {
+      "TV_by_word": [
+        1.11022302463e-16,
+        1.04083408559e-16
+      ],
+      "balanced_feature_TV_identity_residual": 2.08166817117e-17,
+      "feature_errors": [
+        0.0,
+        2.22044604925e-16,
+        -1.11022302463e-16,
+        1.66533453694e-16
+      ],
+      "features": [
+        0.416756494607,
+        0.345445407163,
+        0.22994999236,
+        0.386019459438
+      ],
+      "joint_laws": [
+        [
+          [
+            0.23217222813898442,
+            0.2678277718610155
+          ],
+          [
+            0.0594495245576509,
+            0.44055047544234915
+          ]
+        ],
+        [
+          [
+            0.28901736676947576,
+            0.21098263323052419
+          ],
+          [
+            0.0960076370506091,
+            0.40399236294939095
+          ]
+        ]
+      ],
+      "maximum_TV": 1.11022302463e-16
+    },
+    "scope": "Shared closed coordinate equations and matching conditional initial coordinates reproduce both joint laws; no full-path-law assertion."
+  },
+  "exploration": {
+    "bounds": {
+      "epigraph": [
+        0,
+        0.1
+      ],
+      "log_raw_flux": [
+        -16,
+        6
+      ],
+      "split_logit": [
+        -12,
+        12
+      ]
+    },
+    "budget": {
+      "CPU_seconds": 120,
+      "epigraph_maxiter": 150,
+      "least_squares_max_nfev": 300,
+      "signs": 2,
+      "starts_per_sign": 3
+    },
+    "cap_parameterization": "At each field use positive symmetric raw edge fluxes, divided by 1 + maximum_raw_exit/3; rates are flux divided by stationary mass.",
+    "epigraph_ftol": 2e-13,
+    "least_squares_tolerances": {
+      "ftol": 3e-12,
+      "gtol": 3e-12,
+      "xtol": 3e-12
+    },
+    "method": "Three fixed least-squares starts per singleton sign, then one SLSQP epigraph refinement per sign; cap-3 stationary-flux parameterization. This replay never invokes either optimizer.",
+    "objective": "Maximum joint-table TV, evaluated equivalently as half the maximum absolute discrepancy in the four mean/correlation features under balanced initial marginals.",
+    "randomness": "None; all starts fixed.",
+    "raw_flux_starts_by_field": [
+      [
+        [
+          0.15,
+          0.1,
+          0.05
+        ],
+        [
+          0.12,
+          0.08,
+          0.04
+        ]
+      ],
+      [
+        [
+          0.25,
+          0.03,
+          0.1
+        ],
+        [
+          0.2,
+          0.05,
+          0.12
+        ]
+      ],
+      [
+        [
+          0.08,
+          0.22,
+          0.02
+        ],
+        [
+          0.05,
+          0.18,
+          0.03
+        ]
+      ]
+    ],
+    "runtime_seconds": 0.23792497100293986,
+    "selection": "Least achieved max error among the least-squares outputs, retained unless epigraph refinement improves it.",
+    "split_logit_starts": [
+      0,
+      1,
+      -1
+    ],
+    "versions": {
+      "numpy": "2.3.5",
+      "python": "3.13.5",
+      "scipy": "1.17.0"
+    }
+  },
+  "feature_order": [
+    "m_0H",
+    "c_0H",
+    "m_H0",
+    "c_H0"
+  ],
+  "fields": [
+    0,
+    1.0986122886681098
+  ],
+  "joint_table_labels": {
+    "columns_final": [
+      -1,
+      1
+    ],
+    "rows_initial": [
+      -1,
+      1
+    ]
+  },
+  "preparation": "One shared low-field equilibrium; an ideal noninvasive initial binary record and a final binary record per trial.",
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4"
+  },
+  "scope": "Bounded achieved numerical uppers on two joint initial/final laws. No fit-based lower/global optimum.",
+  "source_sha256": {
+    "screen_familiar_switches.py": "13d3abcdbaa0730c18540c56b35c4d0e06c8e14dd110cf856cf0c4459af93b6d",
+    "screen_switch_snapshot_witness.py": "37b9fcd5d3b3c22c9b27dae6bf8e28e2d58d9c4ffc449aecdfb1e845a3d66552"
+  },
+  "status": "PASS",
+  "summary": {
+    "best_achieved_fit_joint_TV": 0.00184825927579,
+    "control_segments_per_trial": 2,
+    "equilibrium_preparations": 1,
+    "joint_experiments": 2,
+    "maximum_dense_dimension": 4,
+    "readouts_per_trial": 2,
+    "retained_fitted_models": 2,
+    "rounded_rational_models": 1,
+    "scope": "Achieved numerical errors on two specified joint laws only; no fitted lower bound, global optimum, all-protocol upper or noisy-detector experiment."
+  },
+  "target": {
+    "alphas": [
+      1,
+      1
+    ],
+    "couplings": [
+      1.0986122886681098
+    ],
+    "kind": "ising"
+  },
+  "target_diagnostics": {
+    "affine_closure_residual": 2.22044604925e-16,
+    "detailed_balance_residual": 1.38777878078e-17,
+    "generators": [
+      [
+        [
+          -0.19999999999999996,
+          0.09999999999999998,
+          0.09999999999999998,
+          0.0
+        ],
+        [
+          0.8999999999999999,
+          -1.7999999999999998,
+          0.0,
+          0.8999999999999999
+        ],
+        [
+          0.8999999999999999,
+          0.0,
+          -1.7999999999999998,
+          0.8999999999999999
+        ],
+        [
+          0.0,
+          0.09999999999999998,
+          0.09999999999999998,
+          -0.19999999999999996
+        ]
+      ],
+      [
+        [
+          -0.6,
+          0.5,
+          0.09999999999999998,
+          0.0
+        ],
+        [
+          0.5,
+          -1.4,
+          0.0,
+          0.8999999999999999
+        ],
+        [
+          0.8999999999999999,
+          0.0,
+          -1.8878048780487804,
+          0.9878048780487805
+        ],
+        [
+          0.0,
+          0.09999999999999998,
+          0.012195121951219507,
+          -0.11219512195121949
+        ]
+      ]
+    ],
+    "initial_law": [
+      0.44999999999999996,
+      0.04999999999999999,
+      0.04999999999999999,
+      0.44999999999999996
+    ],
+    "maximum_exit": 1.88780487805,
+    "minimum_off_diagonal": 0.0,
+    "occupation_readout": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "stationarity_residual": 1.58321865103e-17,
+    "stationary_laws": [
+      [
+        0.44999999999999996,
+        0.04999999999999999,
+        0.04999999999999999,
+        0.44999999999999996
+      ],
+      [
+        0.08999999999999998,
+        0.08999999999999998,
+        0.009999999999999997,
+        0.81
+      ]
+    ]
+  },
+  "target_features": [
+    0.416756494607,
+    0.345445407163,
+    0.22994999236,
+    0.386019459438
+  ],
+  "target_joint_laws": [
+    [
+      [
+        0.23217222813898442,
+        0.2678277718610156
+      ],
+      [
+        0.0594495245576509,
+        0.44055047544234904
+      ]
+    ],
+    [
+      [
+        0.2890173667694757,
+        0.21098263323052427
+      ],
+      [
+        0.09600763705060908,
+        0.4039923629493909
+      ]
+    ]
+  ],
+  "target_witness_values": {
+    "-1": 0.00811481045501,
+    "1": -0.0730332940951
+  },
+  "versions": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scipy": "1.17.0"
+  },
+  "words": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ]
+}

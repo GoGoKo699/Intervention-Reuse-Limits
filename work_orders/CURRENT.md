@@ -1,6 +1,20 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: four endpoints and two equilibrium preparations — 24 September 2026
+## PRL: opposite pulse orders, one preparation, and sharper tests — 24 September 2026
+
+Continue the familiar coupled-switch project, with manuscript drafting deferred. Existing authorization covers non-forced public-main publication; no collaborator contact is authorized. This continuation starts from `5ad525792de4e4fe6c681b067d7185e018265082`, tree `cdfa71f58ca37c832f5631e5c21484ae88b25805`, successful [CI run 35958827202](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35958827202). Preserve all 99 protected baseline files, all earlier proof bindings and nine recovery files.
+
+The [direct snapshot witness](../docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) uses one low-field preparation, opposite orders $0H,H0$, and initial/final binary readouts. Four joint-law moments give the same conditional covariance without preparing high-field equilibrium. Ordinary models with at most three states have a singleton visible sector and fail one necessary zero-covariance identity. A general three-state predictor matches both joint laws exactly. The nominal maximum joint-TV error is tightly bracketed by $(23/12500,37/20000)=(0.00184,0.00185)$; the upper is one certified feasible ordinary model, not a global optimizer claim.
+
+With preparation, fixed field/tick error and initial disturbance budgets $10^{-5}$, stationary bias/tilt uncertainty $10^{-4}$, high-law TV discrepancy $10^{-5}$, and independent symmetric readout error probabilities $0.01\pm10^{-5}$, the recorded joint-law gap exceeds $0.0015$. State minima remain three versus four for $4\times10^{-5}\le\delta\le0.0015$. A fixed common instrument and channel must serve both protocols; hidden detector memory is not free. Calibration bounds and fresh-trial independence are premises, not consequences of visible balance or the reset duration.
+
+The [snapshot score test](../docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) has sufficient paired-trial totals 900,000 nominal, 1,000,000 with physical nuisance and ideal readout, 1,200,000 with calibrated noisy readout/backaction, and 1,500,000 for that noisy class enlarged by observed-joint-TV model error $10^{-4}$. Each trial uses two readouts. All tests have false rejection below 5% and target power above 95%. The separate ideal information lower requires at least 79,500 paired trials at fixed budget. The [endpoint score test](../docs/FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md) reduces the earlier sufficient endpoint counts to 1,450,000, 1,670,000 and 1,890,000 for its three original classes. Trials, readouts, preparation types and calibration premises must be compared separately.
+
+**Next scientific priority:** determine whether the initial measurement and full-state reset assumptions can be supported in a concrete familiar realization. A larger observable margin remains valuable, but this selected experiment already has a nearly sharp deterministic bracket; further decimal tuning is unlikely to change its physical significance. Complete the closest-source comparison before making a novelty claim. Keep the two-snapshot mechanism short and the experimental promises explicit. No large simulation is needed on the user's hardware.
+
+The [source comparison](../docs/FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md), [internal review](../docs/FAMILIAR_SWITCH_SNAPSHOT_INTERNAL_REVIEW.md), and [verification record](../docs/VERIFICATION.md) separate analytic arguments, exact numerical certificates, numerical diagnostics and publication CI. This is a research checkpoint, not a manuscript or PRL-readiness determination.
+
+## Historical checkpoint: four endpoints and two equilibrium preparations — 24 September 2026
 
 The user authorized continued exploration for a larger simple observable gap. Manuscript drafting remains deferred, and existing authorization for non-forced public-main publication remains in effect. No collaborator contact is authorized. Baseline: `3c56fd45ff5f5988e59c0a4aff833663b53ded53`, tree `6195a00f28c296b9e7b38309e604559e7c1f0068`, successful [CI run 35944183992](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35944183992). Preserve all 95 protected baseline files, frozen earlier proof bindings and nine recovery files.
 

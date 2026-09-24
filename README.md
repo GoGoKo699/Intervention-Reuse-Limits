@@ -2,33 +2,45 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-This project asks how many states one stochastic predictor needs across changing controls. Our current small example is familiar: **two coupled conformational switches**, represented by time-even Ising variables with heat-bath dynamics.
+Our current small example is familiar: **two coupled conformational switches**, represented by time-even Ising variables with heat-bath dynamics. Their four equilibrium configurations admit an exact **three-state stationary predictor** for the controlled mean of one switch. Every **ordinary-reversible predictor needs four states**, under the same Gibbs control tilt.
 
-Their four equilibrium configurations admit an exact **three-state stationary predictor** for the controlled mean of one switch. Every **ordinary-reversible predictor needs four states**, under the same Gibbs control tilt. The new experiment uses **four endpoint measurements**, each after at most two pulses, with access to equilibrium preparation at either field.
+The simplest current experiment uses **one equilibrium preparation and two opposite pulse orders**, with an initial and final binary readout:
 
-The mechanism is a conditional covariance. A hidden conformation changes the response to both pulses, even after fixing the visible conformation. Detailed balance makes that covariance measurable by reversing pulse order. It is nonzero in both visible sectors, so each sector needs at least two states. A stationary predictor with circulation can reproduce the same means with three states.
+| Protocol | Preparation | Active fields | Recorded data |
+|---|---|---|---|
+| $A$ | Low-field equilibrium | $0,H$ | Initial bit $I$, final bit $Y$ |
+| $B$ | Low-field equilibrium | $H,0$ | Initial bit $J$, final bit $Z$ |
 
-The [four-endpoint theorem](docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md) gives the direct quadratic identity. Write the four means as $m,a,b,\ell$, with the preparation included in each experiment:
+The mechanism is a conditional covariance. A hidden conformation changes the response to both pulses, even after fixing the visible conformation. Detailed balance makes that covariance measurable by reversing pulse order. It is nonzero in both visible sectors, so each sector needs at least two states. A stationary predictor with circulation reproduces both initial/final joint laws with three states.
 
-| Mean | Equilibrium preparation | Active field sequence |
-|---|---|---|
-| $m$ | $0$ | $H$ |
-| $a$ | $H$ | $0$ |
-| $b$ | $H$ | $0,H$ |
-| $\ell$ | $0$ | $H,0$ |
+The [direct snapshot theorem](docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) uses four moments $m=\mathbb EY$, $c=\mathbb E(IY)$, $\ell=\mathbb EZ$, $d=\mathbb E(JZ)$. Every ordinary model with at most three states satisfies one of the two identities
 
-Every ordinary model with at most three states obeys one of
-$b-m-a+\ell\pm(u\ell-am)=0$, where $u=\tanh H$. The coupled pair violates both. This necessity has no rival rate cap and also covers arbitrary reversible stochastic tick kernels. One fixed model must explain all four cells; the two preparations have Gibbs-related stationary laws. The result is not an unconstrained preparation-and-measurement dimension test.
+$$
+u c-u(1+\sigma m)d+\sigma(u-m)\ell=0,\qquad \sigma=\pm1,
+$$
 
-**The observable gap is tightly bracketed.** At $J=H=\log3$ and tick $3/2$, the best ordinary three-state maximum occupation error lies strictly between $9/5000$ and $1/550$: **0.18 to 0.181819 percentage points**, a ratio below $100/99$. The lower holds for the whole rival class; the upper comes from one certified feasible model. Three general stationary states remain exact. The longest active experiment lasts three attempt-time units. This is a new two-preparation task; the [seven-word result](docs/FAMILIAR_SWITCH_FINITE_MARGIN.md) retains its single-preparation scope.
+where $u=\tanh H$. The coupled pair violates both. This necessity has no rival rate cap and includes arbitrary reversible stochastic tick kernels. One fixed model, preparation, instrument and readout must explain both protocols. Shared Gibbs stationary laws and the specified measurement model are substantive assumptions.
 
-**Calibration is included.** Simultaneous full-state preparation TV errors, fixed field errors and fixed per-field tick errors of $10^{-5}$ preserve an actual occupation gap greater than $1/625$: **0.16 percentage points**. The rival class permits stationary low-field bias and relative tilt-parameter uncertainty $10^{-4}$ and a high-field stationary-law TV discrepancy $10^{-5}$. Each model has one fixed preparation law per field, shared across that field's cells. The state minima remain three versus four for $10^{-5}\le\delta_P\le1/625$. These sufficient budgets do not cover arbitrary correlated drift or finite ramps.
+**The nominal gap is almost pinned down.** At $J=H=\log3$ and tick $3/2$, the best ordinary-three-state maximum joint-law TV error lies strictly between **0.00184 and 0.00185**, a bracket of ratio $185/184$. The lower covers the entire rival class; the upper is one certified feasible ordinary model. Three general stationary states are exact for these two joint laws. The longest active experiment lasts three attempt-time units. This does not assert arbitrary multitime path-law equality.
 
-The [measurement-cost analysis](docs/FAMILIAR_SWITCH_PREPARATION_COST.md) gives conservative totals at 5% false-positive and false-negative probabilities: **15,859,920 endpoints** for calibrated exact-null rejection, or **18,045,064** to exclude ordinary approximation within $10^{-4}$. A separate ideal-case information bound requires at least **174,900 endpoints** for a fixed-budget test. Sufficient and necessary counts remain far apart. Target-specific preparation waits of 62 and 36 attempt-time units suffice at the low and high fields; they do not prepare every arbitrarily slow rival. Full hidden-state preparation cannot be certified from the visible balance alone.
+**Preparation, controls and measurement are included.** With simultaneous preparation TV, fixed field/tick errors and initial-readout disturbance budgets $10^{-5}$, stationary low-field bias and relative tilt uncertainty $10^{-4}$, and high-stationary-law discrepancy $10^{-5}$, the witness tolerates independent symmetric readout error probabilities **$0.01\pm10^{-5}$** at both observations. The recorded joint-law gap remains above **0.0015**; the state minima are three versus four for $4\times10^{-5}\le\delta\le0.0015$. Known detector noise, uncertainty in its calibration, and hidden-state disturbance are separate quantities. This 1% detector example is a mathematical operating point, not a device specification.
 
-The [exact verifier](scripts/verify_switch_preparation_witness.py), [report](reports/switch_preparation_witness.json), [source comparison](docs/FAMILIAR_SWITCH_PREPARATION_SOURCE_AUDIT.md) and [internal review](docs/FAMILIAR_SWITCH_PREPARATION_INTERNAL_REVIEW.md) separate analytic proof, essential rational certification and statistical assumptions. The [saved-model replay](reports/switch_preparation_screen.json) is diagnostic evidence and runs without optimization. An optional variant needs only the opposite pulse orders $0H,H0$ from low-field equilibrium, with noninvasive initial and final readouts. It certifies a $1/1000$ joint-law TV gap under exact preparation and tilt; its observation model, calibration and sampling cost are separate from the endpoint figures above.
+The [fixed-score tests](docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) improve the measurement budget. Each design has false rejection below 5% and target power above 95%, under its stated class:
 
-The research target is **Physical Review Letters**; manuscript drafting remains the last step. The [current exploration](docs/PRL_EXPLORATION.md), [research dossier](docs/RESEARCH_DOSSIER.md), and [claim ledger](docs/CLAIM_LEDGER.md) retain the assumptions and unresolved questions. The four-endpoint result concerns means; it does not assert complete controlled path-law equality, an implementation-independent heat cost, or PRL readiness. Earlier constructions below address different target families and interfaces.
+| Snapshot design | Fresh paired trials | Binary readouts |
+|---|---:|---:|
+| Exact preparation, controls and readout | 900,000 | 1,800,000 |
+| Physical nuisance; ideal readout | 1,000,000 | 2,000,000 |
+| Physical nuisance, disturbance and calibrated 1% readout noise | 1,200,000 | 2,400,000 |
+| Same noisy class; exclude ordinary approximation within observed TV $10^{-4}$ | 1,500,000 | 3,000,000 |
+
+A separate ideal information lower requires at least **79,500 paired trials** for fixed-budget testing. The sufficient and necessary budgets are not matched. A target-specific low-field wait of 62 attempt-time units supports the preparation tolerance; it does not prepare every arbitrarily slow rival or establish fresh-trial independence. Visible balance alone cannot certify full hidden-state preparation or measurement disturbance.
+
+The earlier **two-preparation, four-endpoint experiment** remains useful when initial observation is costly. Its [new score test](docs/FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md) needs **1,450,000**, **1,670,000**, or **1,890,000** single-readout trials for nominal, calibrated and calibrated finite-accuracy testing. These replace earlier sufficient confidence-box counts of 12,531,296, 15,859,920 and 18,045,064 on those same classes. Its [deterministic theorem](docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md) and [preparation costs](docs/FAMILIAR_SWITCH_PREPARATION_COST.md) remain unchanged. Preparation types, readouts and calibration premises differ between the designs; neither dominates every resource.
+
+The [exact snapshot certificate](reports/switch_snapshot_design.json), [endpoint certificate](reports/switch_endpoint_score.json), [saved-model replay](reports/switch_snapshot_screen.json), [source comparison](docs/FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md), and [internal review](docs/FAMILIAR_SWITCH_SNAPSHOT_INTERNAL_REVIEW.md) separate analytic proof, essential rational bounds and statistical assumptions. No large simulation is needed.
+
+The research target is **Physical Review Letters**; manuscript drafting remains the last step. The [current exploration](docs/PRL_EXPLORATION.md), [research dossier](docs/RESEARCH_DOSSIER.md), and [claim ledger](docs/CLAIM_LEDGER.md) retain the assumptions and unresolved questions. This is a controlled realization comparison, not an implementation-independent heat-cost result or a PRL-readiness claim.
 
 ## Earlier general principle: one state, two roles
 
@@ -108,4 +120,4 @@ For reproducibility, use the pinned environment and the [Makefile](Makefile):
 make check PYTHON=.venv/bin/python
 ```
 
-[Verification](docs/VERIFICATION.md) records the full suite and its limits. The certificates bound entire error boxes and fixed comparison models; they do not optimize over rival generators. The next scientific priority is a larger observable separation or a more informative short measurement, alongside better statistical tests and a closer source comparison. The present endpoint-only sample burden is a concrete obstacle to physical significance. Manuscript drafting remains deferred.
+[Verification](docs/VERIFICATION.md) records the full suite and its limits. The certificates bound entire error boxes and fixed comparison models; they do not optimize over rival generators. The next scientific priority is a concrete realization with credible full-state preparation and a sufficiently gentle initial readout, alongside the closest-source comparison. The remaining sampling burden and calibration assumptions are obstacles to physical significance. Manuscript drafting remains deferred.
