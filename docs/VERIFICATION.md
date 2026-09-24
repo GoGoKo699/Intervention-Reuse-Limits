@@ -4,11 +4,27 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-eight mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all forty-nine mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: unknown detector contrasts and a charge-model bridge
+## Current checkpoint: integer scores and the value of detector calibration
+
+The published baseline `9983da2206c0a84e1ce5e111a9d132331afe70f5`, tree `5da1fadc9fe9877e916a5b2a2c775ea6dcfe256d`, had 48 mathematical verifiers, four saved-model replays and successful [CI run 35966287099](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35966287099). This continuation protects all **107** baseline verifier/report/license/dependency/workflow files, earlier mathematical proof bindings, nine recovery files and historical claim rows R1–R48.
+
+The [new score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md) keeps the same two pulse orders, target operating point, independent symmetric detector classes and physical allowances. A fixed integer score for each recorded pair, including opposite initial-bit corrections whose expectations cancel, reduces the sufficient count from 508 million to **32 million paired trials**. A second design uses **90 million trials** to reject every pair of observed laws within joint-TV $10^{-4}$ of the ordinary null. This allowance exceeds the general-three constructive error $2\times10^{-5}$. Both designs have false rejection below 5% and target power above 95%; no Gaussian approximation, fitted test coefficient or added observation protocol is used.
+
+The [information-cost proof](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) supplies one fixed positive rational ordinary comparator with a perfect detector, compared with the target's one-percent-noisy recorded law. Exact per-arm Taylor KL bounds are below $1/900000$. Hence any uniformly valid fresh-trial test of the unknown-detector class needs $\mathbb E_*N>810000\log19$, or at least **2,384,996** trials for a fixed count, even allowing adaptive arm choice and the stated stopping rules. The same target is covered by the earlier calibrated 1.2-million sufficient test. This establishes the value of that narrower detector promise, without pricing calibration or claiming optimality.
+
+[verify_switch_uncalibrated_score.py](../scripts/verify_switch_uncalibrated_score.py) produces [switch_uncalibrated_score.json](../reports/switch_uncalibrated_score.json) with **131 exact checks**, maximum dense dimension four and no floating arithmetic or optimizer. Source SHA-256: `32311e7e0050816be3ec00d0a06b1b2f0b566ba0157a38dd29da0e21f9e6fd85`; report SHA-256: `28c432062f3c081c8bf727dcf2299036de35e1c5df13f30e8433b8601a91c182`. It pins both new proofs, twelve proof snapshots in total, two input reports and the inherited rational helper. An independent final pinned run reproduces the canonical report byte for byte.
+
+The [internal review](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_INTERNAL_REVIEW.md) records the analytic and source checks, including the corrected target decimal floor, equality endpoint and empirical-summary wording. The [source audit](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) attributes the established concentration, control-variate and adaptive-information ingredients. Existing physical assumptions and novelty boundaries remain in force.
+
+**Completed local gate:** `make check PYTHON=.venv/bin/python` passed **49 mathematical verifiers and four saved-model replays** under pinned Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0. The complete captured log contains all **54** commands, including the repository checker and final snapshot replay. All **53** fresh reports are PASS and byte-identical to saved evidence. All 107 protected baseline files, earlier proof bindings, nine recovery files and historical claim rows R1–R48 remain unchanged. The checker passes **2,113 local Markdown links**, **54 Python syntax checks**, report/source/proof/input provenance and the original MIT license; `git diff --check` passes. New work uses maximum dense dimension four; the historical suite maximum remains 68.
+
+Published-commit CI is separate evidence and is checked after non-forced publication. The baseline CI cited above certifies only that earlier commit. Manuscript drafting remains deferred.
+
+## Historical checkpoint: unknown detector contrasts and a charge-model bridge
 
 The published baseline `778954f18164c3a228b845be07298ba1a33326eb`, tree `e08a840c71d2474a5ad4866d9daf1c39969e92f6`, had 47 mathematical verifiers, four saved-model replays and successful [CI run 35962664555](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35962664555). This continuation protects all **105** baseline verifier/report/license/dependency/workflow files, all earlier proof bindings, nine recovery files and historical claim rows R1–R45.
 

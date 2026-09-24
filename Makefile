@@ -54,6 +54,7 @@ check:
 	$(PYTHON) scripts/verify_switch_endpoint_score.py --output .check-output/switch_endpoint_score.json
 	$(PYTHON) scripts/verify_switch_snapshot_design.py --output .check-output/switch_snapshot_design.json
 	$(PYTHON) scripts/verify_switch_physical_interface.py --output .check-output/switch_physical_interface.json
+	$(PYTHON) scripts/verify_switch_uncalibrated_score.py --output .check-output/switch_uncalibrated_score.json
 	$(PYTHON) scripts/screen_familiar_switches.py --verify-saved reports/familiar_switch_screen.json --output .check-output/familiar_switch_screen.json
 	$(PYTHON) scripts/screen_short_switch_witnesses.py --verify-saved reports/short_switch_witness_screen.json --output .check-output/short_switch_witness_screen.json
 	$(PYTHON) scripts/screen_switch_preparation_witness.py --verify-saved reports/switch_preparation_screen.json --output .check-output/switch_preparation_screen.json

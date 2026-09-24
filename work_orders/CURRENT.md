@@ -1,6 +1,73 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: unknown symmetric readout noise and a charge-state bridge — 24 September 2026
+## PRL: fewer observations and the value of detector calibration — 24 September 2026
+
+Continue from published commit 9983da2206c0a84e1ce5e111a9d132331afe70f5,
+tree 5da1fadc9fe9877e916a5b2a2c775ea6dcfe256d, successful
+[CI run 35966287099](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35966287099).
+Preserve the 107 protected baseline files, all historical claim rows,
+proof bindings, nine recovery files and the MIT license. Manuscript
+drafting remains deferred. Existing authorization covers non-forced
+public-main publication; collaborator contact is not authorized.
+
+The [new unknown-detector score test](../docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md)
+keeps the same two control orders, preparation, recorded bit pairs,
+unknown symmetric detector class and physical tolerances as the
+preceding witness. A fixed integer lookup uses the initial bit to
+reduce within-trial variance, with cancelling mean corrections across
+arms. There are no new observations or calibration resources.
+
+The sufficient allocation for false rejection below 5% and target
+power above 95% is **32 million independent paired trials**: 18.56
+million of $0H$ and 13.44 million of $H0$, or 64 million binary
+readouts. The same null enlarged by observed-joint-TV approximation
+error $10^{-4}$ has a sufficient total of **90 million** trials:
+52.2 million and 37.8 million, or 180 million readouts. That
+approximation allowance exceeds the general three-state constructive
+error $2\times10^{-5}$. The former 508-million-trial confidence-box
+test remains valid at its historical scope; it is no longer the best
+certified sufficient design. No optimality or practicality follows.
+
+The [new information bound](../docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md)
+uses the nominal one-percent-noisy target and a fixed rational ordinary
+three-state comparator with a perfect detector. The per-arm relative
+entropy is below $1/900000$, giving $\mathbb E_*N>810000\log19$ for
+any valid test, including adaptive arm selection and almost-surely
+finite stopping. Fixed budgets require at least **2,384,996 paired
+trials**. The calibrated 1.2-million-trial test covers this very target;
+thus the detector calibration promise has a strict observation-budget
+value exceeding a factor of 1.98. Calibration effort is unpriced, and
+the upper and lower bounds are unmatched. The conclusion concerns
+only fresh trials of these two arms.
+
+The [score/information verifier](../scripts/verify_switch_uncalibrated_score.py),
+[report](../reports/switch_uncalibrated_score.json) and
+[source audit](../docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md)
+separate the exact finite certificates from established statistical
+tools and the analytic universal arguments. Full-suite and published
+commit evidence belong to [Verification](../docs/VERIFICATION.md).
+
+**Next scientific priority:** seek a larger observable separation with
+a comparably short physical protocol and quantitatively support the
+initial joint instrument and preparation conditions. The calibration
+lower bound makes an endless search for sampling-constant improvements
+on this fixture less useful. Preserve the same explicit resource
+accounting when changing fields, clocks, readouts or preparation types.
+The charge realization is conditional; no candidate or device becomes
+certified through a numerical search alone. Work remains analytic and
+tiny-matrix based, with no large simulation or manuscript drafting.
+
+The [next operating-point note](../docs/FAMILIAR_SWITCH_NEXT_OPERATING_POINT.md)
+provides a concrete exploratory candidate: keep $J=\log3$ and the
+same two words, lower the high field to $H=\log2$, and use equal
+dwells $5/4$. Its raw noisy witness is larger in the saved small
+floating-point calculation. The next task is exact certification and
+physical-tolerance transfer, followed by a new statistical design if
+the improvement survives. No current numerical gap or trial guarantee
+applies to this candidate; the certified 32-million/90-million budgets
+still use $H=\log3$ and tick $3/2$.
+
+## Historical checkpoint: unknown symmetric readout noise and a charge-state bridge — 24 September 2026
 
 Continue from published commit 778954f18164c3a228b845be07298ba1a33326eb,
 tree e08a840c71d2474a5ad4866d9daf1c39969e92f6. Manuscript drafting

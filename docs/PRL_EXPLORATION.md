@@ -1,8 +1,8 @@
-# PRL exploration: unknown readout noise and a charge-state realization
+# PRL exploration: fewer observations and the value of detector calibration
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Snapshot proof](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) · [Snapshot score test](FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) · [Endpoint score test](FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Unknown-detector score](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md) · [Detector information cost](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) · [Snapshot proof](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. Manuscript drafting remains the last step. The new lead removes the need to calibrate detector contrasts within a specified symmetric-channel model. A conditional charge-state realization also removes equal-attempt tuning. Preparation and initial-instrument boundaries remain explicit rather than being inferred from apparently equilibrated binary data.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. Manuscript drafting remains the last step. The unknown-detector witness now has a fixed-score test using the same two recorded bit pairs, reducing its sufficient budget from 508 million to 32 million trials. A separate information lower bound proves that the specified detector calibration promise has statistical value on this same target. The conditional charge-state realization and explicit preparation and initial-instrument boundaries remain in place.
 
 ## 1. The short physical mechanism
 
@@ -54,14 +54,47 @@ $2\times10^{-5}\le\delta_{\rm obs}\le2\times10^{-4}$.
 The target signal-loss bound differs from numerical calibration of the
 rival's detector: its errors are allowed anywhere up to one half.
 
-A first conservative test uses 254 million independent paired trials
-per arm, 508 million total, with false rejection below 5% and target
-power above 95%. Hoeffding bounds for the four moments and a finite
-box/corner calculation certify its size and power. It tests the composite
-null with the stated physical allowances, without an additional
-model-approximation allowance. This is a finite sufficient design, not
-a practical or near-optimal allocation. The calibrated counts below
-do not transfer to this larger null class.
+The [new fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md)
+uses only the already recorded bits:
+
+$$
+ X_A=\frac{(13+20I)Y-10I}{25},\qquad
+ X_B=\frac{-(10+12J)Z+10J}{25}.
+$$
+
+Its statistic is $\overline X_A+\overline X_B-26/125$, with the
+empirical localization gates and fixed threshold given in the proof.
+The initial-bit corrections have cancelling expectations because the
+same preparation and initial channel serve both protocols. Their
+within-trial correlation lowers variance without adding a measurement
+or assuming exact observed balance. Integer lookup scores, a fixed
+allocation and bounded-variable concentration suffice.
+
+| Unknown-detector null | $0H$ trials | $H0$ trials | Total paired trials | Binary readouts |
+|---|---:|---:|---:|---:|
+| Physical allowances, no additional approximation error | 18,560,000 | 13,440,000 | **32,000,000** | 64,000,000 |
+| Same class, observed-joint-TV approximation allowance $10^{-4}$ | 52,200,000 | 37,800,000 | **90,000,000** | 180,000,000 |
+
+Both designs have false rejection below 5% and target power above 95%
+for independent fresh trials. The finite-accuracy allowance exceeds the
+constructive general three-state error $2\times10^{-5}$. The first
+508-million-trial confidence-box design remains valid, but the new
+score improves its sufficient total by a factor of 15.875 on the same
+class. These totals are not necessary or optimal. The calibrated counts
+below do not transfer to this enlarged null.
+
+The [detector information bound](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md)
+shows that some of the increased cost is unavoidable. For the fixed
+nominal target with one-percent errors at both readouts, a rational
+ordinary three-state comparator with a perfect detector has per-arm
+relative entropy below $1/900000$. Any test with the same 5%/95%
+guarantees therefore needs $\mathbb E_*N>810000\log19$, even with
+adaptive arm choices and an almost-surely finite stopping rule; a fixed
+budget must be at least **2,384,996 paired trials**. The earlier
+calibrated 1.2-million-trial test covers this same target. Consequently
+the calibration promise has a strict observation-budget value exceeding
+a factor of 1.98. This comparison does not price obtaining calibration,
+match the necessary and sufficient bounds, or extend to richer data.
 
 ## 3. The preserved calibrated gap
 
@@ -134,16 +167,26 @@ and has no inherited sampling allocation.
 
 The mechanism is concise: reversed pulse order measures a conditional covariance, and a singleton sector cannot support it. Direct treatment of the paired data strengthens the previous $0.001$ snapshot corollary and gives its own nuisance and sampling guarantees. The endpoint task retains its original deterministic theorem and gains a more efficient test.
 
-The equal-rate calibrated gap is already tightly bracketed. The new
-result instead removes detector-contrast calibration under explicit
-channel assumptions, and the charge bridge supplies a conditional
-physical candidate. The next useful work is a less conservative test
-for the enlarged null and independently supported preparation,
-force-law and initial-instrument conditions. The sampling burden
-remains substantial. A larger gap would still help, but changed
-resources and observation tasks must be charged explicitly.
+The equal-rate calibrated gap is already tightly bracketed. Removing
+detector-contrast calibration gives a larger null and a smaller gap;
+the new fixed score makes that test substantially cheaper. The
+information bound proves that calibration also has a real statistical
+value on this experiment. The next useful work is a larger observable
+separation with a comparably short physical protocol, alongside
+independently supported preparation, force-law and initial-instrument
+conditions. Further sampling-constant optimization is secondary to
+these physical questions. Changed resources and observation tasks must
+be charged explicitly.
 
-The [source comparison](FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md) attributes the established concentration and union-null testing tools and links the earlier physical and dimension-witness audits. The earlier unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
+The [next operating-point note](FAMILIAR_SWITCH_NEXT_OPERATING_POINT.md)
+records a concrete exploratory lead: retain $J=\log3$ and both
+protocols, use $H=\log2$, and shorten each dwell to $5/4$. A small
+floating-point calculation gives a larger raw witness signal with
+one-percent errors. This is a candidate for exact certification;
+none of the present robustness margins or 32-million/90-million trial
+guarantees transfers to it.
+
+The [new source comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) attributes the established variance-reduction, concentration and sequential-information tools; the [earlier comparison](FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md) links the physical and dimension-witness audits. The earlier unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
 
 ## 7. Preserved results and provenance
 
@@ -153,15 +196,21 @@ The preceding snapshot checkpoint started from published commit
 5ad525792de4e4fe6c681b067d7185e018265082, tree
 cdfa71f58ca37c832f5631e5c21484ae88b25805, with successful
 [CI run 35958827202](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35958827202).
-This continuation starts from published commit
+The physical-interface continuation started from published commit
 778954f18164c3a228b845be07298ba1a33326eb, tree
-e08a840c71d2474a5ad4866d9daf1c39969e92f6. Earlier protected proofs,
-certificate bindings, recovery files and the original license remain
-preserved. The new
+e08a840c71d2474a5ad4866d9daf1c39969e92f6. This continuation starts from
+published commit 9983da2206c0a84e1ce5e111a9d132331afe70f5, tree
+5da1fadc9fe9877e916a5b2a2c775ea6dcfe256d, with successful
+[CI run 35966287099](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35966287099).
+Earlier protected proofs, certificate bindings, recovery files and the
+original license remain preserved. The
 [physical-interface verifier](../scripts/verify_switch_physical_interface.py)
 and [report](../reports/switch_physical_interface.json) pass 108 exact
 checks at maximum dense dimension four. The
 [internal review](FAMILIAR_SWITCH_PHYSICAL_INTERFACE_INTERNAL_REVIEW.md)
 records the proof and source audits.
+The new [score/information verifier](../scripts/verify_switch_uncalibrated_score.py)
+and [report](../reports/switch_uncalibrated_score.json) certify the fixed
+test and the rational ordinary comparator.
 [Verification](VERIFICATION.md) distinguishes local completion from
 publication CI.

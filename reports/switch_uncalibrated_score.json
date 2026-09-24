@@ -1,0 +1,369 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction matrices, polynomial identities, outward rational intervals and concentration arithmetic",
+  "protocols": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "stationary_preparation_field": 0,
+  "local_null_certificate": {
+    "observed_coordinate_box_exact": [
+      [
+        "2/5",
+        "21/50"
+      ],
+      [
+        "8/25",
+        "7/20"
+      ],
+      [
+        "21/100",
+        "6/25"
+      ],
+      [
+        "9/25",
+        "2/5"
+      ]
+    ],
+    "C_minus_D_box_exact": [
+      "-3/50",
+      "-3/100"
+    ],
+    "detector_minimum_corner": [
+      1,
+      1
+    ],
+    "field_derivative_absolute_upper_exact": "157/1000",
+    "balance_coefficient_absolute_upper_exact": "57/200",
+    "minus_residual_upper_exact": "27/500000",
+    "stationary_null_R_upper_exact": "1/10000",
+    "scope": "Derivative and endpoint inequalities certify the full closed detector square, using the analytic singleton residual. They do not impose an interior contrast bound or an inverse detector."
+  },
+  "fixed_score_designs": {
+    "score_coefficients_exact": [
+      [
+        "13/25",
+        "4/5",
+        "-2/5"
+      ],
+      [
+        "-2/5",
+        "-12/25",
+        "2/5"
+      ]
+    ],
+    "coefficient_order": [
+      "final_bit",
+      "initial_times_final",
+      "initial_bit"
+    ],
+    "constant_subtracted_exact": "26/125",
+    "outcome_order": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "integer_score_lookup_divisor": 25,
+    "integer_score_lookup": [
+      [
+        23,
+        -43,
+        3,
+        17
+      ],
+      [
+        -12,
+        32,
+        -8,
+        -12
+      ]
+    ],
+    "score_range_widths_exact": [
+      "66/25",
+      "44/25"
+    ],
+    "target_nominal_mean_lower_exact": "8497/5000000",
+    "target_execution_TV_allowance_exact": "800001/10000000000",
+    "rival_execution_TV_allowance_exact": "1/50000",
+    "gate_coordinate_order": [
+      "M",
+      "L+(4/5)D",
+      "C",
+      "L",
+      "D",
+      "C-D"
+    ],
+    "population_gate_intervals_exact": [
+      [
+        "34574505988080076416538280952908434757627/85070591730234615865843651857942052864000",
+        "17811931393536635456819909088911165962739/42535295865117307932921825928971026432000"
+      ],
+      [
+        "220306232533368927907626510506864899539677/425352958651173079329218259289710264320000",
+        "23086693676168619975671834866477554883603/42535295865117307932921825928971026432000"
+      ],
+      [
+        "278832279210653032991616165689241809903667/850705917302346158658436518579420528640000",
+        "14863763782370424335139117112314358284103/42535295865117307932921825928971026432000"
+      ],
+      [
+        "18830459913124466337958688905174776250999/85070591730234615865843651857942052864000",
+        "9951132142667308416130699299943712913103/42535295865117307932921825928971026432000"
+      ],
+      [
+        "62396401750031421181989783775631972719429/170141183460469231731687303715884105728000",
+        "16589593100337108681158106761883186568853/42535295865117307932921825928971026432000"
+      ],
+      [
+        "-1/20",
+        "-61/2000"
+      ]
+    ],
+    "empirical_gate_intervals_exact": [
+      [
+        "173212812307321320546154779371973941999591/425352958651173079329218259289710264320000",
+        "88889515784222708052367858140839945707967/212676479325586539664609129644855132160000"
+      ],
+      [
+        "221029332563075922142486181547657406989021/425352958651173079329218259289710264320000",
+        "115071918365989602760929338811991520693343/212676479325586539664609129644855132160000"
+      ],
+      [
+        "280533691045257725308933038726400650960947/850705917302346158658436518579420528640000",
+        "14778693190640189719273273460456416231239/42535295865117307932921825928971026432000"
+      ],
+      [
+        "19000601096584935569690376208890660356727/85070591730234615865843651857942052864000",
+        "9866061550937073800264855648085770860239/42535295865117307932921825928971026432000"
+      ],
+      [
+        "12547336823390471929090631676612748186177/34028236692093846346337460743176821145600",
+        "16504522508606874065292263110025244515989/42535295865117307932921825928971026432000"
+      ],
+      [
+        "-23/500",
+        "-69/2000"
+      ]
+    ],
+    "type_I_error_upper_exact": "1/20",
+    "type_II_error_upper_exact": "1/20",
+    "designs": [
+      {
+        "case": "physical",
+        "paired_trials_0H": 18560000,
+        "paired_trials_H0": 13440000,
+        "total_fresh_paired_trials": 32000000,
+        "total_bit_readouts": 64000000,
+        "observed_joint_TV_model_allowance_exact": "0",
+        "null_displacement_exact": "1/50000",
+        "initial_mean_absolute_bound_exact": "7/50000",
+        "null_score_mean_upper_exact": "229/1000000",
+        "target_score_mean_lower_exact": "1347/1000000",
+        "rejection_cutoff_exact": "79/100000",
+        "null_variance_ceilings_exact": [
+          "113/250",
+          "7/25"
+        ],
+        "target_variance_ceilings_exact": [
+          "111/250",
+          "11/40"
+        ],
+        "target_joint_gate_failure_upper_exact": "538951410689/1000000000000000"
+      },
+      {
+        "case": "physical_with_model_allowance",
+        "paired_trials_0H": 52200000,
+        "paired_trials_H0": 37800000,
+        "total_fresh_paired_trials": 90000000,
+        "total_bit_readouts": 180000000,
+        "observed_joint_TV_model_allowance_exact": "1/10000",
+        "null_displacement_exact": "3/25000",
+        "initial_mean_absolute_bound_exact": "17/50000",
+        "null_score_mean_upper_exact": "169/250000",
+        "target_score_mean_lower_exact": "1347/1000000",
+        "rejection_cutoff_exact": "1/1000",
+        "null_variance_ceilings_exact": [
+          "113/250",
+          "7/25"
+        ],
+        "target_variance_ceilings_exact": [
+          "111/250",
+          "11/40"
+        ],
+        "target_joint_gate_failure_upper_exact": "14019/125000000000000"
+      }
+    ],
+    "scope": "The simple scores and all gates are chosen before data collection. Null detector contrasts are arbitrary in the full unit square; target bit errors are each at most one percent. The model allowance enlarges the null joint-law class and is not charged a second time to the target. Independent fresh paired trials remain required."
+  },
+  "necessary_information_cost": {
+    "target_each_bit_error_exact": "1/100",
+    "rival_each_bit_error_exact": "0",
+    "readout": [
+      -1,
+      1,
+      1
+    ],
+    "stationary_laws_exact": [
+      [
+        "1/2",
+        "16109/250000",
+        "108891/250000"
+      ],
+      [
+        "1/10",
+        "144981/1250000",
+        "980019/1250000"
+      ]
+    ],
+    "flux_pair_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "flux_numerators": [
+      [
+        41237,
+        38789,
+        22424
+      ],
+      [
+        20505,
+        24202,
+        651
+      ]
+    ],
+    "flux_denominator": 1000000,
+    "clock_exact": "3/2",
+    "generators_exact": [
+      [
+        [
+          "-40013/250000",
+          "41237/500000",
+          "38789/500000"
+        ],
+        [
+          "41237/64436",
+          "-63661/64436",
+          "5606/16109"
+        ],
+        [
+          "38789/435564",
+          "5606/108891",
+          "-61213/435564"
+        ]
+      ],
+      [
+        [
+          "-44707/100000",
+          "4101/20000",
+          "12101/50000"
+        ],
+        [
+          "34175/193308",
+          "-8815/48327",
+          "1085/193308"
+        ],
+        [
+          "60505/1960038",
+          "1085/1306692",
+          "-124265/3920076"
+        ]
+      ]
+    ],
+    "maximum_exit_exact": "63661/64436",
+    "exponential_certificates": [
+      {
+        "taylor_degree": 96,
+        "clock_matrix_row_norm_exact": "190983/64436",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      },
+      {
+        "taylor_degree": 96,
+        "clock_matrix_row_norm_exact": "134121/100000",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      }
+    ],
+    "joint_TV_outward_uppers_exact": [
+      "98871246721/200000000000000",
+      "239169604117/500000000000000"
+    ],
+    "KL_Taylor_outward_uppers_exact": [
+      "1110332189/1000000000000000",
+      "276614949/250000000000000"
+    ],
+    "uniform_KL_upper_exact": "1/900000",
+    "type_I_and_II_error_upper_exact": "1/20",
+    "adaptive_expected_paired_trials_lower_exact": "810000*log(19)",
+    "fixed_integer_paired_trials_lower": 2384996,
+    "scope": "This fixed rational ordinary comparator uses a perfect detector while the target has one-percent independent bit errors. The enlarged null permits distinct detector contrasts under different hypotheses. The information bound holds for fresh adaptive selections of the same two protocols; no optimized comparator or universal lower under other controls is claimed."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "limitations": [
+    "The kinetic null implication and universal statistical guarantees are analytic; the exact calculations certify their specified numerical premises.",
+    "Independent fresh paired trials are assumed. Waiting or binary balance alone does not certify fresh equilibrium preparation.",
+    "No fixed design or ordinary comparator is asserted globally optimal."
+  ],
+  "source_sha256": {
+    "verify_switch_uncalibrated_score.py": "32311e7e0050816be3ec00d0a06b1b2f0b566ba0157a38dd29da0e21f9e6fd85",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_physical_interface.json": "b0ada0ff7f600d974fdffc52ea315a071394eb0d7b487d6b8a1ba3d37e303157",
+    "reports/switch_snapshot_design.json": "b8ee6fb70d37d104ea89fe04e28c8872a8c81f97d108771bd89d14ef2ad9e2cb"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c"
+  },
+  "checks": 131
+}
