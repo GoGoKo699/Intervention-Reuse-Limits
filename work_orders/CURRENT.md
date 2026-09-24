@@ -1,6 +1,69 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: four words remove rival preparation — 24 September 2026
+## PRL: finite endpoint registration and relative force control — 24 September 2026
+
+Continue from published commit `77efdedb42b2ff18e54344617f6da25c016fe0ad`, tree
+`cf2e2dec2b537a28a66bf38cf5a40f81cad0bf73`, successful
+[CI run 35994019903](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35994019903).
+Preserve all 123 baseline source/report/license/dependency/workflow files,
+66 bound proof snapshots and claim rows R1–R63 byte for byte. Existing
+authorization covers non-forced public-main publication. Collaborator contact
+is not authorized; manuscript drafting remains last.
+
+The [endpoint-registration theorem](../docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md)
+defines the initial true sign after the entire initial acquisition, and the
+final true sign before final acquisition. Any initial measurement disturbance
+then belongs to arbitrary rival preparation. Exact sign preservation or
+stationarity of its initial operation is unnecessary. One known uniform
+conditional endpoint-error ceiling $5\times10^{-6}$ permits asymmetric,
+history-dependent errors and correlations with backaction. It replaces the
+previous repetition/gate detector contract; neither class automatically
+contains the other. The active kernels must remain fixed conditional on the
+counted state, with no unmodeled detector/controller memory changing them.
+
+A finite integrating meter with signed signal margin $g$, continuous-martingale
+noise of quadratic variation at most $vT$, and whole-acquisition sign-change
+probability $\Lambda$ has error at most $e^{-g^2T/(2v)}+\Lambda$ against either
+boundary. The sufficient point $T=32v/g^2$, $\Lambda\le4\times10^{-6}$ meets
+the error ceiling. Integration and full acquisition spans differ; closure,
+ring-up, release and dead time belong in the leakage accounting. A small
+observed jump rate or fitted average fidelity does not certify the contract.
+
+For target power, the complete initial operation needs only a marginal
+stationarity defect $\operatorname{TV}(\pi D,\pi)\le10^{-5}$, together with
+the target preparation and execution budget. Fixed-energy symmetric barrier
+changes supply an explicit stationary target channel with positive leakage.
+The true pair budget remains $79\times10^{-6}$; recorded pairs admit a
+per-trial general-three-state approximation within $.000089$. No full analog
+or serial transcript realization is asserted.
+
+The [relative-force theorem](../docs/FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md)
+allows a residual likelihood-ratio spread $1001/1000$ beyond the nominal
+tilt, giving singleton residual ceiling $.0004$ without a mass floor.
+The same nine million trials and $.004$ threshold give size below $.04$
+and target miss below $.014$. There are **18 million integration windows
+and binary decisions**, with analog sampling resources separate. Ideal four-pair
+state minima remain three versus four for TV error through $.0009$.
+A finite-CTMC rare-state example and its irreducible extension show why an
+unweighted stationary-law TV allowance cannot replace the relative bound.
+
+[Verifier](../scripts/verify_switch_endpoint_registration.py),
+[report](../reports/switch_endpoint_registration.json),
+[eight-source audit](../docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_SOURCE_AUDIT.md)
+and [internal review](../docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_INTERNAL_REVIEW.md)
+separate universal proofs, exact finite checks, standard methods and component
+precedents. The combined specification is not demonstrated device performance.
+See [Verification](../docs/VERIFICATION.md) for local and publication evidence.
+
+**Single next scientific priority:** assess a concrete physical operating regime
+against the joint signal, noise, leakage, marginal-disturbance and relative-force
+requirements, with complete exposure and calibration costs. The elementary
+singleton mechanism remains the lead. Keep the close prior-art comparison
+open; do not infer PRL readiness, an optimal trial budget or a full-current
+state minimum. Further minor threshold tuning is secondary. Manuscript drafting
+remains deferred.
+
+## Historical checkpoint: four words remove rival preparation — 24 September 2026
 
 Continue from published commit `6f545598cd86bf8795eca8e58325c15e860a0889`, tree
 `4aa478b1a9c5f6c2f3c1b1192b4d336eb4e0bc80`, successful

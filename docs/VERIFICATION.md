@@ -4,11 +4,74 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-six mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-seven mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: preparation-independent four-word test
+## Current checkpoint: endpoint registration and relative force error
+
+The published baseline is `77efdedb42b2ff18e54344617f6da25c016fe0ad`, tree
+`cf2e2dec2b537a28a66bf38cf5a40f81cad0bf73`, with successful
+[CI run 35994019903](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35994019903).
+Its 56 mathematical verifiers and four saved-model replays were all reproduced
+byte for byte in the preceding checkpoint. This continuation preserves 123
+baseline source/report/license/dependency/workflow files, 66 proof snapshots
+and historical claim rows R1–R63, totaling 189 protected files.
+
+The [endpoint-registration proof](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md)
+places oracle signs at the actual active boundaries. Arbitrary initial
+measurement dynamics then belong to arbitrary rival preparation. A known
+conditional endpoint-error ceiling $5\times10^{-6}$ permits asymmetry,
+history dependence and error/backaction correlation. Its one-window detector
+alternative has a continuous-martingale signal/noise bound and a separate
+whole-acquisition leakage budget; closure, settling and release are included.
+The target initial channel needs only a marginal stationary defect, not a
+premeasurement-label/poststate joint bound.
+
+The [relative-force proof](FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md)
+controls the singleton residual by $(1-u)(L-1)$ for residual likelihood spread
+$L$. At $L=1001/1000$, the enlarged null retains size below $.04$ and target
+miss below $.014$ in nine million trials and 18 million integration windows.
+The nominal kinetic family's ideal four-pair state minima are three versus
+four through TV $.0009$. A finite-CTMC rare-state counterexample, with an
+irreducible extension, shows why an unweighted stationary-law TV allowance
+cannot substitute for this relative force condition under arbitrary preparation.
+
+The [new verifier](../scripts/verify_switch_endpoint_registration.py) and
+[report](../reports/switch_endpoint_registration.json) bind both new proofs and
+the frozen preparation-free certificate. The [internal review](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_INTERNAL_REVIEW.md)
+checks the full joint-history filtration, post-instrument marginal argument,
+noisy quota comparison, full acquisition span and relative-force inequality.
+The [eight-source audit](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_SOURCE_AUDIT.md)
+records inspected primary component precedents and their limitations. No
+conditional detector envelope or achieved device performance is inferred from
+average fidelity data. The full analog or serial transcript has no asserted
+three-state realization.
+
+The new verifier passes **104 exact checks** under pinned Python 3.13.5,
+with largest dense matrix dimension four. It uses a frozen rational-polynomial
+helper, no floating arithmetic and no optimization. It binds 31 proof snapshots,
+including the two new universal proofs, and the frozen preparation-free input
+report. Source SHA-256:
+`9b690e1ac4766de787ed4943f17359a2a13f06476c145f19fde98fdba20a305b`;
+canonical report SHA-256:
+`bf8f3924d62609cad8235db49743bf6e476ac2873ff644e1976ce0512e989977`.
+The coordinator inspected the complete final source and both new proofs.
+The Makefile and both explicit checker registries include the new report.
+A fresh complete `make check` passed **57 mathematical verifiers and four
+saved-model replays**. All **61** generated reports were PASS and byte-identical
+to their canonical reports, including an independent production replay of the
+104-check endpoint certificate. Final repository checks passed 2675 local Markdown
+links, 62 Python syntax checks, report/proof/source provenance and the unchanged
+MIT license. All 189 protected baseline files and historical rows R1–R63 remain
+byte-identical.
+
+These are local checks of the final source snapshot. The successful CI run
+linked above belongs to the named baseline; it is not automatically evidence
+for a new commit. Publication uses a non-forced main update, followed by separate
+checks of the resulting remote commit and its own workflow.
+
+## Historical checkpoint: preparation-independent four-word test
 
 The published baseline is `6f545598cd86bf8795eca8e58325c15e860a0889`, tree
 `4aa478b1a9c5f6c2f3c1b1192b4d336eb4e0bc80`, with successful

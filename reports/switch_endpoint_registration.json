@@ -1,0 +1,275 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction arithmetic, small symbolic polynomials and positive exponential series",
+  "inherited_four_word_contract": {
+    "four_word_order": [
+      "0",
+      "H",
+      "0H",
+      "H0"
+    ],
+    "target_residual_margin_lower_exact": "9/1000",
+    "target_conditional_return_error_upper_exact": "79/499921",
+    "scope": "The new registration theorem reuses the true-sign oracle and fixed-quota algebra, not the old fresh-Bernoulli detector model or its disagreement gates."
+  },
+  "endpoint_boundary_certificate": {
+    "initial_truth_boundary": "After the complete initial registration window",
+    "final_truth_boundary": "Before the final registration window",
+    "sign_changing_initial_fixture_probability_exact": "1/2",
+    "post_truth_fixture_joint_TV_exact": "0",
+    "pre_truth_fixture_joint_TV_exact": "1/2",
+    "asymmetric_fixture_per_state_error_upper_exact": [
+      "1/200000",
+      "0",
+      "1/400000"
+    ],
+    "target_postinstrument_stationary_defect_allowance_exact": "1/100000",
+    "target_execution_budget_exact": "78025101/1000000000000",
+    "scope": "The universal marginal-TV contraction and post-boundary singleton argument are supplied by the proof. Null initial instruments may move between signs; the active kernels still start from the registered true endpoint state."
+  },
+  "registration_sampling_certificate": {
+    "total_trials": 9000000,
+    "trials_per_word": 2250000,
+    "records_per_word_sign": 1000000,
+    "conditional_endpoint_error_upper_exact": "1/200000",
+    "per_word_stage_error_cap": 50,
+    "error_count_mean_upper_exact": "45/4",
+    "per_count_tail_upper_exact": "16677181699666569/1267650600228229401496703205376",
+    "eight_count_tail_upper_exact": "16677181699666569/158456325028528675187087900672",
+    "retained_mean_shift_upper_exact": "1/10000",
+    "residual_shift_upper_exact": "11/25000",
+    "target_conditional_return_error_upper_exact": "79/499921",
+    "null_linear_margin_exact": "43/12500",
+    "target_linear_margin_exact": "46801231/12498025000",
+    "null_linear_exponent_exact": "3698/875",
+    "target_linear_exponent_exact": "2190355223115361/437361760921750",
+    "target_observed_sign_probability_lower_exact": "124979/250000",
+    "target_observed_quota_exponent_exact": "15577785721/1125000",
+    "null_rejection_upper_exact": "3/200",
+    "target_miss_upper_exact": "7/500",
+    "disagreement_gates_used": false,
+    "scope": "The known conditional error ceiling is a physical promise, allowing asymmetric, history-dependent and same-window error/backaction correlations. No calibration gate estimates or certifies that ceiling."
+  },
+  "stationary_barrier_certificate": {
+    "target_stationary_law_exact": [
+      "9/20",
+      "1/20",
+      "1/20",
+      "9/20"
+    ],
+    "positive_barrier_factor_fixture_exact": "1/1000000",
+    "nominal_opposite_sector_rates_exact": [
+      "1/10",
+      "9/10",
+      "9/10",
+      "1/10"
+    ],
+    "sector_change_rate_upper": "(101/100)*r*Gamma",
+    "postinstrument_stationary_defect_exact": "0",
+    "scope": "Exact finite positive-rate target construction with prescribed symmetric edge factors; it neither calibrates a physical sensor nor imposes a rate cap on ordinary rivals."
+  },
+  "relative_force_certificate": {
+    "relative_weight_spread_upper_exact": "1001/1000",
+    "singleton_residual_defect_upper_exact": "1/2500",
+    "relative_force_fixtures": [
+      {
+        "singleton_sign": -1,
+        "low_stationary_law_exact": [
+          "1/5",
+          "3/10",
+          "1/2"
+        ],
+        "high_stationary_law_exact": [
+          "91/1546",
+          "3000/8503",
+          "10005/17006"
+        ],
+        "relative_weight_values_exact": [
+          "1001/1000",
+          "1",
+          "2001/2000"
+        ],
+        "return_residual_exact": "1/77300"
+      },
+      {
+        "singleton_sign": 1,
+        "low_stationary_law_exact": [
+          "1/5",
+          "3/10",
+          "1/2"
+        ],
+        "high_stationary_law_exact": [
+          "1456/2911",
+          "6000/32021",
+          "10005/32021"
+        ],
+        "relative_weight_values_exact": [
+          "1001/1000",
+          "1",
+          "2001/2000"
+        ],
+        "return_residual_exact": "2/72775"
+      }
+    ],
+    "ideal_pair_TV_gap_lower_exact": "9/10000",
+    "TV_plus_force_residual_displacement_upper_exact": "103991/12477500",
+    "registered_null_linear_margin_exact": "19/6250",
+    "registered_null_linear_exponent_exact": "2888/875",
+    "registered_null_rejection_upper_exact": "1/25",
+    "stationary_mass_lower_bound_required": false,
+    "scope": "The bound concerns the ratio max(w)/min(w), not separate per-state intervals whose ratio would be squared. The target remains the exact-force kinetic family; its inherited power bound is unchanged."
+  },
+  "absolute_stationary_TV_counterexample": {
+    "stationary_tilt_TV_formula": "3*epsilon*(1-epsilon)/(1+3*epsilon)",
+    "common_kernel_exact": [
+      [
+        "3/4",
+        "1/4",
+        "0"
+      ],
+      [
+        "1/4",
+        "3/4",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "preparation_exact": [
+      "1/2",
+      "1/2",
+      "0"
+    ],
+    "fixtures": [
+      {
+        "epsilon_exact": "1/10",
+        "stationary_law_exact": [
+          "1/10",
+          "1/10",
+          "4/5"
+        ],
+        "stationary_tilt_TV_exact": "27/130",
+        "return_residual_by_sign_exact": {
+          "-1": "3/40",
+          "1": "-3/40"
+        }
+      },
+      {
+        "epsilon_exact": "1/1000",
+        "stationary_law_exact": [
+          "1/1000",
+          "1/1000",
+          "499/500"
+        ],
+        "stationary_tilt_TV_exact": "2997/1003000",
+        "return_residual_by_sign_exact": {
+          "-1": "3/40",
+          "1": "-3/40"
+        }
+      },
+      {
+        "epsilon_exact": "1/1000000000",
+        "stationary_law_exact": [
+          "1/1000000000",
+          "1/1000000000",
+          "499999999/500000000"
+        ],
+        "stationary_tilt_TV_exact": "2999999997/1000000003000000000",
+        "return_residual_by_sign_exact": {
+          "-1": "3/40",
+          "1": "-3/40"
+        }
+      }
+    ],
+    "relative_weight_spread_exact": "4",
+    "finite_pair_generator_rate": "log(2)/2",
+    "irreducible_generator_formula": "C + epsilon*(Pi_epsilon-I)",
+    "irreducible_propagator_formula": "exp(-epsilon)*P + (1-exp(-epsilon))*Pi_epsilon",
+    "limiting_return_residual_by_sign_exact": {
+      "-1": "3/40",
+      "1": "-3/40"
+    },
+    "scope": "This boundary rules out a mass-uniform extension based only on absolute stationary-tilt TV. The displayed kernel is a finite-time finite-rate CTMC propagator, and the optional strictly positive-rate perturbation has the same nonzero residual limit. Every law at positive epsilon has strictly positive masses."
+  },
+  "continuous_integrator_certificate": {
+    "noise_model": "Continuous local martingale in the joint apparatus/system filtration",
+    "signal_margin_symbol": "g>0",
+    "quadratic_variation_bound_symbol": "v*T",
+    "theta_definition": "v/g^2",
+    "window_duration_in_theta_exact": "32",
+    "noise_tail_exponent_exact": "16",
+    "noise_tail_upper_exact": "1/1000000",
+    "sector_jump_probability_upper_exact": "1/250000",
+    "kappa_theta_upper_if_acquisition_equals_integration_exact": "1/8000000",
+    "combined_endpoint_error_upper_exact": "1/200000",
+    "observed_pair_TV_to_ideal_reference_upper_exact": "89/1000000",
+    "total_registration_windows": 18000000,
+    "target_reset_plus_active_attempt_units": 583875000,
+    "total_registration_time_theta_coefficient": 576000000,
+    "total_time_formula": "583875000/Gamma + 576000000*theta",
+    "scope": "The bound is conditional and uniform over the joint pre-window history. Leakage is bounded over the full acquisition span tau, including switching and dead time; kappa*T applies only when tau=T. No independence of readout noise, drift and hidden motion is assumed. Continuity or an explicit exponential-supermartingale substitute is necessary; predictable quadratic variation alone does not imply a Gaussian tail for jump martingales. Switching, controller and extra clock durations are additional to the displayed time total."
+  },
+  "rival_preparation_promise_required": false,
+  "null_initial_sign_preservation_required": false,
+  "symmetric_detector_required": false,
+  "fixed_detector_error_probability_required": false,
+  "temporal_detector_independence_required": false,
+  "known_conditional_registration_bound_required": true,
+  "active_model_and_controls_fixed_required": true,
+  "disagreement_gates_used": false,
+  "device_feasibility_claimed": false,
+  "full_transcript_state_count_claimed": false,
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "source_sha256": {
+    "verify_switch_endpoint_registration.py": "9b690e1ac4766de787ed4943f17359a2a13f06476c145f19fde98fdba20a305b",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_preparation_free.json": "dc10d2baf22899ef663faa4406d720998771e7c40c4de7ef4e8a7b2a3bed3df1"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md": "42530472f40412d9e1f93d868a4df1dd2d833ba34ee89f8531df1cb1679dec0a",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md": "311ddad97cfec6ab09a733565e5655532a4449f2b1ff4c33a37516565ed592fa",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md": "eb35e4b689e6a06573eea0fa12e91e19a41c08c23ec14bf0d5262c0b1846a5b9",
+    "docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md": "41df45ab86d3a005d9dd32497a7329f711bb433a7fe686ae6ee84b931bf615c9",
+    "docs/FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md": "99464fb83b33748c29859f27bbef53b5b8fd7b078b60559978b5bb9d64d087ea"
+  },
+  "checks": 104
+}
