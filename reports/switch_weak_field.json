@@ -1,0 +1,548 @@
+{
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  },
+  "arithmetic": "Exact stdlib Fraction matrices, polynomial identities, outward rational intervals and concentration arithmetic",
+  "protocols": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "stationary_preparation_field": 0,
+  "nominal_certificate": {
+    "tanh_J_exact": "4/5",
+    "tanh_H_exact": "3/5",
+    "clock_exact": "5/4",
+    "moment_order": [
+      "m",
+      "c",
+      "l",
+      "d"
+    ],
+    "moment_centers_exact": [
+      "37540006367130127781784004257245348537/170141183460469231731687303715884105728",
+      "164317151015967071829586272996574112701/340282366920938463463374607431768211456",
+      "42872316951264047325379625373527162929/340282366920938463463374607431768211456",
+      "170643644616190384919965756016903522031/340282366920938463463374607431768211456"
+    ],
+    "moment_enclosure_radius": "2^-120",
+    "joint_cell_order": "rows initial -,+; columns final -,+",
+    "joint_law_intervals_exact": [
+      [
+        [
+          [
+            "2696137631489953142333061532680942060842990148696296923332974406577256626523731355275119202212233/8543948143683640329580086824678208458410818089426611079788166431288878903122562200091848347746304",
+            "13480688157449765711665307663404710304214950743585506099680267812886652853410295934506863031611141/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ],
+          [
+            "7879182201759335112284909398290810841812094479966661450181740908961415653737729799261894322323703/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520",
+            "7879182201759335112284909398290810841812094480096480229139289595873635506180695924275576508649879/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ]
+        ],
+        [
+          [
+            "3166333419488543704159902383927896559054887538062984819503644303995663718879478636214074502365701/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520",
+            "3166333419488543704159902383927896559054887538167006302519040083996033439671117794345341522915677/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ],
+          [
+            "18193536939720557119790314677767624586972157685385161247342968637852035067476907939423415831019167/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520",
+            "18193536939720557119790314677767624586972157685514980026300517324764254919919874064437098017345343/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ]
+        ]
+      ],
+      [
+        [
+          [
+            "229532863948365578854295365800737750701333905877866706504116610663388888497945721129443745263861/667495948725284400748444283177985035813345163236453990608450502444443664306450171882175652167680",
+            "3672525823173849261668725852811804011221342494075097336812483828978295912621457198464218575081291/10679935179604550411975108530847760573013522611783263849735208039111098628903202750114810434682880"
+          ],
+          [
+            "6669767066513703777275313650448305101141675247263600837506239129791939301469663827073297504923489/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520",
+            "6669767066513703777275313650448305101141675247380520968492711363248234088086966468645772108361549/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ]
+        ],
+        [
+          [
+            "3978628115165430155521439643884939921717645040177669843090109455112790014191838425017307313008333/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520",
+            "3978628115165430155521439643884939921717645040294589974076581688569084800809141066589781916446393/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ],
+          [
+            "17381242244043670668428777417810581224309400183270745227025731169134626427419097299690131303270123/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520",
+            "17381242244043670668428777417810581224309400183387665358012203402590921214036399941262605906708183/42719740718418201647900434123391042292054090447133055398940832156444394515612811000459241738731520"
+          ]
+        ]
+      ]
+    ],
+    "physical_exponential_certificates": [
+      {
+        "taylor_degree": 96,
+        "clock_matrix_row_norm_exact": "9/2",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      },
+      {
+        "taylor_degree": 96,
+        "clock_matrix_row_norm_exact": "693/148",
+        "matrix_tail_upper": "2^-180",
+        "entry_dyadic_bits": 160,
+        "certified_entry_radius": "2^-160"
+      }
+    ],
+    "physical_generators_exact": [
+      [
+        [
+          "-1/5",
+          "1/10",
+          "1/10",
+          "0"
+        ],
+        [
+          "9/10",
+          "-9/5",
+          "0",
+          "9/10"
+        ],
+        [
+          "9/10",
+          "0",
+          "-9/5",
+          "9/10"
+        ],
+        [
+          "0",
+          "1/10",
+          "1/10",
+          "-1/5"
+        ]
+      ],
+      [
+        [
+          "-53/130",
+          "1/10",
+          "4/13",
+          "0"
+        ],
+        [
+          "9/10",
+          "-693/370",
+          "0",
+          "36/37"
+        ],
+        [
+          "9/13",
+          "0",
+          "-207/130",
+          "9/10"
+        ],
+        [
+          "0",
+          "1/37",
+          "1/10",
+          "-47/370"
+        ]
+      ]
+    ],
+    "physical_stationary_laws_exact": [
+      [
+        "9/20",
+        "1/20",
+        "1/20",
+        "9/20"
+      ],
+      [
+        "9/50",
+        "1/50",
+        "2/25",
+        "18/25"
+      ]
+    ],
+    "exact_three_state_predictor": {
+      "coordinate_matrix_exact": [
+        [
+          "1",
+          "-1",
+          "-4/5"
+        ],
+        [
+          "1",
+          "1",
+          "-8/5"
+        ],
+        [
+          "1",
+          "1",
+          "26/25"
+        ]
+      ],
+      "stationary_laws_exact": [
+        [
+          "1/2",
+          "1/22",
+          "5/11"
+        ],
+        [
+          "1/5",
+          "4/55",
+          "8/11"
+        ]
+      ],
+      "generators_exact": [
+        [
+          [
+            "-9/50",
+            "69/550",
+            "3/55"
+          ],
+          [
+            "57/50",
+            "-937/550",
+            "31/55"
+          ],
+          [
+            "21/250",
+            "89/2750",
+            "-32/275"
+          ]
+        ],
+        [
+          [
+            "-180/481",
+            "1380/5291",
+            "600/5291"
+          ],
+          [
+            "33/37",
+            "-623/407",
+            "260/407"
+          ],
+          [
+            "33/2405",
+            "2152/26455",
+            "-503/5291"
+          ]
+        ]
+      ],
+      "maximum_exit_upper_exact": "2",
+      "conditional_coordinate_match": true
+    }
+  },
+  "local_null_certificate": {
+    "observed_coordinate_box_exact": [
+      [
+        "1/5",
+        "6/25"
+      ],
+      [
+        "9/20",
+        "1/2"
+      ],
+      [
+        "11/100",
+        "7/50"
+      ],
+      [
+        "23/50",
+        "13/25"
+      ]
+    ],
+    "C_minus_D_box_exact": [
+      "-1/25",
+      "-1/1000"
+    ],
+    "detector_minimum_corner": [
+      1,
+      1
+    ],
+    "field_derivative_absolute_upper_exact": "11/125",
+    "balance_coefficient_absolute_upper_exact": "141/1000",
+    "minus_residual_upper_exact": "23/500000",
+    "plus_necessary_band_exact": "1/2500",
+    "stationary_null_R_upper_exact": "7/100000",
+    "scope": "Derivative and endpoint inequalities certify the full closed detector square. The inherited analytic singleton residual supplies the arbitrary-model implication."
+  },
+  "robust_certificate": {
+    "target_contrast_interval_exact": [
+      "49/50",
+      "1"
+    ],
+    "target_raw_witness_lower_exact": "21927/5000000",
+    "target_gradient_mass_upper_exact": "47/25",
+    "separation_certificates": [
+      {
+        "case": "nominal",
+        "joint_TV_separation_lower_exact": "23/20000",
+        "raw_witness_remaining_lower_exact": "6617/125000000",
+        "applicable_null_band_exact": "0"
+      },
+      {
+        "case": "stationary_robust",
+        "joint_TV_separation_lower_exact": "9/8000",
+        "raw_witness_remaining_lower_exact": "1473/10000000",
+        "applicable_null_band_exact": "7/100000"
+      }
+    ],
+    "each_preparation_field_tick_backaction_tolerance_exact": "1/100000",
+    "target_joint_TV_displacement_exact": "775001/10000000000",
+    "rival_joint_TV_displacement_exact": "1/50000",
+    "actual_joint_TV_separation_lower_exact": "1/1000",
+    "general_three_state_joint_TV_upper_exact": "1/50000",
+    "state_count_interval_exact": [
+      "1/50000",
+      "1/1000"
+    ],
+    "relaxed_tolerance_margin_only": {
+      "each_physical_tolerance_exact": "1/20000",
+      "target_joint_TV_displacement_exact": "155001/400000000",
+      "rival_joint_TV_displacement_exact": "1/10000",
+      "actual_joint_TV_separation_lower_exact": "3/5000",
+      "state_count_interval_exact": [
+        "1/10000",
+        "3/5000"
+      ],
+      "sampling_budget_transferred": false
+    },
+    "scope": "The ordinary lower allows arbitrary independent symmetric rival detector contrasts. Target bit errors are each at most one percent. The constructive upper is inherited from exact closed-coordinate matching under the stated shared instrument assumptions."
+  },
+  "fixed_score_designs": {
+    "score_coefficients_exact": [
+      [
+        "2/5",
+        "3/5",
+        "-3/10"
+      ],
+      [
+        "-2/5",
+        "-12/25",
+        "3/10"
+      ]
+    ],
+    "coefficient_order": [
+      "final_bit",
+      "initial_times_final",
+      "initial_bit"
+    ],
+    "constant_subtracted_exact": "2/25",
+    "outcome_order": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1
+      ]
+    ],
+    "integer_score_lookup_divisor": 50,
+    "integer_score_lookup": [
+      [
+        35,
+        -65,
+        5,
+        25
+      ],
+      [
+        -29,
+        59,
+        -11,
+        -19
+      ]
+    ],
+    "score_range_widths_exact": [
+      "2",
+      "44/25"
+    ],
+    "target_nominal_mean_lower_exact": "8367/2000000",
+    "target_execution_TV_allowance_exact": "775001/10000000000",
+    "rival_execution_TV_allowance_exact": "1/50000",
+    "gate_coordinate_order": [
+      "M",
+      "L+(3/5)D",
+      "C",
+      "L",
+      "D",
+      "C-D"
+    ],
+    "population_gate_intervals_exact": [
+      [
+        "8920822136823618804973089174486798719757/42535295865117307932921825928971026432000",
+        "4830740507452897223504996466424824403029/21267647932558653966460912964485513216000"
+      ],
+      [
+        "1711796758958286614381491925486492788637543/4253529586511730793292182592897102643200000",
+        "1858266592377345786399910313224836978277/4253529586511730793292182592897102643200"
+      ],
+      [
+        "387719832250918170193569149316139080365981/850705917302346158658436518579420528640000",
+        "20879926243916822442161658732003532299081/42535295865117307932921825928971026432000"
+      ],
+      [
+        "9823152919217814667791259001650618494693/85070591730234615865843651857942052864000",
+        "5699321985828944379135827779122663577581/42535295865117307932921825928971026432000"
+      ],
+      [
+        "402909743385054344923570288047949992167311/850705917302346158658436518579420528640000",
+        "21670737943944736578459094109544708465331/42535295865117307932921825928971026432000"
+      ],
+      [
+        "-9/250",
+        "-1/500"
+      ]
+    ],
+    "empirical_gate_intervals_exact": [
+      [
+        "9027160376486412074805393739309226285837/42535295865117307932921825928971026432000",
+        "4777571387621500588588844184013610619989/21267647932558653966460912964485513216000"
+      ],
+      [
+        "1728810877304333537554660655858081199210343/4253529586511730793292182592897102643200000",
+        "9206262370156494316133707914266242838521/21267647932558653966460912964485513216000"
+      ],
+      [
+        "391122655920127554828202895390456762480541/850705917302346158658436518579420528640000",
+        "20709785060456353210429971428287648193353/42535295865117307932921825928971026432000"
+      ],
+      [
+        "10163435286138753131254633609082386706149/85070591730234615865843651857942052864000",
+        "5529180802368475147404140475406779471853/42535295865117307932921825928971026432000"
+      ],
+      [
+        "406312567054263729558204034122267674281871/850705917302346158658436518579420528640000",
+        "21500596760484267346727406805828824359603/42535295865117307932921825928971026432000"
+      ],
+      [
+        "-3/100",
+        "-1/125"
+      ]
+    ],
+    "type_I_error_upper_exact": "1/20",
+    "type_II_error_upper_exact": "1/20",
+    "designs": [
+      {
+        "case": "physical",
+        "paired_trials_0H": 1000000,
+        "paired_trials_H0": 1000000,
+        "total_fresh_paired_trials": 2000000,
+        "total_bit_readouts": 4000000,
+        "observed_joint_TV_model_allowance_exact": "0",
+        "null_displacement_exact": "1/50000",
+        "initial_mean_absolute_bound_exact": "7/50000",
+        "null_score_mean_upper_exact": "363/2500000",
+        "target_score_mean_lower_exact": "973/250000",
+        "rejection_cutoff_exact": "1/500",
+        "null_variance_ceilings_exact": [
+          "299/1000",
+          "13/50"
+        ],
+        "target_variance_ceilings_exact": [
+          "289/1000",
+          "63/250"
+        ],
+        "target_joint_gate_failure_upper_exact": "4026277841523/500000000000000"
+      },
+      {
+        "case": "physical_with_model_allowance",
+        "paired_trials_0H": 1250000,
+        "paired_trials_H0": 1250000,
+        "total_fresh_paired_trials": 2500000,
+        "total_bit_readouts": 5000000,
+        "observed_joint_TV_model_allowance_exact": "1/10000",
+        "null_displacement_exact": "3/25000",
+        "initial_mean_absolute_bound_exact": "17/50000",
+        "null_score_mean_upper_exact": "1303/2500000",
+        "target_score_mean_lower_exact": "973/250000",
+        "rejection_cutoff_exact": "109/50000",
+        "null_variance_ceilings_exact": [
+          "299/1000",
+          "13/50"
+        ],
+        "target_variance_ceilings_exact": [
+          "289/1000",
+          "63/250"
+        ],
+        "target_joint_gate_failure_upper_exact": "349373166549/250000000000000"
+      }
+    ],
+    "scope": "Fixed scores and gates are chosen before data collection. Detector contrasts remain arbitrary in the null and at least 0.98 in the target. The additional joint-law model allowance enlarges the null and is not charged a second time to the target. Fresh independent trials are required."
+  },
+  "operating_point_comparison": {
+    "old_ideal_raw_witness_interval_exact": [
+      "8114810455013/1000000000000000",
+      "4057405227507/500000000000000"
+    ],
+    "new_ideal_raw_witness_interval_exact": [
+      "297470299503/40000000000000",
+      "929594685947/125000000000000"
+    ],
+    "old_one_percent_raw_witness_interval_exact": [
+      "1715761320131/1000000000000000",
+      "428940330033/250000000000000"
+    ],
+    "new_one_percent_raw_witness_interval_exact": [
+      "2192721012997/500000000000000",
+      "877088405199/200000000000000"
+    ],
+    "old_equal_contrast_penalty_interval_exact": [
+      "6077702640863/1000000000000000",
+      "189928207527/31250000000000"
+    ],
+    "new_equal_contrast_penalty_interval_exact": [
+      "2756819865073/1000000000000000",
+      "1378409932537/500000000000000"
+    ],
+    "old_design_necessary_expected_trials": "810000*log(19)",
+    "new_design_sufficient_trials": 2000000,
+    "scope": "This comparison changes the operating point. The old information lower is not a lower bound for the new experiment, and neither design is asserted optimal."
+  },
+  "largest_dense_matrix_dimension": 4,
+  "floating_arithmetic_used": false,
+  "optimization_used": false,
+  "limitations": [
+    "The kinetic null implication and universal statistical guarantees are analytic; exact calculations certify their specified numerical premises.",
+    "Independent fresh paired trials are assumed. Waiting or binary balance alone does not certify fresh equilibrium preparation.",
+    "This candidate and its sampling design are not asserted globally optimal."
+  ],
+  "source_sha256": {
+    "verify_switch_weak_field.py": "b9904605d62f696711fa8bc8664007e186dd5b4e9b2839aa275bcb77d6cd6258",
+    "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
+  },
+  "input_report_sha256": {
+    "reports/switch_snapshot_design.json": "b8ee6fb70d37d104ea89fe04e28c8872a8c81f97d108771bd89d14ef2ad9e2cb",
+    "reports/switch_physical_interface.json": "b0ada0ff7f600d974fdffc52ea315a071394eb0d7b487d6b8a1ba3d37e303157",
+    "reports/switch_uncalibrated_score.json": "28c432062f3c081c8bf727dcf2299036de35e1c5df13f30e8433b8601a91c182"
+  },
+  "imported_repository_verifiers": [
+    "verify_familiar_switch_margin.py"
+  ],
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f"
+  },
+  "checks": 172
+}

@@ -1,8 +1,8 @@
-# PRL exploration: fewer observations and the value of detector calibration
+# PRL exploration: a weaker field gives a stronger observed memory advantage
 
-[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Unknown-detector score](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md) · [Detector information cost](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) · [Snapshot proof](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) · [Verification](VERIFICATION.md)
+[Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Weaker-field robustness](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md) · [Two-million-trial test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) · [Snapshot proof](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) · [Verification](VERIFICATION.md)
 
-**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. Manuscript drafting remains the last step. The unknown-detector witness now has a fixed-score test using the same two recorded bit pairs, reducing its sufficient budget from 508 million to 32 million trials. A separate information lower bound proves that the specified detector calibration promise has statistical value on this same target. The conditional charge-state realization and explicit preparation and initial-instrument boundaries remain in place.
+**Research target, 24 September 2026.** The user selected *Physical Review Letters*, prefers a familiar physical candidate, and emphasizes that a strong result should be simple. Manuscript drafting remains the last step. Lowering the field to $H=\log2$ and shortening both dwells to $5/4$, with $J=\log3$ unchanged, raises the certified robust recorded-table gap above $0.001$ and gives a two-million-trial test. The protocol still uses one preparation, two opposite field orders and two binary observations. This sufficient count is below the necessary count for every test confined to the old $H=\log3$, dwell-$3/2$ design. The conditional charge-state realization and explicit preparation and initial-instrument boundaries remain in place.
 
 ## 1. The short physical mechanism
 
@@ -29,7 +29,7 @@ The lower allows arbitrary rival graphs, masses and rates, including reversible 
 
 Let $(M,C,L,D)$ be the recorded versions of the four moments after fixed
 independent symmetric errors at the initial and final readouts. The
-[new witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) uses
+[witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) uses
 
 $$
  R=u(C-D)+uMD-(u-M)L>0,\qquad
@@ -43,7 +43,58 @@ probabilities anywhere in $[0,1/2]$. There is no inverse-contrast
 singularity or rival rate cap. Symmetry, independence, no readout feedback
 and one fixed detector across both protocols remain required.
 
-For the selected equal-rate target with each error probability at most
+**Current operating point.** At $J=\log3$, $H=\log2$ and equal dwell
+$5/4$, the [new robustness proof](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
+certifies nominal recorded joint-TV separation $>0.00115$ when each
+target detector error is at most one percent. Preparation, field,
+timing and initial-disturbance budgets $10^{-5}$, stationary bias and
+relative-tilt uncertainty $10^{-4}$, and high-law TV defect $10^{-5}$
+leave an actual separation $>0.001$. Three general states suffice
+within $2\times10^{-5}$, giving state minima three and four throughout
+$2\times10^{-5}\le\delta_{\rm obs}\le10^{-3}$.
+
+The [new score test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) assigns
+small integer scores to the already recorded pairs. It uses
+$X_A=(20Y+30IY-15I)/50$,
+$X_B=(-20Z-24JZ+15J)/50$, and
+$\widehat T=\overline X_A+\overline X_B-2/25$, together with the
+proof's fixed empirical gates. The initial-bit corrections cancel
+under the common preparation and channel, and reduce variance without
+adding an observation. Both designs have false rejection below 5%
+and target power above 95% for fresh independent trials:
+
+| Unknown-detector null | Trials per arm | Total paired trials | Binary readouts | Threshold |
+|---|---:|---:|---:|---:|
+| Admissible ordinary model, at most three states | 1,000,000 | **2,000,000** | 4,000,000 | .002 |
+| Same model class, observed-joint-TV allowance $10^{-4}$ | 1,250,000 | **2,500,000** | 5,000,000 | .00218 |
+
+The second allowance exceeds the constructive general-three-state
+error. Relative to the old design's sufficient budgets below, these
+totals improve by factors of 16 and 36 while reducing active duration
+from three to $5/2$ attempt-time units. The old information lower
+also gives a stronger comparison: at its nominal target with one-percent
+errors, any valid test confined to the old two protocols needs
+$\mathbb E_*N>810000\log19>2{,}384{,}995$. The new sufficient
+two-million total falls below this old necessary count. The nulls have
+the same form at their respective fields, rather than being identical
+sets of fixed-field laws. The comparison does not lower-bound the new
+experiment, optimize over designs, or price preparation overhead.
+
+The simpler physical explanation is reduced detector loss. For equal
+contrast $r$, the witness obeys
+$R(r,r)=r^2R(1,1)-r(1-r)u(\ell+rmd)$.
+The new point has a smaller ideal witness but a smaller noise penalty,
+leaving a larger recorded signal. No monotonic field-strength rule or
+optimal operating point is claimed.
+
+A separate population-level tolerance corollary raises all preparation,
+field, timing and disturbance allowances to $5\times10^{-5}$ while
+retaining state minima three and four on
+$10^{-4}\le\delta_{\rm obs}\le6\times10^{-4}$. The two sampling
+allocations above remain proved only for the $10^{-5}$ allowances.
+
+**Preserved earlier operating point: $J=H=\log3$, dwell $3/2$.**
+For this equal-rate target with each error probability at most
 one percent, the nominal recorded-joint-TV gap exceeds $3/8000$.
 Allowing the stated preparation, control and initial-disturbance errors
 $10^{-5}$, low stationary bias and relative-tilt uncertainty $10^{-4}$,
@@ -54,7 +105,7 @@ $2\times10^{-5}\le\delta_{\rm obs}\le2\times10^{-4}$.
 The target signal-loss bound differs from numerical calibration of the
 rival's detector: its errors are allowed anywhere up to one half.
 
-The [new fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md)
+The [earlier fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md)
 uses only the already recorded bits:
 
 $$
@@ -167,26 +218,23 @@ and has no inherited sampling allocation.
 
 The mechanism is concise: reversed pulse order measures a conditional covariance, and a singleton sector cannot support it. Direct treatment of the paired data strengthens the previous $0.001$ snapshot corollary and gives its own nuisance and sampling guarantees. The endpoint task retains its original deterministic theorem and gains a more efficient test.
 
-The equal-rate calibrated gap is already tightly bracketed. Removing
-detector-contrast calibration gives a larger null and a smaller gap;
-the new fixed score makes that test substantially cheaper. The
-information bound proves that calibration also has a real statistical
-value on this experiment. The next useful work is a larger observable
-separation with a comparably short physical protocol, alongside
-independently supported preparation, force-law and initial-instrument
-conditions. Further sampling-constant optimization is secondary to
-these physical questions. Changed resources and observation tasks must
-be charged explicitly.
+The weaker-field point now supplies a larger certified observed
+separation and a smaller sufficient count than the old experiment's
+necessary count. Its [original exploration note](FAMILIAR_SWITCH_NEXT_OPERATING_POINT.md)
+is retained as a historical numerical lead; the new proofs and exact
+certificate supply the robustness and statistical conclusions.
+The earlier calibration-value theorem remains tied to its original
+field and dwell. No lower bound or calibrated trial count is transferred
+to the new point merely by changing parameters.
 
-The [next operating-point note](FAMILIAR_SWITCH_NEXT_OPERATING_POINT.md)
-records a concrete exploratory lead: retain $J=\log3$ and both
-protocols, use $H=\log2$, and shorten each dwell to $5/4$. A small
-floating-point calculation gives a larger raw witness signal with
-one-percent errors. This is a candidate for exact certification;
-none of the present robustness margins or 32-million/90-million trial
-guarantees transfers to it.
+The next useful work is independently supported preparation and
+initial-instrument conditions for the charge candidate, together with
+robust treatment of kinetic departures from its heat-bath assumptions.
+Further sampling-constant optimization is secondary to these physical
+questions. Extra protocols, observations and preparation checks must
+have their own resource accounting and statistical guarantees.
 
-The [new source comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) attributes the established variance-reduction, concentration and sequential-information tools; the [earlier comparison](FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md) links the physical and dimension-witness audits. The earlier unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
+The [new source comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and [internal review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) separate the operating-point argument from the established covariance, variance-reduction and concentration tools. The [earlier statistical comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) retains the calibration-information attribution. The unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
 
 ## 7. Preserved results and provenance
 
@@ -198,10 +246,14 @@ cdfa71f58ca37c832f5631e5c21484ae88b25805, with successful
 [CI run 35958827202](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35958827202).
 The physical-interface continuation started from published commit
 778954f18164c3a228b845be07298ba1a33326eb, tree
-e08a840c71d2474a5ad4866d9daf1c39969e92f6. This continuation starts from
+e08a840c71d2474a5ad4866d9daf1c39969e92f6. The score/information continuation started from
 published commit 9983da2206c0a84e1ce5e111a9d132331afe70f5, tree
 5da1fadc9fe9877e916a5b2a2c775ea6dcfe256d, with successful
 [CI run 35966287099](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35966287099).
+The present weaker-field continuation starts from published commit
+7e41d378e87ce5d7524e585c387707638c391ae1, tree
+eafae1855a511389c4d07e8fe730a3f6795ff3dc, with successful
+[CI run 35969236097](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35969236097).
 Earlier protected proofs, certificate bindings, recovery files and the
 original license remain preserved. The
 [physical-interface verifier](../scripts/verify_switch_physical_interface.py)
@@ -209,8 +261,11 @@ and [report](../reports/switch_physical_interface.json) pass 108 exact
 checks at maximum dense dimension four. The
 [internal review](FAMILIAR_SWITCH_PHYSICAL_INTERFACE_INTERNAL_REVIEW.md)
 records the proof and source audits.
-The new [score/information verifier](../scripts/verify_switch_uncalibrated_score.py)
+The preserved [score/information verifier](../scripts/verify_switch_uncalibrated_score.py)
 and [report](../reports/switch_uncalibrated_score.json) certify the fixed
 test and the rational ordinary comparator.
+The new [weaker-field verifier](../scripts/verify_switch_weak_field.py)
+and [report](../reports/switch_weak_field.json) certify the target
+enclosures, robust gap and both trial allocations.
 [Verification](VERIFICATION.md) distinguishes local completion from
 publication CI.

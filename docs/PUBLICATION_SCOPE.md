@@ -6,6 +6,53 @@ The [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) now supplies the simplest
 
 The current lead combines the [direct two-snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) with its [unknown symmetric detector extension](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md). Both chronological orders $0H,H0$ start from the same low-field equilibrium and record the initial and final binary conformation. The endpoint mean and initial/final correlation of each table determine a conditional covariance of two response propensities. A singleton conformation sector has zero covariance; the target has positive covariance in both sectors. This excludes all ordinary rivals with at most three states, including arbitrary reversible tick kernels without a rate cap. The positive three-state predictor matches the two joint laws by matching their conditional initial coordinates and subsequent mean evolution; no full multitime path-law equality is claimed.
 
+**Current certified operating point.** The
+[weaker-field theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
+keeps $J=\log3$, lowers the high field to $H=\log2$, and shortens
+both dwell times to $5/4$. No field, preparation, readout or protocol
+type is added. With target independent symmetric detector errors at
+most one percent and arbitrary rival errors in $[0,1/2]$, the nominal
+recorded joint-TV gap exceeds $0.00115$. Under preparation, field,
+timing and initial-disturbance allowances $10^{-5}$, stationary bias
+and relative-tilt uncertainty $10^{-4}$, and high-law TV defect
+$10^{-5}$, the gap exceeds $0.001$. The general-three-state upper is
+$2\times10^{-5}$, giving state minima three and four on
+$[2\times10^{-5},10^{-3}]$. This statement retains equal attempts
+for the numerical bounds and the same channel-form and joint-instrument
+promises as the earlier point.
+
+The [new integer-score test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md)
+uses **two million independent paired trials**, one million per arm,
+for false rejection below 5% and target power above 95%. Allowing
+observed-joint-TV null approximation error $10^{-4}$ per arm has a
+sufficient budget of **2.5 million trials**, 1.25 million per arm.
+The corresponding binary-readout totals are four million and five
+million. These are fixed sufficient allocations, not optimal sample
+complexities. A separate tolerance corollary permits preparation,
+field, timing and disturbance allowances $5\times10^{-5}$ and retains
+state minima three and four on $[10^{-4},6\times10^{-4}]$; no trial
+budget is assigned to that relaxed row.
+
+At the earlier $J=H=\log3$, dwell-$3/2$ point, the information
+lower requires more than $810000\log19\approx2.385$ million
+trials in target expectation at one-percent detector errors, even
+with adaptive sampling. The new sufficient two-million total is
+smaller than that necessary count for every old-design test. This is
+an experimental-design comparison between the same forms of physical
+and detector promises at different fields, not a lower bound for the
+new experiment or an ordering for all possible decisions. Active
+duration decreases from three to $5/2$, while preparation overhead
+and calibration acquisition remain unpriced. The
+[new source comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md),
+[internal review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md),
+[verifier](../scripts/verify_switch_weak_field.py) and
+[report](../reports/switch_weak_field.json) distinguish the inherited
+methods, analytic argument and exact numerical premises.
+
+**Preserved earlier operating point and detector classes.** The
+following calibrated and unknown-detector budgets concern
+$J=H=\log3$ and dwell $3/2$; they do not transfer to the new point.
+
 At $J=H=\log3$ and tick $3/2$, the [exact certificate](../reports/switch_snapshot_design.json) and [verifier](../scripts/verify_switch_snapshot_design.py) bracket the best ordinary-three-state maximum joint-TV error between $23/12500=0.00184$ and $37/20000=0.00185$. The ratio is $185/184$. A fixed rational feasible comparator supplies the upper; the [saved-model replay](../scripts/screen_switch_snapshot_witness.py) and [screen report](../reports/switch_snapshot_screen.json) do not claim a global optimum. The nominal state minima are three and four for $0\le\delta_{\rm joint}\le0.00184$. Each trial has two plateaus, active duration three, one preparation and two binary readouts.
 
 The precisely calibrated snapshot theorem allows stationary baseline bias and Gibbs-parameter uncertainty $10^{-4}$, stationary-law tilt TV defect $10^{-5}$, common field and tick errors $10^{-5}$, and target/rival preparation and initial-instrument disturbance errors $10^{-5}$. With independent binary-symmetric electronic flip probabilities each within $10^{-5}$ of one percent, the recorded joint-TV gap remains $>0.0015$. A three-state predictor attains recorded-table error at most $4\times10^{-5}$, so actual minima remain three and four throughout $4\times10^{-5}\le\delta_{\rm obs}\le0.0015$. Known bit noise is distinguished from detector uncertainty and physical disturbance. One fixed preparation and instrument must serve both words; visible balance does not certify hidden-state preparation or noninvasiveness. The detector assumptions are specified resources, not device-independent promises.
@@ -81,7 +128,7 @@ The [measurement-cost note](FAMILIAR_SWITCH_MEASUREMENT_COST.md) turns the deter
 
 These are conservative sufficient counts, not optimal budgets or a claim that every test needs billions of samples. A separate change-of-measure argument gives $\mathbb E_*N\ge270000\log19\approx794998.52$ for any valid adaptive fresh-endpoint test using these seven words in the ideal nominal case; a fixed budget must contain at least 794,999 endpoints. It does not bound richer path observations. Sampling does not establish the preparation and control assumptions required under the null and alternative.
 
-The score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The unknown-detector extension has its own smaller certified gap and conservative test. The charge mapping now gives a conditional microscopic model, while an achieved device specification remains open. Further work should address a supported joint instrument, statistically efficient tests for unknown detector contrasts and measured departures from heat-bath rates. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
+The earlier score tests improve sufficient budgets within each specified calibrated observation design; comparing endpoint and snapshot totals also changes preparation and readout resources. The weaker-field unknown-detector test now supplies a larger observed gap and a two-million-trial design, below the old experiment's information lower. The charge mapping gives a conditional microscopic model, while an achieved device specification remains open. Further work should address a supported joint instrument and preparation conditions, and measured departures from heat-bath rates. The [earlier margin source comparison](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) and [kinetic source audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md) retain their attribution boundaries. No generalized-reversal separation for this small model or universal dissipation necessity is claimed.
 
 The [matrix prediction principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives a simple organizing statement for a whole target class. A general stationary predictor can separate its incoming and outgoing memory profiles; ordinary detailed balance identifies the factors in matched reversed tests. For any normalized completely positive matrix $H$ of size $n$ with positive row sums, the exact state minima are $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ under the shared interface and cap. The targets still have two-state passive paths. Both counts persist on a positive matrix-dependent accuracy interval, whose useful scale remains unknown in general. This is a controlled realization theorem, not a new matrix-rank definition or a generic HMM-order characterization.
 
@@ -142,7 +189,7 @@ The [source comparison](KINETIC_PARITY_SOURCE_AUDIT.md), [bounded verifier](../s
 
 Earlier comparisons retain their historical assumptions. The [original-rule tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) supplied the uncapped fixed-clock foundation. The [binary fixed-clock uncapped theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uses a rescaled tagged target and inner exponent $1/12$. Earlier [binary](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) and [nineteen-level](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) uncapped routes give inner exponent $1/2$ with arbitrarily rapid switching. The older fixed-budget results below remain valid at their stated menus and histograms.
 
-The immediate priorities are a more efficient test for the larger unknown-detector class, a supported initial joint instrument, and robust treatment of measured kinetic departures in the conditional charge model. The optional five-type response-preparation check needs its own statistical budget. Existing finite state gaps and sample bounds do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
+The immediate priorities are a supported initial joint instrument and preparation conditions, and robust treatment of measured kinetic departures in the conditional charge model. The weaker-field design already improves the measured effect and crosses the old experiment's sampling lower bound; further tuning of field or statistical constants is secondary. The optional five-type response-preparation check needs its own statistical budget. Existing finite state gaps and sample bounds do not establish experimental feasibility; a physical realization of the separate asymptotic word involution is also unresolved. The stronger uncapped law, a tight-band binary construction and matching entropy frontiers remain open. Manuscript drafting remains the final step.
 
 [Repository overview](../README.md) · [Source audit](PRIOR_ART.md) · [Structure-cost proof](STRUCTURE_COST.md) · [Current work order](../work_orders/CURRENT.md)
 
@@ -441,14 +488,15 @@ A norm distinction alone is insufficient. For a scalar nonnegative impulse error
 
 ## 5. Assessment and next scientific question
 
-The current PRL-directed exploration centers on the two-switch covariance mechanism, its unknown-symmetric-detector extension and a conditional charge-model realization. A fixed score substantially reduces the unknown-detector sufficient budget, while an information lower bound proves the value of numerical detector calibration on this same experiment. The short protocol and exact state separation are clear; the remaining sampling burden and initial-instrument assumptions are still substantial obstacles. The earlier asymptotic results separately distinguish ordinary detailed balance from generalized equilibrium: a polynomial predictor with a reversal involution has zero generalized stationary entropy production, so no implementation-independent dissipation requirement follows. The assessment remains continued exploration; manuscript drafting remains on hold.
+The current PRL-directed exploration centers on the two-switch covariance mechanism, its unknown-symmetric-detector extension and a conditional charge-model realization. A weaker field and shorter equal pulses now give a larger robust observed gap and a two-million-trial test, below the necessary budget for every test confined to the old operating point. This establishes a design advantage beyond improving the old statistic. The remaining measurement burden, preparation and initial-instrument assumptions still require physical support. The earlier asymptotic results separately distinguish ordinary detailed balance from generalized equilibrium: a polynomial predictor with a reversal involution has zero generalized stationary entropy production, so no implementation-independent dissipation requirement follows. The assessment remains continued exploration; manuscript drafting remains on hold.
 
 The current conclusions distinguish prediction tasks and predictor constraints.
 
 | Question | Result | Essential limitation |
 |---|---|---|
-| Can the two-order witness tolerate unknown detector error probabilities? | [The scalar contrast-elimination witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) excludes all ordinary rivals with at most three states and arbitrary fixed symmetric bit errors up to one half; the stated physical target has recorded gap $>0.0002$. The [new score](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md) needs 32 million paired trials, or 90 million with observed-TV allowance $10^{-4}$. | The channel form, preparation and joint instrument remain specified. These sufficient designs are distinct from the calibrated score and are not optimality claims. |
-| Does numerical detector calibration have a measurable value? | [A fixed ordinary comparator](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) forces at least 2,384,996 fixed trials against the unknown-detector null, while the calibrated test handles the same one-percent-noisy target with 1.2 million. | The observation-budget factor exceeds 1.98, but the cost of obtaining calibration is unpriced; only these two fresh-trial arms are covered. |
+| Can the two-order witness tolerate unknown detector error probabilities? | At $H=\log2$ and dwell $5/4$, [the robust theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md) gives recorded gap $>0.001$ with rival bit errors up to one half; the [new score](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) uses two million paired trials, or 2.5 million with observed-TV allowance $10^{-4}$. | The target errors are at most one percent. Channel form, preparation, physical tolerances and joint instrument remain specified; these sufficient budgets are not optimality claims. |
+| Does changing the field and dwell help beyond changing the statistic? | The new two-million sufficient total is below the [old design's information lower](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md), $\mathbb E_*N>810000\log19\approx2.385$ million, at one-percent errors. | Same forms of promises at different fields, with the same observation and preparation types. The old lower is not a new-design lower, and total laboratory time is unpriced. |
+| Does numerical detector calibration have a measurable value? | At the old $H=\log3$, dwell-$3/2$ point, [a fixed ordinary comparator](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) forces at least 2,384,996 fixed trials against the unknown-detector null, while the calibrated test handles the same one-percent-noisy target with 1.2 million. | The observation-budget factor exceeds 1.98, but calibration acquisition is unpriced; the statement remains tied to the old two fresh-trial arms. |
 | Is there a familiar microscopic model, without exactly equal attempts? | [Nondegenerate capacitively coupled dots](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) give the heat-bath model in a specified sequential-tunneling regime; an exact positive three-state construction covers attempt ratios $[2/3,2]$. | Constant prefactors, isolated levels and compensated control are assumptions. Numerical gaps and costs remain at equal attempts; no existing device is certified to meet the full tolerances. |
 | Can passive agreement certify preparation and a gentle first observation? | [Exact counterexamples and a response-defect bound](FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) identify the missing joint-law information and an optional five-type preparation check. | Exact balance and an adequate joint instrument remain; the added protocol types do not inherit a finite-sample budget or prove hidden-state TV closeness. |
 | Is there a simple general rule behind the finite state advantage? | [The matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) gives exact minima $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ for a controlled target family. | Prescribed shared hub interface/cap, individually distinct target probe labels, and no useful general finite tolerance. Static ranks and their latent-variable interpretations are established. |
@@ -482,6 +530,6 @@ The bounds are asymptotic at fixed physical parameters, and the upper exponent $
 
 The leading publication question is how the physical reversal assigned to a reduced representation changes the memory needed for accurate controlled prediction. The present results separate ordinary and generalized reversibility on the same target and task, while extending the ordinary state and entropy-production lower bounds beyond a prescribed exponential kinetic curve. The positive results also identify a limit: generalized equilibrium can coexist with polynomial prediction, so a generic dissipation narrative is excluded. The passive/step/switching comparison and other positive compression routes remain supporting results with their own assumptions.
 
-The next work should seek a larger observable separation with a comparably short protocol, quantify the initial joint instrument and evaluate kinetic mismatch within the conditional charge model. The information lower makes further sampling-constant optimization on the same fixture secondary. The optional preparation checks need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the new source audit.
+The next work should quantify the preparation and initial joint instrument, and evaluate kinetic mismatch within the conditional charge model. The weaker-field design already improves the observed separation and crosses the old experiment's necessary trial count; further optimization of field or sampling constants is secondary. The optional preparation checks need an explicit statistical analysis before replacing an assumed response-preparation budget. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text recorded in the new source audit.
 
 The constructor receives a known target. Observation results concern specified-model tests with the stated preparation and readout. Continue with bounded analytic work and small exact checks. PRL is the user's selected target, while complete-theorem novelty, natural physical relevance and the journal's significance threshold remain matters for further assessment. Manuscript writing remains the final step.

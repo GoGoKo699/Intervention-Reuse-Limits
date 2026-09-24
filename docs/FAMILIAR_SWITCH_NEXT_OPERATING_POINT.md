@@ -1,5 +1,12 @@
 # Next operating point: a weaker field, the same two protocols
 
+**Historical exploration record.** The equal-duration candidate below is
+now certified by the [weaker-field robustness theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
+and [two-million-trial score test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md).
+The original screening text follows unchanged for reproducibility;
+"current" and "next" below refer to the preceding exploratory checkpoint.
+The unequal-duration comparison remains exploratory.
+
 **Status: exploratory numerical lead, not a new robustness or sampling
 certificate.** The current certified operating point remains unchanged.
 The next candidate keeps $J=\log3$ and changes only the applied field to

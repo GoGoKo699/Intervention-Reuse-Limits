@@ -1,6 +1,77 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: fewer observations and the value of detector calibration — 24 September 2026
+## PRL: a weaker field and shorter pulses — 24 September 2026
+
+Continue from published commit 7e41d378e87ce5d7524e585c387707638c391ae1,
+tree eafae1855a511389c4d07e8fe730a3f6795ff3dc, successful
+[CI run 35969236097](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/35969236097).
+Preserve the 109 protected baseline files, historical claim rows
+R1–R50 byte-for-byte, proof bindings, nine recovery files and the
+MIT license. Manuscript drafting remains deferred. Existing
+authorization covers non-forced public-main publication; collaborator
+contact is not authorized.
+
+The [weaker-field robustness theorem](../docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
+keeps $J=\log3$, changes the high field to $H=\log2$, and uses
+equal dwell times $5/4$. Both opposite words $0H,H0$ retain one
+low-field preparation and initial/final binary readouts. Equal
+attempts, the stationary-force promises and the independent symmetric
+detector model remain explicit. The target's two error probabilities
+may lie anywhere in $[0,.01]$; each ordinary rival may choose its own
+values in $[0,1/2]$.
+
+The nominal recorded joint-TV separation exceeds $0.00115$.
+Preparation, field, timing and initial-disturbance allowances
+$10^{-5}$, stationary bias and relative-tilt uncertainty $10^{-4}$,
+and high-law TV defect $10^{-5}$ leave an actual gap greater than
+$0.001$. The general three-state upper is $2\times10^{-5}$, giving
+state minima three and four on
+$[2\times10^{-5},10^{-3}]$. Raising all preparation, field, timing
+and disturbance allowances to $5\times10^{-5}$ separately preserves
+the state-count interval $[10^{-4},6\times10^{-4}]$; the sample
+counts below do not apply to that relaxed row.
+
+The [new integer-score test](../docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md)
+has false rejection below 5% and target power above 95% with
+**two million independent paired trials**, one million per arm,
+and four million binary readouts. With an extra observed-joint-TV
+null approximation allowance $10^{-4}$ per arm, **2.5 million
+trials** suffice, 1.25 million per arm and five million readouts.
+The fixed thresholds are .002 and .00218, with the proof's empirical
+gates. There are no new observations or calibration resources.
+
+The old $H=\log3$, dwell-$3/2$ [information lower bound](../docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md)
+requires $\mathbb E_*N>810000\log19\approx2.385$ million trials
+at its nominal one-percent-noisy target, even with adaptive sampling.
+The new sufficient two-million total lies below that old necessary
+count. This compares the same forms of physical and detector promises
+at different fields; it does not lower-bound the new experiment,
+prove optimality or price preparation overhead. The historical
+32-million/90-million sufficient budgets and calibration-value
+comparison remain valid at the old operating point.
+
+The [new verifier](../scripts/verify_switch_weak_field.py),
+[report](../reports/switch_weak_field.json),
+[source audit](../docs/FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and
+[internal review](../docs/FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md)
+separate exact numerical premises from the universal analytic proof.
+Full-suite and publication evidence belong to
+[Verification](../docs/VERIFICATION.md). The original
+[operating-point screen](../docs/FAMILIAR_SWITCH_NEXT_OPERATING_POINT.md)
+is preserved as a historical exploratory record.
+
+**Next scientific priority:** quantitatively support the initial joint
+instrument and preparation conditions for the conditional charge
+realization, and bound the effect of departures from its stipulated
+heat-bath kinetics. The short protocol now has a larger certified
+observed separation and a design advantage beyond improving the old
+statistic. Further field or sampling-constant optimization is secondary
+to these physical assumptions. Additional preparation checks need
+their own resource and finite-sample accounting. Continue analytic,
+tiny-matrix work. Use no large simulation. This result does not establish
+device feasibility or PRL readiness; manuscript drafting remains deferred.
+
+## Historical checkpoint: fewer observations and the value of detector calibration — 24 September 2026
 
 Continue from published commit 9983da2206c0a84e1ce5e111a9d132331afe70f5,
 tree 5da1fadc9fe9877e916a5b2a2c775ea6dcfe256d, successful

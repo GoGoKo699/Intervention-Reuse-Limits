@@ -2,7 +2,7 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
-**Planning record, 24 September 2026.** The user asks that strength come with simplicity. The current lead is a conditional-covariance test on a familiar conformational pair: two opposite control orders, each with initial/final binary readouts, distinguish three stationary predictive states from four ordinarily reversible states. The scalar witness permits unknown independent symmetric detector error probabilities; a new fixed score reduces its sufficient trial budget from 508 million to 32 million. A separate necessary bound proves that the detector calibration promise has a strict statistical value for the same target. A conditional capacitively coupled quantum-dot model supplies the physical mapping, and an explicit construction allows unequal tunneling attempts. Preparation and the initial joint instrument remain substantive assumptions, accompanied by counterexamples and an optional response-preparation check. PRL remains the research target, readiness is not claimed, and manuscript drafting remains deferred. See [Verification](VERIFICATION.md) for local and separate remote evidence; internal review is not external validation or priority certification.
+**Planning record, 24 September 2026.** The user asks that strength come with simplicity. The current lead is a conditional-covariance test on a familiar conformational pair: two opposite control orders, each with initial/final binary readouts, distinguish three stationary predictive states from four ordinarily reversible states. Keeping $J=\log3$, lowering $H$ to $\log2$, and shortening both dwells to $5/4$ gives a robust recorded-table gap greater than $0.001$ under unknown independent symmetric detector errors. Two million paired trials suffice, less than the necessary count for any test confined to the previous field and dwell. A conditional capacitively coupled quantum-dot model supplies the physical mapping, and an explicit construction allows unequal tunneling attempts. Preparation and the initial joint instrument remain substantive assumptions, accompanied by counterexamples and an optional response-preparation check. PRL remains the research target, readiness is not claimed, and manuscript drafting remains deferred. See [Verification](VERIFICATION.md) for local and separate remote evidence; internal review is not external validation or priority certification.
 
 ## 1. Recommended scientific focus and result hierarchy
 
@@ -16,6 +16,57 @@ $$
 
 The expression is proportional to a conditional covariance of two response propensities in the readout sector $S=\sigma$. A singleton sector cannot carry this covariance. The target has nonzero covariance in both sectors, while a positive three-state model reproduces the two joint laws through matching conditional initial coordinates and closed mean equations. This is equality of two-time laws, not of complete paths.
 
+**Current operating point: weaker field, shorter equal pulses.** The
+[new robustness theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
+fixes $J=\log3$, $H=\log2$ and both dwell times $5/4$. Target
+independent symmetric bit-error probabilities may each lie in $[0,.01]$;
+each ordinary rival may choose its own fixed values in $[0,1/2]$.
+The nominal recorded joint-TV gap is $>0.00115$. With preparation,
+field, timing and initial-disturbance allowances $10^{-5}$, stationary
+low bias and relative-tilt uncertainty $10^{-4}$, and stationary-law
+TV defect $10^{-5}$, the actual gap is $>0.001$. A general three-state
+predictor has error at most $2\times10^{-5}$, so actual minima are
+three and four on $[2\times10^{-5},10^{-3}]$. The active duration
+is $5/2$; one preparation and the two original bit pairs suffice.
+
+The [new fixed-score test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md)
+has false rejection below 5% and target power above 95% with
+**two million independent paired trials**, one million per arm and
+four million readouts. An additional observed-joint-TV null allowance
+$10^{-4}$ per arm has a sufficient total of **2.5 million trials**,
+1.25 million per arm and five million readouts. This approximation
+allowance exceeds the constructive three-state error. The scores
+$X_A=(20Y+30IY-15I)/50$ and $X_B=(-20Z-24JZ+15J)/50$ use the
+same observations, with thresholds .002 and .00218 for
+$\overline X_A+\overline X_B-.08$ and the proof's localization gates.
+Neither count is claimed necessary or optimal.
+
+At the old $J=H=\log3$, dwell-$3/2$ point, the frozen information
+lower requires $\mathbb E_*N>810000\log19\approx2.385$ million
+trials at one-percent errors, even with adaptive choices and stopping.
+The new sufficient two-million total is smaller than this old necessary
+count. The comparison uses the same forms of physical and detector
+promises at their respective fields, with no extra observations or
+preparation types; the old lower does not apply to the new point.
+The new design improves the balance between ideal signal and detector
+loss: its ideal witness is smaller, but its noisy witness is larger.
+No optimal-design or total-laboratory-time claim follows.
+
+A separate deterministic tolerance corollary raises every preparation,
+field, timing and disturbance allowance to $5\times10^{-5}$, leaving
+gap $>6\times10^{-4}$ and a general-three-state upper $10^{-4}$.
+The state minima remain three and four on $[10^{-4},6\times10^{-4}]$.
+No sampling budget is assigned to this relaxed row. The
+[new verifier](../scripts/verify_switch_weak_field.py),
+[report](../reports/switch_weak_field.json),
+[source audit](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and
+[internal review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) supply
+the finite evidence and analytic review. The
+[original screening note](FAMILIAR_SWITCH_NEXT_OPERATING_POINT.md)
+remains a historical numerical record.
+
+**Preserved earlier operating point and calibrated results.**
+
 At $J=H=\log3$ and tick $3/2$, the [exact verifier](../scripts/verify_switch_snapshot_design.py) and [report](../reports/switch_snapshot_design.json) place the ordinary-three-state maximum joint-TV error in $(23/12500,37/20000)=(0.00184,0.00185)$. The ratio is $185/184$. The lower covers arbitrary reversible tick kernels with no rival rate cap; the upper comes from one fixed rational feasible model. The [numeric replay](../scripts/screen_switch_snapshot_witness.py) and [saved fits](../reports/switch_snapshot_screen.json) are separate achieved-upper diagnostics, not fitted lower bounds or global optima. Nominal minima are three and four for $0\le\delta_{\rm joint}\le0.00184$. Each trial uses two plateaus, active duration three, one preparation and two readouts.
 
 The precisely calibrated detector class allows stationary bias and Gibbs-parameter uncertainty $10^{-4}$, high-law tilt TV defect $10^{-5}$, common field/tick errors $10^{-5}$, and target/rival full-state preparation and initial-instrument disturbance errors $10^{-5}$. Conditional independent binary-symmetric detector flips may each be within $10^{-5}$ of one percent. The observed gap remains $>0.0015$ and a general three-state predictor has observed joint-TV error at most $4\times10^{-5}$. Actual minima are therefore three and four for $4\times10^{-5}\le\delta_{\rm obs}\le0.0015$. The preparation and instrument are fixed across words. Known bit noise, uncertainty in its calibration, and state disturbance have distinct budgets; observed balance cannot establish hidden equilibration or noninvasiveness.
@@ -24,7 +75,7 @@ The [snapshot score test](FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) gives sufficie
 
 The nominal snapshot information bound requires at least 79,500 paired trials for a fixed budget on the same two orders. It does not match the sufficient designs or cover arbitrary richer observations. Neither observed balance nor a target-specific reset wait establishes the preparation and independence promises for arbitrary slow rivals. Fewer trials do not necessarily mean fewer readouts. The [score source audit](FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md) and [snapshot internal review](FAMILIAR_SWITCH_SNAPSHOT_INTERNAL_REVIEW.md) preserve the physical, statistical and prior-art boundaries; full-suite evidence belongs to [Verification](VERIFICATION.md).
 
-**Unknown symmetric detector errors.** The [new witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) works directly with the recorded means and correlations $(M,C,L,D)$. Define
+**Unknown symmetric detector errors at the earlier operating point.** The [witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) works directly with the recorded means and correlations $(M,C,L,D)$. Define
 
 $$
  R=u(C-D)+uMD-(u-M)L.
@@ -103,8 +154,9 @@ The [new capped frontier](KINETIC_PARITY_RESOURCE_TRADEOFF.md) uses $\exp(c\vare
 
 | Role | Results to retain | Reason for inclusion |
 |---|---|---|
-| Current one-preparation mechanism | [Direct snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md); [unknown symmetric readout](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) | Two joint laws and a singleton-sector covariance obstruction; the new scalar witness permits unknown rival detector errors with a smaller robust gap and separate statistical cost. |
-| Unknown-detector observation cost | [Fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md); [detector information cost](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) | 32 million trials suffice, or 90 million with observed-TV allowance $10^{-4}$; the same noisy target needs at least 2,384,996 fixed trials without the calibrated-detector promise, versus its calibrated sufficient 1.2 million. Calibration effort is separate. |
+| Current one-preparation mechanism | [Direct snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md); [weaker-field robustness](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md) | Same two joint laws and unknown symmetric detector class; $H=\log2$ and dwell $5/4$ retain three-versus-four minima on $[2\times10^{-5},10^{-3}]$ under the stated physical allowances. |
+| Current unknown-detector observation cost | [Two-million-trial test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) | Two million trials suffice, or 2.5 million with observed-TV allowance $10^{-4}$; the first is below the old design's necessary count. No sample optimum or laboratory-time comparison is claimed. |
+| Earlier calibration-value comparison | [Old fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md); [detector information cost](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) | At $H=\log3$, dwell $3/2$, 32 million/90 million trials suffice; the noisy target needs at least 2,384,996 fixed trials without the calibrated-detector promise, versus its calibrated sufficient 1.2 million. Calibration effort is separate. |
 | Conditional physical realization | [Charge mapping and unequal attempts](FAMILIAR_SWITCH_CHARGE_REALIZATION.md); [source audit](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) | Nondegenerate sequential-tunneling dots realize the heat-bath model under explicit rate assumptions; exact compression covers unequal attempts, while numerical budgets remain at equal attempts. |
 | Operational preparation boundary | [Preparation and instrument analysis](FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) | Counterexamples isolate hidden preparation and joint disturbance; an optional five-type response check retains exact balance and needs its own sampling analysis. |
 | Improved statistical tests | [Snapshot scores](FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md); [endpoint scores](FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md) | Fixed-score sufficient budgets with separate paired-trial and single-readout counts; neither design is claimed optimal. |
@@ -137,7 +189,7 @@ The interval $2^{-220}<\delta<1/2376$ remains unresolved, and none of the suffic
 
 A [single-force network](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) makes the ordinary parity and kinetic actuation concrete within a stipulated conformational model. Equal well extensions, calibrated zero-force returns and internal saddle extensions remain model assumptions, not a demonstrated molecule. [Uniform robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md) permits small deviations, including weak control-dependent hidden rates and finite ramps, at an explicit accuracy floor. The [closure theorem](PHYSICAL_REVERSAL_REALIZATION.md) explains why an even equilibrium observation that is Markov must obey ordinary detailed balance.
 
-The snapshot witness gives a short covariance explanation and one equilibrium preparation. The unknown-contrast extension weakens numerical detector calibration, the fixed score reduces its cost, and the information lower proves that calibration has a real observation-budget value. The charge mapping identifies a familiar conditional realization. The next priorities are a larger observable separation with a comparably short protocol, a supported initial joint instrument, and robustness to measured kinetic departures. Further optimization of sampling constants on the same fixture is secondary. The optional five-type preparation check needs a finite-sample budget before it can replace an operational preparation promise. A demonstrated device, broader physical interfaces and continued source comparison remain separate tasks; the Falk full-text comparison remains unresolved. Arbitrary interfaces, unrestricted control-dependent hidden dynamics, matching entropy-production frontiers and the older-family binary uncapped problem remain open. Manuscript drafting remains the last step.
+The snapshot witness gives a short covariance explanation and one equilibrium preparation. The weaker-field point now improves the observed gap and has a sufficient trial count below the earlier design's necessary count. Its original calibration-value theorem remains attached to the earlier field and dwell. The charge mapping identifies a familiar conditional realization. The next priorities are a supported initial joint instrument and preparation conditions, and robustness to measured kinetic departures. Further optimization of fields or sampling constants is secondary. The optional five-type preparation check needs a finite-sample budget before it can replace an operational preparation promise. A demonstrated device, broader physical interfaces and continued source comparison remain separate tasks; the Falk full-text comparison remains unresolved. Arbitrary interfaces, unrestricted control-dependent hidden dynamics, matching entropy-production frontiers and the older-family binary uncapped problem remain open. Manuscript drafting remains the last step.
 
 ## 2. Earlier hub models and notation
 
