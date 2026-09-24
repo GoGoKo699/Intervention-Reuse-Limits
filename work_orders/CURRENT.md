@@ -1,6 +1,54 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## PRL: finite endpoint registration and relative force control — 24 September 2026
+## Current priority: inherit the physical model from the community — 24 September 2026
+
+Continue from published commit `ff52faf80bc0339a0836a77258ef093618198608`, tree
+`36ebfbaf033206993a22c516b005c164048d91e1`, with successful
+[CI run 36025641388](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36025641388).
+Preserve the existing proofs, scripts, reports, license and claim rows R1–R65.
+Existing authorization covers non-forced public-main publication; collaborator
+contact is not authorized. Manuscript drafting remains last.
+
+The owner has clarified the physical standard: we may choose a favorable
+model already accepted in an identifiable community, but must not invent
+physical capabilities to obtain the desired result. A justified community
+idealization is an acceptable theoretical starting point; experimental
+demonstration is a separate question. The [assumption ledger](../docs/PHYSICAL_ASSUMPTION_ALIGNMENT.md)
+records the difference between inherited physics, consistent specializations,
+our task/design choices and unestablished operational premises.
+
+**Single next scientific priority:** reconstruct one coherent published
+physical model and audit the target, control, observation and rival-class
+assumptions against it. Begin with the capacitively coupled single-level-dot
+sequential-tunneling family, which has direct primary-equation support.
+Keep its weak-coupling, level-isolation and tunneling assumptions explicit.
+Distinguish the wide-band approximation from equal couplings between dots
+and from fixed couplings under a control pulse.
+
+The new ledger supplies five primary examples for the generator family,
+including two PRL papers and the especially close one-reservoir-per-dot
+model of Ruokola and Ojanen. Extend this set where an unresolved assumption
+requires further evidence, particularly controls and measurement. This is
+a breadth check, not permission to combine incompatible device specifications.
+Our pulse sequence and calculated constants can be new; unsupported control
+or detector capabilities cannot be promoted to physical facts by citing
+the resulting theorem.
+
+For each premise, give its source equation or derivation, its applicability
+to the target and/or rivals, and the claim that depends on it. The common
+force coupling and physical reversal need independent motivation. A target
+detector characterization does not automatically cover every rival. The
+circulating three-state predictor remains a mathematical realization, with
+no corresponding device or resource budget yet established.
+
+Deliver a clear decision on which existing results survive within the
+inherited model and which operational claims need a different protocol,
+a derivation, or narrower scope. Only then resume the joint numerical
+feasibility assessment. Do not add further detector guarantees or tune
+thresholds simply to preserve the current experiment. Keep the elementary
+singleton mechanism central and complete the close prior-art comparison.
+
+## Historical checkpoint: finite endpoint registration and relative force control — 24 September 2026
 
 Continue from published commit `77efdedb42b2ff18e54344617f6da25c016fe0ad`, tree
 `cf2e2dec2b537a28a66bf38cf5a40f81cad0bf73`, successful
