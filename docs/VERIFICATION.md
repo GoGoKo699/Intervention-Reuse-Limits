@@ -4,11 +4,68 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-six mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-seven mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: seven words without rival preparation or numerical tilt calibration
+## Current checkpoint: the seven-word precision and acquisition frontier
+
+The baseline is commit `73fa7177ed10757cc3dc2936d1ca461b7964a8a1`, tree
+`65d385cb52f6aa328afae0feb1ca5b83ad2b6358`, with successful
+[CI run 36436197641](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36436197641).
+All preceding mathematical evidence, dependency pins, workflow and the
+MIT license remain unchanged. The [new proof](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md)
+and [source audit](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION_SOURCE_AUDIT.md)
+add a close ordinary CTMC, an accuracy frontier and finite acquisition
+lower bounds for the same seven-word contract.
+
+The [new verifier](../scripts/verify_familiar_switch_preparation_free_information.py)
+checks fixed rational stationary weights, normalized Gibbs reweighting,
+positive conductances and generators, and seven balanced preparations.
+Independent four-state target and three-state rival matrix-Taylor
+calculations enclose full pair laws through three factors. Rational log
+series and integer square-root intervals certify all seven KLs,
+Hellinger affinities and pair-TV errors. No optimizer or simulation runs
+in the acceptance path.
+
+The exact cuts give a **109,880,323-pair necessary deterministic cap**,
+with the existing 1.176-billion sufficient cap within a factor eleven.
+The separate expected-stopping KL lower exceeds 87,661,100.934495 pairs.
+The population error infimum is at least 3/40006 and below 86 ppm, within
+a factor 1.15; state minima are three/four through the lower endpoint and
+three/three at 86 ppm. The local realization appendix has certified
+nonzero regularity factor and strict opposite-sector response brackets.
+None of these certificates establishes a closest rival or optimal test.
+
+Independent internal review addresses the hard-subclass reduction,
+complete-pair likelihood, adaptive affinity recursion, fixed versus
+expected stopping, exact radius conversion and the local inverse.
+A separate high-precision calculation corroborates the candidate;
+proof-bearing comparisons use the exact rational verifier. The final
+certificate passes **560 exact checks** and was independently reproduced
+byte for byte under pinned Python 3.13.5. Its proof SHA-256 is
+`dd0ac52d3effebcdeec448944aaedf7fe83797faab53cc28652685e857349542`;
+the source-audit SHA-256 is
+`6bae5bee401d76acf2ae71b40724adddb9a308e93a7e243a223a0025e96eb583`.
+Verifier SHA-256:
+`ec38e173b685fe9b66e63aec50631c12ce2528a198bb9ce318b725c8cd4813a1`.
+Report SHA-256:
+`43998a355a4d0a9eb1661027e1fea730f1ad242682ec9cb04521203242b87d91`.
+Independent review checked all bound source, proof and input-report hashes.
+
+**Full local integration passed:** all 77 mathematical verifiers and
+four saved-model replays completed successfully. All **81 fresh reports**
+match their saved counterparts byte for byte. The repository check passes
+**3,297 local Markdown links**, **82 Python syntax checks**, provenance
+and the unchanged MIT license. Against the 364-file baseline, only the
+eight authorized navigation/build files changed; **356 protected files**
+remain byte-identical. Four new files bring this checkpoint to **368 files**.
+All earlier lines in the four overview/ledger documents and historical
+claim rows R1–R88 remain verbatim. Independent preservation review and
+`git diff --check` pass. Hosted CI must be inspected separately against
+the published commit; the baseline run above does not validate this tree.
+
+## Historical checkpoint: seven words without rival preparation or numerical tilt calibration
 
 The baseline is commit `4a7df4776d1e692713b854ba6f25b4415aadf4b2`, tree
 `5e816c61ce9060f8cf201953e6fd96392010af46`, with successful

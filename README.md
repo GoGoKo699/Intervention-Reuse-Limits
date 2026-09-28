@@ -2,6 +2,53 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+## Current milestone: a narrow precision window and necessary acquisition cost — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [new information analysis](docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md)
+constructs a positive ordinary reversible three-state continuous-time
+rival for the same seven settings $L,L^2,H,LH,HL,L^2H,HL^2$.
+Its fixed reused rates, unknown Gibbs tilt $u=0.768614727605$ and
+word-specific preparations with balanced initial signs are admissible
+under the existing arbitrary-preparation null.
+
+The best ordinary at-most-three-state maximum pair-law TV error obeys
+**$3/40006\le E_3<86/10^6$**, where $3/40006$ is approximately
+**74.98875 ppm**. The upper/lower ratio is below **1.15**. The attained
+state counts remain **three general versus four ordinary reversible
+states through $3/40006$**; at **86 ppm both counts are three**.
+The lower endpoint follows from the existing 150 ppm conditional-return
+certificate. The new fixed rival supplies the upper; no closest-rival
+optimality is asserted.
+
+For the same robust statistical contract, every test with both errors
+at most 5% needs a deterministic cap of at least **109,880,323 complete
+pairs**. Together with the existing **1.176-billion-pair** sufficient
+design, this places the optimal fixed budget within a factor **11**.
+Adaptive word choice uses completed past trials, before current
+preparation and the initial sign; stopping is between complete pairs.
+A separate bound for expected stopping requires more than
+**87,661,100.934495 pairs under the ideal target**. Ideal independent
+target/rival trials form a hard subclass of the broader conditional
+serial contract, including its target-only 5 ppm execution allowance
+and 1 ppm registration allowance per endpoint. The lower does not
+assume that arbitrary serial errors have independent-trial information.
+
+The high acquisition cost is partly intrinsic to this fixed target,
+menu and observation contract. The next priority is a physical design
+principle from analytic factorization across the same familiar heat-bath
+family: vary coupling, field and dwell times to understand signal versus
+duration, and seek a structural improvement or a family-wide obstruction.
+An isolated retuned example or further constant tuning is secondary.
+Device feasibility remains open; manuscript drafting remains deferred.
+
+[Proof and scope](docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md) · [Exact verifier](scripts/verify_familiar_switch_preparation_free_information.py) · [Certificate](reports/familiar_switch_preparation_free_information.json) · [Source comparison](docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION_SOURCE_AUDIT.md) · [Verification](docs/VERIFICATION.md)
+
+**Preserved preceding checkpoints follow.** Their original prose and
+claim scopes remain intact; this precision-and-acquisition update supplies
+the current assessment and next step.
+
+
 ## Current milestone: seven settings without a rival preparation promise — 28 September 2026
 
 **Mathematical review and full local verification passed.**

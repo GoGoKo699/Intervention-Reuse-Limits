@@ -2,6 +2,78 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
+## Current milestone: a certified precision frontier and acquisition bracket — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [new proof and fixed comparator](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md)
+address the unchanged seven-word task $L,L^2,H,LH,HL,L^2H,HL^2$,
+with target coupling $t=1/3$, high tilt $m=7/9$ and unit ticks.
+An ordinary reversible three-state continuous-time model has strictly
+positive stationary weights and off-diagonal rates, one unknown tilt
+$u=0.768614727605$, and fixed kernels reused in every word. Its seven
+preparations have balanced initial signs and may differ by word, as the
+null permits. This is a certified admissible comparator, not a claim
+that it is globally closest.
+
+Let $E_3$ be the infimum of the maximum seven-word ideal pair-law TV
+error over ordinary models with at most three total states under the
+unknown-tilt, arbitrary-preparation interface. The exact certificate gives
+
+$$
+\frac3{40006}\le E_3<\frac{86}{10^6},
+\qquad \frac3{40006}\approx74.98875\text{ ppm}.
+$$
+
+The upper/lower ratio is below **1.15**. The lower endpoint follows
+directly from the frozen conditional-return radius $3/20000$ by
+$\delta=\varepsilon/[2(1+\varepsilon)]$. The infimum lower is
+non-strict. The general two-state composition obstruction and inherited
+general three-state upper give attained minima **three general versus
+four ordinary reversible states through $3/40006$**, while the new
+ordinary three-state upper makes **both minima three at 86 ppm**.
+
+The comparator also supplies a hard independent subclass within the
+broader robust serial sampling contract. Exact target execution and
+ideal registration satisfy its target-only 5 ppm pair-law allowance and
+1 ppm error allowance per endpoint. The rival uses fresh independent
+preparation from its selected word's fixed distribution. Thus a test
+valid under the full conditional contract must distinguish these ideal
+experiments. No null preparation-closeness promise is introduced.
+
+For tests with both errors at most 5%, adaptive word selection from
+completed past trials and stopping between complete pairs, the smallest
+deterministic total cap obeys
+
+$$
+109{,}880{,}323\le N_{\mathrm{opt}}\le1{,}176{,}000{,}000.
+$$
+
+The existing sufficient design is therefore within a factor **11**.
+The word is selected before current preparation and observation of the
+initial sign; current-sign-dependent choices, aborted half-trials and
+richer trajectory observations are outside this comparison. Affinity
+gives the deterministic lower. A separate KL bound requires expected
+target count **greater than 87,661,100.934495** for integrable random
+stopping. The KL chain rule is applied to the chosen independent
+subclass, not to arbitrary adversarial serial laws. These bounds locate
+the cost without identifying an optimal rival or test.
+
+The [ledger](CLAIM_LEDGER.md) records R89 for the precision frontier and
+R90 for acquisition necessity. The high cost is partly intrinsic to this
+fixed target, menu and observation contract. Next comes an analytic
+physical design principle across coupling, field and dwell times in the
+same familiar heat-bath family: relate signal to duration and seek a
+structural improvement or a family-wide obstruction. Isolated retuning
+and further constant tuning are secondary. Device feasibility remains
+open; manuscript drafting remains deferred.
+
+[Proof and scope](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md) · [Exact verifier](../scripts/verify_familiar_switch_preparation_free_information.py) · [Certificate](../reports/familiar_switch_preparation_free_information.json) · [Source audit](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original content and
+status headings remain intact; this precision-and-acquisition update
+supplies the current assessment and next step.
+
+
 ## Current milestone: seven settings without null preparation closeness — 28 September 2026
 
 **Mathematical review and full local verification passed.**

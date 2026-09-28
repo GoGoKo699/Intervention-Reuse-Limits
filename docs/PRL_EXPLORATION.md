@@ -2,6 +2,63 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current milestone: precision and acquisition necessity for the seven-word task — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [new analysis](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md)
+places the ordinary three-state approximation threshold between
+$3/40006$ (approximately **74.98875 ppm**) and **86 ppm**, within a
+factor **1.15**.
+The lower is a direct conversion of the frozen 150 ppm conditional-return
+certificate. The upper is an actual positive ordinary reversible
+three-state continuous-time model with fixed reused rates, unknown tilt
+$u=0.768614727605$, and word-specific preparations with balanced initial
+signs. It uses the same seven settings $L,L^2,H,LH,HL,L^2H,HL^2$ at
+the unchanged target $t=1/3$, $m=7/9$ and unit ticks.
+
+For maximum ideal pair-law TV tolerance $0\le\delta\le3/40006$,
+the attained minima are **three general versus four ordinary reversible
+states**. At **86 ppm both minima are three**. The approximation infimum
+has a non-strict lower bound, $3/40006\le E_3<86/10^6$; no globally
+closest rival is identified. These population tolerances remain separate
+from the target-only 5 ppm execution and 1 ppm per-endpoint registration
+allowances in the sampling contract.
+
+The same rival supplies an information lower for that full robust
+statistical task. With both errors at most 5%, the best deterministic
+cap satisfies
+
+$$
+109{,}880{,}323\le N_{\mathrm{opt}}\le1{,}176{,}000{,}000
+$$
+
+complete pairs, so the existing sufficient design is within a factor
+**11**. Words may be chosen adaptively from completed past trials,
+before current preparation and the current initial sign is observed;
+stopping is between complete pairs. An affinity argument gives the
+fixed-cap lower. A separate KL argument gives expected target count
+**greater than 87,661,100.934495** for integrable random stopping.
+The proof chooses ideal independent experiments inside the broad
+conditional serial contract; it does not assign an independent-trial
+KL identity to arbitrary serial laws. No optimal test is claimed.
+
+The high cost therefore has an intrinsic component for this fixed
+target, menu and observation contract. **Next scientific priority:**
+derive a physical design principle by analytic factorization across
+coupling, field and dwell times in the same familiar heat-bath family.
+Study signal versus duration to find a structural improvement or a
+family-wide obstruction. An isolated retuned example and further
+constant tuning are secondary. Device feasibility remains unestablished,
+and manuscript drafting remains deferred. The [ledger](CLAIM_LEDGER.md)
+records the precision frontier as R89 and acquisition necessity as R90.
+
+[Proof and scope](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md) · [Exact verifier](../scripts/verify_familiar_switch_preparation_free_information.py) · [Certificate](../reports/familiar_switch_preparation_free_information.json) · [Source comparison](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original prose and
+status assessments remain intact; this precision-and-acquisition update
+supplies the current assessment and next step.
+
+
 ## Current milestone: unknown tilt with arbitrary rival preparation — 28 September 2026
 
 **Mathematical review and full local verification passed.**

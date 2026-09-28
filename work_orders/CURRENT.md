@@ -1,6 +1,67 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: determine the acquisition cost of the preparation-free task — 28 September 2026
+## Current priority: derive a physical design principle for stronger separation — 28 September 2026
+
+This continuation starts from published commit
+`73fa7177ed10757cc3dc2936d1ca461b7964a8a1`, tree
+`65d385cb52f6aa328afae0feb1ca5b83ad2b6358`, with successful
+[CI run 36436197641](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36436197641).
+Preserve every preceding proof, mathematical verifier and report, the MIT
+license and historical claim rows R1–R88. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [new information and precision proof](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md)
+closes the main acquisition-scale question for the present seven-word
+task. One fixed positive reversible three-state CTMC, with unknown tilt
+0.768614727605 and fixed balanced preparation for each word, has maximum
+complete-pair KL below 3.023e-8 and affinity deficit below 7.557e-9.
+The same rates and Gibbs law are reused throughout; only the allowed
+preparations depend on the word.
+
+Every test with both errors at most 5% requires a deterministic cap of
+at least **109,880,323 complete pairs**, including adaptive word choice
+and early stopping at complete-pair boundaries. The existing robust
+serial design provides a cap of 1,176,000,000, placing the best possible
+cap within a factor of eleven. A separate stopped-KL argument gives
+expected target acquisition above 87,661,100.934495 pairs. Do not round
+that random expectation to an integer or replace fixed-cap affinity by
+an expected-count identity.
+
+The comparator also sharpens the accuracy picture. The inherited
+150-ppm conditional-return certificate implies pair-law exclusion through
+3/40006, approximately 74.98875 ppm. The comparator's maximum pair-TV
+error is strictly below 86 ppm. Thus the ordinary-three-state approximation
+infimum lies between those endpoints, within a factor 1.15. The attained
+state counts are three general versus four ordinary through the lower
+endpoint, and three versus three at 86 ppm. The exact transition and
+closest rival remain unidentified.
+
+The lower hard instance has independent ideal complete pairs and is an
+admissible subcase of the existing five-ppm target/one-ppm registration
+serial task. This does not impose preparation closeness or independence
+on every null. No extra calibration observations, intermediate records,
+continuous trajectories, initial-sign-conditioned word choice or aborted
+half-trials enter the information budget. The local inverse appendix
+establishes completeness of the cubic identity near a regular interior
+CTMC point, with no global realization or optimization assertion.
+The [source audit](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION_SOURCE_AUDIT.md)
+attributes established statistical tools and separates these claims.
+
+**Single next scientific priority:** derive a physical design principle
+for increasing separation across the same familiar heat-bath family.
+Use the analytic witness factorization to study coupling, field and
+low/high dwell times, including signal versus total duration. Seek a
+structural improvement or a family-wide obstruction; one isolated
+retuned numerical example or further minor tail-constant tuning is
+insufficient. Keep the physical preparation/readout/force conventions
+and all persistent-memory accounting explicit. The present fixed target's
+near-100-million necessary count is now established; optimizing only its
+concentration constants cannot remove that acquisition burden. Device
+feasibility, full priority and broader publication significance remain
+open. Prefer analytic reasoning and small exact certificates.
+
+## Historical priority: determine the acquisition cost of the preparation-free task — 28 September 2026
 
 This continuation starts from published commit
 `4a7df4776d1e692713b854ba6f25b4415aadf4b2`, tree
