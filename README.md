@@ -2,6 +2,50 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+## Current milestone: seven settings without a rival preparation promise — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [new seven-setting theorem](docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md)
+removes the rival equilibrium-preparation requirement while retaining an
+unknown Gibbs tilt. It uses
+$L,L^2,H,LH,HL,L^2H,HL^2$ at the same two-switch target. Rivals may
+prepare arbitrary hidden-state distributions for each word and each
+trial history. Their field kernels, deterministic sign readout and
+shared Gibbs interface remain fixed; zero-equilibrium-weight transient
+states count toward the state budget.
+
+The attained population comparison is **three general states versus
+four ordinary reversible states through 70 ppm per-word pair-law TV**.
+The underlying conditional-return exclusion tolerates 150 ppm error.
+The initial true sign is defined after the initial instrument, at the
+start of active evolution; the final true sign is taken at its end.
+Removing the rival preparation promise does not remove these observation
+and control requirements.
+
+The finite test allows **168 million attempted pairs per setting**, or
+**1.176 billion total**, retaining 80 million observations of each
+initial sign for each setting. Incomplete quotas do not certify
+rejection. Under the stated conditional registration bound of 1 ppm
+per endpoint, false rejection is below $0.040389$ without a null
+preparation-closeness promise. Target miss is below $0.045261$ when,
+conditional on the past, the target's true-boundary pair law is within
+5 ppm TV of its nominal reference for each setting. These sampling and
+registration allowances are separate from the 70 ppm population radius.
+
+The earlier 50-million-pair design remains a different experiment with a
+stronger preparation contract. The new count is sufficient, without a
+cost-optimality or device-feasibility claim. The next priority is to
+determine whether its high acquisition cost is intrinsic: construct
+admissible nearby rivals and a seven-setting information lower bound
+before further tuning constants. Manuscript drafting remains deferred.
+
+[Proof and scope](docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md) · [Population certificate](reports/familiar_switch_preparation_free_unknown_tilt.json) · [Sampling certificate](reports/familiar_switch_preparation_free_unknown_sampling.json) · [Source comparison](docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md) · [Verification](docs/VERIFICATION.md)
+
+**Preserved preceding checkpoints follow.** Their original prose and
+claim scopes remain intact; the seven-setting update above supplies the
+current assessment and next step.
+
+
 ## Current serial-acquisition milestone — 28 September 2026
 
 **Mathematical review and full local verification passed.**

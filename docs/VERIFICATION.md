@@ -4,11 +4,69 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-four mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-six mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: serial acquisition and a physical implementation contract
+## Current checkpoint: seven words without rival preparation or numerical tilt calibration
+
+The baseline is commit `4a7df4776d1e692713b854ba6f25b4415aadf4b2`, tree
+`5e816c61ce9060f8cf201953e6fd96392010af46`, with successful
+[CI run 36426053724](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36426053724).
+All preceding mathematics, dependencies, reports, workflow and the MIT
+license remain unchanged. The [unified proof](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md)
+and [source audit](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md)
+complete the population theorem and a separate finite-budget serial test.
+
+The [core verifier](../scripts/verify_familiar_switch_preparation_free_unknown_tilt.py)
+checks the eliminated cubic, positive-weight and zero-weight singleton
+cases, a generic target factorization, rational three-tick exponential
+enclosures, local polynomial bounds and attained three-versus-four state
+counts through 70 ppm pair-TV. It replays the inherited three-state
+construction and binds all inherited proof/source evidence.
+
+The [sampling verifier](../scripts/verify_familiar_switch_preparation_free_unknown_sampling.py)
+binds the final core report, fixed rational tangent coefficients, local
+variance and curvature bounds, endpoint-error count tails, quota margins
+and acquisition resources. Its fixed 1.176-billion-pair cap gives
+false rejection below 0.040389 and target miss below 0.045261 under
+one-ppm conditional registration error at each endpoint and target-only
+five-ppm conditional true-boundary pair-TV execution error. It imposes
+no null preparation promise and assumes no independent complete trials.
+
+Independent internal review checked the analytic population and sampling
+arguments, including preparable zero-weight states, current post-instrument
+signs, delayed current electronic transcripts, deterministic first-n
+selection comparison, proof-only padding, local variance and fixed-model
+inside/outside gate cases. Finite exact checks support those proofs;
+they do not enumerate all histories or certify physical feasibility.
+
+The core report passes **361 exact checks**, plus 66 inherited algebra
+checks recorded in its state-count subcertificate. The sampling report
+passes **130 exact checks**. The final proof SHA-256 is
+`d81a808758db04b1da091dd4c816ef2c7669e4d7ab786a03e4be34b81d545c69`;
+the source-audit SHA-256 is
+`53533235b0702f43e2c28ae2014782fc1a76ee442ca8aead0d6dfacbf9af48ac`.
+Core report SHA-256:
+`2facaf21db92bee7cd575eea74d3935f47c8871e6bb78476ab78ab53b12852f0`.
+Sampling report SHA-256:
+`2403a567228859606e3f4655136db4e5ab848ee0f0acec551aa211f9f8e994ea`.
+Both reports were independently reproduced byte for byte under pinned
+Python 3.13.5 after final proof review.
+
+**Full local integration passed:** all 76 mathematical verifiers and
+four saved-model replays completed successfully. All **80 fresh reports**
+match their saved counterparts byte for byte. The repository check passes
+**3,250 local Markdown links**, **81 Python syntax checks**, provenance
+and the unchanged MIT license. Against the 358-file baseline, only the
+eight authorized navigation/build files changed; **350 protected files**
+remain byte-identical. Six new files bring this checkpoint to **364 files**.
+All earlier lines in the four overview/ledger documents and historical
+claim rows R1–R86 remain verbatim. Independent preservation review and
+`git diff --check` pass. Hosted CI must be inspected separately against
+the published commit; the baseline run above does not validate this tree.
+
+## Historical checkpoint: serial acquisition and a physical implementation contract
 
 The baseline is commit `b5ea18a5b93150146c20cb062dbb94fb2cd59178`, tree
 `5df2e70722d9731b5e56e954582fa36d5513dd3f`, with successful

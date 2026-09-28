@@ -2,6 +2,66 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
+## Current milestone: seven settings without null preparation closeness — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [new theorem and sampling design](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md)
+use $L,L^2,H,LH,HL,L^2H,HL^2$ at the unchanged nominal two-switch
+target. The ordinary rival's Gibbs tilt is unknown. Its preparation may
+vary arbitrarily with the word and trial history, including occupation
+of zero-equilibrium-weight transient states. Every retained state counts;
+the field kernels, deterministic sign readout and shared Gibbs interface
+remain common.
+
+The unknown factor cancels between two singleton-return identities.
+The resulting population certificate permits 150 ppm error in each
+conditional return and implies the attained state counts
+
+$$
+D_{\mathrm{general}}(\delta)=3,\qquad
+D_{\mathrm{ordinary}}(\delta)=4,
+\qquad 0\le\delta\le70\text{ ppm},
+$$
+
+where $\delta$ is the maximum ideal pair-law TV error over the seven
+settings. The general two-state lower also permits arbitrary per-word
+preparation. The inherited general three-state construction and physical
+four-state process attain their uppers using one common preparation,
+which is admissible in this larger comparison class.
+
+The finite design retains 80 million records per word and initial sign.
+It allows 168 million attempted pairs per word, totaling **1.176 billion
+attempts**; incomplete quotas do not certify rejection. Conditional
+registration errors of at most 1 ppm at each endpoint give false rejection
+below $0.040389$. Nominal-target miss is below $0.045261$ when each
+target true-boundary pair law, conditional on the past, is within 5 ppm
+TV of the appropriate nominal law. This target-only condition is not
+a null preparation promise. The initial sign is defined after the
+initial instrument, immediately before the active word, and the final
+sign at the word's end. The registration and active-word interface must
+respect those boundaries.
+
+The population radius, target power allowance and registration error
+budget are separate. The earlier 50-million-pair design retains its
+stronger preparation contract and its own acquisition bracket. No
+cost optimum or hardware-feasibility conclusion follows for the new
+seven-setting experiment. The [ledger](CLAIM_LEDGER.md) adds R87 for
+the attained population comparison and R88 for finite sampling; the
+[source audit](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md)
+records the established mathematical and experimental ingredients.
+
+The next priority is to determine whether the high acquisition cost is
+intrinsic: construct admissible nearby rivals and a seven-setting
+information lower bound before further constant tuning. Manuscript
+drafting remains deferred.
+
+[Proof and scope](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md) · [Population verifier](../scripts/verify_familiar_switch_preparation_free_unknown_tilt.py) · [Population certificate](../reports/familiar_switch_preparation_free_unknown_tilt.json) · [Sampling verifier](../scripts/verify_familiar_switch_preparation_free_unknown_sampling.py) · [Sampling certificate](../reports/familiar_switch_preparation_free_unknown_sampling.json) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original content and
+status headings remain intact; the seven-setting update above supplies
+the current assessment and next step.
+
+
 ## Current serial-acquisition milestone: the instrument contract and elapsed time — 28 September 2026
 
 **Mathematical review and full local verification passed.**

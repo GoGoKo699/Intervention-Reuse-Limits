@@ -1,6 +1,61 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: remove the remaining rival preparation burden — 28 September 2026
+## Current priority: determine the acquisition cost of the preparation-free task — 28 September 2026
+
+This continuation starts from published commit
+`4a7df4776d1e692713b854ba6f25b4415aadf4b2`, tree
+`5e816c61ce9060f8cf201953e6fd96392010af46`, with successful
+[CI run 36426053724](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36426053724).
+Preserve every preceding proof, mathematical verifier and report, the MIT
+license and historical claim rows R1–R86. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [seven-word theorem](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md)
+completes the preparation-free unknown-tilt route. The chronological menu
+L, LL, H, LH, HL, LLH, HLL has attained state minima three general versus
+four ordinary reversible states through 70 ppm maximum per-word pair-TV
+error. Conditioning on a singleton visible sign removes all rival
+preparation promises; eliminating a common Gibbs factor across two low
+field durations removes numerical tilt calibration. A separate transient
+block argument includes preparable zero-equilibrium-weight states. All
+persistent predictive states count.
+
+The initial true sign is the post-instrument active-boundary sign.
+Earlier disturbance may vary arbitrarily with word and history. Reused
+active kernels, deterministic readout and a common unknown Gibbs force
+remain assumptions. Target preparation is still required for power.
+
+The fixed-budget serial test retains 80 million records per word and
+recorded initial sign, with 168 million attempts per word and 1.176 billion
+complete attempted pairs in total. Incomplete quotas imply nonrejection.
+It permits one ppm electronic misregistration at each endpoint conditional
+on the full prior history, and a target-only five-ppm true-boundary pair-TV
+execution allowance. False rejection is below 0.040389 and target miss
+below 0.045261. No null equilibrium-preparation or preparation-closeness
+promise is imposed. The population 70-ppm radius is a separate result.
+
+This sufficient cost is much larger than the earlier 50-million-pair
+five-word design, which uses a different preparation contract. A target
+24/Gamma reset plus active evolution totals 30.576 billion/Gamma in the
+new schedule, before 2.352 billion endpoint windows, 1.68 billion field
+transitions and other overhead. No optimality or achieved device claim
+is made. The [focused source audit](../docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md)
+attributes established reciprocal-response and detector principles and
+narrows the new claim to this controlled realization result.
+
+**Single next scientific priority:** determine whether this high
+acquisition cost is intrinsic to the exact seven-word preparation-free
+unknown-tilt task. Construct admissible close rivals and derive a new
+information lower bound under the same menu, word-selection rule and
+boundary observation contract. The old five-word lower bound does not
+automatically transfer. Seek a substantial conceptual or statistical
+improvement before further minor tuning of concentration constants.
+Preserve the accepted physics and all memory accounting. Prefer analytic
+work and small exact certificates; broad significance, practical usefulness
+and complete priority remain unresolved.
+
+## Historical priority: remove the remaining rival preparation burden — 28 September 2026
 
 This continuation starts from published commit
 `b5ea18a5b93150146c20cb062dbb94fb2cd59178`, tree

@@ -2,6 +2,53 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current milestone: unknown tilt with arbitrary rival preparation — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [seven-setting result](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md)
+uses $L,L^2,H,LH,HL,L^2H,HL^2$ to eliminate the unknown Gibbs factor
+between two singleton-return identities. Ordinary rivals may start every
+word from an arbitrary hidden-state law, depending on the trial history.
+The retained field kernels and readout remain fixed. Transient states
+with zero equilibrium weight may be prepared and are counted; a separate
+singular argument includes them in the lower bound.
+
+For the ideal full pair laws, the state minima are attained at **three
+general versus four ordinary reversible states** for every per-word TV
+tolerance from zero through 70 ppm. The ordinary conditional-return
+certificate tolerates 150 ppm. A general two-state composition identity
+is excluded without any common-preparation assumption, while the existing
+general three-state model and physical four-state target attain the
+uppers. Population tolerance does not itself determine the sampling cost.
+
+The finite design retains 80 million records for each word and initial
+sign, allowing 168 million attempted pairs per word: **1.176 billion
+attempts in total**. Incomplete quotas do not certify rejection. With
+conditionally bounded registration error of 1 ppm at each endpoint,
+false rejection is below $0.040389$. Target miss is below $0.045261$
+under a target-only 5 ppm true-boundary pair-law allowance conditional
+on the past. The initial true sign is the post-instrument sign at the
+start of active evolution; the final sign is at the active word's end.
+Null preparation need not be close to equilibrium or any common
+reference law. The fixed Gibbs/reused-kernel and observation contract
+remains essential.
+
+The earlier 50-million-pair test keeps its stronger preparation contract;
+its acquisition bracket is not transferred to this broader task. The
+[ledger](CLAIM_LEDGER.md) records R87 for the population theorem and R88
+for finite sampling. **Next scientific priority:** determine whether the
+high cost is intrinsic by constructing admissible nearby rivals and a
+seven-setting information lower bound, before further tuning constants.
+Neither an optimal cost nor device feasibility is established. Manuscript
+drafting remains deferred.
+
+[Population certificate](../reports/familiar_switch_preparation_free_unknown_tilt.json) · [Sampling certificate](../reports/familiar_switch_preparation_free_unknown_sampling.json) · [Source comparison](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original prose and
+status assessments remain intact; the seven-setting update above supplies
+the current assessment and next step.
+
+
 ## Current serial-acquisition milestone: conditional errors and physical accounting — 28 September 2026
 
 **Mathematical review and full local verification passed.**
