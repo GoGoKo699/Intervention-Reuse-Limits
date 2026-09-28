@@ -2,6 +2,53 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current serial-acquisition milestone: conditional errors and physical accounting — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [serial acquisition proof](FAMILIAR_SWITCH_SERIAL_ACQUISITION.md)
+keeps the same 50-million-pair design, with 10 million observations of
+each of $L,L^2,H,H^2,HL$. Trials may be dependent. The replacement
+premise is explicit: conditional on the complete past history, each
+recorded pair law is within 1 ppm TV of the appropriate member of one
+fixed ideal reference family. That family is common across settings and
+trials on each side of the test. Marginal closeness or average drift
+does not supply this premise.
+
+Under that contract, the unchanged gate and polynomial have
+false-rejection probability below $0.047185$ for the ordinary
+at-most-three-state null with unknown $m\in(-1,1)$, and miss probability
+below $0.024949$ at the nominal target. This adds a serial statistical
+upper; the earlier ideal independent-trial information bracket retains
+its stated scope.
+
+At the nominal target, waiting $24/\Gamma$ bounds full-state reset TV
+by $\tfrac{\sqrt5}{2}e^{-16}<0.25$ ppm. Fifty million resets and
+80 million active ticks contribute $1.28\times10^9/\Gamma$ to the
+specified serial schedule. Its remaining terms are
+$50\times10^6(T_{\mathrm{initial}}+T_{\mathrm{final}})$,
+$30\times10^6(t_{\uparrow}+t_{\downarrow})$, and other nonoverlapping
+overhead: 100 million endpoint windows and 60 million field edges.
+The null needs its own preparation contract because the rival class has
+no minimum mixing rate. This target estimate is not a reset guarantee
+for all admissible models or a retained-state lower bound on the full
+measurement apparatus.
+
+The [source audit](FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md)
+uses mesoscopic single-electron stochastic thermodynamics as the physical
+anchor. The components have precedents; their combination at the required
+precision is unestablished. **Next scientific priority:** seek an unknown-tilt
+witness that removes the rival equilibrium-preparation promise, then certify
+its error budget. The [ledger](CLAIM_LEDGER.md)
+records the serial upper as R85 and the composition/time-accounting scope
+as R86. Manuscript drafting remains deferred.
+
+[Serial certificate](../reports/familiar_switch_serial_acquisition.json) · [Physical source audit](FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their prose and earlier
+status assessments remain intact; the serial-acquisition update above
+supplies the active assessment.
+
+
 ## Current acquisition milestone: a finite-budget bracket with unknown tilt — 28 September 2026
 
 **Mathematical review and full local repository verification passed.** The

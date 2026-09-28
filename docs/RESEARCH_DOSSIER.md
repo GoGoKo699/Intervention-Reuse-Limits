@@ -2,6 +2,63 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
+## Current serial-acquisition milestone: the instrument contract and elapsed time — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [serial acquisition analysis](FAMILIAR_SWITCH_SERIAL_ACQUISITION.md)
+retains 10 million trials for each of $L,L^2,H,H^2,HL$, or **50 million
+paired trials**. Independence between trials is replaced by a conditional
+law contract: for every completed-trial history, the next recorded pair
+law lies within 1 ppm TV of one fixed ideal reference family across all
+five settings and all trials. Target and null each need their own fixed
+family. An unconditional or average error guarantee is insufficient.
+
+The unchanged gate and polynomial control false rejection below
+$0.047185$ throughout the ordinary at-most-three-state null with
+$m\in(-1,1)$, and nominal-target miss below $0.024949$. The new result
+is a sufficient serial design. Earlier ideal independent-trial lower
+bounds and noisy-detector designs keep their own sampling premises.
+
+For the nominal target, a $24/\Gamma$ zero-field reset gives full-state
+TV at most $\tfrac{\sqrt5}{2}e^{-16}<0.25$ ppm. With one such reset per
+trial and the five-setting cycle repeated 10 million times, the serial
+schedule accounts for
+
+$$
+T_{\mathrm{serial}}=
+\frac{1.28\times10^9}{\Gamma}
++50\times10^6(T_{\mathrm{initial}}+T_{\mathrm{final}})
++30\times10^6(t_{\uparrow}+t_{\downarrow})
++T_{\mathrm{other,nonoverlap}}.
+$$
+
+The terms comprise 50 million resets, 80 million active ticks,
+100 million endpoint windows and 60 million field edges. These are
+target-only counts for the specified nonoverlapping schedule. The full
+conditional recorded-law allowance must also cover the initial instrument,
+readout and control composition. Its feasibility has not been established.
+Arbitrarily slow ordinary rivals require a separate reset/preparation
+promise; a target mixing bound cannot certify their conditional laws.
+The state-count theorem concerns the retained predictor under its
+interface assumptions, not the full apparatus implementing them.
+
+The [physical source audit](FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md)
+anchors the ingredients in mesoscopic single-electron stochastic
+thermodynamics and separates those precedents from the combined
+specification. The next priority is an unknown-tilt witness that removes
+the rival equilibrium-preparation promise, followed by a certified error
+budget. Statistical counts and elapsed
+time accounting alone do not demonstrate a device. The [ledger](CLAIM_LEDGER.md)
+adds R85 for the serial upper and R86 for composition and physical scope;
+manuscript drafting remains deferred.
+
+[Serial proof](FAMILIAR_SWITCH_SERIAL_ACQUISITION.md) · [Serial certificate](../reports/familiar_switch_serial_acquisition.json) · [Physical sources](FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original content and
+status headings remain intact; this serial-acquisition update supplies
+the current assessment and next step.
+
+
 ## Current acquisition milestone: 50 million sufficient versus 2,849,458 necessary — 28 September 2026
 
 **Mathematical review and full local repository verification passed.** The

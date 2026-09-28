@@ -4,11 +4,68 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-three mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-four mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: acquisition without numerical force calibration
+## Current checkpoint: serial acquisition and a physical implementation contract
+
+The baseline is commit `b5ea18a5b93150146c20cb062dbb94fb2cd59178`, tree
+`5df2e70722d9731b5e56e954582fa36d5513dd3f`, with successful
+[CI run 36420692488](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36420692488).
+All earlier mathematical evidence, dependencies and workflow remain
+unchanged. The [serial proof](FAMILIAR_SWITCH_SERIAL_ACQUISITION.md) and
+[physical source audit](FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md)
+separate an analytic conditional-law transfer from established physical
+components and an unvalidated complete apparatus specification.
+
+The [new verifier](../scripts/verify_familiar_switch_serial_acquisition.py)
+inherits the frozen profiled-score report and its complete source/proof
+chain. It checks full outcome-range aggregates, conditional mean and
+variance allowances, the unchanged directional proxy, a predictable-drift
+quadratic bound and exact probability tails. The same 50-million-pair
+test has type-I error below 0.047185 and nominal-target miss below
+0.024949 under the stated one-ppm conditional pair-law contract.
+No independent-trial assumption or optimizer is used.
+
+The verifier also checks the nominal four-state low-field eigenbasis,
+minimum equilibrium mass, detailed balance and spectral gap; exact
+exponential bounds put a 24-attempt-unit reset below quarter-ppm TV.
+The complete serial resource count is 50 million resets, 80 million
+active ticks, 100 million endpoint windows and 60 million field edges.
+Reset plus active exposure is 1.28 billion attempt-time units. The
+reset guarantee is target-only. The written coupling proof supplies
+the preparation/instrument/control composition; neither finite checks
+nor source precedents validate an actual device's conditional promises.
+
+The new report passes **112 exact checks**, including inherited provenance.
+It binds proof SHA-256
+`216bc6d7485a72012972dda0e5e4ebb5bbe6822cfff261778f08b35f9fb8fcb9`
+and source-audit SHA-256
+`8f934c78d6685c836d106d3be1afb8ee889bbb6f993dc1f27fc9920969b3c982`.
+
+Independent internal review distinguishes the analytic martingale and
+instrument arguments from their finite numerical premises. The
+conditional filtration is before the current reset, the reference
+family is fixed throughout, and the local remainder probability is
+intersected with the empirical gate. Earlier ideal necessary counts
+carry over only by subclass inclusion, not by a new serial KL identity.
+
+**Full local integration passed** under pinned Python 3.13.5: all 74
+mathematical verifiers and four saved-model replays completed successfully,
+and all **78 fresh reports** match the saved reports byte for byte.
+An independent pinned-Python replay reproduced the new 112-check report
+exactly. The repository check passes **3,198 local Markdown links**, **79
+Python syntax checks**, provenance and the original MIT license.
+Against the 354-file baseline, only eight authorized navigation/build
+files changed; the other **346 files** are byte-identical. Four new files
+bring the checkpoint to **358 files**. Historical R1–R84 and every earlier
+line in the four overview/ledger documents remain verbatim.
+`git diff --check` passes. Hosted CI must be checked separately against
+the published commit; the baseline CI run above does not validate this
+new tree.
+
+## Historical checkpoint: acquisition without numerical force calibration
 
 The baseline is commit `20c92595c68035b54736304b450c8976c5c0ccf4`, tree
 `1e4e1598f6c76f4fb62c3707b9b4b6d083717051`, with successful

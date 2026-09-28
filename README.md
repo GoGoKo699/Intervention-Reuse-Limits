@@ -2,6 +2,54 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+## Current serial-acquisition milestone — 28 September 2026
+
+**Mathematical review and full local verification passed.**
+The [serial acquisition analysis](docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION.md)
+retains the **50 million paired trials** and the same unknown-tilt test,
+while allowing dependence between trials. It requires every recorded
+pair law, conditional on the complete past history, to lie within
+**1 ppm in total variation** of one fixed ideal reference family across
+all five settings and all trials. A marginal or average error bound is
+insufficient. Under this contract, false rejection is below $0.047185$
+for the ordinary at-most-three-state null with $m\in(-1,1)$, and the
+nominal-target miss probability is below $0.024949$.
+
+For the nominal target with attempt scale $\Gamma$, a reset of
+$24/\Gamma$ leaves full-state TV error at most
+$\tfrac{\sqrt5}{2}e^{-16}<0.25$ ppm. A serial cycle through
+$L,L^2,H,H^2,HL$, repeated 10 million times, accounts for
+
+$$
+T_{\mathrm{serial}}=
+\frac{1.28\times10^9}{\Gamma}
++50\times10^6(T_{\mathrm{initial}}+T_{\mathrm{final}})
++30\times10^6(t_{\uparrow}+t_{\downarrow})
++T_{\mathrm{other,nonoverlap}}.
+$$
+
+This includes 50 million resets, 80 million active ticks, 100 million
+endpoint windows and 60 million field edges. It is target-only schedule
+accounting. Arbitrarily slow rivals still need a separate preparation
+promise; the target reset estimate cannot establish their conditional-law
+contract. The retained-state comparison concerns the predictive model
+under the stated interface, not the full apparatus.
+
+The [physical source audit](docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md)
+anchors the components in mesoscopic single-electron stochastic
+thermodynamics. Published components do not yet establish the combined
+precision, instrument and control specification. The next scientific
+priority is to seek an unknown-tilt witness that removes the rival
+equilibrium-preparation promise, then certify its error budget. Trial counts alone do not demonstrate a device; manuscript
+drafting remains deferred.
+
+[Serial proof and scope](docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION.md) · [Serial certificate](reports/familiar_switch_serial_acquisition.json) · [Physical sources](docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md) · [Verification](docs/VERIFICATION.md)
+
+**Preserved preceding checkpoints follow.** Their original prose and
+claim scopes remain intact; the serial-acquisition assessment above
+supplies the current status and next step.
+
+
 ## Current acquisition milestone — 28 September 2026
 
 **Mathematical review and full local repository verification passed.** The

@@ -1,6 +1,62 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: assess the complete physical acquisition contract — 28 September 2026
+## Current priority: remove the remaining rival preparation burden — 28 September 2026
+
+This continuation starts from published commit
+`b5ea18a5b93150146c20cb062dbb94fb2cd59178`, tree
+`5df2e70722d9731b5e56e954582fa36d5513dd3f`, with successful
+[CI run 36420692488](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36420692488).
+Preserve every preceding proof, mathematical verifier and report, the MIT
+license and historical claim rows R1–R84. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [serial acquisition proof](../docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION.md)
+extends the unchanged 50-million-pair unknown-tilt test to dependent
+trials. Each complete recorded pair must be within 1 ppm TV, conditional
+on the history before its reset, of one fixed reference family.
+False rejection is below 0.047185 and nominal-target miss below 0.024949.
+The martingale proof handles conditional bias, pair covariance and the
+nonlinear score remainder; independent complete trials are unnecessary.
+
+A composition lemma allocates the conditional pair error to preparation,
+the joint initial instrument, the complete active word and final
+registration. A quarter ppm for each is sufficient. The nominal target's
+24/Gamma reset meets only its preparation allowance. For the registered
+serial schedule, reset plus active evolution costs 1.28 billion/Gamma,
+with 100 million endpoint windows and 60 million field transitions in
+addition. Neither average readout fidelity nor visible equilibrium-looking
+records prove the hidden-state conditional contract.
+
+The [ten-source physical audit](../docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md)
+supports capacitively coupled single-level dots as the model anchor.
+It separates standard sequential-tunneling, energy-control and charge-readout
+conventions from the undemonstrated combined one-ppm implementation.
+No numerical performance from different devices is combined into an
+achieved specification.
+
+**Single next scientific priority:** seek an unknown-tilt version of the
+existing preparation-free singleton-return witness. This directly attacks
+the rival equilibrium-preparation premise, which no target-only reset
+calculation can establish. A focused candidate uses the seven words
+L, LL, H, LH, HL, LLH, HLL. For a singleton sign, compare the excess return
+terms A_ab for L^a H^b and B_ab for H^b L^a, each after subtracting the
+product of the two held-field returns. Check whether one common unknown
+Gibbs factor can be eliminated between (a,b)=(1,1) and (2,1), through
+A_11 B_21 - A_21 B_11. This is a research route, not a new certified
+acquisition claim in this checkpoint.
+
+The next work must establish the universal null scope, target signal,
+finite-error and finite-sample cost, and the initial registration contract.
+Compare the added pulse settings and trial count with the present
+five-setting conditional-preparation test and the earlier known-tilt
+preparation-free theorem. Do not silently import their different target
+fixtures or guarantees. Preserve all persistent-memory accounting and
+community-grounded physical assumptions. Prefer analytic derivation and
+small exact checks; further minor tuning of concentration constants is
+secondary to this structural simplification.
+
+## Historical priority: assess the complete physical acquisition contract — 28 September 2026
 
 This continuation starts from published commit
 `20c92595c68035b54736304b450c8976c5c0ccf4`, tree
