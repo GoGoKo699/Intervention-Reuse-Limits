@@ -1,6 +1,52 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: resolve the long-time jointly strong-coupling and strong-field corner — 28 September 2026
+## Current priority: identify the consequential scientific claim after closing the parameter extremes — 28 September 2026
+
+This continuation starts from published commit
+`210fd6bd5bee137e99f1c51ece0fc50443399bb8`, tree
+`f0f27388288a24296d361692ce42aa4bc208cdf1`, with successful
+[CI run 36457535494](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36457535494).
+Preserve all preceding mathematical notes, verifiers, reports, the MIT
+license and historical claim rows R1–R95. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized; manuscript drafting remains last.
+
+The [trace theorem](../docs/FAMILIAR_SWITCH_TRACE_REDUCTION.md) resolves
+the previous single question. Eliminating configuration $(-1,+1)$ by
+Schur complementation retains the transition flux through it and gives
+one reusable reversible three-state family. Its endpoint-pair error is
+at most $3(1-t)/2$, uniformly over every $r>0$, finite nonnegative-field
+word, dwell, switch count and observation time. The proof uses one
+balanced nonstationary preparation and a fixed redistribution in its
+error analysis; the stationary low readout is allowed to be biased.
+Both models run at the same original clock times. No limit of large
+field, long horizon or varying rate ratio evades this strong-coupling bound.
+
+Combined with the previous field upper and rate ceiling, this implies
+that a fixed positive penalty in the exact general-three-state regime
+requires parameters in a compact interior region. The theorem does not
+prove a large penalty there. It rules out continued asymptotic hunting
+as a way to amplify the fourth-state requirement in this task.
+
+**Single next scientific question:** what consequential model-transfer
+claim is supported by the exact controlled state hierarchy and matched
+precision laws, independently of an unproved large experimental gap?
+Prepare a concise core argument and theorem-level comparison with the
+closest controlled-reduction results. Separate exact model consistency,
+finite-accuracy necessity and any claimed physical resource benefit.
+If a short interior-regime witness is needed, state which scientific
+claim it would decide before any further calculation. This is a research
+assessment, not manuscript drafting or another parameter scan.
+
+The trace construction and positivity/reversibility facts are established
+methods. The added result is the explicit same-time all-word approximation
+and its parameter-uniform consequence. Complete priority, a consequential
+interior gap, an independently justified prediction tolerance and device
+feasibility remain open. No simulation, optimizer, acquisition calculation
+or new numerical verifier is added. Keep mechanism and significance ahead
+of certificate or state-count totals.
+
+## Historical priority: resolve the long-time jointly strong-coupling and strong-field corner — 28 September 2026
 
 This continuation starts from published commit
 `d827101b894fb66297d717c458283406dd0ce090`, tree

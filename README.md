@@ -74,13 +74,22 @@ shows when slow hidden dynamics require four states even without
 reversibility. A large observable equilibrium-specific gap in the
 remaining parameter region has not been established.
 
-The next question is whether a three-state equilibrium model remains
-accurate on long rare-transition times when coupling and field grow
-together. A useful answer must explain the retained or lost transition
-mechanism. Further
-numerical work will address a named analytic question, rather than seek
-another isolated operating point. Broad practical significance and device
-feasibility remain unresolved. Manuscript writing is on hold.
+The [trace-reduction theorem](docs/FAMILIAR_SWITCH_TRACE_REDUCTION.md)
+closes that long-time corner. Retaining the transition route through one
+rare configuration gives a reversible three-state model with endpoint-pair
+error at most $3(1-\tanh J)/2$, uniformly over every positive rate ratio,
+nonnegative field sequence, switching speed and observation time.
+Together with the earlier bounds, any fixed positive equilibrium-specific
+penalty must lie in an interior parameter region. The theorem does not
+establish a large gap there. Its physical lesson is that rare occupation
+can be removed while its transition flux must be retained.
+
+The next priority is a concise assessment of the scientific claim: what
+the exact controlled state hierarchy and precision laws add to established
+model reduction, and what useful prediction depends on that difference.
+Further numerical work needs a named analytic obstruction. Broad practical
+significance and device feasibility remain unresolved. Manuscript writing
+is on hold.
 
 [Scientific case](docs/SCIENTIFIC_CASE.md) · [Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md)
 

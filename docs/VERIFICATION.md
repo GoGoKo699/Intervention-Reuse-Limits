@@ -8,7 +8,44 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: finite-rate regime bounds and one-sided feasibility
+## Current checkpoint: uniform trace reduction and the interior restriction
+
+The baseline is commit `210fd6bd5bee137e99f1c51ece0fc50443399bb8`, tree
+`f0f27388288a24296d361692ce42aa4bc208cdf1`, with successful
+[CI run 36457535494](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36457535494).
+The [new analytic note](FAMILIAR_SWITCH_TRACE_REDUCTION.md) closes the
+long-time strong-coupling corner by retaining transition flux through the
+rare state. Its error bound is uniform over all positive rate ratios and
+all finite nonnegative-field words at the original observation times.
+A corollary confines any fixed positive equilibrium-specific penalty to
+an interior parameter region; no substantial gap there is asserted.
+
+Independent internal mathematical review passed on the integrated proof.
+It checked the trace rates, normalized Gibbs law, biased stationary
+readout versus balanced nonstationary preparation, conditional rare-state
+occupancy, both exact forcing identities, the common invariant error
+box, uniformity in the rate ratio, pair-TV conversion and the compactness
+corollary. A separate analytic derivation corroborated the uniform bound.
+Primary-source review distinguished the standard Schur trace, an induced
+chain with reassigned stationary mass, and exact controlled reduction.
+No external validation or exhaustive priority claim follows.
+
+Proof SHA-256: `919ca8ec8cb76737f0efb6fd905bcfd33b0c7a0ab8af5b3a6f7ac20d45f23bf0`.
+
+**Scoped local verification passed:** 3,382 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved report
+provenance, unchanged MIT license and `git diff --check`.
+
+Against the 374-file baseline, six navigation/assessment files change;
+all 368 protected files remain byte-identical. One new proof brings the
+checkpoint to 375 files. Historical R1–R95 and the preceding three
+overview/ledger histories remain verbatim. All prior mathematical proofs,
+verifiers and 81 saved reports are unchanged. No simulation, optimizer,
+new numerical verifier, sampling calculation or full local numerical
+replay is added. The existing hosted workflow is inspected separately
+against the exact published commit.
+
+## Historical checkpoint: finite-rate regime bounds and one-sided feasibility
 
 The baseline is commit `d827101b894fb66297d717c458283406dd0ce090`, tree
 `69a15d5d82ae611a8011b4f9e264a46e2cd4b1dc`, with successful
