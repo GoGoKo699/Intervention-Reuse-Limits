@@ -64,9 +64,20 @@ Rapid control can expose the need for a third state, while the fourth
 equilibrium state remains a second-order precision requirement. These
 are analytic bounds for endpoint pairs, not a device-performance claim.
 
-The next question is what useful prediction needs the fourth equilibrium
-state at finite accuracy, outside the fast-hidden limit now bounded.
-A useful answer must explain a physical regime or a family-wide limit. Further
+The [finite-rate bounds](docs/FAMILIAR_SWITCH_FINITE_RATE_WINDOW.md)
+now rule out several simple routes to a larger signal. At fixed coupling,
+both weak and nearly saturating fields admit accurate equilibrium
+three-state models. Strong coupling also suppresses the distinction,
+either uniformly in time at a fixed field or over bounded horizons when
+the field grows with it. A separate [exact rate boundary](docs/FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
+shows when slow hidden dynamics require four states even without
+reversibility. A large observable equilibrium-specific gap in the
+remaining parameter region has not been established.
+
+The next question is whether a three-state equilibrium model remains
+accurate on long rare-transition times when coupling and field grow
+together. A useful answer must explain the retained or lost transition
+mechanism. Further
 numerical work will address a named analytic question, rather than seek
 another isolated operating point. Broad practical significance and device
 feasibility remain unresolved. Manuscript writing is on hold.

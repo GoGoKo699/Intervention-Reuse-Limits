@@ -8,7 +8,50 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: rapid control and the two precision orders
+## Current checkpoint: finite-rate regime bounds and one-sided feasibility
+
+The baseline is commit `d827101b894fb66297d717c458283406dd0ce090`, tree
+`69a15d5d82ae611a8011b4f9e264a46e2cd4b1dc`, with successful
+[CI run 36453671321](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36453671321).
+Two new analytic notes establish the [one-sided rate boundary](FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
+and [finite-rate approximation limits](FAMILIAR_SWITCH_FINITE_RATE_WINDOW.md).
+The scientific outcome is a set of restrictions on where an observable
+equilibrium-specific state cost could occur, not a new fitted point or
+an asserted large interior gap. No simulation, optimizer, numerical
+certificate, verifier or sampling calculation is added.
+
+Independent internal mathematical review passed on both integrated
+proofs. It checked singleton conditional-response minimality with
+arbitrary word preparations, transfer of the common generator closure,
+full-support stationary-law inference, both singleton orientations,
+the attaining positive generator and equality case. For the finite-rate
+bounds it checked invariant mean/contrast regions, exact pair-TV factors,
+path rates and Gibbs fluxes, the cooperative error comparison, the root
+ceiling, rare-state coupling, horizon scaling and every fixed-parameter
+qualification. Source review checked the constructive-reduction versus
+all-realization distinction against the two cited primary papers.
+
+Proof SHA-256 values:
+
+- One-sided boundary: `ebccccb0a53e90ed85307af4e0bd9710710785096eab1a4520fa6eb67440b6e7`.
+- Finite-rate window: `268d98f0a71a08b1f58995d12710fa0b16e504b4b6fed89ff2a9388968739266`.
+
+**Scoped local verification passed:** 3,370 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved report
+provenance, unchanged MIT license and `git diff --check`. All 81 saved reports, their mathematical
+verifiers and prior proof snapshots remain unchanged; this does not
+claim another full local numerical replay. The existing hosted workflow
+is inspected against the exact published commit separately.
+
+Against the 372-file baseline, six navigation/assessment files change
+and 366 protected files remain byte-identical. Two new proof notes bring
+the checkpoint to 374 files. Historical R1–R93 and the prior three
+overview/ledger histories remain verbatim. The README lead and current
+work order now state the finite-rate scope and remaining long-time
+question; the original scientific-case and all preceding mathematical
+notes remain unchanged.
+
+## Historical checkpoint: rapid control and the two precision orders
 
 The baseline is commit `749a1b4fb195ad1c10d3f1cee04a2d78e3031428`, tree
 `3b4364aaa9200fc0253b400af4c2c5d672de9dae`, with successful

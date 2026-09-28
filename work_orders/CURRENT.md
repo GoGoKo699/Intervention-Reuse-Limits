@@ -1,6 +1,68 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: identify the useful finite-accuracy consequence of the equilibrium state cost — 28 September 2026
+## Current priority: resolve the long-time jointly strong-coupling and strong-field corner — 28 September 2026
+
+This continuation starts from published commit
+`d827101b894fb66297d717c458283406dd0ce090`, tree
+`69a15d5d82ae611a8011b4f9e264a46e2cd4b1dc`, with successful
+[CI run 36453671321](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36453671321).
+Preserve the preceding proofs, mathematical verifiers and reports, the
+MIT license and historical claim rows R1–R93. Existing authorization
+covers non-forced publication to public main. Collaborator contact is
+not authorized; manuscript drafting remains last.
+
+The [finite-rate bounds](../docs/FAMILIAR_SWITCH_FINITE_RATE_WINDOW.md)
+identify restrictions on an observable equilibrium-specific penalty
+without numerical exploration. At fixed coupling and rate ratio, both
+weak and saturating high fields admit uniformly accurate reversible
+three-state models. At fixed high tilt below one, strong coupling also
+suppresses all-word error uniformly in horizon. The improved R93 upper
+has the parameter-uniform ceiling $1/[8r(r+1)]$; it is not an attained
+error or a justified experimental tolerance.
+
+The [exact one-sided rate boundary](../docs/FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
+is $r_*=u(1+t^2+2t^2u)/[2(1+u)]$. Above it, general three-state
+prediction is exact; below it, even the general minimum is four.
+Arbitrary word-dependent preparation is permitted, and no Gibbs force
+is assumed on the general rival. Singleton conditional-response
+minimality forces the stationary Gibbs family. Ordinary exact prediction
+requires four throughout. This boundary prevents a generic memory
+requirement from being mislabeled as an equilibrium-specific cost.
+
+For the jointly strong corner, a reversible model obtained by deleting
+state $(-1,+1)$ has pair error at most
+$(1-t)[1/4+T\max(1,r)/2]$ over all nonnegative-field words with
+active duration at most $T$. Thus at fixed finite $r$, a nonvanishing
+separation requires $T=\Omega((1-t)^{-1})$. The deletion model uses
+one balanced common preparation, not an added stationary-preparation
+promise on the null. Its bound does not settle growing horizons.
+
+**Single next scientific question:** can a reversible three-state model
+remain uniformly accurate when field and coupling grow together and
+the observation horizon reaches the rare-transition timescale? Analyze
+the trace generator on the retained states: eliminating $(-1,+1)$ by
+Schur complementation adds a direct transition between the aligned
+states and preserves the conditioned Gibbs family. Unlike deletion,
+it retains the leading flux through the rare configuration. Its exit
+distribution varies weakly over nonnegative fields, but its delayed
+response under switching still needs an error proof. This is a concrete
+analytic lead, not an established uniform approximation.
+
+A vanishing bound would close this remaining boundary route to a large
+penalty. A positive lower must exclude all admissible reversible
+three-state models under the same prediction contract. Small equilibrium
+mass alone is not sufficient on long horizons. Do not infer a positive
+separation from failure of one proposed reduction. A substantial interior
+finite-rate gap, an independently justified prediction tolerance, device
+feasibility and complete priority remain open.
+
+All new results used exact mean equations, positive realizations,
+invariant regions and coupling. No simulation, optimizer, numerical
+certificate or new mathematical verifier was needed. Further calculations
+must address a named analytic obstruction. Keep physical model
+transferability and scope ahead of state-count or report totals.
+
+## Historical priority: identify the useful finite-accuracy consequence of the equilibrium state cost — 28 September 2026
 
 This continuation starts from published commit
 `749a1b4fb195ad1c10d3f1cee04a2d78e3031428`, tree
