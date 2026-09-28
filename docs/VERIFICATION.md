@@ -4,11 +4,74 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-one mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: state cost across open kinetic chains
+## Current checkpoint: exact chain sharpness and its accuracy limit
+
+The baseline is commit `6b13d3be21b5978f6ace082a6e61b9a4315719d3`, tree
+`7434172a6b287277ba49c6bdd04b0da8e2d7aa0d`, with successful
+[CI run 36386428436](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36386428436).
+All 319 baseline files were present and checked before this continuation.
+The pinned Python 3.13.5 interpreter was restored; dependencies and the
+workflow were unchanged.
+
+The [new verifier](../scripts/verify_familiar_chain_sharpness.py) passes
+**266 exact checks**, with largest new matrix dimension eight (nine
+including inherited evidence). Its [report](../reports/familiar_chain_sharpness.json)
+binds the [fixed-coupling reversible proof](FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md)
+and [uniform truncation proof](FAMILIAR_CHAIN_FINITE_ACCURACY.md), plus
+38 inherited proof snapshots. It also checks the frozen input report and
+four verifier sources. Deterministic replay reproduces the saved report
+byte for byte, in about 16 seconds locally.
+
+The checks include symbolic covariance and whitening identities for
+lengths three through eight, the universal positivity constants, exact
+six- and eight-state cosine constructions at both signed field boundaries,
+and Green-function identities for truncation lengths two through eight.
+The actual generators satisfy detailed balance, common preparation,
+pointwise affine closure, complementary relaxation and the spectral exit
+cap. All 172 off-diagonal rates and 28 exit rates in these fixtures are
+checked with exact rational radical enclosures. There is no simulation,
+optimizer, floating-point sign decision or extrapolation from sampled
+lengths to the all-length theorem.
+
+Independent internal review verified the whitening identity at arbitrary
+length, every positivity constant, the $n=3$ boundary indices and the
+all-word equivalence argument. A separately reconstructed boundary model
+passed 123 scalar checks. A second review verified the nonautonomous
+truncation comparison, the special two-spin boundary and TV normalization,
+with 104 separate symbolic checks. These scratch audits supplement the
+production certificate; neither automated checks nor internal review
+constitutes external mathematical validation.
+
+The [source audit](FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md) compares the
+construction with six primary references, including controlled and HMM
+reduction, and credits the standard spectral and moment tools. The
+[assessment](FAMILIAR_CHAIN_SHARPNESS.md) leads with both exact sharpness
+and its finite-accuracy limit. In particular, any radius certifying all
+$2n$ reversible states must decrease at least exponentially with length
+in the new weak-coupling interval. Hardware feasibility and complete
+literature priority remain unestablished.
+
+New verifier SHA-256:
+`dee7547d4c18abeadbdfe49f7ef1b44d61b51e2898678d74312c53e2966eb5f3`.
+New saved report SHA-256:
+`bc7780ffe5781e3a3bc1545bc1872bfd0c659437e4fcd6109281385e9fdf4bd0`.
+
+The complete `make check` run passed: all 61 mathematical verifiers and
+four saved-model replays reproduced all **65 saved reports byte for byte**.
+The final repository checker passed 2,949 local Markdown links, 66 Python
+syntax checks, report provenance and the unchanged MIT license. All 310
+baseline files outside the nine navigation/build updates remain
+byte-identical, including every older mathematical proof, verifier and
+report. Historical claim rows R1–R71 are unchanged. The new checkpoint
+adds four notes, one verifier and one report. Remote CI must be checked
+for the resulting published commit; the successful run linked above is
+the baseline run, not evidence about this new tree.
+
+## Historical checkpoint: state cost across open kinetic chains
 
 The baseline is commit `d43755b3e8beb345ed4ad2bd894ede138e3561de`, tree
 `94781e9b8e593fca8e56aff56b418c6fd27491f0`, with successful

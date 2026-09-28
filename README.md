@@ -2,43 +2,57 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-The [open-chain theorem](docs/FAMILIAR_CHAIN_CONTROL_COST.md) shows that
+The [sharp open-chain theorem](docs/FAMILIAR_CHAIN_SHARPNESS.md) shows that
 **requiring a predictive model to obey equilibrium detailed balance can
 increase the number of states it needs under control**.
 
 A familiar heat-bath Ising chain has $n$ interacting switches. We control
 and observe only the first one, recording its initial and final signs.
-For every $n\ge3$ in the stated homogeneous weak-coupling family:
+For every $n\ge3$, at one fixed coupling $0<\tanh J\le1/64$ and
+nonnegative field tilts $0\le\tanh h\le1/2$:
 
 | Required endpoint-pair data | General Markov states | Ordinary reversible states |
 | --- | ---: | ---: |
 | Passive pairs | $n+1$ | $n+1$ |
-| Three-field controlled menu | $n+1$ | At least $2n$ |
-| Specified three-switch example | **4** | **6** |
+| Three-field controlled menu, exactly | $n+1$ | $2n$ |
+| All controlled endpoint pairs, exactly | $n+1$ | $2n$ |
 
 The [explicit positive model](docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md)
 works under every finite nonnegative-field protocol, with exit rates at
 most $13/12$ independently of chain length. The
 [reversible lower bound](docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md) needs only
 three field values and $2(n-1)(n+2)$ endpoint-pair settings, each with at
-most two field segments. For three switches, twenty settings of at most
-four ticks establish the [sharp four-versus-six comparison](docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md).
+most two field segments. The new
+[reversible realization](docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md)
+attains $2n$ at every length, with strictly positive rates and total exit
+rates at most $33/32$. The coupling interval is independent of length.
+The older [four-versus-six example](docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md)
+remains valid at the stronger three-switch coupling $t=1/3$.
 
 All experiments reuse one preparation and one model. The reversible class
 retains the physical force convention: its stationary laws are Gibbs tilts
 in the measured sign. The general construction obeys that same convention
 but permits stationary circulation. The lower bound has an explicit
 positive error radius for each fixed instance, without a rival rate cap
-or minimum stationary weight; it does not establish a uniform margin as
-the chain grows.
+or minimum stationary weight.
 
-Read the [physical explanation and scope](docs/FAMILIAR_CHAIN_CONTROL_COST.md)
-first. The [source comparison](docs/FAMILIAR_CHAIN_SOURCE_AUDIT.md) separates
+**Exact state cost and finite-accuracy cost differ.** The new
+[truncation bound](docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md) shows that
+retaining only the first $\ell$ switches changes any endpoint-pair law by
+at most $t^{2\ell}/(1-t^4)$ in total variation, uniformly over all protocols
+and horizons. In the new weak-coupling interval, four reversible states
+already approximate every length within $6\times10^{-8}$. Any error
+threshold certifying the exact $2n$ count must decrease at least
+exponentially with length. The exact separation is a constraint on lossless
+equilibrium reduction, not an extensive fixed-precision advantage.
+
+Read the [physical explanation and scope](docs/FAMILIAR_CHAIN_SHARPNESS.md)
+first. The [source comparison](docs/FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md) separates
 the established kinetic model and mathematical tools from the combined
 state-count result. These are ideal prediction theorems, without a hardware,
 heat-cost, or full-path claim. Manuscript drafting remains deferred.
 
-[Exact certificate](reports/familiar_chain.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+[Exact certificate](reports/familiar_chain_sharpness.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
 
 ## Preserved two-switch boundaries
 

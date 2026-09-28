@@ -2,7 +2,52 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-## Current result: equilibrium consistency costs states across an open chain — 28 September 2026
+## Current result: sharp state counts and an unavoidable accuracy boundary — 28 September 2026
+
+The [sharp chain assessment](FAMILIAR_CHAIN_SHARPNESS.md) is now the lead.
+For every $n\ge3$, the homogeneous heat-bath chain at any fixed
+$0<t=\tanh J\le1/64$ has exact controlled endpoint-pair state minima
+$D_{\rm all}=n+1$ and $D_{\rm ord}=2n$. The comparison uses one common
+zero-field preparation, the Gibbs force interface, and nonnegative field
+tilts in $[0,1/2]$. It holds for all words and on the existing finite
+three-field menu. The interval of allowed couplings does not shrink
+with length.
+
+The new [reversible construction](FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md)
+uses $n$ moment nodes of each visible sign, a cosine basis and freely
+chosen relaxation on the unused modes. It has strictly positive rates,
+uniform zero-field masses and exit rates at most $33/32$. Its upper
+bound alone permits signed tilts in $[-1/2,1/2]$. The older $t=1/3$
+three-switch four-versus-six example remains valid and stronger at that
+particular operating point.
+
+The companion [accuracy theorem](FAMILIAR_CHAIN_FINITE_ACCURACY.md) is
+central to the assessment. Truncating any homogeneous chain to its first
+$\ell\ge2$ spins gives endpoint-pair TV error at most
+$t^{2\ell}/(1-t^4)$, uniformly over every signed boundary-field word and
+horizon. At $t\le1/64$, four reversible states approximate every length
+within $6\times10^{-8}$. Any threshold certifying the exact $2n$ count
+is at most $t^{2n-2}/(1-t^4)$, so decreasing tolerance with length is
+unavoidable. Exact sharpness does not establish a growing state cost at
+fixed accuracy or an extensive bit-memory advantage.
+
+The [source comparison](FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md) credits
+standard cubature, reversible spectral expansion and shared-subspace
+realization. Both new derivations passed independent internal review.
+The candidate contribution is the combined constrained physical theorem;
+complete priority, external validation and broad publication significance
+remain unestablished. Device implementation and full-path equality do
+not follow from the state counts.
+
+**Next scientific priority:** establish a useful precision-dependent
+separation, beginning with stronger-coupling small chains or a matched
+approximation law. A further exact extension in chain length does not
+resolve the demonstrated finite-accuracy limitation. Manuscript drafting
+remains last.
+
+[Exact certificate](../reports/familiar_chain_sharpness.json) · [Verification](VERIFICATION.md).
+
+## Historical result: equilibrium consistency costs states across an open chain — 28 September 2026
 
 The [chain assessment](FAMILIAR_CHAIN_CONTROL_COST.md) is now the lead.
 For every $n\ge3$, the homogeneous open heat-bath chain with

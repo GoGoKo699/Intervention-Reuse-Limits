@@ -1,6 +1,53 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: determine the reversible cost for longer chains — 28 September 2026
+## Current priority: determine a useful accuracy-dependent separation — 28 September 2026
+
+This checkpoint starts from published commit
+`6b13d3be21b5978f6ace082a6e61b9a4315719d3`, tree
+`7434172a6b287277ba49c6bdd04b0da8e2d7aa0d`, with successful
+[CI run 36386428436](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36386428436).
+Preserve all old mathematical proofs, verifiers and reports, the license,
+and historical claim rows R1–R71. Existing authorization covers non-forced
+publication to public main. Collaborator contact is not authorized.
+Manuscript drafting remains last.
+
+The [new checkpoint](../docs/FAMILIAR_CHAIN_SHARPNESS.md) resolves the
+previous all-length attainability question. For every $n\ge3$ at fixed
+$0<t\le1/64$, the exact controlled endpoint-pair minima are $n+1$ and
+$2n$. The reversible construction has positive rates, common preparation,
+the Gibbs stationary tilt and exit rates at most $33/32$. The combined
+comparison uses nonnegative fields $m\in[0,1/2]$; the reversible upper
+also works for signed fields. The old stronger-coupling three-switch
+example remains intact.
+
+A second proved result sets the next direction. Physical truncation to
+$\ell$ spins gives uniform all-word endpoint error at most
+$t^{2\ell}/(1-t^4)$. Four reversible states therefore approximate every
+chain in the new weak-coupling interval within $6\times10^{-8}$. The
+threshold certifying the exact $2n$ count is at most
+$t^{2n-2}/(1-t^4)$; a length-independent threshold is impossible there.
+Both analytical derivations passed independent internal review. Exact
+checks supplement these proofs and do not establish external validation.
+
+**Single next scientific priority:** obtain a useful accuracy-dependent
+state separation in the familiar physical family. Start from the stronger
+three-switch point $t=1/3$ and the current finite three-field witness, or
+seek matching precision laws for controlled chain reduction. Quantify the
+best error achievable below the reversible state threshold and compare
+it with a constructive general upper at the same task and parameters.
+Prefer analytical bounds and small exact fixtures to large numerical
+searches. Increasing length at the newly proved weak coupling does not
+by itself improve the publication case.
+
+Keep the existing community model, ordinary equilibrium convention and
+one common preparation. Do not replace them with an invented device rule
+to enlarge the separation. Preserve the distinction between mathematical
+realizations, laboratory implementations, and complete-path predictions.
+The [new source audit](../docs/FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md)
+credits standard construction tools and checks closer controlled-reduction
+precedents. Complete priority and broad significance remain open.
+
+## Historical priority: determine the reversible cost for longer chains — 28 September 2026
 
 This checkpoint starts from published commit
 `d43755b3e8beb345ed4ad2bd894ede138e3561de`, tree
