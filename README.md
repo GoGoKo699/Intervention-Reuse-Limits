@@ -2,6 +2,68 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+**Perfect fixed-field calibration can still require another state after
+one switch.** Two coupled heat-bath switches give a small example: one
+reversible three-state predictor matches every initial/final sign law at
+either constant field, for every duration. It uses one common preparation,
+one binary readout and the prescribed Gibbs force. Yet every such
+three-state predictor must make an error when the field changes.
+
+The [calibration-and-switching theorem](docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md)
+uses coupling $\tanh J=1/3$, high field $H=3J$ and equal attempt rates.
+Only the first switch is controlled and observed. Starting from zero-field
+equilibrium, record its initial and final signs. Write $L$ for one time
+unit at zero field and $H$ for one time unit at the high field; $HL$
+applies the high field first.
+
+| Endpoint prediction task | General Markov states | Ordinary reversible states |
+| --- | ---: | ---: |
+| Every duration at both constant fields, exactly | $3$ | $3$ |
+| Five settings $L,L^2,H,H^2,HL$, through TV error $1/20000$ | $3$ | $4$ |
+| Every finite protocol at the two fields, exactly | $3$ | $4$ |
+
+**Four exact calibration laws force a sharp switched error.** Matching
+$L,L^2,H,H^2$ exactly makes the smallest possible three-state reversible
+error on $HL$ equal to $0.002451868563\ldots$, about **$0.245\%$** in
+total variation. An explicit model with rational rates attains this
+minimum and also matches every constant-field duration. Its construction
+extends to all nonnegative constant fields. The obstruction comes from
+the field-dependent normalization of the one hidden contrast available
+in three states.
+
+**Imperfect calibration has a separate guarantee.** If every one of the
+five pair laws may have TV error at most $1/20000=50$ ppm, the exact
+minimum counts remain three general states versus four ordinary
+reversible states. The lower permits arbitrary reversible stochastic
+tick kernels, imbalanced initial signs and unused zero-mass states,
+without a rate cap. One common preparation, deterministic readout and the
+shared Gibbs tilt remain required. The $0.245\%$ conditional minimum is
+not a uniform tolerance for errors in all five settings.
+
+An existing general three-state predictor keeps the same hidden coordinate
+across fields and matches every finite protocol. It obeys the prescribed
+Gibbs stationary laws while allowing stationary circulation. The physical
+four-state process supplies the reversible upper.
+
+Constant-field equivalence without switching equivalence is known in
+control theory. The [source comparison](docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md#6-established-mechanism-and-additional-content)
+attributes that mechanism and coarse-grained response theory. The additional
+result is the attained minimum over the calibrated three-state reversible
+class and its finite-error counterpart under the stated physical interface.
+These endpoint theorems do not establish full-path equivalence, hardware
+savings or a dissipation benefit.
+
+The next priority is to quantify the usefulness, acquisition cost and
+physical robustness of this five-setting test. Device feasibility and
+publication significance remain open. Manuscript drafting remains deferred.
+
+[Proof and scope](docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md) · [Construction certificate](reports/familiar_switch_frozen_equivalence.json) · [Finite-error certificate](reports/familiar_switch_frozen_bound.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+
+## Complementary chain results — preceding checkpoint
+
+The chain results below retain their stated scopes. Their earlier
+next-step assessment is superseded by the five-setting priority above.
+
 The [two-field chain theorem](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md) shows that
 **requiring a predictive model to obey equilibrium detailed balance can
 increase the number of states it needs under control**.
@@ -78,12 +140,11 @@ imbalance and zero masses; the upper is a continuous-time Markov model.
 Exact rational certificates support both bounds. Their parts-per-million
 scale leaves practical acquisition cost and physical usefulness open.
 
-The next priority is to explain the physical meaning of reusing one model
-under switching, compared with fitting passive laws separately. Further
-refinement of this small approximation interval is not the immediate goal.
+These results complement the two-switch calibration theorem by quantifying
+precision dependence for a longer chain.
 
-Read the [precision-dependent result and scope](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md)
-first. Its [source comparison](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md#5-established-tools-contribution-and-remaining-significance), together with the
+The [precision-dependent result and scope](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md)
+provides the derivation and exact certificates. Its [source comparison](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md#5-established-tools-contribution-and-remaining-significance), together with the
 [construction audit](docs/FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md), separates
 the established kinetic model and mathematical tools from the combined
 state-count result. These are ideal prediction theorems, without a hardware,

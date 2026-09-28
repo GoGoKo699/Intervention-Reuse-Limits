@@ -2,7 +2,70 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
-## Current result: twelve settings and a precision-dependent state cost — 28 September 2026
+## Current result: exact calibration and a robust five-setting switch test — 28 September 2026
+
+Lead with [perfect fixed-field calibration and one-switch
+failure](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md). Two equal-attempt
+heat-bath switches at $\tanh J=1/3$, with fields $0$ and $H=3J$, give
+three distinct exact state comparisons:
+
+| Endpoint prediction task | General states | Ordinary reversible states |
+| --- | ---: | ---: |
+| All durations at both constant fields, exactly | $3$ | $3$ |
+| Five settings $L,L^2,H,H^2,HL$, through TV error $1/20000$ | $3$ | $4$ |
+| All finite protocols at the two fields, exactly | $3$ | $4$ |
+
+Here each letter is a unit-duration pulse, and $HL$ means high field
+followed by zero field. All settings use one zero-field preparation and
+one deterministic binary readout, with no intermediate observation.
+Ordinary rivals retain the common Gibbs stationary tilt. The lower
+allows arbitrary reversible stochastic tick kernels, initial sign
+imbalance and unused zero-mass states; it imposes neither a rate cap nor
+continuous-time embedding. Explicit upper constructions are CTMCs.
+
+The sharper conditional statement requires exact agreement on just
+$L,L^2,H,H^2$: among every ordinary rival with at most three states, the
+minimum $HL$ pair-law TV error is $0.002451868563\ldots$, approximately
+$0.245\%$. An explicit rational reversible CTMC attains the minimum
+while matching all constant-field durations. Its field-dependent hidden
+coordinate gives a concrete explanation of why calibrated dynamics
+cannot be reused. The construction extends to all nonnegative constant
+fields, but the switched lower needs only the two registered fields.
+
+The robust five-setting comparison is a separate result. The observable
+conditional-covariance identity excludes every ordinary three-state rival
+within maximum TV error $1/20000=50$ ppm across all five laws. An
+independent two-state composition obstruction gives the general lower;
+the general three-state and physical four-state constructions attain the
+respective upper counts. The sharp $0.245\%$ switched error is conditional
+on exact calibration and is not the optimal uniform approximation error.
+No statistical acquisition budget follows automatically from either number.
+
+The [construction verifier](../scripts/verify_familiar_switch_frozen_equivalence.py)
+and [report](../reports/familiar_switch_frozen_equivalence.json) check
+the rational generators, closure, equilibrium tilt and attained switched
+error. The [bound verifier](../scripts/verify_familiar_switch_frozen_bound.py)
+and [report](../reports/familiar_switch_frozen_bound.json) certify the
+uniform finite-error exclusion. The [ledger](CLAIM_LEDGER.md) records
+these as R78–R79. The
+[source comparison](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md#6-established-mechanism-and-additional-content)
+attributes known fixed-control equivalence and coordinate compatibility,
+as well as physical coarse-grained response precedents. The additional
+claim is the attained minimum over this constrained stochastic class
+and its finite-error version, not the generic failure of independently
+calibrated dynamics under switching.
+
+The next priority is the usefulness, acquisition cost and physical
+robustness of this five-setting experiment. Further small-model
+optimization and longer-chain extensions are deferred. Device feasibility,
+broad physical significance, exhaustive priority and publication readiness
+remain open. Manuscript drafting remains deferred.
+
+The following sections preserve complementary results and earlier
+assessments. Their next-step instructions are historical; the current
+section above supplies the active priority.
+
+## Historical result: twelve settings and a precision-dependent state cost — 28 September 2026
 
 The current lead is [reversed control sequences and the precision
 frontier](FAMILIAR_CHAIN_PRECISION_FRONTIER.md). Two opposite protocol

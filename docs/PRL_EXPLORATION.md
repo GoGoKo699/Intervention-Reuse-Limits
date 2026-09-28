@@ -2,7 +2,62 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-## Current result: twelve settings and a precision-dependent state cost — 28 September 2026
+## Current result: exact calibration and a robust five-setting switch test — 28 September 2026
+
+The [two-switch calibration theorem](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md)
+now provides the simpler lead. At $\tanh J=1/3$, $H=3J$ and equal attempts,
+one ordinary reversible three-state CTMC matches every constant-field
+endpoint-pair law at both fields for every duration. Its preparation and
+binary readout are common, and its equilibrium laws have the physical
+Gibbs tilt. The construction even covers all nonnegative constant fields.
+It nevertheless cannot be reused exactly after one field switch.
+
+This is a class-wide obstruction. Any ordinary reversible model with at
+most three states matching $L,L^2,H,H^2$ exactly has $HL$ pair-law TV error
+at least $0.002451868563\ldots$, about $0.245\%$. The rational CTMC
+attains this minimum. The four pure laws determine the norm of one hidden
+contrast in each field; the Gibbs weights force its cross-field scaling
+to one of four incompatible values. The high-field pulse comes first in
+$HL$. All experiments begin from the same zero-field preparation and
+observe only initial and final signs.
+
+The exact-calibration optimum is separate from the finite-error result.
+For the five-setting menu $L,L^2,H,H^2,HL$, allowing maximum pair-law TV
+error $0\le\delta\le1/20000$ gives **exactly three general states versus
+four ordinary reversible states**. An observable conditional-covariance
+identity and rational interval bounds exclude every ordinary three-state
+rival, even with imbalanced initial signs, unused zero masses and
+arbitrary reversible stochastic tick kernels. No rival rate cap or CTMC
+embedding is imposed. The shared Gibbs convention, fixed deterministic
+readout and common preparation remain premises. The $0.245\%$ value must
+not be quoted as the uniform five-setting tolerance: that tolerance is
+$50$ ppm. The existing general three-state construction matches all
+field words exactly, and the physical four-state target supplies the
+ordinary upper.
+
+The [construction verifier](../scripts/verify_familiar_switch_frozen_equivalence.py)
+and [bound verifier](../scripts/verify_familiar_switch_frozen_bound.py)
+check the rational models and finite-error certificate. The
+[source comparison](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md#6-established-mechanism-and-additional-content)
+attributes the established constant-control/switching distinction and
+coarse-grained response theory. The specific constrained, attained
+minimum is the additional result; neither the generic mechanism nor
+rank-one covariance geometry is claimed as new.
+
+**Next scientific priority:** quantify the usefulness, acquisition cost
+and physical robustness of the five-setting test. Additional small-model
+optimization and longer-chain extensions are deferred. The conditional
+minimum, uniform population-law tolerance and sampling cost are different
+quantities. Device feasibility, broad significance, full priority and
+publication readiness remain open. Manuscript drafting remains last.
+
+[Construction certificate](../reports/familiar_switch_frozen_equivalence.json) · [Finite-error certificate](../reports/familiar_switch_frozen_bound.json) · [Verification](VERIFICATION.md).
+
+The following sections preserve preceding checkpoints and their original
+assessments. Their lead results remain complementary; their next-step
+instructions are superseded by the current section above.
+
+## Historical result: twelve settings and a precision-dependent state cost — 28 September 2026
 
 The [precision frontier](FAMILIAR_CHAIN_PRECISION_FRONTIER.md) supersedes
 the approximation interval below. Reversing the two pulse orders gives

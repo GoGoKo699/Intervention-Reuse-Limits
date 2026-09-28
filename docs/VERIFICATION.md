@@ -4,11 +4,80 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-five mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-seven mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: a certified precision-dependent state cost
+## Current checkpoint: sharp switching error after fixed-field calibration
+
+The baseline is commit `fb75d3cc14126f75ca4a3475f08ef853a016974f`, tree
+`3ec71da2514582a5bc731611804c6bcabc673f15`, with successful
+[CI run 36409267904](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36409267904).
+The pinned Python 3.13.5 environment, dependencies, workflow and every
+earlier mathematical proof, verifier and report remain unchanged.
+
+The [new proof](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md) concerns two coupled
+heat-bath switches at $t=1/3$, high-field tilt $7/9$ and unit clock. An
+explicit reversible three-state model matches every constant-field
+endpoint law at both fields for every duration. Every ordinary rival with
+at most three states that exactly matches $L,L^2,H,H^2$ has a sharp switched
+TV error at least $0.002451868563\ldots$ on $HL$; the model attains it.
+This calibrated optimum is separated from the unconditional finite-error
+certificate below.
+
+The [construction verifier](../scripts/verify_familiar_switch_frozen_equivalence.py)
+passes **174 exact checks**, including inherited provenance. It checks
+rational reversible and general three-state generators, their
+preparations, stationary Gibbs laws, closure identities, detailed balance
+or nonzero circulation, and the physical four-state generator. Every exit
+rate in the two three-state fixtures is at most one. Their initial
+conditional hidden means agree with the physical target. The general
+model retains one common hidden coordinate, so it matches all finite
+two-field endpoint protocols; the reversible model's coordinate changes
+by a factor $4/3$. Positive uniformization through degree 48 independently
+checks pure and mixed words and encloses its sharp unit-switch error in
+$[0.0024518685633936,0.0024518685633937]$.
+
+The [bound verifier](../scripts/verify_familiar_switch_frozen_bound.py)
+passes **105 exact checks**, including provenance, and checks the five
+words $L,L^2,H,H^2,HL$ at per-word TV tolerance
+$1/20000=50$ ppm. A conditional-covariance identity limits any ordinary
+three-state rival to four possible weighted switched-moment branches.
+Exact rational interval arithmetic excludes all branches, with minimum
+weighted-moment interval gap greater than $0.00047$. This permits errors
+in every setting, initial sign imbalance, zero unused masses and arbitrary
+reversible stochastic tick kernels. Two general states are separately
+excluded by the observed Markov-composition identity, with pair-cell
+interval gap greater than $0.00328$. Together with the exact upper models,
+the minimum counts are three general and four ordinary reversible states
+through 50 ppm on this same five-setting task.
+
+Both new reports inherit and validate the frozen cross-rank report, its
+42 proof snapshots and bound sources, and bind the final new proof.
+Construction checks use only rational arithmetic; the lower certificate
+uses rational Taylor series through degree 40 and integer square-root
+enclosures. Largest propagated matrix dimension is three; the physical
+four-state generator is checked algebraically. No optimizer, trajectory
+simulation or floating-point acceptance decision is used.
+
+Independent internal review covers the explicit fixtures, all-duration
+fixed-field equivalence, the one-dimensional contrast classification,
+Gibbs scaling, the five-word identity, the distinction between calibrated
+and uniform error, and the rational interval implementation. The source
+comparison attributes established frozen-equivalence and coarse-grained
+response results. Neither internal review nor regression checks establish
+complete priority, experimental feasibility or publication readiness.
+
+The integrated `make check` gate passed: **67 mathematical verifiers and
+four saved-model replays reproduced all 71 reports byte for byte**. The
+final repository checker passed 3,061 local Markdown links, 72 Python
+syntax checks, saved provenance and the unchanged MIT license. All 327
+baseline files outside eight navigation/build updates remain byte-identical;
+historical claim rows R1–R77 are unchanged. Five new files add one proof,
+two verifiers and two reports. Hosted CI for the resulting commit is
+checked separately from the successful baseline run.
+
+## Historical checkpoint: a certified precision-dependent state cost
 
 The baseline is commit `a98b4be6fbe267c80a027f341302fd6b090f60b0`, tree
 `f41f38ca34b210422bbc10044e24a5d8bbde3388`, with successful

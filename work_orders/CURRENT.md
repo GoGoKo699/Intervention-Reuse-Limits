@@ -1,6 +1,57 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: explain the physical role of switching — 28 September 2026
+## Current priority: assess the usefulness of the five-setting switching test — 28 September 2026
+
+This continuation starts from published commit
+`fb75d3cc14126f75ca4a3475f08ef853a016974f`, tree
+`3ec71da2514582a5bc731611804c6bcabc673f15`, with successful
+[CI run 36409267904](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36409267904).
+Preserve all earlier mathematical proofs, verifiers and reports, the MIT
+license and historical claim rows R1–R77. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [new calibration and switching theorem](../docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md)
+gives a simpler physical interpretation using only two coupled heat-bath
+switches. At $t=1/3$ and $H=3J$ ($m_H=7/9$), an explicit reversible
+three-state model with rational rates, common preparation and the Gibbs
+field tilt reproduces every constant-field endpoint-pair law at both
+fields for every duration. A parameterized construction even covers all
+nonnegative fields at this coupling. Exact constant-field state minima
+are three in both the general and ordinary reversible classes.
+
+Four calibration settings $L,L^2,H,H^2$ alone force every exactly
+calibrated three-state ordinary rival to incur switched pair-law TV at
+least $0.002451868563\ldots$ on $HL$. The explicit CTMC attains this
+minimum. The proof classifies the one-dimensional hidden contrast in a
+three-state binary predictor: Gibbs reweighting forces a relative scale
+in $\{\pm\sqrt{1+m},\pm\sqrt{1-m}\}$. This sharp calibrated bound is
+not an unrestricted approximation distance.
+
+A separate observable covariance identity gives an unconditional uniform
+error certificate on the same five words. Exact rational intervals prove
+general minimum three versus ordinary reversible minimum four through
+per-word TV error $1/20000=50$ ppm. Initial imbalance, zero unused masses,
+arbitrary reversible tick kernels and unbounded rates remain allowed.
+The general three-state all-word construction and physical four-state
+upper are both explicit. No stochastic readout or hidden controller is
+introduced. The older chain precision frontier remains valid on its own
+operating point and menus; these tolerances are not a same-task comparison.
+
+**Single next scientific priority:** determine whether the five-setting
+test supports a useful physical prediction or validation task. Quantify
+calibration-versus-switching tolerance and a defensible acquisition cost,
+including the preparation and readout assumptions, using the new observable
+identity. Compare those requirements with the established coarse-grained
+response community's conventions. Prefer analytical bounds and small
+certificates to more fitted examples. The generic failure of fixed-field
+equivalence under switching is established in control theory; the specific
+sharp minimum and constrained positive realization are the additional
+claims to assess. Physical robustness, practical measurement cost, broad
+significance and complete priority remain open. Manuscript drafting is
+deferred.
+
+## Historical priority: explain the physical role of switching — 28 September 2026
 
 This continuation starts from published commit
 `a98b4be6fbe267c80a027f341302fd6b090f60b0`, tree

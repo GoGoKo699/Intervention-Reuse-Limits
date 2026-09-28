@@ -1,0 +1,332 @@
+{
+  "Taylor_order": 40,
+  "arithmetic": "Exact rational Taylor enclosures, rational interval arithmetic, and integer square-root bounds; floating point only for display",
+  "check_labels": [
+    "input-hash:reports/familiar_chain_cross_rank.json",
+    "input-status:reports/familiar_chain_cross_rank.json",
+    "source-hash:verify_familiar_chain.py",
+    "source-hash:verify_familiar_chain_accuracy.py",
+    "source-hash:verify_familiar_chain_cross_rank.py",
+    "source-hash:verify_familiar_chain_sharpness.py",
+    "source-hash:verify_switch_control_scope.py",
+    "source-hash:verify_switch_physical_core.py",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_PASSIVE_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_CALIBRATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_FINITE_MARGIN.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_FINITE_RESET.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PREPARATION_COST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_REPEATED_READOUT.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_STRUCTURE.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md",
+    "inherited-proof-hash:docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md",
+    "inherited-report-hash:reports/familiar_chain.json",
+    "inherited-report-hash:reports/familiar_chain_accuracy.json",
+    "inherited-report-hash:reports/familiar_chain_sharpness.json",
+    "inherited-report-hash:reports/switch_control_scope.json",
+    "inherited-proof-count",
+    "imported-helper-source-is-bound",
+    "new-proof-hash:docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md",
+    "same-Taylor-order-40",
+    "target-generator-norm-at-most-two",
+    "Taylor-factor-norm-below-nine",
+    "moment-Taylor-error-below-1e-30",
+    "both-visible-sign-masses-positive",
+    "interval-denominator-positive",
+    "interval-denominator-positive",
+    "field 0:variance-upper-positive",
+    "interval-denominator-positive",
+    "interval-denominator-positive",
+    "field 1:variance-upper-positive",
+    "interval-denominator-positive",
+    "interval-denominator-positive",
+    "square-root-nonnegative",
+    "square-root-lower-certificate",
+    "square-root-upper-certificate",
+    "sector -1,orientation -1:disjoint-switch-intervals",
+    "outward-report-enclosure",
+    "sector -1,orientation 1:disjoint-switch-intervals",
+    "outward-report-enclosure",
+    "square-root-nonnegative",
+    "square-root-lower-certificate",
+    "square-root-upper-certificate",
+    "sector 1,orientation -1:disjoint-switch-intervals",
+    "outward-report-enclosure",
+    "sector 1,orientation 1:disjoint-switch-intervals",
+    "outward-report-enclosure",
+    "ordinary-three-state-exclusion-margin",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "single-tick-cell-bounds-positive",
+    "interval-denominator-positive",
+    "interval-denominator-positive",
+    "general-two-state-exclusion-margin",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure",
+    "outward-report-enclosure"
+  ],
+  "checks": 105,
+  "conclusion": "At maximum-menu TV error <=1/20000 on the five stated words, ordinary reversible rivals require at least four states, and general Markov rivals require at least three. Matching upper constructions are supplied in the companion equivalence note/report.",
+  "dependencies": "Python standard library only; imported matrix helper is SHA256-bound",
+  "fixture": {
+    "clock": "1",
+    "field_tilts": [
+      "0",
+      "7/9"
+    ],
+    "maximum_TV_error_per_word": "1/20000",
+    "physical_switches": 2,
+    "tanh_J": "1/3",
+    "words": [
+      "L",
+      "LL",
+      "H",
+      "HH",
+      "HL"
+    ]
+  },
+  "general_two_state_exclusion": {
+    "general_state_lower": 3,
+    "identity": "P_LL(+,+)=sum_u P_L(+,u)*P_L(u,+)/p_u",
+    "scope": "Any two-state time-homogeneous Markov rival with deterministic binary readout and common initial law; no reversibility or Gibbs constraint is used.",
+    "status": "PASS",
+    "strict_interval_gap_lower": "328/100000",
+    "target_P_LL_plus_plus_interval_with_TV_error": [
+      "149836571977/500000000000",
+      "59954628791/200000000000"
+    ],
+    "two_state_P_LL_plus_plus_interval": [
+      "29612631783/100000000000",
+      "296385569019/1000000000000"
+    ]
+  },
+  "input_report_sha256": {
+    "reports/familiar_chain.json": "177d6a9f754dddf9ccc919037d6267e4982eac18b4ddd8703461efd5ac4debb8",
+    "reports/familiar_chain_accuracy.json": "4648f09eb6a900486a1b66cfa8b64568a24299e7fbb473faf80a3d59f0197aec",
+    "reports/familiar_chain_cross_rank.json": "00bf2773e79573da5cff1a2ce238d5cc3da1f9666f6d5b831b43dc628e92d818",
+    "reports/familiar_chain_sharpness.json": "bc7780ffe5781e3a3bc1545bc1872bfd0c659437e4fcd6109281385e9fdf4bd0",
+    "reports/switch_control_scope.json": "93d74f9c605fbfcc69a70f825b722cc67f1ce39fd3aee4b4d4f460f792f0ac7d"
+  },
+  "limitations": "The sufficient 50-ppm tolerance is conservative and is not the optimal distance, a sampling budget, or a device-feasibility claim. The analytic dimension identity in the written proof is essential; interval verification alone is not a universal proof. No exact calibration, rate ceiling, stationary-mass floor, stochastic readout, path-law equivalence, or thermodynamic benefit is assumed or established beyond the stated task.",
+  "ordinary_three_state_exclusion": {
+    "branches": [
+      {
+        "candidate_W_HL_interval": [
+          "161912216181/500000000000",
+          "65012115877/200000000000"
+        ],
+        "doubleton_sign": -1,
+        "orientation": -1,
+        "position": "below_target",
+        "strict_interval_gap_lower": "7740635271/1000000000000"
+      },
+      {
+        "candidate_W_HL_interval": [
+          "164636922433/500000000000",
+          "330509991889/1000000000000"
+        ],
+        "doubleton_sign": -1,
+        "orientation": 1,
+        "position": "below_target",
+        "strict_interval_gap_lower": "143201423/62500000000"
+      },
+      {
+        "candidate_W_HL_interval": [
+          "12728611747/40000000000",
+          "160352932219/500000000000"
+        ],
+        "doubleton_sign": 1,
+        "orientation": -1,
+        "position": "below_target",
+        "strict_interval_gap_lower": "12095350219/1000000000000"
+      },
+      {
+        "candidate_W_HL_interval": [
+          "166814279907/500000000000",
+          "21007445661/62500000000"
+        ],
+        "doubleton_sign": 1,
+        "orientation": 1,
+        "position": "above_target",
+        "strict_interval_gap_lower": "471789601/1000000000000"
+      }
+    ],
+    "conditional_mean_part_interval": [
+      "20430760761/62500000000",
+      "13097690083/40000000000"
+    ],
+    "conditional_variance_intervals": {
+      "H": [
+        "234986049/125000000000",
+        "299092049/100000000000"
+      ],
+      "L": [
+        "13578275023/1000000000000",
+        "2831878961/200000000000"
+      ]
+    },
+    "identity": "W_HL=sum_s (1+m*s)*z_Hs*z_Ls/p_s + orientation*sqrt((1+doubleton_sign*m)*V_H*V_L)",
+    "ordinary_state_lower": 4,
+    "scope": "Every reversible rival with at most three persistent states, including imbalanced common preparations and zero-mass states. All five pair laws may have error; exact calibration is not assumed.",
+    "status": "PASS",
+    "strict_minimum_interval_gap_lower": "47/100000",
+    "target_W_HL_interval_with_TV_error": [
+      "5200018979/15625000000",
+      "333156770213/1000000000000"
+    ]
+  },
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md": "ec59199f390655484b93260b21b4fa930675d1d26f17dc399d9e948f495596f0",
+    "docs/FAMILIAR_CHAIN_PASSIVE_REALIZATION.md": "d5cbf5b8c0a1ea537b09223b3abb2e03abd7cf50c959f4500f1ff55887b67741",
+    "docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md": "147f11bff41c9cbc7ecb5a60ea4cf7d935fe3ee8eff22dc1a61ddcc73aca26c8",
+    "docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md": "04be8e949df054d51e17c3450174807c201a7715bd24fd7f8e9fb40caf1838ef",
+    "docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md": "2f2e7bb12b266e8ca70ed200995c084e85625d421c0bf0875632cc873e429659",
+    "docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md": "5be390a54bac96cf0e7c4e6c3ef6828380b6d5599c98542d1f73028d48836850",
+    "docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md": "ef06ad85440f7d0f0e5a817f1172d039dc626e8f8291b7a372384cb4a7000983",
+    "docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md": "2ef41b246cf19689f17ac067ff52b1dbbc9b9ad9067bb7833014c1458df15383",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md": "9573c9a70ac82c319a49f09e7f7d72024c0f6816091a54a2aff6228fee871342",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md": "63e18ab4e4d059cab98cb687f8e5926452c86a5e3c1cceebe83ea7e9036336a4",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md": "219464f378f20e88c488aebd3770dbdefe7d535d4d5a253053473ec0fe9cd625",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md": "4618b2f6882bbc0d4bfe7161b71d14c8c3f16fa0600dc9a3f0324417066b896c",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md": "eb35e4b689e6a06573eea0fa12e91e19a41c08c23ec14bf0d5262c0b1846a5b9",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md": "311ddad97cfec6ab09a733565e5655532a4449f2b1ff4c33a37516565ed592fa",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md": "42530472f40412d9e1f93d868a4df1dd2d833ba34ee89f8531df1cb1679dec0a",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md": "b9cefb9caa480b7e60271de6e6093c24766d30c6b1a1832d8c8f1c91cdbdadc3",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md": "126fbcb68b9d552d461134f0f56853592a0cf34e6b16fa06f253ffb110cb9365",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f"
+  },
+  "source_sha256": {
+    "verify_familiar_chain.py": "ca3d241db981bacd8f75c41ba40bba021a0f13c1b9c189fcd35937035ae30ac3",
+    "verify_familiar_chain_accuracy.py": "9ad3417984e223d5cf66c7c151276bfb86938596d04bb6fba928a2a9b08aae17",
+    "verify_familiar_chain_cross_rank.py": "a0b0b88d4e5c04fc86ca8b6d3ad7f37c25b20bcaea1f7724a6b6c602d05ae5a2",
+    "verify_familiar_chain_sharpness.py": "dee7547d4c18abeadbdfe49f7ef1b44d61b51e2898678d74312c53e2966eb5f3",
+    "verify_familiar_switch_frozen_bound.py": "cd851ff4b8439871805e2bc29566dab7ab60c641b117a97c30121b2a964422c6",
+    "verify_switch_control_scope.py": "1343df7a5a3397ed7270f39fcbed2fcd98c6e9d5b79505b4913f7df12aa2e22c",
+    "verify_switch_physical_core.py": "0bc9e8be9abf10987ebd1158d2509f938b779fcd861134bfabb38158937952df"
+  },
+  "status": "PASS",
+  "target_moment_enclosures": {
+    "H": {
+      "correlation": [
+        "394017500089/1000000000000",
+        "39401750009/100000000000"
+      ],
+      "mean": [
+        "58914965269/125000000000",
+        "471319722153/1000000000000"
+      ]
+    },
+    "HH": {
+      "correlation": [
+        "161414604733/1000000000000",
+        "80707302367/500000000000"
+      ],
+      "mean": [
+        "652233085207/1000000000000",
+        "81529135651/125000000000"
+      ]
+    },
+    "HL": {
+      "correlation": [
+        "184195393007/1000000000000",
+        "11512212063/62500000000"
+      ],
+      "mean": [
+        "191293199263/1000000000000",
+        "5977912477/31250000000"
+      ]
+    },
+    "L": {
+      "correlation": [
+        "21507189603/50000000000",
+        "430143792061/1000000000000"
+      ],
+      "mean": [
+        "-1/1000000000000",
+        "1/1000000000000"
+      ]
+    },
+    "LL": {
+      "correlation": [
+        "99446287909/500000000000",
+        "198892575819/1000000000000"
+      ],
+      "mean": [
+        "-1/1000000000000",
+        "1/1000000000000"
+      ]
+    }
+  },
+  "target_moment_error_upper": "256/13522175873595716381682425002283203125",
+  "versions": {
+    "python": "3.13.5"
+  }
+}
