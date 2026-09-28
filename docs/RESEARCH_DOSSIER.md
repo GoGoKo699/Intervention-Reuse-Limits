@@ -2,6 +2,63 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
+## Current measurement milestone: sampling designs and physical assumptions — 28 September 2026
+
+The [five-setting measurement note](FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)
+adds a statistical experiment to the unchanged
+[calibration-and-switching theorem](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md).
+Totals count complete initial/final sign pairs, with independent fresh
+resets and the full instrument and repeated-control contract.
+
+| Test and stated contract | Sufficient paired trials |
+| --- | ---: |
+| Numerical $m=7/9$ score, ideal observations | 100 million |
+| Numerical $m=7/9$ score, 10 ppm per-word recorded-law TV allowance on each side | 125 million |
+| Numerical $m=7/9$ score, known independent 1% binary-symmetric channels at both endpoints plus that residual allowance | 150 million |
+| Separate unknown-$m$ profile, ideal nominal target | 600 million |
+
+Both false-rejection and target-miss probabilities are below $0.05$.
+The 10 ppm allowance is relative to one fixed nominal model across
+all words on each side separately; the known detector is part of the
+reference law. The numerical score and unknown-$m$ profile have different
+calibration premises. The latter controls the null for every $-1<m<1$
+and supplies power at the ideal nominal target.
+
+A fixed-budget information bound requires at least 136,981 trials for
+the ideal experiment. It does not identify an optimal test, allocation
+or sufficient count; the statistical gap remains substantial. The
+10 ppm allowances, sampling uncertainty, R79's 50 ppm population
+tolerance and R78's attained $0.245\%$ error under exact calibration
+must remain separately identified.
+
+The separate population certificate covers the common box
+$t\in[33/100,101/300]$, $m\in[77/100,707/900]$ and
+$\tau_L,\tau_H\in[0.99,1.01]$, with low field zero and equal unit
+attempts. Target and rival share the same actual tilt $m$. The certified
+counts are exactly three general versus four ordinary reversible states
+through 50 ppm across this box.
+The nominal score's power does not automatically extend across the box.
+
+The [ledger](CLAIM_LEDGER.md) adds R80 for score and information bounds,
+R81 for the unknown-field profile and R82 for the parameter-box
+certificate. A finite target reset estimate does not apply uniformly
+to arbitrary slow rivals. The common full-state preparation and initial
+measurement promises remain substantive; component readout and control
+experiments do not certify a device satisfying this complete contract.
+
+The next priority is to narrow the acquisition-cost gap and assess
+the instrument assumptions needed for a useful test.
+Further small-model optimization and longer-chain extensions remain
+deferred. Device feasibility, broad significance, complete priority and
+publication readiness remain open. Manuscript drafting remains deferred.
+
+[Score certificate](../reports/familiar_switch_frozen_score.json) · [Sampling certificate](../reports/familiar_switch_frozen_sampling.json) · [Information certificate](../reports/familiar_switch_frozen_information.json) · [Robustness certificate](../reports/familiar_switch_frozen_robustness.json) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their content and original
+status headings are retained; the measurement update above supplies the
+active assessment and next step.
+
+
 ## Current result: exact calibration and a robust five-setting switch test — 28 September 2026
 
 Lead with [perfect fixed-field calibration and one-switch

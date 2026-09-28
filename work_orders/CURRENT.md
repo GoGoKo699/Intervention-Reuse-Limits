@@ -1,6 +1,68 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: assess the usefulness of the five-setting switching test — 28 September 2026
+## Current priority: narrow the five-setting acquisition gap — 28 September 2026
+
+This continuation starts from published commit
+`5a2ba1a330a882173b0ab6a9fc012d24bd9570c2`, tree
+`69f86d33afccfc330f6cb88554535ad03d63e894`, with successful
+[CI run 36412293758](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36412293758).
+Preserve all earlier mathematical proofs, verifiers and reports, the MIT
+license and historical claim rows R1–R79. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [measurement and robustness proof](../docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)
+completes the preceding acquisition-cost checkpoint. On the same five
+words, a fixed tangent-polynomial test excludes every ordinary reversible
+at-most-three-state model at numerical Gibbs tilt $m=7/9$ with both
+error probabilities below 5%. Sufficient independent endpoint-pair trials
+are 100 million ideally; 125 million with per-word recorded-law TV error
+at most 10 ppm to one fixed reference model on each side; and 150 million
+with known independent 1% endpoint flips plus that residual allowance.
+The known channel is part of the reference. These are conservative upper
+bounds, not optimal sample costs. No exact fixed-field calibration is
+assumed by the tested null.
+
+A separate seven-statistic confidence-set test infers the relative Gibbs
+tilt from observations, using $m=(M_H-e)/(1-C_H)$. It is valid uniformly
+over unknown null tilts in $(-1,1)$ and has nominal-target power above 95%
+with 600 million ideal pair trials. The common Gibbs force interface is
+still assumed. The known-tilt confidence-box alternative costs 575 million;
+the tangent score is preferable when its registered-tilt contract applies.
+
+An exact KL calculation against the explicit statically equivalent
+three-state rival proves that an ideal fixed budget must contain at least
+136,981 pair trials for both errors at most 5%. Adaptive selection based
+on completed trials and stopping are covered; protocol choice based on the
+current initial sign is not. Known independent 1% endpoint errors raise
+this necessary fixed count to 146,312. The lower bounds are necessary only.
+
+The population state counts stay exactly three general versus four
+ordinary reversible states through 50 ppm across common relative 1%
+changes in $t=\tanh J$, $m=\tanh H$ and the two field dwell times. This
+family retains zero low field, equal unit attempts, shared clocks and the
+same actual tilt for target and rival. It does not supply a uniform power
+claim for the nominal score or for a profiled different-tilt rival.
+Target reset, rate/control displacement and detector inverse bounds are
+explicit. The initial instrument requires a joint record/post-measurement
+hidden-state guarantee, and a target reset time does not bound every
+uncapped rival's equilibration time. The sample theorems assume independent
+complete trials; hardware throughput and calibration acquisition remain
+unpriced.
+
+**Single next scientific priority:** narrow the large necessary-versus-
+sufficient acquisition interval for this same five-setting experiment.
+Seek a substantially cheaper rigorous composite-null test that profiles
+the tilt, or a closer admissible rival giving a stronger information lower
+bound. Preserve the accepted physical interface, count all persistent
+memory and keep exact calibration, population TV tolerance and statistical
+power separate. Prefer analytical geometry and small rational certificates
+to large numerical fitting or a new operating point chosen merely to
+increase the effect. The sharp calibrated switching error remains the
+structural result; practical significance and the publication case remain
+open. Manuscript drafting is deferred.
+
+## Historical priority: assess the usefulness of the five-setting switching test — 28 September 2026
 
 This continuation starts from published commit
 `fb75d3cc14126f75ca4a3475f08ef853a016974f`, tree

@@ -4,11 +4,82 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-seven mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-one mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: sharp switching error after fixed-field calibration
+## Current checkpoint: five-setting measurement cost and physical robustness
+
+The baseline is commit `5a2ba1a330a882173b0ab6a9fc012d24bd9570c2`, tree
+`69f86d33afccfc330f6cb88554535ad03d63e894`, with successful
+[CI run 36412293758](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36412293758).
+Every preceding proof, mathematical verifier, saved report, dependency and
+workflow remains unchanged. The [new measurement proof](FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)
+separates sufficient tests, a necessary acquisition bound and a coherent
+physical-parameter family.
+
+The [score verifier](../scripts/verify_familiar_switch_frozen_score.py)
+passes **146 exact checks**, including inherited provenance. It checks the two rank-one null polynomials, fixed rational target center,
+gradients, interval Hessian bounds, global variance and increment bounds,
+and rational concentration probabilities. It certifies 100 million ideal
+paired trials, 125 million with 10 ppm per-word recorded-law deviation to
+one fixed reference model, and 150 million with known 1% independent
+endpoint channels plus that deviation. All type-I and type-II bounds are
+below 5%; the respective upper pairs are (0.028323, 0.041616),
+(0.019093, 0.023077), and (0.013775, 0.015575). This test registers numerical
+tilt $7/9$. The complete ordinary three-state null need not match any
+calibration setting exactly.
+
+The [sampling verifier](../scripts/verify_familiar_switch_frozen_sampling.py)
+passes **87 exact checks**, including inherited provenance. It checks confidence-set exclusion, all four interval branches and rational
+Hoeffding tails. Profiling the unknown tilt from $M_H,e,C_H$ gives uniform
+null validity over $m\in(-1,1)$ and nominal-target power above 95% with
+600 million ideal pair trials. A known-tilt confidence-box alternative
+uses 575 million. The implementation validates fixed per-arm counts and
+returns inconclusive at uncertified denominators. Statistics from one
+pair need not be independent; complete trials must be independent.
+
+The [information verifier](../scripts/verify_familiar_switch_frozen_information.py)
+passes **134 exact checks**, including inherited provenance. It checks exact pure-field equivalence of a concrete reversible comparator,
+four-state and three-state switched pair laws, rational matrix Taylor
+remainders, logarithm series and KL bounds. It certifies necessary fixed
+budgets 136,981 ideal pair trials or 146,312 with known independent 1%
+endpoint errors. Adaptive protocol selection must precede the current
+initial observation. An expected random count is not rounded to a fixed
+integer budget. Necessary counts are distinct from sufficient test costs.
+
+The [robustness verifier](../scripts/verify_familiar_switch_frozen_robustness.py)
+passes **101 exact checks**, including inherited provenance. It uses exact scalar interval series and linked target residual expressions
+to cover the full common relative 1% box in $t,m,\tau_L,\tau_H$. The ordinary
+three-state branch margins remain above 0.000228 and 0.001946 at 50 ppm;
+the general two-state passive defect remains above 0.003071. Inherited
+three-state general and physical four-state upper constructions give
+exact population counts three versus four throughout the box. This is not
+a uniform-power extension of the nominal score test. The verifier also
+checks reset, target control-displacement and detector inverse bounds.
+A target-only control or reset estimate never certifies the null interface.
+
+All new proof-bearing comparisons use rational arithmetic. Largest new
+dynamics matrix dimension is four. No optimizer or trajectory simulation
+runs in this gate. Four new reports bind the final measurement proof and
+inherited evidence. Independent internal reviews cover the analytic
+identities, statistical tests, continuous parameter box, implementations
+and scope boundaries. Primary-source attribution is included in the proof;
+internal review and automated checks do not establish complete priority,
+experimental feasibility or publication readiness.
+
+The integrated `make check` gate passed: **71 mathematical verifiers and
+four saved-model replays reproduced all 75 reports byte for byte**. The
+repository checker passed 3,112 local Markdown links, 76 Python syntax
+checks, saved provenance and the unchanged MIT license. All 332 protected
+baseline files outside eight navigation/build updates remain byte-identical;
+historical claim rows R1–R79 are unchanged. Nine new files add this proof,
+four verifiers and four reports. The proof SHA-256 is
+`688779263aced1c36f4118b749bb3c8080e8d90d0f1d6dd4096f638d5b84c61d`.
+Hosted CI for the resulting commit is checked separately from the
+successful baseline run.
+
+## Historical checkpoint: sharp switching error after fixed-field calibration
 
 The baseline is commit `fb75d3cc14126f75ca4a3475f08ef853a016974f`, tree
 `3ec71da2514582a5bc731611804c6bcabc673f15`, with successful

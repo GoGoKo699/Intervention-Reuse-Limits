@@ -2,6 +2,52 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+## Current measurement milestone — 28 September 2026
+
+The [five-setting measurement analysis](docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)
+adds finite-sample tests to the two-switch theorem below. Each trial
+records one initial/final sign pair for $L,L^2,H,H^2$ or $HL$.
+
+| Measurement contract for the numerical $m=7/9$ score | Sufficient paired trials |
+| --- | ---: |
+| Ideal observations | 100 million |
+| Per-word recorded-law TV allowance of 10 ppm on each side | 125 million |
+| Known independent 1% binary-symmetric errors at both endpoints, plus the same residual allowance | 150 million |
+
+Both false-rejection and target-miss probabilities are below $0.05$.
+Each allowance is relative to one fixed nominal model across all words,
+separately for the target and rival; the known detector belongs to the
+reference law. A separate unknown-$m$ profile test uses 600 million ideal
+trials, with nominal-target power and null validity for $-1<m<1$.
+The numerical $m=7/9$ score does not itself cover an unknown field tilt.
+A fixed-budget KL comparison gives a necessary total of at least
+136,981 trials for the ideal experiment. The substantial gap between
+necessary and sufficient counts remains unresolved.
+
+The guarantees require independent fresh resets and the complete
+preparation, initial-instrument, detector and repeated-control contract.
+Target mixing does not certify a finite reset time for arbitrary slow
+rivals. A separate population certificate gives exactly three general
+versus four ordinary reversible states through 50 ppm throughout a
+common 1% parameter box. It does not automatically transfer the nominal
+score's power to the whole box.
+
+The frozen theorem is unchanged. Sampling uncertainty, physical error
+allowances and its 50 ppm population tolerance are different quantities.
+The next priority is to narrow the acquisition-cost gap and assess the
+instrument assumptions needed for a useful test. Device
+feasibility and publication significance remain open; manuscript drafting
+stays deferred.
+
+[Measurement proof and scope](docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md) · [Score certificate](reports/familiar_switch_frozen_score.json) · [Sampling certificate](reports/familiar_switch_frozen_sampling.json) · [Information certificate](reports/familiar_switch_frozen_information.json) · [Robustness certificate](reports/familiar_switch_frozen_robustness.json) · [Verification](docs/VERIFICATION.md)
+
+## Preserved theorem checkpoint
+
+The following theorem summary and preceding checkpoints retain their
+original content. Their next-step assessments are historical and are
+superseded by the measurement status above.
+
+
 **Perfect fixed-field calibration can still require another state after
 one switch.** Two coupled heat-bath switches give a small example: one
 reversible three-state predictor matches every initial/final sign law at

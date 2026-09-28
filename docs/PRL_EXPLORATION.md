@@ -2,6 +2,56 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current measurement milestone: finite-sample tests and their remaining gap — 28 September 2026
+
+The [measurement analysis](FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)
+adds sampling guarantees for $L,L^2,H,H^2,HL$; the
+[frozen theorem](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md) is unchanged.
+At $m=7/9$, fixed-score designs use 100 million paired trials ideally,
+125 million with a 10 ppm per-word recorded-law TV allowance on each
+side, or 150 million with known independent 1% binary-symmetric errors
+at both endpoints and that residual allowance. Each has false-rejection
+and target-miss probabilities below $0.05$. Each side's allowance is
+relative to one fixed nominal model across all words; the known detector
+is included in the reference law.
+
+A separate unknown-$m$ profile test uses 600 million ideal trials, with
+power at the nominal target and null validity for every $-1<m<1$.
+The numerical score must not be described as field-calibration-free.
+A fixed-budget KL comparison requires at least 136,981 trials for the
+ideal experiment. The necessary and sufficient counts leave a substantial
+statistical gap. The $0.245\%$ exact-calibration minimum, 50 ppm
+population tolerance, sampling uncertainty and physical error allowances
+remain different quantities.
+
+The common 1% parameter-box population certificate gives exactly three
+general versus four ordinary reversible states through 50 ppm. It covers
+$t\in[33/100,101/300]$,
+$m\in[77/100,707/900]$, and field-specific ticks
+$\tau_L,\tau_H\in[0.99,1.01]$, with zero low field, equal unit attempts
+and the same actual $m$ for target and rival. This family result must
+not inherit the nominal score's sampling power automatically.
+
+Independent fresh resets and the full initial-instrument, detector and
+repeated-control contract remain required. Target mixing does not certify
+finite-wait preparation for unrestricted slow rivals. Published physical
+components do not establish a device meeting this specification. The
+[ledger](CLAIM_LEDGER.md) records these results as R80–R82.
+
+**Next scientific priority:** narrow the acquisition-cost gap and assess
+the instrument assumptions needed for a useful test. Further
+small-model optimization and longer chains remain deferred. The generic
+switching mechanism and statistical tools are established; device
+feasibility, broad significance and publication readiness remain open.
+Manuscript drafting remains last.
+
+[Score certificate](../reports/familiar_switch_frozen_score.json) · [Sampling certificate](../reports/familiar_switch_frozen_sampling.json) · [Information certificate](../reports/familiar_switch_frozen_information.json) · [Robustness certificate](../reports/familiar_switch_frozen_robustness.json) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original headings,
+claims and next-step assessments are retained; the measurement status
+above supersedes their current-status instructions.
+
+
 ## Current result: exact calibration and a robust five-setting switch test — 28 September 2026
 
 The [two-switch calibration theorem](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md)
