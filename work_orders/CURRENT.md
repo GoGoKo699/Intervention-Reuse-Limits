@@ -1,6 +1,51 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: test whether the state-count mechanism extends — 25 September 2026
+## Current priority: determine the reversible cost for longer chains — 28 September 2026
+
+This checkpoint starts from published commit
+`d43755b3e8beb345ed4ad2bd894ede138e3561de`, tree
+`94781e9b8e593fca8e56aff56b418c6fd27491f0`, with successful
+[CI run 36069744786](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36069744786).
+Preserve the license, all old mathematical verifiers and reports, frozen
+proof snapshots and historical claim rows R1–R68. Existing authorization
+covers non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [open-chain result](../docs/FAMILIAR_CHAIN_CONTROL_COST.md) now supplies
+the requested broader physical mechanism. An explicit $(n+1)$-state model
+works for every finite nonnegative field word at every length $n\ge3$,
+for equal attempts and $0<t\le1/\sqrt5$. It matches full endpoint-pair
+laws with a common preparation and Gibbs stationary tilt; exit rates are
+bounded by $13/12$ independently of length. The ordinary reversible class
+needs at least $2n$ states. The finite three-field menu has
+$2(n-1)(n+2)$ settings, two segments and at most $2n-2$ ticks. Its exact
+general minimum is already $n+1$. An explicit positive TV radius covers
+both lower bounds when the lowest field is zero, without a mass floor or
+rate cap, but is not uniform in length or parameters.
+
+For three switches, $t=1/3$ and tilts in $[0,1/2]$, the new six-state
+reversible realization proves exact four versus six on twenty settings
+of at most four ticks. The passive minimum is $n+1$ in both classes by
+standard inverse spectral theory. All four derivations and their exact
+fixtures are linked from the new assessment and bound by the new report.
+
+**Single next scientific priority:** decide whether the reversible $2n$
+bound is attainable for a useful all-length family, or identify a stronger
+obstruction. The six-state construction is a starting point, not evidence
+that a general $2n$ upper exists. Seek a simple structural answer rather
+than a table of individually fitted chains. Preserve the current finite
+three-field proof and all-length positive construction as completed work.
+
+The [source audit](../docs/FAMILIAR_CHAIN_SOURCE_AUDIT.md) distinguishes
+standard heat-bath physics and known mathematical tools from the new
+combined claim. The positive predictor is a mathematical realization with
+directed edges, not an established finite-affinity device. Do not infer
+an extensive bit-memory advantage, uniform-in-length finite accuracy,
+full-path equality or a thermodynamic implementation cost. Complete
+priority and broad publication significance remain unestablished. Further
+detector tuning and manuscript drafting stay deferred.
+
+## Historical priority: test whether the state-count mechanism extends — 25 September 2026
 
 This checkpoint starts from published commit
 `2243fbedf8ae1a2ba944d6e33507d2e1613179d8`, tree

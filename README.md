@@ -2,7 +2,47 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-The [published coupled-dot model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) now gives a precise example of **how control range and temporal observations change the minimum number of predictive Markov states**. Its four configurations have three-dimensional closed mean dynamics, but a positive three-state model cannot serve every prediction task.
+The [open-chain theorem](docs/FAMILIAR_CHAIN_CONTROL_COST.md) shows that
+**requiring a predictive model to obey equilibrium detailed balance can
+increase the number of states it needs under control**.
+
+A familiar heat-bath Ising chain has $n$ interacting switches. We control
+and observe only the first one, recording its initial and final signs.
+For every $n\ge3$ in the stated homogeneous weak-coupling family:
+
+| Required endpoint-pair data | General Markov states | Ordinary reversible states |
+| --- | ---: | ---: |
+| Passive pairs | $n+1$ | $n+1$ |
+| Three-field controlled menu | $n+1$ | At least $2n$ |
+| Specified three-switch example | **4** | **6** |
+
+The [explicit positive model](docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md)
+works under every finite nonnegative-field protocol, with exit rates at
+most $13/12$ independently of chain length. The
+[reversible lower bound](docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md) needs only
+three field values and $2(n-1)(n+2)$ endpoint-pair settings, each with at
+most two field segments. For three switches, twenty settings of at most
+four ticks establish the [sharp four-versus-six comparison](docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md).
+
+All experiments reuse one preparation and one model. The reversible class
+retains the physical force convention: its stationary laws are Gibbs tilts
+in the measured sign. The general construction obeys that same convention
+but permits stationary circulation. The lower bound has an explicit
+positive error radius for each fixed instance, without a rival rate cap
+or minimum stationary weight; it does not establish a uniform margin as
+the chain grows.
+
+Read the [physical explanation and scope](docs/FAMILIAR_CHAIN_CONTROL_COST.md)
+first. The [source comparison](docs/FAMILIAR_CHAIN_SOURCE_AUDIT.md) separates
+the established kinetic model and mathematical tools from the combined
+state-count result. These are ideal prediction theorems, without a hardware,
+heat-cost, or full-path claim. Manuscript drafting remains deferred.
+
+[Exact certificate](reports/familiar_chain.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+
+## Preserved two-switch boundaries
+
+The preceding [published coupled-dot model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) gives a precise example of **how control range and temporal observations change the minimum number of predictive Markov states**. Its four configurations have three-dimensional closed mean dynamics, but a positive three-state model cannot serve every prediction task.
 
 | Required ideal data | General Markov states | Ordinary reversible states |
 | --- | ---: | ---: |
@@ -23,7 +63,7 @@ Otherwise the general minimum is four. The linear mean dimension stays three acr
 
 The same boundary is determined by **23 endpoint-pair experiments**, each at most five ticks long, from one common arbitrary initial preparation. The data force equilibrium preparation and the stationary Gibbs tilt for any exact three-state fit; those laws need not be assumed separately. Positive finite-menu TV margins exist, but their numerical sizes are not yet calculated. This reuse condition differs from the [four-word theorem](docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md), which permits arbitrary per-word preparation while imposing the common force interface. The passive/triple rows likewise retain their own kernel and observation conditions.
 
-The [scope assessment](docs/FAMILIAR_SWITCH_CONTROL_SCOPE.md) explains which smaller model is valid for which task. The [primary-source comparison](docs/FAMILIAR_SWITCH_CONTROL_SCOPE_SOURCE_AUDIT.md) attributes the established realization, cone and conditional-independence tools. The candidate contribution is this explicit control-range criterion and complete state-count comparison in a familiar physical model. PRL significance remains unestablished; the next research question is whether the mechanism extends to a broader established kinetic family. Detector engineering and manuscript drafting remain deferred.
+The [scope assessment](docs/FAMILIAR_SWITCH_CONTROL_SCOPE.md) explains which smaller model is valid for which task. The [primary-source comparison](docs/FAMILIAR_SWITCH_CONTROL_SCOPE_SOURCE_AUDIT.md) attributes the established realization, cone and conditional-independence tools. The candidate contribution is this explicit control-range criterion and complete state-count comparison in a familiar physical model. The open-chain theorem above supplies the broader kinetic-family extension. These two-switch boundaries retain their own preparation and observation assumptions. Detector engineering and manuscript drafting remain deferred.
 
 These are ideal state-process theorems, with no claim of hardware-bit savings, predictor heat cost or complete-path equivalence. The shared physical model, control assumptions and limits are stated in the [community model contract](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md).
 

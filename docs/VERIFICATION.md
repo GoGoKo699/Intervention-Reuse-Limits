@@ -4,11 +4,55 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all fifty-nine mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: temporal records and signed-control feasibility
+## Current checkpoint: state cost across open kinetic chains
+
+The baseline is commit `d43755b3e8beb345ed4ad2bd894ede138e3561de`, tree
+`94781e9b8e593fca8e56aff56b418c6fd27491f0`, with successful
+[CI run 36069744786](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36069744786).
+After workspace maintenance, all 311 baseline blobs were restored and
+verified against their Git object hashes; the reconstructed tree matched
+that published tree exactly before the new work.
+
+The [chain verifier](../scripts/verify_familiar_chain.py) passes **1,296
+exact checks**, with largest matrix dimension nine, under Python 3.13.5
+and the unchanged pinned dependencies. Its [report](../reports/familiar_chain.json)
+binds four new mathematical notes plus the 34 inherited snapshots in the
+frozen control-scope report. The checks cover symbolic simplex rates and
+closure for lengths three through eight, universal positivity and exit-cap
+identities, rational/algebraic boundary fixtures, the reversible six-state
+construction, an inverse-Jacobi passive realization, and the finite
+three-field Gram identities. The all-length statements are analytical
+proofs, not extrapolations from the checked lengths.
+
+The exact Gram fixture uses $t=1/\sqrt7$, field tilts
+$0,\sqrt{133/319},\sqrt3/2$, and clock $20\log2$. Lagrange spectral
+projectors give the true CTMC mean propagators with exact algebraic
+entries. All twenty prescribed pair settings reconstruct the own-field
+and mixed Grams, and both conditional ranks are three. This clock is an
+algebraic verification fixture, not a proposed practical experiment.
+
+Independent internal review covered the universal positive construction,
+the finite lower bound for nonminimal rivals, every TV constant, the
+same-menu unrestricted rank argument, and the six-state upper. The
+[source audit](FAMILIAR_CHAIN_SOURCE_AUDIT.md) records ten primary sources
+and the precise attribution and physical-scope limits. Internal review
+and exact checks do not establish external validation, exhaustive priority,
+hardware feasibility or publication readiness.
+
+The complete `make check` run passed: all sixty mathematical verifiers and
+four saved-model replays reproduced all **64 saved reports byte for byte**.
+The repository checker passed 2,883 local Markdown links, 65 Python syntax
+checks, report provenance and the unchanged MIT license. All 302 baseline
+files outside the nine navigation/build updates remain byte-identical,
+including every older mathematical source, report and bound proof snapshot;
+all historical claim rows R1–R68 remain unchanged. The matching remote run
+must be checked for the published commit; local PASS is not remote evidence.
+
+## Historical checkpoint: temporal records and signed-control feasibility
 
 The published baseline is `2243fbedf8ae1a2ba944d6e33507d2e1613179d8`, tree
 `8813fec08175fb15397499edc658ce44ef827f4b`, with successful

@@ -2,7 +2,43 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
-## Current result: control range and observation scope — 25 September 2026
+## Current result: equilibrium consistency costs states across an open chain — 28 September 2026
+
+The [chain assessment](FAMILIAR_CHAIN_CONTROL_COST.md) is now the lead.
+For every $n\ge3$, the homogeneous open heat-bath chain with
+$0<\tanh J\le1/\sqrt5$ has an explicit $(n+1)$-state positive predictor
+for all controlled endpoint-pair laws under finite nonnegative fields.
+Its exit rates are bounded by $13/12$ independently of chain length.
+One preparation and the same stationary Gibbs tilt serve every field.
+
+Requiring ordinary detailed balance with that force interface needs at
+least $2n$ states, including at least $n$ states of each visible sign.
+The [finite proof](FAMILIAR_CHAIN_REVERSIBLE_BOUND.md) uses three field
+values, $2(n-1)(n+2)$ pair settings, at most two segments, and at most
+$2n-2$ ticks. It covers nonminimal rivals and arbitrary reversible
+stochastic tick kernels. Its explicit positive TV radius needs no minimum
+stationary mass or rate cap, but depends on the chosen instance.
+
+At three switches, $t=1/3$ and three tilts in $[0,1/2]$, an
+[explicit reversible construction](FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md)
+gives the matching six-state upper: **four versus six**, already on twenty
+settings of at most four ticks. All passive pairs have minimum $n+1$ in
+both classes by the [standard inverse spectral construction](FAMILIAR_CHAIN_PASSIVE_REALIZATION.md).
+
+The [source audit](FAMILIAR_CHAIN_SOURCE_AUDIT.md) attributes the standard
+model and tools, and compares the complete claim with response reciprocity,
+shared realization and positive-realization results. The contribution is
+the controlled family theorem and its finite obstruction, not mean closure
+or a new general matrix inequality. Exhaustive priority and publication
+significance are not certified. The next structural question is whether
+$2n$ is attainable for longer chains or a stronger obstruction is needed.
+The proved ratio approaches two in states; no extensive bit-memory saving,
+full-path equivalence, dissipation advantage or device feasibility follows.
+Manuscript drafting remains last.
+
+[Exact certificate](../reports/familiar_chain.json) · [Verification](VERIFICATION.md).
+
+## Historical result: control range and observation scope — 25 September 2026
 
 The [scope assessment](FAMILIAR_SWITCH_CONTROL_SCOPE.md) now gives a
 concrete model-selection result for the same published coupled-dot family.
