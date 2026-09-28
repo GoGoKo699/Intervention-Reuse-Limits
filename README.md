@@ -52,6 +52,16 @@ similarly limits the meaning of exact state-count growth. The latest
 seven-word acquisition analysis identifies a costly experimental design;
 it is supporting scope evidence, rather than the lead scientific claim.
 
+The [matched precision law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md)
+now explains the fast-hidden regime at fixed coupling and field. With
+hidden/visible attempt ratio $r$, the smallest attainable error among
+reversible models with at most three states under the stated Gibbs and
+readout requirements is of order $r^{-2}$. A two-state equilibrium model absorbs the first-order
+slowing into corrected rates; the extra-state obstruction occurs at
+second order. The law holds for every finite clocked pulse word at fixed
+positive dwell times. Allowing the control timescale itself to shrink
+remains a different question. This is an analytic regime statement.
+
 The next question is how observable hidden response variation controls
 the best approximation that preserves equilibrium structure. A useful
 answer must explain a physical regime or a family-wide limit. Further

@@ -2,6 +2,10 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
+## Current result: hidden response fixes the precision scale — 28 September 2026
+
+The [quadratic-precision proof](FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) supplies a matched approximation law, rather than another numerical margin. The ordinary-at-most-three-state error is Θ(r⁻²) for both the seven-word task and all finite clocked words, at fixed positive physical parameters and dwells. The same broad unknown-tilt, arbitrary-preparation null is retained. The proof combines an exact arbitrary-rate factorization, a positive Gibbs two-state approximation and contraction between held segments. It also states the attained three/four and two/two precision regimes. This answers the fast-relaxation part of the scientific question; the role of progressively faster control and broader practical significance remain open. Standard corrected averaging is attributed explicitly. No new simulation, optimizer or numerical certificate is used.
+
 ## Current scientific assessment: task-dependent equilibrium model size — 28 September 2026
 
 Read the [scientific case](SCIENTIFIC_CASE.md) before the chronological certificates. It states the physical use, complete task-scope map, substantive assumptions, closest conceptual precedents and unresolved significance question. The sole new mathematical result in this round is the [uniform fast-relaxation approximation](FAMILIAR_SWITCH_FAST_RELAXATION.md): an explicit reversible two-state family has maximum endpoint-pair TV error at most min(1, t²/[r(1−t²)]) over all predetermined finite signed-field words and horizons, from low equilibrium. Its proof uses elementary mean equations and contraction, without new numerical evidence. The next priority is to relate hidden response strength to the best approximation preserving equilibrium, rather than improve isolated statistical constants. Historical claims and all prior proof/report evidence remain unchanged.

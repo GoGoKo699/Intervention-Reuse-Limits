@@ -1,6 +1,63 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: explain the finite-accuracy cost of equilibrium modeling — 28 September 2026
+## Current priority: determine how control time resolution changes the equilibrium state cost — 28 September 2026
+
+This continuation starts from published commit
+`262a19bbbb4bf9ddf695cf1f6f6e13a0463c8667`, tree
+`34e0fa97052c454caa1fde8a0013f83b1957c993`, with successful
+[CI run 36446923517](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36446923517).
+Preserve all preceding proofs, mathematical verifiers and reports, the
+MIT license and historical claim rows R1–R91. The preceding scientific
+case and fast-relaxation proof are frozen. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized; manuscript drafting remains last.
+
+The [matched precision law](../docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md)
+answers the fast-hidden part of the finite-accuracy question. At fixed
+coupling, field and positive clock dwells, the infimum maximum endpoint-pair
+error over ordinary models with at most three states is Θ(r⁻²), where r
+is the hidden-to-visible attempt-rate ratio. This holds both on the
+seven-word witness and over every finite clocked word. The lower retains
+arbitrary rival preparations, unknown Gibbs tilt, reused kernels and
+counted zero-weight transients. The upper is a positive reversible
+two-state model with corrected slow rates and common low-equilibrium
+preparation. It is a permitted subclass, not a preparation promise imposed
+on the null. The general three-state exact upper remains available for
+sufficiently large r.
+
+The physical interpretation is now explicit: first-order slowing can be
+absorbed into equilibrium transition rates; the extra-state obstruction
+appears at second order. A fixed positive dwell floor prevents pulse errors
+from accumulating, by contraction. The result is uniform in word length
+and horizon under that floor. Its constants are not uniform when the
+minimum dwell tends to zero. Exact state counts do not override this
+accuracy law. No new sampling or detector budget follows from it.
+
+**Single next scientific question:** can faster control preserve a larger
+finite-accuracy penalty for equilibrium modeling? Analyze how the best
+reversible approximation changes when the allowed dwell scale can shrink
+relative to the hidden relaxation time. Retain a clearly specified common
+physical control and observation contract. Seek an explanatory upper/lower
+law or a counterexample to a broad claim, before any operating-point search.
+An error of one corrected two-state construction under rapid switching
+would not establish a lower bound against every three-state rival.
+
+The ratio limit does not authorize absolute rates outside the community
+model's weak-coupling and reservoir assumptions. A ratio can also grow by
+slowing the visible switch; physical observation times then change. Any
+claim of usable control bandwidth or experimental precision needs its
+own physical support. Keep those issues in the scientific assessment now.
+
+Further calculations require a named analytic question and a consequence
+for the modeling claim. The quadratic law was obtained from closed mean
+equations, reciprocal-response algebra and scalar contraction, with no
+simulation or fitting. Its corrected-rate method has established
+adiabatic/weak-memory precedents; the additional claim is the matched
+error order against the whole stated reversible class. Broader priority
+and practical importance remain unresolved. Avoid another round of
+isolated sample-count or certificate-constant tuning.
+
+## Historical priority: explain the finite-accuracy cost of equilibrium modeling — 28 September 2026
 
 This continuation starts from published commit
 `96ce56748cd799fa624ace32794e468f79560f98`, tree

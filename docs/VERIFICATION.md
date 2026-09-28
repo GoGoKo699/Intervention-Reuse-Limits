@@ -8,7 +8,46 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: the scientific case and fast hidden relaxation
+## Current checkpoint: a matched quadratic precision law
+
+The baseline is commit `262a19bbbb4bf9ddf695cf1f6f6e13a0463c8667`, tree
+`34e0fa97052c454caa1fde8a0013f83b1957c993`, with successful
+[CI run 36446923517](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36446923517).
+The [new proof](FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) is analytic. It gives
+matching inverse-square error orders for the best ordinary model with at
+most three states, both on seven words and over all finite clocked words.
+The scientific statement concerns a physical timescale regime; it is not
+another fitted point or an improvement to a sampling constant.
+
+Independent internal review checked the arbitrary-rate factorization,
+positive eigenmode weights, nonzero asymptotic coefficient, global
+Lipschitz conversion to pair-TV, transient-state/null scope, corrected
+positive Gibbs rates, fast-defect equations, two-segment upper,
+minimum-dwell contraction, uniformity on compact parameter regions,
+general two-state composition lower and attained state-count intervals.
+The review kept fixed time resolution separate from unrestricted switching
+cadence, and checked the corrected-averaging source attributions.
+No simulation, numerical search, fitted fixture, numerical certificate
+or new mathematical verifier is needed for this proof.
+
+Proof SHA-256:
+`bd06a68b6dc7a9c17dde722c7659cc398f6348de5a8397db910e00e900a0f7ac`.
+
+**Scoped local verification passed:** 3,340 local Markdown links,
+82 Python syntax checks, saved report provenance, unchanged MIT license
+and `git diff --check`. All 81 previous reports, their verifiers and bound
+proof snapshots remain unchanged. This scoped local check does not claim
+another full numerical replay. The existing hosted workflow must be
+inspected against the new published commit separately.
+
+Against the 370-file baseline, only six authorized navigation/assessment
+files change; **364 protected files** remain byte-identical. One new
+analytic proof brings this checkpoint to **371 files**. The preceding
+scientific case and fast-relaxation proof remain unchanged, as do all
+previous lines in the four overview/ledger files and historical R1–R91.
+Independent preservation review passed.
+
+## Historical checkpoint: the scientific case and fast hidden relaxation
 
 The baseline is commit `96ce56748cd799fa624ace32794e468f79560f98`, tree
 `6542c545408311273d6a8827f68078360e25c6bb`, with successful
