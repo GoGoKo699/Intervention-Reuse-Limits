@@ -1,6 +1,57 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: derive a physical design principle for stronger separation — 28 September 2026
+## Current priority: explain the finite-accuracy cost of equilibrium modeling — 28 September 2026
+
+This continuation starts from published commit
+`96ce56748cd799fa624ace32794e468f79560f98`, tree
+`6542c545408311273d6a8827f68078360e25c6bb`, with successful
+[CI run 36442186139](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36442186139).
+Preserve every preceding proof, mathematical verifier and report, the MIT
+license and historical claim rows R1–R90. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [scientific case](../docs/SCIENTIFIC_CASE.md) is now the lead assessment.
+The core contribution is a state cost of preserving equilibrium structure
+under a specified control and observation task. Passive pairs, controlled
+pairs, passive triples and signed-control pairs have different exact
+minimum state counts. Their preparation and force assumptions must be
+stated alongside the comparison. A general physical memory, hardware-bit
+or heat advantage has not been established. The source comparison treats
+positive realization, reciprocity and averaging as established tools.
+
+The [fast-relaxation proof](../docs/FAMILIAR_SWITCH_FAST_RELAXATION.md)
+adds one analytic limit. For fixed coupling t and hidden/visible attempt
+ratio r, an explicit reversible two-state model has endpoint-pair TV
+error at most min(1, t²/[r(1−t²)]), uniformly over every predetermined
+finite signed-field word and horizon from low equilibrium. No fitting or
+simulation is needed. Faster hidden relaxation can broaden exact
+three-state realizability while erasing finite-accuracy state penalties.
+This is a model-specific averaging bound, not a new general principle.
+
+**Single next scientific question:** derive an accuracy-dependent law
+relating observable hidden response variation to the additional states
+needed to preserve equilibrium structure. Use the existing conditional
+covariance/rank lower bounds and the fast-relaxation/chain-truncation upper
+bounds as the starting point. The target is an explanatory regime or a
+matched bound, or a proof that the desired separation is operationally
+small throughout the chosen family. Another exact chain-length extension,
+isolated fitted example or minor sample-constant improvement will not
+answer this question. The exact 2n chain sharpness is already established
+on its stated fixed weak-coupling range; its finite-accuracy limitation is
+also proved.
+
+Before any new computation, state the unresolved analytic question, how
+its answer changes the scientific claim, and why that computation is
+needed. Prefer a short proof or counterexample. Use small exact checks
+only for a delicate identity or inequality; saved report counts are not
+evidence of novelty or impact. Reuse established verification rather than
+adding a numerical certificate to every interpretation. The nominal
+seven-word information lower bound is a limitation of that experiment,
+not the project's scientific headline. Broader usefulness and priority
+are present research questions, not tasks postponed until drafting.
+
+## Historical priority: derive a physical design principle for stronger separation — 28 September 2026
 
 This continuation starts from published commit
 `73fa7177ed10757cc3dc2936d1ca461b7964a8a1`, tree

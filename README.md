@@ -2,6 +2,73 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+
+A small model can predict an equilibrium system exactly for one task and
+need more states when the task changes. This project studies the cost of
+preserving equilibrium structure while reusing a kinetic model under
+control. The main example is a pair of interacting heat-bath switches,
+with an explicit connection to a published coupled-charge model.
+
+## The central result
+
+For equal attempt rates, finite positive coupling, positive observation
+gaps and a finite nonzero controlled field, the four-state target starts
+from zero-field equilibrium. Its exact minimum number of predictive
+Markov states depends on what the model must reproduce:
+
+| Required observations and controls | General model | Reversible model |
+| --- | ---: | ---: |
+| Passive initial/final pairs, with one common preparation | 3 | 3 |
+| Four controlled pair laws, retaining the physical Gibbs force rule | 3 | 4 |
+| One passive three-time law, with an ideal nondisturbing middle observation | 4 | 4 |
+| Signed-control pairs, with one common preparation | 3 or 4 across an exact control boundary | 4 |
+
+These are separate prediction contracts. Rivals have a deterministic
+binary readout and count all persistent Markov states. The four-pair
+comparison allows arbitrary preparation for each word; the signed-control
+comparison requires one common preparation and derives the Gibbs relation
+for any exact three-state fit. See the [scientific case](docs/SCIENTIFIC_CASE.md)
+for the assumptions and physical interpretation.
+
+The mechanism is hidden response variation within each visible sign.
+Detailed balance forces a reversible predictor to retain that variation
+in both signs. An unrestricted positive predictor can reproduce the
+specified endpoint pairs with fewer states, but it cannot thereby predict
+an entire observed trajectory or establish physical memory or heat savings.
+
+## What is established, and what matters next
+
+The state counts and control boundaries follow from analytic constructions
+and impossibility proofs. The [control-scope map](docs/FAMILIAR_SWITCH_CONTROL_SCOPE.md)
+is the compact theorem guide. The [physical model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md)
+and [source comparison](docs/FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
+explain the inherited assumptions and closest precedents.
+
+Finite accuracy can change the conclusion. A [short new analytic bound](docs/FAMILIAR_SWITCH_FAST_RELAXATION.md)
+shows that fast hidden relaxation makes a reversible two-state model
+approximate every prescribed endpoint-pair protocol uniformly in time.
+The [chain approximation theorem](docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md)
+similarly limits the meaning of exact state-count growth. The latest
+seven-word acquisition analysis identifies a costly experimental design;
+it is supporting scope evidence, rather than the lead scientific claim.
+
+The next question is how observable hidden response variation controls
+the best approximation that preserves equilibrium structure. A useful
+answer must explain a physical regime or a family-wide limit. Further
+numerical work will address a named analytic question, rather than seek
+another isolated operating point. Broad practical significance and device
+feasibility remain unresolved. Manuscript writing is on hold.
+
+[Scientific case](docs/SCIENTIFIC_CASE.md) · [Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md)
+
+<details>
+<summary>Preserved research history and technical checkpoints</summary>
+
+The entries below retain their original wording, dates and assumptions.
+The scientific case and current work order above give the current
+assessment; older next-step statements record the work at those times.
+
+
 ## Current milestone: a narrow precision window and necessary acquisition cost — 28 September 2026
 
 **Mathematical review and full local verification passed.**
@@ -608,3 +675,5 @@ make check PYTHON=.venv/bin/python
 ```
 
 [Verification](docs/VERIFICATION.md) records the full suite and its limits. The four-word experiment removes rival preparation, and its new endpoint-registration formulation replaces exact protection and fixed symmetric errors by quantitative measurement conditions. The relative-force bound controls rare-state errors that unweighted stationary-law TV cannot control. The current priority is the [two-field approximation gap](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md): determine how much error is unavoidable for reversible models below six states. The [community-model comparison](docs/PHYSICAL_ASSUMPTION_ALIGNMENT.md) remains the physical-assumption reference. Quantitative device feasibility and the close prior-art comparison remain open. Current counts are sufficient bounds, not optimal costs or demonstrated feasibility. Manuscript drafting remains deferred.
+
+</details>

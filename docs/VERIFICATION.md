@@ -8,7 +8,48 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: the seven-word precision and acquisition frontier
+## Current checkpoint: the scientific case and fast hidden relaxation
+
+The baseline is commit `96ce56748cd799fa624ace32794e468f79560f98`, tree
+`6542c545408311273d6a8827f68078360e25c6bb`, with successful
+[CI run 36442186139](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36442186139).
+This round changes the scientific presentation and adds one analytic proof.
+The [scientific case](SCIENTIFIC_CASE.md) makes the physical use, assumptions,
+control/observation scope and unresolved significance question explicit.
+The README now presents that case before an expandable, preserved history.
+
+The [new fast-relaxation proof](FAMILIAR_SWITCH_FAST_RELAXATION.md) constructs
+one positive reversible two-state Gibbs family and derives a uniform
+endpoint-pair TV upper bound from the exact two-spin conditional mean
+system. Independent internal review checked the physical and dimensionless
+rates, conditional initial laws, defect equation, drift bound, continuity
+at field switches, scalar comparison, binary-TV factor and all-word scope.
+The proof requires no simulation, fitted fixture, numerical search or
+new mathematical verifier. Its source attribution identifies adiabatic
+elimination as an established principle. This is internal review, not
+external validation or a proof of priority.
+
+Proof SHA-256: `2d02877353e94dbda08b2e45b50cd65c97487c586b1db16e98f2734c2988d0a3`.
+Scientific-case SHA-256: `f2999c8a453ab0ff8f226f9db9aa6048839f5080ff0ed4d7647ae997d5bb946a`.
+
+**Scoped local verification passed:** 3,327 local Markdown links,
+82 Python syntax checks, saved report provenance, unchanged MIT license
+and `git diff --check`. All 81 earlier mathematical reports, their
+verifiers, input evidence and bound proof snapshots are unchanged.
+No new numerical results are claimed. Their full baseline replay and
+hosted success are recorded in the preceding checkpoint; this
+scoped check does not claim another local full replay.
+
+Against the 368-file baseline, only six authorized navigation/assessment
+files change; **362 protected files** remain byte-identical. Two new
+documents bring this checkpoint to **370 files**. All earlier lines in
+the four overview/ledger files and R1–R90 remain verbatim. The README
+history is enclosed in one balanced details block. Independent
+preservation review passed. The
+existing hosted workflow must be inspected against the new commit;
+the baseline run above does not validate this tree.
+
+## Historical checkpoint: the seven-word precision and acquisition frontier
 
 The baseline is commit `73fa7177ed10757cc3dc2936d1ca461b7964a8a1`, tree
 `65d385cb52f6aa328afae0feb1ca5b83ad2b6358`, with successful

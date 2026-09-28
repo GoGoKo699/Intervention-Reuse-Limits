@@ -2,6 +2,12 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current scientific assessment: the cost of an equilibrium interpretation — 28 September 2026
+
+The [scientific case](SCIENTIFIC_CASE.md) restores the control and observation scope map as the lead: passive pairs permit three reversible states, the four controlled pairs require four under the shared force rule, and one passive triple requires four even without reversibility. Signed controls have an exact positive-realization boundary at fixed linear dimension. These tasks have different preparation assumptions. The new [fast-relaxation bound](FAMILIAR_SWITCH_FAST_RELAXATION.md) shows analytically that a reversible two-state model approximates every predetermined endpoint word as the hidden attempt rate grows. It gives a physical limit, with no new fit or simulation. The next question is a finite-accuracy law for the cost of preserving equilibrium structure. The latest acquisition constants document the limitations of one experiment; they do not establish broad scientific importance. Manuscript drafting remains deferred.
+
+Earlier checkpoints below retain their original scopes and next-step statements.
+
 ## Current milestone: precision and acquisition necessity for the seven-word task — 28 September 2026
 
 **Mathematical review and full local verification passed.**
