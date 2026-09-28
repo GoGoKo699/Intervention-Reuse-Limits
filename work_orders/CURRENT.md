@@ -1,6 +1,59 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: narrow the five-setting acquisition gap — 28 September 2026
+## Current priority: assess the complete physical acquisition contract — 28 September 2026
+
+This continuation starts from published commit
+`20c92595c68035b54736304b450c8976c5c0ccf4`, tree
+`1e4e1598f6c76f4fb62c3707b9b4b6d083717051`, with successful
+[CI run 36415097242](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36415097242).
+Preserve every preceding proof, mathematical verifier and report, the MIT
+license, and historical claim rows R1–R82. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [new acquisition proof](../docs/FAMILIAR_SWITCH_PROFILED_ACQUISITION.md)
+removes the numerical field tilt from the five-setting ordinary-null
+identity before statistical testing. A degree-six polynomial in seven
+observed moments, with fixed linear corrections from the recorded initial
+means, gives a single scalar test. It retains the same preparation, five
+control words and two endpoint observations per trial. A local gate,
+exact variance bound, bounded-observation concentration and certified
+quadratic Taylor remainder control every ordinary at-most-three-state
+null with arbitrary relative tilt $m\in(-1,1)$. The force still has the
+prescribed Gibbs form; it is not an arbitrary hidden-state force.
+
+The certified ideal design uses **50,000,000 paired trials**, ten million
+per word, with type-I error below 0.044297 and nominal-target miss below
+0.023080. This is twelve times fewer than the previous unknown-tilt
+sufficient count. A closer explicit reversible three-state CTMC gives
+the necessary fixed budget **2,849,458 pairs**, including adaptive word
+selection before the current initial readout. Thus the sufficient design
+is within a factor of 18 of the best deterministic budget for this ideal
+five-setting task. The separate known-1%-endpoint-channel lower is
+3,081,390; no new noisy sufficient guarantee is inferred.
+
+The result bounds a fixed-target acquisition budget. It does not establish
+an asymptotic optimal order, an optimal test, or a closest rival. The new
+upper assumes ideal recorded pairs and independent complete reset trials.
+Earlier known-channel and systematic-error tests keep their own scopes;
+their allowances are not automatically inherited. Eliminating the tilt in
+a statistical null also does not extend the earlier 50 ppm population or
+common-1% parameter-box theorem to differently tilted rivals.
+
+**Single next scientific priority:** assess the complete physical
+preparation/control/readout contract against the now bounded measurement
+cost for this task. Identify what a community-standard implementation
+would have to demonstrate, including initial-record/hidden-state
+backaction, reproducible switching, common preparation and acquisition
+overhead. Target-only mixing and control bounds cannot certify assumptions
+for arbitrary rivals. Keep all persistent memory counted and distinguish
+statistical exclusion from a state bound for an entire imperfect apparatus.
+Further small improvements to concentration constants are secondary to
+physical usefulness and a clear conceptual contribution. Prefer analytical
+work and small certificates; do not invent a device convention to improve
+the result. Manuscript drafting remains deferred.
+
+## Historical priority: narrow the five-setting acquisition gap — 28 September 2026
 
 This continuation starts from published commit
 `5a2ba1a330a882173b0ab6a9fc012d24bd9570c2`, tree

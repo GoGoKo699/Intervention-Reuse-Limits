@@ -2,6 +2,58 @@
 
 [PRL exploration](PRL_EXPLORATION.md) · [Claim ledger](CLAIM_LEDGER.md) · [Publication scope](PUBLICATION_SCOPE.md) · [Source audit](PRIOR_ART.md) · [Verification](VERIFICATION.md) · [Current work](../work_orders/CURRENT.md)
 
+## Current acquisition milestone: 50 million sufficient versus 2,849,458 necessary — 28 September 2026
+
+**Mathematical review and full local repository verification passed.** The
+[unknown-tilt acquisition analysis](FAMILIAR_SWITCH_PROFILED_ACQUISITION.md)
+keeps the five settings $L,L^2,H,H^2,HL$ and the nominal physical target.
+It eliminates $m$ using the observed high-field final mean and applies a
+fixed gate with one scalar degree-six polynomial. The design uses
+10 million independent paired reset trials per setting, **50 million
+total**, with false-rejection and nominal-target-miss bounds below
+$0.044297$ and $0.023080$, respectively. The ordinary at-most-three-state null includes every
+$m\in(-1,1)$, without exact agreement on calibration words. The sufficient
+count is twelve times smaller than the prior unknown-tilt confidence-set
+design.
+
+The same analysis supplies a closer fixed rational reversible three-state
+CTMC comparator at $m=7/9$, with small errors on all five words.
+Its categorical information bound requires at least **2,849,458 paired
+trials**. This covers fixed-total-budget tests that choose settings
+adaptively from completed past trials, before seeing the current initial
+sign. Because the comparator belongs to the broader unknown-tilt null,
+the lower and upper compare the same ideal testing contract:
+
+$$
+2{,}849{,}458\le N_{\mathrm{optimal}}\le50{,}000{,}000.
+$$
+
+The sufficient design is within a factor of 18 of the optimal
+deterministic budget. This does not assert an exact optimum or a
+matching asymptotic measurement-cost order. The [ledger](CLAIM_LEDGER.md)
+records R83 for the upper and R84 for the lower/bracket.
+
+Complete trials remain independent; initial and final signs within a
+trial are paired. The common full-state preparation, initial-instrument
+guarantee, shared Gibbs form and reused field kernels remain assumed.
+The previous known-channel and 10 ppm residual-law tests are separate
+results. Neither their guarantees nor the 50 ppm/common 1% population
+family is automatically extended to arbitrary different fitted tilts.
+The new statistical power statement concerns the ideal nominal target.
+
+The next priority is to assess full acquisition time and the preparation,
+readout and control requirements needed for a useful implementation.
+Further minor statistical tuning is secondary. The statistical tools
+are established; a sharper same-contract bracket does not demonstrate
+device feasibility.
+
+[Score certificate](../reports/familiar_switch_profiled_score.json) · [Information certificate](../reports/familiar_switch_profiled_information.json) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their content and original
+status headings are retained; the acquisition update above supplies the
+active next step.
+
+
 ## Current measurement milestone: sampling designs and physical assumptions — 28 September 2026
 
 The [five-setting measurement note](FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)

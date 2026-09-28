@@ -2,6 +2,50 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
+## Current acquisition milestone: a finite-budget bracket with unknown tilt — 28 September 2026
+
+**Mathematical review and full local repository verification passed.** The
+[new acquisition proof](FAMILIAR_SWITCH_PROFILED_ACQUISITION.md)
+uses the same five ideal endpoint-pair settings and removes the numerical
+Gibbs tilt algebraically before testing. A fixed empirical gate and one
+scalar degree-six polynomial give a 50-million-trial design, with
+10 million independent reset trials per setting. Its
+false-rejection and nominal-target-miss bounds are below $0.044297$ and
+$0.023080$, respectively,
+while null validity covers every $m\in(-1,1)$. This improves the earlier
+600-million unknown-tilt sufficient count by a factor of twelve.
+
+A fixed rational ordinary reversible three-state CTMC is a much closer
+testing rival when it can trade errors between calibration and switching.
+Its five categorical KL bounds require at least 2,849,458 paired trials
+for any qualifying fixed-total-budget test. The lower allows adaptive
+setting selection from completed past trials, before the current initial
+sign. It belongs to the unknown-tilt null even though its own tilt is
+$7/9$. The optimal deterministic budget for this same ideal task lies between
+2,849,458 and 50 million, putting the upper within a factor of 18.
+This is not a matching asymptotic-order claim.
+
+The [ledger](CLAIM_LEDGER.md) adds R83 for the upper and R84 for the
+lower/bracket. Both preserve the common preparation, full initial
+instrument and shared Gibbs/reused-kernel premises. Earlier noisy-readout
+rows remain separate. The earlier common-parameter 50 ppm state-count
+certificate still compares target and rival at the same actual tilt;
+this new unknown-tilt test does not broaden that population theorem.
+Its power is for the ideal nominal target.
+
+**Next scientific priority:** assess the full acquisition time and the
+preparation, readout and control requirements needed for a useful
+implementation. Further minor statistical tuning is secondary. Established
+concentration and change-of-measure tools remain attributed; these
+mathematical counts do not establish laboratory feasibility.
+
+[Score certificate](../reports/familiar_switch_profiled_score.json) · [Information certificate](../reports/familiar_switch_profiled_information.json) · [Verification](VERIFICATION.md).
+
+**Preserved historical checkpoints follow.** Their original content and
+status headings remain intact; the acquisition update above supplies the
+active assessment.
+
+
 ## Current measurement milestone: finite-sample tests and their remaining gap — 28 September 2026
 
 The [measurement analysis](FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)

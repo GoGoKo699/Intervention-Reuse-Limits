@@ -2,6 +2,49 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
+## Current acquisition milestone — 28 September 2026
+
+**Mathematical review and full local repository verification passed.** The
+[new acquisition analysis](docs/FAMILIAR_SWITCH_PROFILED_ACQUISITION.md)
+reduces the sufficient ideal-data design to **50 million paired trials**:
+10 million for each of $L,L^2,H,H^2,HL$. A fixed empirical gate and one
+scalar degree-six polynomial test the whole ordinary at-most-three-state
+null with unknown Gibbs tilt $m\in(-1,1)$. The certificate bounds
+false rejection by $0.044297$ and nominal-target miss by $0.023080$.
+This is twelve times fewer trials than the earlier unknown-tilt design.
+
+A closer ordinary reversible three-state CTMC gives a stronger necessary
+count of **2,849,458 paired trials**. The same ideal experiment therefore
+has the deterministic-budget bracket
+
+$$
+2{,}849{,}458\le N_{\mathrm{optimal}}\le50{,}000{,}000.
+$$
+
+The sufficient count is within a factor of 18 of the optimal deterministic
+budget. The lower
+allows adaptive choice among the five settings using completed past
+trials, with the next setting chosen before its initial sign is observed.
+This is a fixed-target finite-budget comparison, not an asymptotic
+optimality result.
+
+Independent fresh resets, the full initial-instrument contract and the
+shared Gibbs/reused-kernel interface remain required. The prior noisy
+readout designs retain their separate scopes. The earlier 50 ppm and
+common 1% population results do not extend to arbitrary different fitted
+tilts through this sampling statement. No device feasibility follows.
+
+The next priority is to assess full acquisition time and the preparation,
+readout and control requirements needed for a useful implementation;
+further minor statistical tuning is secondary.
+
+[Acquisition proof and scope](docs/FAMILIAR_SWITCH_PROFILED_ACQUISITION.md) · [Score certificate](reports/familiar_switch_profiled_score.json) · [Information certificate](reports/familiar_switch_profiled_information.json) · [Verification](docs/VERIFICATION.md)
+
+**Preserved preceding checkpoints follow.** Their original content is
+retained; the new acquisition status supersedes their current priorities
+and ideal sufficient/necessary counts under the scopes stated above.
+
+
 ## Current measurement milestone — 28 September 2026
 
 The [five-setting measurement analysis](docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md)

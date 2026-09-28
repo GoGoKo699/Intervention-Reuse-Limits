@@ -4,11 +4,75 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-one mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all seventy-three mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: five-setting measurement cost and physical robustness
+## Current checkpoint: acquisition without numerical force calibration
+
+The baseline is commit `20c92595c68035b54736304b450c8976c5c0ccf4`, tree
+`1e4e1598f6c76f4fb62c3707b9b4b6d083717051`, with successful
+[CI run 36415097242](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36415097242).
+All earlier proofs, mathematical verifiers, saved reports, pinned
+dependencies and workflow remain unchanged. The
+[new proof](FAMILIAR_SWITCH_PROFILED_ACQUISITION.md) bounds the ideal
+five-setting acquisition cost under the whole unknown-tilt ordinary null.
+
+The [score verifier](../scripts/verify_familiar_switch_profiled_score.py)
+checks exact nuisance elimination and polynomial division, a rational
+target center, a positive interval for the unused sign branch, exact local
+variance polynomials, bounded increments and a uniform positive-semidefinite
+Hessian majorant. The scalar linear term is controlled by Bernstein;
+the quadratic remainder uses a proved joint directional sub-Gaussian proxy
+for the paired observations. Reuse of initial signs is included. The
+auxiliary Gaussian in the quadratic-form inequality is not a Gaussian
+sampling assumption. All probability comparisons use rational bounds.
+
+The [information verifier](../scripts/verify_familiar_switch_profiled_information.py)
+checks a reversible three-state CTMC with preparation $(1/4,1/4,1/2)$,
+exact nominal tilt $7/9$ and six rational symmetric conductances. Positive
+rates, row sums and detailed balance are checked directly. Degree-64
+matrix Taylor series and rigorous norm tails enclose every target and
+rival pair law. Rational logarithm series bound all five categorical KLs.
+Each is below $9.3\times10^{-7}$, giving a necessary fixed budget of
+2,849,458 pairs for both errors at most 5%. A known independent 1%
+endpoint channel gives the separate necessary count 3,081,390. The main
+comparator belongs to both fixed-tilt and unknown-tilt null classes.
+
+The score report passes **232 exact checks** and the information report
+passes **317 exact checks**, including inherited provenance. Both bind the
+final proof SHA-256
+`44d10df83ac2ce36ba343aff27131965d9bb1970da8fc91aaaa5042e4f5301b1`.
+The 50-million-pair ideal upper has type-I error below 0.044297 and
+nominal-target miss below 0.023080. Together with the necessary count,
+it is within a factor of 18 of the best deterministic acquisition budget
+for the stated five-setting task; neither test nor comparator is claimed
+optimal.
+
+The comparator was found by a small numerical search; no optimizer or
+simulation is run by its verifier. All retained constants are rational,
+and every proof-bearing decision is exact. Small interval and matrix
+certificates establish the stated bounds, not global optimization. The
+new reports bind the final proof and all inherited evidence. Independent
+internal review separates mathematical derivation, scope and source
+attribution from automated regression. Instrument feasibility and complete
+priority remain unestablished.
+
+**Full local integration passed** under pinned Python 3.13.5: all 73
+mathematical verifiers and four saved-model replays completed successfully,
+and all **77 fresh reports** match their saved counterparts byte for byte.
+The two new certificates also passed independent byte-identical replays.
+The repository check passes **3,146 local Markdown links**, **78 Python
+syntax checks**, source/proof/report provenance and the original MIT
+license. Against the 349-file baseline, the eight authorized navigation
+and build files changed and all other **341 files** remain byte-identical;
+the five additions bring the checkpoint to 354 files. Historical rows
+R1–R82 and all prior prose in the four overview/ledger documents remain
+verbatim. `git diff --check` passes. Hosted CI must be checked separately
+against the published commit; the baseline run above is not evidence for
+this new tree.
+
+## Historical checkpoint: five-setting measurement cost and physical robustness
 
 The baseline is commit `5a2ba1a330a882173b0ab6a9fc012d24bd9570c2`, tree
 `69f86d33afccfc330f6cb88554535ad03d63e894`, with successful

@@ -1,0 +1,999 @@
+{
+  "arithmetic": "Exact standard-library Fraction arithmetic; fixed rational CTMC rates, SHA-bound matrix Taylor/logarithm interval helpers and outward rounding; no floating-point computations or optimizer",
+  "check_labels": [
+    "input-report-hash",
+    "input-report-PASS",
+    "imported-helper-hash",
+    "helper-in-inherited-source-chain",
+    "source-hash:verify_familiar_chain.py",
+    "source-hash:verify_familiar_chain_accuracy.py",
+    "source-hash:verify_familiar_chain_cross_rank.py",
+    "source-hash:verify_familiar_chain_sharpness.py",
+    "source-hash:verify_familiar_switch_frozen_equivalence.py",
+    "source-hash:verify_familiar_switch_frozen_information.py",
+    "source-hash:verify_switch_control_scope.py",
+    "source-hash:verify_switch_physical_core.py",
+    "inherited-hash:docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_PASSIVE_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_CALIBRATION.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_FINITE_MARGIN.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_FINITE_RESET.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PREPARATION_COST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_REPEATED_READOUT.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_STRUCTURE.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md",
+    "inherited-hash:docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md",
+    "inherited-hash:reports/familiar_chain.json",
+    "inherited-hash:reports/familiar_chain_accuracy.json",
+    "inherited-hash:reports/familiar_chain_cross_rank.json",
+    "inherited-hash:reports/familiar_chain_sharpness.json",
+    "inherited-hash:reports/familiar_switch_frozen_equivalence.json",
+    "inherited-hash:reports/switch_control_scope.json",
+    "inherited-hash:reports/familiar_switch_frozen_information.json",
+    "new-proof-hash",
+    "common-balanced-rational-preparation",
+    "five-word-menu",
+    "m=0:positive-normalized-Gibbs-law",
+    "m=0:strictly-positive-off-diagonal-rates",
+    "m=0:zero-row-sums",
+    "m=0:detailed-balance",
+    "m=0:stationarity",
+    "m=7/9:positive-normalized-Gibbs-law",
+    "m=7/9:strictly-positive-off-diagonal-rates",
+    "m=7/9:zero-row-sums",
+    "m=7/9:detailed-balance",
+    "m=7/9:stationarity",
+    "generator-infinity-norm-at-most-four",
+    "fixed-Taylor-order-64",
+    "matrix-tail-small",
+    "ideal_readout:L:positive-narrow-KL",
+    "ideal_readout:L:KL-below-coarse-upper",
+    "ideal_readout:LL:positive-narrow-KL",
+    "ideal_readout:LL:KL-below-coarse-upper",
+    "ideal_readout:H:positive-narrow-KL",
+    "ideal_readout:H:KL-below-coarse-upper",
+    "ideal_readout:HH:positive-narrow-KL",
+    "ideal_readout:HH:KL-below-coarse-upper",
+    "ideal_readout:HL:positive-narrow-KL",
+    "ideal_readout:HL:KL-below-coarse-upper",
+    "ideal_readout:fixed-total-budget-lower",
+    "ideal_readout:expected-count-bracket",
+    "known_1pct_BSC_each_endpoint:L:positive-narrow-KL",
+    "known_1pct_BSC_each_endpoint:L:KL-below-coarse-upper",
+    "known_1pct_BSC_each_endpoint:LL:positive-narrow-KL",
+    "known_1pct_BSC_each_endpoint:LL:KL-below-coarse-upper",
+    "known_1pct_BSC_each_endpoint:H:positive-narrow-KL",
+    "known_1pct_BSC_each_endpoint:H:KL-below-coarse-upper",
+    "known_1pct_BSC_each_endpoint:HH:positive-narrow-KL",
+    "known_1pct_BSC_each_endpoint:HH:KL-below-coarse-upper",
+    "known_1pct_BSC_each_endpoint:HL:positive-narrow-KL",
+    "known_1pct_BSC_each_endpoint:HL:KL-below-coarse-upper",
+    "known_1pct_BSC_each_endpoint:fixed-total-budget-lower",
+    "known_1pct_BSC_each_endpoint:expected-count-bracket",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:pair-table-positive-and-normalized-enclosure",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:valid-known-readout-flip",
+    "helper:readout-channel-stochastic",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30",
+    "helper:positive-log-argument-and-convergent-series",
+    "helper:log-tail-below-1e-30"
+  ],
+  "checks": 317,
+  "input_report_sha256": {
+    "reports/familiar_chain.json": "177d6a9f754dddf9ccc919037d6267e4982eac18b4ddd8703461efd5ac4debb8",
+    "reports/familiar_chain_accuracy.json": "4648f09eb6a900486a1b66cfa8b64568a24299e7fbb473faf80a3d59f0197aec",
+    "reports/familiar_chain_cross_rank.json": "00bf2773e79573da5cff1a2ce238d5cc3da1f9666f6d5b831b43dc628e92d818",
+    "reports/familiar_chain_sharpness.json": "bc7780ffe5781e3a3bc1545bc1872bfd0c659437e4fcd6109281385e9fdf4bd0",
+    "reports/familiar_switch_frozen_equivalence.json": "eeedb2c2086f9389e9b68ef4bbf0a77966cd5569e53dbcbfdf753486097aea62",
+    "reports/familiar_switch_frozen_information.json": "d7edb41457f765c38f71e431219078782c53413a8ca1ceeb02c0ab9862344651",
+    "reports/switch_control_scope.json": "93d74f9c605fbfcc69a70f825b722cc67f1ce39fd3aee4b4d4f460f792f0ac7d"
+  },
+  "limitations": "Necessary acquisition counts on this five-word menu only; no sufficient testing budget, optimal null, complete-path comparison, detector-uncertainty certificate or hardware-feasibility conclusion.",
+  "profiled_information_certificate": {
+    "Taylor_order": 64,
+    "adaptive_change_of_measure": "sum_w E_target[N_w]*D(P_w||Q_w) >= kl(19/20,1/20); bounding every arm KL by c gives E_target[N_total] > certified_binary_KL_lower/c",
+    "binary_KL_exact": "(9/10)*log(19)",
+    "binary_KL_interval": [
+      "264999508124979/100000000000000",
+      "13249975406249/5000000000000"
+    ],
+    "binary_error_probability": "1/20",
+    "cases": [
+      {
+        "fixtures": [
+          {
+            "KL_target_to_rival_interval": [
+              "11612728081/12500000000000000",
+              "92901824649/100000000000000000"
+            ],
+            "TV_interval": [
+              "30750441539/50000000000000",
+              "61500883079/100000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "143137380972186409107/400000000000000000000",
+                "894608631076165056919/2500000000000000000000"
+              ],
+              [
+                "355391368923834943081/2500000000000000000000",
+                "56862619027813590893/400000000000000000000"
+              ],
+              [
+                "355391368923834943081/2500000000000000000000",
+                "56862619027813590893/400000000000000000000"
+              ],
+              [
+                "143137380972186409107/400000000000000000000",
+                "894608631076165056919/2500000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "893839870037689754963/2500000000000000000000",
+                "3575359480150759019853/10000000000000000000000"
+              ],
+              [
+                "1424640519849240980147/10000000000000000000000",
+                "356160129962310245037/2500000000000000000000"
+              ],
+              [
+                "1424640519849240980147/10000000000000000000000",
+                "356160129962310245037/2500000000000000000000"
+              ],
+              [
+                "893839870037689754963/2500000000000000000000",
+                "3575359480150759019853/10000000000000000000000"
+              ]
+            ],
+            "word": "L"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "580622029/625000000000000",
+              "92899524641/100000000000000000"
+            ],
+            "TV_interval": [
+              "66804720281/100000000000000",
+              "33402360141/50000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "149694560176555668217/500000000000000000000",
+                "2993891203531113364341/10000000000000000000000"
+              ],
+              [
+                "2006108796468886635659/10000000000000000000000",
+                "100305439823444331783/500000000000000000000"
+              ],
+              [
+                "2006108796468886635659/10000000000000000000000",
+                "100305439823444331783/500000000000000000000"
+              ],
+              [
+                "149694560176555668217/500000000000000000000",
+                "2993891203531113364341/10000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "2997231439545212562447/10000000000000000000000",
+                "187326964971575785153/625000000000000000000"
+              ],
+              [
+                "125173035028424214847/625000000000000000000",
+                "2002768560454787437553/10000000000000000000000"
+              ],
+              [
+                "125173035028424214847/625000000000000000000",
+                "2002768560454787437553/10000000000000000000000"
+              ],
+              [
+                "2997231439545212562447/10000000000000000000000",
+                "187326964971575785153/625000000000000000000"
+              ]
+            ],
+            "word": "LL"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "46451799417/50000000000000000",
+              "18580719767/20000000000000000"
+            ],
+            "TV_interval": [
+              "10492163841/20000000000000",
+              "26230409603/50000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "4663925953596724378099/10000000000000000000000",
+                "46639259535967243781/100000000000000000000"
+              ],
+              [
+                "3360740464032756219/100000000000000000000",
+                "336074046403275621901/10000000000000000000000"
+              ],
+              [
+                "2688592371226204975203/10000000000000000000000",
+                "672148092806551243801/2500000000000000000000"
+              ],
+              [
+                "577851907193448756199/2500000000000000000000",
+                "2311407628773795024797/10000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "932668611121109323973/2000000000000000000000",
+                "2331671527802773309933/5000000000000000000000"
+              ],
+              [
+                "168328472197226690067/5000000000000000000000",
+                "67331388878890676027/2000000000000000000000"
+              ],
+              [
+                "1346627777577813520537/5000000000000000000000",
+                "107730222206225081643/400000000000000000000"
+              ],
+              [
+                "92269777793774918357/400000000000000000000",
+                "1153372222422186479463/5000000000000000000000"
+              ]
+            ],
+            "word": "H"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "46448143959/50000000000000000",
+              "92896287919/100000000000000000"
+            ],
+            "TV_interval": [
+              "4639662867/10000000000000",
+              "46396628671/100000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "1133400926688899254369/2500000000000000000000",
+                "4533603706755597017477/10000000000000000000000"
+              ],
+              [
+                "466396293244402982523/10000000000000000000000",
+                "116599073311100745631/2500000000000000000000"
+              ],
+              [
+                "3731170345955223860191/10000000000000000000000",
+                "116599073311100745631/312500000000000000000"
+              ],
+              [
+                "39650926688899254369/312500000000000000000",
+                "1268829654044776139809/10000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "4534119224851932142083/10000000000000000000000",
+                "1133529806212983035521/2500000000000000000000"
+              ],
+              [
+                "116470193787016964479/2500000000000000000000",
+                "465880775148067857917/10000000000000000000000"
+              ],
+              [
+                "931761550296135715833/2500000000000000000000",
+                "3727046201184542863333/10000000000000000000000"
+              ],
+              [
+                "1272953798815457136667/10000000000000000000000",
+                "318238449703864284167/2500000000000000000000"
+              ]
+            ],
+            "word": "HH"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "46451027419/50000000000000000",
+              "92902054839/100000000000000000"
+            ],
+            "TV_interval": [
+              "32836681619/50000000000000",
+              "65673363239/100000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "3441842885721380849443/10000000000000000000000",
+                "860460721430345212361/2500000000000000000000"
+              ],
+              [
+                "389539278569654787639/2500000000000000000000",
+                "1558157114278619150557/10000000000000000000000"
+              ],
+              [
+                "1257149292180787399091/5000000000000000000000",
+                "2514298584361574798183/10000000000000000000000"
+              ],
+              [
+                "2485701415638425201817/10000000000000000000000",
+                "1242850707819212600909/5000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "3438721480676806246021/10000000000000000000000",
+                "1719360740338403123011/5000000000000000000000"
+              ],
+              [
+                "780639259661596876989/5000000000000000000000",
+                "1561278519323193753979/10000000000000000000000"
+              ],
+              [
+                "1258872257820431585397/5000000000000000000000",
+                "503548903128172634159/2000000000000000000000"
+              ],
+              [
+                "496451096871827365841/2000000000000000000000",
+                "1241127742179568414603/5000000000000000000000"
+              ]
+            ],
+            "word": "HL"
+          }
+        ],
+        "known_independent_flip_per_endpoint": "0",
+        "maximum_arm_KL_upper": "18580719767/20000000000000000",
+        "name": "ideal_readout",
+        "necessary_expected_total_trials_strict_lower": "88333169374993/31000000",
+        "necessary_fixed_total_binary_readouts": 5698916,
+        "necessary_fixed_total_trials": 2849458,
+        "optional_tighter_necessary_fixed_total_trials": 2852414,
+        "simple_maximum_arm_KL_upper": "93/100000000"
+      },
+      {
+        "fixtures": [
+          {
+            "KL_target_to_rival_interval": [
+              "657802721/781250000000000",
+              "84198748289/100000000000000000"
+            ],
+            "TV_interval": [
+              "14766362027/25000000000000",
+              "59065448109/100000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "3535728517142195682659/10000000000000000000000",
+                "3535728517142195682661/10000000000000000000000"
+              ],
+              [
+                "1464271482857804317339/10000000000000000000000",
+                "1464271482857804317341/10000000000000000000000"
+              ],
+              [
+                "1464271482857804317339/10000000000000000000000",
+                "1464271482857804317341/10000000000000000000000"
+              ],
+              [
+                "3535728517142195682659/10000000000000000000000",
+                "3535728517142195682661/10000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "706555048947357792533/2000000000000000000000",
+                "3532775244736788962667/10000000000000000000000"
+              ],
+              [
+                "1467224755263211037333/10000000000000000000000",
+                "293444951052642207467/2000000000000000000000"
+              ],
+              [
+                "1467224755263211037333/10000000000000000000000",
+                "293444951052642207467/2000000000000000000000"
+              ],
+              [
+                "706555048947357792533/2000000000000000000000",
+                "3532775244736788962667/10000000000000000000000"
+              ]
+            ],
+            "word": "L"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "85416985133/100000000000000000",
+              "42708492567/50000000000000000"
+            ],
+            "TV_interval": [
+              "32079626679/50000000000000",
+              "64159253359/100000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "371791638983910159389/1250000000000000000000",
+                "1487166555935640637557/5000000000000000000000"
+              ],
+              [
+                "1012833444064359362443/5000000000000000000000",
+                "253208361016089840611/1250000000000000000000"
+              ],
+              [
+                "1012833444064359362443/5000000000000000000000",
+                "253208361016089840611/1250000000000000000000"
+              ],
+              [
+                "371791638983910159389/1250000000000000000000",
+                "1487166555935640637557/5000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "1488770537269611072487/5000000000000000000000",
+                "186096317158701384061/625000000000000000000"
+              ],
+              [
+                "126403682841298615939/625000000000000000000",
+                "1011229462730388927513/5000000000000000000000"
+              ],
+              [
+                "126403682841298615939/625000000000000000000",
+                "1011229462730388927513/5000000000000000000000"
+              ],
+              [
+                "1488770537269611072487/5000000000000000000000",
+                "186096317158701384061/625000000000000000000"
+              ]
+            ],
+            "word": "LL"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "85905141309/100000000000000000",
+              "8590514131/10000000000000000"
+            ],
+            "TV_interval": [
+              "10076674153/20000000000000",
+              "25191685383/50000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "1150322291354389700097/2500000000000000000000",
+                "460128916541755880039/1000000000000000000000"
+              ],
+              [
+                "39871083458244119961/1000000000000000000000",
+                "99677708645610299903/2500000000000000000000"
+              ],
+              [
+                "2704178792908911965847/10000000000000000000000",
+                "2704178792908911965849/10000000000000000000000"
+              ],
+              [
+                "2295821207091088034151/10000000000000000000000",
+                "2295821207091088034153/10000000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "920153867397805295119/2000000000000000000000",
+                "4600769336989026475597/10000000000000000000000"
+              ],
+              [
+                "399230663010973524403/10000000000000000000000",
+                "79846132602194704881/2000000000000000000000"
+              ],
+              [
+                "677174325389230928031/2500000000000000000000",
+                "1354348650778461856063/5000000000000000000000"
+              ],
+              [
+                "1145651349221538143937/5000000000000000000000",
+                "572825674610769071969/2500000000000000000000"
+              ]
+            ],
+            "word": "H"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "17167728557/20000000000000000",
+              "42919321393/50000000000000000"
+            ],
+            "TV_interval": [
+              "22279661087/50000000000000",
+              "1782372887/4000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "897013557136928284037/2000000000000000000000",
+                "4485067785684641420187/10000000000000000000000"
+              ],
+              [
+                "514932214315358579813/10000000000000000000000",
+                "102986442863071715963/2000000000000000000000"
+              ],
+              [
+                "464301348246495379991/1250000000000000000000",
+                "371441078597196303993/1000000000000000000000"
+              ],
+              [
+                "128558921402803696007/1000000000000000000000",
+                "160698651753504620009/1250000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "4485527524722953084309/10000000000000000000000",
+                "4485527524722953084311/10000000000000000000000"
+              ],
+              [
+                "514472475277046915689/10000000000000000000000",
+                "514472475277046915691/10000000000000000000000"
+              ],
+              [
+                "3710414592792792420997/10000000000000000000000",
+                "3710414592792792420999/10000000000000000000000"
+              ],
+              [
+                "1289585407207207579001/10000000000000000000000",
+                "1289585407207207579003/10000000000000000000000"
+              ]
+            ],
+            "word": "HH"
+          },
+          {
+            "KL_target_to_rival_interval": [
+              "85288983371/100000000000000000",
+              "21322245843/25000000000000000"
+            ],
+            "TV_interval": [
+              "31536349027/50000000000000",
+              "12614539611/20000000000000"
+            ],
+            "rival_pair_table": [
+              [
+                "3413916093853627133151/10000000000000000000000",
+                "3413916093853627133153/10000000000000000000000"
+              ],
+              [
+                "1586083906146372866847/10000000000000000000000",
+                "1586083906146372866849/10000000000000000000000"
+              ],
+              [
+                "31538781835345867519/125000000000000000000",
+                "1261551273413834700761/5000000000000000000000"
+              ],
+              [
+                "1238448726586165299239/5000000000000000000000",
+                "30961218164654132481/125000000000000000000"
+              ]
+            ],
+            "target_pair_table": [
+              [
+                "3410921476805917878963/10000000000000000000000",
+                "682184295361183575793/2000000000000000000000"
+              ],
+              [
+                "317815704638816424207/2000000000000000000000",
+                "1589078523194082121037/10000000000000000000000"
+              ],
+              [
+                "505283039917079629903/2000000000000000000000",
+                "2526415199585398149517/10000000000000000000000"
+              ],
+              [
+                "2473584800414601850483/10000000000000000000000",
+                "494716960082920370097/2000000000000000000000"
+              ]
+            ],
+            "word": "HL"
+          }
+        ],
+        "known_independent_flip_per_endpoint": "1/100",
+        "maximum_arm_KL_upper": "8590514131/10000000000000000",
+        "name": "known_1pct_BSC_each_endpoint",
+        "necessary_expected_total_trials_strict_lower": "264999508124979/86000000",
+        "necessary_fixed_total_binary_readouts": 6162780,
+        "necessary_fixed_total_trials": 3081390,
+        "optional_tighter_necessary_fixed_total_trials": 3084793,
+        "simple_maximum_arm_KL_upper": "43/50000000"
+      }
+    ],
+    "clock": "1",
+    "conductances": [
+      [
+        "9006333/100000000",
+        "5831059/100000000",
+        "3229581/20000000"
+      ],
+      [
+        "1508791/6250000",
+        "457623/25000000",
+        "75083/1000000"
+      ]
+    ],
+    "detector_scope": "Optional known 1/100 independent BSC errors at each endpoint are identical under both hypotheses; no unknown-detector robustness is asserted.",
+    "discovery_and_validation": "A small deterministic numerical fit suggested six conductances; the fixed eight-decimal rational table is certified here without invoking an optimizer or its convergence. No closest-comparator or minimax-optimality claim is made.",
+    "edge_order": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "fields": [
+      "0",
+      "7/9"
+    ],
+    "fixed_budget_interpretation": "Integer ceiling applies to a deterministic cap on total pair trials, not to an expected random count. Each complete pair trial contains two binary endpoint readouts.",
+    "generators": [
+      [
+        [
+          "-927337/1562500",
+          "9006333/25000000",
+          "5831059/25000000"
+        ],
+        [
+          "9006333/25000000",
+          "-12577119/12500000",
+          "3229581/5000000"
+        ],
+        [
+          "5831059/50000000",
+          "3229581/10000000",
+          "-5494741/12500000"
+        ]
+      ],
+      [
+        [
+          "-58435083/100000000",
+          "13579119/25000000",
+          "4118607/100000000"
+        ],
+        [
+          "13579119/25000000",
+          "-71210151/100000000",
+          "675747/4000000"
+        ],
+        [
+          "4118607/25000000",
+          "675747/1000000",
+          "-10506141/12500000"
+        ]
+      ]
+    ],
+    "menu": [
+      "L",
+      "LL",
+      "H",
+      "HH",
+      "HL"
+    ],
+    "null_scope": "The explicit comparator is a genuine ordinary reversible CTMC with the exact nominal tilt 7/9 and common balanced preparation. It is a member of both the fixed-tilt null and any larger unknown-tilt null containing 7/9. Pure-field laws are approximately, not exactly, matched.",
+    "pair_outcome_order": [
+      "++",
+      "+-",
+      "-+",
+      "--"
+    ],
+    "pair_probability_error_upper": "9444732965739290427392/298070689661239054419592742307314143930091233149603284090947174072265625",
+    "rho0": [
+      "1/4",
+      "1/4",
+      "1/2"
+    ],
+    "sampling_scope": "Independent complete reset-pair trials; arm chosen using completed past trials before seeing the current initial sign. Adaptive choice and finite-expectation stopping are allowed. Current-sign-conditioned arm choice, partial-trial selection, correlated resets, other words and trajectory observations are outside this bound.",
+    "signs": [
+      "1",
+      "1",
+      "-1"
+    ],
+    "status": "PASS",
+    "tanh_J": "1/3"
+  },
+  "proof_snapshot_sha256": {
+    "docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md": "ec59199f390655484b93260b21b4fa930675d1d26f17dc399d9e948f495596f0",
+    "docs/FAMILIAR_CHAIN_PASSIVE_REALIZATION.md": "d5cbf5b8c0a1ea537b09223b3abb2e03abd7cf50c959f4500f1ff55887b67741",
+    "docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md": "147f11bff41c9cbc7ecb5a60ea4cf7d935fe3ee8eff22dc1a61ddcc73aca26c8",
+    "docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md": "04be8e949df054d51e17c3450174807c201a7715bd24fd7f8e9fb40caf1838ef",
+    "docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md": "2f2e7bb12b266e8ca70ed200995c084e85625d421c0bf0875632cc873e429659",
+    "docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md": "5be390a54bac96cf0e7c4e6c3ef6828380b6d5599c98542d1f73028d48836850",
+    "docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md": "ef06ad85440f7d0f0e5a817f1172d039dc626e8f8291b7a372384cb4a7000983",
+    "docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md": "2ef41b246cf19689f17ac067ff52b1dbbc9b9ad9067bb7833014c1458df15383",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md": "751f35f34dc63cfd481694550e09276a7c1115d5464731eacaacd6a7305916c3",
+    "docs/FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md": "be46dd47f5a6d0ef07300c59349ff282f45c185d9aca673731f75bc2d9e55c56",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
+    "docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md": "9573c9a70ac82c319a49f09e7f7d72024c0f6816091a54a2aff6228fee871342",
+    "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c",
+    "docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md": "63e18ab4e4d059cab98cb687f8e5926452c86a5e3c1cceebe83ea7e9036336a4",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
+    "docs/FAMILIAR_SWITCH_FINITE_RESET.md": "93873fc5ef107f82b0dc58bac71de0ec856b4508fb156662af6f0df3609f5b00",
+    "docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md": "219464f378f20e88c488aebd3770dbdefe7d535d4d5a253053473ec0fe9cd625",
+    "docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md": "688779263aced1c36f4118b749bb3c8080e8d90d0f1d6dd4096f638d5b84c61d",
+    "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "fc5db926ee202f479ccbf5436a2a3ae19ce976a43faea2201f8af89d7f4998f3",
+    "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "fb46d03dc616c78035ced22c62b936f1e3a8c91aac86b0587b3803a0e9e8b5bd",
+    "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4",
+    "docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md": "4618b2f6882bbc0d4bfe7161b71d14c8c3f16fa0600dc9a3f0324417066b896c",
+    "docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md": "deb3e0e892ee790a97f96f3684091c9fccca78ef3db6a135b8237a2b79680ccd",
+    "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499",
+    "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md": "eb35e4b689e6a06573eea0fa12e91e19a41c08c23ec14bf0d5262c0b1846a5b9",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md": "311ddad97cfec6ab09a733565e5655532a4449f2b1ff4c33a37516565ed592fa",
+    "docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md": "42530472f40412d9e1f93d868a4df1dd2d833ba34ee89f8531df1cb1679dec0a",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
+    "docs/FAMILIAR_SWITCH_PROFILED_ACQUISITION.md": "44d10df83ac2ce36ba343aff27131965d9bb1970da8fc91aaaa5042e4f5301b1",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "7036d895e2a23dd33105c2ae96ace62904ae86954b0dcfadba18f290be6bd309",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182",
+    "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "773ded5fba43a9b3390f404b4f259646c8515bce453f334a65228013418d2f6f",
+    "docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md": "b9cefb9caa480b7e60271de6e6093c24766d30c6b1a1832d8c8f1c91cdbdadc3",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
+    "docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md": "126fbcb68b9d552d461134f0f56853592a0cf34e6b16fa06f253ffb110cb9365",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f"
+  },
+  "source_sha256": {
+    "verify_familiar_chain.py": "ca3d241db981bacd8f75c41ba40bba021a0f13c1b9c189fcd35937035ae30ac3",
+    "verify_familiar_chain_accuracy.py": "9ad3417984e223d5cf66c7c151276bfb86938596d04bb6fba928a2a9b08aae17",
+    "verify_familiar_chain_cross_rank.py": "a0b0b88d4e5c04fc86ca8b6d3ad7f37c25b20bcaea1f7724a6b6c602d05ae5a2",
+    "verify_familiar_chain_sharpness.py": "dee7547d4c18abeadbdfe49f7ef1b44d61b51e2898678d74312c53e2966eb5f3",
+    "verify_familiar_switch_frozen_equivalence.py": "faf12be46cd7a706aac8607e4b87a25e054bc66da6b2157f8a82108e644781a7",
+    "verify_familiar_switch_frozen_information.py": "f3bb879fe189bc305ccfb81b96523aeb36fee44c8727a3ad8bbcf8efce7239f2",
+    "verify_familiar_switch_profiled_information.py": "a935b2c377fdb9b452ccb63176d9396590f8ce4f98d88347c39bc33f057213eb",
+    "verify_switch_control_scope.py": "1343df7a5a3397ed7270f39fcbed2fcd98c6e9d5b79505b4913f7df12aa2e22c",
+    "verify_switch_physical_core.py": "0bc9e8be9abf10987ebd1158d2509f938b779fcd861134bfabb38158937952df"
+  },
+  "status": "PASS",
+  "versions": {
+    "python": "3.13.5"
+  }
+}

@@ -77,6 +77,8 @@ check:
 	$(PYTHON) scripts/verify_familiar_switch_frozen_sampling.py --output .check-output/familiar_switch_frozen_sampling.json
 	$(PYTHON) scripts/verify_familiar_switch_frozen_information.py --output .check-output/familiar_switch_frozen_information.json
 	$(PYTHON) scripts/verify_familiar_switch_frozen_robustness.py --output .check-output/familiar_switch_frozen_robustness.json
+	$(PYTHON) scripts/verify_familiar_switch_profiled_score.py --output .check-output/familiar_switch_profiled_score.json
+	$(PYTHON) scripts/verify_familiar_switch_profiled_information.py --output .check-output/familiar_switch_profiled_information.json
 	$(PYTHON) scripts/screen_familiar_switches.py --verify-saved reports/familiar_switch_screen.json --output .check-output/familiar_switch_screen.json
 	$(PYTHON) scripts/screen_short_switch_witnesses.py --verify-saved reports/short_switch_witness_screen.json --output .check-output/short_switch_witness_screen.json
 	$(PYTHON) scripts/screen_switch_preparation_witness.py --verify-saved reports/switch_preparation_screen.json --output .check-output/switch_preparation_screen.json
