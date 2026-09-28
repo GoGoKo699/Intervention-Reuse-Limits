@@ -1,6 +1,48 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: determine a useful accuracy-dependent separation — 28 September 2026
+## Current priority: narrow the two-field approximation gap — 28 September 2026
+
+This checkpoint starts from published commit
+`40aa5a547c462ceb9aaf39426892d2bc3641c770`, tree
+`cee246cc9d38f8c3212d709b46ffaeb03838e867`, with successful
+[CI run 36400330510](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36400330510).
+Preserve all older mathematical proofs, verifiers and reports, the license,
+and historical claim rows R1–R73. Existing authorization covers non-forced
+publication to public main. Collaborator contact is not authorized.
+Manuscript drafting remains last.
+
+The [two-field result](../docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) replaces
+three-field interpolation by a direct observable sign-sector inequality
+$W_s=c_sA_s-N_s\preceq c_sA_s$. Positive definiteness forces $n$ states
+in each visible sector. Separate reference functions for the two sectors
+remove the need to identify one common hidden-coordinate lift. Two fields
+and $2(n^2-1)$ settings suffice for the exact all-length lower, with the
+same existing upper constructions and physical conventions.
+
+At $n=3$, $t=1/3$, tilts $0,1/2$ and clock one, a rational certificate
+proves four general versus six reversible states through pair-law TV
+error $10^{-6}$ on sixteen settings. A separate explicit four-state
+two-spin model with hidden attempt $5/6$ has menu error below $1/3000$
+and all-nonnegative-word error below $1/600$. The two certificates use
+exact rational enclosures, not fitted or simulated data.
+
+**Single next scientific priority:** substantially narrow the certified
+interval $10^{-6}\le E_{\le5}<1/3000$ for the same sixteen-setting task.
+Determine whether a fifth reversible state materially improves the
+constructive four-state approximation, or develop a stronger observable
+lower bound. Seek a structural approximation argument or a small exact
+construction; minor parameter tuning and further weak-coupling length
+extensions do not establish useful finite-precision significance.
+
+The lower still covers arbitrary reversible stochastic tick kernels with
+the common Gibbs preparation/force interface, including initial sign
+imbalance, zero masses and no rival rate cap. Do not tighten this class
+merely to increase the error gap. A CTMC-only improvement would need an
+explicitly separate scope. Keep the accepted heat-bath physics and all
+counted memory unchanged. Practical acquisition cost, device realization,
+complete priority and broad publication significance remain unresolved.
+
+## Historical priority: determine a useful accuracy-dependent separation — 28 September 2026
 
 This checkpoint starts from published commit
 `6b13d3be21b5978f6ace082a6e61b9a4315719d3`, tree

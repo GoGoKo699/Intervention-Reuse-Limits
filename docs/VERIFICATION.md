@@ -4,11 +4,61 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-one mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-three mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: exact chain sharpness and its accuracy limit
+## Current checkpoint: two fields and a certified approximation interval
+
+The baseline is commit `40aa5a547c462ceb9aaf39426892d2bc3641c770`, tree
+`cee246cc9d38f8c3212d709b46ffaeb03838e867`, with successful
+[CI run 36400330510](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36400330510).
+The new work uses an isolated checkout of that exact tree and the existing
+pinned Python 3.13.5 environment. Dependencies and the workflow are unchanged.
+
+The [lower verifier](../scripts/verify_familiar_chain_accuracy.py) uses
+standard-library rational arithmetic, degree-40 Taylor enclosures, and
+per-word matrix total-variation bounds. Its
+[report](../reports/familiar_chain_accuracy.json) passes 80 recorded checks,
+including inherited provenance, and certifies both sign-sector ranks and
+the general four-state lower through error $10^{-6}$. Fixed rational
+reconstruction coefficients need not be exact basis inverses; the witness
+identity holds for any such coefficients and the target is enclosed directly.
+
+The independent [upper verifier](../scripts/verify_familiar_chain_approximation.py)
+uses nonnegative shifted-matrix series through degree 48 for every one of
+the sixteen word settings, and rational scalar series for the two
+kernel-density crossing brackets. Its
+[report](../reports/familiar_chain_approximation.json) encloses the maximum
+menu error of the explicit four-state model in
+$[0.000272164486149,0.000272164486150]$, below $1/3000$, and certifies
+the all-nonnegative-word bound $1/600$. Both verifiers bind the final
+[analytical proof](FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md), 40 inherited
+proof snapshots, and the frozen sharpness report. Their largest dynamics
+matrix has dimension four. Neither uses an optimizer, trajectory simulation,
+floating-point acceptance decision, or large computation.
+
+Independent internal review checked the two-field sector inequality,
+observability, initial imbalance, zero masses, TV factors, nonsymmetric
+general rank argument, convolution reduction and uniform feedback bound.
+A separately constructed eight-state target and four-state approximation
+matched all sixteen pair laws and witness matrices numerically. That
+cross-check supports implementation review; the certified constants come
+from rational enclosures, and the universal statements from the proofs.
+These reviews and computations are not external validation or a complete
+novelty audit. The source comparison is included in the proof note.
+
+The full `make check` gate passed: 63 mathematical verifiers and four
+saved-model replays reproduced all **67 reports byte for byte**. The
+repository checker passed 2,983 local Markdown links, 68 Python syntax
+checks, report provenance and the unchanged MIT license. All 317 baseline
+files outside the eight navigation/build updates remain byte-identical;
+all 73 historical R-rows are unchanged. The new checkpoint adds one proof
+note, two verifiers and two reports. The resulting remote CI is checked
+separately; the successful baseline run above is not evidence about the
+new tree.
+
+## Historical checkpoint: exact chain sharpness and its accuracy limit
 
 The baseline is commit `6b13d3be21b5978f6ace082a6e61b9a4315719d3`, tree
 `7434172a6b287277ba49c6bdd04b0da8e2d7aa0d`, with successful

@@ -67,6 +67,8 @@ check:
 	$(PYTHON) scripts/verify_switch_control_scope.py --output .check-output/switch_control_scope.json
 	$(PYTHON) scripts/verify_familiar_chain.py --output .check-output/familiar_chain.json
 	$(PYTHON) scripts/verify_familiar_chain_sharpness.py --output .check-output/familiar_chain_sharpness.json
+	$(PYTHON) scripts/verify_familiar_chain_accuracy.py --output .check-output/familiar_chain_accuracy.json
+	$(PYTHON) scripts/verify_familiar_chain_approximation.py --output .check-output/familiar_chain_approximation.json
 	$(PYTHON) scripts/screen_familiar_switches.py --verify-saved reports/familiar_switch_screen.json --output .check-output/familiar_switch_screen.json
 	$(PYTHON) scripts/screen_short_switch_witnesses.py --verify-saved reports/short_switch_witness_screen.json --output .check-output/short_switch_witness_screen.json
 	$(PYTHON) scripts/screen_switch_preparation_witness.py --verify-saved reports/switch_preparation_screen.json --output .check-output/switch_preparation_screen.json

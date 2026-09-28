@@ -2,7 +2,44 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-## Current result: sharp state counts and an unavoidable accuracy boundary — 28 September 2026
+## Current result: two fields and a certified approximation interval — 28 September 2026
+
+The [new two-field argument](FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) simplifies
+the exact reversible lower bound to $2(n^2-1)$ endpoint-pair settings.
+Each sign sector gets its own reference field. The observable inequality
+$W_s=c_sA_s-N_s\preceq c_sA_s$, with $N_s\succeq0$, forces $n$ states
+in that sector whenever $W_s$ is positive definite. This retains the
+existing physical model and Gibbs convention without a third field or
+a common reconstructed hidden-coordinate lift.
+
+At three switches, $t=1/3$, tilts $0,1/2$ and a unit clock, exact rational
+certificates give four general versus six reversible states for menu TV
+error through $10^{-6}$. There are sixteen settings, at most four ticks
+and two segments. The lower permits arbitrary reversible stochastic
+kernels, initial sign imbalance, zero masses and unbounded rival rates.
+
+The same comparison also has an explicit four-state reversible
+approximation: a physical two-spin chain with hidden attempt rate $5/6$.
+Its menu error is below $1/3000$, and its error on every nonnegative-field
+word and horizon is below $1/600$. These upper and lower bounds concern
+the same preparation/readout/force conventions. They leave
+$10^{-6}\le E_{\le5}<1/3000$ unresolved.
+
+Both proofs and rational certificates passed independent internal review,
+including a separately built physical-generator cross-check. The tools
+are standard Gram, rank, positive-system and perturbation arguments;
+the [source comparison](FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md#6-established-methods-and-scope)
+delimits the combined claim. No measurement budget, device realization,
+full-path guarantee or practical finite-precision advantage is established.
+
+**Next scientific priority:** narrow this same-task approximation interval
+with a stronger lower bound or an explicit five-state construction.
+The two-field simplification is complete; broad publication significance
+and exhaustive priority remain open. Manuscript drafting remains last.
+
+[Lower certificate](../reports/familiar_chain_accuracy.json) · [Approximation certificate](../reports/familiar_chain_approximation.json) · [Verification](VERIFICATION.md).
+
+## Historical result: sharp state counts and an unavoidable accuracy boundary — 28 September 2026
 
 The [sharp chain assessment](FAMILIAR_CHAIN_SHARPNESS.md) is now the lead.
 For every $n\ge3$, the homogeneous heat-bath chain at any fixed

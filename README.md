@@ -2,7 +2,7 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-The [sharp open-chain theorem](docs/FAMILIAR_CHAIN_SHARPNESS.md) shows that
+The [two-field chain theorem](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) shows that
 **requiring a predictive model to obey equilibrium detailed balance can
 increase the number of states it needs under control**.
 
@@ -14,14 +14,14 @@ nonnegative field tilts $0\le\tanh h\le1/2$:
 | Required endpoint-pair data | General Markov states | Ordinary reversible states |
 | --- | ---: | ---: |
 | Passive pairs | $n+1$ | $n+1$ |
-| Three-field controlled menu, exactly | $n+1$ | $2n$ |
+| Two-field controlled menu, exactly | $n+1$ | $2n$ |
 | All controlled endpoint pairs, exactly | $n+1$ | $2n$ |
 
 The [explicit positive model](docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md)
 works under every finite nonnegative-field protocol, with exit rates at
 most $13/12$ independently of chain length. The
-[reversible lower bound](docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md) needs only
-three field values and $2(n-1)(n+2)$ endpoint-pair settings, each with at
+[reversible lower bound](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) needs only
+two field values and $2(n^2-1)$ endpoint-pair settings, each with at
 most two field segments. The new
 [reversible realization](docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md)
 attains $2n$ at every length, with strictly positive rates and total exit
@@ -46,13 +46,31 @@ threshold certifying the exact $2n$ count must decrease at least
 exponentially with length. The exact separation is a constraint on lossless
 equilibrium reduction, not an extensive fixed-precision advantage.
 
-Read the [physical explanation and scope](docs/FAMILIAR_CHAIN_SHARPNESS.md)
+**A stronger-coupling example now has a quantified error gap.** For three
+switches at $t=1/3$, use field tilts $0,1/2$ and a unit clock. Sixteen
+endpoint-pair settings, each with at most four ticks and two segments,
+have state minima **four general versus six reversible**, through
+total-variation error $10^{-6}$. A direct sign-sector Gram inequality
+removes the earlier third field and tolerates arbitrary rival initial sign
+imbalance within the common-preparation class. The certificate has no
+rival rate cap or stationary-mass floor.
+
+An explicit physical two-spin model with hidden attempt rate $5/6$ uses
+four reversible states and approximates that same menu within $1/3000$;
+it also stays within $1/600$ for every nonnegative-field word and horizon.
+Thus the best menu error with at most five reversible states lies between
+$10^{-6}$ and $1/3000$. These are unmatched bounds. The
+[proof and exact certificates](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md)
+establish a simpler experiment and a concrete remaining approximation
+problem, without a practical sampling or hardware claim.
+
+Read the [two-field argument and scope](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md)
 first. The [source comparison](docs/FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md) separates
 the established kinetic model and mathematical tools from the combined
 state-count result. These are ideal prediction theorems, without a hardware,
 heat-cost, or full-path claim. Manuscript drafting remains deferred.
 
-[Exact certificate](reports/familiar_chain_sharpness.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+[Lower certificate](reports/familiar_chain_accuracy.json) · [Approximation certificate](reports/familiar_chain_approximation.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
 
 ## Preserved two-switch boundaries
 
@@ -281,4 +299,4 @@ For reproducibility, use the pinned environment and the [Makefile](Makefile):
 make check PYTHON=.venv/bin/python
 ```
 
-[Verification](docs/VERIFICATION.md) records the full suite and its limits. The four-word experiment removes rival preparation, and its new endpoint-registration formulation replaces exact protection and fixed symmetric errors by quantitative measurement conditions. The relative-force bound controls rare-state errors that unweighted stationary-law TV cannot control. The next priority is the [community-model comparison](docs/PHYSICAL_ASSUMPTION_ALIGNMENT.md): identify independently established physical premises and determine which claims survive within them. A quantitative device assessment follows that model choice. The close prior-art comparison remains open. Current counts are sufficient bounds, not optimal costs or demonstrated feasibility. Manuscript drafting remains deferred.
+[Verification](docs/VERIFICATION.md) records the full suite and its limits. The four-word experiment removes rival preparation, and its new endpoint-registration formulation replaces exact protection and fixed symmetric errors by quantitative measurement conditions. The relative-force bound controls rare-state errors that unweighted stationary-law TV cannot control. The current priority is the [two-field approximation gap](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md): determine how much error is unavoidable for reversible models below six states. The [community-model comparison](docs/PHYSICAL_ASSUMPTION_ALIGNMENT.md) remains the physical-assumption reference. Quantitative device feasibility and the close prior-art comparison remain open. Current counts are sufficient bounds, not optimal costs or demonstrated feasibility. Manuscript drafting remains deferred.
