@@ -2,7 +2,56 @@
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
-## Current result: two fields and a certified approximation interval — 28 September 2026
+## Current result: twelve settings and a precision-dependent state cost — 28 September 2026
+
+The [precision frontier](FAMILIAR_CHAIN_PRECISION_FRONTIER.md) supersedes
+the approximation interval below. Reversing the two pulse orders gives
+cross-Gram matrices under the two prescribed Gibbs weights. Eliminating
+those weights exposes each deterministic sign sector, whose rank bounds
+its hidden-state count. This reduces the length-$n$ test to $2n(n-1)$
+endpoint-pair settings and the three-switch test to twelve. The full
+data matrix also gives the general-state lower bound. Generalized Hankel
+rank and sectorwise factorization are established tools; the
+[source comparison](FAMILIAR_CHAIN_PRECISION_FRONTIER.md#5-established-tools-contribution-and-remaining-significance)
+identifies the additional observable construction.
+
+Keep the same three-switch target at $t=1/3$, tilts $0,1/2$, unit clock
+and zero-field preparation. For maximum pair-law TV error $\delta$,
+the certified minima are:
+
+| Accuracy | General states | Ordinary reversible states |
+| --- | ---: | ---: |
+| $0\le\delta\le2\times10^{-6}$ | Exactly $4$ | Exactly $6$ |
+| $3.6\times10^{-6}\le\delta\le3.8\times10^{-6}$ | Exactly $4$ | Exactly $5$ |
+| $\delta=2\times10^{-5}$ | At most $4$ | Exactly $4$ |
+
+Every row holds separately for both the twelve-setting and preceding
+sixteen-setting menus. No exact transition locations are claimed. In
+particular, the last row leaves the general minimum open at that tolerance.
+For either menu, $2\times10^{-6}\le E_{\le5}<3.6\times10^{-6}$; the
+explicit five-state reversible approximation is within a factor of $1.8$
+of the best possible error. The lower allows arbitrary reversible
+stochastic tick kernels with the shared Gibbs convention and common
+preparation; the upper is an explicit CTMC. The
+[rank verifier](../scripts/verify_familiar_chain_cross_rank.py) and
+[small-model verifier](../scripts/verify_familiar_chain_small_models.py)
+use exact rational certificates for these stated bounds.
+
+The five-state obstruction now has a resolved scale of a few parts per
+million at this operating point. Improving the same minimax constants
+cannot by itself establish a large observable effect. **Next scientific
+priority:** explain the physical distinction between one reusable model
+under switching and separately fitted passive laws, and determine what
+useful consequence that distinction supports. Acquisition cost, device
+feasibility, broad physical significance and publication readiness remain
+open. Manuscript drafting remains deferred.
+
+[Rank certificate](../reports/familiar_chain_cross_rank.json) · [Small-model certificates](../reports/familiar_chain_small_models.json) · [Verification](VERIFICATION.md).
+
+The following sections preserve earlier checkpoints and their original
+next-step assessments; the current section above supersedes them.
+
+## Historical result: two fields and a certified approximation interval — 28 September 2026
 
 The [new two-field argument](FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) simplifies
 the exact reversible lower bound to $2(n^2-1)$ endpoint-pair settings.

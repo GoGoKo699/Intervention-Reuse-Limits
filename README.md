@@ -2,7 +2,7 @@
 
 **What must a model remember when its predictions must survive interventions?**
 
-The [two-field chain theorem](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) shows that
+The [two-field chain theorem](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md) shows that
 **requiring a predictive model to obey equilibrium detailed balance can
 increase the number of states it needs under control**.
 
@@ -20,8 +20,8 @@ nonnegative field tilts $0\le\tanh h\le1/2$:
 The [explicit positive model](docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md)
 works under every finite nonnegative-field protocol, with exit rates at
 most $13/12$ independently of chain length. The
-[reversible lower bound](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) needs only
-two field values and $2(n^2-1)$ endpoint-pair settings, each with at
+[reversible lower bound](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md) needs only
+two field values and $2n(n-1)$ endpoint-pair settings, each with at
 most two field segments. The new
 [reversible realization](docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md)
 attains $2n$ at every length, with strictly positive rates and total exit
@@ -46,31 +46,50 @@ threshold certifying the exact $2n$ count must decrease at least
 exponentially with length. The exact separation is a constraint on lossless
 equilibrium reduction, not an extensive fixed-precision advantage.
 
-**A stronger-coupling example now has a quantified error gap.** For three
-switches at $t=1/3$, use field tilts $0,1/2$ and a unit clock. Sixteen
-endpoint-pair settings, each with at most four ticks and two segments,
-have state minima **four general versus six reversible**, through
-total-variation error $10^{-6}$. A direct sign-sector Gram inequality
-removes the earlier third field and tolerates arbitrary rival initial sign
-imbalance within the common-preparation class. The certificate has no
-rival rate cap or stationary-mass floor.
+**The three-switch minimum now changes at certified precisions.** At
+$t=1/3$, field tilts $0,1/2$ and a unit clock, twelve endpoint-pair settings
+suffice. Each has at most four ticks and two field segments. Opposite pulse
+orders expose the rank within each visible-sign sector without an
+intermediate observation. For maximum pair-law total-variation error
+$\delta$:
 
-An explicit physical two-spin model with hidden attempt rate $5/6$ uses
-four reversible states and approximates that same menu within $1/3000$;
-it also stays within $1/600$ for every nonnegative-field word and horizon.
-Thus the best menu error with at most five reversible states lies between
-$10^{-6}$ and $1/3000$. These are unmatched bounds. The
-[proof and exact certificates](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md)
-establish a simpler experiment and a concrete remaining approximation
-problem, without a practical sampling or hardware claim.
+| Allowed error | General Markov states | Ordinary reversible states |
+| --- | ---: | ---: |
+| $0\le\delta\le2\times10^{-6}$ | Exactly $4$ | Exactly $6$ |
+| $3.6\times10^{-6}\le\delta\le3.8\times10^{-6}$ | Exactly $4$ | Exactly $5$ |
+| $\delta=2\times10^{-5}$ | At most $4$ | Exactly $4$ |
 
-Read the [two-field argument and scope](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md)
-first. The [source comparison](docs/FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md) separates
+These counts hold for both the twelve-setting menu and the preceding
+sixteen-setting menu. The intervals between the rows and exact transition
+locations remain undetermined. The last row asserts no general four-state
+lower bound at that larger tolerance.
+
+The best menu error $E_{\le5}$ with at most five ordinary reversible states
+now satisfies
+
+$$
+2\times10^{-6}\le E_{\le5}<3.6\times10^{-6}.
+$$
+
+The [explicit five-state model](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md#4-two-explicit-reversible-approximations)
+is therefore within a factor of $1.8$ of the best possible error. The lower
+allows arbitrary reversible stochastic tick kernels, initial sign
+imbalance and zero masses; the upper is a continuous-time Markov model.
+Exact rational certificates support both bounds. Their parts-per-million
+scale leaves practical acquisition cost and physical usefulness open.
+
+The next priority is to explain the physical meaning of reusing one model
+under switching, compared with fitting passive laws separately. Further
+refinement of this small approximation interval is not the immediate goal.
+
+Read the [precision-dependent result and scope](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md)
+first. Its [source comparison](docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md#5-established-tools-contribution-and-remaining-significance), together with the
+[construction audit](docs/FAMILIAR_CHAIN_SHARPNESS_SOURCE_AUDIT.md), separates
 the established kinetic model and mathematical tools from the combined
 state-count result. These are ideal prediction theorems, without a hardware,
 heat-cost, or full-path claim. Manuscript drafting remains deferred.
 
-[Lower certificate](reports/familiar_chain_accuracy.json) · [Approximation certificate](reports/familiar_chain_approximation.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
+[Rank certificate](reports/familiar_chain_cross_rank.json) · [Small-model certificates](reports/familiar_chain_small_models.json) · [Verification](docs/VERIFICATION.md) · [Current work](work_orders/CURRENT.md)
 
 ## Preserved two-switch boundaries
 

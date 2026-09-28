@@ -1,6 +1,53 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: narrow the two-field approximation gap — 28 September 2026
+## Current priority: explain the physical role of switching — 28 September 2026
+
+This continuation starts from published commit
+`a98b4be6fbe267c80a027f341302fd6b090f60b0`, tree
+`f41f38ca34b210422bbc10044e24a5d8bbde3388`, with successful
+[CI run 36405798664](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36405798664).
+Preserve every earlier mathematical proof, verifier and report, the MIT
+license, and historical claim rows R1–R75. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript drafting remains last.
+
+The [precision frontier](../docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md)
+completes the preceding approximation priority. Opposite protocol orders
+give observable cross-Gram matrices under two Gibbs weights. Their linear
+combinations isolate the two visible-sign sectors directly. This reduces
+the general length-$n$ test to $2n(n-1)$ endpoint-pair settings and the
+three-switch test to twelve settings, a subset of the original sixteen.
+The exact all-length upper constructions remain unchanged.
+
+For the same three-switch target at $t=1/3$, tilts $0,1/2$ and unit clock,
+the certified minimum reversible state counts are six through TV error
+$2\times10^{-6}$, five throughout $[3.6,3.8]\times10^{-6}$, and four at
+$2\times10^{-5}$. The general minimum remains four in the first two rows;
+only its upper bound is asserted in the third. These statements hold on
+both menus. Exact rational verifiers certify universal lower bounds and
+fixed four-/five-state CTMC constructions. All persistent memory remains
+counted; the lower class still allows arbitrary reversible tick kernels,
+imbalanced initial signs, zero masses and no rate cap.
+
+The optimal error with at most five ordinary states now satisfies
+$2\times10^{-6}\le E_{\le5}<3.6\times10^{-6}$, within a factor of $1.8$.
+This fixes its scale at a few parts per million for this task. Improving
+the lower certificate alone cannot turn the same operating point into a
+large observable separation. No global optimization claim is made.
+
+**Single next scientific priority:** isolate what switching requires
+beyond reproducing all constant-field endpoint laws. Seek a structural
+construction or obstruction that explains reuse across fields and gives
+a physically interpretable precision law. A five-state exploratory
+candidate matching both constant-field families exactly suggests a route,
+but it is not part of this certified checkpoint and needs independent
+algebraic review and rigorous switching-error bounds before any claim.
+Prefer this mechanism question to further tuning of the present finite
+menu. Do not weaken or redefine the accepted physical interface to enlarge
+the separation. Practical acquisition cost, broad significance and full
+priority remain open; manuscript drafting is deferred.
+
+## Historical priority: narrow the two-field approximation gap — 28 September 2026
 
 This checkpoint starts from published commit
 `40aa5a547c462ceb9aaf39426892d2bc3641c770`, tree

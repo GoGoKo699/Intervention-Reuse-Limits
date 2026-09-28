@@ -4,11 +4,68 @@
 
 ## Reproducing the checks
 
-From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-three mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
+From the repository root, install [the pinned dependencies](../requirements.txt) and run `make check`. The target checks local Markdown links, display-math/code-fence balance, Python syntax, report provenance, and the original MIT license. It then runs all sixty-five mathematical verifiers and four separate deterministic replays of saved familiar-switch numerical models. Optional optimizers are not run. Fresh reports are written to `.check-output/`, not over the saved reports.
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: two fields and a certified approximation interval
+## Current checkpoint: a certified precision-dependent state cost
+
+The baseline is commit `a98b4be6fbe267c80a027f341302fd6b090f60b0`, tree
+`f41f38ca34b210422bbc10044e24a5d8bbde3388`, with successful
+[CI run 36405798664](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36405798664).
+The pinned Python 3.13.5 environment, dependencies, workflow and every
+earlier mathematical proof, verifier and report remain unchanged.
+
+The [new proof](FAMILIAR_CHAIN_PRECISION_FRONTIER.md) derives observable
+sign-sector cross-Gram matrices from reversed two-field protocols. Its
+universal factorization bounds the number of states in each sector; its
+general-state factorization does not assume stationarity or reversibility
+of an unrestricted rival. The matrices can be nonsymmetric. The twelve
+settings used by the new lower are a subset of the original sixteen.
+
+The [cross-rank verifier](../scripts/verify_familiar_chain_cross_rank.py)
+and [report](../reports/familiar_chain_cross_rank.json) pass **979 exact
+checks**, including inherited provenance and the new proof binding.
+Rational Taylor enclosures, row dominance and singular-value perturbation
+bounds establish reversible lower counts six, five and four at respective
+TV tolerances $2\times10^{-6}$, $3.8\times10^{-6}$ and $2\times10^{-5}$.
+Per-word outcome coefficient differences are bounded in spectral norm
+using exact Sylvester minors of $b^2I-M^{\mathsf T}M$. The general four-state
+lower is certified through $3.8\times10^{-6}$, not at the larger tolerance.
+
+The [small-model verifier](../scripts/verify_familiar_chain_small_models.py)
+and [report](../reports/familiar_chain_small_models.json) check two fixed
+rational CTMCs and **32 setting certificates**. Detailed balance, Gibbs
+tilts, positive preparation, irreducibility and exit rates below two are
+checked directly. Positive uniformization through degree 48 encloses all
+sixteen pair laws for each model. The five-state maximum lies in
+$[3.513238204,3.513238205]\times10^{-6}$, and the four-state maximum in
+$[1.9401171757,1.9401171758]\times10^{-5}$. Their certified strict upper
+bounds are $3.6\times10^{-6}$ and $2\times10^{-5}$. Discovery used small
+numerical fits; verification has no optimizer or floating-point acceptance
+decision and makes no global optimality claim. Largest new dynamics
+matrix dimension is five; target propagation uses dimension four.
+
+Together these establish exact reversible minima six through
+$2\times10^{-6}$, five throughout $[3.6,3.8]\times10^{-6}$, and four at
+$2\times10^{-5}$, on both menus. Independent internal review covered the
+universal factorization, all precision endpoints, interval arithmetic,
+conductance fixtures, zero masses, initial imbalance, and nonsymmetric
+perturbations. A separately constructed full eight-state physical target
+corroborated both fixture errors and the observable cross matrices.
+These cross-checks supplement the rational certificates; they do not
+establish external validation, practical measurement cost or priority.
+
+The full `make check` gate passed: **65 mathematical verifiers and four
+saved-model replays reproduced all 69 reports byte for byte**. The final
+repository checker passed 3,020 local Markdown links, 70 Python syntax
+checks, report provenance and the unchanged MIT license. All 322 baseline
+files outside the eight navigation/build updates remain byte-identical,
+and historical claim rows R1–R75 are unchanged. Five new files add the
+proof, two verifiers and two reports. The resulting hosted CI is checked
+separately from the successful baseline run.
+
+## Historical checkpoint: two fields and a certified approximation interval
 
 The baseline is commit `40aa5a547c462ceb9aaf39426892d2bc3641c770`, tree
 `cee246cc9d38f8c3212d709b46ffaeb03838e867`, with successful
