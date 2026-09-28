@@ -1,6 +1,62 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: determine how control time resolution changes the equilibrium state cost — 28 September 2026
+## Current priority: identify the useful finite-accuracy consequence of the equilibrium state cost — 28 September 2026
+
+This continuation starts from published commit
+`749a1b4fb195ad1c10d3f1cee04a2d78e3031428`, tree
+`3b4364aaa9200fc0253b400af4c2c5d672de9dae`, with successful
+[CI run 36450198021](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36450198021).
+Preserve the preceding proofs, mathematical verifiers and reports, the
+MIT license and historical claim rows R1–R92. Existing authorization
+covers non-forced publication to public main. Collaborator contact is
+not authorized; manuscript drafting remains last.
+
+The [rapid-control theorem](../docs/FAMILIAR_SWITCH_RAPID_CONTROL.md)
+closes the prior control-time question for the two-field endpoint task.
+For fixed coupling and field, the best reusable two-state continuous-time
+error over every finite protocol is Θ(r⁻¹), while the best ordinary
+at-most-three-state error remains Θ(r⁻²). Four states are exact.
+An explicit positive reversible three-state path retains a fast mode
+through one common coordinate change. Its uniform pair-TV error is at
+most $(1-\eta)/r$, valid for all r>0 and bounded by
+$2(1-\alpha)/r^2$ for r≥2. No dwell floor, pulse count or horizon bound
+is needed. A seven-word subset supplies the broad three-state lower.
+The two-state lower uses held-field identification and rapid-mixture
+limits, without assuming bounded rival rates or common rival preparation.
+
+The physical interpretation is now a hierarchy: rapid control makes the
+third predictive state useful at first order, but the fourth equilibrium
+state remains a second-order precision requirement. The former
+fixed-clock upper's deteriorating constant was a limitation of its
+two-state construction, not a fundamental three-state bandwidth penalty.
+Do not continue searching for a first-order three-state lower in this
+same two-field fast-hidden limit; the new explicit upper excludes it.
+Its bound is at most $2/r^2$ uniformly over all $t,u\in(0,1)$, so
+increasing coupling or field within this model does not evade that limit.
+
+**Single next scientific question:** what useful prediction requires
+the fourth equilibrium state at finite accuracy outside this bounded
+fast-hidden limit? Start with the finite-rate hidden-response mechanism
+and the physical meaning of one reusable equilibrium reduction. Seek
+a consequential regime or a criterion explaining when the cost is
+observable, before selecting another operating point. The two-field
+construction need not extend to a third field or a smooth ramp, but that
+algebraic limitation alone is not evidence of a useful separation.
+Any changed control or observation contract must be stated and justified.
+
+The new proof used no simulation, optimization, numerical certificate or
+new verifier. Keep calculations tied to a named analytic obstruction.
+The same target low-equilibrium preparation and endpoint-only records
+remain required. The ratio limit can be realized by slowing the visible
+rate while holding the hidden rate admissible; physical horizons then
+grow. Ideal jumps require a valid microscopic ramp hierarchy, and this
+two-field proof supplies no finite-ramp or detector error budget.
+Corrected reduction and coordinate changes have established precedents;
+the contribution is the explicit Gibbs realization and matched class-wide
+precision orders. Complete priority, device feasibility and broader
+publication significance remain open.
+
+## Historical priority: determine how control time resolution changes the equilibrium state cost — 28 September 2026
 
 This continuation starts from published commit
 `262a19bbbb4bf9ddf695cf1f6f6e13a0463c8667`, tree

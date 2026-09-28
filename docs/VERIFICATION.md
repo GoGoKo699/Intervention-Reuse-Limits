@@ -8,7 +8,46 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: a matched quadratic precision law
+## Current checkpoint: rapid control and the two precision orders
+
+The baseline is commit `749a1b4fb195ad1c10d3f1cee04a2d78e3031428`, tree
+`3b4364aaa9200fc0253b400af4c2c5d672de9dae`, with successful
+[CI run 36450198021](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36450198021).
+The [new analytic proof](FAMILIAR_SWITCH_RAPID_CONTROL.md) gives the
+all-duration two-field error hierarchy: Θ(r⁻¹) for at most two states,
+Θ(r⁻²) for at most three ordinary reversible states, and zero for four.
+One positive reversible three-state path supplies the second-order upper
+uniformly over pulse count, dwell times and horizon. No new simulation,
+optimizer, fitted fixture, numerical certificate or verifier is added.
+
+Independent internal mathematical review passed. It checked all-rate positivity, normalized Gibbs
+weights, edgewise detailed balance, the exact observable closure and
+field-independent mean transformation, conditional preparation, the
+pair-TV conversion, the root bound and the inherited broad-null lower.
+It also checks the separate two-state identification/rapid-mixture proof,
+including unbounded rival rates, arbitrary word preparation and the order
+of limits. The physical/source review distinguishes the all-duration
+ideal lower from an unproved finite-bandwidth lower and keeps additional
+fields, ramps and device implementation outside the theorem.
+
+Proof SHA-256:
+`462d338b259cb644bdd5b7ad35aa13cbd3f66bcd083de8e7b32c4fabb52b0b31`.
+
+**Scoped local verification passed:** 3,351 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved report
+provenance, the unchanged MIT license and `git diff --check`. All 81 previous reports,
+their verifiers and preceding mathematical proof files remain unchanged.
+This scope does not claim another full local numerical replay. The
+existing hosted workflow is inspected against the published commit
+separately.
+
+Against the 371-file baseline, six navigation/assessment files change;
+365 protected files remain byte-identical. One new analytic proof brings
+the checkpoint to 372 files. Historical R1–R92 remain verbatim. The
+README's preceding precision paragraph is retained in its existing
+expandable history, while the lead now states the all-duration result.
+
+## Historical checkpoint: a matched quadratic precision law
 
 The baseline is commit `262a19bbbb4bf9ddf695cf1f6f6e13a0463c8667`, tree
 `34e0fa97052c454caa1fde8a0013f83b1957c993`, with successful

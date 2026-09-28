@@ -52,19 +52,21 @@ similarly limits the meaning of exact state-count growth. The latest
 seven-word acquisition analysis identifies a costly experimental design;
 it is supporting scope evidence, rather than the lead scientific claim.
 
-The [matched precision law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md)
-now explains the fast-hidden regime at fixed coupling and field. With
-hidden/visible attempt ratio $r$, the smallest attainable error among
-reversible models with at most three states under the stated Gibbs and
-readout requirements is of order $r^{-2}$. A two-state equilibrium model absorbs the first-order
-slowing into corrected rates; the extra-state obstruction occurs at
-second order. The law holds for every finite clocked pulse word at fixed
-positive dwell times. Allowing the control timescale itself to shrink
-remains a different question. This is an analytic regime statement.
+The [rapid-control theorem](docs/FAMILIAR_SWITCH_RAPID_CONTROL.md)
+now resolves the fast-hidden regime even when pulse durations shrink.
+At fixed coupling and two field values, with hidden/visible rate ratio
+$r$, the best all-protocol error is of order $r^{-1}$ for two states
+and $r^{-2}$ for three reversible states under the stated Gibbs and
+readout requirements; four states are exact. One explicit equilibrium
+three-state chain works at every switching speed and horizon. It retains
+a fast internal mode, and its error does not accumulate at switches.
+Rapid control can expose the need for a third state, while the fourth
+equilibrium state remains a second-order precision requirement. These
+are analytic bounds for endpoint pairs, not a device-performance claim.
 
-The next question is how observable hidden response variation controls
-the best approximation that preserves equilibrium structure. A useful
-answer must explain a physical regime or a family-wide limit. Further
+The next question is what useful prediction needs the fourth equilibrium
+state at finite accuracy, outside the fast-hidden limit now bounded.
+A useful answer must explain a physical regime or a family-wide limit. Further
 numerical work will address a named analytic question, rather than seek
 another isolated operating point. Broad practical significance and device
 feasibility remain unresolved. Manuscript writing is on hold.
@@ -77,6 +79,18 @@ feasibility remain unresolved. Manuscript writing is on hold.
 The entries below retain their original wording, dates and assumptions.
 The scientific case and current work order above give the current
 assessment; older next-step statements record the work at those times.
+
+### Previous fixed-clock precision checkpoint
+
+The [matched precision law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md)
+now explains the fast-hidden regime at fixed coupling and field. With
+hidden/visible attempt ratio $r$, the smallest attainable error among
+reversible models with at most three states under the stated Gibbs and
+readout requirements is of order $r^{-2}$. A two-state equilibrium model absorbs the first-order
+slowing into corrected rates; the extra-state obstruction occurs at
+second order. The law holds for every finite clocked pulse word at fixed
+positive dwell times. Allowing the control timescale itself to shrink
+remains a different question. This is an analytic regime statement.
 
 
 ## Current milestone: a narrow precision window and necessary acquisition cost — 28 September 2026
