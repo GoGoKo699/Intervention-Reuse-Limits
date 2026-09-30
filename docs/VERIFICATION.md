@@ -8,7 +8,43 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: core scientific claim and controlled-reduction comparison
+## Current checkpoint: finite-pulse witness and convergence
+
+The baseline is commit `49aa0ed9e40440b3465030d4102187986d5326c5`, tree
+`fa704a250b10ba423b4e742484f2a957feeaba50`, with successful
+[CI run 36683894645](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36683894645).
+R98's [new proof](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) closes the
+specified finite-pulse gate with three experiments and freezes the
+theorem scope for convergence. It changes no physical model or
+observation assumption and adds no numerical research result.
+
+Independent internal mathematical review read the integrated proof and
+checked the exact two-state contrast identity, preparation-robust TV
+conversion, invariant interval, periodic filter, positive coefficient,
+uniform log remainder, explicit onset, inherited upper bounds and
+physical timing. An independent analytic derivation corroborated the
+coefficient and absence of first-order initial slippage. Separate scope
+review checked three settings versus growing pulse count, ideal jumps
+versus finite ramps, the restricted third-state conclusion and the
+explicit convergence stop. These are internal reviews, not external
+validation or novelty certification.
+
+Proof SHA-256: `9afbb9243ada889b5c956e0d714fe14f072913975e5b441b8dcb6808f55cc0ba`.
+
+**Scoped local verification passed:** 3,407 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved report
+provenance, unchanged MIT license and `git diff --check`.
+
+Exactly six prior navigation/assessment files change. All 370 protected
+baseline files remain byte-identical; one new proof brings 376 files to
+377. Historical R1–R97 and the preceding three overview/ledger histories
+remain verbatim; R98 is added. Every previous mathematical note,
+all verifiers and 81 saved reports are unchanged. There is no new
+simulation, optimizer, numerical verifier, sampling calculation or full
+local numerical replay. The existing hosted workflow is checked
+separately against the exact published commit.
+
+## Historical checkpoint: core scientific claim and controlled-reduction comparison
 
 The baseline is commit `ed43b92c234b2be4eebba3150c49de4a5a37178c`, tree
 `00669467d4798faee1c2a9fe70a18a4342d66853`, with successful

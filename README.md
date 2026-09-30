@@ -25,7 +25,20 @@ need for a third state at intermediate precision; only finer precision
 exposes the fourth state required by equilibrium structure. The
 [core argument and source comparison](docs/CONTROL_ACCURACY_CORE_ARGUMENT.md)
 state the exact model-selection rule, assumptions and remaining physical
-question. A finite-bandwidth necessity bound is not yet established.
+question. The finite-pulse result below closes its specified timing test;
+finite ramps remain outside the theorem.
+
+Three experiments now suffice to expose the leading memory requirement:
+hold the low field, hold the high field, and alternate those fields with
+the same total residence time at each. Every reusable two-state model
+obeys an exact multiplication rule for its conditional contrasts. The
+target violates it at order $r^{-1}$; the existing reversible three-state
+model has error $O(r^{-2})$ on this same menu. The
+[finite-pulse proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md)
+specifies $2\lceil r/2\rceil$ segments of duration $1/r$ and a total
+dimensionless horizon below $1+2/r$. Three settings do not mean a fixed
+short pulse sequence. Ideal field jumps and endpoint-only observations
+are retained.
 
 ## Exact state counts
 
@@ -102,14 +115,15 @@ penalty must lie in an interior parameter region. The theorem does not
 establish a large gap there. Its physical lesson is that rare occupation
 can be removed while its transition flux must be retained.
 
-The next analytic test is a specified finite pulse train, with dwell
-lengths proportional to the hidden relaxation time, together with
-held-field calibration. Can every reusable two-state model be shown to
-miss its response at first order, while the existing three-state model
-keeps quadratic accuracy? An explicit finite horizon or pulse count is
-required. This targets a physical timing consequence of the leading
-memory correction. Broad practical significance and device feasibility
-remain unresolved. Manuscript writing is on hold.
+The selected finite-pulse test is complete. The project is now in
+convergence: freeze the physical model, observation contract and theorem
+scope, and consolidate the established core argument and evidence.
+The three-setting result concerns the third predictive state; it does
+not establish fourth-state necessity on that restricted menu. Pulse count
+and physical observation time grow with the rate ratio when the hidden
+rate is fixed. Broad practical significance and device feasibility remain
+unresolved. These are stated limitations, not automatic new research
+branches. Manuscript writing is on hold.
 
 [Core argument](docs/CONTROL_ACCURACY_CORE_ARGUMENT.md) · [Model scope](docs/SCIENTIFIC_CASE.md) · [Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md)
 

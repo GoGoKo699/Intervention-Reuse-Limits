@@ -1,6 +1,56 @@
-# Current work order: PRL exploration before manuscript drafting
+# Current work order: convergence before manuscript drafting
 
-## Current priority: establish a finite-bandwidth consequence of the third predictive state — 30 September 2026
+## Current priority: consolidate the frozen scientific case — 30 September 2026
+
+This continuation starts from published commit
+`49aa0ed9e40440b3465030d4102187986d5326c5`, tree
+`fa704a250b10ba423b4e742484f2a957feeaba50`, with successful
+[CI run 36683894645](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36683894645).
+Preserve all preceding mathematical notes, verifiers, reports, the MIT
+license and historical claim rows R1–R97. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized; manuscript drafting remains last.
+
+**User direction:** this is the convergence phase; do not expand the
+project scope. The agreed finite-pulse analytic gate is now closed by
+R98's [three-experiment theorem](../docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md).
+With $n=\lceil r/2\rceil$, use low and high calibration holds of duration
+$A=n/r$ and the train $(L_{1/r}H_{1/r})^n$. Every two-state reused
+CTMC has contrast multipliers obeying $a_W=a_La_H$. The target violates
+the corresponding relation at order $r^{-1}$; a direct pair-TV argument
+retains arbitrary word preparations and uncapped rates. The existing
+reversible three-state construction gives $O(r^{-2})$ on the same menu.
+There is no simulation, numerical verifier or acquisition calculation.
+
+The pulse duration, $2n$ held segments and dimensionless horizon below
+$1+2/r$ are explicit. At fixed $\Gamma_Z$ the pulse duration is
+$1/\Gamma_Z$ and total time is $2n/\Gamma_Z\sim r/\Gamma_Z$.
+Three experiment settings do not constitute a fixed short sequence.
+This is finite pulse spacing under ideal jumps, not a bounded-Fourier-
+bandwidth or finite-ramp theorem. The menu establishes the third-state
+intermediate-accuracy window; it does not inherit a three-state lower
+or fourth-state necessity from the separate seven-word/all-word tasks.
+
+**Scope freeze:** retain the two-switch heat-bath target, two fields,
+low-equilibrium target preparation, endpoint-only deterministic binary
+readout and fixed reused generators. R92–R93's control/accuracy hierarchy
+remains the main claim; R98 supplies its concrete finite-pulse consequence.
+The exact equilibrium fourth-state result is a separate finer-precision
+statement. Practical hardware/heat savings, finite ramps, detector
+feasibility, a large interior gap and complete priority remain limitations.
+They are not active new research branches.
+
+**Next bounded task:** perform one consistency and presentation pass
+over the established core argument, theorem dependencies, assumptions
+and closest-source comparison. Bring the current entry points into one
+coherent reading path, distinguish proved statements from limitations,
+and state the remaining drafting-readiness blockers. Use the existing
+evidence; do not add a model family, parameter search, pulse optimization,
+sampling refinement or new theorem agenda. Reopen mathematics only for
+a concrete correctness issue in an existing claim. Preserve historical
+proofs and evidence, and keep manuscript writing as the final step.
+
+## Historical priority: establish a finite-bandwidth consequence of the third predictive state — 30 September 2026
 
 This continuation starts from published commit
 `ed43b92c234b2be4eebba3150c49de4a5a37178c`, tree
