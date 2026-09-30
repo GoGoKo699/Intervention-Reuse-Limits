@@ -8,7 +8,42 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: consolidated reading path and drafting status
+## Current checkpoint: full sanity audit of the frozen case
+
+The baseline is commit `aabeade3ef03d22dd4e8be5dfecc89a6e27f33fb`, tree
+`68ebe4191a3dc0e255a273cb35d0cdf42c88362c`, with successful
+[CI run 36687875625](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36687875625).
+The [final sanity audit](FINAL_SANITY_AUDIT.md) records fresh internal
+analytic reviews of the central lower bounds, positive upper models,
+exact boundary, finite-pulse theorem, source distinctions and physical
+assumptions. No blocking mathematical defect was found. This is internal
+review, not external validation or a complete priority certificate.
+
+**Full local verification passed:** `make check` exited zero, with all
+77 mathematical verifiers and four deterministic saved-model replays
+passing. All 81 fresh reports agree with the saved reports in every JSON
+value except Python-version metadata: saved 3.13.5, fresh 3.12.14.
+The exact pinned NumPy, SciPy, SymPy and mpmath versions were used.
+Numerical results and provenance hashes are identical. Saved reports
+were not overwritten, and no optional optimizer or new simulation ran.
+
+The current scientific guide clarifies the crossover wording:
+the all-duration cases $p=1,2$ depend on constants; only $p=2$ is a
+fixed-positive-clock crossover. The audit records a locally defined
+auxiliary notation collision and maps superseded outlook paragraphs
+to the later results that resolved them. Neither finding changes a proof.
+
+Exactly four existing overview/navigation files change and one audit
+note is added, bringing the repository to 378 files. All 373 protected
+baseline files are byte-identical, including every standalone proof,
+verifier, saved report, the MIT license and the full R1–R98 ledger.
+The prior verification and work-order checkpoints remain verbatim apart
+from marking their headings historical. Final scoped checks passed:
+3,455 local Markdown links, math/code-fence balance, all 82 Python syntax
+checks, report provenance, MIT preservation and `git diff --check`.
+Hosted CI is checked separately against the exact published commit.
+
+## Historical checkpoint: consolidated reading path and drafting status
 
 The baseline is commit `cc2df87d17637787dd3ecef58d20cfef8bf7bda4`, tree
 `897ee897c285704b8e892c5cd236c899e0e933f9`, with successful

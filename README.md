@@ -49,6 +49,7 @@ the fourth-state lower belongs to the separate seven-word/all-word task.
 | [Three-experiment proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) | Why held-field responses cannot be reused by any two-state model at the stated accuracy |
 | [All-duration law](docs/FAMILIAR_SWITCH_RAPID_CONTROL.md) and [fixed-clock law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) | How the best attainable error changes with control timing |
 | [Community model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) | Which published kinetic assumptions support the physical target |
+| [Final sanity audit](docs/FINAL_SANITY_AUDIT.md) | Proof review, full reproducibility check, minor clarifications and completion limits |
 
 The physical model, endpoint observation contract and theorem scope are
 frozen. The pre-drafting evidence package is ready for a focused theory

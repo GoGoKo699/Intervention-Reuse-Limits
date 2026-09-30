@@ -65,9 +65,10 @@ counts at tolerance $\epsilon(r)=r^{-p}$:
 A one-state deterministic readout already misses the balanced initial
 sign by TV at least $1/2$. At fixed positive ticks, both classes instead
 need two states for $0<p<2$; for $p>2$ their minima are three and four.
-The cases $p=1,2$ depend on constants. A possible constant-factor
-three-state advantage at the quadratic crossover remains outside the
-order-level statements.
+For the all-duration menu, $p=1,2$ depend on constants; at fixed positive
+ticks only $p=2$ is a crossover. A possible constant-factor three-state
+advantage at the quadratic crossover remains outside the order-level
+statements.
 
 ## 3. The mechanism and its finite witness
 
@@ -143,6 +144,11 @@ assumptions are explicit, and the closest-source distinction is stated at
 the level supported by the existing comparison. The consistency pass found
 stale status prose, which is now marked as historical; it identified no
 unresolved mathematical prerequisite for this bounded claim.
+
+The subsequent [full sanity audit](FINAL_SANITY_AUDIT.md) independently
+reviewed the central proof chain and reran the complete verification
+suite. It found no blocking mathematical defect. Its historical-outlook
+map resolves older open-question language without changing the proofs.
 
 | Remaining issue | Treatment in the frozen case |
 | --- | --- |

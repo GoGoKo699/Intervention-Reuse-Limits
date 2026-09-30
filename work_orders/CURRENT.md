@@ -1,6 +1,45 @@
 # Current work order: convergence before manuscript drafting
 
-## Current status: convergence complete; manuscript writing remains on hold — 30 September 2026
+## Current status: full sanity audit passed; frozen research complete — 30 September 2026
+
+This continuation starts from published commit
+`aabeade3ef03d22dd4e8be5dfecc89a6e27f33fb`, tree
+`68ebe4191a3dc0e255a273cb35d0cdf42c88362c`, with successful
+[CI run 36687875625](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36687875625).
+Preserve the MIT license, all standalone mathematical proofs, verifiers,
+saved reports and historical claim rows R1–R98. Existing authorization
+covers non-forced publication to public main. Collaborator contact is
+not authorized; manuscript writing remains on hold as the final phase.
+
+The [full sanity audit](../docs/FINAL_SANITY_AUDIT.md) is complete.
+Separate internal reviews found no blocking defect in the central
+proof chain, positive constructions, exact boundary or finite-pulse
+result. The complete existing suite passed all 77 mathematical verifiers
+and four deterministic replays. Every fresh report reproduces its saved
+mathematical content exactly; only Python-version metadata differs.
+
+The [scientific guide](../docs/SCIENTIFIC_CASE.md) remains the current
+statement of the claim. Its crossover qualification now explicitly
+distinguishes arbitrary durations from fixed positive clocks. The audit
+maps historical open-question prose to later resolutions and records
+one harmless local notation collision for the eventual manuscript.
+All original proofs and historical evidence remain unchanged.
+
+**Decision:** the frozen theoretical research is complete and the
+evidence package is ready for a focused manuscript. No replacement
+research gate is opened. The closest-source comparison remains bounded,
+including the disclosed Falk full-text gap. Broad significance,
+implementation guarantees and practical savings are not established.
+
+When the final writing phase begins, lead with the controlled prediction
+problem and matched state-count law, then the three-setting witness and
+explicit model constructions. Keep historical numerics attached to
+their original claims; do not turn the volume of checks into a scientific
+argument. Reopen mathematics only for a concrete correctness issue in
+an existing claim. Journal-target discussion stays outside this public
+research record.
+
+## Historical status: convergence complete; manuscript writing remains on hold — 30 September 2026
 
 This continuation starts from published commit
 `cc2df87d17637787dd3ecef58d20cfef8bf7bda4`, tree
