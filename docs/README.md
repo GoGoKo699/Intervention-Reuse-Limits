@@ -56,12 +56,11 @@ tasks. These are supporting boundaries, not extra prerequisites for
 the main narrative.
 
 The [claim ledger](CLAIM_LEDGER.md) preserves R1–R98 and their original
-evidence. Earlier overview and status text is marked as historical in
-the [main page](../README.md), [scientific guide](SCIENTIFIC_CASE.md),
-[publication record](PUBLICATION_SCOPE.md) and
-[work order](../work_orders/CURRENT.md). The
-[tutorial selection record](TUTORIAL_OPTIONS.md) retains the two
-unselected alternatives for reference.
+evidence. The [research history](RESEARCH_HISTORY.md) maps retained proof
+families and exact earlier checkpoints. Repeated status logs have been
+removed from the current reading path; older research priorities remain
+historical. The [tutorial selection record](TUTORIAL_OPTIONS.md) retains
+the two unselected alternatives for reference.
 
 Manuscript drafting remains on hold. The current reading path explains
 the frozen result and does not open a new research phase.
