@@ -40,6 +40,13 @@ expressions and 25 math displays; their delimiters, braces and fences
 were checked, including the absence of literal math pipes in table cells.
 These source checks supplement, rather than replace, live rendering.
 
+The first live GitHub inspection confirmed the README's formulas and
+tables. It exposed two narrative-specific rendering issues: a rejected
+operator-name macro and a truncated inequality containing literal
+less-than signs in a display. Equivalent roman lettering and TeX
+comparison commands replace them; the mathematical content is unchanged.
+The corrected narrative is checked again after the presentation fix.
+
 Six existing presentation/status files change and two reading guides
 are added, bringing the repository to 383 tracked files. All 375 other
 baseline files remain byte-identical, including R1–R98, the bibliography,

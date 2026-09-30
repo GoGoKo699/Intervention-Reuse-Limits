@@ -136,7 +136,7 @@ P_w(s,s')=\pi_0D_sK_wD_{s'}\mathbf1.
 An intermediate record would insert another indicator into the product, creating a different prediction requirement. Error here means total variation of the complete endpoint-pair tables:
 
 ```math
-\operatorname{TV}(P,\widehat P)
+\mathrm{TV}(P,\widehat P)
 =\frac12\sum_{s,s'}\lvert P(s,s')-\widehat P(s,s')\rvert.
 ```
 
@@ -146,7 +146,7 @@ The reversible class additionally requires normalized nonnegative stationary law
 \widehat\pi_H(i)=
 \frac{\widehat\pi_0(i)(1+v\widehat S(i))}
      {1+v\sum_j\widehat\pi_0(j)\widehat S(j)},
-\qquad -1<v<1.
+\qquad -1\lt v\lt1.
 ```
 
 The tilt $`v`$ is unknown and need not equal the target tilt $`u`$. The general class drops detailed balance and the Gibbs premise. These are declared comparison classes, not properties inferred for arbitrary physical devices from endpoint agreement.
@@ -171,12 +171,12 @@ This identity holds for every pair of two-state generators. It requires no estim
 Define the target contrast and multiplication residual by
 
 ```math
-C_w=\frac{\mathbb E[S_{\rm final}\mid S_0=+1]
-             -\mathbb E[S_{\rm final}\mid S_0=-1]}2,
+C_w=\frac{\mathbb E[S_{\mathrm{final}}\mid S_0=+1]
+             -\mathbb E[S_{\mathrm{final}}\mid S_0=-1]}2,
 \qquad F_r=C_{W_r}-C_{L_A}C_{H_A}.
 ```
 
-Balanced target preparation makes $`C_w=\mathbb E[S_0S_{\rm final}]`$. If the rival pair error is at most $`\delta`$, its initial mean has magnitude at most $`2\delta`$. Comparing correlations then gives $`\lvert C_w-a_w\rvert\le4\delta`$, even with word-dependent preparation. Applying this at all three settings yields $`\lvert F_r\rvert\le12\delta`$.
+Balanced target preparation makes $`C_w=\mathbb E[S_0S_{\mathrm{final}}]`$. If the rival pair error is at most $`\delta`$, its initial mean has magnitude at most $`2\delta`$. Comparing correlations then gives $`\lvert C_w-a_w\rvert\le4\delta`$, even with word-dependent preparation. Applying this at all three settings yields $`\lvert F_r\rvert\le12\delta`$.
 
 The scalar slopes multiply even when the full affine propagators do not commute.
 
