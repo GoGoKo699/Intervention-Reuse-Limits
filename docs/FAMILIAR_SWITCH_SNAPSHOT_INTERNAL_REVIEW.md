@@ -18,7 +18,7 @@ Separate derivations checked the biased direct identity and the three high-field
 
 The execution bound transports the initial bit as a fixed label. Target field shifts, active rate changes, timing errors, target/rival preparation TV and initial disturbance are charged separately. A uniform conditional hidden-state kick bound controls the full initial/final joint law. Visible marginal balance and short readout duration do not establish that bound.
 
-The binary symmetric channel inverse has the stated induced norm; its two-bit product yields the lower contraction factor 0.9604 at one-percent noise. Independent electronic flips, no feedback, and one fixed instrument across both protocols are explicit. When different hypotheses may use different calibrated channels, both channel uncertainty budgets are charged. The constructive three-state predictor uses the reference channel and receives the conservative error allowance $4\times10^{-5}$. No uncounted persistent detector memory is admitted.
+The binary symmetric channel inverse has the stated induced norm; its two-bit product yields the lower contraction factor 0.9604 at one-percent noise. Independent electronic flips, no feedback, and one fixed instrument across both protocols are explicit. When different hypotheses may use different calibrated channels, both channel uncertainty budgets are charged. The constructive three-state predictor uses the reference channel and receives the conservative error allowance $`4\times10^{-5}`$. No uncounted persistent detector memory is admitted.
 
 ## 3. Fixed-score tests
 
@@ -30,7 +30,7 @@ Both tests fix their centers, coefficients, gates, allocations and thresholds be
 
 The exponential-moment derivations use bounded independent summands. No asymptotic normal approximation, fitted standard error, simulated power or claimed iid consequence of finite waiting is used. Deterministic calibration bounds remain premises; obtaining them statistically would require an additional confidence budget.
 
-The complete snapshot verifier received independent full-source review and pinned reruns: **168 exact checks passed**, with byte-identical reports. Review aligned the target $a$-gate's center-error charge with the written $1.8\times10^{-12}$ budget and added explicit positive-gap checks before squaring. Neither change altered the published allocations. The final report binds both new snapshot proofs and every inherited prerequisite. The numerical snapshot replay also passed independent full-source review and a byte-identical strict replay against its final proof binding.
+The complete snapshot verifier received independent full-source review and pinned reruns: **168 exact checks passed**, with byte-identical reports. Review aligned the target $`a`$-gate's center-error charge with the written $`1.8\times10^{-12}`$ budget and added explicit positive-gap checks before squaring. Neither change altered the published allocations. The final report binds both new snapshot proofs and every inherited prerequisite. The numerical snapshot replay also passed independent full-source review and a byte-identical strict replay against its final proof binding.
 
 ## 4. Resource and scientific limits
 

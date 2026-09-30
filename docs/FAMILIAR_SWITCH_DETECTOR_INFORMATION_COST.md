@@ -7,10 +7,11 @@ for at most five-percent false rejection and at least 95-percent power.
 When competing models may choose arbitrary independent symmetric
 detector errors, every test with those guarantees needs
 
-$$
- \boxed{\mathbb E_*N>810000\log19\approx2.385\text{ million}.}
- \tag{1}
-$$
+**Equation (1).**
+
+```math
+ \boxed{\mathbb E_*N\gt 810000\log19\approx2.385\text{ million}.}
+```
 
 The lower bound holds even for adaptive protocol selection and an
 almost-surely finite stopping rule. It therefore exceeds the earlier
@@ -27,27 +28,27 @@ Obtaining the calibration itself has a separate, unpriced cost.
 
 ## 1. One target, two competing-model classes
 
-Fix the nominal target with $J=H=\log3$, equal unit attempt rates,
-balanced low-field equilibrium preparation, and clock duration $3/2$
-at each field. A trial applies $0,H$ or $H,0$ and records the initial
+Fix the nominal target with $`J=H=\log3`$, equal unit attempt rates,
+balanced low-field equilibrium preparation, and clock duration $`3/2`$
+at each field. A trial applies $`0,H`$ or $`H,0`$ and records the initial
 and final binary readouts. Both target readout bits have independent
-symmetric error probability exactly $1/100$, fixed across protocols
+symmetric error probability exactly $`1/100`$, fixed across protocols
 and independent of the hidden dynamics. Its true joint tables are the
 ones in the [frozen snapshot certificate](../reports/switch_snapshot_design.json).
 All other execution and instrument errors are zero in this lower-bound
 instance.
 
 This target is covered by the earlier robust calibrated test: that test
-permits each detector error probability to differ from $0.01$ by at most
-$10^{-5}$, alongside its stated physical tolerances. Its corresponding
+permits each detector error probability to differ from $`0.01`$ by at most
+$`10^{-5}`$, alongside its stated physical tolerances. Its corresponding
 ordinary at-most-three-state null obeys the same calibration intervals.
-The proved sufficient allocation is $700000$ trials of $0,H$ and
-$500000$ trials of $H,0$.
+The proved sufficient allocation is $`700000`$ trials of $`0,H`$ and
+$`500000`$ trials of $`H,0`$.
 
 The unknown-detector null retains the same shared-model, preparation,
 reversibility, force-law, and independent symmetric channel structure.
 It permits each rival detector error probability to range over
-$[0,1/2]$, with the two probabilities fixed across protocols. In
+$`[0,1/2]`$, with the two probabilities fixed across protocols. In
 particular, it contains the perfect-detector ordinary model constructed
 below. The target's own one-percent errors remain unchanged. Different
 hypotheses may have different detector parameters; requiring an unknown
@@ -62,51 +63,53 @@ can only preserve this necessary bound.
 
 ## 2. A fixed ordinary comparator with a perfect detector
 
-Use three states, readout $S=(-1,+1,+1)$, and stationary laws
+Use three states, readout $`S=(-1,+1,+1)`$, and stationary laws
 
-$$
+**Equation (2).**
+
+```math
  \pi_0=\left(\frac12,\frac{64436}{10^6},
                        \frac{435564}{10^6}\right),\qquad
  \pi_H(i)=\pi_0(i)\left(1+\frac45S_i\right).
- \tag{2}
-$$
+```
 
-For edge order $(0,1),(0,2),(1,2)$, choose the symmetric stationary
+For edge order $`(0,1),(0,2),(1,2)`$, choose the symmetric stationary
 edge fluxes
 
-| Field | Edge-flux numerators, denominator $10^6$ |
+| Field | Edge-flux numerators, denominator $`10^6`$ |
 |---|---|
-| $0$ | $(41237,38789,22424)$ |
-| $H$ | $(20505,24202,651)$ |
+| $`0`$ | $`(41237,38789,22424)`$ |
+| $`H`$ | $`(20505,24202,651)`$ |
 
-At each field put $Q_{ij}=f_{ij}/\pi_i$ for $i\ne j$ and
-$Q_{ii}=-\sum_{j\ne i}Q_{ij}$. Every edge flux is positive, so these
+At each field put $`Q_{ij}=f_{ij}/\pi_i`$ for $`i\ne j`$ and
+$`Q_{ii}=-\sum_{j\ne i}Q_{ij}`$. Every edge flux is positive, so these
 are irreducible continuous-time generators. The identities
-$\pi_iQ_{ij}=f_{ij}=\pi_jQ_{ji}$ prove ordinary detailed balance.
+$`\pi_iQ_{ij}=f_{ij}=\pi_jQ_{ji}`$ prove ordinary detailed balance.
 Both laws are normalized and have the prescribed tilt, and the largest
-total exit rate is $63661/64436<1$. Use the propagators
-$\exp(3Q_0/2)$ and $\exp(3Q_H/2)$, the same low-field preparation in
+total exit rate is $`63661/64436\lt 1`$. Use the propagators
+$`\exp(3Q_0/2)`$ and $`\exp(3Q_H/2)`$, the same low-field preparation in
 both arms, and a perfect detector.
 
-Let $P_A,P_B$ be the target's one-percent-noisy recorded tables and
-$Q_A,Q_B$ be this comparator's perfect-detector recorded tables. The
+Let $`P_A,P_B`$ be the target's one-percent-noisy recorded tables and
+$`Q_A,Q_B`$ be this comparator's perfect-detector recorded tables. The
 exact matrix-exponential certificate bounds the Taylor majorants by
 
-| Arm | Upper bound for $\frac12\sum_j (P_j-Q_j)^2/\min(P_j,Q_j)$ |
+| Arm | Upper bound for $`\frac12\sum_j (P_j-Q_j)^2/\min(P_j,Q_j)`$ |
 |---|---|
-| $0,H$ | $1110332189/10^{15}$ |
-| $H,0$ | $276614949/250000000000000$ |
+| $`0,H`$ | $`1110332189/10^{15}`$ |
+| $`H,0`$ | $`276614949/250000000000000`$ |
 
 Every table entry is positive and both displayed bounds are strictly
-less than $1/900000$. Normalization cancels the linear term in a Taylor
-expansion of $D(P\Vert Q)$ about $Q$; the diagonal Hessian along the
-line segment is bounded by $1/\min(P_j,Q_j)$. Consequently
+less than $`1/900000`$. Normalization cancels the linear term in a Taylor
+expansion of $`D(P\Vert Q)`$ about $`Q`$; the diagonal Hessian along the
+line segment is bounded by $`1/\min(P_j,Q_j)`$. Consequently
 
-$$
- D(P_A\Vert Q_A)<\frac1{900000},\qquad
- D(P_B\Vert Q_B)<\frac1{900000}.
- \tag{3}
-$$
+**Equation (3).**
+
+```math
+ D(P_A\Vert Q_A)\lt \frac1{900000},\qquad
+ D(P_B\Vert Q_B)\lt \frac1{900000}.
+```
 
 The comparator was selected by a small numerical search and then fixed
 at the rational parameters above. The certificate uses exact rational
@@ -118,20 +121,21 @@ ordinary model.
 
 Consider any test using only the two arms. It may randomize, choose the
 next arm from the preceding data, and stop at an almost-surely finite
-time $N$. Each observation must still be a fresh independent trial with
+time $`N`$. Each observation must still be a fresh independent trial with
 the law of its selected arm. Assume the probability of rejecting every
-admissible ordinary null is at most $0.05$, and that the probability of
-rejection at the fixed target above is at least $0.95$.
+admissible ordinary null is at most $`0.05`$, and that the probability of
+rejection at the fixed target above is at least $`0.95`$.
 
-If $\mathbb E_*N$ is infinite, (1) is immediate. Otherwise, the
+If $`\mathbb E_*N`$ is infinite, (1) is immediate. Otherwise, the
 likelihood chain rule and (3) bound the accumulated target-to-comparator
-relative entropy by $\mathbb E_*N/900000$. Data processing to the
+relative entropy by $`\mathbb E_*N/900000`$. Data processing to the
 binary rejection event bounds that entropy below by
 
-$$
- \operatorname{kl}(0.95,0.05)=0.9\log19.
- \tag{4}
-$$
+**Equation (4).**
+
+```math
+ \mathrm{kl}(0.95,0.05)=0.9\log19.
+```
 
 Combining the two inequalities proves (1). The sequential
 change-of-measure statement is established background: Kaufmann,
@@ -142,14 +146,15 @@ fixed. Waiting for a prescribed time between samples does not itself
 establish these assumptions uniformly over arbitrarily slow rivals.
 
 For the same fixed target, the calibrated test's deterministic total is
-$1200000$. The ratio of the unknown-detector necessary expectation to
+$`1200000`$. The ratio of the unknown-detector necessary expectation to
 that sufficient total is strictly larger than
 
-$$
+**Equation (5).**
+
+```math
  \frac{810000\log19}{1200000}
- =\frac{27}{40}\log19>1.98.
- \tag{5}
-$$
+ =\frac{27}{40}\log19\gt 1.98.
+```
 
 The comparison does not assert that 1.2 million is optimal for calibrated
 detectors, that 2.385 million is attainable without calibration, or that

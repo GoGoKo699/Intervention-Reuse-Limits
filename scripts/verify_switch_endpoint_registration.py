@@ -16,13 +16,13 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_preparation_free.json': 'dc10d2baf22899ef663faa4406d720998771e7c40c4de7ef4e8a7b2a3bed3df1',
+    'reports/switch_preparation_free.json': 'fc66764244870e0930a8b15c28947478f99e223647f916dfe8260c3ad5bd0420',
 }
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md': '41df45ab86d3a005d9dd32497a7329f711bb433a7fe686ae6ee84b931bf615c9',
-    'docs/FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md': '99464fb83b33748c29859f27bbef53b5b8fd7b078b60559978b5bb9d64d087ea',
+    'docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md': '5d5f868688d7d91587ce1fbf39bc1ed88ec24ad8e13bc8d16d6f80f127e1a426',
+    'docs/FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md': 'd289d736bde8d2abf811f8d235563508e7318896bb8380dda7add1f0a699b010',
 }
 CHECKS = 0
 U, B, P_STAR = F(3, 5), F(79, 10**6), F(1, 200000)

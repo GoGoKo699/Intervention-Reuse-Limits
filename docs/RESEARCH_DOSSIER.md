@@ -8,15 +8,15 @@ The [scientific guide](SCIENTIFIC_CASE.md) now supplies the single current readi
 
 ## Convergence checkpoint: a finite three-experiment witness closes the timing gate — 30 September 2026
 
-R98's [analytic proof](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) supplies the missing finite-pulse consequence of the leading hidden lag. Two held calibrations and one train with the same field residence times must obey an exact conditional-contrast product rule in every two-state model. The target's residual is $e^{-\bar c}\chi/r+O(r^{-2})$, with explicit $\chi>0$, giving a preparation-robust lower of its absolute value divided by twelve. The existing reversible three-state construction has $O(r^{-2})$ error on the same menu. All dwells, the $2\lceil r/2\rceil$ segments and the bounded dimensionless horizon are specified; physical duration grows with the rate ratio when the hidden rate is fixed. This is a third-state result under ideal jumps, not a fourth-state lower on the restricted menu or a device-feasibility theorem. The selected analytic gate is closed. The project now freezes model, interface and theorem scope and moves to a bounded consistency/presentation pass over established results and source comparisons. No simulation, optimizer, numerical verifier or new acquisition work is added; manuscript drafting remains last.
+R98's [analytic proof](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) supplies the missing finite-pulse consequence of the leading hidden lag. Two held calibrations and one train with the same field residence times must obey an exact conditional-contrast product rule in every two-state model. The target's residual is $`e^{-\bar c}\chi/r+O(r^{-2})`$, with explicit $`\chi\gt 0`$, giving a preparation-robust lower of its absolute value divided by twelve. The existing reversible three-state construction has $`O(r^{-2})`$ error on the same menu. All dwells, the $`2\lceil r/2\rceil`$ segments and the bounded dimensionless horizon are specified; physical duration grows with the rate ratio when the hidden rate is fixed. This is a third-state result under ideal jumps, not a fourth-state lower on the restricted menu or a device-feasibility theorem. The selected analytic gate is closed. The project now freezes model, interface and theorem scope and moves to a bounded consistency/presentation pass over established results and source comparisons. No simulation, optimizer, numerical verifier or new acquisition work is added; manuscript drafting remains last.
 
 ## Current assessment: control resolution and prediction accuracy select model order — 30 September 2026
 
-The [new core argument](CONTROL_ACCURACY_CORE_ARGUMENT.md) organizes the accumulated results around an attainable accuracy-dependent law. The third state retains the leading lag exposed by rapid control; the equilibrium-specific fourth state becomes necessary at finer, quadratic precision. Its table follows existing lower bounds and positive constructions, without a new calculation. The source audit now explicitly includes preparation-specific classical HMM reduction and Meyer–Brandner's 2026 Floquet weak-memory theorem. A short all-point-preparation argument explains why our restricted three-state predictor does not improve an all-state reduction guarantee. The next question has a concrete test: a finite periodic pulse train at the hidden relaxation scale, combined with held-field calibration, must exclude every reusable two-state model at order $r^{-1}$ to establish a finite-bandwidth consequence. The existing three-state upper would then supply order $r^{-2}$ on that family. That lower, practical impact and complete priority remain open; manuscript drafting remains deferred.
+The [new core argument](CONTROL_ACCURACY_CORE_ARGUMENT.md) organizes the accumulated results around an attainable accuracy-dependent law. The third state retains the leading lag exposed by rapid control; the equilibrium-specific fourth state becomes necessary at finer, quadratic precision. Its table follows existing lower bounds and positive constructions, without a new calculation. The source audit now explicitly includes preparation-specific classical HMM reduction and Meyer–Brandner's 2026 Floquet weak-memory theorem. A short all-point-preparation argument explains why our restricted three-state predictor does not improve an all-state reduction guarantee. The next question has a concrete test: a finite periodic pulse train at the hidden relaxation scale, combined with held-field calibration, must exclude every reusable two-state model at order $`r^{-1}`$ to establish a finite-bandwidth consequence. The existing three-state upper would then supply order $`r^{-2}`$ on that family. That lower, practical impact and complete priority remain open; manuscript drafting remains deferred.
 
 ## Current result: transition flux permits uniform long-time compression — 28 September 2026
 
-The [new trace theorem](FAMILIAR_SWITCH_TRACE_REDUCTION.md) completes the preceding strong-coupling question. The three-state Schur trace retains the conditioned Gibbs family and approximates all nonnegative-field endpoint-pair words with error at most $3(1-t)/2$, uniformly over rates, horizons and switching schedules. One balanced nonstationary preparation is used; the null's arbitrary-preparation freedom is unchanged. Rare occupancy alone supplied only a finite-horizon estimate; retaining its transition flux yields a common invariant error box at the original clock times. The resulting compact-interior corollary closes every parameter-boundary route to a fixed positive equilibrium-specific penalty in the exact general-three-state regime. The remaining scientific issue is the consequence of the exact state hierarchy and precision laws for reusing equilibrium models, with no substantial interior error or device benefit yet proved. Standard trace construction, autonomous compression and exact control reuse are compared with primary sources. No simulation, optimization or new verifier is added.
+The [new trace theorem](FAMILIAR_SWITCH_TRACE_REDUCTION.md) completes the preceding strong-coupling question. The three-state Schur trace retains the conditioned Gibbs family and approximates all nonnegative-field endpoint-pair words with error at most $`3(1-t)/2`$, uniformly over rates, horizons and switching schedules. One balanced nonstationary preparation is used; the null's arbitrary-preparation freedom is unchanged. Rare occupancy alone supplied only a finite-horizon estimate; retaining its transition flux yields a common invariant error box at the original clock times. The resulting compact-interior corollary closes every parameter-boundary route to a fixed positive equilibrium-specific penalty in the exact general-three-state regime. The remaining scientific issue is the consequence of the exact state hierarchy and precision laws for reusing equilibrium models, with no substantial interior error or device benefit yet proved. Standard trace construction, autonomous compression and exact control reuse are compared with primary sources. No simulation, optimization or new verifier is added.
 
 ## Current result: finite-rate feasibility and observable error limits — 28 September 2026
 
@@ -24,7 +24,7 @@ The [new regime proof](FAMILIAR_SWITCH_FINITE_RATE_WINDOW.md) gives analytic upp
 
 ## Current result: a uniform reversible reduction under rapid control — 28 September 2026
 
-The [all-duration theorem](FAMILIAR_SWITCH_RAPID_CONTROL.md) gives a positive three-state reversible path with the correct Gibbs family for every r>0. One exact transformation of conditional means makes its endpoint-pair error at most $(1-\eta)/r=O(r^{-2})$, uniformly over arbitrary finite two-field words and horizons. The preceding seven-word lower supplies the matching Ω(r⁻²). A separate analytic identification argument proves that every reusable two-state continuous-time model has all-word error Ω(r⁻¹), with the old adiabatic upper matching it. Fast control therefore reveals the need to retain a fast internal mode, but does not promote the fourth equilibrium state to a first-order precision requirement. Target low-equilibrium preparation, two fixed fields and endpoint-only observation remain essential scope; finite ramps and additional fields are not covered. No simulation, fitted example or new sampling guarantee is added. The next assessment concerns useful finite-accuracy consequences outside this limit, with physical significance considered before manuscript drafting.
+The [all-duration theorem](FAMILIAR_SWITCH_RAPID_CONTROL.md) gives a positive three-state reversible path with the correct Gibbs family for every r>0. One exact transformation of conditional means makes its endpoint-pair error at most $`(1-\eta)/r=O(r^{-2})`$, uniformly over arbitrary finite two-field words and horizons. The preceding seven-word lower supplies the matching Ω(r⁻²). A separate analytic identification argument proves that every reusable two-state continuous-time model has all-word error Ω(r⁻¹), with the old adiabatic upper matching it. Fast control therefore reveals the need to retain a fast internal mode, but does not promote the fourth equilibrium state to a first-order precision requirement. Target low-equilibrium preparation, two fixed fields and endpoint-only observation remain essential scope; finite ramps and additional fields are not covered. No simulation, fitted example or new sampling guarantee is added. The next assessment concerns useful finite-accuracy consequences outside this limit, with physical significance considered before manuscript drafting.
 
 ## Current result: hidden response fixes the precision scale — 28 September 2026
 
@@ -40,30 +40,30 @@ Earlier checkpoints below retain their original scopes and next-step statements.
 
 **Mathematical review and full local verification passed.**
 The [new proof and fixed comparator](FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md)
-address the unchanged seven-word task $L,L^2,H,LH,HL,L^2H,HL^2$,
-with target coupling $t=1/3$, high tilt $m=7/9$ and unit ticks.
+address the unchanged seven-word task $`L,L^2,H,LH,HL,L^2H,HL^2`$,
+with target coupling $`t=1/3`$, high tilt $`m=7/9`$ and unit ticks.
 An ordinary reversible three-state continuous-time model has strictly
 positive stationary weights and off-diagonal rates, one unknown tilt
-$u=0.768614727605$, and fixed kernels reused in every word. Its seven
+$`u=0.768614727605`$, and fixed kernels reused in every word. Its seven
 preparations have balanced initial signs and may differ by word, as the
 null permits. This is a certified admissible comparator, not a claim
 that it is globally closest.
 
-Let $E_3$ be the infimum of the maximum seven-word ideal pair-law TV
+Let $`E_3`$ be the infimum of the maximum seven-word ideal pair-law TV
 error over ordinary models with at most three total states under the
 unknown-tilt, arbitrary-preparation interface. The exact certificate gives
 
-$$
-\frac3{40006}\le E_3<\frac{86}{10^6},
+```math
+\frac3{40006}\le E_3\lt \frac{86}{10^6},
 \qquad \frac3{40006}\approx74.98875\text{ ppm}.
-$$
+```
 
 The upper/lower ratio is below **1.15**. The lower endpoint follows
-directly from the frozen conditional-return radius $3/20000$ by
-$\delta=\varepsilon/[2(1+\varepsilon)]$. The infimum lower is
+directly from the frozen conditional-return radius $`3/20000`$ by
+$`\delta=\varepsilon/[2(1+\varepsilon)]`$. The infimum lower is
 non-strict. The general two-state composition obstruction and inherited
 general three-state upper give attained minima **three general versus
-four ordinary reversible states through $3/40006$**, while the new
+four ordinary reversible states through $`3/40006`$**, while the new
 ordinary three-state upper makes **both minima three at 86 ppm**.
 
 The comparator also supplies a hard independent subclass within the
@@ -78,9 +78,9 @@ For tests with both errors at most 5%, adaptive word selection from
 completed past trials and stopping between complete pairs, the smallest
 deterministic total cap obeys
 
-$$
+```math
 109{,}880{,}323\le N_{\mathrm{opt}}\le1{,}176{,}000{,}000.
-$$
+```
 
 The existing sufficient design is therefore within a factor **11**.
 The word is selected before current preparation and observation of the
@@ -112,7 +112,7 @@ supplies the current assessment and next step.
 
 **Mathematical review and full local verification passed.**
 The [new theorem and sampling design](FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md)
-use $L,L^2,H,LH,HL,L^2H,HL^2$ at the unchanged nominal two-switch
+use $`L,L^2,H,LH,HL,L^2H,HL^2`$ at the unchanged nominal two-switch
 target. The ordinary rival's Gibbs tilt is unknown. Its preparation may
 vary arbitrarily with the word and trial history, including occupation
 of zero-equilibrium-weight transient states. Every retained state counts;
@@ -123,13 +123,13 @@ The unknown factor cancels between two singleton-return identities.
 The resulting population certificate permits 150 ppm error in each
 conditional return and implies the attained state counts
 
-$$
+```math
 D_{\mathrm{general}}(\delta)=3,\qquad
 D_{\mathrm{ordinary}}(\delta)=4,
 \qquad 0\le\delta\le70\text{ ppm},
-$$
+```
 
-where $\delta$ is the maximum ideal pair-law TV error over the seven
+where $`\delta`$ is the maximum ideal pair-law TV error over the seven
 settings. The general two-state lower also permits arbitrary per-word
 preparation. The inherited general three-state construction and physical
 four-state process attain their uppers using one common preparation,
@@ -139,7 +139,7 @@ The finite design retains 80 million records per word and initial sign.
 It allows 168 million attempted pairs per word, totaling **1.176 billion
 attempts**; incomplete quotas do not certify rejection. Conditional
 registration errors of at most 1 ppm at each endpoint give false rejection
-below $0.040389$. Nominal-target miss is below $0.045261$ when each
+below $`0.040389`$. Nominal-target miss is below $`0.045261`$ when each
 target true-boundary pair law, conditional on the past, is within 5 ppm
 TV of the appropriate nominal law. This target-only condition is not
 a null preparation promise. The initial sign is defined after the
@@ -172,7 +172,7 @@ the current assessment and next step.
 
 **Mathematical review and full local verification passed.**
 The [serial acquisition analysis](FAMILIAR_SWITCH_SERIAL_ACQUISITION.md)
-retains 10 million trials for each of $L,L^2,H,H^2,HL$, or **50 million
+retains 10 million trials for each of $`L,L^2,H,H^2,HL`$, or **50 million
 paired trials**. Independence between trials is replaced by a conditional
 law contract: for every completed-trial history, the next recorded pair
 law lies within 1 ppm TV of one fixed ideal reference family across all
@@ -180,23 +180,23 @@ five settings and all trials. Target and null each need their own fixed
 family. An unconditional or average error guarantee is insufficient.
 
 The unchanged gate and polynomial control false rejection below
-$0.047185$ throughout the ordinary at-most-three-state null with
-$m\in(-1,1)$, and nominal-target miss below $0.024949$. The new result
+$`0.047185`$ throughout the ordinary at-most-three-state null with
+$`m\in(-1,1)`$, and nominal-target miss below $`0.024949`$. The new result
 is a sufficient serial design. Earlier ideal independent-trial lower
 bounds and noisy-detector designs keep their own sampling premises.
 
-For the nominal target, a $24/\Gamma$ zero-field reset gives full-state
-TV at most $\tfrac{\sqrt5}{2}e^{-16}<0.25$ ppm. With one such reset per
+For the nominal target, a $`24/\Gamma`$ zero-field reset gives full-state
+TV at most $`\tfrac{\sqrt5}{2}e^{-16}\lt 0.25`$ ppm. With one such reset per
 trial and the five-setting cycle repeated 10 million times, the serial
 schedule accounts for
 
-$$
+```math
 T_{\mathrm{serial}}=
 \frac{1.28\times10^9}{\Gamma}
 +50\times10^6(T_{\mathrm{initial}}+T_{\mathrm{final}})
 +30\times10^6(t_{\uparrow}+t_{\downarrow})
 +T_{\mathrm{other,nonoverlap}}.
-$$
+```
 
 The terms comprise 50 million resets, 80 million active ticks,
 100 million endpoint windows and 60 million field edges. These are
@@ -229,27 +229,27 @@ the current assessment and next step.
 
 **Mathematical review and full local repository verification passed.** The
 [unknown-tilt acquisition analysis](FAMILIAR_SWITCH_PROFILED_ACQUISITION.md)
-keeps the five settings $L,L^2,H,H^2,HL$ and the nominal physical target.
-It eliminates $m$ using the observed high-field final mean and applies a
+keeps the five settings $`L,L^2,H,H^2,HL`$ and the nominal physical target.
+It eliminates $`m`$ using the observed high-field final mean and applies a
 fixed gate with one scalar degree-six polynomial. The design uses
 10 million independent paired reset trials per setting, **50 million
 total**, with false-rejection and nominal-target-miss bounds below
-$0.044297$ and $0.023080$, respectively. The ordinary at-most-three-state null includes every
-$m\in(-1,1)$, without exact agreement on calibration words. The sufficient
+$`0.044297`$ and $`0.023080`$, respectively. The ordinary at-most-three-state null includes every
+$`m\in(-1,1)`$, without exact agreement on calibration words. The sufficient
 count is twelve times smaller than the prior unknown-tilt confidence-set
 design.
 
 The same analysis supplies a closer fixed rational reversible three-state
-CTMC comparator at $m=7/9$, with small errors on all five words.
+CTMC comparator at $`m=7/9`$, with small errors on all five words.
 Its categorical information bound requires at least **2,849,458 paired
 trials**. This covers fixed-total-budget tests that choose settings
 adaptively from completed past trials, before seeing the current initial
 sign. Because the comparator belongs to the broader unknown-tilt null,
 the lower and upper compare the same ideal testing contract:
 
-$$
+```math
 2{,}849{,}458\le N_{\mathrm{optimal}}\le50{,}000{,}000.
-$$
+```
 
 The sufficient design is within a factor of 18 of the optimal
 deterministic budget. This does not assert an exact optimum or a
@@ -287,29 +287,29 @@ resets and the full instrument and repeated-control contract.
 
 | Test and stated contract | Sufficient paired trials |
 | --- | ---: |
-| Numerical $m=7/9$ score, ideal observations | 100 million |
-| Numerical $m=7/9$ score, 10 ppm per-word recorded-law TV allowance on each side | 125 million |
-| Numerical $m=7/9$ score, known independent 1% binary-symmetric channels at both endpoints plus that residual allowance | 150 million |
-| Separate unknown-$m$ profile, ideal nominal target | 600 million |
+| Numerical $`m=7/9`$ score, ideal observations | 100 million |
+| Numerical $`m=7/9`$ score, 10 ppm per-word recorded-law TV allowance on each side | 125 million |
+| Numerical $`m=7/9`$ score, known independent 1% binary-symmetric channels at both endpoints plus that residual allowance | 150 million |
+| Separate unknown-$`m`$ profile, ideal nominal target | 600 million |
 
-Both false-rejection and target-miss probabilities are below $0.05$.
+Both false-rejection and target-miss probabilities are below $`0.05`$.
 The 10 ppm allowance is relative to one fixed nominal model across
 all words on each side separately; the known detector is part of the
-reference law. The numerical score and unknown-$m$ profile have different
-calibration premises. The latter controls the null for every $-1<m<1$
+reference law. The numerical score and unknown-$`m`$ profile have different
+calibration premises. The latter controls the null for every $`-1\lt m\lt 1`$
 and supplies power at the ideal nominal target.
 
 A fixed-budget information bound requires at least 136,981 trials for
 the ideal experiment. It does not identify an optimal test, allocation
 or sufficient count; the statistical gap remains substantial. The
 10 ppm allowances, sampling uncertainty, R79's 50 ppm population
-tolerance and R78's attained $0.245\%$ error under exact calibration
+tolerance and R78's attained $`0.245\%`$ error under exact calibration
 must remain separately identified.
 
 The separate population certificate covers the common box
-$t\in[33/100,101/300]$, $m\in[77/100,707/900]$ and
-$\tau_L,\tau_H\in[0.99,1.01]$, with low field zero and equal unit
-attempts. Target and rival share the same actual tilt $m$. The certified
+$`t\in[33/100,101/300]`$, $`m\in[77/100,707/900]`$ and
+$`\tau_L,\tau_H\in[0.99,1.01]`$, with low field zero and equal unit
+attempts. Target and rival share the same actual tilt $`m`$. The certified
 counts are exactly three general versus four ordinary reversible states
 through 50 ppm across this box.
 The nominal score's power does not automatically extend across the box.
@@ -338,16 +338,16 @@ active assessment and next step.
 
 Lead with [perfect fixed-field calibration and one-switch
 failure](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md). Two equal-attempt
-heat-bath switches at $\tanh J=1/3$, with fields $0$ and $H=3J$, give
+heat-bath switches at $`\tanh J=1/3`$, with fields $`0`$ and $`H=3J`$, give
 three distinct exact state comparisons:
 
 | Endpoint prediction task | General states | Ordinary reversible states |
 | --- | ---: | ---: |
-| All durations at both constant fields, exactly | $3$ | $3$ |
-| Five settings $L,L^2,H,H^2,HL$, through TV error $1/20000$ | $3$ | $4$ |
-| All finite protocols at the two fields, exactly | $3$ | $4$ |
+| All durations at both constant fields, exactly | $`3`$ | $`3`$ |
+| Five settings $`L,L^2,H,H^2,HL`$, through TV error $`1/20000`$ | $`3`$ | $`4`$ |
+| All finite protocols at the two fields, exactly | $`3`$ | $`4`$ |
 
-Here each letter is a unit-duration pulse, and $HL$ means high field
+Here each letter is a unit-duration pulse, and $`HL`$ means high field
 followed by zero field. All settings use one zero-field preparation and
 one deterministic binary readout, with no intermediate observation.
 Ordinary rivals retain the common Gibbs stationary tilt. The lower
@@ -356,9 +356,9 @@ imbalance and unused zero-mass states; it imposes neither a rate cap nor
 continuous-time embedding. Explicit upper constructions are CTMCs.
 
 The sharper conditional statement requires exact agreement on just
-$L,L^2,H,H^2$: among every ordinary rival with at most three states, the
-minimum $HL$ pair-law TV error is $0.002451868563\ldots$, approximately
-$0.245\%$. An explicit rational reversible CTMC attains the minimum
+$`L,L^2,H,H^2`$: among every ordinary rival with at most three states, the
+minimum $`HL`$ pair-law TV error is $`0.002451868563\ldots`$, approximately
+$`0.245\%`$. An explicit rational reversible CTMC attains the minimum
 while matching all constant-field durations. Its field-dependent hidden
 coordinate gives a concrete explanation of why calibrated dynamics
 cannot be reused. The construction extends to all nonnegative constant
@@ -366,10 +366,10 @@ fields, but the switched lower needs only the two registered fields.
 
 The robust five-setting comparison is a separate result. The observable
 conditional-covariance identity excludes every ordinary three-state rival
-within maximum TV error $1/20000=50$ ppm across all five laws. An
+within maximum TV error $`1/20000=50`$ ppm across all five laws. An
 independent two-state composition obstruction gives the general lower;
 the general three-state and physical four-state constructions attain the
-respective upper counts. The sharp $0.245\%$ switched error is conditional
+respective upper counts. The sharp $`0.245\%`$ switched error is conditional
 on exact calibration and is not the optimal uniform approximation error.
 No statistical acquisition budget follows automatically from either number.
 
@@ -404,20 +404,20 @@ frontier](FAMILIAR_CHAIN_PRECISION_FRONTIER.md). Two opposite protocol
 orders determine cross-Gram matrices with different Gibbs weights;
 their explicit combination isolates the two visible-sign sectors.
 Sector ranks give the ordinary reversible lower, and the full observable
-matrix gives the general Markov lower. Only $2n(n-1)$ endpoint-pair
+matrix gives the general Markov lower. Only $`2n(n-1)`$ endpoint-pair
 settings are needed, or twelve for three switches. The standard
 Hankel-rank and sector-factorization ingredients are attributed in the
 [source comparison](FAMILIAR_CHAIN_PRECISION_FRONTIER.md#5-established-tools-contribution-and-remaining-significance).
 
-At the existing three-switch operating point $t=1/3$, tilts $0,1/2$ and
+At the existing three-switch operating point $`t=1/3`$, tilts $`0,1/2`$ and
 clock one, exact rational certificates establish the following state
-minima at maximum pair-law TV error $\delta$:
+minima at maximum pair-law TV error $`\delta`$:
 
 | Accuracy | General states | Ordinary reversible states |
 | --- | ---: | ---: |
-| $0\le\delta\le2\times10^{-6}$ | Exactly $4$ | Exactly $6$ |
-| $3.6\times10^{-6}\le\delta\le3.8\times10^{-6}$ | Exactly $4$ | Exactly $5$ |
-| $\delta=2\times10^{-5}$ | At most $4$ | Exactly $4$ |
+| $`0\le\delta\le2\times10^{-6}`$ | Exactly $`4`$ | Exactly $`6`$ |
+| $`3.6\times10^{-6}\le\delta\le3.8\times10^{-6}`$ | Exactly $`4`$ | Exactly $`5`$ |
+| $`\delta=2\times10^{-5}`$ | At most $`4`$ | Exactly $`4`$ |
 
 The twelve-setting menu is a subset of the preceding sixteen-setting
 task. The lower certificates use twelve settings, and the upper models
@@ -427,8 +427,8 @@ four-state lower is asserted in the final row.
 
 For both menus, the best error among ordinary reversible models with at
 most five states satisfies
-$2\times10^{-6}\le E_{\le5}<3.6\times10^{-6}$. The explicit five-state
-CTMC therefore achieves error within a factor of $1.8$ of the best
+$`2\times10^{-6}\le E_{\le5}\lt 3.6\times10^{-6}`$. The explicit five-state
+CTMC therefore achieves error within a factor of $`1.8`$ of the best
 possible error, even when the lower-bound class includes arbitrary
 reversible stochastic tick kernels. Common preparation, deterministic
 binary readout and the shared Gibbs force remain substantive. The lower
@@ -460,25 +460,25 @@ the current section above.
 ## Historical result: two fields and a certified approximation interval — 28 September 2026
 
 The [new two-field argument](FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md) simplifies
-the exact reversible lower bound to $2(n^2-1)$ endpoint-pair settings.
+the exact reversible lower bound to $`2(n^2-1)`$ endpoint-pair settings.
 Each sign sector gets its own reference field. The observable inequality
-$W_s=c_sA_s-N_s\preceq c_sA_s$, with $N_s\succeq0$, forces $n$ states
-in that sector whenever $W_s$ is positive definite. This retains the
+$`W_s=c_sA_s-N_s\preceq c_sA_s`$, with $`N_s\succeq0`$, forces $`n`$ states
+in that sector whenever $`W_s`$ is positive definite. This retains the
 existing physical model and Gibbs convention without a third field or
 a common reconstructed hidden-coordinate lift.
 
-At three switches, $t=1/3$, tilts $0,1/2$ and a unit clock, exact rational
+At three switches, $`t=1/3`$, tilts $`0,1/2`$ and a unit clock, exact rational
 certificates give four general versus six reversible states for menu TV
-error through $10^{-6}$. There are sixteen settings, at most four ticks
+error through $`10^{-6}`$. There are sixteen settings, at most four ticks
 and two segments. The lower permits arbitrary reversible stochastic
 kernels, initial sign imbalance, zero masses and unbounded rival rates.
 
 The same comparison also has an explicit four-state reversible
-approximation: a physical two-spin chain with hidden attempt rate $5/6$.
-Its menu error is below $1/3000$, and its error on every nonnegative-field
-word and horizon is below $1/600$. These upper and lower bounds concern
+approximation: a physical two-spin chain with hidden attempt rate $`5/6`$.
+Its menu error is below $`1/3000`$, and its error on every nonnegative-field
+word and horizon is below $`1/600`$. These upper and lower bounds concern
 the same preparation/readout/force conventions. They leave
-$10^{-6}\le E_{\le5}<1/3000$ unresolved.
+$`10^{-6}\le E_{\le5}\lt 1/3000`$ unresolved.
 
 Both proofs and rational certificates passed independent internal review,
 including a separately built physical-generator cross-check. The tools
@@ -497,29 +497,29 @@ and exhaustive priority remain open. Manuscript drafting remains last.
 ## Historical result: sharp state counts and an unavoidable accuracy boundary — 28 September 2026
 
 The [sharp chain assessment](FAMILIAR_CHAIN_SHARPNESS.md) is now the lead.
-For every $n\ge3$, the homogeneous heat-bath chain at any fixed
-$0<t=\tanh J\le1/64$ has exact controlled endpoint-pair state minima
-$D_{\rm all}=n+1$ and $D_{\rm ord}=2n$. The comparison uses one common
+For every $`n\ge3`$, the homogeneous heat-bath chain at any fixed
+$`0\lt t=\tanh J\le1/64`$ has exact controlled endpoint-pair state minima
+$`D_{\rm all}=n+1`$ and $`D_{\rm ord}=2n`$. The comparison uses one common
 zero-field preparation, the Gibbs force interface, and nonnegative field
-tilts in $[0,1/2]$. It holds for all words and on the existing finite
+tilts in $`[0,1/2]`$. It holds for all words and on the existing finite
 three-field menu. The interval of allowed couplings does not shrink
 with length.
 
 The new [reversible construction](FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md)
-uses $n$ moment nodes of each visible sign, a cosine basis and freely
+uses $`n`$ moment nodes of each visible sign, a cosine basis and freely
 chosen relaxation on the unused modes. It has strictly positive rates,
-uniform zero-field masses and exit rates at most $33/32$. Its upper
-bound alone permits signed tilts in $[-1/2,1/2]$. The older $t=1/3$
+uniform zero-field masses and exit rates at most $`33/32`$. Its upper
+bound alone permits signed tilts in $`[-1/2,1/2]`$. The older $`t=1/3`$
 three-switch four-versus-six example remains valid and stronger at that
 particular operating point.
 
 The companion [accuracy theorem](FAMILIAR_CHAIN_FINITE_ACCURACY.md) is
 central to the assessment. Truncating any homogeneous chain to its first
-$\ell\ge2$ spins gives endpoint-pair TV error at most
-$t^{2\ell}/(1-t^4)$, uniformly over every signed boundary-field word and
-horizon. At $t\le1/64$, four reversible states approximate every length
-within $6\times10^{-8}$. Any threshold certifying the exact $2n$ count
-is at most $t^{2n-2}/(1-t^4)$, so decreasing tolerance with length is
+$`\ell\ge2`$ spins gives endpoint-pair TV error at most
+$`t^{2\ell}/(1-t^4)`$, uniformly over every signed boundary-field word and
+horizon. At $`t\le1/64`$, four reversible states approximate every length
+within $`6\times10^{-8}`$. Any threshold certifying the exact $`2n`$ count
+is at most $`t^{2n-2}/(1-t^4)`$, so decreasing tolerance with length is
 unavoidable. Exact sharpness does not establish a growing state cost at
 fixed accuracy or an extensive bit-memory advantage.
 
@@ -542,24 +542,24 @@ remains last.
 ## Historical result: equilibrium consistency costs states across an open chain — 28 September 2026
 
 The [chain assessment](FAMILIAR_CHAIN_CONTROL_COST.md) is now the lead.
-For every $n\ge3$, the homogeneous open heat-bath chain with
-$0<\tanh J\le1/\sqrt5$ has an explicit $(n+1)$-state positive predictor
+For every $`n\ge3`$, the homogeneous open heat-bath chain with
+$`0\lt \tanh J\le1/\sqrt5`$ has an explicit $`(n+1)`$-state positive predictor
 for all controlled endpoint-pair laws under finite nonnegative fields.
-Its exit rates are bounded by $13/12$ independently of chain length.
+Its exit rates are bounded by $`13/12`$ independently of chain length.
 One preparation and the same stationary Gibbs tilt serve every field.
 
 Requiring ordinary detailed balance with that force interface needs at
-least $2n$ states, including at least $n$ states of each visible sign.
+least $`2n`$ states, including at least $`n`$ states of each visible sign.
 The [finite proof](FAMILIAR_CHAIN_REVERSIBLE_BOUND.md) uses three field
-values, $2(n-1)(n+2)$ pair settings, at most two segments, and at most
-$2n-2$ ticks. It covers nonminimal rivals and arbitrary reversible
+values, $`2(n-1)(n+2)`$ pair settings, at most two segments, and at most
+$`2n-2`$ ticks. It covers nonminimal rivals and arbitrary reversible
 stochastic tick kernels. Its explicit positive TV radius needs no minimum
 stationary mass or rate cap, but depends on the chosen instance.
 
-At three switches, $t=1/3$ and three tilts in $[0,1/2]$, an
+At three switches, $`t=1/3`$ and three tilts in $`[0,1/2]`$, an
 [explicit reversible construction](FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md)
 gives the matching six-state upper: **four versus six**, already on twenty
-settings of at most four ticks. All passive pairs have minimum $n+1$ in
+settings of at most four ticks. All passive pairs have minimum $`n+1`$ in
 both classes by the [standard inverse spectral construction](FAMILIAR_CHAIN_PASSIVE_REALIZATION.md).
 
 The [source audit](FAMILIAR_CHAIN_SOURCE_AUDIT.md) attributes the standard
@@ -568,7 +568,7 @@ shared realization and positive-realization results. The contribution is
 the controlled family theorem and its finite obstruction, not mean closure
 or a new general matrix inequality. Exhaustive priority and publication
 significance are not certified. The next structural question is whether
-$2n$ is attainable for longer chains or a stronger obstruction is needed.
+$`2n`$ is attainable for longer chains or a stronger obstruction is needed.
 The proved ratio approaches two in states; no extensive bit-memory saving,
 full-path equivalence, dissipation advantage or device feasibility follows.
 Manuscript drafting remains last.
@@ -587,9 +587,9 @@ pair marginals are retained. A model of endpoint pairs is therefore not
 automatically a model after intermediate observations.
 
 The [signed-control theorem](FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md)
-proves an exact threshold: with $t=\tanh J$, $u=\tanh H$, and attempt
-ratio $r=\Gamma_Z/\Gamma_S>0$, three states suffice exactly when
-$(r+2)t^2u^2+(1+t^2)u\le r$. Above it, even the general class needs
+proves an exact threshold: with $`t=\tanh J`$, $`u=\tanh H`$, and attempt
+ratio $`r=\Gamma_Z/\Gamma_S\gt 0`$, three states suffice exactly when
+$`(r+2)t^2u^2+(1+t^2)u\le r`$. Above it, even the general class needs
 four. Ordinary reversible models always need four for positive coupling
 and field. The linear mean dimension stays three across the threshold.
 The criterion is equivalent for all signed-field endpoint protocols and
@@ -621,83 +621,83 @@ closure with a positive Markov upper. Manuscript drafting stays last.
 
 **Owner's physical-model requirement, 24 September 2026.** The next step is to ground the target, controls, measurement and rival comparison in one independently established community model. A favorable accepted idealization is allowed; adding unsupported physical capabilities to rescue a theorem is not. The [assumption ledger](PHYSICAL_ASSUMPTION_ALIGNMENT.md) distinguishes published physics, derived specializations, our numerical design choices and operational premises still needing justification. This model comparison precedes further device feasibility engineering. Existing conditional results remain unchanged; manuscript drafting remains last.
 
-**Planning record, 24 September 2026.** The new [endpoint-registration theorem](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md) measures the initial sign after acquisition and the final sign before acquisition. Arbitrary initial measurement dynamics then join the rival's arbitrary preparation. A known conditional endpoint-error bound $5\times10^{-6}$ replaces exact protection, fixed symmetric electronics and repeated-read freshness. A finite integrating detector supplies a sufficient signal/noise/leakage contract, including switching time; its demanding numerical specification is not a device result. The [relative-force theorem](FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md) permits residual likelihood-ratio spread $1.001$ without a stationary-mass floor. The same nine-million-trial test has size below $4\%$ and target miss below $1.4\%$, using 18 million integration windows and binary decisions. Ideal four-pair state minima remain three versus four through TV $.0009$. Target postmeasurement marginal preparation, fixed active dynamics and calibrated conditional bounds remain substantive. Manuscript drafting stays last; device feasibility and a complete priority comparison remain open.
+**Planning record, 24 September 2026.** The new [endpoint-registration theorem](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md) measures the initial sign after acquisition and the final sign before acquisition. Arbitrary initial measurement dynamics then join the rival's arbitrary preparation. A known conditional endpoint-error bound $`5\times10^{-6}`$ replaces exact protection, fixed symmetric electronics and repeated-read freshness. A finite integrating detector supplies a sufficient signal/noise/leakage contract, including switching time; its demanding numerical specification is not a device result. The [relative-force theorem](FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md) permits residual likelihood-ratio spread $`1.001`$ without a stationary-mass floor. The same nine-million-trial test has size below $`4\%`$ and target miss below $`1.4\%`$, using 18 million integration windows and binary decisions. Ideal four-pair state minima remain three versus four through TV $`.0009`$. Target postmeasurement marginal preparation, fixed active dynamics and calibrated conditional bounds remain substantive. Manuscript drafting stays last; device feasibility and a complete priority comparison remain open.
 
 ## Historical advance: register the actual active boundaries
 
 The initial oracle sign is the sign of the state entering the active word, after the entire acquisition operation; the final oracle sign is taken immediately when the word ends, before the final acquisition. Conditional on a singleton initial sign, any preceding disturbance disappears from the ordinary model's conditional response. The detector only needs to identify these boundaries with a known uniform conditional error bound. This is a calibrated alternative to the previous unknown-fixed-error repetition scheme, not an automatic enlargement of that scheme's detector class.
 
-One finite integration window per endpoint is sufficient under a signal floor $g>0$, continuous noise martingale with quadratic variation at most $vT$, and whole-acquisition sign-change probability $\Lambda$. The bound is $e^{-g^2T/(2v)}+\Lambda$. Taking $T=32v/g^2$ and $\Lambda\le4\times10^{-6}$ gives endpoint error below $5\times10^{-6}$. Integration duration and total acquisition span must be distinguished: barrier ramps, settling and release consume the same leakage budget. Hidden-charge offsets and asymmetric noise are allowed within the uniform bounds. Average histogram fidelity, small observed jump counts and unspecified colored noise do not establish them.
+One finite integration window per endpoint is sufficient under a signal floor $`g\gt 0`$, continuous noise martingale with quadratic variation at most $`vT`$, and whole-acquisition sign-change probability $`\Lambda`$. The bound is $`e^{-g^2T/(2v)}+\Lambda`$. Taking $`T=32v/g^2`$ and $`\Lambda\le4\times10^{-6}`$ gives endpoint error below $`5\times10^{-6}`$. Integration duration and total acquisition span must be distinguished: barrier ramps, settling and release consume the same leakage budget. Hidden-charge offsets and asymmetric noise are allowed within the uniform bounds. Average histogram fidelity, small observed jump counts and unspecified colored noise do not establish them.
 
-The initial target operation now needs only the full-channel marginal bound $\operatorname{TV}(\pi D,\pi)\le10^{-5}$. Symmetric barrier changes at fixed energies preserve $\pi$ even with rare visible jumps, giving a concrete mathematical target construction. The actual post-acquisition true pair still has conditional reference budget $79\times10^{-6}$; its recorded pair differs by at most $.000089$. This supplies a per-trial three-state approximation, not a full serial or analog-record state minimum.
+The initial target operation now needs only the full-channel marginal bound $`\mathrm{TV}(\pi D,\pi)\le10^{-5}`$. Symmetric barrier changes at fixed energies preserve $`\pi`$ even with rare visible jumps, giving a concrete mathematical target construction. The actual post-acquisition true pair still has conditional reference budget $`79\times10^{-6}`$; its recorded pair differs by at most $`.000089`$. This supplies a per-trial three-state approximation, not a full serial or analog-record state minimum.
 
-Residual stationary reweighting beyond the nominal Gibbs tilt may have maximum/minimum ratio $1.001$. Its singleton residual ceiling is $.0004$, independent of rare stationary weights. A three-state finite-CTMC counterexample shows that arbitrarily small unweighted stationary-law TV error can instead coexist with fixed nonzero return residuals under arbitrary preparation; an irreducible extension preserves the obstruction. This identifies why relative force control is the relevant assumption.
+Residual stationary reweighting beyond the nominal Gibbs tilt may have maximum/minimum ratio $`1.001`$. Its singleton residual ceiling is $`.0004`$, independent of rare stationary weights. A three-state finite-CTMC counterexample shows that arbitrarily small unweighted stationary-law TV error can instead coexist with fixed nonzero return residuals under arbitrary preparation; an irreducible extension preserves the obstruction. This identifies why relative force control is the relevant assumption.
 
-The same nine million cyclic trials and first-million sign quotas retain false rejection below $4\%$ and target miss below $1.4\%$. There are 18 million integrating windows/decisions, not 18 million analog samples. With target attempt frequency $\Gamma$ and common integration time $T$, reset plus active evolution plus integration costs $583875000/\Gamma+18000000T$ seconds, before other overhead. The [eight-source audit](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_SOURCE_AUDIT.md) supports separate component precedents; it does not establish this combined specification. [Internal review](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_INTERNAL_REVIEW.md) and [certificate](../reports/switch_endpoint_registration.json) keep the analytic and finite-check evidence distinct.
+The same nine million cyclic trials and first-million sign quotas retain false rejection below $`4\%`$ and target miss below $`1.4\%`$. There are 18 million integrating windows/decisions, not 18 million analog samples. With target attempt frequency $`\Gamma`$ and common integration time $`T`$, reset plus active evolution plus integration costs $`583875000/\Gamma+18000000T`$ seconds, before other overhead. The [eight-source audit](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_SOURCE_AUDIT.md) supports separate component precedents; it does not establish this combined specification. [Internal review](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_INTERNAL_REVIEW.md) and [certificate](../reports/switch_endpoint_registration.json) keep the analytic and finite-check evidence distinct.
 
 ## The four-word core: conditioning replaces rival preparation
 
-Write $r_{w,s}=\Pr(S_f=s\mid S_i=s,w)$. An ordinary model with at most three states and both visible signs has a singleton sector $s$. Sign-preserving initial observation leaves its hidden state fixed. For arbitrary per-word and history-dependent preparation,
+Write $`r_{w,s}=\Pr(S_f=s\mid S_i=s,w)`$. An ordinary model with at most three states and both visible signs has a singleton sector $`s`$. Sign-preserving initial observation leaves its hidden state fixed. For arbitrary per-word and history-dependent preparation,
 
-$$
+```math
  (1-su)r_{0H,s}-(1+su)r_{H0,s}+2su r_{0,s}r_{H,s}=0.
-$$
+```
 
-No balanced rival equilibrium, rival mixing estimate, stationary-mass lower bound or stationary rival instrument is needed. Strictly positive stationary laws, exact Gibbs tilt and the same two field kernels remain required. At the stationary target, both signed residual magnitudes exceed $.009$ over the independent one-percent edge box. The added single-word correlations are $a=1-m/u$ and $x=(\ell+ud)/u$, precisely the two coordinates already fitted by the general three-state construction. This is a stronger experimental comparison using the same conditional-covariance mechanism.
+No balanced rival equilibrium, rival mixing estimate, stationary-mass lower bound or stationary rival instrument is needed. Strictly positive stationary laws, exact Gibbs tilt and the same two field kernels remain required. At the stationary target, both signed residual magnitudes exceed $`.009`$ over the independent one-percent edge box. The added single-word correlations are $`a=1-m/u`$ and $`x=(\ell+ud)/u`$, precisely the two coordinates already fitted by the general three-state construction. This is a stronger experimental comparison using the same conditional-covariance mechanism.
 
-Nine million trials cycle through the four words. Each word/sign group retains its first million observations. Missing quotas imply nonrejection; completed groups reject only when $\widehat R_->.004$ and $\widehat R_+<-.004$. Stopped martingale bounds handle serial dependence without conditioning on successful completion. The target reference-pair execution budget is $79\times10^{-6}$ after every history. It applies only to target power, never to the rival null.
+Nine million trials cycle through the four words. Each word/sign group retains its first million observations. Missing quotas imply nonrejection; completed groups reject only when $`\widehat R_-\gt .004`$ and $`\widehat R_+\lt -.004`$. Stopped martingale bounds handle serial dependence without conditioning on successful completion. The target reference-pair execution budget is $`79\times10^{-6}`$ after every history. It applies only to target power, never to the rival null.
 
-With seven protected reads per endpoint, a disagreement gate at each stage handles unknown rival error rates in $[0,1/2]$. Under the low-error case, a deterministic comparison of noisy and true-sign retained lists controls selection errors; the null needs no stationary preparation even when measurement errors correlate with hidden kicks. The 126-million-read construction is sufficient, not an optimized or practical budget. Only the four ideal binary pair laws have the exact three-state upper; the extra calibration transcript has no claimed state minimum.
+With seven protected reads per endpoint, a disagreement gate at each stage handles unknown rival error rates in $`[0,1/2]`$. Under the low-error case, a deterministic comparison of noisy and true-sign retained lists controls selection errors; the null needs no stationary preparation even when measurement errors correlate with hidden kicks. The 126-million-read construction is sufficient, not an optimized or practical budget. Only the four ideal binary pair laws have the exact three-state upper; the extra calibration transcript has no claimed state minimum.
 
 [Proof and certificate](FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md) · [Readout proof](FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md) · [Source comparison](FAMILIAR_SWITCH_PREPARATION_FREE_SOURCE_AUDIT.md) · [Internal review](FAMILIAR_SWITCH_PREPARATION_FREE_INTERNAL_REVIEW.md).
 
 ## 1. Recommended scientific focus and result hierarchy
 
-Start with the [two-switch structure theorem](FAMILIAR_SWITCH_STRUCTURE.md). For every finite ferromagnetic coupling $J>0$ and positive queried field $H$, equal-rate heat-bath dynamics on two time-even conformational switches have exact total-state minima $D_{\rm all}=3$ and $D_{\rm ord}=4$. The rival class fixes the Gibbs stationary tilt $\pi_h\propto\pi_0e^{hS}$, a deterministic binary readout and balanced zero-field preparation; it imposes no hidden architecture or rival rate cap. Detailed balance forces a latent coordinate to have positive conditional variance in both readout sectors, so each sector needs two states.
+Start with the [two-switch structure theorem](FAMILIAR_SWITCH_STRUCTURE.md). For every finite ferromagnetic coupling $`J\gt 0`$ and positive queried field $`H`$, equal-rate heat-bath dynamics on two time-even conformational switches have exact total-state minima $`D_{\rm all}=3`$ and $`D_{\rm ord}=4`$. The rival class fixes the Gibbs stationary tilt $`\pi_h\propto\pi_0e^{hS}`$, a deterministic binary readout and balanced zero-field preparation; it imposes no hidden architecture or rival rate cap. Detailed balance forces a latent coordinate to have positive conditional variance in both readout sectors, so each sector needs two states.
 
-The [direct snapshot theorem](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) uses the two chronological words $0H,H0$, both from one shared low-field preparation. Record the initial and final binary conformation. If their final means and correlations are $(m,c,\ell,d)$, every ordinary model with at most three states obeys at least one identity
+The [direct snapshot theorem](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) uses the two chronological words $`0H,H0`$, both from one shared low-field preparation. Record the initial and final binary conformation. If their final means and correlations are $`(m,c,\ell,d)`$, every ordinary model with at most three states obeys at least one identity
 
-$$
+```math
  u(c-d)+\sigma[(u-m)\ell-umd]=0,\qquad \sigma\in\{-1,1\}.
-$$
+```
 
-The expression is proportional to a conditional covariance of two response propensities in the readout sector $S=\sigma$. A singleton sector cannot carry this covariance. The target has nonzero covariance in both sectors, while a positive three-state model reproduces the two joint laws through matching conditional initial coordinates and closed mean equations. This is equality of two-time laws, not of complete paths.
+The expression is proportional to a conditional covariance of two response propensities in the readout sector $`S=\sigma`$. A singleton sector cannot carry this covariance. The target has nonzero covariance in both sectors, while a positive three-state model reproduces the two joint laws through matching conditional initial coordinates and closed mean equations. This is equality of two-time laws, not of complete paths.
 
 **Earlier supporting result: observable preparation and its cost.** The
 [new preparation theorem](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md)
-applies to a fixed stochastic kernel $K$ on at most three states,
-stationary law $\pi$, deterministic binary readout $S$, and arbitrary
-preparation $\nu$. Let $v=\pi S$, $b=\nu S$, $a=\nu KS$,
-$r=1-\nu SKS>0$, $|v|\le V<1$, and let $f$ have oscillation
-$L$. With $C_V=(1+V)/(1-V)$, it proves
+applies to a fixed stochastic kernel $`K`$ on at most three states,
+stationary law $`\pi`$, deterministic binary readout $`S`$, and arbitrary
+preparation $`\nu`$. Let $`v=\pi S`$, $`b=\nu S`$, $`a=\nu KS`$,
+$`r=1-\nu SKS\gt 0`$, $`|v|\le V\lt 1`$, and let $`f`$ have oscillation
+$`L`$. With $`C_V=(1+V)/(1-V)`$, it proves
 
-$$
+```math
  |(\nu-\pi)f|\le\frac{4C_V}{r}
  \left[|\nu(K-I)f|+\frac L2|a-b|\right]
  +\frac{L}{1-V}|b-v|.
-$$
+```
 
-The imbalance term is not amplified by $1/r$. The result controls
+The imbalance term is not amplified by $`1/r`$. The result controls
 specified response biases, without a reversible-kernel assumption,
 rival rate cap, stationary mass floor or hidden-state mixing estimate.
 It does not certify full hidden-state TV.
 
 The observable implementation uses five types: the two original words,
 a low calibration pair and two low-prefixed words. Its initial
-instrument $D$ must exactly preserve both the visible sectors and
-$\pi$, and its fixed symmetric electronic errors must be independent
-of the hidden update. Each prefix applies the same $D$ silently before
-the low evolution $P$, so the measured calibration kernel is $K=DP$.
+instrument $`D`$ must exactly preserve both the visible sectors and
+$`\pi`$, and its fixed symmetric electronic errors must be independent
+of the hidden update. Each prefix applies the same $`D`$ silently before
+the low evolution $`P`$, so the measured calibration kernel is $`K=DP`$.
 The extra instrument operation, low wait and protocol types are counted
 resources. The earlier nonzero joint-instrument allowance is not
 automatically covered by this exact structural contract.
 
-An original observed pair correlation at least $.45$ in magnitude and
-low-pair correlation at most $.15$ give $r\ge2/3$ even with unknown
-detector contrasts. At $V=10^{-4}$, the resulting score correction has
-coefficients approximately $6.0012$ on the summed response drift,
-$11.2823$ on the low final mean and $33.4281$ on the low initial mean.
-Its conservative zero-data floor is $94/249975\simeq.00037604$.
+An original observed pair correlation at least $`.45`$ in magnitude and
+low-pair correlation at most $`.15`$ give $`r\ge2/3`$ even with unknown
+detector contrasts. At $`V=10^{-4}`$, the resulting score correction has
+coefficients approximately $`6.0012`$ on the summed response drift,
+$`11.2823`$ on the low final mean and $`33.4281`$ on the low initial mean.
+Its conservative zero-data floor is $`94/249975\simeq.00037604`$.
 Separate moment bounds are needed to localize the stationary reference
 before using the existing ordinary score ceiling.
 
@@ -708,13 +708,13 @@ then estimate responses of one common pathwise averaged preparation.
 This remains valid for history-dependent preparations and does not
 condition on the final random averaged law. With its fixed allocation,
 **60 billion trials and 120 billion recorded bits** give simultaneous
-absolute precision $.001$ for eight corrected scalar functionals with
+absolute precision $`.001`$ for eight corrected scalar functionals with
 probability above 96%. This conservative sufficient construction is
 12,000 times the old five-million trial count, but it is neither a
 necessary calibration cost nor a complete size/power theorem. Guard
 confidence, stationary localization, target acceptance, approximate
 instrument errors and the enlarged physical error budget remain open.
-The earlier $.0002$ approximation allowance and three-state upper do
+The earlier $`.0002`$ approximation allowance and three-state upper do
 not transfer to the added data.
 
 The [readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md)
@@ -722,7 +722,7 @@ uses three ordinary reversible states at the same fields and active
 dwells. Arbitrary immediate repeat-readout, all low-only records and
 stationary endpoint-insertion checks agree with ideal independent
 electronics, while an error-correlated hidden kick changes the two
-snapshot tables by TV $1/4800$ each. It is not a fit to the selected
+snapshot tables by TV $`1/4800`$ each. It is not a fit to the selected
 target or a false rejection by its gated score. Under genuine electronic
 independence, a sector-preserving instrument on at most three states
 instead satisfies an exact endpoint-to-joint TV identity. The listed
@@ -741,19 +741,19 @@ work; a close recent full-text comparison remains unresolved. The new four-word 
 keeps the five-million total, ten million readouts, gates and .0021
 threshold of the percent-kinetic score. The deterministic schedule
 alternates the two arms, with 2.5 million observations of each. Every
-history-conditional recorded joint law must be within $.000079$ of
-one fixed nominal target reference pair, or $.00022$ of one fixed
-stationary ordinary reference pair. The latter includes $.0002$
+history-conditional recorded joint law must be within $`.000079`$ of
+one fixed nominal target reference pair, or $`.00022`$ of one fixed
+stationary ordinary reference pair. The latter includes $`.0002`$
 prediction allowance. A martingale argument gives size below 5% and
 power above 95%; dependence between successive trials is permitted.
 Unconditional average closeness and history-dependent reference-model
 selection are outside the theorem.
 
 The [finite-reset theorem](FAMILIAR_SWITCH_FINITE_RESET.md) supplies
-the target's $10^{-5}$ preparation allowance after an actual low-field
+the target's $`10^{-5}`$ preparation allowance after an actual low-field
 wait of 63 attempt-time units, uniformly over the full one-percent
-kinetic family, $|h_0|\le10^{-5}$ and every preceding hidden-state law.
-The spectral gap is at least $99/500$; the same bound applies after
+kinetic family, $`|h_0|\le10^{-5}`$ and every preceding hidden-state law.
+The spectral gap is at least $`99/500`$; the same bound applies after
 conditioning on earlier records. The reset replaces the existing
 preparation allowance and does not make trials exactly independent.
 For five million trials, resets cost 315 million units and nominal
@@ -764,8 +764,8 @@ and reset-clock uncertainty have their separately stated costs; no
 physical rate or acquisition time in seconds is asserted.
 
 The constructive general three-state predictor also prepares within
-$10^{-5}$ using the same actual 63-unit reset. Its conditional
-two-record tables are within $.000088025101<.00009$ of the actual
+$`10^{-5}`$ using the same actual 63-unit reset. Its conditional
+two-record tables are within $`.000088025101\lt .00009`$ of the actual
 target's, so this comparison gives neither side an ideal fresh reset.
 The bound concerns either prescribed word separately; it is not a
 full serial-record TV guarantee or a new serial state-count minimum.
@@ -782,9 +782,9 @@ require physical support. The [verifier](../scripts/verify_switch_serial_reset.p
 bind the new scope to its exact finite checks.
 
 **Preserved extension: one-percent kinetic uncertainty and a local CTMC fit.**
-At $J=\log3$, $H=\log2$ and both dwells $5/4$, the
+At $`J=\log3`$, $`H=\log2`$ and both dwells $`5/4`$, the
 [direct robustness proof](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md)
-permits independent prefactors in $[.99,1.01]$ on all four undirected
+permits independent prefactors in $`[.99,1.01]`$ on all four undirected
 edges at each field. Each plateau generator is fixed across both
 words. Symmetric scaling of both directions preserves Gibbs detailed
 balance, while neighbor dependence may break affine coordinate closure.
@@ -795,25 +795,25 @@ The [local snapshot realization](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md)
 adjusts four coefficients of a three-state model to the target's four
 moments. Its kernels are positive, have the required stationary laws,
 and have logarithms with positive off-diagonal entries. They therefore
-give genuine CTMC generators for the common dwell $5/4$, reproducing
+give genuine CTMC generators for the common dwell $`5/4`$, reproducing
 both initial/final joint laws exactly at nominal fields and times.
 This replaces the lost target closure with a local realization of
 the measured laws. It makes no claim about arbitrary control words,
 full trajectories, learning or one universal model for all targets.
 
-The nominal state minima are three versus four on $[0,.001]$.
+The nominal state minima are three versus four on $`[0,.001]`$.
 With the six preparation, field, timing and initial-instrument
-allowances each $10^{-5}$, the target joint-TV budget is
-$.000078025101$ and the rival budget $.00002$. Actual state minima
-are **three versus four on $[.00008,.0009]$**. Stationary bias and
-tilt uncertainty $10^{-4}$, stationary-law defect $10^{-5}$, and
+allowances each $`10^{-5}`$, the target joint-TV budget is
+$`.000078025101`$ and the rival budget $`.00002`$. Actual state minima
+are **three versus four on $`[.00008,.0009]`$**. Stationary bias and
+tilt uncertainty $`10^{-4}`$, stationary-law defect $`10^{-5}`$, and
 the independent symmetric detector model remain in force.
 
 The [percent-kinetic score test](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md)
 uses the inherited integer scores, new gates and threshold .0021.
 Its **five million fresh independent trials** and ten million
 readouts give size below 5% and power above 95%, with ordinary-null
-observed-joint-TV allowance $.0002$, exceeding the constructive upper.
+observed-joint-TV allowance $`.0002`$, exceeding the constructive upper.
 The count and null allowance match the preceding 20-ppm test, while
 the sufficient rate allowance increases 500-fold to 1%. This is a
 new guarantee for the enlarged family, not tolerance or sample
@@ -825,21 +825,21 @@ performance. The [verifier](../scripts/verify_switch_percent_kinetics.py),
 record the finite certificate and its analytic scope.
 
 **Preserved integrated-error and protected-readout extension.** At
-$J=\log3$, $H=\log2$ and dwell $5/4$, the
+$`J=\log3`$, $`H=\log2`$ and dwell $`5/4`$, the
 [kinetic theorem](FAMILIAR_SWITCH_KINETIC_TOLERANCE.md) permits a
 fixed perturbed generator on each plateau, preserving its Gibbs law
 and ordinary detailed balance. Integrating the full signed generator-row
-TV defect over either word gives $\kappa$. With $\kappa\le10^{-4}$
-and the reference $10^{-5}$ physical allowances, the target table
-budget is $0.0001775001$, the general-three-state upper is $0.00012$,
-and every admissible ordinary-three-state error exceeds $0.0009274999$.
+TV defect over either word gives $`\kappa`$. With $`\kappa\le10^{-4}`$
+and the reference $`10^{-5}`$ physical allowances, the target table
+budget is $`0.0001775001`$, the general-three-state upper is $`0.00012`$,
+and every admissible ordinary-three-state error exceeds $`0.0009274999`$.
 The exact state minima are therefore three and four on
-**$[0.00012,0.0009]$**. The actual four-state target is ordinary;
+**$`[0.00012,0.0009]`$**. The actual four-state target is ordinary;
 the comparison does not require exact compression of its perturbed laws.
 
 Symmetric relative edge-prefactor errors of at most 20 ppm suffice,
 including neighbor dependence that breaks affine closure. At 100 ppm,
-the separate population interval is $[0.0005,0.00055]$, without a
+the separate population interval is $`[0.0005,0.00055]`$, without a
 sampling guarantee. These bounds preserve the stationary energy;
 extra microscopic states or arbitrary driven nonreversible kinetics
 are outside their scope. A common fixed generator on each plateau
@@ -851,8 +851,8 @@ uses the same integer scores and gates as the reference test, threshold
 .0022, and 2.5 million fresh independent trials in each arm. The
 **five-million total** and ten million binary readouts give false
 rejection below 5% and target power above 95%, with ordinary-null
-observed-joint-TV allowance $0.0002$ per word. That allowance exceeds
-the constructive upper $0.00012$. This is the cost for a larger target
+observed-joint-TV allowance $`0.0002`$ per word. That allowance exceeds
+the constructive upper $`0.00012`$. This is the cost for a larger target
 family, not an improvement on the two-million reference count or a
 new comparison below the old experiment's information lower bound.
 
@@ -878,31 +878,31 @@ separate exact finite checks, universal proofs and physical precedents.
 
 **Preserved heat-bath reference: weaker field, shorter equal pulses.** The
 [new robustness theorem](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md)
-fixes $J=\log3$, $H=\log2$ and both dwell times $5/4$. Target
-independent symmetric bit-error probabilities may each lie in $[0,.01]$;
-each ordinary rival may choose its own fixed values in $[0,1/2]$.
-The nominal recorded joint-TV gap is $>0.00115$. With preparation,
-field, timing and initial-disturbance allowances $10^{-5}$, stationary
-low bias and relative-tilt uncertainty $10^{-4}$, and stationary-law
-TV defect $10^{-5}$, the actual gap is $>0.001$. A general three-state
-predictor has error at most $2\times10^{-5}$, so actual minima are
-three and four on $[2\times10^{-5},10^{-3}]$. The active duration
-is $5/2$; one preparation and the two original bit pairs suffice.
+fixes $`J=\log3`$, $`H=\log2`$ and both dwell times $`5/4`$. Target
+independent symmetric bit-error probabilities may each lie in $`[0,.01]`$;
+each ordinary rival may choose its own fixed values in $`[0,1/2]`$.
+The nominal recorded joint-TV gap is $`\gt 0.00115`$. With preparation,
+field, timing and initial-disturbance allowances $`10^{-5}`$, stationary
+low bias and relative-tilt uncertainty $`10^{-4}`$, and stationary-law
+TV defect $`10^{-5}`$, the actual gap is $`\gt 0.001`$. A general three-state
+predictor has error at most $`2\times10^{-5}`$, so actual minima are
+three and four on $`[2\times10^{-5},10^{-3}]`$. The active duration
+is $`5/2`$; one preparation and the two original bit pairs suffice.
 
 The [new fixed-score test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md)
 has false rejection below 5% and target power above 95% with
 **two million independent paired trials**, one million per arm and
 four million readouts. An additional observed-joint-TV null allowance
-$10^{-4}$ per arm has a sufficient total of **2.5 million trials**,
+$`10^{-4}`$ per arm has a sufficient total of **2.5 million trials**,
 1.25 million per arm and five million readouts. This approximation
 allowance exceeds the constructive three-state error. The scores
-$X_A=(20Y+30IY-15I)/50$ and $X_B=(-20Z-24JZ+15J)/50$ use the
+$`X_A=(20Y+30IY-15I)/50`$ and $`X_B=(-20Z-24JZ+15J)/50`$ use the
 same observations, with thresholds .002 and .00218 for
-$\overline X_A+\overline X_B-.08$ and the proof's localization gates.
+$`\overline X_A+\overline X_B-.08`$ and the proof's localization gates.
 Neither count is claimed necessary or optimal.
 
-At the old $J=H=\log3$, dwell-$3/2$ point, the frozen information
-lower requires $\mathbb E_*N>810000\log19\approx2.385$ million
+At the old $`J=H=\log3`$, dwell-$`3/2`$ point, the frozen information
+lower requires $`\mathbb E_*N\gt 810000\log19\approx2.385`$ million
 trials at one-percent errors, even with adaptive choices and stopping.
 The new sufficient two-million total is smaller than this old necessary
 count. The comparison uses the same forms of physical and detector
@@ -913,9 +913,9 @@ loss: its ideal witness is smaller, but its noisy witness is larger.
 No optimal-design or total-laboratory-time claim follows.
 
 A separate deterministic tolerance corollary raises every preparation,
-field, timing and disturbance allowance to $5\times10^{-5}$, leaving
-gap $>6\times10^{-4}$ and a general-three-state upper $10^{-4}$.
-The state minima remain three and four on $[10^{-4},6\times10^{-4}]$.
+field, timing and disturbance allowance to $`5\times10^{-5}`$, leaving
+gap $`\gt 6\times10^{-4}`$ and a general-three-state upper $`10^{-4}`$.
+The state minima remain three and four on $`[10^{-4},6\times10^{-4}]`$.
 No sampling budget is assigned to this relaxed row. The
 [new verifier](../scripts/verify_switch_weak_field.py),
 [report](../reports/switch_weak_field.json),
@@ -927,107 +927,107 @@ remains a historical numerical record.
 
 **Preserved earlier operating point and calibrated results.**
 
-At $J=H=\log3$ and tick $3/2$, the [exact verifier](../scripts/verify_switch_snapshot_design.py) and [report](../reports/switch_snapshot_design.json) place the ordinary-three-state maximum joint-TV error in $(23/12500,37/20000)=(0.00184,0.00185)$. The ratio is $185/184$. The lower covers arbitrary reversible tick kernels with no rival rate cap; the upper comes from one fixed rational feasible model. The [numeric replay](../scripts/screen_switch_snapshot_witness.py) and [saved fits](../reports/switch_snapshot_screen.json) are separate achieved-upper diagnostics, not fitted lower bounds or global optima. Nominal minima are three and four for $0\le\delta_{\rm joint}\le0.00184$. Each trial uses two plateaus, active duration three, one preparation and two readouts.
+At $`J=H=\log3`$ and tick $`3/2`$, the [exact verifier](../scripts/verify_switch_snapshot_design.py) and [report](../reports/switch_snapshot_design.json) place the ordinary-three-state maximum joint-TV error in $`(23/12500,37/20000)=(0.00184,0.00185)`$. The ratio is $`185/184`$. The lower covers arbitrary reversible tick kernels with no rival rate cap; the upper comes from one fixed rational feasible model. The [numeric replay](../scripts/screen_switch_snapshot_witness.py) and [saved fits](../reports/switch_snapshot_screen.json) are separate achieved-upper diagnostics, not fitted lower bounds or global optima. Nominal minima are three and four for $`0\le\delta_{\rm joint}\le0.00184`$. Each trial uses two plateaus, active duration three, one preparation and two readouts.
 
-The precisely calibrated detector class allows stationary bias and Gibbs-parameter uncertainty $10^{-4}$, high-law tilt TV defect $10^{-5}$, common field/tick errors $10^{-5}$, and target/rival full-state preparation and initial-instrument disturbance errors $10^{-5}$. Conditional independent binary-symmetric detector flips may each be within $10^{-5}$ of one percent. The observed gap remains $>0.0015$ and a general three-state predictor has observed joint-TV error at most $4\times10^{-5}$. Actual minima are therefore three and four for $4\times10^{-5}\le\delta_{\rm obs}\le0.0015$. The preparation and instrument are fixed across words. Known bit noise, uncertainty in its calibration, and state disturbance have distinct budgets; observed balance cannot establish hidden equilibration or noninvasiveness.
+The precisely calibrated detector class allows stationary bias and Gibbs-parameter uncertainty $`10^{-4}`$, high-law tilt TV defect $`10^{-5}`$, common field/tick errors $`10^{-5}`$, and target/rival full-state preparation and initial-instrument disturbance errors $`10^{-5}`$. Conditional independent binary-symmetric detector flips may each be within $`10^{-5}`$ of one percent. The observed gap remains $`\gt 0.0015`$ and a general three-state predictor has observed joint-TV error at most $`4\times10^{-5}`$. Actual minima are therefore three and four for $`4\times10^{-5}\le\delta_{\rm obs}\le0.0015`$. The preparation and instrument are fixed across words. Known bit noise, uncertainty in its calibration, and state disturbance have distinct budgets; observed balance cannot establish hidden equilibration or noninvasiveness.
 
-The [snapshot score test](FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) gives sufficient totals of 900,000 nominal paired trials, 1,000,000 with physical calibration, 1,200,000 with uncertain one-percent detectors and physical/backaction allowances, and 1,500,000 when that last null also admits observed-joint-TV error $10^{-4}$. Each paired trial consumes two binary readouts; the corresponding readout totals are 1.8, 2.0, 2.4 and 3.0 million. The [endpoint score test](FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md), [verifier](../scripts/verify_switch_endpoint_score.py) and [report](../reports/switch_endpoint_score.json) separately give 1,450,000, 1,670,000 and 1,890,000 single-readout trials for nominal, physically calibrated, and calibrated occupation-error allowance $10^{-4}$, retaining two equilibrium preparations and no extra readout-bias allowance. All designs have size at most 5% and power at least 95% for their stated classes, using fixed scores and independent fresh trials.
+The [snapshot score test](FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md) gives sufficient totals of 900,000 nominal paired trials, 1,000,000 with physical calibration, 1,200,000 with uncertain one-percent detectors and physical/backaction allowances, and 1,500,000 when that last null also admits observed-joint-TV error $`10^{-4}`$. Each paired trial consumes two binary readouts; the corresponding readout totals are 1.8, 2.0, 2.4 and 3.0 million. The [endpoint score test](FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md), [verifier](../scripts/verify_switch_endpoint_score.py) and [report](../reports/switch_endpoint_score.json) separately give 1,450,000, 1,670,000 and 1,890,000 single-readout trials for nominal, physically calibrated, and calibrated occupation-error allowance $`10^{-4}`$, retaining two equilibrium preparations and no extra readout-bias allowance. All designs have size at most 5% and power at least 95% for their stated classes, using fixed scores and independent fresh trials.
 
 The nominal snapshot information bound requires at least 79,500 paired trials for a fixed budget on the same two orders. It does not match the sufficient designs or cover arbitrary richer observations. Neither observed balance nor a target-specific reset wait establishes the preparation and independence promises for arbitrary slow rivals. Fewer trials do not necessarily mean fewer readouts. The [score source audit](FAMILIAR_SWITCH_SCORE_SOURCE_AUDIT.md) and [snapshot internal review](FAMILIAR_SWITCH_SNAPSHOT_INTERNAL_REVIEW.md) preserve the physical, statistical and prior-art boundaries; full-suite evidence belongs to [Verification](VERIFICATION.md).
 
-**Unknown symmetric detector errors at the earlier operating point.** The [witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) works directly with the recorded means and correlations $(M,C,L,D)$. Define
+**Unknown symmetric detector errors at the earlier operating point.** The [witness](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) works directly with the recorded means and correlations $`(M,C,L,D)`$. Define
 
-$$
+```math
  R=u(C-D)+uMD-(u-M)L.
-$$
+```
 
-If $0<M<u$, $L,D>0$, $C<D$ and $R>0$, no ordinary model with at most three states can reproduce both tables, even if each competing hypothesis chooses its own fixed initial/final symmetric bit-error probabilities anywhere in $[0,1/2]$. Clearing the contrasts in the latent covariance identity gives a bilinear polynomial; its four corner values exclude both singleton sectors. The channel must still be memoryless, symmetric and independent of the trajectory and the other electronic error, with the same laws across protocols. This is removal of numerical contrast calibration, not a device-independent measurement theorem.
+If $`0\lt M\lt u`$, $`L,D\gt 0`$, $`C\lt D`$ and $`R\gt 0`$, no ordinary model with at most three states can reproduce both tables, even if each competing hypothesis chooses its own fixed initial/final symmetric bit-error probabilities anywhere in $`[0,1/2]`$. Clearing the contrasts in the latent covariance identity gives a bilinear polynomial; its four corner values exclude both singleton sectors. The channel must still be memoryless, symmetric and independent of the trajectory and the other electronic error, with the same laws across protocols. This is removal of numerical contrast calibration, not a device-independent measurement theorem.
 
-At the same equal-rate fixture, target bit errors at most one percent give a nominal recorded joint-TV gap $>3/8000=0.000375$. With the stationary, field, timing, preparation and disturbance budgets above, the actual recorded gap is $>1/5000=0.0002$. The general three-state construction uses the target's actual detector and incurs error at most $2\times10^{-5}$, so actual minima are three and four for $2\times10^{-5}\le\delta_{\rm obs}\le0.0002$. No rival rate cap or bound below one-half on its detector errors is added. The [interface verifier](../scripts/verify_switch_physical_interface.py) and [report](../reports/switch_physical_interface.json) certify the finite numerical premises.
+At the same equal-rate fixture, target bit errors at most one percent give a nominal recorded joint-TV gap $`\gt 3/8000=0.000375`$. With the stationary, field, timing, preparation and disturbance budgets above, the actual recorded gap is $`\gt 1/5000=0.0002`$. The general three-state construction uses the target's actual detector and incurs error at most $`2\times10^{-5}`$, so actual minima are three and four for $`2\times10^{-5}\le\delta_{\rm obs}\le0.0002`$. No rival rate cap or bound below one-half on its detector errors is added. The [interface verifier](../scripts/verify_switch_physical_interface.py) and [report](../reports/switch_physical_interface.json) certify the finite numerical premises.
 
-The [new unknown-detector score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md) reduces the sufficient cost to **32 million independent paired trials and 64 million binary readouts**, with allocation 18.56 million to $0H$ and 13.44 million to $H0$. It retains the same physical allowances and gives false rejection below 5% and target power above 95%. With an additional observed-joint-TV ordinary-model approximation allowance $10^{-4}$, a sufficient allocation is **90 million paired trials and 180 million readouts**, divided 52.2 million and 37.8 million. That allowance exceeds the constructive general three-state error $2\times10^{-5}$. The fixed scores are $X_A=[(13+20I)Y-10I]/25$ and $X_B=[-(10+12J)Z+10J]/25$, used with the proof's localization gates and threshold. Their initial-bit corrections have cancelling expectations under the shared preparation and channel; they exploit existing within-trial correlation and require no extra measurement. The former localized confidence-box test with 508 million total trials remains valid, but is superseded as a sufficient design by the 32-million test on its class. These are sufficient budgets, not optimal ones; the 1.2-million calibrated allocation still does not transfer to the larger null.
+The [new unknown-detector score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md) reduces the sufficient cost to **32 million independent paired trials and 64 million binary readouts**, with allocation 18.56 million to $`0H`$ and 13.44 million to $`H0`$. It retains the same physical allowances and gives false rejection below 5% and target power above 95%. With an additional observed-joint-TV ordinary-model approximation allowance $`10^{-4}`$, a sufficient allocation is **90 million paired trials and 180 million readouts**, divided 52.2 million and 37.8 million. That allowance exceeds the constructive general three-state error $`2\times10^{-5}`$. The fixed scores are $`X_A=[(13+20I)Y-10I]/25`$ and $`X_B=[-(10+12J)Z+10J]/25`$, used with the proof's localization gates and threshold. Their initial-bit corrections have cancelling expectations under the shared preparation and channel; they exploit existing within-trial correlation and require no extra measurement. The former localized confidence-box test with 508 million total trials remains valid, but is superseded as a sufficient design by the 32-million test on its class. These are sufficient budgets, not optimal ones; the 1.2-million calibrated allocation still does not transfer to the larger null.
 
-**The detector calibration promise has a necessary observation value.** The [information-cost theorem](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) uses the same nominal target with exactly one-percent error at both readouts. A rational ordinary three-state model with a perfect detector has relative entropy from the target below $1/900000$ on each arm. Any test with the 5%/95% guarantees against the unknown-detector null needs $\mathbb E_*N>810000\log19$, even with adaptive arm selection and an almost-surely finite stopping time. A fixed budget is therefore at least **2,384,996 paired trials**. The calibrated 1.2-million-trial test covers this same target, yielding a strict observation-budget value of more than a factor of 1.98 for that calibration promise. This does not price the calibration itself, match sufficient and necessary costs, or apply to additional protocols or richer path observations. The [new verifier](../scripts/verify_switch_uncalibrated_score.py), [report](../reports/switch_uncalibrated_score.json) and [source audit](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) separate the exact comparator and score certificates from the established concentration and change-of-measure tools.
+**The detector calibration promise has a necessary observation value.** The [information-cost theorem](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) uses the same nominal target with exactly one-percent error at both readouts. A rational ordinary three-state model with a perfect detector has relative entropy from the target below $`1/900000`$ on each arm. Any test with the 5%/95% guarantees against the unknown-detector null needs $`\mathbb E_*N\gt 810000\log19`$, even with adaptive arm selection and an almost-surely finite stopping time. A fixed budget is therefore at least **2,384,996 paired trials**. The calibrated 1.2-million-trial test covers this same target, yielding a strict observation-budget value of more than a factor of 1.98 for that calibration promise. This does not price the calibration itself, match sufficient and necessary costs, or apply to additional protocols or richer path observations. The [new verifier](../scripts/verify_switch_uncalibrated_score.py), [report](../reports/switch_uncalibrated_score.json) and [source audit](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) separate the exact comparator and score certificates from the established concentration and change-of-measure tools.
 
-**Conditional physical model.** The [charge realization](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) uses two nondegenerate single-level dots, no interdot tunneling, capacitive energy $Un_1n_2+\epsilon_1n_1+\epsilon_2n_2$, and equilibrium reservoirs. With $S=2n_1-1$, $Z=1-2n_2$, $\epsilon_2=-U/2$ and $\epsilon_1=-U/2-2hk_BT$, the energy is $-JSZ-hS$ up to a constant, with $J=U/(4k_BT)$. Sequential Fermi loading and unloading rates give exactly the heat-bath law if each bare tunneling prefactor is independent of energy, neighboring charge and applied gate over the required range. Charge occupations are time-even. A magnetic field used to resolve spin requires its own microscopic reversal qualification.
+**Conditional physical model.** The [charge realization](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) uses two nondegenerate single-level dots, no interdot tunneling, capacitive energy $`Un_1n_2+\epsilon_1n_1+\epsilon_2n_2`$, and equilibrium reservoirs. With $`S=2n_1-1`$, $`Z=1-2n_2`$, $`\epsilon_2=-U/2`$ and $`\epsilon_1=-U/2-2hk_BT`$, the energy is $`-JSZ-hS`$ up to a constant, with $`J=U/(4k_BT)`$. Sequential Fermi loading and unloading rates give exactly the heat-bath law if each bare tunneling prefactor is independent of energy, neighboring charge and applied gate over the required range. Charge occupations are time-even. A magnetic field used to resolve spin requires its own microscopic reversal qualification.
 
-At $J=\log3$, a positive three-state predictor covers $\tanh h\in[-10^{-4},0.81]$ and attempt ratio $r=\Gamma_2/\Gamma_1\ge2/3$; for $r\le2$, all exits are below $3\Gamma_1$. It matches the specified controlled means and initial/final joint laws, so equal attempts are unnecessary for the exact three-versus-four comparison. The numerical gaps and sample budgets remain certified at $r=1$. Generic detailed-balance rates do not automatically preserve the three-coordinate mean closure: spin degeneracy, energy-dependent tunneling and metallic-box rates are concrete departures. The [primary-source audit](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) supports the model architecture and component precedents, without combining separate experiments into an achieved device specification.
+At $`J=\log3`$, a positive three-state predictor covers $`\tanh h\in[-10^{-4},0.81]`$ and attempt ratio $`r=\Gamma_2/\Gamma_1\ge2/3`$; for $`r\le2`$, all exits are below $`3\Gamma_1`$. It matches the specified controlled means and initial/final joint laws, so equal attempts are unnecessary for the exact three-versus-four comparison. The numerical gaps and sample budgets remain certified at $`r=1`$. Generic detailed-balance rates do not automatically preserve the three-coordinate mean closure: spin degeneracy, energy-dependent tunneling and metallic-box rates are concrete departures. The [primary-source audit](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) supports the model architecture and component precedents, without combining separate experiments into an achieved device specification.
 
 **Preparation and measurement boundary.** The [new counterexamples](FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) show that a wrong hidden preparation can have exactly the equilibrium low-field binary path law, and that an instrument can preserve the unconditional state and every subsequent endpoint law while destroying the initial/final correlations needed by the witness. The disturbance promise must control the joint initial-record/post-readout-state law. A separate at-most-three-state lemma, under exact balance and nonzero low-tick flip probability, bounds each response-preparation error through an observable stationarity defect. Adding one low-tick pair and one unrecorded low tick before each original order yields five protocol types of at most three ticks. This optional route does not bound hidden-state TV, remove the joint-instrument assumption or inherit an existing finite-sample allocation. It supplies a concrete direction for further preparation validation while keeping the original two-protocol theorem unchanged.
 
-**Earlier two-preparation checkpoint.** The [four-endpoint theorem](FAMILIAR_SWITCH_PREPARATION_WITNESS.md) instead assumes access to high-field equilibrium preparation. Its four cells are $(0;H),(H;0),(H;0H),(0;H0)$, with preparation before the semicolon and chronological fields after it. One shared model must explain all four using its two Gibbs-related stationary laws. For measured spin means $(m,a,b,\ell)$, every ordinary rival with at most three states obeys at least one identity
+**Earlier two-preparation checkpoint.** The [four-endpoint theorem](FAMILIAR_SWITCH_PREPARATION_WITNESS.md) instead assumes access to high-field equilibrium preparation. Its four cells are $`(0;H),(H;0),(H;0H),(0;H0)`$, with preparation before the semicolon and chronological fields after it. One shared model must explain all four using its two Gibbs-related stationary laws. For measured spin means $`(m,a,b,\ell)`$, every ordinary rival with at most three states obeys at least one identity
 
-$$
+```math
  b-m-a+\ell+\sigma(u\ell-am)=0,\qquad \sigma\in\{-1,1\}.
-$$
+```
 
-The left side is proportional to a conditional covariance of two response propensities in sector $S=\sigma$. A singleton sector cannot carry that covariance; the target has nonzero covariance in both sectors. No generator reconstruction, rate cap or continuous-time embedding assumption enters the lower bound.
+The left side is proportional to a conditional covariance of two response propensities in sector $`S=\sigma`$. A singleton sector cannot carry that covariance; the target has nonzero covariance in both sectors. No generator reconstruction, rate cap or continuous-time embedding assumption enters the lower bound.
 
-At $J=H=\log3$ and common tick $3/2$, the [exact verifier](../scripts/verify_switch_preparation_witness.py) and [report](../reports/switch_preparation_witness.json) certify ordinary-three-state occupation error $>9/5000$. A fixed rational ordinary comparator achieves $<1/550$ on the same four cells, a bracket with ratio $100/99$. The numerical [saved-model replay](../scripts/screen_switch_preparation_witness.py) and [report](../reports/switch_preparation_screen.json) retain both sign-specific fits and the rounded candidate; they are feasible upper diagnostics, not the universal lower proof or a global-optimum claim. The unrestricted positive three-state predictor matches both stationary preparations exactly, yielding $D_{\rm all}=3,D_{\rm ord}=4$ for $0\le\delta_P\le9/5000$. Active experiments last at most three attempt-rate units and use at most two plateaus. Preparation waits are additional resources.
+At $`J=H=\log3`$ and common tick $`3/2`$, the [exact verifier](../scripts/verify_switch_preparation_witness.py) and [report](../reports/switch_preparation_witness.json) certify ordinary-three-state occupation error $`\gt 9/5000`$. A fixed rational ordinary comparator achieves $`\lt 1/550`$ on the same four cells, a bracket with ratio $`100/99`$. The numerical [saved-model replay](../scripts/screen_switch_preparation_witness.py) and [report](../reports/switch_preparation_screen.json) retain both sign-specific fits and the rounded candidate; they are feasible upper diagnostics, not the universal lower proof or a global-optimum claim. The unrestricted positive three-state predictor matches both stationary preparations exactly, yielding $`D_{\rm all}=3,D_{\rm ord}=4`$ for $`0\le\delta_P\le9/5000`$. Active experiments last at most three attempt-rate units and use at most two plateaus. Preparation waits are additional resources.
 
-The calibrated four-cell result allows low-field stationary bias and relative-tilt uncertainty at most $10^{-4}$ around zero and $4/5$, and high-field stationary-law TV defect at most $10^{-5}$ from the normalized Gibbs tilt. The nominal exclusion radius becomes $17/10000$. With common fixed field offsets and per-field tick errors at most $10^{-5}$ around $0,\log3$ and tick $3/2$, and one fixed preparation law per field for each model within full-state TV $10^{-5}$ of its own actual equilibrium, the actual occupation gap exceeds $1/625=0.0016$. The three-state upper matches both actual stationary preparations and pays at most $10^{-5}$ for target preparation error. Therefore actual minima remain three and four for $10^{-5}\le\delta_P\le1/625$.
+The calibrated four-cell result allows low-field stationary bias and relative-tilt uncertainty at most $`10^{-4}`$ around zero and $`4/5`$, and high-field stationary-law TV defect at most $`10^{-5}`$ from the normalized Gibbs tilt. The nominal exclusion radius becomes $`17/10000`$. With common fixed field offsets and per-field tick errors at most $`10^{-5}`$ around $`0,\log3`$ and tick $`3/2`$, and one fixed preparation law per field for each model within full-state TV $`10^{-5}`$ of its own actual equilibrium, the actual occupation gap exceeds $`1/625=0.0016`$. The three-state upper matches both actual stationary preparations and pays at most $`10^{-5}`$ for target preparation error. Therefore actual minima remain three and four for $`10^{-5}\le\delta_P\le1/625`$.
 
-The [four-cell cost analysis](FAMILIAR_SWITCH_PREPARATION_COST.md) gives conservative sufficient totals of 12,531,296 nominal endpoints, 15,859,920 calibrated endpoints for exact-null rejection, and 18,045,064 calibrated endpoints for model allowance $e=10^{-4}$, at 5% false-rejection probability and 95% power with equal allocation and no additional readout bias. A separate ideal-nominal adaptive lower is $\mathbb E_*N\ge59400\log19\approx174899.67536$, or 174,900 for a fixed integer budget. Neither bound is optimal; the lower concerns these four fresh-endpoint cells, not richer paths or other menus. Actual target waits of 62 low-field and 36 high-field units suffice, but no common wait prepares arbitrary slow rivals. Full-state preparation and equilibrium-law errors cannot be inferred from binary balance. The [new source audit](FAMILIAR_SWITCH_PREPARATION_SOURCE_AUDIT.md) records attribution and resource boundaries.
+The [four-cell cost analysis](FAMILIAR_SWITCH_PREPARATION_COST.md) gives conservative sufficient totals of 12,531,296 nominal endpoints, 15,859,920 calibrated endpoints for exact-null rejection, and 18,045,064 calibrated endpoints for model allowance $`e=10^{-4}`$, at 5% false-rejection probability and 95% power with equal allocation and no additional readout bias. A separate ideal-nominal adaptive lower is $`\mathbb E_*N\ge59400\log19\approx174899.67536`$, or 174,900 for a fixed integer budget. Neither bound is optimal; the lower concerns these four fresh-endpoint cells, not richer paths or other menus. Actual target waits of 62 low-field and 36 high-field units suffice, but no common wait prepares arbitrary slow rivals. Full-state preparation and equilibrium-law errors cannot be inferred from binary balance. The [new source audit](FAMILIAR_SWITCH_PREPARATION_SOURCE_AUDIT.md) records attribution and resource boundaries.
 
-The earlier [exact-only snapshot corollary](FAMILIAR_SWITCH_PREPARATION_WITNESS.md) established a joint-TV lower bound $>1/1000$ for the two opposite orders under exact preparation and tilt. The direct theorem above sharpens and calibrates it. The initial/final observation model has its own statistical analysis; endpoint counts do not transfer automatically.
+The earlier [exact-only snapshot corollary](FAMILIAR_SWITCH_PREPARATION_WITNESS.md) established a joint-TV lower bound $`\gt 1/1000`$ for the two opposite orders under exact preparation and tilt. The direct theorem above sharpens and calibrates it. The initial/final observation model has its own statistical analysis; endpoint counts do not transfer automatically.
 
-**Earlier one-preparation checkpoint.** The [finite-margin theorem](FAMILIAR_SWITCH_FINITE_MARGIN.md) strengthens the earlier eleven-word existence proof. Seven means obey a quartic necessary identity in every ordinary rival with at most three states, including reversible stochastic tick kernels without a continuous-time embedding. The analytic occupation-error bound $\Delta/(2L)>0$ holds for all $J,H,a>0$. At $J=H=\log3$ and clock two, a [rational certificate](../reports/familiar_switch_margin.json), generated by the [exact verifier](../scripts/verify_familiar_switch_margin.py), excludes occupation error $\le1/2000$. Thus unrestricted minimum three and ordinary minimum four hold at that tolerance, without a rival rate cap; each of the seven words uses at most four ticks and three segments. The explicit three-state upper serves all nonnegative-field protocol means, with exits below two. Full binary-path equality is not asserted, and the target's passive path already has memory.
+**Earlier one-preparation checkpoint.** The [finite-margin theorem](FAMILIAR_SWITCH_FINITE_MARGIN.md) strengthens the earlier eleven-word existence proof. Seven means obey a quartic necessary identity in every ordinary rival with at most three states, including reversible stochastic tick kernels without a continuous-time embedding. The analytic occupation-error bound $`\Delta/(2L)\gt 0`$ holds for all $`J,H,a\gt 0`$. At $`J=H=\log3`$ and clock two, a [rational certificate](../reports/familiar_switch_margin.json), generated by the [exact verifier](../scripts/verify_familiar_switch_margin.py), excludes occupation error $`\le1/2000`$. Thus unrestricted minimum three and ordinary minimum four hold at that tolerance, without a rival rate cap; each of the seven words uses at most four ticks and three segments. The explicit three-state upper serves all nonnegative-field protocol means, with exits below two. Full binary-path equality is not asserted, and the target's passive path already has memory.
 
-The same certificate verifies one fixed rational ordinary three-state model with occupation error $<837/10^6<1/1000$ on the same seven words. The lower and this finite-menu upper therefore place the nominal ordinary-three-state error between 0.05 and 0.1 percentage points. Their numerical thresholds rely on exact computer-assisted bounds; the [four-panel screen](../reports/short_switch_witness_screen.json) and earlier [protocol record](FAMILIAR_SWITCH_PROTOCOLS.md) remain separate achieved-fit diagnostics. The certified upper is restricted to seven words; the separate numerical fits concern only their listed menus, with no all-protocol guarantee. The [margin source audit](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) supplements the [kinetic audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md).
+The same certificate verifies one fixed rational ordinary three-state model with occupation error $`\lt 837/10^6\lt 1/1000`$ on the same seven words. The lower and this finite-menu upper therefore place the nominal ordinary-three-state error between 0.05 and 0.1 percentage points. Their numerical thresholds rely on exact computer-assisted bounds; the [four-panel screen](../reports/short_switch_witness_screen.json) and earlier [protocol record](FAMILIAR_SWITCH_PROTOCOLS.md) remain separate achieved-fit diagnostics. The certified upper is restricted to seven words; the separate numerical fits concern only their listed menus, with no all-protocol guarantee. The [margin source audit](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) supplements the [kinetic audit](FAMILIAR_SWITCH_SOURCE_AUDIT.md).
 
-The [calibration theorem](FAMILIAR_SWITCH_CALIBRATION.md) extends the polynomial to a biased baseline and uncertain Gibbs tilt. With baseline mean $\lvert b\rvert\le10^{-4}$, $\lvert u-4/5\rvert\le10^{-4}$ and stationary-tilt defect at most $10^{-5}$ in total variation, an exact certificate excludes ordinary models with at most three states within $g_0=1/2500$ of the nominal target. There is still no rival rate cap. Its physical corollary retains those low-bias and tilt conditions. Common fixed field offsets and per-field tick-duration errors are each at most $10^{-5}$ around $0,\log3$ and clock two. Each target or rival uses one fixed preparation law across all seven words, within full-state TV $10^{-5}$ of its actual low-field stationary law. The actual target-versus-ordinary gap exceeds $3/10000$ in occupation probability. The extended positive three-state predictor matches the stationary actual target and incurs at most $10^{-5}$ preparation error, so actual minima remain $D_{\rm all}=3$ and $D_{\rm ord}=4$ for $10^{-5}\le\delta_P\le3/10000$.
+The [calibration theorem](FAMILIAR_SWITCH_CALIBRATION.md) extends the polynomial to a biased baseline and uncertain Gibbs tilt. With baseline mean $`\lvert b\rvert\le10^{-4}`$, $`\lvert u-4/5\rvert\le10^{-4}`$ and stationary-tilt defect at most $`10^{-5}`$ in total variation, an exact certificate excludes ordinary models with at most three states within $`g_0=1/2500`$ of the nominal target. There is still no rival rate cap. Its physical corollary retains those low-bias and tilt conditions. Common fixed field offsets and per-field tick-duration errors are each at most $`10^{-5}`$ around $`0,\log3`$ and clock two. Each target or rival uses one fixed preparation law across all seven words, within full-state TV $`10^{-5}`$ of its actual low-field stationary law. The actual target-versus-ordinary gap exceeds $`3/10000`$ in occupation probability. The extended positive three-state predictor matches the stationary actual target and incurs at most $`10^{-5}`$ preparation error, so actual minima remain $`D_{\rm all}=3`$ and $`D_{\rm ord}=4`$ for $`10^{-5}\le\delta_P\le3/10000`$.
 
 Full-state preparation is an assumption, not something established by observing a balanced binary readout. An actual wait of 62 attempt-rate time units suffices for this target's preparation guarantee, but cannot prepare every arbitrarily slow rival. Timing draws independent of the state and other ticks, with a fixed distribution per field, preserve the reversible-kernel identity. Field drift and finite ramps require separate control; the fixed-offset corollary does not automatically cover them. The [calibration source audit](FAMILIAR_SWITCH_CALIBRATION_SOURCE_AUDIT.md), [internal review](FAMILIAR_SWITCH_CALIBRATION_INTERNAL_REVIEW.md), [verifier](../scripts/verify_switch_calibration.py) and [report](../reports/switch_calibration.json) retain those boundaries.
 
-The [measurement-cost theorem](FAMILIAR_SWITCH_MEASUREMENT_COST.md) gives conservative sufficient counts for a seven-word test with false-rejection probability at most $0.05$ and power at least $0.95$. With equal allocation and no extra observation bias, totals are 315,548,219 endpoints for the nominal exact-model null; 876,522,829 for the calibrated null with model allowance $e=0$; and 1,972,176,367 for calibrated exclusion allowing $e=10^{-4}$. These are sufficient budgets, not optimal or necessary billions. A separate ideal-nominal bound applies even to adaptive choice among the seven words and random stopping: $\mathbb E_*N\ge270000\log19\approx794998.52$ fresh endpoints, or at least 794,999 for a deterministic budget. It does not cover richer trajectory observations or claim a tight sample complexity. Preparation and calibration remain required under both null and alternative.
+The [measurement-cost theorem](FAMILIAR_SWITCH_MEASUREMENT_COST.md) gives conservative sufficient counts for a seven-word test with false-rejection probability at most $`0.05`$ and power at least $`0.95`$. With equal allocation and no extra observation bias, totals are 315,548,219 endpoints for the nominal exact-model null; 876,522,829 for the calibrated null with model allowance $`e=0`$; and 1,972,176,367 for calibrated exclusion allowing $`e=10^{-4}`$. These are sufficient budgets, not optimal or necessary billions. A separate ideal-nominal bound applies even to adaptive choice among the seven words and random stopping: $`\mathbb E_*N\ge270000\log19\approx794998.52`$ fresh endpoints, or at least 794,999 for a deterministic budget. It does not cover richer trajectory observations or claim a tight sample complexity. Preparation and calibration remain required under both null and alternative.
 
-The [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) supplies a separate organizing result: a stationary predictor may use different nonnegative incoming and outgoing memory profiles. Ordinary detailed balance identifies the two sides of matched reversed tests. For a normalized completely positive matrix $H$ of size $n$ with positive row sums, this gives exact total-state minima $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$ on a common two-field clock task with hidden cap $2k$. Arbitrary rival states and off-grid endpoint barriers are allowed. Every target still has exact two-state passive paths and hidden band $[k,3k]$. Both formulas persist on a positive matrix-dependent accuracy interval; its useful size is not established in general.
+The [matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md) supplies a separate organizing result: a stationary predictor may use different nonnegative incoming and outgoing memory profiles. Ordinary detailed balance identifies the two sides of matched reversed tests. For a normalized completely positive matrix $`H`$ of size $`n`$ with positive row sums, this gives exact total-state minima $`1+n+\mathrm{rank}_+(H)`$ and $`1+n+\mathrm{cprank}(H)`$ on a common two-field clock task with hidden cap $`2k`$. Arbitrary rival states and off-grid endpoint barriers are allowed. Every target still has exact two-state passive paths and hidden band $`[k,3k]`$. Both formulas persist on a positive matrix-dependent accuracy interval; its useful size is not established in general.
 
 The [variance principle](KINETIC_VARIANCE_COMPRESSION.md) gives the complementary physical scale: centered kinetic heterogeneity must first excite hidden density deviations and then read them into the visible mean. Its exact memory kernel therefore has a centered barrier at both ends. An explicit all-protocol variance/mixing bound yields a two-state ordinary-reversible predictor. This is a mean guarantee, with a common hidden stationary law and specified preparation; it is not a whole-path approximation. The known matrix ranks and projection mechanism remain attributed in the [source comparison](SIMPLE_PREDICTION_SOURCE_AUDIT.md).
 
-The principal asymptotic candidate remains the [kinetic-interface and reversal comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) on the original nineteen-level targets. Their hidden relaxation band remains $[k,3k]$ and their count remains $18r2^r+2$, with $r=2^n$. With a common hidden exit cap $3k$, every fixed positive clock and the same two fields $0,H$ give
+The principal asymptotic candidate remains the [kinetic-interface and reversal comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) on the original nineteen-level targets. Their hidden relaxation band remains $`[k,3k]`$ and their count remains $`18r2^r+2`$, with $`r=2^n`$. With a common hidden exit cap $`3k`$, every fixed positive clock and the same two fields $`0,H`$ give
 
-$$
+```math
 D_{\rm all}(\delta)=D_{\rm gen}(\delta)=\delta^{-\Theta(1)},
 \qquad D_{\rm ord}(\delta)=\exp(\delta^{-\Theta(1)}).
-$$
+```
 
-Here $D_{\rm ord}$ requires ordinary detailed balance, while $D_{\rm gen}$ permits a stationary-law-preserving hidden involution $\theta$ with $K^*=\Theta K\Theta$ and an even actuator. The equalities specify growth classes, not matching exponents or pointwise equality of state counts. Rivals may choose arbitrary bounded state-dependent kinetic barriers with $q_{iA}=k b_i(h)$, $q_{Ai}=k\mu_i e^{2h}b_i(h)$ and $b_i(0)=1$. They need no target alphabet, histogram, moments, topology or lower gap. The equilibrium block tilt, field-independent hidden generator, preparation and readout remain shared. The [capped proof](CAPPED_KINETIC_INTERFACE_SEPARATION.md) gives a witnessing horizon $O(\log(1/\delta)/k)$ on the same two-field menu for both necessary growth classes.
+Here $`D_{\rm ord}`$ requires ordinary detailed balance, while $`D_{\rm gen}`$ permits a stationary-law-preserving hidden involution $`\theta`$ with $`K^*=\Theta K\Theta`$ and an even actuator. The equalities specify growth classes, not matching exponents or pointwise equality of state counts. Rivals may choose arbitrary bounded state-dependent kinetic barriers with $`q_{iA}=k b_i(h)`$, $`q_{Ai}=k\mu_i e^{2h}b_i(h)`$ and $`b_i(0)=1`$. They need no target alphabet, histogram, moments, topology or lower gap. The equilibrium block tilt, field-independent hidden generator, preparation and readout remain shared. The [capped proof](CAPPED_KINETIC_INTERFACE_SEPARATION.md) gives a witnessing horizon $`O(\log(1/\delta)/k)`$ on the same two-field menu for both necessary growth classes.
 
 Removing the rival rate cap preserves polynomial unrestricted growth on these same two fields and the weaker ordinary-reversible lower
 
-$$
+```math
 D_{\rm ord}^{\rm unc}(\delta)\ge
 \exp\!\left(\exp\!\left(c_{a,H,\ell,u}[\log(1/\delta)]^{1/5}\right)\right).
-$$
+```
 
-The [uncapped kinetic-interface theorem](GENERAL_KINETIC_INTERFACE.md) now incorporates the target-only two-field rank lower. Thus its unrestricted growth class is matched without enlarging the menu to thirty-nine fields. Its ordinary-reversible upper and lower remain unmatched. At target index $n$, the ordinary-reversible witness uses $O((n+1)^5)$ clock ticks at error $e^{-C(n+1)^5}$. No target tags or rate rescaling are introduced, and neither result charges the number or precision of mean experiments.
+The [uncapped kinetic-interface theorem](GENERAL_KINETIC_INTERFACE.md) now incorporates the target-only two-field rank lower. Thus its unrestricted growth class is matched without enlarging the menu to thirty-nine fields. Its ordinary-reversible upper and lower remain unmatched. At target index $`n`$, the ordinary-reversible witness uses $`O((n+1)^5)`$ clock ticks at error $`e^{-C(n+1)^5}`$. No target tags or rate rescaling are introduced, and neither result charges the number or precision of mean experiments.
 
-A second main result supplies a quantitative resource bridge for this broader kinetic class. Under $b_i(h)\ge b_{\min}>0$ and $e^{2h}b_i(h)\le c_{\max}$, [same-state reversibilization](GENERAL_INTERFACE_ENTROPY_BOUND.md) changes every controlled endpoint mean by at most $(\sqrt{c_{\max}}/b_{\min})\sqrt{\sigma_0^{\rm id}/k}$, with no hidden cap or minimum stationary mass. Consequently
+A second main result supplies a quantitative resource bridge for this broader kinetic class. Under $`b_i(h)\ge b_{\min}\gt 0`$ and $`e^{2h}b_i(h)\le c_{\max}`$, [same-state reversibilization](GENERAL_INTERFACE_ENTROPY_BOUND.md) changes every controlled endpoint mean by at most $`(\sqrt{c_{\max}}/b_{\min})\sqrt{\sigma_0^{\rm id}/k}`$, with no hidden cap or minimum stationary mass. Consequently
 
-$$
+```math
 D_{\le\Sigma}^{\rm id}(\delta)\ge
 D_{\rm ord}\!\left(\delta+\frac{\sqrt{c_{\max}}}{b_{\min}}\sqrt{\Sigma/k}\right).
-$$
+```
 
-The [new capped frontier](KINETIC_PARITY_RESOURCE_TRADEOFF.md) uses $\exp(c\varepsilon^{-\alpha})$ without an exact rival histogram or exponential barrier rule; the common exit cap $3k$ remains an assumption of that stronger lower. The uncapped class inherits the fifth-root-log lower. The [centered-word construction](GENERALIZED_REVERSAL_PREDICTION.md) attains polynomial prediction with exactly zero stationary entropy production under its own generalized reversal. It can also have finite ordinary entropy production $O(k\log(1/\delta))$ after regularization. These are different reversal conventions. If retained configurations are physically even, identity reversal is the relevant convention; a mathematically chosen involution does not by itself establish a physical realization. No universal heat or dissipation necessity follows, and zero stationary generalized entropy production does not imply zero production during a changing protocol.
+The [new capped frontier](KINETIC_PARITY_RESOURCE_TRADEOFF.md) uses $`\exp(c\varepsilon^{-\alpha})`$ without an exact rival histogram or exponential barrier rule; the common exit cap $`3k`$ remains an assumption of that stronger lower. The uncapped class inherits the fifth-root-log lower. The [centered-word construction](GENERALIZED_REVERSAL_PREDICTION.md) attains polynomial prediction with exactly zero stationary entropy production under its own generalized reversal. It can also have finite ordinary entropy production $`O(k\log(1/\delta))`$ after regularization. These are different reversal conventions. If retained configurations are physically even, identity reversal is the relevant convention; a mathematically chosen involution does not by itself establish a physical realization. No universal heat or dissipation necessity follows, and zero stationary generalized entropy production does not imply zero production during a changing protocol.
 
 | Role | Results to retain | Reason for inclusion |
 |---|---|---|
 | Current readout repair | [Seven-readout theorem](FAMILIAR_SWITCH_REPEATED_READOUT.md); [source comparison](FAMILIAR_SWITCH_REPEATED_READOUT_SOURCE_AUDIT.md) | Same-use error/kick correlation allowed under fixed conditional error probability, sector protection and nonselective stationarity; five-million test with 40 million raw reads and a disagreement gate. No full transcript state upper. |
 | Current calibration tradeoff | [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md); [randomized precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md); [readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) | A five-type response certificate can avoid a rival mixing premise under exact protected readout; the conservative 60-billion allocation is scalar precision only, and electronic/hidden-update independence still needs physical support. |
-| Current serial sampling and preparation cost | [Conditional sampling](FAMILIAR_SWITCH_SERIAL_SAMPLING.md); [63-unit reset](FAMILIAR_SWITCH_FINITE_RESET.md) | Same five-million test under every-history control against one fixed reference pair; target reset plus active exposure 327.5 million nominal attempt units. The constructive three-state predictor uses the same reset with conditional pair error below $.00009$. Ordinary-rival preparation remains separately promised. |
-| Current kinetic robustness and realization | [One-percent box](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md); [local three-state CTMC](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md) | Eight independent edge factors may break target closure; exact nominal snapshot fitting and actual three-versus-four minima on $[.00008,.0009]$. |
-| Earlier independent-trial observation cost | [Five-million-trial score](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) | Same two bit pairs, new gates and threshold .0021, observed-TV null allowance $.0002$; the separate serial theorem replaces independence by conditional control. |
-| Heat-bath reference mechanism | [Direct snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md); [weaker-field robustness](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md) | Same two joint laws and unknown symmetric detector class; $H=\log2$ and dwell $5/4$ retain three-versus-four minima on $[2\times10^{-5},10^{-3}]$ under the stated physical allowances. |
-| Heat-bath reference observation cost | [Two-million-trial test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) | Two million trials suffice, or 2.5 million with observed-TV allowance $10^{-4}$; the first is below the old design's necessary count. No sample optimum or laboratory-time comparison is claimed. |
-| Earlier calibration-value comparison | [Old fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md); [detector information cost](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) | At $H=\log3$, dwell $3/2$, 32 million/90 million trials suffice; the noisy target needs at least 2,384,996 fixed trials without the calibrated-detector promise, versus its calibrated sufficient 1.2 million. Calibration effort is separate. |
+| Current serial sampling and preparation cost | [Conditional sampling](FAMILIAR_SWITCH_SERIAL_SAMPLING.md); [63-unit reset](FAMILIAR_SWITCH_FINITE_RESET.md) | Same five-million test under every-history control against one fixed reference pair; target reset plus active exposure 327.5 million nominal attempt units. The constructive three-state predictor uses the same reset with conditional pair error below $`.00009`$. Ordinary-rival preparation remains separately promised. |
+| Current kinetic robustness and realization | [One-percent box](FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md); [local three-state CTMC](FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md) | Eight independent edge factors may break target closure; exact nominal snapshot fitting and actual three-versus-four minima on $`[.00008,.0009]`$. |
+| Earlier independent-trial observation cost | [Five-million-trial score](FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md) | Same two bit pairs, new gates and threshold .0021, observed-TV null allowance $`.0002`$; the separate serial theorem replaces independence by conditional control. |
+| Heat-bath reference mechanism | [Direct snapshot witness](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md); [weaker-field robustness](FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md) | Same two joint laws and unknown symmetric detector class; $`H=\log2`$ and dwell $`5/4`$ retain three-versus-four minima on $`[2\times10^{-5},10^{-3}]`$ under the stated physical allowances. |
+| Heat-bath reference observation cost | [Two-million-trial test](FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md) | Two million trials suffice, or 2.5 million with observed-TV allowance $`10^{-4}`$; the first is below the old design's necessary count. No sample optimum or laboratory-time comparison is claimed. |
+| Earlier calibration-value comparison | [Old fixed-score test](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md); [detector information cost](FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md) | At $`H=\log3`$, dwell $`3/2`$, 32 million/90 million trials suffice; the noisy target needs at least 2,384,996 fixed trials without the calibrated-detector promise, versus its calibrated sufficient 1.2 million. Calibration effort is separate. |
 | Conditional physical realization | [Charge mapping and unequal attempts](FAMILIAR_SWITCH_CHARGE_REALIZATION.md); [source audit](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) | Nondegenerate sequential-tunneling dots realize the heat-bath model under explicit rate assumptions; exact controlled-mean compression covers unequal attempts. The one-percent snapshot certificate above is a separate local rate box around equal attempts. |
 | Operational preparation boundary | [Preparation and instrument analysis](FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) | Counterexamples isolate hidden preparation and joint disturbance; an optional five-type response check retains exact balance and needs its own sampling analysis. |
 | Improved statistical tests | [Snapshot scores](FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md); [endpoint scores](FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md) | Fixed-score sufficient budgets with separate paired-trial and single-readout counts; neither design is claimed optimal. |
-| Earlier two-preparation mechanism | [Four-endpoint covariance](FAMILIAR_SWITCH_PREPARATION_WITNESS.md); [preparation/measurement cost](FAMILIAR_SWITCH_PREPARATION_COST.md) | Three-versus-four counts, nominal occupation gap in $(9/5000,1/550)$ and calibrated gap $>1/625$; one shared model serves four cells from two field equilibria. |
-| Earlier one-preparation mechanism | [Two-switch structure](FAMILIAR_SWITCH_STRUCTURE.md); [seven-mean certificate](FAMILIAR_SWITCH_FINITE_MARGIN.md) | Three-versus-four counts at occupation tolerance $1/2000$, with seven short experiments and no rival rate cap; same-menu ordinary-three-state upper below $1/1000$. |
-| Earlier calibration and measurement | [Calibration theorem](FAMILIAR_SWITCH_CALIBRATION.md); [measurement cost](FAMILIAR_SWITCH_MEASUREMENT_COST.md) | Actual three-versus-four counts on $10^{-5}\le\delta_P\le3/10000$ under the stated one-preparation guarantees; its sample budgets are not replaced under unchanged resources. |
+| Earlier two-preparation mechanism | [Four-endpoint covariance](FAMILIAR_SWITCH_PREPARATION_WITNESS.md); [preparation/measurement cost](FAMILIAR_SWITCH_PREPARATION_COST.md) | Three-versus-four counts, nominal occupation gap in $`(9/5000,1/550)`$ and calibrated gap $`\gt 1/625`$; one shared model serves four cells from two field equilibria. |
+| Earlier one-preparation mechanism | [Two-switch structure](FAMILIAR_SWITCH_STRUCTURE.md); [seven-mean certificate](FAMILIAR_SWITCH_FINITE_MARGIN.md) | Three-versus-four counts at occupation tolerance $`1/2000`$, with seven short experiments and no rival rate cap; same-menu ordinary-three-state upper below $`1/1000`$. |
+| Earlier calibration and measurement | [Calibration theorem](FAMILIAR_SWITCH_CALIBRATION.md); [measurement cost](FAMILIAR_SWITCH_MEASUREMENT_COST.md) | Actual three-versus-four counts on $`10^{-5}\le\delta_P\le3/10000`$ under the stated one-preparation guarantees; its sample budgets are not replaced under unchanged resources. |
 | Simple state-count principle | [Matrix characterization](MATRIX_RANK_PREDICTION_PRINCIPLE.md) | General positive factors versus nonnegative Gram factors determine both exact minima for a controlled target class. |
 | Visible effect of hidden memory | [Kinetic variance](KINETIC_VARIANCE_COMPRESSION.md) | Excitation and readout each contribute a heterogeneity factor, giving a uniform variance/gap compression bound. |
 | Principal comparison | [Capped kinetic separation](CAPPED_KINETIC_INTERFACE_SEPARATION.md); [kinetic/parity resource theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md) | Same two fields and exit cap: polynomial unrestricted/generalized-reversible growth versus exponential ordinary-reversible growth. |
@@ -1039,18 +1039,18 @@ The [new capped frontier](KINETIC_PARITY_RESOURCE_TRADEOFF.md) uses $\exp(c\vare
 | Historical quantitative scopes | Tagged binary fixed-clock and arbitrary-switching results; older capped comparisons | Retains binary actuation and stronger bounds under their distinct assumptions. |
 | Structural controls and foundations | Passive/step/switching, local paths, fresh realization versus aggregation, rate/closure and response results | Identifies the task and architecture restrictions under which smaller reversible predictors exist. |
 
-The [finite example](FINITE_REVERSIBILITY_ADVANTAGE.md) supplies a separate twelve-state equilibrium target and an exact eleven-state stationary nonreversible predictor. The [new rational observation theorem](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) forces ordinary-reversible minimum twelve at $\delta\le2^{-220}$ from 12,766 two-field experiments of at most 66 ticks. The interface, hidden cap $2k$, fields $0,\log2$ and clock $(\log2)/(8k)$ are unchanged. It resolves stable recovery of the bounded rational selectors recorded in the frozen [observation diagnosis](FINITE_OBSERVATION_BOTTLENECK.md), using a certified ten-function basis and approximate intertwining. The exact core matrix is established prior art; the [source supplement](FINITE_PRECISION_SOURCE_AUDIT.md) and [new source comparison](RATIONAL_OBSERVATION_SOURCE_AUDIT.md) distinguish the controlled realization and recovery from prior ingredients.
+The [finite example](FINITE_REVERSIBILITY_ADVANTAGE.md) supplies a separate twelve-state equilibrium target and an exact eleven-state stationary nonreversible predictor. The [new rational observation theorem](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md) forces ordinary-reversible minimum twelve at $`\delta\le2^{-220}`$ from 12,766 two-field experiments of at most 66 ticks. The interface, hidden cap $`2k`$, fields $`0,\log2`$ and clock $`(\log2)/(8k)`$ are unchanged. It resolves stable recovery of the bounded rational selectors recorded in the frozen [observation diagnosis](FINITE_OBSERVATION_BOTTLENECK.md), using a certified ten-function basis and approximate intertwining. The exact core matrix is established prior art; the [source supplement](FINITE_PRECISION_SOURCE_AUDIT.md) and [new source comparison](RATIONAL_OBSERVATION_SOURCE_AUDIT.md) distinguish the controlled realization and recovery from prior ingredients.
 
 For the full two-field clock task on this fixed target, the proved accuracy regimes are:
 
 | Mean-error tolerance | Unrestricted predictors | Ordinary-reversible predictors |
 |---|---|---|
-| $0\le\delta\le2^{-1360}$ | Minimum eleven by the [earlier theorem](FINITE_PREDICTOR_MINIMALITY.md). | Minimum twelve. |
-| $2^{-1360}<\delta\le2^{-220}$ | Eleven suffice exactly; no new minimum claim. | Minimum twelve by the new finite subset of experiments. |
-| $\delta\ge1/2376$ | Nine suffice via the reversible construction. | Nine suffice by [symmetry compression](SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md), even for arbitrary two-field durations and horizons. |
-| $\delta\ge557/51920$ | Two suffice via the reversible construction. | Two suffice by [kinetic-variance compression](KINETIC_VARIANCE_COMPRESSION.md), with the same two-field all-horizon scope. |
+| $`0\le\delta\le2^{-1360}`$ | Minimum eleven by the [earlier theorem](FINITE_PREDICTOR_MINIMALITY.md). | Minimum twelve. |
+| $`2^{-1360}\lt \delta\le2^{-220}`$ | Eleven suffice exactly; no new minimum claim. | Minimum twelve by the new finite subset of experiments. |
+| $`\delta\ge1/2376`$ | Nine suffice via the reversible construction. | Nine suffice by [symmetry compression](SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md), even for arbitrary two-field durations and horizons. |
+| $`\delta\ge557/51920`$ | Two suffice via the reversible construction. | Two suffice by [kinetic-variance compression](KINETIC_VARIANCE_COMPRESSION.md), with the same two-field all-horizon scope. |
 
-The interval $2^{-220}<\delta<1/2376$ remains unresolved, and none of the sufficient upper bounds is claimed optimal. The older unrestricted minimum uses the earlier 520-tick witness family; it is not asserted from the new 12,766-experiment subset alone. The finite target has six kinetic labels and is generally uncentered, separate from the nineteen-level family. No eleven-state generalized-reversible model is proved.
+The interval $`2^{-220}\lt \delta\lt 1/2376`$ remains unresolved, and none of the sufficient upper bounds is claimed optimal. The older unrestricted minimum uses the earlier 520-tick witness family; it is not asserted from the new 12,766-experiment subset alone. The finite target has six kinetic labels and is generally uncentered, separate from the nineteen-level family. No eleven-state generalized-reversible model is proved.
 
 A [single-force network](SINGLE_FORCE_CONFORMATIONAL_MODEL.md) makes the ordinary parity and kinetic actuation concrete within a stipulated conformational model. Equal well extensions, calibrated zero-force returns and internal saddle extensions remain model assumptions, not a demonstrated molecule. [Uniform robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md) permits small deviations, including weak control-dependent hidden rates and finite ramps, at an explicit accuracy floor. The [closure theorem](PHYSICAL_REVERSAL_REALIZATION.md) explains why an even equilibrium observation that is Markov must obey ordinary detailed balance.
 
@@ -1058,177 +1058,177 @@ The endpoint-registration theorem strengthens the four-word experiment by treati
 
 ## 2. Earlier hub models and notation
 
-The following notation describes the earlier hub-interface families. The conformational pair uses the separate model and rival class stated above. Use the row-generator convention throughout. A target has a visible state $A$ and a finite hidden set $\mathcal B$, with positive stationary probability $\mu$ and internal generator $K$. The readout is $S(A)=-1$, $S(z)=+1$ on $\mathcal B$. The original targets retain the following rule, a subclass of the broader kinetic competitor interface below. For $k>0$ and a dimensionless scalar field $h$,
+The following notation describes the earlier hub-interface families. The conformational pair uses the separate model and rival class stated above. Use the row-generator convention throughout. A target has a visible state $`A`$ and a finite hidden set $`\mathcal B`$, with positive stationary probability $`\mu`$ and internal generator $`K`$. The readout is $`S(A)=-1`$, $`S(z)=+1`$ on $`\mathcal B`$. The original targets retain the following rule, a subclass of the broader kinetic competitor interface below. For $`k\gt 0`$ and a dimensionless scalar field $`h`$,
 
-$$
+```math
 q_{Az}(h)=k\mu_z e^{(1+g_z)h},\qquad
 q_{zA}(h)=k e^{(g_z-1)h},\qquad
 q_{zz'}(h)=K_{zz'}\quad(z\ne z').
-$$
+```
 
-Diagonals make row sums zero; column probabilities satisfy $\dot p=Q(h)^Tp$. The original centered target families have $\mu K=0$, $\mu_zK_{zz'}=\mu_{z'}K_{z'z}$, and $\sum_z\mu_zg_z=0$. The new six-label finite target keeps stationarity and detailed balance but does not impose centering. Preparation is $\pi_0=(1/2,\mu/2)$. Its fixed-field equilibrium is
+Diagonals make row sums zero; column probabilities satisfy $`\dot p=Q(h)^Tp`$. The original centered target families have $`\mu K=0`$, $`\mu_zK_{zz'}=\mu_{z'}K_{z'z}`$, and $`\sum_z\mu_zg_z=0`$. The new six-label finite target keeps stationarity and detailed balance but does not impose centering. Preparation is $`\pi_0=(1/2,\mu/2)`$. Its fixed-field equilibrium is
 
-$$
+```math
 \pi_h(A)=\frac{e^{-h}}{2\cosh h},\qquad
 \pi_h(z)=\frac{\mu_z e^h}{2\cosh h},\qquad
 \mathbb E_{\pi_h}S=\tanh h.
-$$
+```
 
-At zero field, both visible-block exit rates are $k$. Strong lumpability gives the complete rate-$k$ telegraph path law, requiring exactly two fixed-readout states. This is stronger than matching a correlation function. The [model derivation](THEORY.md) also distinguishes a nonuniform kinetic actuator from a block-uniform potential tilt, which can preserve lumpability after intervention.
+At zero field, both visible-block exit rates are $`k`$. Strong lumpability gives the complete rate-$`k`$ telegraph path law, requiring exactly two fixed-readout states. This is stronger than matching a correlation function. The [model derivation](THEORY.md) also distinguishes a nonuniform kinetic actuator from a block-uniform potential tilt, which can preserve lumpability after intervention.
 
 | Symbol | Meaning and convention |
 |---|---|
-| $k$ | External transition scale; restoring it changes time units, not state counts. |
-| $K,Q(h)$ | Hidden generator and full physical generator, respectively. Internal budgets concern $K$, not the full exit rate of $Q(h)$. |
-| $\mu,\pi_h$ | Hidden stationary law and full fixed-field equilibrium. |
-| $g,G,W$ | Sensitivity, bound $\lvert g\rvert\le G$, and variance $W=\sum_z\mu_zg_z^2$. |
-| $H$ | Fixed positive field bound; allowed inputs satisfy $\lvert h(t)\rvert\le H$. |
-| $m$ | Number of actuator values when used as an alphabet size; $m_F[h](t)$ denotes a mean. |
-| $B,\Lambda$ | Dimensionless internal exit budget $Bk$ and reversible relaxation cap $\Lambda k$. They are different constraints. |
-| $a$ | Dimensionless fixed control-clock spacing; positive held segments have lengths in $(a/k)\mathbb N$. |
-| $D,N$ | Total physical predictor and target state counts, including $A$. |
-| $D_{\rm all},D_{\rm gen},D_{\rm ord}$ | Worst-case counts with stationarity only, a permitted reversal involution, or ordinary detailed balance. The resource note calls the last two $D_{\rm inv},D_{\rm id}$. |
-| $b_{\min},c_{\max}$ | Dimensionless return lower bound and entrance-density upper bound: $b_i(h)\ge b_{\min}$ and $e^{2h}b_i(h)\le c_{\max}$. |
-| $n,r$ | Register width and number of lamp addresses, $r=2^n$. |
-| $\delta$ | Uniform error in the actual controlled mean. |
-| $\sigma_{\rm hid},\sigma_0,\Sigma$ | Hidden stationary entropy-production rate, full zero-field rate $\sigma_0=\sigma_{\rm hid}/2$, and its budget, under ordinary identity reversal. |
-| $\varepsilon,u,m_j$ | In response calculations, $h=\varepsilon u$ and $m_j$ is the coefficient of $\varepsilon^j$, including the factorial convention; coefficient error is a separate tolerance. |
-| $C(t)$ | Cubic kinetic kernel $\langle g,e^{Kt}g\rangle_\mu$; complete finite-field information only in the stated rank-one subclass. |
-| $\alpha,\zeta,p,c,C$ | Positive growth exponents and constants local to each theorem. Reusing a Greek letter does not identify exponents across notes. |
+| $`k`$ | External transition scale; restoring it changes time units, not state counts. |
+| $`K,Q(h)`$ | Hidden generator and full physical generator, respectively. Internal budgets concern $`K`$, not the full exit rate of $`Q(h)`$. |
+| $`\mu,\pi_h`$ | Hidden stationary law and full fixed-field equilibrium. |
+| $`g,G,W`$ | Sensitivity, bound $`\lvert g\rvert\le G`$, and variance $`W=\sum_z\mu_zg_z^2`$. |
+| $`H`$ | Fixed positive field bound; allowed inputs satisfy $`\lvert h(t)\rvert\le H`$. |
+| $`m`$ | Number of actuator values when used as an alphabet size; $`m_F[h](t)`$ denotes a mean. |
+| $`B,\Lambda`$ | Dimensionless internal exit budget $`Bk`$ and reversible relaxation cap $`\Lambda k`$. They are different constraints. |
+| $`a`$ | Dimensionless fixed control-clock spacing; positive held segments have lengths in $`(a/k)\mathbb N`$. |
+| $`D,N`$ | Total physical predictor and target state counts, including $`A`$. |
+| $`D_{\rm all},D_{\rm gen},D_{\rm ord}`$ | Worst-case counts with stationarity only, a permitted reversal involution, or ordinary detailed balance. The resource note calls the last two $`D_{\rm inv},D_{\rm id}`$. |
+| $`b_{\min},c_{\max}`$ | Dimensionless return lower bound and entrance-density upper bound: $`b_i(h)\ge b_{\min}`$ and $`e^{2h}b_i(h)\le c_{\max}`$. |
+| $`n,r`$ | Register width and number of lamp addresses, $`r=2^n`$. |
+| $`\delta`$ | Uniform error in the actual controlled mean. |
+| $`\sigma_{\rm hid},\sigma_0,\Sigma`$ | Hidden stationary entropy-production rate, full zero-field rate $`\sigma_0=\sigma_{\rm hid}/2`$, and its budget, under ordinary identity reversal. |
+| $`\varepsilon,u,m_j`$ | In response calculations, $`h=\varepsilon u`$ and $`m_j`$ is the coefficient of $`\varepsilon^j`$, including the factorial convention; coefficient error is a separate tolerance. |
+| $`C(t)`$ | Cubic kinetic kernel $`\langle g,e^{Kt}g\rangle_\mu`$; complete finite-field information only in the stated rank-one subclass. |
+| $`\alpha,\zeta,p,c,C`$ | Positive growth exponents and constants local to each theorem. Reusing a Greek letter does not identify exponents across notes. |
 
-Ordinary reversibility means detailed balance with a positive stationary law, with identity reversal on retained states. For both the original rule and $q_{iA}=k b_i(h)$, $q_{Ai}=k\mu_i e^{2h}b_i(h)$, it is equivalent to hidden detailed balance: the external edges already balance. A stationary nonreversible hidden model has the same fixed-field stationary distribution. Generalized reversibility instead permits an involution $\theta$ preserving $\mu$ and every $b_i(h)$, fixing $A$, and satisfying $K^*=\Theta K\Theta$. It is a different competitor requirement. Its physical interpretation requires identifying the actual time-reversal parity of the retained variables; the all-even case has $\theta=\mathrm{id}$.
+Ordinary reversibility means detailed balance with a positive stationary law, with identity reversal on retained states. For both the original rule and $`q_{iA}=k b_i(h)`$, $`q_{Ai}=k\mu_i e^{2h}b_i(h)`$, it is equivalent to hidden detailed balance: the external edges already balance. A stationary nonreversible hidden model has the same fixed-field stationary distribution. Generalized reversibility instead permits an involution $`\theta`$ preserving $`\mu`$ and every $`b_i(h)`$, fixing $`A`$, and satisfying $`K^*=\Theta K\Theta`$. It is a different competitor requirement. Its physical interpretation requires identifying the actual time-reversal parity of the retained variables; the all-even case has $`\theta=\mathrm{id}`$.
 
 ## 3. Error, quantifiers and counted resources
 
-For a target $F$ and one predictor $\widehat F$, define
+For a target $`F`$ and one predictor $`\widehat F`$, define
 
-$$
+```math
 \mathcal D_H(F,\widehat F)=
-\sup_{T>0}\ \sup_{\substack{h:[0,T]\to[-H,H]\\h\text{ deterministic, piecewise continuous}}}
+\sup_{T\gt 0}\ \sup_{\substack{h:[0,T]\to[-H,H]\\h\text{ deterministic, piecewise continuous}}}
 \ \sup_{0\le t\le T}
 \left|m_F[h](t)-m_{\widehat F}[h](t)\right|.
-$$
+```
 
-For the new principal comparison, restrict this supremum to fields $\{0,H\}$, held segment lengths in $(a/k)\mathbb N$, and observation times at clock endpoints; denote the resulting norm $\mathcal D_{a,\{0,H\}}$. Define the corresponding worst-case state count by the same supremum/infimum below with that norm. The nonreversible upper serves all bounded protocols and horizons, hence also this restricted menu. The reversible lower already holds in the restricted norm.
+For the new principal comparison, restrict this supremum to fields $`\{0,H\}`$, held segment lengths in $`(a/k)\mathbb N`$, and observation times at clock endpoints; denote the resulting norm $`\mathcal D_{a,\{0,H\}}`$. Define the corresponding worst-case state count by the same supremum/infimum below with that norm. The nonreversible upper serves all bounded protocols and horizons, hence also this restricted menu. The reversible lower already holds in the restricted norm.
 
 Preparation occurs once at the start; changing a held field does not reprepare the state. A predictor is chosen from the known target and requested tolerance, before choosing the protocol or horizon. Constant fields generate time-homogeneous dynamics; rates depend on the current scalar field, with no additional supplied memory or clock coordinate outside the counted model. The principal theorem fixes binary readout and stationary zero-field preparation. The broader rank lower allows fixed real readouts and arbitrary fixed preparations, as specified in its proof.
 
-For target family $\mathcal F$ and admissible architecture $\mathcal C(F)$, the state requirement is
+For target family $`\mathcal F`$ and admissible architecture $`\mathcal C(F)`$, the state requirement is
 
-$$
+```math
 D_{\mathcal C}(\delta)=
 \sup_{F\in\mathcal F}\inf\left\{
-|\widehat F|:\widehat F\in\mathcal C(F),\ 
+|\widehat F|:\widehat F\in\mathcal C(F),\
 \mathcal D_H(F,\widehat F)\le\delta
 \right\}.
-$$
+```
 
-Thus an upper bound constructs a predictor for every target, while a lower bound supplies a hard target at each sufficiently small accuracy. It is not a statement that every target is hard, or that a single finite target has unbounded cost as $\delta\downarrow0$. Constants are uniform over target size at fixed stated physical parameters. The lower-bound target may depend on accuracy.
+Thus an upper bound constructs a predictor for every target, while a lower bound supplies a hard target at each sufficiently small accuracy. It is not a statement that every target is hard, or that a single finite target has unbounded cost as $`\delta\downarrow0`$. Constants are uniform over target size at fixed stated physical parameters. The lower-bound target may depend on accuracy.
 
-All hidden configurations, registers, signs, ports, corridor vertices, hubs, ballast and any retained memory states count. For example, the historical tagged binary target has $36r2^r+100Nn+3$ total states with the fixed constant $N=10^6$; the older binary target has $224r2^r+4$; the nineteen-level target has $18r2^r+2$. The large target itself is never treated as a free oracle inside the reduced model. State count does not charge parameter precision, the description complexity of rate functions, construction time, integration time or experimental samples. Constructions receive the target model; this is compression after specification, not identification from passive data.
+All hidden configurations, registers, signs, ports, corridor vertices, hubs, ballast and any retained memory states count. For example, the historical tagged binary target has $`36r2^r+100Nn+3`$ total states with the fixed constant $`N=10^6`$; the older binary target has $`224r2^r+4`$; the nineteen-level target has $`18r2^r+2`$. The large target itself is never treated as a free oracle inside the reduced model. State count does not charge parameter precision, the description complexity of rate functions, construction time, integration time or experimental samples. Constructions receive the target model; this is compression after specification, not identification from passive data.
 
-The shorthand $\delta^{-\Theta(1)}$ means upper and lower bounds with fixed positive, potentially different exponents. Likewise $\exp(\delta^{-\Theta(1)})$ denotes a growth class; the explicit reversible upper is $\exp[C\delta^{-p}\log(2/\delta)]$. It does not assert a matched exponent or an exact power law.
+The shorthand $`\delta^{-\Theta(1)}`$ means upper and lower bounds with fixed positive, potentially different exponents. Likewise $`\exp(\delta^{-\Theta(1)})`$ denotes a growth class; the explicit reversible upper is $`\exp[C\delta^{-p}\log(2/\delta)]`$. It does not assert a matched exponent or an exact power law.
 
 ## 4. Principal theorem boundaries and physical assumptions
 
-The principal target is exactly the original nineteen-level lamp family, with zero-level hidden mass $1/2$ and each nonzero level $\pm j/100$ of mass $1/36$. Its target band is $[k,3k]$. In the current kinetic class, rivals retain the hub, equilibrium block tilt, one field-independent hidden generator, stationary preparation and binary readout. Their barrier functions obey $b_i(0)=1$ and a fixed bounded endpoint interval at $H$, with no target alphabet or histogram requirement. The capped theorem permits endpoint lower bound zero; the general entropy bridge requires a strictly positive return lower bound on the protocols being compared. The stronger exponential ordinary lower uses common exits at most $3k$; the fifth-root-log lower permits arbitrary rival rates.
+The principal target is exactly the original nineteen-level lamp family, with zero-level hidden mass $`1/2`$ and each nonzero level $`\pm j/100`$ of mass $`1/36`$. Its target band is $`[k,3k]`$. In the current kinetic class, rivals retain the hub, equilibrium block tilt, one field-independent hidden generator, stationary preparation and binary readout. Their barrier functions obey $`b_i(0)=1`$ and a fixed bounded endpoint interval at $`H`$, with no target alphabet or histogram requirement. The capped theorem permits endpoint lower bound zero; the general entropy bridge requires a strictly positive return lower bound on the protocols being compared. The stronger exponential ordinary lower uses common exits at most $`3k`$; the fifth-root-log lower permits arbitrary rival rates.
 
-The [capped two-field proof](CAPPED_KINETIC_INTERFACE_SEPARATION.md) recovers the diagonal endpoint barrier and hidden generator from two full generators, uses exact nonnegative squared-Lagrange selectors and the positive update $I+K/(3k)$, and transfers $O(n)$-degree words using the common cap. Its separate target-only rank proof needs no rival cap and supplies polynomial unrestricted necessity on those same two fields. The [generalized upper](GENERALIZED_REVERSAL_PREDICTION.md) uses word reversal and the middle-symbol actuator; it retains the existing all-protocol prediction guarantee and exit cap. These additions strengthen the current comparison without rewriting the earlier proof scopes below.
+The [capped two-field proof](CAPPED_KINETIC_INTERFACE_SEPARATION.md) recovers the diagonal endpoint barrier and hidden generator from two full generators, uses exact nonnegative squared-Lagrange selectors and the positive update $`I+K/(3k)`$, and transfers $`O(n)`$-degree words using the common cap. Its separate target-only rank proof needs no rival cap and supplies polynomial unrestricted necessity on those same two fields. The [generalized upper](GENERALIZED_REVERSAL_PREDICTION.md) uses word reversal and the middle-symbol actuator; it retains the existing all-protocol prediction guarantee and exit cap. These additions strengthen the current comparison without rewriting the earlier proof scopes below.
 
-The [complete tight-band proof](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) has $O((n+1)^2)$ natural-resolvent factors and logarithmic coefficient mass $O((n+1)^3)$. Fractional clock degree $M=O((n+1)^3)$ with zero integer-time cutoff gives logarithmic noise amplification and witness length $O((n+1)^5)$. Exact positive operators act on the rival's own states; signed expansions recover their scalar tests. The [new internal review](PRL_EXPLORATION_INTERNAL_REVIEW.md) records the selector, integration and entropy-production checks.
+The [complete tight-band proof](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) has $`O((n+1)^2)`$ natural-resolvent factors and logarithmic coefficient mass $`O((n+1)^3)`$. Fractional clock degree $`M=O((n+1)^3)`$ with zero integer-time cutoff gives logarithmic noise amplification and witness length $`O((n+1)^5)`$. Exact positive operators act on the rival's own states; signed expansions recover their scalar tests. The [new internal review](PRL_EXPLORATION_INTERNAL_REVIEW.md) records the selector, integration and entropy-production checks.
 
-The [historical binary fixed-clock theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) retains its different construction: balanced binary labels, rare tags, fixed hidden-rate scaling $\eta=(e^{(\gamma-1)H}-e^{(-\gamma-1)H})/10^9$, a positive but potentially tiny uniform gap, and a very large fixed rate-to-gap ratio. Its inner exponent is $1/12$; only its separate five-field union corollary asserts polynomial unrestricted growth. The new nineteen-level theorem does not change that binary claim or solve the binary target-band problem.
+The [historical binary fixed-clock theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) retains its different construction: balanced binary labels, rare tags, fixed hidden-rate scaling $`\eta=(e^{(\gamma-1)H}-e^{(-\gamma-1)H})/10^9`$, a positive but potentially tiny uniform gap, and a very large fixed rate-to-gap ratio. Its inner exponent is $`1/12`$; only its separate five-field union corollary asserts polynomial unrestricted growth. The new nineteen-level theorem does not change that binary claim or solve the binary target-band problem.
 
-The following arbitrary-switching comparison retains its own original scaling and stronger inner exponent. For that historical binary tagged family, let $B=5\times10^8$ and $g_*=(\sqrt{1+10^{-6}}-1)^2/[100(1+10^{-6})]$. Targets have exit cap $Bk$ and relaxation band $[g_*k,2Bk]$. Rescaling hidden rates by the fixed factor $1/g_*$ gives a unit-gap convention with a correspondingly larger fixed exit cap. Rival classes have no rate cap or required lower gap. The shared original rule, preparation/readout and exact balanced binary histogram remain essential.
+The following arbitrary-switching comparison retains its own original scaling and stronger inner exponent. For that historical binary tagged family, let $`B=5\times10^8`$ and $`g_*=(\sqrt{1+10^{-6}}-1)^2/[100(1+10^{-6})]`$. Targets have exit cap $`Bk`$ and relaxation band $`[g_*k,2Bk]`$. Rescaling hidden rates by the fixed factor $`1/g_*`$ gives a unit-gap convention with a correspondingly larger fixed exit cap. Rival classes have no rate cap or required lower gap. The shared original rule, preparation/readout and exact balanced binary histogram remain essential.
 
-$$
+```math
 D_{\rm all}^{\rm tag,unc}(\delta)\le C_0\delta^{-p_B},\qquad
 D_{\rm rev}^{\rm tag,unc}(\delta)\ge
 \exp\!\left(\exp\!\left(c_H\sqrt{\log(1/\delta)}\right)\right),\qquad
 p_B=\frac{\log2}{\log(1+1/(Be^{(1+\gamma)H}))}.
-$$
+```
 
 The positive filters use exponentially small private-tag entrance rates, a weakly biased color-zero chain, fixed artificial killing, and separated resolvent and heat scales. These are explicit proof/construction costs; no parameter-precision or experimental-efficiency conclusion is supplied. The lower uses five fixed field values with arbitrary durations and rapid switching, without a uniform finite switching schedule or witnessing horizon over all rivals. The [full theorem, Section 7](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md#7-an-explicit-common-family-growth-class-corollary) identifies the precise enlarged family on which unrestricted growth is also bounded below polynomially.
 
-For the earlier arbitrary-switching uncapped nineteen-level comparison, the target band remains $[k,3k]$, the histogram is the same as in the fixed-budget table below, and rivals retain the original rule, preparation and readout. There is no rival rate cap or lower-gap requirement. For sufficiently small $\delta$,
+For the earlier arbitrary-switching uncapped nineteen-level comparison, the target band remains $`[k,3k]`$, the histogram is the same as in the fixed-budget table below, and rivals retain the original rule, preparation and readout. There is no rival rate cap or lower-gap requirement. For sufficiently small $`\delta`$,
 
-$$
+```math
 c_0\delta^{-\zeta}\le D_{\rm all}^{\rm unc}(\delta)\le C_0\delta^{-p},\qquad
 \exp\!\left(\exp\!\left(c_1\sqrt{\log(1/\delta)}\right)\right)
 \le D_{\rm rev}^{\rm unc}(\delta)
 \le\exp\!\left(C_1\delta^{-p}\log(2/\delta)\right).
-$$
+```
 
 The lower uses the existing thirty-nine field amplitudes with arbitrary positive durations and arbitrarily fast switching. That earlier proof does not establish a superpolynomial lower at each fixed positive control clock; the new theorem above does so by a different route. The following table concerns the stronger fixed-budget comparisons, whose clock guarantees remain separate.
 
 | Item | Binary theorem | Nineteen-level theorem |
 |---|---|---|
-| Hidden histogram | $\mu(g=\pm\gamma)=1/2$, fixed $0<\gamma<1$ | $\mu(g=0)=1/2$; $\mu(g=\pm j/100)=1/36$, $j=1,\ldots,9$ |
-| Common internal exit budget | $6580k$ | $3k$ |
-| Target and reversible-upper band | $[k,13160k]$ | $[k,3k]$ |
+| Hidden histogram | $`\mu(g=\pm\gamma)=1/2`$, fixed $`0\lt \gamma\lt 1`$ | $`\mu(g=0)=1/2`$; $`\mu(g=\pm j/100)=1/36`$, $`j=1,\ldots,9`$ |
+| Common internal exit budget | $`6580k`$ | $`3k`$ |
+| Target and reversible-upper band | $`[k,13160k]`$ | $`[k,3k]`$ |
 | Rival lower-gap requirement | None | None |
 | Lower-bound field menu | Five fixed amplitudes | Thirty-nine fixed amplitudes |
-| Lower clock and horizon | Every fixed $a>0$; horizon $O_a(\log(1/\delta)/k)$ | Every fixed $a>0$; horizon $O_a(\log(1/\delta)/k)$ |
+| Lower clock and horizon | Every fixed $`a\gt 0`$; horizon $`O_a(\log(1/\delta)/k)`$ | Every fixed $`a\gt 0`$; horizon $`O_a(\log(1/\delta)/k)`$ |
 | Upper menu | Every allowed bounded protocol and horizon | Every allowed bounded protocol and horizon |
 | State laws | Polynomial with reversibility optional / singly exponential reversible | Polynomial with reversibility optional / singly exponential reversible |
 
-For the binary theorem, set $R_H=e^{(1+\gamma)H}$ and $p=\log2/\log(1+1/(6580R_H))$. The upper with reversibility optional is at most $1+\max\{2,[(1+2R_H^2)/\delta]^p\}$. The nineteen-level exponent replaces $2,6580,\gamma$ by $19,3,9/100$. These are sufficient, unoptimized exponents.
+For the binary theorem, set $`R_H=e^{(1+\gamma)H}`$ and $`p=\log2/\log(1+1/(6580R_H))`$. The upper with reversibility optional is at most $`1+\max\{2,[(1+2R_H^2)/\delta]^p\}`$. The nineteen-level exponent replaces $`2,6580,\gamma`$ by $`19,3,9/100`$. These are sufficient, unoptimized exponents.
 
 | Assumption | Mathematical purpose and physical interpretation | Boundary to retain |
 |---|---|---|
-| Shared equilibrium interface | Current competitors may choose arbitrary bounded barriers with $q_{Ai}/q_{iA}=\mu_i e^{2h}$ and $b_i(0)=1$. Two sampled fields recover the needed operators. | Arbitrary field-dependent hidden generators, unbounded endpoint barriers and different interface geometry remain outside the state lower. Local detailed balance alone does not supply the full hypothesis set. |
+| Shared equilibrium interface | Current competitors may choose arbitrary bounded barriers with $`q_{Ai}/q_{iA}=\mu_i e^{2h}`$ and $`b_i(0)=1`$. Two sampled fields recover the needed operators. | Arbitrary field-dependent hidden generators, unbounded endpoint barriers and different interface geometry remain outside the state lower. Local detailed balance alone does not supply the full hypothesis set. |
 | Actuator range and histogram | The original finite target grid remains fixed; no rival alphabet, histogram or moments are required by the new capped or uncapped kinetic theorems. | Historical capped theorems retain their exact-histogram assumptions. The new proof needs a fixed bounded endpoint interval; the entropy bound also needs a positive return envelope. |
 | Stationary preparation and fixed binary readout | Defines the actual laboratory-style mean interface used to recover word scalars. | Extra preparations, extra readouts or feedback are not supplied. |
-| Exit budget / spectral cap, when imposed | Stabilizes the fixed-clock generator recovery. The older binary proof also needs $P=I+K/(6580k)$ entrywise nonnegative to preserve positive words. | The uncapped proofs replace raw generator recovery by bounded resolvent or mixed killed-semigroup words; the new target-sensitive proof respects a fixed clock without a rival cap. |
+| Exit budget / spectral cap, when imposed | Stabilizes the fixed-clock generator recovery. The older binary proof also needs $`P=I+K/(6580k)`$ entrywise nonnegative to preserve positive words. | The uncapped proofs replace raw generator recovery by bounded resolvent or mixed killed-semigroup words; the new target-sensitive proof respects a fixed clock without a rival cap. |
 | Ordinary reversibility | Supplies adjoint word relations and stationary reverse transports when retained states are even under reversal. | Generalized reversal with an even actuator admits the polynomial centered-word upper; ordinary EPR is not a convention-independent dissipation cost. |
 | Uniform target gap | Shows that hidden slow mixing is not needed for the obstruction. | A gap is not imposed on the lower-bound rival class. |
 | Fixed target alphabet and bounded sensitivity/field ranges | Keeps selector and word-compression constants independent of target size; rivals may use a continuous range. | Changing the fixed ranges with accuracy, or allowing unbounded sensitivities, changes the resource problem. |
 
-For reversible $K$, a relaxation cap $\Lambda k$ bounds every exit by $\Lambda k$; an exit cap $Bk$ bounds the real relaxation spectrum by $2Bk$. These implications are not equalities. In the binary upper the sharper exit budget follows directly from the known stochastic uniformization and from stationary-flux aggregation, despite the larger spectral band. The nineteen-level entropy lower permits any fixed rival cap $\Lambda k$; taking $\Lambda=6$ includes every reversible rival with exits at most $3k$. No cap-to-exit inference of the same form is asserted for general nonreversible spectra.
+For reversible $`K`$, a relaxation cap $`\Lambda k`$ bounds every exit by $`\Lambda k`$; an exit cap $`Bk`$ bounds the real relaxation spectrum by $`2Bk`$. These implications are not equalities. In the binary upper the sharper exit budget follows directly from the known stochastic uniformization and from stationary-flux aggregation, despite the larger spectral band. The nineteen-level entropy lower permits any fixed rival cap $`\Lambda k`$; taking $`\Lambda=6`$ includes every reversible rival with exits at most $`3k`$. No cap-to-exit inference of the same form is asserted for general nonreversible spectra.
 
 The energy/barrier realization in [Theory, Section 2](THEORY.md#2-detailed-balance-and-physical-interpretation) establishes consistency with a kinetic coupling, not a demonstrated molecular mechanism. Global refresh, hubs and complete lamp tables are explicit counted constructions. Fixed-clock lower bounds still use signed combinations of actual mean experiments with potentially large coefficients; they imply no measurement-noise or sample-efficiency guarantee.
 
 ### Fixed-clock target-sensitive observation
 
-The exact stationary identity $\pi_h=(1+\tanh h)\pi_0-\tanh(h)e_A^{\mathsf T}$ recovers the visible-state row from finite suffix means. Rank-one projector insertions factor into these actual scalar data; stationary adjoints then expose Gram norms. For each physical resolvent, a contractive polynomial in $e^{aQ_h}$ has an explicit remainder controlled by $(I-e^{aQ_h})^{M+1}$ on the relevant vector. Its target norm decays exponentially under the target cap; the recovered Gram norm transfers that decay to a rival without bounding its full spectrum.
+The exact stationary identity $`\pi_h=(1+\tanh h)\pi_0-\tanh(h)e_A^{\mathsf T}`$ recovers the visible-state row from finite suffix means. Rank-one projector insertions factor into these actual scalar data; stationary adjoints then expose Gram norms. For each physical resolvent, a contractive polynomial in $`e^{aQ_h}`$ has an explicit remainder controlled by $`(I-e^{aQ_h})^{M+1}`$ on the relevant vector. Its target norm decays exponentially under the target cap; the recovered Gram norm transfers that decay to a rival without bounding its full spectrum.
 
 A Schur complement isolates the hidden killed resolvent. Two physical fields expose complementary positive soft features across the bounded actuator interval. Positive polynomial powers select each label only on the finite target grid; exact rival kernels remain nonnegative without a rival projector or histogram assumption. These [selectors](POSITIVE_LABEL_SELECTORS.md) and zero-field resolvent transports give the new fifth-power clock budget. The older binary route additionally uses killed-heat approximation and natural killing on its rescaled tagged target; that extra construction is not needed here.
 
 ### Same-state entropy-production comparison
 
-Arithmetic reversibilization $(K+K^*)/2$ preserves the stationary law, barrier functions and every exit rate. For dimensional rates $q_{iA}\ge\alpha$ and $q_{Ai}\le\beta\mu_i$, a common reset and bounded hidden occupation give endpoint relative entropy at most $(\sigma_{\rm hid}/(4\alpha))\Psi(c_0,\beta/\alpha)$, with the explicit sharp reset-age envelope in the [general interface note](GENERAL_INTERFACE_ENTROPY_BOUND.md). The physical baseline gives mean error $(\sqrt{c_{\max}}/b_{\min})\sqrt{\sigma_0^{\rm id}/k}$. A common local-balance ratio makes the full comparator reversible; the endpoint estimate itself needs no such ratio. The comparison is applied before the target supremum. Both new kinetic frontiers omit histogram matching, while only the stronger one imposes cap $3k$. Ordinary path entropy production remains distinct from stationary Shannon entropy, protocol heat and generalized reversal.
+Arithmetic reversibilization $`(K+K^*)/2`$ preserves the stationary law, barrier functions and every exit rate. For dimensional rates $`q_{iA}\ge\alpha`$ and $`q_{Ai}\le\beta\mu_i`$, a common reset and bounded hidden occupation give endpoint relative entropy at most $`(\sigma_{\rm hid}/(4\alpha))\Psi(c_0,\beta/\alpha)`$, with the explicit sharp reset-age envelope in the [general interface note](GENERAL_INTERFACE_ENTROPY_BOUND.md). The physical baseline gives mean error $`(\sqrt{c_{\max}}/b_{\min})\sqrt{\sigma_0^{\rm id}/k}`$. A common local-balance ratio makes the full comparator reversible; the endpoint estimate itself needs no such ratio. The comparison is applied before the target supremum. Both new kinetic frontiers omit histogram matching, while only the stronger one imposes cap $`3k`$. Ordinary path entropy production remains distinct from stationary Shannon entropy, protocol heat and generalized reversal.
 
 ### Bounded resolvent observability without a rate cap
 
 The [bounded-control observability lemma](BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md) uses the affine span of the finite physical field menu. Modelwise rapid switching passes actual-mean accuracy to convexified protocols. One analytic parameter deforms the entire protocol, and a priori holomorphic bounds depend only on the bounded external operator, giving a fixed square-root error exponent independent of word length and hidden rates. Artificial absorbing or negative-killing coefficients are proof expressions, not added experimental controls.
 
-Independent exponential dwell averages expose $P_s=s(sI-K)^{-1}$. Polarization and finite Chebyshev interpolation recover bounded label words of $P_s^2$ with explicit coefficient mass and tail bounds. Target cross-port resolvents approximate the exact gates; the [uncapped lower](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) controls all required scalar moments at accuracy $\delta_n=e^{-C(n+1)^2}$, then applies whole-word repair and entropy to force $2^{3\cdot2^n/4}$ rival states. Raw generator moments need not be close. No uniform bound on the Trotter switching frequency is claimed.
+Independent exponential dwell averages expose $`P_s=s(sI-K)^{-1}`$. Polarization and finite Chebyshev interpolation recover bounded label words of $`P_s^2`$ with explicit coefficient mass and tail bounds. Target cross-port resolvents approximate the exact gates; the [uncapped lower](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) controls all required scalar moments at accuracy $`\delta_n=e^{-C(n+1)^2}`$, then applies whole-word repair and entropy to force $`2^{3\cdot2^n/4}`$ rival states. Raw generator moments need not be close. No uniform bound on the Trotter switching frequency is claimed.
 
-The [mixed-word extension](MIXED_KILLED_WORD_OBSERVABILITY.md) also inserts fixed-strength killed and ordinary heat semigroups between smoothed label factors. The binary proof applies it to positive rare-tag selectors, whose approximate port action is established only on the target. Their counterparts remain positive on arbitrary rivals. Weighted whole-word repair handles the rival's own positive normalization, including the exponentially small target root mass. The [full binary proof](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) gives the complete $e^{-C(n+1)^2}$ allocation and separates the tagged-family and enlarged-family conclusions.
+The [mixed-word extension](MIXED_KILLED_WORD_OBSERVABILITY.md) also inserts fixed-strength killed and ordinary heat semigroups between smoothed label factors. The binary proof applies it to positive rare-tag selectors, whose approximate port action is established only on the target. Their counterparts remain positive on arbitrary rivals. Weighted whole-word repair handles the rival's own positive normalization, including the exponentially small target root mass. The [full binary proof](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) gives the complete $`e^{-C(n+1)^2}`$ allocation and separates the tagged-family and enlarged-family conclusions.
 
 ### Rate-dependent and qualitative supporting results
 
-The [state–speed–accuracy theorem](STATE_SPEED_ACCURACY_TRADEOFF.md) makes the nineteen-level proof uniform over a variable reversible spectral cap $\Lambda k$, $\Lambda\ge3$. For constants $c_H,C_0>0$ independent of accuracy and cap, its worst-case state requirement satisfies
+The [state–speed–accuracy theorem](STATE_SPEED_ACCURACY_TRADEOFF.md) makes the nineteen-level proof uniform over a variable reversible spectral cap $`\Lambda k`$, $`\Lambda\ge3`$. For constants $`c_H,C_0\gt 0`$ independent of accuracy and cap, its worst-case state requirement satisfies
 
-$$
+```math
 \log\log\mathcal D_{\rm rev}(\delta,\Lambda)
 \ge c_H\frac{\log(1/\delta)}{\log(\Lambda+2)}-C_0,
-\qquad 0<\delta<1.
-$$
+\qquad 0\lt \delta\lt 1.
+```
 
-Its explicit finite-width criterion is $\delta\le[C_H(\Lambda+2)]^{-C_*(n+1)}$, which forces at least $2^{3\cdot2^n/4}$ states on target $n$. The shared thirty-nine-field menu uses a cap-dependent clock $a_\Lambda/k=1/[2k(\Lambda+R)]$, where $R=e^{(1+9/100)h_0}$ and $h_0=\min\{H,[20(1+9/100)]^{-1}\}$. Witness horizons are $O(\log(1/\delta)/(k\Lambda))$. Full protocol accuracy includes these pulses; a fixed minimum pulse duration does not include them uniformly over caps.
+Its explicit finite-width criterion is $`\delta\le[C_H(\Lambda+2)]^{-C_*(n+1)}`$, which forces at least $`2^{3\cdot2^n/4}`$ states on target $`n`$. The shared thirty-nine-field menu uses a cap-dependent clock $`a_\Lambda/k=1/[2k(\Lambda+R)]`$, where $`R=e^{(1+9/100)h_0}`$ and $`h_0=\min\{H,[20(1+9/100)]^{-1}\}`$. Witness horizons are $`O(\log(1/\delta)/(k\Lambda))`$. Full protocol accuracy includes these pulses; a fixed minimum pulse duration does not include them uniformly over caps.
 
-This gives a necessary cap of at least $\exp[c\log(1/\delta)/\log\log(1/\delta)]-2$ for a hypothetical scheme using only polynomially many reversible states uniformly over the family. That estimate alone remains compatible with polynomial-in-$1/\delta$ caps; the separate uncapped theorem now rules out polynomial reversible state cost. The cap-dependent note also proves an explicit fixed-clock criterion whose accuracy exponent deteriorates exponentially in the cap. It is a nineteen-level extension, not a new binary tradeoff theorem. The analytic derivation received a separate internal audit; finite-verifier status is recorded in the [ledger](CLAIM_LEDGER.md).
+This gives a necessary cap of at least $`\exp[c\log(1/\delta)/\log\log(1/\delta)]-2`$ for a hypothetical scheme using only polynomially many reversible states uniformly over the family. That estimate alone remains compatible with polynomial-in-$`1/\delta`$ caps; the separate uncapped theorem now rules out polynomial reversible state cost. The cap-dependent note also proves an explicit fixed-clock criterion whose accuracy exponent deteriorates exponentially in the cap. It is a nineteen-level extension, not a new binary tradeoff theorem. The analytic derivation received a separate internal audit; finite-verifier status is recorded in the [ledger](CLAIM_LEDGER.md).
 
-The [unbounded-rate boundary note](UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md) makes two further distinctions. First, replacing the binary construction's update matrix literally by a reversible semigroup or resolvent makes its palindromic words positive semidefinite, contradicting the negative lamp correlation required by that gadget. This excludes that replacement route only. Second, repairing entire nineteen-level flip words, while controlling extra measured Gram norms, removes rate and operator-norm assumptions from the algebraic scalar-to-entropy implication. Its largest raw physical generator degree is $162n+20$. The nineteen-level uncapped theorem uses bounded resolvent words instead of uniformly recovering those raw generator scalars. The new binary theorem uses mixed bounded words and a different target encoding; the [binary boundary note](BINARY_UNCAPPED_RESEARCH_BOUNDARY.md) explains why a literal replacement in the older gadget still fails and why general binary words are not all PSD. The algebraic lemma also supports the qualitative compactness consequence below.
+The [unbounded-rate boundary note](UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md) makes two further distinctions. First, replacing the binary construction's update matrix literally by a reversible semigroup or resolvent makes its palindromic words positive semidefinite, contradicting the negative lamp correlation required by that gadget. This excludes that replacement route only. Second, repairing entire nineteen-level flip words, while controlling extra measured Gram norms, removes rate and operator-norm assumptions from the algebraic scalar-to-entropy implication. Its largest raw physical generator degree is $`162n+20`$. The nineteen-level uncapped theorem uses bounded resolvent words instead of uniformly recovering those raw generator scalars. The new binary theorem uses mixed bounded words and a different target encoding; the [binary boundary note](BINARY_UNCAPPED_RESEARCH_BOUNDARY.md) explains why a literal replacement in the older gadget still fails and why general binary words are not all PSD. The algebraic lemma also supports the qualitative compactness consequence below.
 
-The [uniform rate-regularization theorem](RATE_REGULARIZATION.md) provides a complementary approximation: replacing $K$ by $(e^{\Delta K}-I)/\Delta$ retains the same states, stationary law, actuator labels, histogram and original rule while achieving all-protocol, all-horizon mean error $\delta$ with internal exit and spectral cap $O_R(k\delta^{-1}\log(1/\delta))$. It need not retain the prescribed lower gap and does not compress states. Its accuracy-dependent cap is compatible with the tradeoff above; one cannot insert it into a fixed-cap theorem while retaining that theorem's constants. The exact report checks a small Poisson-capping fixture, while the analytic density/reset argument supplies the uniform guarantee.
+The [uniform rate-regularization theorem](RATE_REGULARIZATION.md) provides a complementary approximation: replacing $`K`$ by $`(e^{\Delta K}-I)/\Delta`$ retains the same states, stationary law, actuator labels, histogram and original rule while achieving all-protocol, all-horizon mean error $`\delta`$ with internal exit and spectral cap $`O_R(k\delta^{-1}\log(1/\delta))`$. It need not retain the prescribed lower gap and does not compress states. Its accuracy-dependent cap is compatible with the tradeoff above; one cannot insert it into a fixed-cap theorem while retaining that theorem's constants. The exact report checks a small Poisson-capping fixture, while the analytic density/reset argument supplies the uniform guarantee.
 
-The [finite-state fast-rate closure theorem](FINITE_STATE_FAST_RATE_CLOSURE.md) addresses a different question. For a fixed hidden-state budget $D_h$, all original-rule reversible response functions have compact closure in the same all-protocol, all-horizon metric. Fast-rate limits can have actuator mixtures on clusters, with at most $D_h$ constituent atoms, including limits of vanishing stationary masses. Exact agreement with a scalar-actuator target in either principal alphabet forces those mixtures to be pure, by an observable nonnegative variance identity.
+The [finite-state fast-rate closure theorem](FINITE_STATE_FAST_RATE_CLOSURE.md) addresses a different question. For a fixed hidden-state budget $`D_h`$, all original-rule reversible response functions have compact closure in the same all-protocol, all-horizon metric. Fast-rate limits can have actuator mixtures on clusters, with at most $`D_h`$ constituent atoms, including limits of vanishing stationary masses. Exact agreement with a scalar-actuator target in either principal alphabet forces those mixtures to be pure, by an observable nonnegative variance identity.
 
-For the nineteen-level target $n$, put $r=2^n$. Compactness, purity and the zero-defect whole-word entropy lemma then give a **strictly positive error floor at each fixed $n$ and $D_h<2^r$**, even with unbounded reversible rival rates. The same conclusion holds on the thirty-nine-field menu at any fixed positive clock, for the fixed $H>0$ throughout this dossier. In total-state notation the condition is $D-1<2^r$. The error floor's dependence on $n,D_h$ and the clock is not quantified: this is not an uncapped $\exp(c\delta^{-\alpha})$ state law. The broader polynomial rank lower already implies growing worst-case state requirements without a rate cap. This structural robustness corollary does not improve that growth class or separate reversible from unrestricted rivals: no matching smaller unrestricted realization at its unknown tolerance is established. No binary version of this qualitative entropy consequence is proved here. The compactness/purity proof is analytic; the finite report does not verify it.
+For the nineteen-level target $`n`$, put $`r=2^n`$. Compactness, purity and the zero-defect whole-word entropy lemma then give a **strictly positive error floor at each fixed $`n`$ and $`D_h\lt 2^r`$**, even with unbounded reversible rival rates. The same conclusion holds on the thirty-nine-field menu at any fixed positive clock, for the fixed $`H\gt 0`$ throughout this dossier. In total-state notation the condition is $`D-1\lt 2^r`$. The error floor's dependence on $`n,D_h`$ and the clock is not quantified: this is not an uncapped $`\exp(c\delta^{-\alpha})`$ state law. The broader polynomial rank lower already implies growing worst-case state requirements without a rate cap. This structural robustness corollary does not improve that growth class or separate reversible from unrestricted rivals: no matching smaller unrestricted realization at its unknown tolerance is established. No binary version of this qualitative entropy consequence is proved here. The compactness/purity proof is analytic; the finite report does not verify it.
 
-The separate [Walsh observability theorem](UNCAPPED_WALSH_OBSERVABILITY.md) now gives stronger explicit fixed-target floors against all Markov rivals. With $r=2^n$, degree $1\le p\le r$ and $K_{n,p}=\sum_{j=0}^p\binom rj$, every rival of total size $D<9K_{n,p}+2$ has error at least $e^{-C_a(n+1)p}$ on the thirty-nine-field fixed-clock menu. Rivals need no reversibility, histogram, rate cap or original field rule. At full degree the threshold is $9\cdot2^r+2$; for $n=1$ an explicit reversible quotient attains the exact minimum of $38$ total states. This rank hierarchy is not a reversibility penalty and does not improve the known polynomial unrestricted minimax growth class.
+The separate [Walsh observability theorem](UNCAPPED_WALSH_OBSERVABILITY.md) now gives stronger explicit fixed-target floors against all Markov rivals. With $`r=2^n`$, degree $`1\le p\le r`$ and $`K_{n,p}=\sum_{j=0}^p\binom rj`$, every rival of total size $`D\lt 9K_{n,p}+2`$ has error at least $`e^{-C_a(n+1)p}`$ on the thirty-nine-field fixed-clock menu. Rivals need no reversibility, histogram, rate cap or original field rule. At full degree the threshold is $`9\cdot2^r+2`$; for $`n=1`$ an explicit reversible quotient attains the exact minimum of $`38`$ total states. This rank hierarchy is not a reversibility penalty and does not improve the known polynomial unrestricted minimax growth class.
 
 ## 5. Theorem dependency map
 
@@ -1237,31 +1237,31 @@ The separate [Walsh observability theorem](UNCAPPED_WALSH_OBSERVABILITY.md) now 
 | Two-order unknown-detector witness | [Unknown symmetric readout theorem](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md), using [snapshot covariance](FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md) | Contrast clearing and four corner signs exclude every ordinary rival with at most three states; numerical margins and the larger-null sample budget are separate exact checks. |
 | Charge realization and rate asymmetry | [Conditional charge model](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) | Sequential Fermi rates map to heat-bath dynamics; an explicit positive triangle extends exact prediction to unequal attempts without extending equal-rate numerical constants. |
 | Preparation and initial instrument | [Operational boundary](FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md) | Counterexamples establish necessary distinctions; a five-type observable defect bound controls response preparation under exact balance and an adequate instrument. |
-| Capped kinetic observation | [Capped interface theorem](CAPPED_KINETIC_INTERFACE_SEPARATION.md) | Two generators recover exact positive selectors and transports; a common cap gives linear-in-$n$ clock witnesses and exponential ordinary state necessity. |
+| Capped kinetic observation | [Capped interface theorem](CAPPED_KINETIC_INTERFACE_SEPARATION.md) | Two generators recover exact positive selectors and transports; a common cap gives linear-in-$`n`$ clock witnesses and exponential ordinary state necessity. |
 | Same-menu unrestricted necessity | [Capped theorem, target-only rank branch](CAPPED_KINETIC_INTERFACE_SEPARATION.md#6-a-polynomial-unrestricted-lower-on-the-same-two-fields) | Polynomial unrestricted necessity uses the same two fields, including when rival rates are uncapped. |
 | Generalized-reversal upper | [Centered-word construction](GENERALIZED_REVERSAL_PREDICTION.md) | Word reversal and an even middle-symbol actuator retain polynomial prediction with exactly zero stationary generalized EPR. |
 | Broader entropy bridge | [General interface bound](GENERAL_INTERFACE_ENTROPY_BOUND.md) | Lower return and upper injection envelopes control all-horizon endpoint error without hidden rate or mass factors. |
 | Current resource conclusion | [Kinetic/parity resource theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md) | Combines the broader capped state law and ordinary-EPR frontier while preserving the generalized-reversal distinction. |
 | Fixed-clock scalar interface | [Gram observability](FIXED_CLOCK_GRAM_OBSERVABILITY.md) | Finite sampled means recover inserted/adjoint Gram tests and target-sensitive physical resolvent words with a finite clock horizon. |
 | Positive selector calculus | [Positive label selectors](POSITIVE_LABEL_SELECTORS.md) | Two fields give positive rival kernels; target-only finite-grid discrimination needs no rival histogram. |
-| Principal fixed-clock conclusion | [Tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) | Accuracy $e^{-C_{a,H}(n+1)^5}$ forces $2^{3\cdot2^n/4}$ states using $O_{a,H}((n+1)^5)$ ticks, with unchanged target band. |
-| Entropy-production bridge | [Same-state reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) | Controlled-mean error is at most $R^{3/2}\sqrt{\sigma_0/k}$; rates and stationary masses are unrestricted. |
+| Principal fixed-clock conclusion | [Tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) | Accuracy $`e^{-C_{a,H}(n+1)^5}`$ forces $`2^{3\cdot2^n/4}`$ states using $`O_{a,H}((n+1)^5)`$ ticks, with unchanged target band. |
+| Entropy-production bridge | [Same-state reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) | Controlled-mean error is at most $`R^{3/2}\sqrt{\sigma_0/k}`$; rates and stationary masses are unrestricted. |
 | Resource consequence | [State–entropy-production frontier](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) | Transfers state lower bounds with their own competitor assumptions; provides a finite-EPR polynomial upper. |
 | Historical binary clock route | [Binary Schur/heat calculus](FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md); [binary theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | Retains the separately scaled tagged target, balanced histogram and twelfth-power budget. |
 | Binary uncapped observation interface | [Mixed killed-word observability](MIXED_KILLED_WORD_OBSERVABILITY.md) | Transfers binary smoothed-label, killed and heat words from actual means without a rival cap, with a quadratic logarithmic accuracy budget in the application. |
 | Binary target encoding | [Rare binary tags and distant ballast](BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md) | Supplies positive approximate signed-port selectors; exact balance and every counted state retain a uniform gap and fixed, very large rate-to-gap ratio. |
 | Binary uncapped state bridge | [Weighted whole-word repair](WEIGHTED_WHOLE_WORD_REPAIR.md) | Handles approximate selectors and a shrinking target root mass, adding no states and requiring no global rival operator-norm bound. |
-| Binary uncapped conclusion | [Full binary theorem](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | Combines $e^{-C(n+1)^2}$ scalar accuracy with entropy; separates the tagged-family polynomial upper from the explicit union's polynomial growth class. |
+| Binary uncapped conclusion | [Full binary theorem](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | Combines $`e^{-C(n+1)^2}`$ scalar accuracy with entropy; separates the tagged-family polynomial upper from the explicit union's polynomial growth class. |
 | Uncapped bounded-word interface | [Bounded-control resolvent observability](BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md) | Convexification, one-scalar continuation, dwell averaging and coefficient extraction control bounded label words without a rival rate cap; full arbitrary switching is used. |
-| Uncapped reversible lower | [Positive cross-port resolvents and entropy](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | Target approximation plus scalar extraction at $e^{-O(n^2)}$ accuracy gives superpolynomial reversible necessity against polynomial stationary prediction. |
+| Uncapped reversible lower | [Positive cross-port resolvents and entropy](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | Target approximation plus scalar extraction at $`e^{-O(n^2)}`$ accuracy gives superpolynomial reversible necessity against polynomial stationary prediction. |
 | Physical interface | [Theory](THEORY.md); scalar endpoints in [binary Sections 3–4](BINARY_REVERSIBILITY_LOWER_BOUND.md) and [nineteen-level Sections 3–4](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) | Expresses positive word tests as polynomials in physical generators using the prescribed preparation/readout. |
 | Quantitative observation | [Reversible word observability](REVERSIBLE_WORD_OBSERVABILITY.md) | Capped reversible propagator accuracy controls the required generator-word scalars at each fixed clock. |
 | Positive state-space bridge | [Transport repair](POSITIVE_TRANSPORT_REPAIR.md); [binary Sections 5–6](BINARY_REVERSIBILITY_LOWER_BOUND.md) | Repairs stationary flux on existing rival states; binary positive weighting handles a selector that need not be a projection. |
 | Uncapped algebraic boundary | [Whole-word repair and additional Gram norms](UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md) | Removes the nineteen-level algebraic repair cap, conditional on the specified scalar data; supplies no uncapped actual-mean-to-scalar transfer. |
-| Qualitative uncapped consequence | [Finite-state closure and exact actuator purity](FINITE_STATE_FAST_RATE_CLOSURE.md), together with the zero-defect whole-word lemma | Gives a positive nineteen-level error floor for each fixed $n,D_h<2^{2^n}$, including fixed clocks, without a quantitative inverse-error law. |
+| Qualitative uncapped consequence | [Finite-state closure and exact actuator purity](FINITE_STATE_FAST_RATE_CLOSURE.md), together with the zero-defect whole-word lemma | Gives a positive nineteen-level error floor for each fixed $`n,D_h\lt 2^{2^n}`$, including fixed clocks, without a quantitative inverse-error law. |
 | Reversible lower | [Binary Section 7](BINARY_REVERSIBILITY_LOWER_BOUND.md); [nineteen-level Sections 6–8](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) | Query/flip relations produce a deterministic high-entropy lamp law and exponential physical-state necessity. |
-| Unrestricted lower | [Whole-side fixed-clock rank transfer](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md), used in the principal proofs | Target-only truncation produces a finite observation matrix factoring through any rival's $D$ states; polynomial necessity needs no rival rate cap or field-rule constraint. |
-| Fixed-target rank hierarchy | [Walsh observability](UNCAPPED_WALSH_OBSERVABILITY.md) | All subset characters give an explicit degree hierarchy, positive floors for broad rivals, and the exact $38$-state minimum at $n=1$. |
+| Unrestricted lower | [Whole-side fixed-clock rank transfer](POLYNOMIAL_CONTROLLED_LOWER_BOUND.md), used in the principal proofs | Target-only truncation produces a finite observation matrix factoring through any rival's $`D`$ states; polynomial necessity needs no rival rate cap or field-rule constraint. |
+| Fixed-target rank hierarchy | [Walsh observability](UNCAPPED_WALSH_OBSERVABILITY.md) | All subset characters give an explicit degree hierarchy, positive floors for broad rivals, and the exact $`38`$-state minimum at $`n=1`$. |
 | Nonreversible upper | [Bounded-rate Sections 2–5](BOUNDED_RATE_FINITE_FIELD.md) | Uniformization, stationary word matching and regeneration give one polynomial-size predictor for all horizons. |
 | Reversible upper | [Bounded-rate Section 7](BOUNDED_RATE_FINITE_FIELD.md) | A prediction partition retains detailed balance, the histogram and target band, giving the singly exponential sufficient count. |
 | Same-budget conclusion | [Binary Sections 8–9](BINARY_REVERSIBILITY_LOWER_BOUND.md); [nineteen-level Section 9](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) | Both comparisons concern the same target family and internal exit resource. |
@@ -1273,12 +1273,12 @@ The unrestricted rank lower and ordinary-reversible entropy lower are separate b
 | Comparison | Established state behavior | Scope difference from the principal theorem |
 |---|---|---|
 | Passive visible process | Exactly two states | Complete zero-field path law; no active prediction. |
-| All constant steps in bounded binary class | $\Theta(\log(1/\delta))$ | One common analytic reversible predictor may change the original field rule; no switching guarantee. |
-| Switching in bounded binary class $[k,3k]$ | $\delta^{-\Theta(1)}$ with unrestricted predictors | Its general reversible upper is larger; binary intrinsic separation in this tight band is open. |
+| All constant steps in bounded binary class | $`\Theta(\log(1/\delta))`$ | One common analytic reversible predictor may change the original field rule; no switching guarantee. |
+| Switching in bounded binary class $`[k,3k]`$ | $`\delta^{-\Theta(1)}`$ with unrestricted predictors | Its general reversible upper is larger; binary intrinsic separation in this tight band is open. |
 | One-dimensional local paths plus refresh | Polynomial necessary and reversible sufficient switching size | Original field rule and band retained; small-cost fragmentation is extra structure. The same class has logarithmic step cost. |
 | Typical fixed labels on high-girth expanders | Polynomial necessary and reversible sufficient size | One high-probability label event works at every accuracy; not every fixed labeling. |
 | Six-level stationary-flux / Bayes aggregation | Exponential architecture cost versus polynomial fresh reversible realization | Encoder/flux restrictions are essential; no intrinsic reversibility penalty is inferred from this result. |
-| Rank-one actuator geometry | $\Theta(\log^2(1/\delta))$, or logarithmic with capped active rates | Exact scalar-kernel closure is special; a shared cubic kernel is not generally complete finite-field information. |
+| Rank-one actuator geometry | $`\Theta(\log^2(1/\delta))`$, or logarithmic with capped active rates | Exact scalar-kernel closure is special; a shared cubic kernel is not generally complete finite-field information. |
 | Cubic coefficient prediction | Sharp logarithmic-squared / logarithmic orders | Analytic coefficient task with its own norm and competitor class; not actual finite-field error. |
 | Fifteen-symbol exact reversible prefix | Arbitrarily large exact realization dimension | Zero-error deterministic-color law; no positive-error physical-mean conclusion. |
 
@@ -1310,17 +1310,17 @@ The [PRL source audit](PRL_EXPLORATION_SOURCE_AUDIT.md) adds targeted comparison
 
 | Open boundary | Current status | What would resolve it |
 |---|---|---|
-| Stronger uncapped $\exp(c\delta^{-\alpha})$ law | Open; binary and nineteen-level superpolynomial uncapped lowers are proved | Improve the accuracy-to-word transfer or another part of the estimate. Arbitrary switching gives inner exponent $1/2$; the new fixed-clock result gives $1/5$. |
-| Binary uncapped intrinsic penalty | Resolved in existence by the [tagged-family theorem](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | The older budget-$6580$ family remains a separate open strengthening; literal substitution in its gadget is still obstructed. |
-| Fixed-clock uncapped superpolynomial penalty | **Resolved on the original nineteen-level band $[k,3k]$ targets**, without rival histogram restrictions | The [new two-field theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) gives inner exponent $1/5$ and finite witnesses. The historical binary theorem retains exponent $1/12$ on its scaled tagged family. |
+| Stronger uncapped $`\exp(c\delta^{-\alpha})`$ law | Open; binary and nineteen-level superpolynomial uncapped lowers are proved | Improve the accuracy-to-word transfer or another part of the estimate. Arbitrary switching gives inner exponent $`1/2`$; the new fixed-clock result gives $`1/5`$. |
+| Binary uncapped intrinsic penalty | Resolved in existence by the [tagged-family theorem](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) | The older budget-$`6580`$ family remains a separate open strengthening; literal substitution in its gadget is still obstructed. |
+| Fixed-clock uncapped superpolynomial penalty | **Resolved on the original nineteen-level band $`[k,3k]`$ targets**, without rival histogram restrictions | The [new two-field theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) gives inner exponent $`1/5`$ and finite witnesses. The historical binary theorem retains exponent $`1/12`$ on its scaled tagged family. |
 | Quantify a varying cap | [Uniform nineteen-level tradeoff proved](STATE_SPEED_ACCURACY_TRADEOFF.md), with a separate internal audit | Retain cap-dependent clock requirements and the weaker fixed-clock formula; the uncapped superpolynomial result has a different proof and clock scope. |
-| Binary band $[k,3k]$ / smaller budget | Open | A lower-budget binary construction or a structural obstruction. |
-| Arbitrary reversible field dependence | **Partly resolved:** bounded kinetic barriers with fixed equilibrium block tilt and $b_i(0)=1$ permit the capped exponential separation | Arbitrary field-dependent hidden dynamics, other block tilts or hub-free interfaces need separate arguments. |
-| Match exponents or optimize constants | Open | Sharper lower/upper estimates; $6580$ belongs to the older binary construction, and the tagged construction has a much larger fixed rate-to-gap ratio. |
+| Binary band $`[k,3k]`$ / smaller budget | Open | A lower-budget binary construction or a structural obstruction. |
+| Arbitrary reversible field dependence | **Partly resolved:** bounded kinetic barriers with fixed equilibrium block tilt and $`b_i(0)=1`$ permit the capped exponential separation | Arbitrary field-dependent hidden dynamics, other block tilts or hub-free interfaces need separate arguments. |
+| Match exponents or optimize constants | Open | Sharper lower/upper estimates; $`6580`$ belongs to the older binary construction, and the tagged construction has a much larger fixed rate-to-gap ratio. |
 | Rival histogram and field-rule freedom | **Resolved within the bounded kinetic-interface class** for capped and uncapped lowers, with the same two fields | Unbounded endpoint barriers and arbitrary target interfaces remain outside the proof. |
 | State–fidelity–entropy-production frontier | New capped frontier omits histogram matching and the exponential barrier rule; uncapped frontier also proved | Match the ordinary-EPR bounds; generalized stationary EPR can already be exactly zero with polynomial prediction. No universal dissipation conclusion follows. |
 | Physical reversal convention | Explicit generalized-reversible polynomial upper proved | Identify a natural implementation whose physical parity realizes the involution, or restrict retained configurations to physically even variables. |
-| Useful finite precision | R42–R43 add a two-preparation four-cell gap bracket with ratio $100/99$ and calibrated gap $>1/625$ | The fixed-menu deterministic gap is nearly determined, but preparation access and statistical cost still matter. Seek supportable preparation, better inference or a larger effect while counting changed resources. R39–R41 retain the one-preparation result; R34–R37 retain the earlier family. |
+| Useful finite precision | R42–R43 add a two-preparation four-cell gap bracket with ratio $`100/99`$ and calibrated gap $`\gt 1/625`$ | The fixed-menu deterministic gap is nearly determined, but preparation access and statistical cost still matter. Seek supportable preparation, better inference or a larger effect while counting changed resources. R39–R41 retain the one-preparation result; R34–R37 retain the earlier family. |
 | Arbitrary expander labeling | Open | A uniform compression theorem beyond the stated good-label event. |
 | Inference, sample cost, practical construction | R43 treats four fresh-endpoint cells and two preparations; R41 retains the seven-cell one-preparation task | The four-cell sufficient and necessary counts remain far apart. Improve statistical efficiency or observation design without treating changed preparation/readout resources as free. No richer-path lower, device reset mechanism or practical feasibility is established. |
 
@@ -1332,15 +1332,15 @@ The mathematical source material is present. The current repository has no stand
 
 | Later asset | Exact reusable content | Source and remaining production step |
 |---|---|---|
-| Simple physical mechanism and formula | Incoming/outgoing positive factors versus one nonnegative Gram; $D_{\rm all}=1+n+\operatorname{rank}_+(H)$, $D_{\rm ord}=1+n+\operatorname{cprank}(H)$ | [Matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md). Keep its specified architecture, growing target labels and unquantified positive-error interval explicit. |
-| Hidden-memory equation and accuracy bound | Exact protocol-dependent kernel $k^2\langle c_t,G(t,s)c_s\rangle_\mu$, variance/gap bound and two-state upper $557/51920$ | [Kinetic variance](KINETIC_VARIANCE_COMPRESSION.md). Preparation/common-law requirements and mean-only scope belong beside the bound. |
-| Finite target accuracy map | Ordinary minimum twelve at $2^{-220}$; older unrestricted minimum eleven at $2^{-1360}$; nine-state reversible upper $1/2376$ | [Rational observation](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md), [earlier minimum counts](FINITE_PREDICTOR_MINIMALITY.md), [symmetry upper](SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md). Preserve the different menus and sufficient/minimum distinctions. |
+| Simple physical mechanism and formula | Incoming/outgoing positive factors versus one nonnegative Gram; $`D_{\rm all}=1+n+\mathrm{rank}_+(H)`$, $`D_{\rm ord}=1+n+\mathrm{cprank}(H)`$ | [Matrix principle](MATRIX_RANK_PREDICTION_PRINCIPLE.md). Keep its specified architecture, growing target labels and unquantified positive-error interval explicit. |
+| Hidden-memory equation and accuracy bound | Exact protocol-dependent kernel $`k^2\langle c_t,G(t,s)c_s\rangle_\mu`$, variance/gap bound and two-state upper $`557/51920`$ | [Kinetic variance](KINETIC_VARIANCE_COMPRESSION.md). Preparation/common-law requirements and mean-only scope belong beside the bound. |
+| Finite target accuracy map | Ordinary minimum twelve at $`2^{-220}`$; older unrestricted minimum eleven at $`2^{-1360}`$; nine-state reversible upper $`1/2376`$ | [Rational observation](BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md), [earlier minimum counts](FINITE_PREDICTOR_MINIMALITY.md), [symmetry upper](SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md). Preserve the different menus and sufficient/minimum distinctions. |
 | Reproducible finite experiment menu | 12,766 binary words, maximum 66 ticks, with deterministic export and checksum | Run the rational verifier with `--menu-output`; the [report](../reports/rational_observation.json) records the grammar, length distribution and canonical export hash. This specifies experiments without promising feasible precision or samples. |
-| Model and task equation set | Original rates, equilibrium, $\mathcal D_H$ and worst-case state count | Sections 2–3 above and [Theory](THEORY.md); unify notation when the theorem selection is fixed. |
+| Model and task equation set | Original rates, equilibrium, $`\mathcal D_H`$ and worst-case state count | Sections 2–3 above and [Theory](THEORY.md); unify notation when the theorem selection is fixed. |
 | Fixed-clock principal equation set | Same two-field task: capped polynomial unrestricted/generalized growth versus exponential ordinary growth; uncapped polynomial growth and fifth-root ordinary lower | [Capped kinetic theorem](CAPPED_KINETIC_INTERFACE_SEPARATION.md), [uncapped kinetic theorem](GENERAL_KINETIC_INTERFACE.md), [generalized upper](GENERALIZED_REVERSAL_PREDICTION.md). Keep the common cap and reversal convention beside each bound. |
 | Entropy-production equation set | General interface mean bound, broad/capped ordinary-EPR frontiers, finite-EPR upper and zero generalized EPR | [General interface bound](GENERAL_INTERFACE_ENTROPY_BOUND.md) and [kinetic/parity resource theorem](KINETIC_PARITY_RESOURCE_TRADEOFF.md). Keep full-zero versus hidden normalization and interface envelopes explicit. |
-| Historical binary uncapped equation set | Tagged-family polynomial upper versus superpolynomial reversible lower; explicit union corollary; $e^{-C(n+1)^2}$ accuracy allocation | [Binary uncapped theorem equations (4), (17)–(23)](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md). Keep rare weights, the large fixed target rate-to-gap ratio and arbitrary-switching limitation beside the bound. |
-| Historical arbitrary-switching tight-band comparison | Nineteen-level polynomial unrestricted growth versus superpolynomial reversible lower | [Nineteen-level uncapped theorem](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md); [bounded-control observability](BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md). It retains the band $[k,3k]$. |
+| Historical binary uncapped equation set | Tagged-family polynomial upper versus superpolynomial reversible lower; explicit union corollary; $`e^{-C(n+1)^2}`$ accuracy allocation | [Binary uncapped theorem equations (4), (17)–(23)](BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md). Keep rare weights, the large fixed target rate-to-gap ratio and arbitrary-switching limitation beside the bound. |
+| Historical arbitrary-switching tight-band comparison | Nineteen-level polynomial unrestricted growth versus superpolynomial reversible lower | [Nineteen-level uncapped theorem](UNCAPPED_REVERSIBILITY_LOWER_BOUND.md); [bounded-control observability](BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md). It retains the band $`[k,3k]`$. |
 | Historical fixed-budget equation set | Binary common-budget inequalities and nineteen-level variant | [Binary equations (1)–(5)](BINARY_REVERSIBILITY_LOWER_BOUND.md); [nineteen-level equations (1)–(2)](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md). Preserve explicit constants, growth-class qualification and rival conditions. |
 | Proof mechanism equation set | Physical scalar transfer, stationary repair, deterministic decoding and entropy support bound | [Binary Sections 4–7](BINARY_REVERSIBILITY_LOWER_BOUND.md); [nineteen-level Sections 3–7](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md); [whole-word boundary lemma](UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md). Choose one proof route rather than merging hypotheses from different routes. |
 | Quantitative extension equation set | Uniform cap-dependent lower, concrete target threshold, weaker fixed-clock formula | [State–speed–accuracy equations (3)–(6), (22), (26)–(30)](STATE_SPEED_ACCURACY_TRADEOFF.md). The clock belongs beside the bound. |

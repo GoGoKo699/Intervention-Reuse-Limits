@@ -48,42 +48,42 @@ The illustrative network contains two configurations in each observed ensemble. 
 
 For clarity, take the dimensionless energy
 
-$$
+```math
 E_h(\sigma)=-J_{01}\sigma_0\sigma_1-J_{12}\sigma_1\sigma_2-h\sigma_0
-$$
+```
 
 and single-bit flip rates
 
-$$
+```math
 w_i(\sigma;h)=\frac{\alpha_i}{2}
 \left[1-\sigma_i\tanh\left(h\,1_{i=0}+\sum_{j\sim i}J_{ij}\sigma_j\right)\right].
-$$
+```
 
-This paragraph is our direct calculation for the stipulated open chain. It is not attributed as a theorem of the receptor papers. With $m_i=\mathbb E\sigma_i$, define
+This paragraph is our direct calculation for the stipulated open chain. It is not attributed as a theorem of the receptor papers. With $`m_i=\mathbb E\sigma_i`$, define
 
-$$
+```math
 a(h)=\frac{\tanh(h+J_{01})+\tanh(h-J_{01})}{2},\qquad
 b(h)=\frac{\tanh(h+J_{01})-\tanh(h-J_{01})}{2},
-$$
+```
 
-$$
+```math
 c_0=\frac{\tanh(J_{01}+J_{12})+\tanh(J_{01}-J_{12})}{2},\qquad
 c_2=\frac{\tanh(J_{01}+J_{12})-\tanh(J_{01}-J_{12})}{2}.
-$$
+```
 
 The exact equations are
 
-$$
+```math
 \begin{aligned}
 \dot m_0&=\alpha_0[-m_0+a(h)+b(h)m_1],\\
 \dot m_1&=\alpha_1[-m_1+c_0m_0+c_2m_2],\\
 \dot m_2&=\alpha_2[-m_2+\tanh(J_{12})m_1].
 \end{aligned}
-$$
+```
 
 They hold for arbitrary initial laws and every piecewise-constant endpoint protocol, without a small-field approximation. The closure follows because a function of the endpoint's single binary neighbor is affine, while the zero-field middle-site response is odd in its two binary neighbors. A field at the middle, degree-two hidden site generally introduces an even neighbor-product term; a field at a degree-two observed site can do so as well. A field at the other endpoint still gives an affine neighbor response. These modifications must be checked against the actual topology.
 
-The invariant observable space is contained in $\operatorname{span}\{1,\sigma_0,\sigma_1,\sigma_2\}$. This bounds the dimension of a real linear representation of controlled endpoint means. It does **not** establish a four-state stochastic realization: nonnegative probabilities, a common preparation, an allowed readout and forward control dependence remain additional requirements. It also does not identify the dimension of an entire output path-law realization.
+The invariant observable space is contained in $`\mathrm{span}\{1,\sigma_0,\sigma_1,\sigma_2\}`$. This bounds the dimension of a real linear representation of controlled endpoint means. It does **not** establish a four-state stochastic realization: nonnegative probabilities, a common preparation, an allowed readout and forward control dependence remain additional requirements. It also does not identify the dimension of an entire output path-law realization.
 
 ## 4. Positive duality is established; forward reuse remains a separate requirement
 
@@ -91,9 +91,9 @@ The invariant observable space is contained in $\operatorname{span}\{1,\sigma_0,
 
 The paper identifies zero-field heat-bath Ising dynamics on a cycle with noisy-voter dynamics after time rescaling. Its graphical construction traces an observed site's ancestry backward through copying events, stopping at rerandomization; multiple ancestral paths coalesce. This supplies an exact positive representation, not merely a formal signed moment expansion. The source treats autonomous rates and does not establish a forward predictor for arbitrary boundary-control words.
 
-Assume both bonds are ferromagnetic, $J_{01},J_{12}\ge0$. Our endpoint algebra gives $b(h)\ge0$ and $|a(h)|+b(h)\le1$. A heat-bath update can therefore copy its neighbor with probability $b(h)$, reset to $+1$ with probability $(1-b(h)+a(h))/2$, or reset to $-1$ with probability $(1-b(h)-a(h))/2$. Analogous site-dependent copying and reset probabilities apply to the zero-field hidden sites. Open endpoints require these recalculated probabilities; the uniform cycle construction cannot simply be reused unchanged.
+Assume both bonds are ferromagnetic, $`J_{01},J_{12}\ge0`$. Our endpoint algebra gives $`b(h)\ge0`$ and $`|a(h)|+b(h)\le1`$. A heat-bath update can therefore copy its neighbor with probability $`b(h)`$, reset to $`+1`$ with probability $`(1-b(h)+a(h))/2`$, or reset to $`-1`$ with probability $`(1-b(h)-a(h))/2`$. Analogous site-dependent copying and reset probabilities apply to the zero-field hidden sites. Open endpoints require these recalculated probabilities; the uniform cycle construction cannot simply be reused unchanged.
 
-This extension yields a positive **backward** ancestral representation. Under time-dependent driving, a lineage from time $t$ encounters rates at $t-s$: it traverses the original protocol in reverse chronological order. A simulator allowed that reversed sequence is not automatically a causal forward predictor driven by the original sequence. Establishing an admissible smaller model requires an explicit positive forward realization or intertwiner respecting every control, preparation and readout. The new two-switch theorem supplies that additional construction directly; no no-go theorem, or reversibility advantage, follows from duality alone.
+This extension yields a positive **backward** ancestral representation. Under time-dependent driving, a lineage from time $`t`$ encounters rates at $`t-s`$: it traverses the original protocol in reverse chronological order. A simulator allowed that reversed sequence is not automatically a causal forward predictor driven by the original sequence. Establishing an admissible smaller model requires an explicit positive forward realization or intertwiner respecting every control, preparation and readout. The new two-switch theorem supplies that additional construction directly; no no-go theorem, or reversibility advantage, follows from duality alone.
 
 ## 5. Two recent memory results: relevant boundaries, different theorems
 
@@ -103,21 +103,21 @@ This extension yields a positive **backward** ancestral representation. Under ti
 
 ## 6. The new two-switch result and its closest realization comparisons
 
-For every finite $J>0$ and $H>0$, the [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) uses equal attempt rates, energy $-Js_0s_1-hs_0$, readout $S=s_0$ and zero-field equilibrium preparation. A rival must have a deterministic binary readout and stationary laws
+For every finite $`J\gt 0`$ and $`H\gt 0`$, the [two-switch theorem](FAMILIAR_SWITCH_STRUCTURE.md) uses equal attempt rates, energy $`-Js_0s_1-hs_0`$, readout $`S=s_0`$ and zero-field equilibrium preparation. A rival must have a deterministic binary readout and stationary laws
 
-$$
+```math
 \widehat\pi_h(x)=\frac{\widehat\pi_0(x)e^{h\widehat S(x)}}{\cosh h},
 \qquad \widehat\pi_0(\widehat S=\pm1)=\frac12.
-$$
+```
 
-Within this class, the exact minimum counts are three stationary states and four ordinarily reversible states. An explicit positive three-state generator family reproduces all controlled means for arbitrary finite nonnegative fields; its exits are below two in unit-attempt-rate time. Two queried fields, $0,H$, already force the four-state ordinary minimum, even without a rival rate cap and at any prescribed positive clock. The explicit distinguishing menu consists of eleven words: $H^1,\ldots,H^5$ and $H^i0H^j$ for $i\in\{1,2\}$, $j\in\{0,1,2\}$, with at most five ticks and three constant-field segments. A positive error interval on this menu also holds without a rival rate cap: compact endpoint propagators and principal-log continuity exclude a zero-error limiting sequence. The argument does not quantify a useful margin.
+Within this class, the exact minimum counts are three stationary states and four ordinarily reversible states. An explicit positive three-state generator family reproduces all controlled means for arbitrary finite nonnegative fields; its exits are below two in unit-attempt-rate time. Two queried fields, $`0,H`$, already force the four-state ordinary minimum, even without a rival rate cap and at any prescribed positive clock. The explicit distinguishing menu consists of eleven words: $`H^1,\ldots,H^5`$ and $`H^i0H^j`$ for $`i\in\{1,2\}`$, $`j\in\{0,1,2\}`$, with at most five ticks and three constant-field segments. A positive error interval on this menu also holds without a rival rate cap: compact endpoint propagators and principal-log continuity exclude a zero-error limiting sequence. The argument does not quantify a useful margin.
 
-The lower bound is not a new static rank identity. Minimal linear realization transfers a hidden coordinate $Z$ to any putative three-state rival. The common Gibbs tilt and detailed balance at both fields then force
+The lower bound is not a new static rank identity. Minimal linear realization transfers a hidden coordinate $`Z`$ to any putative three-state rival. The common Gibbs tilt and detailed balance at both fields then force
 
-$$
+```math
 \mathbb E_0[Z\mid S=\pm1]=\pm\tanh J,\qquad
 \mathbb E_0[Z^2\mid S=\pm1]=1.
-$$
+```
 
 Both readout sectors have positive conditional variance. Each requires two states. The complementary upper realizes the familiar closed means with a single positive family obeying the required stationary tilt. Mean closure, linear realization theory and elementary variance support are established ingredients; their controlled positive-versus-reversible realization consequence is the repository result under comparison.
 
@@ -131,6 +131,6 @@ The [earlier source audit](SIMPLE_PREDICTION_SOURCE_AUDIT.md) records the full-t
 
 The result is a comparison within the **shared Gibbs-tilt class**. It does not allow arbitrary independent field coupling to hidden rival coordinates; removing that assumption requires another theorem. It concerns endpoint means, not equality of output path laws, and makes no generalized-reversal or unavoidable-dissipation claim. The target's passive visible path already has hidden memory; its zero equilibrium mean alone is trivial to reproduce.
 
-The exact separation is established in the repository, while practical robustness remains unresolved. The eleven-word design is explicit, but a positive tolerance supplied by compactness is not a percent-level advantage or a sample-complexity estimate. The [protocol exploration](FAMILIAR_SWITCH_PROTOCOLS.md) records reversible three-state fits below $0.14\%$ occupancy error on the current screening menus and below $1\%$ on sampled held-out protocols. Those are finite numerical comparisons, not all-protocol guarantees or certified global optima. They do not invalidate the exact separation, and they do not demonstrate a practical one-percent advantage. The three-switch closure and four-state force-clamp family remain useful follow-up models; this audit does not assign them an advantage.
+The exact separation is established in the repository, while practical robustness remains unresolved. The eleven-word design is explicit, but a positive tolerance supplied by compactness is not a percent-level advantage or a sample-complexity estimate. The [protocol exploration](FAMILIAR_SWITCH_PROTOCOLS.md) records reversible three-state fits below $`0.14\%`$ occupancy error on the current screening menus and below $`1\%`$ on sampled held-out protocols. Those are finite numerical comparisons, not all-protocol guarantees or certified global optima. They do not invalidate the exact separation, and they do not demonstrate a practical one-percent advantage. The three-switch closure and four-state force-clamp family remain useful follow-up models; this audit does not assign them an advantage.
 
 The focused sources support the physical vocabulary and identify established mathematical ingredients. They do not settle priority of the full controlled theorem. The unresolved Falk full-text lead should remain visible, and the twelve-state construction remains a separate mathematical benchmark rather than a demonstrated molecular implementation.

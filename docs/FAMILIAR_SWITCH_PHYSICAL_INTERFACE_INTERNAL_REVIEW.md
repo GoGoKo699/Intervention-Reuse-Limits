@@ -6,11 +6,11 @@
 
 ## Unknown detector contrasts
 
-The author, a separate mathematical reviewer and the coordinator checked the cleared singleton polynomial and all four contrast corners. Its bilinear dependence on the contrasts is the essential simplification. The recorded scalar $R=u(C-D)+uMD-(u-M)L$, with its sign gates, puts both singleton branches strictly on the wrong side of zero for every allowed independent symmetric detector.
+The author, a separate mathematical reviewer and the coordinator checked the cleared singleton polynomial and all four contrast corners. Its bilinear dependence on the contrasts is the essential simplification. The recorded scalar $`R=u(C-D)+uMD-(u-M)L`$, with its sign gates, puts both singleton branches strictly on the wrong side of zero for every allowed independent symmetric detector.
 
 Target errors may lie anywhere between zero and one percent per bit; rivals may choose any fixed error probabilities up to one half. The channel must remain symmetric, memoryless and independent of the hidden process and of the other electronic flip. The same instrument is used in both protocols. Asymmetric or persistent-memory detectors remain outside scope.
 
-The reviewers checked the target-contrast derivatives, dependency-preserving bound for $C-D$, exact quadratic remainder and biased/approximate-force residual. These yield nominal joint-TV gap $>3/8000$, stationary robust gap $>31/100000$, and actual recorded gap $>1/5000$. The constructive general-three upper is $1/50000$, giving state minima three and four on $[2\times10^{-5},2\times10^{-4}]$ under the explicit physical budgets.
+The reviewers checked the target-contrast derivatives, dependency-preserving bound for $`C-D`$, exact quadratic remainder and biased/approximate-force residual. These yield nominal joint-TV gap $`\gt 3/8000`$, stationary robust gap $`\gt 31/100000`$, and actual recorded gap $`\gt 1/5000`$. The constructive general-three upper is $`1/50000`$, giving state minima three and four on $`[2\times10^{-5},2\times10^{-4}]`$ under the explicit physical budgets.
 
 The biased ordinary counterexample confirms a real boundary: dropping stationary balance can make the raw sign test reject a reversible three-state model. Its active kernels are continuous-time embeddable, and small reversible generator perturbations make the example irreducible while retaining strict violations. This is a counterexample to weakening a premise, not a fit to the target.
 
@@ -20,11 +20,11 @@ Four empirical-moment Hoeffding bounds and a union bound retain the dependence o
 
 The first statistical formulation omitted an explicit localization condition. The nuisance bands were proved only on the coordinate box in Section 4 of the readout note. The final rejection rule therefore requires the entire confidence box to lie inside that localization box. Its affine conditions and the multiaffine witness inequalities can all be checked at sixteen moment vertices and four contrast corners. With localization included, the uniform null-validity and target-power arguments pass.
 
-The sufficient allocation is 254 million trials per arm: 508 million paired trials and 1.016 billion binary readouts. Both error probabilities are below five percent. Exact arithmetic checks the exponential comparison and the target's total moment radius $0.0006000002<0.00062$. This conservative guarantee concerns the exact composite null with its physical allowances; it supplies no extra approximation allowance or optimality claim. Earlier calibrated-detector allocations do not transfer.
+The sufficient allocation is 254 million trials per arm: 508 million paired trials and 1.016 billion binary readouts. Both error probabilities are below five percent. Exact arithmetic checks the exponential comparison and the target's total moment radius $`0.0006000002\lt 0.00062`$. This conservative guarantee concerns the exact composite null with its physical allowances; it supplies no extra approximation allowance or optimality claim. Earlier calibrated-detector allocations do not transfer.
 
 ## Physical realization and unequal rates
 
-The charge-model author, an independent algebra reviewer and the coordinator checked the four-state energy substitution, Fermi rates, formal coordinate closure, tilted stationary law and six strictly positive predictive rates. The three-state construction covers $2/3\le\Gamma_2/\Gamma_1\le2$ with common exit cap $3\Gamma_1$. Positivity extends to every ratio at least $2/3$; the upper ratio bound supplies the common cap. The ordinary lower itself is uncapped.
+The charge-model author, an independent algebra reviewer and the coordinator checked the four-state energy substitution, Fermi rates, formal coordinate closure, tilted stationary law and six strictly positive predictive rates. The three-state construction covers $`2/3\le\Gamma_2/\Gamma_1\le2`$ with common exit cap $`3\Gamma_1`$. Positivity extends to every ratio at least $`2/3`$; the upper ratio bound supplies the common cap. The ordinary lower itself is uncapped.
 
 The conditional covariance stays positive at unequal positive attempts, so the exact state counts survive. The old quantitative observation gaps and sample allocations remain restricted to the equal-rate fixture. A positive predictive-rate margin is not a uniform observation gap.
 

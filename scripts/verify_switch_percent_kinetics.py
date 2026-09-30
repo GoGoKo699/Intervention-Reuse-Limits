@@ -19,13 +19,13 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 INPUTS = {
-    'reports/switch_weak_field.json': '6289576de985afec146faeef47ef504105bc98ca986c6ce8a8bed70dbb2c6a5d',
-    'reports/switch_kinetic_interface.json': 'cfb051fbac02d96c5ae3912f80ab42610be426a90127d70173d8e3bbd33e4472',
+    'reports/switch_weak_field.json': '480f4e35a2464695744bf7cb0400f8ea5010fe28e3ac6d95b4c767b3ca92f85b',
+    'reports/switch_kinetic_interface.json': 'd39e9720b956c5b1c591d0f7cb83980150276805c8f79d0238baa4283b834eb2',
 }
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md': '0a98d76eb922250ceabc3c72d3801b40f12be67330a32b1dd9ba7e3018d78499',
-    'docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md': '1e97c8fba182c5c9b320403ceede28b5782d58d6f1c23237a48e272bc51065b4',
-    'docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md': '32e9962422ea9943d41dfe708e7926a06bd56cadd2a79c4c791033ea2317c8b8',
+    'docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md': 'd975cfd78f4bc6a8f30d5bcc50f817cde366c01fb30bbae87c539318c6997eb2',
+    'docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md': '24b4fd2245b27318f47986e5c11ae27cf951f3c18e9d8c265a9309e7acdc45a1',
+    'docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md': '8e1edab2453e4eb7f843f483a30552e518499e7e768271758aac10eea9cf9255',
 }
 CHECKS = 0
 EDGES = ((0, 1), (0, 2), (1, 3), (2, 3))

@@ -185,7 +185,7 @@ For the target, R98 proves
 ```math
 F_r=\frac{e^{-\bar c}\chi}{r}+O(r^{-2}),\qquad
 \bar c=\frac{c_0+c_u}{2},\qquad
-\chi=\frac{(c_u-c_0)^2}{2}\tanh\frac12>0,
+\chi=\frac{(c_u-c_0)^2}{2}\tanh\frac12\gt 0,
 ```
 
 where $`c_0=1-t^2`$ and $`c_u=(1-t^2)/(1-t^2u^2)`$, using the definition of $`c_m`$ above. The positive coefficient comes from the hidden lag across alternating fields; the proof controls the initial transient and remainder. Consequently every two-state rival has error at least $`\lvert F_r\rvert/12`$. The existing three-state upper applies to these same experiments.
@@ -208,6 +208,6 @@ For arbitrary dwells, a tolerance between the quadratic and linear scales theref
 
 The reason a singleton appears is elementary: three states split between two visible signs must leave one sign with only one state. Starting from that sign fixes the hidden state of the rival. The seven-word argument in R92 combines this fact with detailed balance and the shared Gibbs rule; its quantitative violation is second order. This is a separate obstruction from the first-order two-state contrast test above. The approximate reversible chain and the exact general chain are different constructions.
 
-Thus, at tolerance $`\epsilon(r)=r^{-p}`$, the all-duration minima are two states for $`0<p<1`$; three for $`1<p<2`$; and, for $`p>2`$, three general versus four reversible states. At $`p=1`$ and $`p=2`$, the required count depends on the constants. At fixed positive ticks, two states suffice throughout $`0<p<2`$.
+Thus, at tolerance $`\epsilon(r)=r^{-p}`$, the all-duration minima are two states for $`0\lt p\lt 1`$; three for $`1\lt p\lt 2`$; and, for $`p\gt 2`$, three general versus four reversible states. At $`p=1`$ and $`p=2`$, the required count depends on the constants. At fixed positive ticks, two states suffice throughout $`0\lt p\lt 2`$.
 
 These counts describe a prediction task, not the number of physical configurations or hardware bits. A nonreversible compact predictor does not demonstrate dissipation in the held-field target. The complete [scientific guide](docs/SCIENTIFIC_CASE.md) and [sanity audit](docs/FINAL_SANITY_AUDIT.md) record the frozen assumptions, proof boundaries and unresolved implementation limits.

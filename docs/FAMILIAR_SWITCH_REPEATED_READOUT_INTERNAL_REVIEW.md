@@ -25,7 +25,7 @@ when an error changes the hidden state during its own read. Sector
 preservation makes all seven votes refer to the same true sign.
 
 Nonselective stationarity then gives the postblock hidden marginal
-$\pi D^7=\pi$. At each final hidden state, every incorrectly labeled
+$`\pi D^7=\pi`$. At each final hidden state, every incorrectly labeled
 probability mass is matched by an equal deficit in its correctly labeled
 cell relative to the ideal joint law. The resulting TV distance is
 exactly the majority-error probability, not merely an upper bound.
@@ -49,23 +49,23 @@ measurement has made the electronics independent.
 ## The calibration gate and score are combined unconditionally
 
 Review checked the exact tails
-$b_7(.02)=.0000053356544$ and
-$b_7(.01)=.0000003416698$. The two-percent tail fits the old
-$10^{-5}$ initial-instrument allowance, leaving
-$.0000046643456$ for a quantified whole-block defect. The comparison
+$`b_7(.02)=.0000053356544`$ and
+$`b_7(.01)=.0000003416698`$. The two-percent tail fits the old
+$`10^{-5}`$ initial-instrument allowance, leaving
+$`.0000046643456`$ for a quantified whole-block defect. The comparison
 reference has identity initial electronics, which belongs to both
 inherited detector classes. The majority is not itself assumed to be
 an independent electronic channel.
 
-First-pair disagreement has conditional mean $2p(1-p)$ for every
+First-pair disagreement has conditional mean $`2p(1-p)`$ for every
 preparation, including preparation that depends on the preceding
-trial history. At five million trials the $.03$ gate has null and
-target Hoeffding exponents $846.4$ and $1040.4$. No independence
+trial history. At five million trials the $`.03`$ gate has null and
+target Hoeffding exponents $`846.4`$ and $`1040.4`$. No independence
 between trials or between the gate and score is used.
 
-The null is split by its one fixed raw error rate. For $p\le.02$,
+The null is split by its one fixed raw error rate. For $`p\le.02`$,
 the retained pair lies in the inherited serial null class, and adding
-a gate can only reduce rejection. For $p>.02$, the disagreement
+a gate can only reduce rejection. For $`p\gt .02`$, the disagreement
 gate alone bounds rejection. These alternative null cases are combined
 by a maximum. Target miss probabilities are combined by a union bound.
 The proof never conditions the score theorem on passing calibration.
@@ -74,7 +74,7 @@ and conditional preparation promises remain in force.
 
 ## The approximation allowance has a specified data interface
 
-A central scope concern was resolved explicitly: the old $.0002$
+A central scope concern was resolved explicitly: the old $`.0002`$
 null approximation allowance controls the retained majority/final-bit
 pair only. It does not constrain disagreement of the first two raw
 reads. The exact conditional disagreement law is a separate promise
@@ -86,13 +86,13 @@ The imperfect-block extension supplies a different, explicit route.
 A full-block comparison, including the raw transcript and final hidden
 state, bounds calibration drift as well as the retained-pair error.
 A stationary comparison gives calibration slack
-$\epsilon_p+\eta$; a comparison uniform over input states gives
-$\eta$. The reduced Hoeffding gaps are stated separately.
+$`\epsilon_p+\eta`$; a comparison uniform over input states gives
+$`\eta`$. The reduced Hoeffding gaps are stated separately.
 Under the remaining instrument margin, the conservative slack
-$.00002$ retains exponents above $840$ and $1030$.
+$`.00002`$ retains exponents above $`840`$ and $`1030`$.
 
 The stationary-defect extension was also checked. Its channels
-$D_1,\ldots,D_m$ are explicitly fixed in advance, with the same
+$`D_1,\ldots,D_m`$ are explicitly fixed in advance, with the same
 conditional nonselective kernel at each use given every prior history.
 This qualification prevents substituting history-selected stationary
 kernels into the telescoping argument. Their stationary defects add,

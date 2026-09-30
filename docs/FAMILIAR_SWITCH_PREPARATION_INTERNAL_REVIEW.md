@@ -28,9 +28,9 @@ target. The comparison requires two Gibbs-related stationary preparations
 and one fixed model across the four cells.
 
 The selected rational certificate uses the same coupling and field as the
-previous checkpoint, with tick $3/2$. The lower $9/5000$ and feasible upper
-$1/550$ concern the same maximum occupation-error norm and the same four
-experiments. Their ratio is $100/99$. A local fit proposed the rational
+previous checkpoint, with tick $`3/2`$. The lower $`9/5000`$ and feasible upper
+$`1/550`$ concern the same maximum occupation-error norm and the same four
+experiments. Their ratio is $`100/99`$. A local fit proposed the rational
 upper; exact interval propagation, rather than the optimizer, certifies it.
 No claim that the necessary quadratic equation characterizes every
 realizable three-state response is needed.
@@ -42,14 +42,14 @@ approximate-tilt residual. The high-field law discrepancy enters through
 three stationarity/reversibility defects and replacement of the two
 high-preparation responses. The exact six-variable box excludes both
 allowed residual bands; this finite arithmetic is an essential numerical
-premise of the stated $17/10000$ nominal-reference exclusion.
+premise of the stated $`17/10000`$ nominal-reference exclusion.
 
 The physical transfer charges target and rival preparation errors
 separately. It also charges field-induced equilibrium shifts, rate changes
 over the actual active duration, and timing errors. The combined bound
-under the simultaneous $10^{-5}$ tolerances is $0.0000800001<10^{-4}$.
-This leaves actual occupation separation greater than $1/625$, while the
-three-state predictor approximates the actual target within $10^{-5}$.
+under the simultaneous $`10^{-5}`$ tolerances is $`0.0000800001\lt 10^{-4}`$.
+This leaves actual occupation separation greater than $`1/625`$, while the
+three-state predictor approximates the actual target within $`10^{-5}`$.
 The previously proved positive-rate extension covers slightly negative
 low fields and both actual stationary preparations.
 
@@ -64,7 +64,7 @@ prepare arbitrary slow rival chains.
 
 The root and separate reviewers checked the full cost analysis. The test
 fixes its reference and budgets before sampling. Four simultaneous
-two-sided confidence events give the factor $8/\alpha$; separate validity
+two-sided confidence events give the factor $`8/\alpha`$; separate validity
 and power events require two sampling radii. Additional observation bias
 is charged twice and existing preparation allowances are not charged
 again. The sufficient endpoint totals, both reset waits and the exposure
@@ -77,11 +77,11 @@ bound is real-valued; only a fixed integer budget is rounded upward to
 and does not apply to arbitrary trajectory measurements.
 
 The exact-tilt snapshot corollary was checked independently: opposite pulse
-orders $0H,H0$, both starting from low-field equilibrium, recover all four
+orders $`0H,H0`$, both starting from low-field equilibrium, recover all four
 statistics from initial/final binary pairs. Stationarity identifies the
 unweighted and Gibbs-weighted expectations. Weighted occupation variables
-have range $1+u$, so maximum TV error over the two joint laws transfers to
-occupation error with factor $1+u$, giving the $1/1000$ joint-TV gap.
+have range $`1+u`$, so maximum TV error over the two joint laws transfers to
+occupation error with factor $`1+u`$, giving the $`1/1000`$ joint-TV gap.
 Conditional starting coordinates also prove the three-state predictor's
 exact initial/final joint-law match. This requires noninvasive observation;
 the calibrated endpoint sample counts are not transferred to this variant.

@@ -17,17 +17,17 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_percent_kinetics.json': '4ddbddfef6c3c31fc5785a21e51aeac521b0b8c5685e595a7b86c615d6ee807e',
-    'reports/switch_repeated_readout.json': '488a3e39aca64284acc388a91fd38d479b14b727eec0fbf6b21772225391d086',
+    'reports/switch_percent_kinetics.json': 'c75444907d818449f50b07ae765d979331febef1db836f346157676ac0676c05',
+    'reports/switch_repeated_readout.json': 'f05fd529f99d4057346b2443d946aa80bd5ef6e96ae87269ae2a86863af567c0',
 }
 IMPORTS = {
-    'verify_switch_percent_kinetics.py': '6e59c54164d8bef4cca9a45b88a8b70c7dfcbfbd20afbaebc52d7aa7e9358525',
+    'verify_switch_percent_kinetics.py': 'e2602d398e556f053eb63ac06ead5e53fa34b23fab6f0ae4c37929ff87132f31',
     'verify_familiar_switch_margin.py': 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397',
 }
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md': '42530472f40412d9e1f93d868a4df1dd2d833ba34ee89f8531df1cb1679dec0a',
-    'docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md': '311ddad97cfec6ab09a733565e5655532a4449f2b1ff4c33a37516565ed592fa',
-    'docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md': 'eb35e4b689e6a06573eea0fa12e91e19a41c08c23ec14bf0d5262c0b1846a5b9',
+    'docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md': 'abd653f621fc26c37b5c454f8096542920fdd8c0486bf48c5980d7dd9b14161f',
+    'docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md': '4e9c09ce59c2f39ae14b7a83d62e7697ec636f142e2856a34adf6493602ee7da',
+    'docs/FAMILIAR_SWITCH_PREPARATION_FREE_READOUT.md': 'f1738e7502e18ec29491b71e99bbccbf3595abc50690869452f981f1c6b1ec26',
 }
 CHECKS = 0
 U = F(3, 5)

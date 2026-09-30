@@ -18,7 +18,7 @@ that bounded finding does not establish priority or PRL-level significance.
 
 The target is an ordinary reversible four-state model at either held
 field. The data consist of the initial/final binary pair laws for the
-four words $0,H,0H,H0$. One shared positive three-state continuous-time
+four words $`0,H,0H,H0`$. One shared positive three-state continuous-time
 model reproduces those laws and retains the same deterministic readout
 and stationary Gibbs tilt. Every ordinary reversible model with at most
 three states fails, even when it may choose arbitrary preparations for
@@ -54,22 +54,22 @@ claim.
 ## Is the main mathematics an easy corollary?
 
 The lower identity is a short deduction from established algebra. Write
-$A=K_0$, $B=K_H$ and let $j$ be a singleton readout sector of sign $s$.
-For every other state $k$, detailed balance at both fields and the tilt
+$`A=K_0`$, $`B=K_H`$ and let $`j`$ be a singleton readout sector of sign $`s`$.
+For every other state $`k`$, detailed balance at both fields and the tilt
 give
 
-$$
+```math
  A_{jk}B_{kj}
  =\frac{1+su}{1-su}B_{jk}A_{kj},\qquad u=\tanh H.
-$$
+```
 
-Summing over $k\ne j$ and retaining the common diagonal contribution
+Summing over $`k\ne j`$ and retaining the common diagonal contribution
 produces
 
-$$
+```math
  (1-su)(AB)_{jj}-(1+su)(BA)_{jj}
                  +2su A_{jj}B_{jj}=0.
-$$
+```
 
 Conditioning on the singleton sign fixes the starting state, so arbitrary
 preparation drops out. Having at most three states ensures a singleton

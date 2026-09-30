@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Exact fractions.Fraction and integer fixed-point arithmetic with explicit rational error bounds; no floating eigenvalue or exponential certificate",
   "rigorous_target_basis": {
@@ -205,13 +205,13 @@
     "Universal rival recovery requires the separate analytic proof; no numerical optimization is used as a proof."
   ],
   "proof_snapshot_sha256": {
-    "docs/BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md": "3082b801ed5a621bc7c5ee609e5d6682b40d6986af955a493d8652aaedfc15a9",
-    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe",
-    "docs/FINITE_GRAM_ROBUSTNESS.md": "430735bd478fd76d9ce964bd51cc88b63c2055d988a379052a16e524dd7084b8",
-    "docs/FIXED_CLOCK_GRAM_OBSERVABILITY.md": "df1b820b3273511888ab6f1d4faabd495fd41fa0112fce97591c9c597c0285d8",
-    "docs/CAPPED_KINETIC_INTERFACE_SEPARATION.md": "765331a6ac08e6b939654c8c676b91870ac82b243313fe784f329ebbae656cdc",
-    "docs/FINITE_OBSERVATION_BOTTLENECK.md": "360361d398d33270242b835d9705efd798dc60c328c769cb615fafd63748e427",
-    "docs/FINITE_PREDICTOR_MINIMALITY.md": "393714abcd79e5c9b7d7c4184c4dd892ebd635265aff3edab5be3c7ed5f527e5"
+    "docs/BOUNDED_RATIONAL_OBSERVATION_CERTIFICATE.md": "74bfcb1d4821dc934eac2c8f436cb7438326f7b0043cb577000201514080e20d",
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "acd91f09d1e3d0a6547b843930ea199c0d33fbc517969ccfc6906ae2a7e1d5c1",
+    "docs/FINITE_GRAM_ROBUSTNESS.md": "76d1b8c4ad00f7b25e622523dab94ead9d2ba0e43b0c87012d9478ca6561f070",
+    "docs/FIXED_CLOCK_GRAM_OBSERVABILITY.md": "6e45ca9dccc1f72e0cfd50e6e8b1dad29220cdec73b82b8835a66bfbf7bd4fa9",
+    "docs/CAPPED_KINETIC_INTERFACE_SEPARATION.md": "5675255e2a803346057b5b54e5484e2e57620dd4a11791dd9ed98ac9aa872695",
+    "docs/FINITE_OBSERVATION_BOTTLENECK.md": "7faeafe575ec05d9fab5d477f75b7522f3dcf8f8597c8c777ba1a9cda24fac11",
+    "docs/FINITE_PREDICTOR_MINIMALITY.md": "18ed95aebd535c66c669f2176cd55dd86edf286249002c8bef4eef88b8a4fae1"
   },
   "checks": 98
 }

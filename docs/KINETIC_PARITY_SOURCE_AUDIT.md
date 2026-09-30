@@ -12,11 +12,11 @@ This note compares the broader barrier interface and the internally reviewed [ce
 
 **Sergio Bacallado, “Bayesian analysis of variable-order, reversible Markov chains,” Annals of Statistics 39(2), 838–864 (2011).** [DOI](https://doi.org/10.1214/10-AOS857) · [primary electronic reprint](https://arxiv.org/pdf/1105.2640).
 
-**Full text inspected:** Definition 1.1, Proposition 1.2, the subsequent first-order-representation warning, and Definition 2.2/Proposition 2.3 with proof. For an order-$r$ process, reversal symmetry of stationary $(r+1)$-blocks suffices for full sequence reversibility. On de Bruijn word states, the paper imposes edge weights $k_{uv}=k_{v^*u^*}$ and masses $k_u=k_{u^*}$, where $u^*$ reverses the word. With $P(u,v)=k_{uv}/k_u$, its proof gives
+**Full text inspected:** Definition 1.1, Proposition 1.2, the subsequent first-order-representation warning, and Definition 2.2/Proposition 2.3 with proof. For an order-$`r`$ process, reversal symmetry of stationary $`(r+1)`$-blocks suffices for full sequence reversibility. On de Bruijn word states, the paper imposes edge weights $`k_{uv}=k_{v^*u^*}`$ and masses $`k_u=k_{u^*}`$, where $`u^*`$ reverses the word. With $`P(u,v)=k_{uv}/k_u`$, its proof gives
 
-$$
+```math
 \pi(u)P(u,v)=\pi(v^*)P(v^*,u^*).
-$$
+```
 
 **Comparison:** this is a direct precedent for generalized-reversible word realizations. The paper expressly distinguishes them from ordinary reversibility of the lifted first-order chain. It does not prove the repository's centered-actuator continuous-time controlled-response equivalence or quantitative polynomial approximation bound. Those additional steps must be proved separately; reversed-word balance itself should not be claimed as new.
 
@@ -24,7 +24,7 @@ $$
 
 **Persi Diaconis and Laurent Miclo, “On the spectral analysis of second-order Markov chains,” Annales de la Faculté des sciences de Toulouse: Mathématiques, series 6, 22(3), 573–621 (2013).** [DOI](https://doi.org/10.5802/afst.1383) · [publisher full text](https://www.numdam.org/article/AFST_2013_6_22_3_573_0.pdf).
 
-**Full text inspected:** §1, Eqs. (1.1)–(1.5), and Theorem 1.1 with its construction. They distinguish reversal of $(X_0,\ldots,X_n)$ from ordinary reversibility of the pair chain $(X_n,X_{n+1})$. The lifted operator need not be selfadjoint or even diagonalizable. For an irreducible, aperiodic reversible kernel other than independent resampling, Theorem 1.1 constructs a trajectorially reversible second-order perturbation whose spectral gap initially increases.
+**Full text inspected:** §1, Eqs. (1.1)–(1.5), and Theorem 1.1 with its construction. They distinguish reversal of $`(X_0,\ldots,X_n)`$ from ordinary reversibility of the pair chain $`(X_n,X_{n+1})`$. The lifted operator need not be selfadjoint or even diagonalizable. For an irreducible, aperiodic reversible kernel other than independent resampling, Theorem 1.1 constructs a trajectorially reversible second-order perturbation whose spectral gap initially increases.
 
 **Comparison:** performance advantages compatible with sequence reversal and a nonsymmetric lifted operator are established. Their resource is mixing speed for a fixed sampling task, not state count for reusable controlled means. This is nevertheless a direct warning against identifying the repository's selfadjoint competitor restriction with all equilibrium dynamics involving memory or velocity-like variables.
 
@@ -32,7 +32,7 @@ $$
 
 **Hyun Keun Lee, Chulan Kwon and Hyunggyu Park, “Fluctuation Theorems and Entropy Production with Odd-Parity Variables,” Physical Review Letters 110, 050602 (2013).** [DOI](https://doi.org/10.1103/PhysRevLett.110.050602) · [primary preprint](https://arxiv.org/pdf/1209.0543v1).
 
-**Access and inspection:** the full preprint, under its earlier title “Fluctuation theorems in general stochastic processes with odd-parity variables,” was read at pp. 2–3, Eqs. (3)–(11); journal metadata was checked, but the publisher full-text request failed. Equation numbers here refer to the preprint. Reversal maps $x(t)$ to $\theta x(T-t)$. The generalized balance condition uses $\omega_{xy}p_y^s=\omega_{\theta y,\theta x}p_{\theta x}^s$; parity symmetry of the stationary law is a separate condition. Holding-time factors need not cancel as in the all-even case.
+**Access and inspection:** the full preprint, under its earlier title “Fluctuation theorems in general stochastic processes with odd-parity variables,” was read at pp. 2–3, Eqs. (3)–(11); journal metadata was checked, but the publisher full-text request failed. Equation numbers here refer to the preprint. Reversal maps $`x(t)`$ to $`\theta x(T-t)`$. The generalized balance condition uses $`\omega_{xy}p_y^s=\omega_{\theta y,\theta x}p_{\theta x}^s`$; parity symmetry of the stationary law is a separate condition. Holding-time factors need not cancel as in the all-even case.
 
 **Comparison:** substituting ordinary edge-flux entropy for entropy under an arbitrary reversal is invalid. A word-reversal construction with invariant stationary mass, compatible rates and an even actuator addresses this distinction mathematically. This source does not assign a microscopic parity to an arbitrary information-processing device.
 
@@ -40,26 +40,28 @@ $$
 
 Consider the external rates in the [general kinetic interface](GENERAL_KINETIC_INTERFACE.md),
 
-$$
+**Equation (1).**
+
+```math
 q_{iA}(h)=k b_i(h),\qquad
 q_{Ai}(h)=k\mu_i e^{2h}b_i(h),\qquad b_i(0)=1,
-\qquad 0<b_-\le b_i(h)\le b_+<\infty.
-\tag{1}
-$$
+\qquad 0\lt b_-\le b_i(h)\le b_+\lt \infty.
+```
 
-Here $K$ remains field independent and stationary under $\mu$. The following is direct algebra for (1), not a theorem attributed to the sources. At fixed $h$,
+Here $`K`$ remains field independent and stationary under $`\mu`$. The following is direct algebra for (1), not a theorem attributed to the sources. At fixed $`h`$,
 
-$$
+**Equation (2).**
+
+```math
 \pi_h(A)=\frac1{1+e^{2h}},\qquad
 \pi_h(i)=\frac{\mu_i e^{2h}}{1+e^{2h}},\qquad
 \pi_h(A)q_{Ai}(h)=\pi_h(i)q_{iA}(h).
-\tag{2}
-$$
+```
 
-Thus $\pi_h$ is stationary, and the external edge conductance is
-$k\mu_i e^{2h}b_i(h)/(1+e^{2h})$. Ordinary reversibility of the full chain additionally requires ordinary reversibility of $K$. Changing $b_i$ changes kinetics without changing this stationary law or the external forward/backward rate ratio.
+Thus $`\pi_h`$ is stationary, and the external edge conductance is
+$`k\mu_i e^{2h}b_i(h)/(1+e^{2h})`$. Ordinary reversibility of the full chain additionally requires ordinary reversibility of $`K`$. Changing $`b_i`$ changes kinetics without changing this stationary law or the external forward/backward rate ratio.
 
-In thermal units, energies $E_A=h$ and $E_i=-h-\log\mu_i$ reproduce the ratio $q_{Ai}/q_{iA}=e^{E_A-E_i}$. With an attempt frequency $\nu$, a symmetric transition-state energy $B_{Ai}=B_{iA}=E_i-\log[kb_i(h)/\nu]$ represents the two external rates in Arrhenius form. This rate-level representation is not a derivation from a specific microscopic landscape or an accounting of the work required to operate its barriers.
+In thermal units, energies $`E_A=h`$ and $`E_i=-h-\log\mu_i`$ reproduce the ratio $`q_{Ai}/q_{iA}=e^{E_A-E_i}`$. With an attempt frequency $`\nu`$, a symmetric transition-state energy $`B_{Ai}=B_{iA}=E_i-\log[kb_i(h)/\nu]`$ represents the two external rates in Arrhenius form. This rate-level representation is not a derivation from a specific microscopic landscape or an accounting of the work required to operate its barriers.
 
 ### D. Rahav–Horowitz–Jarzynski: well energies and barrier energies are distinct controls
 
@@ -85,7 +87,7 @@ In thermal units, energies $E_A=h$ and $E_i=-h-\log\mu_i$ reproduce the ratio $q
 
 **Comparison:** a microscopic justification of local detailed balance is a separate, assumption-dependent result. The algebraic consistency of (1) does not prove that every bounded measurable barrier function is implementable by that coarse-graining procedure, especially under arbitrarily rapid driving. Our finite-state control model can be well defined without asserting this stronger physical derivation.
 
-The community-supported ingredients in D–F are rate-ratio thermodynamics and independent kinetic information. The special assumptions of the repository remain the star-shaped visible interface, a common hidden equilibrium law, a field-independent $K$, preparation $(1/2,\mu/2)$, bounded barrier rates, and an endpoint-mean prediction task. Source counts cannot establish that entire architecture as conventional or general.
+The community-supported ingredients in D–F are rate-ratio thermodynamics and independent kinetic information. The special assumptions of the repository remain the star-shaped visible interface, a common hidden equilibrium law, a field-independent $`K`$, preparation $`(1/2,\mu/2)`$, bounded barrier rates, and an endpoint-mean prediction task. Source counts cannot establish that entire architecture as conventional or general.
 
 ## 3. Closest bounds and the precise remaining distinction
 
@@ -93,7 +95,7 @@ The community-supported ingredients in D–F are rate-ratio thermodynamics and i
 
 **Artemy Kolchinsky, Naruo Ohga and Sosuke Ito, “Thermodynamic bound on spectral perturbations, with applications to oscillations and relaxation dynamics,” Physical Review Research 6, 013082 (2024).** [DOI](https://doi.org/10.1103/PhysRevResearch.6.013082) · [primary full text](https://arxiv.org/html/2304.01714v4).
 
-**Full text inspected:** §§II–III and Appendix C.1. Arithmetic reversibilization preserves the stationary law, escape rates and edge activity. Their Eq. (7) implies $\|\boldsymbol\lambda^W-\boldsymbol\lambda^{\bar W}\|^2\le\kappa\sigma/2$, where $\kappa=\max_{i\ne j}(\pi_iW_{ji}+\pi_jW_{ij})/(2\pi_i\pi_j)$ is a normalized activity rate. They assume irreducibility and bidirectional edges.
+**Full text inspected:** §§II–III and Appendix C.1. Arithmetic reversibilization preserves the stationary law, escape rates and edge activity. Their Eq. (7) implies $`\|\boldsymbol\lambda^W-\boldsymbol\lambda^{\bar W}\|^2\le\kappa\sigma/2`$, where $`\kappa=\max_{i\ne j}(\pi_iW_{ji}+\pi_jW_{ij})/(2\pi_i\pi_j)`$ is a normalized activity rate. They assume irreducibility and bidirectional edges.
 
 **Comparison:** the general idea of an entropy-controlled difference from an equilibrium analogue is already explicit. Their bound controls autonomous spectra with hidden kinetic constants. It does not supply a bound on every controlled endpoint mean with only interface constants, or a minimax state-budget consequence. Its ordinary reversal convention cannot be replaced by word reversal without changing the problem.
 
@@ -117,7 +119,7 @@ The community-supported ingredients in D–F are rate-ratio thermodynamics and i
 
 **Paul Dupuis, Markos A. Katsoulakis, Yannis Pantazis and Petr Plecháč, “Path-Space Information Bounds for Uncertainty Quantification and Sensitivity Analysis of Stochastic Dynamics,” SIAM/ASA Journal on Uncertainty Quantification 4(1), 80–111 (2016).** [DOI](https://doi.org/10.1137/15M1025645) · [primary preprint](https://arxiv.org/pdf/1503.05136v2).
 
-**Access and inspection:** full preprint, §§3.2–3.6, Theorems 3.3–3.9 and Eqs. (3.38)–(3.39); numbering refers to this version, with journal metadata checked separately. Theorem 3.3 bounds finite-time observable bias by an optimized cumulant-generating expression and path relative entropy. Theorem 3.4 supplies its long-time limit under a limiting cumulant assumption. The sensitivity estimates yield uniform control when $T\operatorname{Var}(F)$ stays bounded, including suitable time averages with summable stationary correlations.
+**Access and inspection:** full preprint, §§3.2–3.6, Theorems 3.3–3.9 and Eqs. (3.38)–(3.39); numbering refers to this version, with journal metadata checked separately. Theorem 3.3 bounds finite-time observable bias by an optimized cumulant-generating expression and path relative entropy. Theorem 3.4 supplies its long-time limit under a limiting cumulant assumption. The sensitivity estimates yield uniform control when $`T\mathrm{Var}(F)`$ stays bounded, including suitable time averages with summable stationary correlations.
 
 **Comparison:** it would be incorrect to suggest information inequalities inherently fail at long times. An instantaneous endpoint observable generally does not satisfy that variance-scaling condition. The repository instead bounds endpoint relative entropy through the last reset, uniformly over arbitrary legal controls, without a hidden mixing constant. This particular step and its same-state reversibilization application are not supplied by the inspected statements.
 
@@ -125,22 +127,23 @@ The community-supported ingredients in D–F are rate-ratio thermodynamics and i
 
 The closest comparisons are complementary: G compares a generator with its additive reversibilization, H and J turn relative entropy into observable error, and I supplies reset renewal. None of these inspected statements directly supplies the repository's combination of an interface-only, all-horizon, all-bounded-protocol endpoint estimate and a same-state ordinary-reversible comparator. This is a precise comparison of inspected statements, not evidence of exhaustive priority. The ordinary path-entropy foundation from Seifert (2005) is documented in the [earlier audit](PRL_EXPLORATION_SOURCE_AUDIT.md).
 
-The [general interface entropy theorem](GENERAL_INTERFACE_ENTROPY_BOUND.md) proves the extension from exponential sensitivities to (1): the return rate remains at least $kb_-$ and the injection density is bounded by $k e^{2H}b_+$. More generally, its endpoint bound needs only a positive return lower bound, a stationary-law-dominated injection upper bound and a controlled initial hidden density. The common equilibrium ratio is needed separately to make the full comparison model reversible. A whole-path relative-entropy bound uniform over arbitrarily long times is not claimed.
+The [general interface entropy theorem](GENERAL_INTERFACE_ENTROPY_BOUND.md) proves the extension from exponential sensitivities to (1): the return rate remains at least $`kb_-`$ and the injection density is bounded by $`k e^{2H}b_+`$. More generally, its endpoint bound needs only a positive return lower bound, a stationary-law-dominated injection upper bound and a controlled initial hidden density. The common equilibrium ratio is needed separately to make the full comparison model reversible. A whole-path relative-entropy bound uniform over arbitrarily long times is not claimed.
 
 ## 4. Required claim boundary after allowing word reversal
 
-For a stationary hidden law invariant under an involution $\theta$, let $\Theta f=f\circ\theta$. Ordinary detailed balance is $K^*=K$; generalized balance is
+For a stationary hidden law invariant under an involution $`\theta`$, let $`\Theta f=f\circ\theta`$. Ordinary detailed balance is $`K^*=K`$; generalized balance is
 
-$$
+**Equation (3).**
+
+```math
 K^*=\Theta K\Theta.
-\tag{3}
-$$
+```
 
-The latter does not make $K$ selfadjoint. If additionally $\theta A=A$ and $b_{\theta i}(h)=b_i(h)$, the external rule is compatible with the same reversal. A centered odd-length word has a reversal-invariant middle-symbol actuator, unlike an endpoint-symbol actuator viewed on the same word state. The repository's [generalized-reversal theorem](GENERALIZED_REVERSAL_PREDICTION.md) proves equality of the coordinate-shifted stationary actuator-path laws and transfers that equality to the controlled continuous-time interface. That last step is a repository argument, not a consequence of the cited statistics papers alone.
+The latter does not make $`K`$ selfadjoint. If additionally $`\theta A=A`$ and $`b_{\theta i}(h)=b_i(h)`$, the external rule is compatible with the same reversal. A centered odd-length word has a reversal-invariant middle-symbol actuator, unlike an endpoint-symbol actuator viewed on the same word state. The repository's [generalized-reversal theorem](GENERALIZED_REVERSAL_PREDICTION.md) proves equality of the coordinate-shifted stationary actuator-path laws and transfers that equality to the controlled continuous-time interface. That last step is a repository argument, not a consequence of the cited statistics papers alone.
 
-The centered-word result is an internally reviewed research theorem: it retains the polynomial prediction bound, target histogram and hidden exit cap while satisfying (3), with exactly zero generalized stationary entropy production. It therefore disproves a superpolynomial state requirement for the enlarged generalized-reversible class on these targets. The stronger conclusion of unavoidable thermodynamic dissipation across all reversal conventions is explicitly false for that mathematical class. Zero stationary entropy under $\theta$ still does not mean zero entropy generated during arbitrary driving or establish a particular physical device.
+The centered-word result is an internally reviewed research theorem: it retains the polynomial prediction bound, target histogram and hidden exit cap while satisfying (3), with exactly zero generalized stationary entropy production. It therefore disproves a superpolynomial state requirement for the enlarged generalized-reversible class on these targets. The stronger conclusion of unavoidable thermodynamic dissipation across all reversal conventions is explicitly false for that mathematical class. Zero stationary entropy under $`\theta`$ still does not mean zero entropy generated during arbitrary driving or establish a particular physical device.
 
-Arithmetic reversibilization $(K+K^*)/2$ remains a valid same-state ordinary-reversible comparator. Its entropy bound uses ordinary path reversal. Replacing $K^*$ with $\Theta K^*\Theta$ would instead aim at generalized balance; for a predictor already satisfying (3), this operation leaves $K$ unchanged and supplies no ordinary-reversible competitor. It therefore cannot extend the ordinary state lower by a change of notation.
+Arithmetic reversibilization $`(K+K^*)/2`$ remains a valid same-state ordinary-reversible comparator. Its entropy bound uses ordinary path reversal. Replacing $`K^*`$ with $`\Theta K^*\Theta`$ would instead aim at generalized balance; for a predictor already satisfying (3), this operation leaves $`K`$ unchanged and supplies no ordinary-reversible competitor. It therefore cannot extend the ordinary state lower by a change of notation.
 
 The defensible physical statement is conditional: in implementations whose counted retained states are even under the physical reversal, the ordinary path-irreversibility frontier applies. For a class admitting compatible reversal of hidden memory states, one must analyze that broader class directly. The distinction should be foregrounded in the research assessment, not relegated to a final caveat.
 

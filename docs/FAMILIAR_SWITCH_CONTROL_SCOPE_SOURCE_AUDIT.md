@@ -45,8 +45,8 @@ the form does not impose stochastic normalization needs qualification.
 Under their normalization that the dominant pole is one, a *positive*
 matrix in Eq. (4) is column-stochastic. Its first columns each contain
 one unit entry. If the monic denominator is
-$z^N+c_1z^{N-1}+\cdots+c_N$, its root at one gives
-$-\sum_{k=1}^N c_k=1$, which is the sum of the final column.
+$`z^N+c_1z^{N-1}+\cdots+c_N`$, its root at one gives
+$`-\sum_{k=1}^N c_k=1`$, which is the sum of the final column.
 This is a direct deduction from their displayed matrix.
 
 The output row remains an arbitrary nonnegative reward, rather than
@@ -59,13 +59,13 @@ changes the normalization wording, not the comparison's conclusion.
 
 ## 3. How the existing upper fits the established methods
 
-The target's mean equations close on $1,S,Z$. In the affine $(S,Z)$
+The target's mean equations close on $`1,S,Z`$. In the affine $`(S,Z)`$
 plane, the three-state construction uses vertices
 
-$$
+```math
  (-1,-t),\qquad (1,-2t),\qquad (1,t+e),
  \qquad t=\tanh J,\quad e=\frac{1-t^2}{2t}.
-$$
+```
 
 The positive rates express each vertex's drift as a nonnegative sum of
 directions towards the other vertices. This gives one invariant triangle
@@ -96,17 +96,17 @@ by the cited literature.
 | --- | --- |
 | Passive low-field endpoint pair law for every time | A reversible three-state birth–death realization matches these laws. Thus passive pair data alone need not incur the extra ordinary state. It does not provide the same model under a second field. |
 | One passive three-time law with two positive gaps | The derived lower bound is four even without detailed balance: conditional on a singleton middle sign, any three-state hidden chain makes past and future independent, whereas the target retains conditional dependence for either sign. A pair-law realization therefore need not reproduce an observed trajectory. |
-| Four controlled pair tables $0,H,0H,H0$ | The established theorem gives three general states versus four ordinary states. Its lower bound allows arbitrary per-word preparations. |
-| Signed-control endpoint protocols over $\{0,\pm H\}$ or $[-H,H]$, one common preparation | The exact equal-rate criterion is $3t^2u^2+(1+t^2)u\le1$. A 23-pair menu of at most five ticks per word determines the same state minimum, with a positive parameter-dependent TV margin. It uses minimal shared linear realization and an invariant triangle. Its common-preparation requirement differs from the four-word arbitrary-preparation class. |
+| Four controlled pair tables $`0,H,0H,H0`$ | The established theorem gives three general states versus four ordinary states. Its lower bound allows arbitrary per-word preparations. |
+| Signed-control endpoint protocols over $`\{0,\pm H\}`$ or $`[-H,H]`$, one common preparation | The exact equal-rate criterion is $`3t^2u^2+(1+t^2)u\le1`$. A 23-pair menu of at most five ticks per word determines the same state minimum, with a positive parameter-dependent TV margin. It uses minimal shared linear realization and an invariant triangle. Its common-preparation requirement differs from the four-word arbitrary-preparation class. |
 
-At the existing fixture $t=4/5$, $u=3/5$, the equal-rate expression is
-$1.6752>1$. Allowing both field signs requires four states even in the
+At the existing fixture $`t=4/5`$, $`u=3/5`$, the equal-rate expression is
+$`1.6752\gt 1`$. Allowing both field signs requires four states even in the
 general class for the richer endpoint task. Equality permits zero rates
 while the constructed chain remains irreducible. Strict interior parameters
 permit a small triangle perturbation with all six rates positive.
 
-For arbitrary hidden/visible attempt ratio $r>0$, the signed proof gives
-$(r+2)t^2u^2+(1+t^2)u\le r$. This extends the exact criterion within
+For arbitrary hidden/visible attempt ratio $`r\gt 0`$, the signed proof gives
+$`(r+2)t^2u^2+(1+t^2)u\le r`$. This extends the exact criterion within
 the same published kinetic family; it is distinct from the previously
 constructed one-sided unequal-rate interval. The finite menu uses one
 common preparation and does not establish the same threshold for arbitrary

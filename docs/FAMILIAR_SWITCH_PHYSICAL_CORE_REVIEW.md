@@ -53,7 +53,7 @@ by four, without optimization, simulated data or floating arithmetic.
 Two tempting overstatements were explicitly ruled out. A stochastic
 encoder gives a reversible coarse kernel, but naive compression of a
 generator can have a negative off-diagonal rate. Also, the explicit
-predictor's high-field current vanishes at $\tanh H=1/3$; its zero-field
+predictor's high-field current vanishes at $`\tanh H=1/3`$; its zero-field
 current is always positive. The theorem says at least one field must
 violate ordinary detailed balance, not both. Both cases have exact checks.
 

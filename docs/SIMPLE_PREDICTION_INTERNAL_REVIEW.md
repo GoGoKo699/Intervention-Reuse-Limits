@@ -6,9 +6,9 @@
 
 ## 1. From a positive matrix to a controlled process
 
-For a normalized completely positive matrix $H$ with positive row sums $v$, any nonnegative factorization normalizes to stochastic memory-to-probe and probe-to-memory kernels $R,T$. Direct multiplication gives $TR=\operatorname{diag}(v)^{-1}H$, $vT=a$, and $aR=v$. Removing zero factors makes every retained stationary mass positive. Conditional block refresh preserves these identities and gives hidden exit cap two. Completely positive factors give exact cross-block detailed balance; the block-constant decomposition then gives the target band $[k,3k]$.
+For a normalized completely positive matrix $`H`$ with positive row sums $`v`$, any nonnegative factorization normalizes to stochastic memory-to-probe and probe-to-memory kernels $`R,T`$. Direct multiplication gives $`TR=\mathrm{diag}(v)^{-1}H`$, $`vT=a`$, and $`aR=v`$. Removing zero factors makes every retained stationary mass positive. Conditional block refresh preserves these identities and gives hidden exit cap two. Completely positive factors give exact cross-block detailed balance; the block-constant decomposition then gives the target band $`[k,3k]`$.
 
-The common map $\operatorname{diag}(1,R,I)$ is stochastic. It intertwines every controlled generator with the canonical endpoint predictor, preserves preparation and binary readout, and commutes with both output-class projectors. Thus all factorizations give identical controlled means and identical finite-dimensional binary-output distributions. The map uses only the present state; it has no access to future fields. The construction also retains the exact passive two-state path law.
+The common map $`\mathrm{diag}(1,R,I)`$ is stochastic. It intertwines every controlled generator with the canonical endpoint predictor, preserves preparation and binary readout, and commutes with both output-class projectors. Thus all factorizations give identical controlled means and identical finite-dimensional binary-output distributions. The map uses only the present state; it has no access to future fields. The construction also retains the exact passive two-state path law.
 
 This proves sufficient counts for every matrix in the stated class, not merely for the earlier incidence graph. The factorization algorithms or their computational efficiency are not part of the theorem.
 
@@ -18,11 +18,11 @@ The exact clock recovery applies to stationary rivals without reversibility. Its
 
 On the target, the matrix is exactly
 
-$$
-N_* = \operatorname{diag}(H/2,\operatorname{diag}(v)/2).
-$$
+```math
+N_* = \mathrm{diag}(H/2,\mathrm{diag}(v)/2).
+```
 
-The memory factor $1/2$ and the additional probe block were independently checked. Nonnegative and completely positive ranks add across these blocks because positive factors cannot cross a target zero. Consequently the minimum total counts are $1+n+\operatorname{rank}_+(H)$ and $1+n+\operatorname{cprank}(H)$. Rivals need not have a prescribed memory/probe partition, palette or histogram. The positive-feature argument, not an imposed architecture on rivals, gives the lower bound.
+The memory factor $`1/2`$ and the additional probe block were independently checked. Nonnegative and completely positive ranks add across these blocks because positive factors cannot cross a target zero. Consequently the minimum total counts are $`1+n+\mathrm{rank}_+(H)`$ and $`1+n+\mathrm{cprank}(H)`$. Rivals need not have a prescribed memory/probe partition, palette or histogram. The positive-feature argument, not an imposed architecture on rivals, gives the lower bound.
 
 The finite-accuracy existence corollary was checked separately. Fixed-factor-count nonnegative-rank sets are closed after normalizing each left factor; the right factors are bounded by matrix column sums. Fixed-factor-count completely positive sets are closed because the trace bounds every factor norm. The target therefore has positive distance from each class with too few factors. A common finite clock cutoff and a sufficiently small positive mean tolerance transfer this distance to all physical rivals. This proves a matrix-dependent interval; no useful or uniform size is asserted.
 
@@ -30,13 +30,13 @@ The root and two separate mathematical reviewers read the complete canonical not
 
 ## 3. Hidden deviations must be excited and read out
 
-For the variance theorem, the hidden density relative to its common stationary law splits into its mean and a centered residual $z$. The exact master equation has centered barrier $c=b-\mu b$ in both the source of $z$ and the visible error. Eliminating $z$ produces an exact protocol-dependent kernel $k^2\langle c_t,G(t,s)c_s\rangle_\mu$.
+For the variance theorem, the hidden density relative to its common stationary law splits into its mean and a centered residual $`z`$. The exact master equation has centered barrier $`c=b-\mu b`$ in both the source of $`z`$ and the visible error. Eliminating $`z`$ produces an exact protocol-dependent kernel $`k^2\langle c_t,G(t,s)c_s\rangle_\mu`$.
 
 Stationarity gives the Dirichlet identity even for nonreversible hidden generators. Its symmetric gap, together with positive return killing, contracts the centered propagation. The visible error satisfies a damped scalar equation. These two estimates give the uniform barrier-variance bound, without a microscopic state count, minimum stationary mass or hidden rate cap. A common hidden law and the specified initial conditional law are essential. Field-dependent hidden generators are allowed under the stated common-law and gap assumptions.
 
-The inactive-field refinement uses the fact that both forcing terms vanish there, so their norms cannot increase. On the finite target only field $H$ is active. The visible probability remains at most $1/2$, giving source bound $3/2$. With variance $557/49152$, centered damping $11k/8$ and visible damping factor $295/128$, the two-state mean upper is $557/51920$. This is a sufficient estimate, not the optimal two-state error.
+The inactive-field refinement uses the fact that both forcing terms vanish there, so their norms cannot increase. On the finite target only field $`H`$ is active. The visible probability remains at most $`1/2`$, giving source bound $`3/2`$. With variance $`557/49152`$, centered damping $`11k/8`$ and visible damping factor $`295/128`$, the two-state mean upper is $`557/51920`$. This is a sufficient estimate, not the optimal two-state error.
 
-For an invariant partition, the same proof uses within-block conditional variance. Commutation of the conditional projector with every hidden generator is required; arbitrary barrier binning is insufficient. The quotient inherits ordinary reversibility and the exit cap when the original hidden generator has them. A field-dependent original generator need not give a field-independent multi-block quotient. The one-block predictor always has zero hidden generator. The earlier nine-state bound $1/2376$ follows from the conditional variance formula with its frozen constants.
+For an invariant partition, the same proof uses within-block conditional variance. Commutation of the conditional projector with every hidden generator is required; arbitrary barrier binning is insufficient. The quotient inherits ordinary reversibility and the exit cap when the original hidden generator has them. A field-dependent original generator need not give a field-independent multi-block quotient. The one-block predictor always has zero hidden generator. The earlier nine-state bound $`1/2376`$ follows from the conditional variance formula with its frozen constants.
 
 The root and an independent mathematical reviewer checked the entire variance proof. The exact kernel is an instance of established projection methodology; the specific uniform controlled bound and constants are its present application. The guarantee concerns endpoint means, not a uniform approximation to whole paths. Averaged exponential curves match a single exponential at the two queried fields, but generally not on an interval.
 

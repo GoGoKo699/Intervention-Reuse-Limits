@@ -17,11 +17,11 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_serial_reset.json': '9c9f662e63d94d518d3e01bf0aa179dffa6f06d78a2333660e3668582d972fb6',
-    'reports/switch_observable_calibration.json': '5883635e5d44264c9cc72ba585f16aa65b2441837ef3cf4d69e54ba3b878ae1c',
+    'reports/switch_serial_reset.json': 'f80480e21278e1e8a438beec4e760b286c748eab4765aad66b1c37b204d92ce1',
+    'reports/switch_observable_calibration.json': '7704b95faba715a952de591c5ad632fdaeddb6887a65ba20056be0eb90da6dc8',
 }
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_REPEATED_READOUT.md': '4c9b6a873005f7a0798e99d3edededd7a39607d1c85252221b1e692af13d1182',
+    'docs/FAMILIAR_SWITCH_REPEATED_READOUT.md': '00c16376fbe100691aef3c260d05a42fbffdbbfd1408750cdc4badc146764f81',
 }
 CHECKS = 0
 

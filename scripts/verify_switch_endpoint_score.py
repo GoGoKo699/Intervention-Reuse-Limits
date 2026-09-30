@@ -11,7 +11,7 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = 'reports/switch_preparation_witness.json'
-INPUT_SHA = '3c4e563f598c1cbdd9b70a24d2251a052e8577d286a7e0733f061c600bb35b88'
+INPUT_SHA = '017717163addede0a4a681491352fd416885f3ad20617533c94d0995d528d78f'
 HELPER = 'verify_familiar_switch_margin.py'
 PROOF = 'docs/FAMILIAR_SWITCH_ENDPOINT_SCORE_TEST.md'
 CHECKS = 0

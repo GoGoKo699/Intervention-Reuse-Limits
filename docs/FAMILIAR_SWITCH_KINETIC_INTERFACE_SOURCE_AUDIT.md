@@ -58,10 +58,10 @@ device precision. The wider 100-parts-per-million row supplies population
 state counts only.
 
 The five-million-trial design separately recomputes the mean, variance and
-gate budgets for kinetic error $10^{-4}$ and ordinary-null approximation
-allowance $2\times10^{-4}$. It inherits the established concentration tools
+gate budgets for kinetic error $`10^{-4}`$ and ordinary-null approximation
+allowance $`2\times10^{-4}`$. It inherits the established concentration tools
 documented in the [weaker-field audit](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md).
-The new predictor upper is $1.2\times10^{-4}$, within that null allowance.
+The new predictor upper is $`1.2\times10^{-4}`$, within that null allowance.
 Neither a finite reset wait nor a published charge fidelity establishes
 fresh-trial independence. Preparation and characterization costs remain
 unpriced; the older target-only reset bound is not extended to arbitrary

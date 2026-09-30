@@ -15,13 +15,13 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_preparation_free.json': 'dc10d2baf22899ef663faa4406d720998771e7c40c4de7ef4e8a7b2a3bed3df1',
+    'reports/switch_preparation_free.json': 'fc66764244870e0930a8b15c28947478f99e223647f916dfe8260c3ad5bd0420',
 }
 # Reviewed universal derivations; finite fixtures do not replace these proofs.
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md': '4618b2f6882bbc0d4bfe7161b71d14c8c3f16fa0600dc9a3f0324417066b896c',
-    'docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md': '63e18ab4e4d059cab98cb687f8e5926452c86a5e3c1cceebe83ea7e9036336a4',
-    'docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md': '9573c9a70ac82c319a49f09e7f7d72024c0f6816091a54a2aff6228fee871342',
+    'docs/FAMILIAR_SWITCH_MINIMAL_THEOREM.md': '3e4f8ae6ad9cc207d2287c31ef3adc649edc6d61dc8eb88bc6750d57a2173bf6',
+    'docs/FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md': '5f72c3cc78f5d36d6ca24ab37ebe8c8d2c93e38bf258966316e83dd1d0ceb083',
+    'docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md': '6ec58b18ad3ad097f55224096fb1dd34e8cb60a9102017fde30d8c0c10b78a0a',
 }
 CHECKS = 0
 

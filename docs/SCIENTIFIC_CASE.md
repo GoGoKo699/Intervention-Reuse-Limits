@@ -89,7 +89,7 @@ $`C_w`$ instead satisfy
 
 ```math
 C_W-C_{L_A}C_{H_A}
-=\frac{e^{-\bar c}\chi}{r}+O(r^{-2}),\qquad \chi>0.
+=\frac{e^{-\bar c}\chi}{r}+O(r^{-2}),\qquad \chi\gt 0.
 ```
 
 R98 gives $`\bar c,\chi`$ explicitly and converts the absolute residual

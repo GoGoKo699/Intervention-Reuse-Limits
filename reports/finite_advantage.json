@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5",
+    "python": "3.12.14",
     "numpy": "2.3.5",
     "scipy": "1.17.0"
   },
@@ -338,7 +338,7 @@
   },
   "imported_repository_verifiers": [],
   "proof_snapshot_sha256": {
-    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe"
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "acd91f09d1e3d0a6547b843930ea199c0d33fbc517969ccfc6906ae2a7e1d5c1"
   },
   "checks": 259
 }

@@ -10,11 +10,11 @@ The integrated generator defect includes the diagonal and uses half the full sig
 
 Review required a fixed generator on each field plateau. An arbitrary ordered product of reversible generators need not be reversible, so instantaneous detailed balance alone would not establish the actual target's ordinary four-state upper. Time-dependent rates remain allowed within the protected measurement operation under its separate conditional-invariance premise.
 
-The kinetic error is charged once against the ordinary lower and once in the constructive general-three-state upper, in two distinct comparisons. No new charge is added to the ordinary rival execution budget, since that class already admits unrestricted reversible kernels. At integrated defect at most $10^{-4}$ the lower is greater than $0.0009274999$ and the upper at most $0.00012$, giving the advertised interval $[0.00012,0.0009]$. The 20-ppm symmetric edge tolerance implies this integrated allowance. The 100-ppm row has only the narrower population interval $[0.0005,0.00055]$ and inherits no trial allocation.
+The kinetic error is charged once against the ordinary lower and once in the constructive general-three-state upper, in two distinct comparisons. No new charge is added to the ordinary rival execution budget, since that class already admits unrestricted reversible kernels. At integrated defect at most $`10^{-4}`$ the lower is greater than $`0.0009274999`$ and the upper at most $`0.00012`$, giving the advertised interval $`[0.00012,0.0009]`$. The 20-ppm symmetric edge tolerance implies this integrated allowance. The 100-ppm row has only the narrower population interval $`[0.0005,0.00055]`$ and inherits no trial allocation.
 
 ## Protected initial readout
 
-Preserving both the measured sector and its conditional stationary law preserves the retained-label/postmeasurement-state joint law. Large within-sector hidden changes are compatible with zero stationary joint error. The explicit four-state fixture verifies that fact while permitting worst-row disturbance $9/20$.
+Preserving both the measured sector and its conditional stationary law preserves the retained-label/postmeasurement-state joint law. Large within-sector hidden changes are compatible with zero stationary joint error. The explicit four-state fixture verifies that fact while permitting worst-row disturbance $`9/20`$.
 
 Preparation is counted once by comparing the actual prepared instrument directly with the stationary reference. Imperfect protection is bounded by conditional flux imbalance plus the probability of a sector-changing jump. The coupling proof does not condition on observing no jump, which could bias the hidden law. Hidden rates need no common upper bound, but each time-dependent generator has integrable rates on its finite measurement interval.
 
@@ -22,9 +22,9 @@ The independent binary detector channel remains a premise about constant-sector 
 
 ## Five-million-trial design
 
-The larger target family retains the frozen integer score and empirical gates. Its target table displacement is $0.0001775001$. The additional ordinary-null approximation allowance is $0.0002$, above the new constructive upper $0.00012$. Approximate laws need not share initial marginals, so the complete score, including the initial-bit corrections, is transferred by TV.
+The larger target family retains the frozen integer score and empirical gates. Its target table displacement is $`0.0001775001`$. The additional ordinary-null approximation allowance is $`0.0002`$, above the new constructive upper $`0.00012`$. Approximate laws need not share initial marginals, so the complete score, including the initial-bit corrections, is transferred by TV.
 
-Review checked stationary-box containment and the positive tangent remainder, variance monotonicity, target variance perturbation, every gate padding and both Bernstein tails. With 2.5 million independent fresh trials per arm, the null concentration boundary is below $0.002057$, the target boundary above $0.002326$, and the threshold is $0.0022$. Target gate failure is below $2\times10^{-6}$. The null inside/outside population-gate cases are alternatives, while gate and score failures are union-bounded for power.
+Review checked stationary-box containment and the positive tangent remainder, variance monotonicity, target variance perturbation, every gate padding and both Bernstein tails. With 2.5 million independent fresh trials per arm, the null concentration boundary is below $`0.002057`$, the target boundary above $`0.002326`$, and the threshold is $`0.0022`$. Target gate failure is below $`2\times10^{-6}`$. The null inside/outside population-gate cases are alternatives, while gate and score failures are union-bounded for power.
 
 This budget covers more kinetic uncertainty; it is not a further improvement on the frozen two-million-trial result. The older necessary information bound does not transfer to the new field or prove sample optimality. Serial operation after a finite wait requires a separate conditional or martingale analysis.
 

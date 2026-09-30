@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Exact stdlib Fraction matrices, sparse formal polynomials and inherited rational moment intervals",
   "charge_realization": {
@@ -123,26 +123,26 @@
     "The preparation counterexamples isolate assumptions; they are not fits to the selected target."
   ],
   "source_sha256": {
-    "verify_switch_physical_interface.py": "d15d2066419b98e6994d31a120d869b6cc2d3820b7f93d7482bda8b6e45af523",
+    "verify_switch_physical_interface.py": "ce1d6cca1bf929e79349fc8232a72b8b105f005d0b97e81e0630c05e9860ac7d",
     "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
   },
   "input_report_sha256": {
-    "reports/switch_snapshot_design.json": "b8ee6fb70d37d104ea89fe04e28c8872a8c81f97d108771bd89d14ef2ad9e2cb"
+    "reports/switch_snapshot_design.json": "78fe0e225974f327605adf50221391b6cec4e65b146022abda74ba528d8e51f7"
   },
   "imported_repository_verifiers": [
     "verify_familiar_switch_margin.py"
   ],
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
-    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
-    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
-    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
-    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
-    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813",
-    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "7d2e175b512a044ee6f99cfbd92ba131a64dc4e929aadf3de3721726a12ac2f7",
-    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "00c4b1c04092f5b929dec5f921cb64e21ad221e7cd8f9144474d1922139b847d",
-    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "032eea67448cece0eafadb5ce98ccdf67194be50170c60fb734e2843f419a99e"
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "d7dee7539c9be35541ed2cce78e0f3615f04ce9db46ec9277c688f5fe72b029c",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "e7705e19b582cb56178dd7468b986ee09d7f62d5301a4cf02821e28e75a55839",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "0f301c2b87e6ef6106ea2e785a7c5166b7214d92369076332d8050592d5d4c3b",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "31eb514683c8553bd44ecaa58fcdfa1f978d03efff51263139f02d211663c49c",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "a538fba085ab86bc537551bca88a0114127ffe6d5a7e78ee80d4f5c4168a575b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "1882170850493839cce9076f01bfd5ff8b5124a76f89b3909e391f232c50513c",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715",
+    "docs/FAMILIAR_SWITCH_CHARGE_REALIZATION.md": "8c2eae8875632eb78ea75f352ba3212a9dc5d4a17afae26b105b58df36343afd",
+    "docs/FAMILIAR_SWITCH_PREPARATION_BOUNDARY.md": "a69c440a5abd98043d282a99952a4f3b813fbf513efc6ab47d1ed8755ff5f679",
+    "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "fa3feabda54430ad78d09e97d65f900a9a7225123dc6378c65ace24efb3d5fd8"
   },
   "checks": 108
 }

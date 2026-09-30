@@ -12,7 +12,7 @@ Martingale concentration already permits dependence on past records. Our contrib
 
 ## Established mixing and comparison tools
 
-David Aldous and James Allen Fill, *Reversible Markov Chains and Random Walks on Graphs*, unfinished monograph, [Chapter 3, Section 6](https://www.stat.berkeley.edu/~aldous/RWG/Book_Ralph/Ch3.S6.html), states the continuous-time Dirichlet form, the variational characterization of relaxation time (Theorem 3.25), and the $L^2$ contraction bound (Lemma 3.26). Its direct-comparison argument, including Lemma 3.32, explains why multiplying every equilibrium edge conductance by at least $.99$ retains at least $.99$ of the reference spectral gap.
+David Aldous and James Allen Fill, *Reversible Markov Chains and Random Walks on Graphs*, unfinished monograph, [Chapter 3, Section 6](https://www.stat.berkeley.edu/~aldous/RWG/Book_Ralph/Ch3.S6.html), states the continuous-time Dirichlet form, the variational characterization of relaxation time (Theorem 3.25), and the $`L^2`$ contraction bound (Lemma 3.26). Its direct-comparison argument, including Lemma 3.32, explains why multiplying every equilibrium edge conductance by at least $`.99`$ retains at least $`.99`$ of the reference spectral gap.
 
 The new calculation applies these standard tools to the specified four-state kinetic family. Combining its gap and minimum stationary mass gives a uniform finite wait sufficient for the already stated preparation budget. It is a sufficient bound, not an optimal reset protocol or measured relaxation time.
 

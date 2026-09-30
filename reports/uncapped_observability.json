@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Python standard-library fractions.Fraction; exact integer enumeration; no floating-point matrices",
   "ordered_resolvent_parity": [
@@ -244,9 +244,9 @@
     "verify_uncapped_observability.py": "6cb7a2f33b5610702f30e06250dae1e0054bbddb466950c07e8a8787a6aaa19f"
   },
   "proof_snapshot_sha256": {
-    "docs/BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md": "b20617277b47a6b51ecc5fa7c972859f7f6bcadb0ede0f734ea340c46d4c0ce0",
-    "docs/UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "677676f0e88b3c6704d5a1e9e2b7f283034cd88854ac3874c6ca07ffdb6da427",
-    "docs/UNCAPPED_WALSH_OBSERVABILITY.md": "5a0464acb375ca05b6a3d26c0aed51cdf8254bce8374028bbd877dc08024af5b"
+    "docs/BOUNDED_CONTROL_RESOLVENT_OBSERVABILITY.md": "d42ffb34cf22d9f166b89805198a05d0df141f5c3a1f9ea20a1cd38d07ccab61",
+    "docs/UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "5b86b94450b321273d9df1c886828ca9bcbcec59302dbc7f104c80b4725056d0",
+    "docs/UNCAPPED_WALSH_OBSERVABILITY.md": "8974f8de10bb97a044917540c2f704787e1b29256406b5d6bf8a71ca7d68eec6"
   },
   "imported_repository_verifiers": []
 }

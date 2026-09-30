@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Standard-library fractions.Fraction and exact integers only",
   "binary_PSD_route_boundaries": {
@@ -828,11 +828,11 @@
   },
   "imported_repository_verifiers": [],
   "proof_snapshot_sha256": {
-    "docs/MIXED_KILLED_WORD_OBSERVABILITY.md": "f90e3e811b77f072147664424132e47ecb120aa7d3aabec2e1456241065f7179",
-    "docs/WEIGHTED_WHOLE_WORD_REPAIR.md": "0696d5ea5fb3e8aba1b13fb9a7966c4bfaa66d1fc24a6fcc159c279ebecd34d0",
-    "docs/BINARY_UNCAPPED_RESEARCH_BOUNDARY.md": "86e28e6433be641259140e2abf6896a36de23d99577e2d0d76a4dac8fb61bd3d",
-    "docs/BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md": "e80f4d4f61e1783b72bd810a884c5603a5466a732d1d4b5037a27a60fd448ee5",
-    "docs/BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "f5291c164ea87fa26c4ae64f15498951db3d17f32ec95bcea9ac64786eef35d2"
+    "docs/MIXED_KILLED_WORD_OBSERVABILITY.md": "2fb5c500b14a2ae8eb92819adc6d6398f62bc335efd399ebdf45bbab4bfa9ded",
+    "docs/WEIGHTED_WHOLE_WORD_REPAIR.md": "6c7b31468add103738b6ea80d4f0e3cc22dbe8579cfd650e7ff493978dfae187",
+    "docs/BINARY_UNCAPPED_RESEARCH_BOUNDARY.md": "cd27a3a302db5841b6283be1ea38a03cef1cabe2ed8d66e6fc1900091095c3ba",
+    "docs/BINARY_TAGGED_UNCAPPED_CONSTRUCTION.md": "0e43692ef02fe9250f158464355da7821e8ae1b6a61d020bddfc26b2b1319a30",
+    "docs/BINARY_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "90e1f912458987b8c53e005d657c68b48a05698f1f028e9e9c471d31a39ecf9b"
   },
   "exact_checks": 1020
 }

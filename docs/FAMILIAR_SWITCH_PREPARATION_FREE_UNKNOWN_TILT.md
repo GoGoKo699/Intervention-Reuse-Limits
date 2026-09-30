@@ -37,10 +37,10 @@ deterministic sign `S:X->{-1,+1}`. Let `K_L,K_H` be fixed stochastic kernels
 on `X`. There is one normalized nonnegative law `pi_L`, and one unknown
 `u in (-1,1)`, such that
 
-\[
+```math
  \pi_H(x)=\frac{\pi_L(x)(1+uS(x))}{1+u\pi_LS},
  \qquad \pi_j(x)K_j(x,y)=\pi_j(y)K_j(y,x).
-\]
+```
 
 The denominator is strictly positive. No irreducibility, mixing rate,
 stationary mass floor, CTMC embedding, or preparation equilibrium is
@@ -71,9 +71,9 @@ If both signs exist on at most three states, at least one sign `s` is a
 singleton `{x_s}`. Conditional on recording that sign, the active state is
 known exactly. Its conditional return probabilities are therefore
 
-\[
+```math
  r_{w,s}=(K_w)_{x_sx_s},
-\]
+```
 
 independent of the preparation and history. If a sign never occurs under
 the actual preparations, its empirical conditional probabilities are not
@@ -82,11 +82,11 @@ unfilled. A one-sign model also never completes both sign quotas.
 
 Define for `a=1,2`
 
-\[
+```math
  A_a=r_{L^aH,s}-r_{L^a,s}r_{H,s},\qquad
  B_a=r_{HL^a,s}-r_{L^a,s}r_{H,s},\qquad
  F_s=A_1B_2-A_2B_1.
-\]
+```
 
 The determinant expands to a cubic with six monomials; the apparent
 quartic terms cancel. The null assertion is `F_-=0` or `F_+=0`.
@@ -99,17 +99,17 @@ Detailed balance implies `K_j(P,Z)=0`, so `P` is closed under both fields.
 If the singleton `x_s` lies in `P`, all return paths stay in `P`. Reversibility
 of `K_L^a` and the common Gibbs weights yield, for each other state `y`,
 
-\[
+```math
  (K_L^a)_{x_sy}(K_H)_{yx_s}
  =\frac{1+su}{1-su}(K_H)_{x_sy}(K_L^a)_{yx_s}.
-\]
+```
 
 States outside `P` contribute zero. Every other state has sign `-s`.
 Subtracting the `y=x_s` term gives
 
-\[
+```math
  A_a=\frac{1+su}{1-su}B_a.
-\]
+```
 
 The same factor applies for both `a`, so `F_s=0` without knowing `u`.
 
@@ -118,10 +118,10 @@ If the singleton lies in `Z`, returns reduce to the substochastic blocks
 `P` is nonempty and `|X|<=3`, `|Z|<=2`. With one zero-weight state every
 `A_a,B_a` is zero. With two, index the singleton first. Then
 
-\[
+```math
  A_1=T_{12}U_{21},\quad B_1=U_{12}T_{21},\quad
  A_2=(T^2)_{12}U_{21},\quad B_2=U_{12}(T^2)_{21}.
-\]
+```
 
 The off-diagonal entries of `T^2` are `tr(T)` times those of `T`.
 Consequently `A_2=tr(T)A_1` and `B_2=tr(T)B_1`, again giving `F_s=0`.
@@ -131,43 +131,43 @@ determinant is asserted.
 
 ## Seven exact target returns
 
-The physical target has two heat-bath spins with energy $-JSZ-hS$, equal
-unit attempt rates, low field zero and high field $H$. Write $t=\tanh J$
-and $m=\tanh H$, with `0<t,m<1`,
+The physical target has two heat-bath spins with energy $`-JSZ-hS`$, equal
+unit attempt rates, low field zero and high field $`H`$. Write $`t=\tanh J`$
+and $`m=\tanh H`$, with `0<t,m<1`,
 and low-equilibrium preparation `pi_0(s,z)=(1+t s z)/4`. Thus initial
 signs have probability `1/2` and `E[Z|S=s]=ts`. Allow distinct positive
 tick dwells `tau_L,tau_H`.
 
 Set
 
-\[
+```math
  b=\frac{t(1-m^2)}{1-t^2m^2},\quad \kappa=\sqrt{tb},\quad
  B=e^{-\tau_H}\cosh(\kappa\tau_H),\quad
  C=e^{-\tau_H}\frac b\kappa\sinh(\kappa\tau_H),\quad E=\frac tb C,
-\]
+```
 
-\[
+```math
  a_H=m(1-B-tC),\quad d_H=m(t-E-tB),\quad
  \beta_a=e^{-a\tau_L}\cosh(ta\tau_L),\quad
  \gamma_a=e^{-a\tau_L}\sinh(ta\tau_L).
-\]
+```
 
 The seven returns are given by the following formulas for `a=1,2`:
 
-\[
+```math
  r_{L^a,s}=\frac{1+\beta_a+t\gamma_a}{2},\qquad
  r_{H,s}=\frac{1+s a_H+B+tC}{2},
-\]
+```
 
-\[
+```math
  r_{L^aH,s}=\frac{1+s a_H+B(\beta_a+t\gamma_a)
                               +C(\gamma_a+t\beta_a)}2,
-\]
+```
 
-\[
+```math
  r_{HL^a,s}=\frac{1+s(\beta_a a_H+\gamma_a d_H)
                          +\beta_a(B+tC)+\gamma_a(E+tB)}2.
-\]
+```
 
 These follow directly from `K_H S=a_H+BS+CZ`,
 `K_H Z=d_H+ES+BZ`, and `K_L^a S=beta_a S+gamma_a Z`.
@@ -175,32 +175,32 @@ These follow directly from `K_H S=a_H+BS+CZ`,
 Let `alpha_s=(1+sm)(1-B-tC)/4` and
 `alpha'_s=(1-sm)(1-B-tC)/4`. Subtracting the products gives
 
-\[
+```math
  A_a=\alpha_s(1-\beta_a)
       +[-t\alpha_s+(1-t^2)C/2]\gamma_a,
-\]
+```
 
-\[
+```math
  B_a=\alpha'_s(1-\beta_a)
       +[-t\alpha'_s+(1-sm)(E-t^2C)/2]\gamma_a.
-\]
+```
 
 Use `E-t^2C=(1-t^2)C/(1-m^2)` to evaluate their coefficient determinant,
 and `beta_2=beta_1^2+gamma_1^2`, `gamma_2=2 beta_1 gamma_1` for the low
 duration determinant. The result is
 
-\[
+```math
  \boxed{F_s=-\frac{s m(1-t^2)}8 C(1-B-tC)\gamma_1
        [1-e^{-(1-t)\tau_L}][1-e^{-(1+t)\tau_L}].}
-\]
+```
 
 All factors except `-s` are strictly positive. In particular `0<kappa<1`
 and
 
-\[
+```math
  B+tC=\frac{1+\kappa}{2}e^{-(1-\kappa)\tau_H}
        +\frac{1-\kappa}{2}e^{-(1+\kappa)\tau_H}\in(0,1).
-\]
+```
 
 Thus both singleton candidates are excluded for every stated positive
 parameter/dwell choice. This target statement uses its specified
@@ -217,13 +217,13 @@ and the per-return error ceiling is `500*8*2^41/41! < 3e-34`.
 
 The exact outward enclosures are
 
-\[
+```math
  0.000122690606768597\le F_-\le0.000122690606768598,
-\]
+```
 
-\[
+```math
  -0.000122690606768598\le F_+\le-0.000122690606768597.
-\]
+```
 
 The script also checks the generic factorization as a six-variable
 rational polynomial after clearing the positive denominator `1-m^2`,
@@ -233,108 +233,108 @@ transient-block fixtures check the zero-mass extension independently.
 
 ## Robust population separation and attained state counts
 
-In coordinate order $(a,b,c,d,e,f,g)=(r_L,r_{LL},r_H,r_{LH},r_{HL},r_{LLH},r_{HLL})$,
+In coordinate order $`(a,b,c,d,e,f,g)=(r_L,r_{LL},r_H,r_{LH},r_{HL},r_{LLH},r_{HLL})`$,
 
-\[
+```math
  F=dg-fe+ac(f-g)+bc(e-d).
-\]
+```
 
-The core report gives fixed rational centers $c_s$ enclosing each nominal
-return to coordinate error below $10^{-12}$. On each radius-$10^{-3}$
+The core report gives fixed rational centers $`c_s`$ enclosing each nominal
+return to coordinate error below $`10^{-12}`$. On each radius-$`10^{-3}`$
 box about its center, exact interval polynomial arithmetic gives:
 
 | Sign | Gradient one-norm bound | Sum of absolute Hessian entries | Bernoulli score variance sum bound |
 | --- | ---: | ---: | ---: |
-| $-$ | $67/100$ | $14$ | $11/500$ |
-| $+$ | $4/5$ | $18$ | $7/250$ |
+| $`-`$ | $`67/100`$ | $`14`$ | $`11/500`$ |
+| $`+`$ | $`4/5`$ | $`18`$ | $`7/250`$ |
 
-The variance sum bounds $\sum_w g_{s,w}^2p_w(1-p_w)$ for fixed center
-gradients $g_s=\nabla F(c_s)$ and any coordinate means in the box.
+The variance sum bounds $`\sum_w g_{s,w}^2p_w(1-p_w)`$ for fixed center
+gradients $`g_s=\nabla F(c_s)`$ and any coordinate means in the box.
 The verifier checks the stronger version with interval gradient maxima.
 It also certifies each center's signed score above
-$D=12269/10^8=0.00012269$. These rational constants are reused below.
+$`D=12269/10^8=0.00012269`$. These rational constants are reused below.
 
 If all seven conditional returns of each sign are within
-$\epsilon=3/20000=150$ ppm of the target, the segment joining them to the
+$`\epsilon=3/20000=150`$ ppm of the target, the segment joining them to the
 target lies inside its certified box. The mean-value theorem gives
 
-\[
+```math
  |F_s(r)-F_s(r^*)|\le\frac45\epsilon=0.00012.
-\]
+```
 
 Both signs therefore retain their nonzero target orientation with margin
-strictly above $269/10^8=2.69$ ppm, excluding every ordinary model with
+strictly above $`269/10^8=2.69`$ ppm, excluding every ordinary model with
 at most three counted states. A zero-probability sign stratum provides no
 conditional return and is not sufficient data for this conditional claim.
 
 For complete pair laws, use TV in the convention
-$\operatorname{TV}(P,Q)=\tfrac12\sum|P-Q|$. Each target initial sign has
-mass $1/2$. If a rival word law is within $\delta<1/2$ of the target,
-its corresponding sign mass $q$ is at least $1/2-\delta$. For the target
-conditional return $r$, the function
-$1\{I=s\}(1\{Y=s\}-r)$ has oscillation one and target mean zero.
-Its expectation under the rival is $q(\widetilde r-r)$, so
+$`\mathrm{TV}(P,Q)=\tfrac12\sum|P-Q|`$. Each target initial sign has
+mass $`1/2`$. If a rival word law is within $`\delta\lt 1/2`$ of the target,
+its corresponding sign mass $`q`$ is at least $`1/2-\delta`$. For the target
+conditional return $`r`$, the function
+$`1\{I=s\}(1\{Y=s\}-r)`$ has oscillation one and target mean zero.
+Its expectation under the rival is $`q(\widetilde r-r)`$, so
 
-\[
+```math
  |\widetilde r-r|\le\frac{\delta}{1/2-\delta}.
-\]
+```
 
-At $\delta=7/100000=70$ ppm this is $7/49993<3/20000$. Both sign
+At $`\delta=7/100000=70`$ ppm this is $`7/49993\lt 3/20000`$. Both sign
 strata necessarily occur, separately for every word; a common rival
 preparation is unnecessary. The determinant margin is strictly above
 
-\[
+```math
  \frac{12269}{10^8}-\frac45\frac7{49993}
- =\frac{53364117}{4999300000000}>0.
-\]
+ =\frac{53364117}{4999300000000}\gt 0.
+```
 
 To obtain exact state counts, a general two-state model with both signs
 has one state of each sign. Regardless of word-specific preparation,
 reuse of its low-field kernel forces
 
-\[
+```math
  r_{LL,+}=r_{L,+}^2+(1-r_{L,+})(1-r_{L,-}).
-\]
+```
 
-The target has $r_{L^a,s}=(1+c(a))/2$, where
-$c(\tau)=\tfrac23e^{-2\tau/3}+\tfrac13e^{-4\tau/3}$. Its composition
+The target has $`r_{L^a,s}=(1+c(a))/2`$, where
+$`c(\tau)=\tfrac23e^{-2\tau/3}+\tfrac13e^{-4\tau/3}`$. Its composition
 residual is
 
-\[
+```math
  \Delta=\frac{c(2)-c(1)^2}{2}
-       =\frac19(e^{-2/3}-e^{-4/3})^2>\frac{69}{10000}.
-\]
+       =\frac19(e^{-2/3}-e^{-4/3})^2\gt \frac{69}{10000}.
+```
 
 On the unit square the two derivative magnitudes of the right-hand side
-are bounded by two and one. Conditional errors at most $\epsilon$
-therefore change this residual by at most $4\epsilon$. At the certified
-$\epsilon=3/20000$, it stays above $63/10000$. This excludes general
+are bounded by two and one. Conditional errors at most $`\epsilon`$
+therefore change this residual by at most $`4\epsilon`$. At the certified
+$`\epsilon=3/20000`$, it stays above $`63/10000`$. This excludes general
 models with at most two states even without Gibbs or reversibility
 assumptions.
 
 The [inherited three-state construction](FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md)
-uses sign $S=(-1,1,1)$, auxiliary function $Z=(-1/3,-2/3,5/3)$ and one
-preparation $\rho=(1/2,2/7,3/14)$. Its positive rational generators are
+uses sign $`S=(-1,1,1)`$, auxiliary function $`Z=(-1/3,-2/3,5/3)`$ and one
+preparation $`\rho=(1/2,2/7,3/14)`$. Its positive rational generators are
 
-\[
+```math
  Q_L=\begin{pmatrix}-4/9&8/21&4/63\\11/18&-20/21&43/126\\2/9&8/21&-38/63\end{pmatrix},\quad
  Q_H=\begin{pmatrix}-72/85&432/595&72/595\\3/17&-69/119&48/119\\1/85&334/595&-341/595\end{pmatrix}.
-\]
+```
 
 They have the prescribed Gibbs stationary laws and close on the same
-functions $(1,S,Z)$ as the physical target:
-$Q_LS=-S+Z/3$, $Q_HS=63/85-S+12Z/85$, and $Q_jZ=S/3-Z$.
-Their initial sign masses are $1/2$ and $\mathbb E_\rho[Z\mid S=s]=s/3$.
+functions $`(1,S,Z)`$ as the physical target:
+$`Q_LS=-S+Z/3`$, $`Q_HS=63/85-S+12Z/85`$, and $`Q_jZ=S/3-Z`$.
+Their initial sign masses are $`1/2`$ and $`\mathbb E_\rho[Z\mid S=s]=s/3`$.
 Thus every finite-word endpoint-pair law agrees with the target, including
 the seven current words. This is an endpoint-pair claim, not full visible
 trajectory equality. The general upper chooses a common preparation,
 which is permitted in the larger arbitrary-preparation class. The physical
 four-state target supplies the ordinary upper. Consequently
 
-\[
+```math
  \boxed{D_{\rm general}(\delta)=3,\qquad
         D_{\rm ordinary}(\delta)=4\quad(0\le\delta\le70\ {\rm ppm}).}
-\]
+```
 
 The general comparison retains the common Gibbs force and deterministic
 readout interface while dropping detailed balance. The ordinary comparison
@@ -573,7 +573,7 @@ using two-sided conditional Hoeffding gives
 
 At each target attempt the observed initial-sign probability is at
 least q_T=1/2-B-eta. This follows from the target true-pair contract
-and the endpoint-error bound (1), conditional only on $H_t$ and the scheduled
+and the endpoint-error bound (1), conditional only on $`H_t`$ and the scheduled
 word, without
 conditioning on the current error. Conditional Hoeffding and a union
 over14 quotas give
@@ -589,14 +589,14 @@ The [sampling verifier](../scripts/verify_familiar_switch_preparation_free_unkno
 checks all margins and exponential bounds using exact rational arithmetic,
 including the fixed cap, registration-error counts and the inherited local
 geometry. It binds the finalized core report. The certified risk bounds
-are $\alpha\le0.0403887335941$ and $\beta\le0.0452601191033$.
+are $`\alpha\le0.0403887335941`$ and $`\beta\le0.0452601191033`$.
 The broader 70-ppm population ball is not the test's five-ppm target-power
 contract. No null preparation-closeness condition is introduced by the
 sampling proof.
 
 ## Acquisition resources and comparison with the previous task
 
-Repeat the ordered seven-word cycle $M=168,000,000$ times. Each attempt
+Repeat the ordered seven-word cycle $`M=168,000,000`$ times. Each attempt
 starts at low field and returns to low field after its final observation.
 Counting a same-low-field tick boundary as a seam rather than a field
 transition gives the following exact upper accounting:
@@ -613,16 +613,16 @@ transition gives the following exact upper accounting:
 | Same-low-field seams | 3 | 504,000,000 |
 
 The [earlier target mixing certificate](FAMILIAR_SWITCH_SERIAL_ACQUISITION.md)
-puts a $24/\Gamma$ low-field reset below quarter-ppm preparation TV for
+puts a $`24/\Gamma`$ low-field reset below quarter-ppm preparation TV for
 the nominal four-state target. If used before every pair, reset exposure
-is $28.224$ billion$/\Gamma$, and reset plus active exposure is
-$30.576$ billion$/\Gamma$. With nonoverlapping initial/final observation
-windows $T_i,T_f$ and transition times $t_\uparrow,t_\downarrow$, add
+is $`28.224`$ billion$`/\Gamma`$, and reset plus active exposure is
+$`30.576`$ billion$`/\Gamma`$. With nonoverlapping initial/final observation
+windows $`T_i,T_f`$ and transition times $`t_\uparrow,t_\downarrow`$, add
 
-\[
+```math
  1.176\times10^9(T_i+T_f)
  +0.840\times10^9(t_\uparrow+t_\downarrow)
-\]
+```
 
 and any other acquisition/calibration overhead. This is conditional
 resource accounting; no device speed or achieved combined accuracy is

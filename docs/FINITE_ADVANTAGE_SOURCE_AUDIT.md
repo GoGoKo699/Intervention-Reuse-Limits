@@ -4,34 +4,36 @@
 
 **Focused primary-source audit, 23 September 2026.** The proposed small example uses established completely positive matrix theory inside a controlled Markov realization problem. Neither a gap between nonnegative rank and CP-rank nor the use of positive matrix factorizations for hidden Markov realization is new. The question requiring a separate theorem is whether one concrete ordinary-reversible target needs more states in every ordinary-reversible predictor of its controlled means than an explicit stationary nonreversible predictor needs, with the same kinetic interface.
 
-The [internally reviewed finite theorem](FINITE_REVERSIBILITY_ADVANTAGE.md) gives twelve total target states, an exact eleven-total-state nonreversible predictor, and an ordinary-reversible lower at error $2^{-3000}$ using two fields and words of at most 1200 clock steps. The [independent internal review record](FINITE_ADVANTAGE_INTERNAL_REVIEW.md) is separate from this source audit. The source comparison below certifies neither the proof nor external priority. Manuscript drafting remains deferred.
+The [internally reviewed finite theorem](FINITE_REVERSIBILITY_ADVANTAGE.md) gives twelve total target states, an exact eleven-total-state nonreversible predictor, and an ordinary-reversible lower at error $`2^{-3000}`$ using two fields and words of at most 1200 clock steps. The [independent internal review record](FINITE_ADVANTAGE_INTERNAL_REVIEW.md) is separate from this source audit. The source comparison below certifies neither the proof nor external priority. Manuscript drafting remains deferred.
 
 ## 1. The algebraic gap and its limited implication
 
-For a symmetric matrix $M$, define
+For a symmetric matrix $`M`$, define
 
-$$
-\operatorname{cpr}(M)=\min\{r:M=BB^\top,\ B\in\mathbb R_+^{d\times r}\}.
-$$
+```math
+\mathrm{cpr}(M)=\min\{r:M=BB^\top,\ B\in\mathbb R_+^{d\times r}\}.
+```
 
-This is entrywise nonnegative Gram factorization, not complete positivity of a quantum map. The candidate uses the unsigned incidence matrix $C$ of $K_{2,3}$, with one column $e_u+e_v$ for each of its six edges. Thus
+This is entrywise nonnegative Gram factorization, not complete positivity of a quantum map. The candidate uses the unsigned incidence matrix $`C`$ of $`K_{2,3}`$, with one column $`e_u+e_v`$ for each of its six edges. Thus
 
-$$
+**Equation (1).**
+
+```math
 H=CC^\top=
 \begin{pmatrix}3I_2&J_{2\times3}\\J_{3\times2}&2I_3\end{pmatrix}.
-\tag{1}
-$$
+```
 
-The elementary support argument is worth retaining with its classical attribution. In any nonnegative Gram factorization, every column's support is a clique of the nonzero off-diagonal graph. A triangle-free graph permits at most one edge per column, and all six positive edges must be covered. Therefore $\operatorname{cpr}(H)\ge6$; the incidence factor attains six. This is a special case of the prior graph theorem in source A. In contrast, $\operatorname{rank}_+(H)\le5$ by the trivial factorization $H=HI_5$. No new rank-gap theorem is claimed.
+The elementary support argument is worth retaining with its classical attribution. In any nonnegative Gram factorization, every column's support is a clique of the nonzero off-diagonal graph. A triangle-free graph permits at most one edge per column, and all six positive edges must be covered. Therefore $`\mathrm{cpr}(H)\ge6`$; the incidence factor attains six. This is a special case of the prior graph theorem in source A. In contrast, $`\mathrm{rank}_+(H)\le5`$ by the trivial factorization $`H=HI_5`$. No new rank-gap theorem is claimed.
 
-For $a>0$ and any positive diagonal $5\times5$ matrix $D$, disjoint supports give
+For $`a\gt 0`$ and any positive diagonal $`5\times5`$ matrix $`D`$, disjoint supports give
 
-$$
-\operatorname{cpr}(aH\oplus D)=6+5=11.
-\tag{2}
-$$
+**Equation (2).**
 
-Indeed, a Gram column cannot meet two blocks because their cross entries vanish. Ordinary rank gives only nine: $C$ has rank four, since $C^\top x=0$ forces a constant value on each bipartition class with opposite signs. The five singleton features add five. The proposed obstruction therefore uses positivity beyond a spectral or ordinary-rank count.
+```math
+\mathrm{cpr}(aH\oplus D)=6+5=11.
+```
+
+Indeed, a Gram column cannot meet two blocks because their cross entries vanish. Ordinary rank gives only nine: $`C`$ has rank four, since $`C^\top x=0`$ forces a constant value on each bipartition class with opposite signs. The five singleton features add five. The proposed obstruction therefore uses positivity beyond a spectral or ordinary-rank count.
 
 Equations (1)–(2) alone do **not** construct a Markov predictor. A low-rank factor must extend to nonnegative conservative dynamics, preserve stationary preparation and readout, and remain compatible with every allowed field. The explicit generator intertwining is needed for that upper. Similarly, a CP-rank obstruction applies to a rival only after the observable experiments force that rival to possess the relevant positive Gram representation.
 
@@ -43,17 +45,17 @@ Equations (1)–(2) alone do **not** construct a Markov predictor. A low-rank fa
 
 **Inspected:** definition of graph CP-rank on p.100; Proposition 2.4 on p.103; Lemma 3.2 and its proof on p.105. Proposition 2.4(b) states that every CP matrix whose graph is connected, triangle-free and not a tree has CP-rank equal to the number of edges. It attributes this result to Drew–Johnson–Loewy. The direct-sum additivity of matrix CP-rank is also stated in the proof of Lemma 3.2.
 
-**Comparison:** exactly covers the matrix ingredient for $K_{2,3}$. Distinguish the maximum $\operatorname{cpr}(G)$ over matrices with graph $G$ from the stronger matrix-specific statement in Proposition 2.4. No controlled dynamics or observation theorem is supplied.
+**Comparison:** exactly covers the matrix ingredient for $`K_{2,3}`$. Distinguish the maximum $`\mathrm{cpr}(G)`$ over matrices with graph $`G`$ from the stronger matrix-specific statement in Proposition 2.4. No controlled dynamics or observation theorem is supplied.
 
-**Original attribution:** John H. Drew, Charles R. Johnson and Raphael Loewy, “Completely positive matrices associated with $M$-matrices,” Linear and Multilinear Algebra 37, 303–310 (1994), [DOI](https://doi.org/10.1080/03081089408818334). Its full text was not obtained in this audit; the precise result is verified through the inspected 2015 primary research paper, not presented as an inspection of the original proof.
+**Original attribution:** John H. Drew, Charles R. Johnson and Raphael Loewy, “Completely positive matrices associated with $`M`$-matrices,” Linear and Multilinear Algebra 37, 303–310 (1994), [DOI](https://doi.org/10.1080/03081089408818334). Its full text was not obtained in this audit; the precise result is verified through the inspected 2015 primary research paper, not presented as an inspection of the original proof.
 
 ### B. Structured and symmetric factorizations already meet HMM realization
 
 **Bart Vanluyten, Jan C. Willems and Bart De Moor, “Structured nonnegative matrix factorization with applications to hidden Markov realization and clustering,” Linear Algebra and its Applications 429(7), 1409–1424 (2008).** [DOI](https://doi.org/10.1016/j.laa.2008.03.010) · [author-hosted published PDF](https://homes.esat.kuleuven.be/~sistawww/smc/jwillems/Articles/JournalArticles/2008.1.pdf).
 
-**Inspected:** §§3–5, especially pp.1416–1419 and Eq.(16). The paper distinguishes $VAV^\top$ with nonnegative $A,V$ from $VV^\top$, compares their minimum dimensions, and gives approximation algorithms. For symmetric data it permits symmetric $A$. Its HMM application factors the two-symbol probability matrix as $B^\top\operatorname{diag}(\pi)\Pi B$ and reconstructs a model matching or approximating these length-two statistics.
+**Inspected:** §§3–5, especially pp.1416–1419 and Eq.(16). The paper distinguishes $`VAV^\top`$ with nonnegative $`A,V`$ from $`VV^\top`$, compares their minimum dimensions, and gives approximation algorithms. For symmetric data it permits symmetric $`A`$. Its HMM application factors the two-symbol probability matrix as $`B^\top\mathrm{diag}(\pi)\Pi B`$ and reconstructs a model matching or approximating these length-two statistics.
 
-**Comparison:** a close precedent, so the broad claim that structured positivity creates realization costs would overstate the contribution. Symmetric stationary flux $A$ is not the same constraint as a nonnegative Gram factor $VV^\top$. The inspected result does not give the present all-protocol continuous-time state separation or recover its Gram from controlled endpoint means. Matching two-symbol statistics is a weaker requirement than matching the entire controlled behavior.
+**Comparison:** a close precedent, so the broad claim that structured positivity creates realization costs would overstate the contribution. Symmetric stationary flux $`A`$ is not the same constraint as a nonnegative Gram factor $`VV^\top`$. The inspected result does not give the present all-protocol continuous-time state separation or recover its Gram from controlled endpoint means. Matching two-symbol statistics is a weaker requirement than matching the entire controlled behavior.
 
 The publisher fetch was blocked; the actual sixteen-page published paper was read at the linked author archive. Vanluyten's [2008 primary thesis](https://www.bartdemoor.be/wp-content/uploads/2025/07/doc_080623_14.39.pdf), §§2.3–2.4 and §5.3.1, was also inspected as a cross-check.
 
@@ -87,37 +89,39 @@ The publisher fetch was blocked; the actual sixteen-page published paper was rea
 
 The following elementary implications clarify the remaining proof obligation; they are not a new general realization theory.
 
-If a reversible rival has $D$ hidden states with law $\mu$ and its positive features are $f_a(i)\ge0$, then
+If a reversible rival has $`D`$ hidden states with law $`\mu`$ and its positive features are $`f_a(i)\ge0`$, then
 
-$$
+**Equation (3).**
+
+```math
 G_{ab}=\langle f_a,f_b\rangle_\mu
 =\sum_{i=1}^D\bigl(\sqrt{\mu_i}f_a(i)\bigr)
                  \bigl(\sqrt{\mu_i}f_b(i)\bigr)
-\tag{3}
-$$
+```
 
-is CP with CP-rank at most $D$. Reversibility is used before (3), when experimental words and their reversed adjoints are shown to recover these inner products on the rival's own state space. Merely observing a symmetric two-time matrix does not establish (3). For example, a reversible discrete-time transition matrix may have negative eigenvalues, so its symmetric flux matrix need not be positive semidefinite. Continuous-time semigroups and specifically constructed reflected word Grams provide additional structure that must be retained in the argument.
+is CP with CP-rank at most $`D`$. Reversibility is used before (3), when experimental words and their reversed adjoints are shown to recover these inner products on the rival's own state space. Merely observing a symmetric two-time matrix does not establish (3). For example, a reversible discrete-time transition matrix may have negative eigenvalues, so its symmetric flux matrix need not be positive semidefinite. Continuous-time semigroups and specifically constructed reflected word Grams provide additional structure that must be retained in the argument.
 
-The set $\{BB^\top:B\ge0,\ B\in\mathbb R^{d\times r}\}$ is closed for each fixed $r$. To see this, if $B_nB_n^\top$ converges, then $\|B_n\|_F^2=\operatorname{tr}(B_nB_n^\top)$ is bounded. A subsequence converges to a nonnegative $B$, giving the limiting factorization. Thus a fixed Gram of CP-rank eleven has some positive distance from CP-rank-at-most-ten matrices. This compactness observation alone supplies neither a numerical distance nor a controlled-mean tolerance.
+The set $`\{BB^\top:B\ge0,\ B\in\mathbb R^{d\times r}\}`$ is closed for each fixed $`r`$. To see this, if $`B_nB_n^\top`$ converges, then $`\|B_n\|_F^2=\mathrm{tr}(B_nB_n^\top)`$ is bounded. A subsequence converges to a nonnegative $`B`$, giving the limiting factorization. Thus a fixed Gram of CP-rank eleven has some positive distance from CP-rank-at-most-ten matrices. This compactness observation alone supplies neither a numerical distance nor a controlled-mean tolerance.
 
 A reviewable finite certificate needs both a quantitative matrix obstruction and a uniform transfer from measured means to that matrix, valid for every rival in the stated comparison class. Positive soft selectors must be valid on arbitrary rival sensitivities; target-only projection identities are insufficient. Every use of a rival exit cap, field menu, switching resolution or preparation restriction should appear in that transfer. A finite example with these ingredients would establish a concrete state advantage; a numerical fit against selected rival topologies would not.
 
-For the upper, a shared stochastic link $L$ with
+For the upper, a shared stochastic link $`L`$ with
 
-$$
+**Equation (4).**
+
+```math
 Q_{\rm target}(h)L=LQ_{\rm pred}(h),\qquad
 \pi_{\rm target}L=\pi_{\rm pred},\qquad
 b_{\rm target}=Lb_{\rm pred}
-\tag{4}
-$$
+```
 
-implies equality of all endpoint means under piecewise constant protocols: expand the exponential to obtain $e^{tQ_{\rm target}(h)}L=Le^{tQ_{\rm pred}(h)}$ and telescope along the protocol. The actual link may be written in the reverse orientation; the corresponding identities must be adjusted consistently. Conservativity, positivity, stationarity and common-field compatibility are separate checks, not consequences of $\operatorname{rank}_+(H)\le5$.
+implies equality of all endpoint means under piecewise constant protocols: expand the exponential to obtain $`e^{tQ_{\rm target}(h)}L=Le^{tQ_{\rm pred}(h)}`$ and telescope along the protocol. The actual link may be written in the reverse orientation; the corresponding identities must be adjusted consistently. Conservativity, positivity, stationarity and common-field compatibility are separate checks, not consequences of $`\mathrm{rank}_+(H)\le5`$.
 
 ## 4. Bounded assessment
 
 The matrix obstruction, positive realization framework and intertwining method have close primary precedents. The finite contribution to assess is their integration into a single fixed-rate-rule, physically interpretable controlled prediction example, with an explicit smaller stationary predictor and a quantitative lower against arbitrary ordinary-reversible competitors under the common hidden exit cap. This is narrower than claiming a new CP-rank gap or a general cost of thermodynamic reversibility.
 
-The exact $K_{p,q}$ extension also inherits its edge-count obstruction from classical triangle-free support arguments. Its additional claim is an explicit common-interface dynamic realization with $pq+p+q+1$ ordinary-reversible states versus at most $2(p+q)+1$ unrestricted states. The growing actuator alphabet and exact-agreement restriction must accompany that comparison. It does not improve the practical tolerance of the twelve-versus-eleven example, whose $2^{-3000}$ budget is a mathematical separation rather than an experimentally accessible signal.
+The exact $`K_{p,q}`$ extension also inherits its edge-count obstruction from classical triangle-free support arguments. Its additional claim is an explicit common-interface dynamic realization with $`pq+p+q+1`$ ordinary-reversible states versus at most $`2(p+q)+1`$ unrestricted states. The growing actuator alphabet and exact-agreement restriction must accompany that comparison. It does not improve the practical tolerance of the twelve-versus-eleven example, whose $`2^{-3000}`$ budget is a mathematical separation rather than an experimentally accessible signal.
 
 The exact target and exact upper must be distinguished from a finite-entropy regularization of one-way predictor transitions. An approximate regularization is a separate upper at a stated positive tolerance; it is not automatically another exact eleven-state realization. Physical reversal remains fixed by the chosen variables, as discussed in the [physical audit](PHYSICAL_REALIZATION_SOURCE_AUDIT.md).
 

@@ -122,13 +122,13 @@
   "maximum_dense_dimension": 12,
   "numpy_version": "2.3.5",
   "proof_snapshot_sha256": {
-    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe",
-    "docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md": "38bc3447bbe6578eb37a6917d5e6ef700696077a3c98c499be47ed1dbff357cf"
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "acd91f09d1e3d0a6547b843930ea199c0d33fbc517969ccfc6906ae2a7e1d5c1",
+    "docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md": "3d13829b84eac2233576bb70a4b7fb33a23d0f2f1ad52b8ec51586a29cc9f589"
   },
-  "python_version": "3.13.5",
+  "python_version": "3.12.14",
   "scipy_version": "1.17.0",
   "source_sha256": {
-    "verify_symmetric_compression.py": "e91d00de4654e6ca89e05de29dfb5593cb7f214dc93515ee7ecdd05abd8aecad"
+    "verify_symmetric_compression.py": "a60b650b0868f83c248c190ed918ce48ccd42ff430470ca4b7505b1f08be2d28"
   },
   "status": "PASS"
 }

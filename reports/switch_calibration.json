@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Exact stdlib Fraction polynomial algebra, certified coefficient boxes, rational exponential lower sums and rational logarithm enclosures",
   "calibration_box": {
@@ -136,17 +136,17 @@
     "The finite physical reset wait supplies a target preparation guarantee, not a universal preparation procedure for arbitrary uncapped rivals."
   ],
   "source_sha256": {
-    "verify_switch_calibration.py": "64ed3efabee62971b3ecb4d4a932fb337e1af887ccab2a07bfb5e3e0a7fae9b2",
+    "verify_switch_calibration.py": "8c4beb281a44058d9dc5668cdd0bf02d5fa1f8eadee0d401af13844c231bb07f",
     "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
   },
   "input_report_sha256": {
-    "reports/familiar_switch_margin.json": "dfe9757f74a6fc2d45f239e65292cfc613f913685f895896a9b229cc16067141"
+    "reports/familiar_switch_margin.json": "52efe874cf8319e9589d8d2fc8066a5e08396556429947145c762bc58982d0bb"
   },
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
-    "docs/FAMILIAR_SWITCH_MEASUREMENT_COST.md": "e5ea44b5dfebc74b6071fc1f2faa302dae47ff52fac67745b4022ccab3d02317",
-    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "a538fba085ab86bc537551bca88a0114127ffe6d5a7e78ee80d4f5c4168a575b",
+    "docs/FAMILIAR_SWITCH_MEASUREMENT_COST.md": "59cc23b39c8799585101c641ff804119c698f3a2e40cfd2a844a9ae5638be5b1",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "1882170850493839cce9076f01bfd5ff8b5124a76f89b3909e391f232c50513c",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715"
   },
   "imported_repository_verifiers": [
     "verify_familiar_switch_margin.py"

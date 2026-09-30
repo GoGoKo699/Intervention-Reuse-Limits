@@ -594,8 +594,8 @@
     1.0986122886681098
   ],
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "0f301c2b87e6ef6106ea2e785a7c5166b7214d92369076332d8050592d5d4c3b",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715"
   },
   "schema_version": 1,
   "scope": "Four endpoint occupations at t=u=4/5 and clock3/2, using low-field and high-field stationary preparations. Saved feasible ordinary models only; no optimization lower bound or global optimum.",
@@ -722,7 +722,7 @@
   },
   "versions": {
     "numpy": "2.3.5",
-    "python": "3.13.5",
+    "python": "3.12.14",
     "scipy": "1.17.0"
   }
 }

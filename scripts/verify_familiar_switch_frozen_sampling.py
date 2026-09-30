@@ -19,10 +19,10 @@ import verify_familiar_switch_frozen_bound as bound
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_switch_frozen_bound.json":
-        "968c394b861ed132b215e964aa45834153b2998b862997f7a2a10e83cc80e5e3"
+        "9b15c6c9eacf0e19d53e8413442cc8d568aa8e3411eadc552d0547fc01c0d5a8"
 }
 # Frozen proof snapshot.
-PROOFS = {"docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md": "688779263aced1c36f4118b749bb3c8080e8d90d0f1d6dd4096f638d5b84c61d"}
+PROOFS = {"docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md": "d8df8dd7b1ce248ff8bdbcd5d1d95f8ef371250c47a8eef4fc8f85f4184097b3"}
 WORDS = ("L", "LL", "H", "HH", "HL")
 WORD_IDS = ((0,), (0, 0), (1,), (1, 1), (1, 0))
 CORRELATION_RADIUS = F(1, 3200)

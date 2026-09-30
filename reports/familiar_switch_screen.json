@@ -25076,8 +25076,8 @@
   ],
   "preparation": "The target and each comparator start in their own zero-field equilibrium, with observed sector masses1/2.",
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_PROTOCOLS.md": "ba2847e1e4ae4391044e80f50df80bfda990d083c4dd465fd58d314839f794eb",
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+    "docs/FAMILIAR_SWITCH_PROTOCOLS.md": "b34c992084cf552425f6c408f058d38e969730fbe47ba599950db208323c2d27",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715"
   },
   "recorded_original_discovery_runtime_seconds": {
     "rational_two_spin": 0.9269250009965617,
@@ -25100,7 +25100,7 @@
   },
   "versions": {
     "numpy": "2.3.5",
-    "python": "3.13.5",
+    "python": "3.12.14",
     "scipy": "1.17.0"
   }
 }

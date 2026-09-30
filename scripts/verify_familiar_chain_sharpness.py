@@ -19,13 +19,13 @@ from sympy.polys.matrices import DomainMatrix
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_chain.json":
-        "177d6a9f754dddf9ccc919037d6267e4982eac18b4ddd8703461efd5ac4debb8"
+        "4c7073d91d05f8521bb13eaa1687fc7ddd399b87a2f6a372e96b4759ec078476"
 }
 PROOFS = {
     "docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md":
-        "5be390a54bac96cf0e7c4e6c3ef6828380b6d5599c98542d1f73028d48836850",
+        "849800074af4cf6e5ba33e1f0ec36286221bb9599d3d8aa444af00c0695469ef",
     "docs/FAMILIAR_CHAIN_FINITE_ACCURACY.md":
-        "ec59199f390655484b93260b21b4fa930675d1d26f17dc399d9e948f495596f0"
+        "3d4fc44453ba18b595c8be13350e2fe66fb38da1e8ec0e3413a6ebdbc53d3480"
 }
 THETA = sp.Rational(1, 6)
 

@@ -11,16 +11,16 @@ component. They are exact model-selection results for ideal observations.
 
 ## One target, several prediction tasks
 
-Let $t=\tanh J$ and $u=\tanh H$, with finite $J,H>0$.
+Let $`t=\tanh J`$ and $`u=\tanh H`$, with finite $`J,H\gt 0`$.
 The first four rows below use equal attempt rates. Every rival has a
 fixed deterministic binary readout; further conditions differ by task.
 
 | Required data | General Markov states | Ordinary reversible states | Essential comparison condition |
 | --- | ---: | ---: | --- |
-| Passive pairs at two lags $a,2a$; also all passive pairs | 3 | 3 | One kernel reused at the two times |
-| Four controlled pairs $0,H,0H,H0$ | 3 | 4 | Common Gibbs force rule; arbitrary per-word preparation allowed |
-| One passive triple $(S_0,S_a,S_{a+b})$ | 4 | 4 | Markov evolution through the counted middle state; arbitrary preparation allowed |
-| Signed-control pairs over $\{0,\pm H\}$ | 3 below or at the threshold; 4 above | 4 | One common preparation and the 23-word menu below; force relation need not be assumed |
+| Passive pairs at two lags $`a,2a`$; also all passive pairs | 3 | 3 | One kernel reused at the two times |
+| Four controlled pairs $`0,H,0H,H0`$ | 3 | 4 | Common Gibbs force rule; arbitrary per-word preparation allowed |
+| One passive triple $`(S_0,S_a,S_{a+b})`$ | 4 | 4 | Markov evolution through the counted middle state; arbitrary preparation allowed |
+| Signed-control pairs over $`\{0,\pm H\}`$ | 3 below or at the threshold; 4 above | 4 | One common preparation and the 23-word menu below; force relation need not be assumed |
 
 The [passive and three-time proof](FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md)
 supplies an explicit reversible three-state birth–death chain matching
@@ -35,8 +35,8 @@ half that conditional covariance.
 This gives a concrete interpretation of the existing endpoint predictor:
 it correctly propagates the requested pair statistics but cannot serve
 as a three-state model after an additional ideal observation. The
-observable span $\{1,S,Z\}$ closes under propagation, whereas conditioning
-on a sign introduces the product $SZ$. Endpoint acquisition guarantees
+observable span $`\{1,S,Z\}`$ closes under propagation, whereas conditioning
+on a sign introduces the product $`SZ`$. Endpoint acquisition guarantees
 do not automatically implement the nondisturbing middle observation.
 
 ## A sharp control-range boundary
@@ -44,12 +44,12 @@ do not automatically implement the nondisturbing middle observation.
 The [signed-control theorem](FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md)
 proves that a positive three-state predictor exists exactly when
 
-$$
+```math
  \boxed{3t^2u^2+(1+t^2)u\le1.}
-$$
+```
 
 Below or at that boundary, one generator family matches every endpoint
-pair under all field protocols in $[-H,H]$. Above it, every three-state
+pair under all field protocols in $`[-H,H]`$. Above it, every three-state
 continuous-time model fails, including nonreversible ones. The minimal
 linear realization remains three-dimensional on both sides. Positivity
 under the enlarged control range causes the extra state requirement.
@@ -57,11 +57,11 @@ under the enlarged control range causes the extra state requirement.
 The same decision can be established by **23 endpoint-pair experiments**,
 each at most five ticks long, at any positive fixed clock:
 
-$$
+```math
  \{H^k:1\le k\le5\}
  \cup\{H^i0H^j:0\le i,j\le2\}
  \cup\{H^i(-H)H^j:0\le i,j\le2\}.
-$$
+```
 
 All words share one initial preparation. An exact three-state fit is
 forced to have a positive low-field equilibrium law and the common
@@ -72,16 +72,16 @@ a positive parameter-dependent TV interval, whose numerical size has
 not been calculated. No optimum experiment count is claimed.
 
 The theorem also covers unequal attempt rates. With
-$r=\Gamma_Z/\Gamma_S>0$, its criterion becomes
+$`r=\Gamma_Z/\Gamma_S\gt 0`$, its criterion becomes
 
-$$
+```math
  \boxed{(r+2)t^2u^2+(1+t^2)u\le r.}
-$$
+```
 
-At the previous operating point $t=4/5,u=3/5$, equal attempts violate
+At the previous operating point $`t=4/5,u=3/5`$, equal attempts violate
 the signed criterion. The general minimum is four there, although the
 nonnegative-field endpoint task admits three. For the same signed field
-range, the minimum returns to three when $r\ge903/481$. These are exact
+range, the minimum returns to three when $`r\ge903/481`$. These are exact
 reduced-model thresholds, not measured gate or tunneling tolerances.
 
 ## Scientific assessment

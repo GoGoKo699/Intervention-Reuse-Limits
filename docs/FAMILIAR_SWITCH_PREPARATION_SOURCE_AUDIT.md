@@ -6,21 +6,21 @@
 
 ## 1. The repository calculation being compared
 
-Write $u=\tanh H\in(0,1)$ and assume the baseline stationary law is balanced, with $\pi_H=\pi_0(1+uS)$. Let $E_0,E_H$ be ordinarily reversible for their respective stationary laws. The four measured binary means are
+Write $`u=\tanh H\in(0,1)`$ and assume the baseline stationary law is balanced, with $`\pi_H=\pi_0(1+uS)`$. Let $`E_0,E_H`$ be ordinarily reversible for their respective stationary laws. The four measured binary means are
 
-$$
+```math
  m=\pi_0E_HS,\qquad a=\pi_HE_0S,\qquad
  b=\pi_HE_0E_HS,\qquad \ell=\pi_0E_HE_0S.
-$$
+```
 
-Here the initial equilibrium preparation is part of each experiment. With $F=E_HS$ and $G=E_0S$, direct detailed-balance algebra gives
+Here the initial equilibrium preparation is part of each experiment. With $`F=E_HS`$ and $`G=E_0S`$, direct detailed-balance algebra gives
 
-$$
+```math
  b-m-a+\ell+\sigma(u\ell-am)
  =-\frac{\sigma u^2}{1-\sigma u}
-   \operatorname{Cov}_{\pi_0}(F,G\mid S=\sigma),
+   \mathrm{Cov}_{\pi_0}(F,G\mid S=\sigma),
  \qquad \sigma\in\{-1,1\}.
-$$
+```
 
 This is an exact finite-field identity, valid for every ordinary model in the stated class. It is not itself a dimension bound. A model with at most three states and deterministic binary readout has a singleton sector, where that conditional covariance vanishes. The positively coupled physical pair has positive covariance in both sectors. The companion proof combines these facts with a stationary three-state realization that also matches both preparations. The issue under study is this controlled realization comparison, not whether covariance or reciprocity is a new mathematical operation.
 
@@ -44,4 +44,4 @@ This source formulates classical dimension witnesses from probabilities indexed 
 
 ## 5. Remaining scope
 
-The second equilibrium preparation must be available with its own preparation guarantee; its cost is not removed by shortening the subsequent protocols. The exact-tilt alternative reweights baseline trials by $1+uS_{\rm initial}$ and therefore needs a noninvasive initial observation; its weighted estimator has a different sampling cost. This elementary change-of-measure identity is not claimed as new. The binary observable alone does not certify either hidden equilibrium law. Fixed common propagators and exact preparation/tilt assumptions define the identity; approximate preparation, field-law error and correlated drift require their own bounds. The earlier physical-source audit, including its unresolved Falk full-text lead, remains applicable. No generic priority claim follows from this three-source comparison.
+The second equilibrium preparation must be available with its own preparation guarantee; its cost is not removed by shortening the subsequent protocols. The exact-tilt alternative reweights baseline trials by $`1+uS_{\rm initial}`$ and therefore needs a noninvasive initial observation; its weighted estimator has a different sampling cost. This elementary change-of-measure identity is not claimed as new. The binary observable alone does not certify either hidden equilibrium law. Fixed common propagators and exact preparation/tilt assumptions define the identity; approximate preparation, field-law error and correlated drift require their own bounds. The earlier physical-source audit, including its unresolved Falk full-text lead, remains applicable. No generic priority claim follows from this three-source comparison.

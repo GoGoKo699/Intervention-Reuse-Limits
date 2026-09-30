@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Exact fractions.Fraction, rational matrix products and LDL certificates, with a bounded support enumeration; no numerical optimization",
   "matrix_rank_realization_principle": {
@@ -169,11 +169,11 @@
   },
   "imported_repository_verifiers": [],
   "proof_snapshot_sha256": {
-    "docs/MATRIX_RANK_PREDICTION_PRINCIPLE.md": "6d13e4f33b8166c1f125eaaf582692dc0523f7e39c23152bf0f82aa105bd8ab2",
-    "docs/KINETIC_VARIANCE_COMPRESSION.md": "642b2e907dcf37c289af1e2cfc09c98a3b56412fe847d892579c18e09b6646f1",
-    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "f112054e19a2ed86f4998481d6b130df2001eea32c92bf3876d86c9ee676e1fe",
-    "docs/FINITE_PREDICTOR_MINIMALITY.md": "393714abcd79e5c9b7d7c4184c4dd892ebd635265aff3edab5be3c7ed5f527e5",
-    "docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md": "38bc3447bbe6578eb37a6917d5e6ef700696077a3c98c499be47ed1dbff357cf"
+    "docs/MATRIX_RANK_PREDICTION_PRINCIPLE.md": "0ed5502fd5c30a530c6d2a543136034779307d2825b680f8f94d35519294b6c7",
+    "docs/KINETIC_VARIANCE_COMPRESSION.md": "f89a642f95449ee3b02590e887d5437f3ec7482764a618e4313d900fa269808c",
+    "docs/FINITE_REVERSIBILITY_ADVANTAGE.md": "acd91f09d1e3d0a6547b843930ea199c0d33fbc517969ccfc6906ae2a7e1d5c1",
+    "docs/FINITE_PREDICTOR_MINIMALITY.md": "18ed95aebd535c66c669f2176cd55dd86edf286249002c8bef4eef88b8a4fae1",
+    "docs/SYMMETRY_AVERAGED_REVERSIBLE_COMPRESSION.md": "3d13829b84eac2233576bb70a4b7fb33a23d0f2f1ad52b8ec51586a29cc9f589"
   },
   "checks": 200
 }

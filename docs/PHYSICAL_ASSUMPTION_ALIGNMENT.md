@@ -32,7 +32,7 @@ independent precedents for a fast sensor, a quiet system and barrier control
 do not establish their compatibility in one experiment.
 
 The key distinction is between a physical premise and a calculated
-consequence. The requirement of endpoint error at most $5\times10^{-6}$ is
+consequence. The requirement of endpoint error at most $`5\times10^{-6}`$ is
 a sufficient condition derived for our current statistical test. It is
 neither an established detector convention nor a demonstrated performance.
 The numerical value need not have a precedent, but claiming that a physical
@@ -58,7 +58,7 @@ papers. They do not all select identical kinetic parameters:
 - **P. Strasberg et al.**, *Physical Review Letters* **110**, 040601
   (2013), [full text](https://arxiv.org/pdf/1210.5661).
   Pages 1–2 and Eqs. (1)–(5) give the capacitive two-dot architecture,
-  four populations and rates proportional to $f$ and $1-f$. The text
+  four populations and rates proportional to $`f`$ and $`1-f`$. The text
   immediately following these equations identifies equal prefactors at
   the two transition energies with the common wide-band approximation.
   Its driven demon operating regime is not our equilibrium protocol.
@@ -79,7 +79,7 @@ papers. They do not all select identical kinetic parameters:
   [full text](https://arxiv.org/pdf/1008.3528).
   Section II A, Eq. (2) and the following rates give the four-state
   sequential-tunneling generator with Fermi loading/unloading factors
-  and $k_BT\gg\hbar\Gamma$. Section II retains energy-dependent
+  and $`k_BT\gg\hbar\Gamma`$. Section II retains energy-dependent
   transmissions for the conversion effect. This supports the family
   and identifies a boundary; it is not an example of the constant-rate
   specialization used in our target.
@@ -132,7 +132,7 @@ It does not mean experimentally certified for our proposed implementation.
 | Ideal endpoint pair laws | Well-defined observables of the mathematical state process | Keep the population-law theorem distinct from a physical readout construction |
 | Uniform conditional endpoint errors and joint signal/noise/leakage bounds | Sufficient instrument premises; existing sources support components only | Derive from one compatible published detector/control model, or leave the operational extension conditional |
 | Target initial acquisition preserves or nearly preserves its equilibrium marginal | Proved for the stipulated symmetric-rate construction | Establish that the full physical acquisition realizes this construction; barrier control alone does not establish it |
-| One-percent kinetic box, force spread $1.001$, error budgets and nine-million-trial allocation | Our mathematical tolerances and design choices | Retain as conditional results; assess whether an inherited model supplies them rather than calling them community assumptions |
+| One-percent kinetic box, force spread $`1.001`$, error budgets and nine-million-trial allocation | Our mathematical tolerances and design choices | Retain as conditional results; assess whether an inherited model supplies them rather than calling them community assumptions |
 | Three-state stationary predictor with circulation | Constructive mathematical upper bound for the specified prediction task | A corresponding three-state physical device and its thermodynamic resources have not been established |
 
 The null and target must be audited separately. A detector bound verified

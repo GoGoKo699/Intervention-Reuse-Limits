@@ -35,6 +35,11 @@ It does not validate heading fragments, visual equation layout or
 mathematical correctness. Rendering changes also require inspection in
 GitHub's rendered view, especially numbered displays, matrices, sets and
 inequalities.
+Use GitHub inline-math wrappers and fenced `math` displays. Keep equation
+numbers outside the math block as text labels, and use mathematical
+commands for inequality signs and table-cell absolute-value delimiters.
+These presentation conventions preserve formulas while avoiding the
+collapsed numbered displays and broken inline notation seen in GitHub.
 
 ## What each kind of evidence establishes
 
@@ -97,5 +102,8 @@ import facts, not a claim to have reacquired the archive during cleanup.
 
 Repeated status narratives and per-checkpoint file counts have been
 removed from the current guides. The [research history](RESEARCH_HISTORY.md)
-links their exact pre-cleanup versions. Standalone proofs, saved reports,
-source audits and recovery files retain the underlying evidence.
+links their exact pre-cleanup versions. Standalone proofs, saved reports
+and source audits retain the underlying evidence. The superseded recovery
+folder has been removed after confirming that its six proofs and source
+comparison are integrated; its original files remain available through the
+history map's exact-commit link.

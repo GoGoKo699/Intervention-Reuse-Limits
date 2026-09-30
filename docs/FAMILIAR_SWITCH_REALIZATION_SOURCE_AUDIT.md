@@ -22,27 +22,27 @@ All seven main texts were inspected; the Koski supplement was also inspected. Eq
 
 This section is our algebraic specialization of the published sequential-tunneling model; the complete repository derivation is in [the charge note](FAMILIAR_SWITCH_CHARGE_REALIZATION.md). Absorb common reservoir chemical potentials into the single-dot energies and write
 
-$$
+```math
 \mathcal E(n_1,n_2)=\epsilon_1n_1+\epsilon_2n_2+Un_1n_2,
-\qquad n_i\in\{0,1\},\quad U>0.
-$$
+\qquad n_i\in\{0,1\},\quad U\gt 0.
+```
 
-Set $S=2n_1-1$, $Z=1-2n_2$, $\epsilon_2=-U/2$ and $\epsilon_1(h)=-U/2-2k_BT h$. Then
+Set $`S=2n_1-1`$, $`Z=1-2n_2`$, $`\epsilon_2=-U/2`$ and $`\epsilon_1(h)=-U/2-2k_BT h`$. Then
 
-$$
+```math
 \mathcal E/(k_BT)=\text{constant}-JSZ-hS,
 \qquad J=U/(4k_BT).
-$$
+```
 
-Reversing the unobserved occupation label accounts for the sign of the repulsive electrostatic interaction. With $f(\Delta)=(1+e^{\Delta/(k_BT)})^{-1}$, a nondegenerate level has loading and unloading rates $\Gamma f(\Delta)$ and $\Gamma[1-f(\Delta)]$. Their sum is $\Gamma$. Equal, energy-independent bare couplings on the two dots therefore give the target's equal-attempt heat-bath rates. The microscopic input is the Fermi rate law in Strasberg et al.; the mapping and parameter choices are our calculation.
+Reversing the unobserved occupation label accounts for the sign of the repulsive electrostatic interaction. With $`f(\Delta)=(1+e^{\Delta/(k_BT)})^{-1}`$, a nondegenerate level has loading and unloading rates $`\Gamma f(\Delta)`$ and $`\Gamma[1-f(\Delta)]`$. Their sum is $`\Gamma`$. Equal, energy-independent bare couplings on the two dots therefore give the target's equal-attempt heat-bath rates. The microscopic input is the Fermi rate law in Strasberg et al.; the mapping and parameter choices are our calculation.
 
-For the certified fixture $J=H=\log3$, the requirements are $U=4k_BT\log3$ and an observed-dot energy shift $-U/2$. Its conditional addition energies run from $-U$ to $U/2$, including zero. Constancy of the bare couplings must cover these energies and gate settings. Agreement at one charge degeneracy point is insufficient. As an illustrative conversion only, at 50 mK the required $U$ is about 18.9 microelectronvolts; this is not a measured setting in the cited devices.
+For the certified fixture $`J=H=\log3`$, the requirements are $`U=4k_BT\log3`$ and an observed-dot energy shift $`-U/2`$. Its conditional addition energies run from $`-U`$ to $`U/2`$, including zero. Constancy of the bare couplings must cover these energies and gate settings. Agreement at one charge degeneracy point is insufficient. As an illustrative conversion only, at 50 mK the required $`U`$ is about 18.9 microelectronvolts; this is not a measured setting in the cited devices.
 
-The Markov approximation also requires weak reservoir broadening, $\hbar\Gamma\ll k_BT$, isolated relevant levels and negligible unwanted transitions. There must be no appreciable direct interdot tunneling or coherent charge hybridization. Additional orbitals, spin/valley channels, cotunneling and gate-dependent barriers require explicit modeling or error bounds. Local gate control includes compensation of cross-capacitances; it does not follow merely from having a plunger gate. The required pulse must also be compatible with reservoir relaxation and the desired clock accuracy.
+The Markov approximation also requires weak reservoir broadening, $`\hbar\Gamma\ll k_BT`$, isolated relevant levels and negligible unwanted transitions. There must be no appreciable direct interdot tunneling or coherent charge hybridization. Additional orbitals, spin/valley channels, cotunneling and gate-dependent barriers require explicit modeling or error bounds. Local gate control includes compensation of cross-capacitances; it does not follow merely from having a plunger gate. The required pulse must also be compatible with reservoir relaxation and the desired clock accuracy.
 
 ### Degeneracy cannot simply be absorbed into the energy
 
-For an empty dot and a spin-degenerate singly occupied level, the ideal loading/unloading rates are $2\Gamma f(\Delta)$ and $\Gamma[1-f(\Delta)]$. Their ratio can be represented by shifting the free energy by $-k_BT\log2$, but their sum is $\Gamma[1+f(\Delta)]$, which varies with energy. The equilibrium correction alone does not restore heat-bath kinetics. This is the concrete issue illustrated by Hofmann et al.'s degeneracy measurements.
+For an empty dot and a spin-degenerate singly occupied level, the ideal loading/unloading rates are $`2\Gamma f(\Delta)`$ and $`\Gamma[1-f(\Delta)]`$. Their ratio can be represented by shifting the free energy by $`-k_BT\log2`$, but their sum is $`\Gamma[1+f(\Delta)]`$, which varies with energy. The equilibrium correction alone does not restore heat-bath kinetics. This is the concrete issue illustrated by Hofmann et al.'s degeneracy measurements.
 
 Charge occupations are even under time reversal. If a magnetic field is used to isolate a spin channel, the microscopic reversal also changes that field and spin. A fixed-field charge-population model can obey ordinary detailed balance under its stated sequential-tunneling assumptions, but it should not be advertised as proof that every discarded microscopic degree of freedom is even. Resolving spin is an additional physical choice, not a silent removal of degeneracy.
 
@@ -50,19 +50,19 @@ Charge occupations are even under time reversal. If a magnetic field is used to 
 
 At equal electrode temperatures, the orthodox rate in the Koski supplement is
 
-$$
+```math
 \Gamma_{\rm metal}(\Delta)=
 \frac{\Delta}{e^2R\,[e^{\Delta/(k_BT)}-1]}.
-$$
+```
 
 Directly summing opposite directions gives
 
-$$
+```math
 \Gamma_{\rm metal}(\Delta)+\Gamma_{\rm metal}(-\Delta)
 =\frac{\Delta}{e^2R}\coth\!\left(\frac{\Delta}{2k_BT}\right).
-$$
+```
 
-This energy-dependent activity approaches $2k_BT/(e^2R)$ only near zero. The rate ratio has the Gibbs form, but the exact mean closure and the current numerical margin cannot be transferred merely by matching the equilibrium energy. Extending the theorem to measured box rates would be a new model calculation.
+This energy-dependent activity approaches $`2k_BT/(e^2R)`$ only near zero. The rate ratio has the Gibbs form, but the exact mean closure and the current numerical margin cannot be transferred merely by matching the equilibrium energy. Extending the theorem to measured box rates would be a new model calculation.
 
 ## 3. What readout and preparation still require
 
@@ -70,7 +70,7 @@ The distinction is between **misclassification of a bit** and **changing the pro
 
 The [companion readout analysis](FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md) eliminates the unknown contrasts algebraically when detector errors satisfy an independent symmetric-channel model. Removing the need to know its error probability precisely does not establish that channel model experimentally, and does not remove preparation or backaction assumptions. In particular, neither a balanced observed bit nor a good single-bit fidelity bounds total variation of the full four-state preparation law. Its conservative finite-sample guarantee is separate from the earlier calibrated-detector score test; it is not a laboratory-efficiency claim.
 
-A device comparison would need independently supported full-state equilibration or mixing bounds, compensated local fields, rate characterization over the relevant energy range, and a disturbance bound for the initial observation. Temporarily reading both charges could help validate a proposed target model; it would be an additional characterization resource, not part of the claimed one-bit prediction task. Turning the detector off between snapshots is a candidate implementation choice, not a proven bound on the disturbance caused by either pulse. None of the inspected papers supplies all these bounds at $10^{-5}$.
+A device comparison would need independently supported full-state equilibration or mixing bounds, compensated local fields, rate characterization over the relevant energy range, and a disturbance bound for the initial observation. Temporarily reading both charges could help validate a proposed target model; it would be an additional characterization resource, not part of the claimed one-bit prediction task. Turning the detector off between snapshots is a candidate implementation choice, not a proven bound on the disturbance caused by either pulse. None of the inspected papers supplies all these bounds at $`10^{-5}`$.
 
 ## 4. Colloidal alternatives: useful components, different dynamics
 
@@ -78,9 +78,9 @@ Three additional primary full texts were inspected in the parallel platform audi
 
 | Primary source | Demonstrated component | Mismatch with the present target |
 |---|---|---|
-| **A. Curran et al.**, “Partial Synchronization of Stochastic Oscillators through Hydrodynamic Coupling,” *PRL* **108**, 240601 (2012), [DOI](https://doi.org/10.1103/PhysRevLett.108.240601), [published PDF](https://www.gla.ac.uk/media/Media_236326_smxx.pdf). | Two 800-nm colloids in bistable optical traps; 1.55 kHz imaging, order-one-second hops and 2–3-hour traces. | Coupling is through hydrodynamic mobility while the landscapes remain substantially unchanged. This does not demonstrate an energetic $-JSZ$ interaction. |
-| **D. Babič, C. Schmitt, I. Poberaj and C. Bechinger**, “Stochastic resonance in colloidal systems,” *Europhysics Letters* **67**, 158–164 (2004), [DOI](https://doi.org/10.1209/epl/i2004-10055-3), [full PDF](https://d-nb.info/1136571035/34). | Independent tilt/barrier control for one colloid; intrawell relaxation below 0.1 s and a measured Kramers time $7.3\pm0.4$ s. | It is a single bistable element; Kramers kinetics do not guarantee constant-total-rate heat-bath switching. |
-| **A. Ortiz-Ambriz and P. Tierno**, “Engineering of frustration in colloidal artificial ices realized on microfeatured grooved lattices,” *Nature Communications* **7**, 10575 (2016), [DOI](https://doi.org/10.1038/ncomms10575), [full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC4740443/). | Interacting dipolar colloids in bistable grooves with individual imaging/manipulation; the Methods include an isolated-pair check. | The reported barrier is about $540k_BT$ and suppresses spontaneous thermal switching. The field changes interactions; it is not our prescribed local bias. |
+| **A. Curran et al.**, “Partial Synchronization of Stochastic Oscillators through Hydrodynamic Coupling,” *PRL* **108**, 240601 (2012), [DOI](https://doi.org/10.1103/PhysRevLett.108.240601), [published PDF](https://www.gla.ac.uk/media/Media_236326_smxx.pdf). | Two 800-nm colloids in bistable optical traps; 1.55 kHz imaging, order-one-second hops and 2–3-hour traces. | Coupling is through hydrodynamic mobility while the landscapes remain substantially unchanged. This does not demonstrate an energetic $`-JSZ`$ interaction. |
+| **D. Babič, C. Schmitt, I. Poberaj and C. Bechinger**, “Stochastic resonance in colloidal systems,” *Europhysics Letters* **67**, 158–164 (2004), [DOI](https://doi.org/10.1209/epl/i2004-10055-3), [full PDF](https://d-nb.info/1136571035/34). | Independent tilt/barrier control for one colloid; intrawell relaxation below 0.1 s and a measured Kramers time $`7.3\pm0.4`$ s. | It is a single bistable element; Kramers kinetics do not guarantee constant-total-rate heat-bath switching. |
+| **A. Ortiz-Ambriz and P. Tierno**, “Engineering of frustration in colloidal artificial ices realized on microfeatured grooved lattices,” *Nature Communications* **7**, 10575 (2016), [DOI](https://doi.org/10.1038/ncomms10575), [full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC4740443/). | Interacting dipolar colloids in bistable grooves with individual imaging/manipulation; the Methods include an isolated-pair check. | The reported barrier is about $`540k_BT`$ and suppresses spontaneous thermal switching. The field changes interactions; it is not our prescribed local bias. |
 
 These papers support bistability, coupling or control separately. None supplies the exact target kinetics or the current precision assumptions. A deliberately feedback-synthesized classical switch network would also have to count its controller and measurement assumptions explicitly.
 

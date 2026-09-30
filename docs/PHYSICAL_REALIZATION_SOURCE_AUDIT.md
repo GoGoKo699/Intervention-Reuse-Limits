@@ -8,34 +8,37 @@ Nine primary papers below support different ingredients. The closest structural 
 
 ## 1. A precise single-force interpretation
 
-The following is an explicit model translation, not a physical realization theorem attributed to the papers. Let $f$ be a force conjugate to extension $x$, let $\ell>0$ be a length, and set $h=f\ell/(k_BT)$. Write well and transition-state free energies as
+The following is an explicit model translation, not a physical realization theorem attributed to the papers. Let $`f`$ be a force conjugate to extension $`x`$, let $`\ell\gt 0`$ be a length, and set $`h=f\ell/(k_BT)`$. Write well and transition-state free energies as
 
-$$
+**Equation (1).**
+
+```math
 E_x(f)=E_x^0-fx_x,\qquad
 W_{xy}(f)=W_{xy}^0-fx_{xy}^{\ddagger},\qquad
 q_{xy}(f)=\nu_{xy}\exp\!\left[-\frac{W_{xy}(f)-E_x(f)}{k_BT}\right],
-\tag{1}
-$$
+```
 
-with symmetric $W_{xy}^0=W_{yx}^0$, $x_{xy}^{\ddagger}=x_{yx}^{\ddagger}$ and $\nu_{xy}=\nu_{yx}$. This assumes fixed effective extensions and force-independent attempt frequencies over the allowed force range. Choose
+with symmetric $`W_{xy}^0=W_{yx}^0`$, $`x_{xy}^{\ddagger}=x_{yx}^{\ddagger}`$ and $`\nu_{xy}=\nu_{yx}`$. This assumes fixed effective extensions and force-independent attempt frequencies over the allowed force range. Choose
 
-$$
+**Equation (2).**
+
+```math
 x_A=-\ell,\qquad x_i=\ell,\qquad x_{Ai}^{\ddagger}=g_i\ell,
 \qquad E_A^0=0,\qquad E_i^0=-k_BT\log\mu_i.
-\tag{2}
-$$
+```
 
-Calibrate the external barriers so $q_{iA}(0)=k$. Detailed balance then gives $q_{Ai}(0)=k\mu_i$, and (1) yields exactly
+Calibrate the external barriers so $`q_{iA}(0)=k`$. Detailed balance then gives $`q_{Ai}(0)=k\mu_i`$, and (1) yields exactly
 
-$$
+**Equation (3).**
+
+```math
 q_{Ai}(h)=k\mu_i e^{(1+g_i)h},\qquad
 q_{iA}(h)=k e^{(g_i-1)h}.
-\tag{3}
-$$
+```
 
-Taking $x_{ij}^{\ddagger}=\ell$ on internal edges makes their activation energies independent of force, hence keeps $K$ fixed. A reversible $K$ can be represented at rate level by symmetric internal barriers because $\mu_iK_{ij}=\mu_jK_{ji}$. Edges with zero rates are omitted. The target values $|g_i|\le9/100$ place the external transition states near the midpoint between the two extension levels.
+Taking $`x_{ij}^{\ddagger}=\ell`$ on internal edges makes their activation energies independent of force, hence keeps $`K`$ fixed. A reversible $`K`$ can be represented at rate level by symmetric internal barriers because $`\mu_iK_{ij}=\mu_jK_{ji}`$. Edges with zero rates are omitted. The target values $`|g_i|\le9/100`$ place the external transition states near the midpoint between the two extension levels.
 
-Thus one force suffices: no independent operation of well energies and barriers is required. The force-controlled process can be ordinarily reversible at every fixed force while dissipating during a changing force protocol. The fixed-force stationary weights are proportional to $(e^{-h},\mu_i e^h)$.
+Thus one force suffices: no independent operation of well energies and barriers is required. The force-controlled process can be ordinarily reversible at every fixed force while dissipating during a changing force protocol. The fixed-force stationary weights are proportional to $`(e^{-h},\mu_i e^h)`$.
 
 This translation makes additional assumptions visible. All unresolved wells must share an extension, all internal saddles must share that extension, passive escape rates must coincide, and a large specified network must be realizable with those properties. Equation (1) assigns graph energies and barriers; it does not construct a smooth molecular landscape with controlled errors, fixed spatial dimension, accessible force range or practical parameter precision. Naming graph states as conformations does not resolve those requirements.
 
@@ -43,28 +46,30 @@ This translation makes additional assumptions visible. All unresolved wells must
 
 These deductions use the row-generator convention and can be checked directly.
 
-At zero force, $q_{Ai}=k\mu_i$ and $q_{iA}=k$. The total rate from $A$ into the hidden block is $k$ and the return rate from every hidden state is $k$. Therefore the visible partition is strongly lumpable, with generator
+At zero force, $`q_{Ai}=k\mu_i`$ and $`q_{iA}=k`$. The total rate from $`A`$ into the hidden block is $`k`$ and the return rate from every hidden state is $`k`$. Therefore the visible partition is strongly lumpable, with generator
 
-$$
+**Equation (4).**
+
+```math
 Q_{\rm vis}=\begin{pmatrix}-k&k\\k&-k\end{pmatrix}.
-\tag{4}
-$$
+```
 
-This gives the entire two-state path law for every initial microscopic law with the same visible initial law. Equivalently, for any entrance distribution $\rho$, the hidden-visit survival is
+This gives the entire two-state path law for every initial microscopic law with the same visible initial law. Equivalently, for any entrance distribution $`\rho`$, the hidden-visit survival is
 
-$$
+**Equation (5).**
+
+```math
 \rho e^{t(K-kI)}\mathbf1=e^{-kt},
-\tag{5}
-$$
+```
 
-because $K\mathbf1=0$. This is stronger than merely having an exponential dwell time from one specially chosen entrance distribution.
+because $`K\mathbf1=0`$. This is stronger than merely having an exponential dwell time from one specially chosen entrance distribution.
 
-Heterogeneous return rates replace scalar killing by $k\operatorname{diag}(b_i(h))$. If the $b_i(h)$ differ, strong lumpability fails; dwell times can then depend on hidden dynamics. A single gateway still makes successive complete excursions independent at a fixed field. **Loss of Markov lumpability does not imply loss of fixed-field renewal.** Under time-dependent control, excursion laws additionally depend on their entry times and the future protocol.
+Heterogeneous return rates replace scalar killing by $`k\mathrm{diag}(b_i(h))`$. If the $`b_i(h)`$ differ, strong lumpability fails; dwell times can then depend on hidden dynamics. A single gateway still makes successive complete excursions independent at a fixed field. **Loss of Markov lumpability does not imply loss of fixed-field renewal.** Under time-dependent control, excursion laws additionally depend on their entry times and the future protocol.
 
 Two tempting physical simplifications remove the mean-prediction effect:
 
-1. **Only ligand concentration changes, with equal constant off-rates.** In a simple binding model $q_{Ai}=k\mu_i c(t)/c_0$, $q_{iA}=k$, the visible process remains exactly two-state under every concentration protocol. Heterogeneous entrance weights alone do not expose $K$ through this readout while all return rates coincide.
-2. **Only barriers change while a common equilibrium law remains fixed.** If $\pi Q(u)=0$ for every control $u$ and the preparation is $\pi$, then $p(t)=\pi$ solves the driven master equation. Every endpoint mean stays constant, although trajectory statistics can change. This does not exclude a barrier-only relaxation experiment begun away from that common equilibrium.
+1. **Only ligand concentration changes, with equal constant off-rates.** In a simple binding model $`q_{Ai}=k\mu_i c(t)/c_0`$, $`q_{iA}=k`$, the visible process remains exactly two-state under every concentration protocol. Heterogeneous entrance weights alone do not expose $`K`$ through this readout while all return rates coincide.
+2. **Only barriers change while a common equilibrium law remains fixed.** If $`\pi Q(u)=0`$ for every control $`u`$ and the preparation is $`\pi`$, then $`p(t)=\pi`$ solves the driven master equation. Every endpoint mean stays constant, although trajectory statistics can change. This does not exclude a barrier-only relaxation experiment begun away from that common equilibrium.
 
 The single-force model (1)–(3) avoids both restrictions: it changes the equilibrium block bias and makes the return barriers respond differently. These restrictions concern the specified task and preparation; they are not blanket impossibility claims about ligand sensing or barrier control.
 
@@ -74,7 +79,7 @@ The single-force model (1)–(3) avoids both restrictions: it changes the equili
 
 **Alexander M. Berezhkovskii, Attila Szabo, T. Rotbart, M. Urbakh and Anatoly B. Kolomeisky, “Dependence of the Enzymatic Velocity on the Substrate Dissociation Rate,” Journal of Physical Chemistry B 121, 3437–3442 (2017; online 2016).** [DOI](https://doi.org/10.1021/acs.jpcb.6b09055) · [author-hosted published PDF](https://bpb-us-e1.wpmucdn.com/blogs.rice.edu/dist/2/12644/files/2022/09/acs.jpcb_.6b09055.pdf).
 
-**Full text inspected:** §2, pp.3438–3439, Eqs.(6)–(15), and Appendix A. One free-enzyme conformation connects to $N$ bound conformations with arbitrary internal Markov kinetics, association rates $k_{\rm on}(i)c$ and dissociation rates $k_{\rm off}(i)$. Equation (13) factors survival as $S_{ES}(t)=e^{-k_{\rm off}t}S_{\rm cat}(t)$ when all off-rates agree. Removing catalytic exits gives (5); that specialization is our inference. The paper also warns that a directed example violates binding/conformational detailed balance.
+**Full text inspected:** §2, pp.3438–3439, Eqs.(6)–(15), and Appendix A. One free-enzyme conformation connects to $`N`$ bound conformations with arbitrary internal Markov kinetics, association rates $`k_{\rm on}(i)c`$ and dissociation rates $`k_{\rm off}(i)`$. Equation (13) factors survival as $`S_{ES}(t)=e^{-k_{\rm off}t}S_{\rm cat}(t)`$ when all off-rates agree. Removing catalytic exits gives (5); that specialization is our inference. The paper also warns that a directed example violates binding/conformational detailed balance.
 
 **Scope:** close physical precedent for the gateway and common-off-rate mechanism. Its turnover results do not establish our force parametrization, equilibrium hard family or controlled-prediction separation. Replacing several free conformations by one requires the additional fast-mixing approximation stated in the paper.
 
@@ -98,7 +103,7 @@ The single-force model (1)–(3) avoids both restrictions: it changes the equili
 
 **George I. Bell, “Models for the Specific Adhesion of Cells to Cells,” Science 200(4342), 618–627 (1978).** [DOI](https://doi.org/10.1126/science.347575) · [university-hosted publisher reprint](https://faculty.uml.edu/vbarsegov/teaching/bioinformatics/papers/bell.pdf).
 
-**Full text inspected:** journal pp.622–623, Eq.(16), its receptor–ligand interpretation and Fig.6. Bell postulates a bond lifetime proportional to $\exp[(E_0-\gamma f)/(k_BT)]$, equivalently an exponentially force-dependent dissociation rate. The force coefficient represents the response of an activation barrier to load.
+**Full text inspected:** journal pp.622–623, Eq.(16), its receptor–ligand interpretation and Fig.6. Bell postulates a bond lifetime proportional to $`\exp[(E_0-\gamma f)/(k_BT)]`$, equivalently an exponentially force-dependent dissociation rate. The force coefficient represents the response of an activation barrier to load.
 
 **Scope:** supports the force–activation-distance interpretation of the exponents in (3). It does not derive arbitrary network-wide force coefficients, equal passive off-rates or exactly fixed well and saddle positions from molecular mechanics. Equation (3) is exact in the stipulated Bell network, not a consequence that every molecular landscape obeys Bell's law exactly.
 
@@ -106,7 +111,7 @@ The single-force model (1)–(3) avoids both restrictions: it changes the equili
 
 **Olga K. Dudko, Gerhard Hummer and Attila Szabo, “Intrinsic Rates and Activation Free Energies from Single-Molecule Pulling Experiments,” Physical Review Letters 96, 108101 (2006).** [DOI](https://doi.org/10.1103/PhysRevLett.96.108101) · [published-paper repository copy](https://zenodo.org/records/1233953) · [PDF](https://zenodo.org/records/1233953/files/article.pdf?download=1).
 
-**Access and inspection:** the four-page published PDF was downloaded and read after the publisher fetch failed. Page 1 uses $U(x)=U_0(x)-Fx$ and identifies Bell kinetics as phenomenological. Equation (1) assumes an instantaneous-rate survival equation and states its failure at extreme pulling speeds or forces. Equation (3) incorporates finite-barrier shape effects and recovers Bell behavior in the stated limiting cases; pp.3–4 demonstrate substantial errors from an apparently adequate Bell fit.
+**Access and inspection:** the four-page published PDF was downloaded and read after the publisher fetch failed. Page 1 uses $`U(x)=U_0(x)-Fx`$ and identifies Bell kinetics as phenomenological. Equation (1) assumes an instantaneous-rate survival equation and states its failure at extreme pulling speeds or forces. Equation (3) incorporates finite-barrier shape effects and recovers Bell behavior in the stated limiting cases; pp.3–4 demonstrate substantial errors from an apparently adequate Bell fit.
 
 **Scope:** supports single-force energy tilting while preventing a claim of exact general molecular kinetics. It concerns rupture over a barrier, not a proof that the repository's entire reversible graph has a microscopic realization or retains its lower bound under those corrections.
 
@@ -114,7 +119,7 @@ The single-force model (1)–(3) avoids both restrictions: it changes the equili
 
 **Tim Schmiedl and Udo Seifert, “Stochastic thermodynamics of chemical reaction networks,” Journal of Chemical Physics 126, 044101 (2007).** [DOI](https://doi.org/10.1063/1.2428297) · [primary preprint, v2](https://arxiv.org/pdf/cond-mat/0605080v2).
 
-**Full text inspected:** §II.A, Eqs.(1)–(8), and §V.A, Eqs.(44)–(50). The state is the vector of molecular counts; controlled chemostats are distinguished from retained species. Internal molecular states can be represented as different species. The reversed trajectory in Eq.(46) is $\widetilde n(\tau)=n(t-\tau)$, with the protocol reversed, not a permutation of chemical identities.
+**Full text inspected:** §II.A, Eqs.(1)–(8), and §V.A, Eqs.(44)–(50). The state is the vector of molecular counts; controlled chemostats are distinguished from retained species. Internal molecular states can be represented as different species. The reversed trajectory in Eq.(46) is $`\widetilde n(\tau)=n(t-\tau)`$, with the protocol reversed, not a permutation of chemical identities.
 
 **Scope:** supplies a standard even-state thermodynamic interpretation. A one-molecule unimolecular network realizes a finite generator formally, but inventing one species for every engineered table state is not a synthesis or useful chemical implementation. Additional fuel reservoirs are needed for a nonreversible chemical predictor; their affinities and retained intermediates require explicit accounting.
 

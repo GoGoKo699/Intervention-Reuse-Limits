@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5",
+    "python": "3.12.14",
     "numpy": "2.3.5",
     "scipy": "1.17.0",
     "mpmath": "1.3.0"
@@ -923,10 +923,10 @@
   },
   "imported_repository_verifiers": [],
   "proof_snapshot_sha256": {
-    "docs/POSITIVE_LABEL_SELECTORS.md": "f0dcebd4a46c3f6e59514b4183b4a0fb0574d3ddca19229919ab43a778720fbe",
-    "docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md": "ec6c643e3d391ae414b35a709fd6a00b3949ff3e93afa71ff061f93cbf26eb83",
-    "docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md": "e4ad0d9a4dad9283f44291d88cac8fa9a109bc8c947dfa950d055408c4ba6f97",
-    "docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md": "efde9d7726e234c4a960772334cbafd8b49bdb8f7cc46be523ab4ef8066de249"
+    "docs/POSITIVE_LABEL_SELECTORS.md": "2807a7b6fbea0837d9c00e9ca786d58a23dd44d924d53d20d4283fa6995170db",
+    "docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md": "904651f4ba2783d5245ba87de584f411e4f05f50df585a89a6b430cd5e385621",
+    "docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md": "db3c12b6812f43768d70973c3630b56d69ce033d508d0f73fe740577b4783c82",
+    "docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md": "7a7d176d737d160cf6eb5aed9ddcddb4cf6d1890253317a7ba2d87ecc2f8156e"
   },
   "checks": 561
 }

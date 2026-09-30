@@ -2957,8 +2957,8 @@
     }
   ],
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "1882170850493839cce9076f01bfd5ff8b5124a76f89b3909e391f232c50513c",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715"
   },
   "schema_version": 1,
   "scope": "Four bounded direct witness-menu searches. Eight retained sign-specific ordinary models and one rounded feasible candidate; no optimization lower bounds.",
@@ -2982,7 +2982,7 @@
   },
   "versions": {
     "numpy": "2.3.5",
-    "python": "3.13.5",
+    "python": "3.12.14",
     "scipy": "1.17.0"
   }
 }

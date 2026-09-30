@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5",
+    "python": "3.12.14",
     "numpy": "2.3.5",
     "scipy": "1.17.0"
   },
@@ -280,9 +280,9 @@
   },
   "imported_repository_verifiers": [],
   "proof_snapshot_sha256": {
-    "docs/FIXED_CLOCK_GRAM_OBSERVABILITY.md": "df1b820b3273511888ab6f1d4faabd495fd41fa0112fce97591c9c597c0285d8",
-    "docs/FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md": "141637f469431f9f9c28f7a75efa12bbf470d7c3a8b40de90f557b048cd992dd",
-    "docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "40bd20f44f638a938300968b64c0be41f19412e342c99e89e0fc5be38fbefe5c"
+    "docs/FIXED_CLOCK_GRAM_OBSERVABILITY.md": "6e45ca9dccc1f72e0cfd50e6e8b1dad29220cdec73b82b8835a66bfbf7bd4fa9",
+    "docs/FIXED_CLOCK_POSITIVE_RESOLVENT_CALCULUS.md": "34d75770056ef70d8ae509069c9d775dad13017f63527bdcd59ded2874121455",
+    "docs/FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md": "e9ce89627f128808a36e6c3a2440c1fb2b63d8e0092d93c64eb3107eccf51a5e"
   },
   "checks": 1543
 }

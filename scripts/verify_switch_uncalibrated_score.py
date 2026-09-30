@@ -18,13 +18,13 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 INPUTS = {
-    'reports/switch_physical_interface.json': 'b0ada0ff7f600d974fdffc52ea315a071394eb0d7b487d6b8a1ba3d37e303157',
-    'reports/switch_snapshot_design.json': 'b8ee6fb70d37d104ea89fe04e28c8872a8c81f97d108771bd89d14ef2ad9e2cb',
+    'reports/switch_physical_interface.json': 'dcde556ff2f0ed8ee8b7c2310637095b2a285f6b872b2da3d849853debed6883',
+    'reports/switch_snapshot_design.json': '78fe0e225974f327605adf50221391b6cec4e65b146022abda74ba528d8e51f7',
 }
 NEW_PROOF = 'docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md'
-NEW_PROOF_SHA = 'b16a3f4fd0e693c46bf281360d54527f190d12be626d4cb8c608bd93acaaf084'
+NEW_PROOF_SHA = 'fda7778b6d9a6fef9f4ac4418a1027e5aa5754d3d41ed9ad7e0b3193451c659c'
 INFORMATION_PROOF = 'docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md'
-INFORMATION_PROOF_SHA = 'e0eb4e0de15e2a8be733d34b2900124e8fe8226713babc6bee96d4f644d6428c'
+INFORMATION_PROOF_SHA = 'f019e9d52bfb532b57b64c4c3196e39cd503e138745ff27f30c4d3423197fcd0'
 CHECKS = 0
 
 

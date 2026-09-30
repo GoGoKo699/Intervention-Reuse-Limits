@@ -11,75 +11,75 @@ validation or a literature-based certification of priority. See the
 
 ## The sharpened result and its range
 
-For every open heat-bath chain of length $n\ge3$, the construction
-uses equal coupling $t=\tanh J$ and field tilt $m=\tanh h$ satisfying
+For every open heat-bath chain of length $`n\ge3`$, the construction
+uses equal coupling $`t=\tanh J`$ and field tilt $`m=\tanh h`$ satisfying
 
-$$
-0<t\le\frac1{64},\qquad |m|\le\frac12.
-$$
+```math
+0\lt t\le\frac1{64},\qquad |m|\le\frac12.
+```
 
-There is a reversible $2n$-state model reproducing every requested
+There is a reversible $`2n`$-state model reproducing every requested
 endpoint-pair law for arbitrary finite field words and positive dwell times.
 Its common initial preparation is uniform, its readout is deterministic
 and binary, and its stationary laws have the prescribed Gibbs tilt.
 All off-diagonal rates are strictly positive and the total exit rates are
-at most $1+2t\le33/32$ in attempted-update time units.
+at most $`1+2t\le33/32`$ in attempted-update time units.
 
 Combining this upper bound with the existing nonnegative-control
 construction and three-field lower bound gives the exact finite-task
 comparison
 
-$$
+```math
 D_{\rm all}=n+1,\qquad D_{\rm ord}=2n.
-$$
+```
 
 The general-model upper bound used in this comparison is established for
 nonnegative fields. The signed-field reversible upper bound therefore does
 not establish the same two minima for a task that includes negative fields.
 The comparison uses the existing finite menu with three distinct
-nonnegative field tilts in $[0,1/2]$. Unlike the initial norm-bound
+nonnegative field tilts in $`[0,1/2]`$. Unlike the initial norm-bound
 construction, the new sufficient coupling interval permits one fixed
-positive coupling for arbitrarily large $n$.
+positive coupling for arbitrarily large $`n`$.
 
 ## Established ingredients
 
 | Ingredient | Inspected primary statement | Boundary of the comparison |
 | --- | --- | --- |
-| Positive moment representation using $2n$ symmetric nodes | Arasaratnam and Haykin [1], Sections IV-B–D, Propositions 4.1–4.2 and the construction following them, give the third-degree spherical-radial cubature rule and its covariance transformation. | Equal-weight antipodal nodes matching low-order moments are established. The chain construction orients and transforms these nodes to make the first coordinate exactly the observed sign. It does not introduce a new cubature method or assume a Gaussian physical chain. |
+| Positive moment representation using $`2n`$ symmetric nodes | Arasaratnam and Haykin [1], Sections IV-B–D, Propositions 4.1–4.2 and the construction following them, give the third-degree spherical-radial cubature rule and its covariance transformation. | Equal-weight antipodal nodes matching low-order moments are established. The chain construction orients and transforms these nodes to make the first coordinate exactly the observed sign. It does not introduce a new cubature method or assume a Gaussian physical chain. |
 | Historical attribution of that cubature rule | Santos-León, Orive, Acosta and Acosta [2], Introduction, explicitly identify the third-degree rule with Stroud and Secrest's 1963 construction and its later tabulation by Stroud. | The original 1963 article was not accessible in this check. Its historical attribution is reported through [2], not represented as an independently inspected original formula. |
 | Reversible kernels from orthogonal expansions | Griffiths [3], Introduction, Eq. (1), the subsequent displayed reversible transition kernel, and Eq. (3), describe nonnegative orthogonal expansions and their Poisson embedding in continuous time. | A spectral expansion gives a Markov kernel only after entrywise positivity is proved. The chain calculation supplies a sufficient uniform bound over its chosen field interval. |
 | Positive realization of a symmetric linear response | Grussler and Damm [4], Theorem 4, give a symmetric positive minimal realization of a quasi-symmetric continuous-time SISO system by Lanczos/Arnoldi. | This concerns one input-output transfer function. It does not itself retain one binary readout, common preparation and Gibbs-compatible realization over the controlled family. |
-| Exact stochastic reduction and switching words | Grigoletto and Ticozzi [5], Theorems 1–2, construct HMM reductions preserving single-time or full multi-time laws; Appendix A, Theorem 4, gives a projection criterion preserving outputs under every switching word. | All-word equivalence from a suitable common invariant subspace is established methodology. These statements do not supply the present reversible $2n$-state family with its fixed Gibbs interface. |
-| Exact controlled positive dynamics | Grigoletto, Viola and Ticozzi [6], Propositions 1–2 and Theorem 1, construct an observable subspace for all controls and close it to an operator algebra to obtain valid reduced Lindblad dynamics. | This is a stronger controlled precedent than single-system realization. The guarantee concerns the resulting algebra's size, not a universal $2n$ bound or the present shared Gibbs tilt. |
+| Exact stochastic reduction and switching words | Grigoletto and Ticozzi [5], Theorems 1–2, construct HMM reductions preserving single-time or full multi-time laws; Appendix A, Theorem 4, gives a projection criterion preserving outputs under every switching word. | All-word equivalence from a suitable common invariant subspace is established methodology. These statements do not supply the present reversible $`2n`$-state family with its fixed Gibbs interface. |
+| Exact controlled positive dynamics | Grigoletto, Viola and Ticozzi [6], Propositions 1–2 and Theorem 1, construct an observable subspace for all controls and close it to an operator algebra to obtain valid reduced Lindblad dynamics. | This is a stronger controlled precedent than single-system realization. The guarantee concerns the resulting algebra's size, not a universal $`2n`$ bound or the present shared Gibbs tilt. |
 
 ## What the fixed-coupling construction adds to those tools
 
-The spectral step is standard. Let $Y$ contain the centered node
-coordinates, $R=Y^{\mathsf T}D_\rho Y$ their covariance, $\Pi$ the stationary
-projection and $P=YR^{-1}Y^{\mathsf T}D_\rho$ the projection onto the mean
-coordinates. If the physical mean drift is $-I+K$, the proposed generator
+The spectral step is standard. Let $`Y`$ contain the centered node
+coordinates, $`R=Y^{\mathsf T}D_\rho Y`$ their covariance, $`\Pi`$ the stationary
+projection and $`P=YR^{-1}Y^{\mathsf T}D_\rho`$ the projection onto the mean
+coordinates. If the physical mean drift is $`-I+K`$, the proposed generator
 is
 
-$$
+```math
 \widehat Q=-I+\Pi+YK^{\mathsf T}R^{-1}Y^{\mathsf T}D_\rho
  +\frac16(I-\Pi-P).
-$$
+```
 
 Diagonalizing its self-adjoint action gives a finite orthogonal-function
 expansion of the type in [3]. The dynamics on the orthogonal complement of
 the constant and mean coordinates are free: here their generator
-eigenvalue is $-5/6$. After positivity is established, uniformization with
-rate $33/32$ gives a reversible transition kernel and its Poisson
+eigenvalue is $`-5/6`$. After positivity is established, uniformization with
+rate $`33/32`$ gives a reversible transition kernel and its Poisson
 embedding. This is an algebraic identification with established spectral
 machinery, not a theorem in [3] about this controlled chain.
 
-The initial upper bound set the complementary eigenvalue to $-1$ and used
+The initial upper bound set the complementary eigenvalue to $`-1`$ and used
 a global covariance norm estimate; its sufficient coupling decreased as
-$1/n$. The new proof chooses a discrete-cosine orientation of the same
+$`1/n`$. The new proof chooses a discrete-cosine orientation of the same
 antipodal moment rule and changes the complementary eigenvalue. In that
 basis, the bulk Jacobi part is diagonal and the residual is supported at
-the chain boundaries. Its entrywise contribution is bounded by $16t$
-independently of $n$, leaving strictly positive rates on the displayed
+the chain boundaries. Its entrywise contribution is bounded by $`16t`$
+independently of $`n`$, leaving strictly positive rates on the displayed
 fixed coupling interval. Discrete-cosine diagonalization, moment cubature
 and free spectral completion are not being claimed as new methods.
 
@@ -92,10 +92,10 @@ consistent with [5–6]; static moment matching alone would not suffice.
 The controlled algebraic result [6] merits a concrete comparison. For the
 present connected chain, the endpoint observable's cyclic span contains
 all individual spins. Their pointwise algebra is the full algebra of
-functions on the $2^n$ spin configurations: products of the factors
-$(1\pm\sigma_j)/2$ give each configuration indicator. Consequently,
+functions on the $`2^n`$ spin configurations: products of the factors
+$`(1\pm\sigma_j)/2`$ give each configuration indicator. Consequently,
 applying that observable-algebra closure directly does not produce the
-$2n$ realization. This is our mathematical comparison with the inspected
+$`2n`$ realization. This is our mathematical comparison with the inspected
 algorithm, not a claim made in [6]. The present construction instead
 represents the required preparation and observable moments on a new
 finite state space. The controlled reduction in [6] guarantees the
@@ -120,7 +120,7 @@ shared Gibbs tilt and every finite field word at fixed positive coupling.
 That bounded finding does not establish exhaustive literature priority or
 publication readiness. The sufficient coupling threshold is not proved
 optimal. The companion truncation result shows that a radius certifying
-the exact $2n$ count must decrease at least exponentially with $n$; no
+the exact $`2n`$ count must decrease at least exponentially with $`n`$; no
 practical measurement budget is established.
 No energetic saving, extensive bit-memory advantage, or device realization
 is inferred from the exact state counts.

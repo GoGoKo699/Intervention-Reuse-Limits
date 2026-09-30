@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Exact stdlib Fraction polynomial identities, rational matrix Taylor enclosures and concentration-bound arithmetic",
   "protocols": [
@@ -472,23 +472,23 @@
     "The fixed ordinary comparator is a feasible upper, not a certified global minimizer."
   ],
   "source_sha256": {
-    "verify_switch_snapshot_design.py": "a98814e12ddbef4eeed33b827ed0df1d87df1ec6f481f1963441a87541f690f8",
+    "verify_switch_snapshot_design.py": "c5b8391ec8cf4a8c2d0e3238e1e1f50f07c8616a6b1e4782d53d52c2c64429f8",
     "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
   },
   "input_report_sha256": {
-    "reports/switch_preparation_witness.json": "3c4e563f598c1cbdd9b70a24d2251a052e8577d286a7e0733f061c600bb35b88"
+    "reports/switch_preparation_witness.json": "017717163addede0a4a681491352fd416885f3ad20617533c94d0995d528d78f"
   },
   "imported_repository_verifiers": [
     "verify_familiar_switch_margin.py"
   ],
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "80480b209ba862e252a7432702d0cd632d64955f2402f17ffeef70c29eff75e4",
-    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "5afeaeffd7adc2fe132b4ea2e53d54000c205207bf8ab0914e1a6c0545000302",
-    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "807d2283cc7808df8776b0b22764058fa6169b904ce4b1d845a9bab01fda1961",
-    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "1a1635f8c808070d1f2cfd72e485e0d98a4d4d9370af48e5280596e801a66628",
-    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "ac1bf6738eb176b6ac112e5126d417554ebeec4263ab16a34c4da8a7efac537b",
-    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "77b63640f035c550597df82f70d3912519d643a84f6b39fda315529f14bfdf02",
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "d7dee7539c9be35541ed2cce78e0f3615f04ce9db46ec9277c688f5fe72b029c",
+    "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "e7705e19b582cb56178dd7468b986ee09d7f62d5301a4cf02821e28e75a55839",
+    "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "0f301c2b87e6ef6106ea2e785a7c5166b7214d92369076332d8050592d5d4c3b",
+    "docs/FAMILIAR_SWITCH_PREPARATION_COST.md": "31eb514683c8553bd44ecaa58fcdfa1f978d03efff51263139f02d211663c49c",
+    "docs/FAMILIAR_SWITCH_CALIBRATION.md": "a538fba085ab86bc537551bca88a0114127ffe6d5a7e78ee80d4f5c4168a575b",
+    "docs/FAMILIAR_SWITCH_FINITE_MARGIN.md": "1882170850493839cce9076f01bfd5ff8b5124a76f89b3909e391f232c50513c",
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715"
   },
   "checks": 168
 }

@@ -6,69 +6,76 @@
 
 ## 1. Configurations and one mechanical control
 
-Let a bath have thermal energy $k_B T$, fix an extension scale $\ell>0$, and write the dimensionless force as $h=f\ell/(k_B T)$. A common additive offset in extension is immaterial. Assign the visible state $A$ and hidden conformations $i$ the extensions
+Let a bath have thermal energy $`k_B T`$, fix an extension scale $`\ell\gt 0`$, and write the dimensionless force as $`h=f\ell/(k_B T)`$. A common additive offset in extension is immaterial. Assign the visible state $`A`$ and hidden conformations $`i`$ the extensions
 
-$$
+**Equation (1).**
+
+```math
 x_A=-\ell,\qquad x_i=+\ell.
-\tag{1}
-$$
+```
 
 The hidden conformations may differ in other coordinates and in their baseline free energies. They share the extension measured by this control. Choose zero-force free energies, in thermal units,
 
-$$
+**Equation (2).**
+
+```math
 E_A^0=0,\qquad E_i^0=-\log\mu_i,
-\tag{2}
-$$
+```
 
-where $\mu$ is a strictly positive probability law. Force couples through $-fx$, giving
+where $`\mu`$ is a strictly positive probability law. Force couples through $`-fx`$, giving
 
-$$
+**Equation (3).**
+
+```math
 E_A(h)=h,\qquad E_i(h)=-\log\mu_i-h.
-\tag{3}
-$$
+```
 
-The equilibrium partition function is $2\cosh h$. Consequently the equilibrium hidden mass is $(1+\tanh h)/2$, its conditional law is $\mu$, and the mean binary readout is $\tanh h$. At zero force, use this equilibrium preparation.
+The equilibrium partition function is $`2\cosh h`$. Consequently the equilibrium hidden mass is $`(1+\tanh h)/2`$, its conditional law is $`\mu`$, and the mean binary readout is $`\tanh h`$. At zero force, use this equilibrium preparation.
 
-For the external transition $A\leftrightarrow i$, assign a transition-state extension
+For the external transition $`A\leftrightarrow i`$, assign a transition-state extension
 
-$$
+**Equation (4).**
+
+```math
 x_{Ai}^{\ddagger}=g_i\ell.
-\tag{4}
-$$
+```
 
-When $|g_i|<1$, it lies between the two well extensions. Distinct transition-state positions are the heterogeneous kinetic information. Let $k>0$ be the baseline escape rate and let $\nu>0$ be a common attempt frequency. Put
+When $`|g_i|\lt 1`$, it lies between the two well extensions. Distinct transition-state positions are the heterogeneous kinetic information. Let $`k\gt 0`$ be the baseline escape rate and let $`\nu\gt 0`$ be a common attempt frequency. Put
 
-$$
+**Equation (5).**
+
+```math
 W_{Ai}^0=-\log\mu_i+\log(\nu/k),\qquad
 W_{Ai}(h)=W_{Ai}^0-g_i h.
-\tag{5}
-$$
+```
 
-The stipulated transition-state rule $q_{xy}=\nu\exp(E_x-W_{xy})$ then gives exactly
+The stipulated transition-state rule $`q_{xy}=\nu\exp(E_x-W_{xy})`$ then gives exactly
 
-$$
+**Equation (6).**
+
+```math
 \boxed{
 q_{Ai}(h)=k\mu_i e^{(1+g_i)h},\qquad
 q_{iA}(h)=k e^{(g_i-1)h}.}
-\tag{6}
-$$
+```
 
 Thus a single force changes both well populations and escape kinetics. Two separately operated controls are unnecessary in this rate-level model. The equal zero-force escape rates are an explicit calibration condition in (5), not a generic consequence of mechanical forcing.
 
 ## 2. Hidden exchange and ordinary reversal
 
-Let $K$ be any hidden generator with ordinary detailed balance under $\mu$. For each present hidden edge define its symmetric conductance $c_{ij}=\mu_iK_{ij}=\mu_jK_{ji}$ and set
+Let $`K`$ be any hidden generator with ordinary detailed balance under $`\mu`$. For each present hidden edge define its symmetric conductance $`c_{ij}=\mu_iK_{ij}=\mu_jK_{ji}`$ and set
 
-$$
+**Equation (7).**
+
+```math
 W_{ij}^0=\log(\nu/c_{ij}),\qquad
 x_{ij}^{\ddagger}=\ell,\qquad
 W_{ij}(h)=W_{ij}^0-h.
-\tag{7}
-$$
+```
 
-Substitution gives $q_{ij}(h)=K_{ij}$. Hidden wells and hidden transition states move together in free energy under this force. The hidden generator therefore remains independent of control. Absent edges are omitted.
+Substitution gives $`q_{ij}(h)=K_{ij}`$. Hidden wells and hidden transition states move together in free energy under this force. The hidden generator therefore remains independent of control. Absent edges are omitted.
 
-For a bounded force interval and bounded rates, one may choose $\nu$ above every directed rate on that interval. Then every barrier exceeds both adjacent well free energies. In the original band-$[k,3k]$ targets with $|g|\le G$ and $|h|\le H$, choosing $\nu>\max(3k,k e^{(1+G)H})$ suffices. Raising this arbitrary attempt frequency adjusts the represented barriers; it is not an experimentally derived microscopic frequency.
+For a bounded force interval and bounded rates, one may choose $`\nu`$ above every directed rate on that interval. Then every barrier exceeds both adjacent well free energies. In the original band-$`[k,3k]`$ targets with $`|g|\le G`$ and $`|h|\le H`$, choosing $`\nu\gt \max(3k,k e^{(1+G)H})`$ suffices. Raising this arbitrary attempt frequency adjusts the represented barriers; it is not an experimentally derived microscopic frequency.
 
 All retained variables here are conformational configurations and extension coordinates, which are even under physical time reversal. At a fixed force, equilibrium therefore requires ordinary detailed balance. A word-reversal involution exchanging artificial memory states cannot be assigned to these configurations just by renaming them. The [Markov-closure note](PHYSICAL_REVERSAL_REALIZATION.md) explains why an exactly Markov projection onto even configurations also retains ordinary detailed balance, even if eliminated microscopic variables include momenta.
 
@@ -82,24 +89,25 @@ The mathematical construction adds specific restrictions to those ingredients:
 
 | Stipulation | Role in the prediction task | What has not been established |
 |---|---|---|
-| One gateway $A$ and an ensemble of hidden conformations | A common return hub gives renewal; a return-rate lower bound gives uniform response bounds | A particular molecular species realizing every required edge |
-| Equal hidden extension $+\ell$ | One equilibrium block tilt, independent of hidden conformation | Exact equality for a generic biomolecule |
-| Equal zero-force hidden escape rate $k$ | Exact passive two-state visible process | Genericity or calibration cost |
+| One gateway $`A`$ and an ensemble of hidden conformations | A common return hub gives renewal; a return-rate lower bound gives uniform response bounds | A particular molecular species realizing every required edge |
+| Equal hidden extension $`+\ell`$ | One equilibrium block tilt, independent of hidden conformation | Exact equality for a generic biomolecule |
+| Equal zero-force hidden escape rate $`k`$ | Exact passive two-state visible process | Genericity or calibration cost |
 | Heterogeneous external transition-state positions | Force breaks the passive lumping | Arbitrary independent positioning of many saddles in one spatial landscape |
-| Hidden wells and saddles have the same extension | Force-independent hidden $K$ | Validity beyond the selected force range |
+| Hidden wells and saddles have the same extension | Force-independent hidden $`K`$ | Validity beyond the selected force range |
 | Even retained conformations and a single equilibrium bath | Ordinary detailed balance at fixed force | Physical realization of the alternative word parity |
 
 The complete address-and-table target still has its explicit state and edge complexity. These assignments do not make that graph spatially local or provide a compact mechanical machine. State free energies may include unresolved entropy, so (2) is not automatically a microscopic potential-energy specification.
 
 ## 4. Robustness and finite switching times
 
-Let a reference network have hidden exit cap $Bk$, return rates at least $kb_{\min}>0$, return factors at most $b_{\max}$ and entry density factors at most $c_{\max}$. Set $L=\max(B+b_{\max},c_{\max})$. If a nearby network on the same counted states has logarithmic rate errors at most $\zeta$ on the same support, the [uniform perturbation theorem](PHYSICAL_INTERFACE_ROBUSTNESS.md) gives, with identical preparation and readout,
+Let a reference network have hidden exit cap $`Bk`$, return rates at least $`kb_{\min}\gt 0`$, return factors at most $`b_{\max}`$ and entry density factors at most $`c_{\max}`$. Set $`L=\max(B+b_{\max},c_{\max})`$. If a nearby network on the same counted states has logarithmic rate errors at most $`\zeta`$ on the same support, the [uniform perturbation theorem](PHYSICAL_INTERFACE_ROBUSTNESS.md) gives, with identical preparation and readout,
 
-$$
+**Equation (8).**
+
+```math
 \sup_{h,T}|\widetilde m[h,T]-m[h,T]|
 \le\min\{2,2L(e^\zeta-1)/b_{\min}\}.
-\tag{8}
-$$
+```
 
 The nearby model may have weakly control-dependent hidden exchange or weakly unequal passive returns. Initial preparation errors must be added if its equilibrium weights change. Finite ramps at a fixed switching clock also have an explicit uniform error bound in that note.
 

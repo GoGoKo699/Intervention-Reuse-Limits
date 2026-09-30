@@ -21,9 +21,9 @@ import verify_familiar_switch_margin as algebra
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_switch_frozen_bound.json":
-        "968c394b861ed132b215e964aa45834153b2998b862997f7a2a10e83cc80e5e3",
+        "9b15c6c9eacf0e19d53e8413442cc8d568aa8e3411eadc552d0547fc01c0d5a8",
     "reports/familiar_switch_frozen_equivalence.json":
-        "eeedb2c2086f9389e9b68ef4bbf0a77966cd5569e53dbcbfdf753486097aea62",
+        "eaaa7cde30932f7d6a6b825e36eeec2917536dc9f27cb5bf87def8a8df5cc29c",
 }
 EXTRA_SOURCES = {
     "verify_familiar_switch_margin.py":
@@ -31,9 +31,9 @@ EXTRA_SOURCES = {
 }
 PROOFS = {
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md":
-        "d81a808758db04b1da091dd4c816ef2c7669e4d7ab786a03e4be34b81d545c69",
+        "a25ea1b3620c80208646c6c2bca11a5f2c4541815261a8378495e165b25a950f",
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md":
-        "53533235b0702f43e2c28ae2014782fc1a76ee442ca8aead0d6dfacbf9af48ac",
+        "164619060bf7f5805f77b2da5d2f81387d9defa5e9064f30677ef8ec6d91252b",
 }
 WORDS = ((0,), (0, 0), (1,), (0, 1), (1, 0), (0, 0, 1), (1, 0, 0))
 WORD_NAMES = ("L", "LL", "H", "LH", "HL", "LLH", "HLL")

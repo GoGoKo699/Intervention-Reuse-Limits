@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Exact fractions.Fraction generator, moment, closure, Hankel and formal polynomial identities; no numerical optimization or floating dynamics",
   "heat_bath_chain_fixtures": {
@@ -679,7 +679,7 @@
     "verify_familiar_switches.py": "aab92b39e8aa15df35277907f427bf2da47f7389dbe93c287dac9ec1847bde7a"
   },
   "proof_snapshot_sha256": {
-    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "de269cb3264cd972577315497d9d20ac15290ab6bdf3acc1858ce845fbfa5813"
+    "docs/FAMILIAR_SWITCH_STRUCTURE.md": "386973c605b60462675930e5deb3354d5c16a632d7f804534984339e167c6715"
   },
   "imported_repository_verifiers": [],
   "checks": 386

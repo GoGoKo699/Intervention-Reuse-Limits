@@ -18,13 +18,13 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 INPUTS = {
-    'reports/switch_snapshot_design.json': 'b8ee6fb70d37d104ea89fe04e28c8872a8c81f97d108771bd89d14ef2ad9e2cb',
-    'reports/switch_physical_interface.json': 'b0ada0ff7f600d974fdffc52ea315a071394eb0d7b487d6b8a1ba3d37e303157',
-    'reports/switch_uncalibrated_score.json': '28c432062f3c081c8bf727dcf2299036de35e1c5df13f30e8433b8601a91c182',
+    'reports/switch_snapshot_design.json': '78fe0e225974f327605adf50221391b6cec4e65b146022abda74ba528d8e51f7',
+    'reports/switch_physical_interface.json': 'dcde556ff2f0ed8ee8b7c2310637095b2a285f6b872b2da3d849853debed6883',
+    'reports/switch_uncalibrated_score.json': 'ab6f302c06f4cfcce8209dbb40a201c6c7afe58e3abe355dfdcaba4ab0e7f606',
 }
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md': 'b878a14a2f56a751808ae3e4b2befd705035f56f8ad58e98282ac707377d00ea',
-    'docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md': 'ddc0f8c16bc8c4289c2b7481d5ff1ef6e920714a141553cfe37bfd028220de6f',
+    'docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md': '60fd88d798d3d84fe1c972d22d7e16ceca8ce7b7e25b8a05a758a296f5428e1d',
+    'docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md': 'f06f1f9e96c30b6074e50f9992b50401bf7885a7c114bad96ef5ae431280a8b5',
 }
 CHECKS = 0
 

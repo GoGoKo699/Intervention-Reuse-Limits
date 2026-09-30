@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "versions": {
-    "python": "3.13.5"
+    "python": "3.12.14"
   },
   "arithmetic": "Python standard-library fractions.Fraction; no numerical rank or floating-point matrix operations",
   "uniform_cap_bookkeeping": {
@@ -355,9 +355,9 @@
     "verify_state_speed_boundary.py": "7815ab8056b6cd8e2f9abae22b73db1ba0a78c6ff76751e93729e24be27b6667"
   },
   "proof_snapshot_sha256": {
-    "docs/STATE_SPEED_ACCURACY_TRADEOFF.md": "0a977c8df54dd4d822aaf4333e4fb134e3aeeb644e21f06e81e2bf3522932e7a",
-    "docs/UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md": "3dc473085c9c2367a58c8575640f059e4ab42f0840ccc64ffca520b20f01d3a6",
-    "docs/RATE_REGULARIZATION.md": "cdba9262f8c23875a42d690db22083207825173b4f37286589769a03b1658ec5"
+    "docs/STATE_SPEED_ACCURACY_TRADEOFF.md": "acbde0a11158ef8f4675e40a0fd6ec5ee50cdc1074d7e92cc6349198c4bf517b",
+    "docs/UNBOUNDED_RATE_REVERSIBILITY_BOUNDARY.md": "5edd466f0dfffc22f36f6e2b572aa210ff8f8fb21e8c0c0263a26e8378104558",
+    "docs/RATE_REGULARIZATION.md": "37b784bd70c60763cc96dc225b07c1e19020de7f6033f9a51fc1241a481e829e"
   },
   "imported_repository_verifiers": []
 }

@@ -19,18 +19,18 @@ import verify_familiar_switch_frozen_information as base
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_switch_preparation_free_unknown_tilt.json":
-        "2facaf21db92bee7cd575eea74d3935f47c8871e6bb78476ab78ab53b12852f0",
+        "619b56d7bd966608f104299c39144163f4fce58005198740756840169edabd4a",
     "reports/familiar_switch_preparation_free_unknown_sampling.json":
-        "2403a567228859606e3f4655136db4e5ab848ee0f0acec551aa211f9f8e994ea",
+        "4faf794eaad6092ef34916e8cf38173c04f3c8aa7a6df711d2081884dbbc7310",
     "reports/familiar_switch_frozen_information.json":
-        "d7edb41457f765c38f71e431219078782c53413a8ca1ceeb02c0ab9862344651",
+        "766adef9a912231a30e8c4675cec5353bdbd11e31767d8151292006f9c223d71",
 }
-HELPER_SHA256 = "f3bb879fe189bc305ccfb81b96523aeb36fee44c8727a3ad8bbcf8efce7239f2"
+HELPER_SHA256 = "9587614ec13e0d436825f389b32223fe3f73cba2c88951ef24c65cb383c8c12e"
 PROOFS = {
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md":
-        "dd0ac52d3effebcdeec448944aaedf7fe83797faab53cc28652685e857349542",
+        "5fdfc6bc4a373f94a81c61f8fd97e0a684bb8275f75a3b19a58f0bf7d633c457",
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION_SOURCE_AUDIT.md":
-        "6bae5bee401d76acf2ae71b40724adddb9a308e93a7e243a223a0025e96eb583",
+        "f49484eaec18dfcb21bb4a692a75d3ce25ac1c79e0ad813a3a971e69129f7620",
 }
 WORDS = ((0,), (0, 0), (1,), (0, 1), (1, 0), (0, 0, 1), (1, 0, 0))
 NAMES = ("L", "LL", "H", "LH", "HL", "LLH", "HLL")

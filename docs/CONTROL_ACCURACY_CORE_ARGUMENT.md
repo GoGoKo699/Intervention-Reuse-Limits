@@ -14,9 +14,9 @@ Even a pair of equilibrium switches needs different reduced models at
 different control speeds and prediction accuracies. Observe only the
 initial and final sign of one switch, prepare the target at zero-field
 equilibrium, and reuse one model across prescribed words of two fields.
-Let the hidden attempt rate be $r$ times the visible attempt rate.
+Let the hidden attempt rate be $`r`$ times the visible attempt rate.
 For fixed nonzero coupling and field, the smallest possible worst-word
-error has order $r^{-1}$ with two states, $r^{-2}$ with three reversible
+error has order $`r^{-1}`$ with two states, $`r^{-2}`$ with three reversible
 states, and zero with four.
 
 These are limits over whole model classes. Positive generators attain
@@ -49,11 +49,11 @@ have not been demonstrated.
 
 ## 2. One contract and an explicit model-selection rule
 
-The target is the four-state heat-bath model with energy $-JSZ-hS$,
-$t=\tanh J\in(0,1)$, $u=\tanh H\in(0,1)$ and
-$r=\Gamma_Z/\Gamma_S$. Keep $t,u$ fixed as $r\to\infty$.
-The initial target law is $(1+tSZ)/4$. The task comprises all finite
-open-loop words at fields $0,H$, with arbitrary held durations and
+The target is the four-state heat-bath model with energy $`-JSZ-hS`$,
+$`t=\tanh J\in(0,1)`$, $`u=\tanh H\in(0,1)`$ and
+$`r=\Gamma_Z/\Gamma_S`$. Keep $`t,u`$ fixed as $`r\to\infty`$.
+The initial target law is $`(1+tSZ)/4`$. The task comprises all finite
+open-loop words at fields $`0,H`$, with arbitrary held durations and
 true initial/final binary records. There are no intermediate observations
 or feedback.
 
@@ -65,40 +65,40 @@ There is no rate cap, stationary-mass floor or preparation-equilibrium
 promise. The general class can drop detailed balance and the Gibbs
 premise for the conclusions below.
 
-Let $E_d^{\rm rev}$ denote the infimum over at-most-$d$-state reversible
+Let $`E_d^{\rm rev}`$ denote the infimum over at-most-$`d`$-state reversible
 models of their supremum pair-TV error over those words. The
 [rapid-control theorem](FAMILIAR_SWITCH_RAPID_CONTROL.md) gives
 
-$$
+```math
 E_2^{\rm rev}=\Theta(r^{-1}),\qquad
 E_3^{\rm rev}=\Theta(r^{-2}),\qquad E_4^{\rm rev}=0.
-$$
+```
 
 Its two-state lower holds for general models too. The
 [exact positive-realization boundary](FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
-gives a general three-state model for all sufficiently large $r$.
-Hence, for tolerance $\epsilon(r)=r^{-p}$, the eventual minimum counts are:
+gives a general three-state model for all sufficiently large $`r`$.
+Hence, for tolerance $`\epsilon(r)=r^{-p}`$, the eventual minimum counts are:
 
 | Required precision | General states | Reversible states |
 | --- | ---: | ---: |
-| $0<p<1$ | 2 | 2 |
-| $1<p<2$ | 3 | 3 |
-| $p>2$ | 3 | 4 |
+| $`0\lt p\lt 1`$ | 2 | 2 |
+| $`1\lt p\lt 2`$ | 3 | 3 |
+| $`p\gt 2`$ | 3 | 4 |
 
 This table is a direct corollary, not a new independent theorem. For
-example, $r^{-2}\ll\epsilon\ll r^{-1}$ lies above the three-state
+example, $`r^{-2}\ll\epsilon\ll r^{-1}`$ lies above the three-state
 upper and below the two-state lower. A one-state binary-readout model
-has error at least $1/2$ from the balanced initial sign, excluding it
-in the first row. The cases $p=1,2$ depend on constants and are not
+has error at least $`1/2`$ from the balanced initial sign, excluding it
+in the first row. The cases $`p=1,2`$ depend on constants and are not
 settled by the order notation.
 
 For the separate task with fixed positive low/high ticks, the
 [clocked theorem](FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) gives quadratic
 two-state error uniformly over word length and horizon. Both classes
-then need two states for $0<p<2$; for $p>2$, the minima are three
+then need two states for $`0\lt p\lt 2`$; for $`p\gt 2`$, the minima are three
 general and four reversible states. Fixed clocks remove the separated-order
 three-state window, without excluding a constant-factor advantage at
-$\epsilon=\Theta(r^{-2})$. Clocked lower bounds also cover the broader
+$`\epsilon=\Theta(r^{-2})`$. Clocked lower bounds also cover the broader
 stochastic-kernel class, and the upper constructions are continuous-time.
 
 ## 3. Why the third and fourth states play different roles
@@ -106,18 +106,18 @@ stochastic-kernel class, and the upper constructions are continuous-time.
 Correcting a two-state relaxation rate can absorb the leading hidden
 slowing at a held field. Under arbitrarily rapid field mixtures, those
 same corrected rates predict a stationary visible response that differs
-from the target by order $r^{-1}$. Held-field matching fixes the
+from the target by order $`r^{-1}`$. Held-field matching fixes the
 two-state parameters, so choosing a different two-state fit cannot
 remove both discrepancies. A third reversible state retains the lag
 through one field-independent change of coordinates and restores
-order $r^{-2}$ uniformly across words.
+order $`r^{-2}`$ uniformly across words.
 
 The remaining fourth-state obstruction uses a different mechanism.
 Three states with a binary readout have a sign represented by a single
 state. Detailed balance links reversed control orders and forces a
 return identity for that sign. The target violates the corresponding
 identity in both signs. Two transfers of hidden response make the
-preparation-free seven-word violation quadratic in $r^{-1}$.
+preparation-free seven-word violation quadratic in $`r^{-1}`$.
 The positive three-state general predictor shows that this finer
 requirement comes from retaining equilibrium structure.
 
@@ -142,15 +142,15 @@ full-text access gap remains.
 | Meyer and Brandner, [*Weak-Memory Dynamics in Discrete Time*](https://arxiv.org/html/2510.26325v2), Eqs. (5)–(13), Floquet discussion and Supplement, Sections I–II | Weak-memory reduction already covers periodically driven coarse-graining through the transition matrix of a chosen complete period. A cycle-specific effective matrix with slippage need not factor into one generator for each physical field that also fits held-field data. Our reuse requirement and class-wide lower are distinct. This 2026 result rules out treating driven weak-memory reduction itself as an open subject. |
 
 A short check makes the preparation distinction concrete. At zero field,
-$Q_0S=-S+tZ$. Suppose exact visible means were required from all four
+$`Q_0S=-S+tZ`$. Suppose exact visible means were required from all four
 target point preparations. A three-state deterministic readout has a
-singleton sign $s$. Both initial states $(s,+1)$ and $(s,-1)$ must
+singleton sign $`s`$. Both initial states $`(s,+1)`$ and $`(s,-1)`$ must
 then prepare that singleton, because their time-zero means are the
-extreme value $s$. Their reduced initial slopes would coincide, while
-the target slopes $-s+t$ and $-s-t$ differ. Thus that stronger task
+extreme value $`s`$. Their reduced initial slopes would coincide, while
+the target slopes $`-s+t`$ and $`-s-t`$ differ. Thus that stronger task
 already requires four states passively, without detailed balance.
-Likewise, the observable space $\operatorname{span}\{1,S,Z\}$ has
-pointwise algebra closure $\operatorname{span}\{1,S,Z,SZ\}$.
+Likewise, the observable space $`\mathrm{span}\{1,S,Z\}`$ has
+pointwise algebra closure $`\mathrm{span}\{1,S,Z,SZ\}`$.
 Retaining four states in an all-state algebraic reduction is therefore
 expected. This explanatory calculation does not alter our fixed target
 preparation or the rival's allowed preparation freedom.
@@ -178,10 +178,10 @@ specified finite pulse train forces the same first-order error.
 
 The next task is to test one explicit family: held-field calibration
 words together with a periodic low/high word whose dwell lengths are
-fixed multiples of $1/r$. Seek a constant $c>0$ and an explicit finite
+fixed multiples of $`1/r`$. Seek a constant $`c\gt 0`$ and an explicit finite
 horizon or pulse count for which every reusable two-state model has
-pair error at least $c/r$. The existing three-state upper already
-supplies order $r^{-2}$ on that restricted family. One failed two-state
+pair error at least $`c/r`$. The existing three-state upper already
+supplies order $`r^{-2}`$ on that restricted family. One failed two-state
 fit is insufficient; the lower must allow all the existing rival
 preparation and rate freedom. The leading memory requirement would then
 have a definite control-time condition. It would remain a third-state
@@ -189,13 +189,13 @@ result, separate from the finer equilibrium-specific fourth-state cost.
 
 This timing scale has a physical interpretation within the
 [published kinetic model](FAMILIAR_SWITCH_COMMUNITY_MODEL.md): holding
-$\Gamma_Z$ admissible and setting $\Gamma_S=\Gamma_Z/r$ converts
-a dimensionless dwell $\kappa/r$ to physical duration
-$\kappa/\Gamma_Z$. Total duration must also be reported. Finite ramps
+$`\Gamma_Z`$ admissible and setting $`\Gamma_S=\Gamma_Z/r`$ converts
+a dimensionless dwell $`\kappa/r`$ to physical duration
+$`\kappa/\Gamma_Z`$. Total duration must also be reported. Finite ramps
 and a detector are further requirements, not consequences of this
 rescaling.
 
-If the specified family permits an $o(r^{-1})$ two-state fit, record
+If the specified family permits an $`o(r^{-1})`$ two-state fit, record
 that limitation and reconsider the control contract; do not infer a
 class-wide finite-bandwidth advantage from the ideal supremum. This
 single analytic gate is the next justified calculation. No new

@@ -16,9 +16,9 @@ import verify_familiar_switch_frozen_bound as target
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_switch_frozen_bound.json"
-INPUT_SHA256 = "968c394b861ed132b215e964aa45834153b2998b862997f7a2a10e83cc80e5e3"
+INPUT_SHA256 = "9b15c6c9eacf0e19d53e8413442cc8d568aa8e3411eadc552d0547fc01c0d5a8"
 # Frozen proof snapshot.
-PROOFS = {"docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md": "688779263aced1c36f4118b749bb3c8080e8d90d0f1d6dd4096f638d5b84c61d"}
+PROOFS = {"docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md": "d8df8dd7b1ce248ff8bdbcd5d1d95f8ef371250c47a8eef4fc8f85f4184097b3"}
 M = F(7, 9)
 CENTER = tuple(map(F, (
     "0", "0.430143792060304", "0.198892575818085",

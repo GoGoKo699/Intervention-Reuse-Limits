@@ -18,7 +18,7 @@ import platform
 ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 INPUT_REPORT = 'reports/familiar_switch_margin.json'
-INPUT_REPORT_SHA256 = 'dfe9757f74a6fc2d45f239e65292cfc613f913685f895896a9b229cc16067141'
+INPUT_REPORT_SHA256 = '52efe874cf8319e9589d8d2fc8066a5e08396556429947145c762bc58982d0bb'
 CHECKS = 0
 PROTOCOLS = ((0, (1,)), (1, (0,)), (1, (0, 1)), (0, (1, 0)))
 

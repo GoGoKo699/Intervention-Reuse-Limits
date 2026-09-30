@@ -21,10 +21,10 @@ priority certification or an achieved experimental specification.
 Review re-derived the three-state decomposition into visible imbalance
 and a hidden difference within the doubleton sector. The exact kernel-row
 identity and its zero-sum oscillation bound give the sharper imbalance
-term $L|b-v|/(1-v)$ before taking a uniform orientation bound. The
+term $`L|b-v|/(1-v)`$ before taking a uniform orientation bound. The
 stationary imbalance is not multiplied by the inverse observed
 relaxation. The flip-probability estimate gives
-$r\le4k(1+V)/(1-V)$, with $k>0$ when the observed relaxation guard is
+$`r\le4k(1+V)/(1-V)`$, with $`k\gt 0`$ when the observed relaxation guard is
 positive. No reversibility, minimum stationary mass or mixing-time
 bound enters this argument.
 
@@ -35,9 +35,9 @@ the low-pair correlation alone cannot separate relaxation from electronic
 attenuation. The positive-part convention also covers a negative
 low-pair correlation.
 
-The stated guards $g=.45$ and $c_K\le.15$ give $r\ge2/3$. For
-$V=10^{-4}$ the score preparation correction has a nonzero
-conservative floor $94/249975\simeq.000376038$ even when the three
+The stated guards $`g=.45`$ and $`c_K\le.15`$ give $`r\ge2/3`$. For
+$`V=10^{-4}`$ the score preparation correction has a nonzero
+conservative floor $`94/249975\simeq.000376038`$ even when the three
 recorded correction statistics vanish. This is an upper bound from the
 chosen assumptions, not a physical noise floor or a statistical lower
 bound.
@@ -46,9 +46,9 @@ bound.
 
 An initial protected measurement can change an unknown preparation
 inside a visible sector even when it preserves the equilibrium joint
-law exactly. Therefore the low-pair correlation probes $K=DP$, not $P$
+law exactly. Therefore the low-pair correlation probes $`K=DP`$, not $`P`$
 alone. Each prefixed protocol must apply the same nonselective instrument
-$D$ before the low evolution. Recording and discarding its label is a
+$`D`$ before the low evolution. Recording and discarding its label is a
 valid silent implementation; omitting the physical operation is not.
 
 This matching requirement adds an instrument operation to each prefixed
@@ -64,7 +64,7 @@ two original response channels share the preparation, instrument and
 detector. The recorded means and correlations receive separate
 preparation radii. Those radii are needed to localize the stationary
 reference before invoking its ordinary score ceiling. A score-only bound
-is insufficient: stationary identity kernels can give score $.04$ while
+is insufficient: stationary identity kernels can give score $`.04`$ while
 lying outside the witness's localization gates.
 
 ## Random assignment and the large precision budget
@@ -78,20 +78,20 @@ uses its predictable averages without conditioning on its final value.
 Review checked the inverse-probability estimator's fixed total-trial
 normalization. Dividing by random type counts would not give the stated
 argument. Likewise, the initial records of the prefixed types occur
-after $K$ and cannot be pooled with the original initial records as if
+after $`K`$ and cannot be pooled with the original initial records as if
 they measured the same preparation.
 
 Opposite score midpoint shifts cancel in the summed original and prefixed
 responses. The fixed assignment probabilities bound all eight signed
 estimators by a common range
-$R=311165662/2249775<139$. Both tails of all eight statistics must be
+$`R=311165662/2249775\lt 139`$. Both tails of all eight statistics must be
 covered because their minimizing sign can depend on the random averaged
 preparation. The conditional bounded-range moment-generating-function
 proof and the resulting 16-tail union bound are valid without independent
 trials.
 
 The exact arithmetic certifies that 60 billion trials estimate those
-eight scalar correction functionals simultaneously within $.001$ with
+eight scalar correction functionals simultaneously within $`.001`$ with
 probability above 96%. This is 120 billion recorded binary values and
 12,000 times the earlier five-million allocation. It is deliberately a
 sufficient precision construction, not a lower bound and not a completed
@@ -109,9 +109,9 @@ nondisturbing reference. A fresh electronic error nevertheless shares
 randomness with a hidden kick.
 
 Independent exact implementation reproduced joint label/state TV
-$1/200$ and original-word joint-table TV $1/4800$ for both words. The
+$`1/200`$ and original-word joint-table TV $`1/4800`$ for both words. The
 finite-time conditional half-reset variant retains all calibration
-agreements and gives table TV $1/9600$. Neither fixture is asserted to
+agreements and gives table TV $`1/9600`$. Neither fixture is asserted to
 pass the selected target's score gates. Their role is to demonstrate
 that these calibration records do not establish electronic-error
 independence from hidden backaction.
@@ -121,7 +121,7 @@ preservation and electronic independence, disturbance of any fixed
 future endpoint law equals disturbance of the full initial-record/future
 joint law for at most three states. All signed changes reside in the
 single doubleton sector. Repairing sector-changing transitions gives the
-stated endpoint-plus-$2\epsilon$ bound. This lemma is conditional on the
+stated endpoint-plus-$`2\epsilon`$ bound. This lemma is conditional on the
 structural instrument assumptions and concerns the same preparation at
 which the endpoint comparison is made.
 
