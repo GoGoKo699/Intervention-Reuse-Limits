@@ -9,7 +9,25 @@ preserving equilibrium structure while reusing a kinetic model under
 control. The main example is a pair of interacting heat-bath switches,
 with an explicit connection to a published coupled-charge model.
 
-## The central result
+## The central result: control speed and accuracy select model size
+
+For a pair of interacting switches, a model reused across two controlled
+fields has an accuracy-dependent state requirement. With fixed coupling
+and field, let $r$ be the hidden-to-visible attempt-rate ratio. As
+$r$ grows, the smallest worst-protocol endpoint-pair error is
+$\Theta(r^{-1})$ for two states and $\Theta(r^{-2})$ for three
+reversible states; four states are exact. These bounds cover arbitrary
+held durations, switching counts and horizons under the stated interface.
+
+A fixed positive control clock changes the conclusion: two reversible
+states already achieve quadratic error. Thus rapid control exposes the
+need for a third state at intermediate precision; only finer precision
+exposes the fourth state required by equilibrium structure. The
+[core argument and source comparison](docs/CONTROL_ACCURACY_CORE_ARGUMENT.md)
+state the exact model-selection rule, assumptions and remaining physical
+question. A finite-bandwidth necessity bound is not yet established.
+
+## Exact state counts
 
 For equal attempt rates, finite positive coupling, positive observation
 gaps and a finite nonzero controlled field, the four-state target starts
@@ -84,20 +102,22 @@ penalty must lie in an interior parameter region. The theorem does not
 establish a large gap there. Its physical lesson is that rare occupation
 can be removed while its transition flux must be retained.
 
-The next priority is a concise assessment of the scientific claim: what
-the exact controlled state hierarchy and precision laws add to established
-model reduction, and what useful prediction depends on that difference.
-Further numerical work needs a named analytic obstruction. Broad practical
-significance and device feasibility remain unresolved. Manuscript writing
-is on hold.
+The next analytic test is a specified finite pulse train, with dwell
+lengths proportional to the hidden relaxation time, together with
+held-field calibration. Can every reusable two-state model be shown to
+miss its response at first order, while the existing three-state model
+keeps quadratic accuracy? An explicit finite horizon or pulse count is
+required. This targets a physical timing consequence of the leading
+memory correction. Broad practical significance and device feasibility
+remain unresolved. Manuscript writing is on hold.
 
-[Scientific case](docs/SCIENTIFIC_CASE.md) · [Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md)
+[Core argument](docs/CONTROL_ACCURACY_CORE_ARGUMENT.md) · [Model scope](docs/SCIENTIFIC_CASE.md) · [Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md)
 
 <details>
 <summary>Preserved research history and technical checkpoints</summary>
 
 The entries below retain their original wording, dates and assumptions.
-The scientific case and current work order above give the current
+The core argument and current work order above give the current
 assessment; older next-step statements record the work at those times.
 
 ### Previous fixed-clock precision checkpoint

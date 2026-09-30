@@ -1,6 +1,66 @@
 # Current work order: PRL exploration before manuscript drafting
 
-## Current priority: identify the consequential scientific claim after closing the parameter extremes — 28 September 2026
+## Current priority: establish a finite-bandwidth consequence of the third predictive state — 30 September 2026
+
+This continuation starts from published commit
+`ed43b92c234b2be4eebba3150c49de4a5a37178c`, tree
+`00669467d4798faee1c2a9fe70a18a4342d66853`, with successful
+[CI run 36462008750](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36462008750).
+Preserve all preceding mathematical notes, verifiers, reports, the MIT
+license and claim rows R1–R97. Existing authorization covers non-forced
+publication to public main. Collaborator contact is not authorized;
+manuscript drafting remains last.
+
+The [core-claim assessment](../docs/CONTROL_ACCURACY_CORE_ARGUMENT.md)
+is complete. Lead with the attainable control/accuracy/model-size law:
+at tolerance $r^{-p}$ and arbitrary two-field timing, the eventual
+general/reversible minima are 2/2 for $0<p<1$, 3/3 for $1<p<2$,
+and 3/4 for $p>2$. Fixed positive clocks allow two states through
+$0<p<2$. The cases $p=1,2$ and possible constant-factor advantages
+remain outside this order-level decision. The third state captures a
+leading control-sensitive lag; the equilibrium-specific fourth-state
+requirement is finer. No large interior error or resource advantage
+has been proved.
+
+Primary-source comparison found explicit precedents for selected
+preparations, single-time versus multitime tasks, shared controlled
+reduction and periodically driven weak-memory approximation. In
+particular, Meyer–Brandner's 2026 result works with a complete-period
+Floquet map. Do not characterize driven reduction as generally open.
+Our specific issue is one pair of field generators reused across
+held-field calibration and driven protocols, with a lower over all
+admissible smaller models. The all-point-preparation comparison already
+requires four states passively, so the preparation-specific three-state
+upper does not improve the stronger all-state task.
+
+**Single next analytic gate:** choose fixed nonzero coupling and field,
+a positive duty fraction and a finite periodic low/high pulse family
+with dwell lengths fixed multiples of $1/r$, together with held-field
+calibration words. Prove or disprove a $c/r$ maximum pair-TV error lower
+for every reusable two-state model, with some explicit $c>0$ and a
+finite horizon or pulse-count bound. Preserve arbitrary rival word
+preparations and uncapped rates. The existing reversible three-state
+construction supplies $O(r^{-2})$ on the same family. This gate tests
+finite-bandwidth necessity of the third state, not an amplified
+fourth-state equilibrium gap.
+
+The named obstruction is that the current two-state proof takes an
+arbitrarily rapid product limit and then a long-time limit inside the
+all-word supremum. A failed fit or an unquantified limiting word is
+insufficient. Use the exact two-coordinate target response and finite
+period propagator; first test compatibility of held-field identification
+with the periodic response. No parameter scan is authorized by this
+priority alone. If that family admits an $o(r^{-1})$ two-state fit,
+record the limitation before reconsidering the control contract.
+
+A dwell $\kappa/r$ means physical duration $\kappa/\Gamma_Z$ when
+$\Gamma_S=\Gamma_Z/r$. Keep the hidden rate within the community
+model's validity range and state the resulting total physical time.
+Finite ramps, endpoint measurement and device feasibility remain
+separate requirements. This assessment adds no simulation, numerical
+verifier or sampling budget; all existing proof evidence is retained.
+
+## Historical priority: identify the consequential scientific claim after closing the parameter extremes — 28 September 2026
 
 This continuation starts from published commit
 `210fd6bd5bee137e99f1c51ece0fc50443399bb8`, tree

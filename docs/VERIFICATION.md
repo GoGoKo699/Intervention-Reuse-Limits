@@ -8,7 +8,40 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: uniform trace reduction and the interior restriction
+## Current checkpoint: core scientific claim and controlled-reduction comparison
+
+The baseline is commit `ed43b92c234b2be4eebba3150c49de4a5a37178c`, tree
+`00669467d4798faee1c2a9fe70a18a4342d66853`, with successful
+[CI run 36462008750](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36462008750).
+The [new assessment](CONTROL_ACCURACY_CORE_ARGUMENT.md) consolidates
+existing theorems into an asymptotic model-selection table and states
+a finite-bandwidth analytic gate. No new theorem ID or numerical
+research result is claimed.
+
+Independent internal mathematical review checked every state-count
+regime, the general class without a Gibbs premise, fixed-clock scope,
+the unresolved constant-factor crossovers, and the all-point-preparation
+comparison. Source review checked the cited primary passages, including
+Meyer–Brandner version 2's whole-period Floquet reduction. A separate
+significance review found the chosen lead and next gate appropriately
+scoped, without a practical-advantage or publication-priority claim.
+
+Assessment SHA-256: `f9ba327ab3f3766c5a51b7697bae08d6028fa2b80e90b9fd7d0ed918e55cbf48`.
+
+**Scoped local verification passed:** 3,395 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved report
+provenance, unchanged MIT license and `git diff --check`.
+
+Exactly six prior navigation/assessment files change. All 369 protected
+baseline files remain byte-identical; one new assessment brings the
+375-file baseline to 376 files. R1–R97 and the preceding three
+overview/ledger histories remain verbatim. Prior mathematical notes,
+all verifiers and 81 saved reports are unchanged. There is no new
+simulation, optimizer, verifier, sampling budget or full local numerical
+replay. The existing hosted workflow is checked separately against the
+published commit.
+
+## Historical checkpoint: uniform trace reduction and the interior restriction
 
 The baseline is commit `210fd6bd5bee137e99f1c51ece0fc50443399bb8`, tree
 `f0f27388288a24296d361692ce42aa4bc208cdf1`, with successful
