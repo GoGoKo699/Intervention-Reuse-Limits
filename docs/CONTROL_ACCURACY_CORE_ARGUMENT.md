@@ -1,3 +1,5 @@
+> **Status after convergence, 30 September 2026:** the [current scientific guide](SCIENTIFIC_CASE.md) supersedes this assessment's next-step instructions. The [three-experiment theorem](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) closes the finite-pulse gate proposed in Section 5. The original assessment and bounded source comparison are preserved verbatim below; no proof or source claim is changed.
+
 # Control resolution and accuracy determine the required model size
 
 **Scientific assessment, 30 September 2026.** The strongest current claim

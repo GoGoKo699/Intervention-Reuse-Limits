@@ -1,5 +1,76 @@
 # Intervention Reuse Limits
 
+**Control speed and prediction accuracy determine how many states a reusable kinetic model needs.**
+
+A model that fits relaxation at two held fields can still miss the response
+when those fields alternate. For two interacting equilibrium switches,
+we prove which state budgets can meet a requested accuracy while one model
+is reused across the controls. The results combine explicit positive
+models with lower bounds against every admissible smaller model.
+
+## The result
+
+Let $r$ be the hidden-to-visible attempt-rate ratio, with nonzero coupling
+and field held fixed as $r$ grows. Observe only the initial and final
+visible sign, starting the target at zero-field equilibrium. For all
+finite two-field words with arbitrary held durations, the eventual
+minimum state counts at error tolerance $\epsilon(r)=r^{-p}$ are:
+
+| Required precision | General model | Reversible model |
+| --- | ---: | ---: |
+| $0<p<1$ | 2 states | 2 states |
+| $1<p<2$ | 3 states | 3 states |
+| $p>2$ | 3 states | 4 states |
+
+Reversible rivals retain the stated normalized Gibbs force relation with
+unknown tilt. Rival preparations may vary by word; rates are uncapped.
+The crossover cases $p=1,2$ depend on constants and are not settled by
+these orders. At fixed positive low/high ticks, two states already attain
+quadratic error: the separated-order three-state window depends on control
+timing. The [scientific guide](docs/SCIENTIFIC_CASE.md) gives the full
+contract and theorem dependencies.
+
+The finite-control consequence uses just three experiment settings:
+low-field hold, high-field hold, and an alternating train with the same
+total residence at each field. Every two-state model has an exact
+conditional-contrast multiplication rule. The target violates it at
+order $r^{-1}$, while a reversible three-state model has error $O(r^{-2})$
+on the same menu. The [finite-pulse proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md)
+specifies $2\lceil r/2\rceil$ held segments of duration $1/r$ and a
+bounded dimensionless horizon. Three settings therefore contain a growing
+pulse count. This restricted menu establishes the third-state requirement;
+the fourth-state lower belongs to the separate seven-word/all-word task.
+
+## Read the case
+
+| Reading step | What it answers |
+| --- | --- |
+| [Scientific guide](docs/SCIENTIFIC_CASE.md) | The core claim, assumptions, evidence map, source distinction and drafting status |
+| [Three-experiment proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) | Why held-field responses cannot be reused by any two-state model at the stated accuracy |
+| [All-duration law](docs/FAMILIAR_SWITCH_RAPID_CONTROL.md) and [fixed-clock law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) | How the best attainable error changes with control timing |
+| [Community model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) | Which published kinetic assumptions support the physical target |
+
+The physical model, endpoint observation contract and theorem scope are
+frozen. The pre-drafting evidence package is ready for a focused theory
+manuscript. **Manuscript writing is on hold.** Broad publication significance
+and practical device benefit remain unestablished.
+
+Ideal field jumps and true endpoint records define the task. At fixed
+hidden attempt rate, the pulse-train duration grows with $r$. The results
+supply no finite-ramp, detector, sampling, hardware-bit or heat-saving
+guarantee for that menu. These limitations remain part of the scope.
+
+[Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md) · [Publication status and history](docs/PUBLICATION_SCOPE.md)
+
+<details>
+<summary>Preserved overview and research history before consolidation</summary>
+
+The following overview is historical. Its earlier “current” and “next”
+statements record decisions at those checkpoints; the guide and status
+above supersede them. The original text and evidence links are retained.
+
+# Intervention Reuse Limits
+
 **What must a model remember when its predictions must survive interventions?**
 
 
@@ -753,5 +824,7 @@ make check PYTHON=.venv/bin/python
 ```
 
 [Verification](docs/VERIFICATION.md) records the full suite and its limits. The four-word experiment removes rival preparation, and its new endpoint-registration formulation replaces exact protection and fixed symmetric errors by quantitative measurement conditions. The relative-force bound controls rare-state errors that unweighted stationary-law TV cannot control. The current priority is the [two-field approximation gap](docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md): determine how much error is unavoidable for reversible models below six states. The [community-model comparison](docs/PHYSICAL_ASSUMPTION_ALIGNMENT.md) remains the physical-assumption reference. Quantitative device feasibility and the close prior-art comparison remain open. Current counts are sufficient bounds, not optimal costs or demonstrated feasibility. Manuscript drafting remains deferred.
+
+</details>
 
 </details>

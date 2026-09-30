@@ -8,7 +8,45 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: finite-pulse witness and convergence
+## Current checkpoint: consolidated reading path and drafting status
+
+The baseline is commit `cc2df87d17637787dd3ecef58d20cfef8bf7bda4`, tree
+`897ee897c285704b8e892c5cd236c899e0e933f9`, with successful
+[CI run 36685904068](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36685904068).
+The [current scientific guide](SCIENTIFIC_CASE.md) consolidates existing
+results and marks the pre-drafting evidence package ready for a focused
+theory manuscript. Writing remains on hold. No theorem, research
+calculation, comparison class or source claim is added.
+
+Independent internal mathematical review checked the current README and
+guide against R92–R94 and R98: all-word versus clocked versus finite-menu
+scope, unknown-tilt Gibbs requirements, general no-Gibbs statements,
+target versus rival preparation, state-count corollaries, crossover
+qualifications, pulse count and physical time. A separate readiness and
+navigation review checked the stopping decision and the explicit treatment
+of stale next-step prose. It found a formatting artifact in the publication
+wrapper, which was removed before the final audit. No unresolved
+mathematical prerequisite for the bounded claim was identified. These
+are internal reviews, not external validation or priority certification.
+
+Current guide SHA-256: `50b3d7fed06b98701cf7056114cf450e695ba388413eef6084a5be3c7433cf5f`.
+
+**Scoped local verification passed:** 3,438 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved report
+provenance, unchanged MIT license and `git diff --check`. The new history
+wrappers have balanced disclosure tags and no stray patch markers.
+
+Exactly nine existing overview/navigation files change; the repository
+remains at 377 files. All 368 protected baseline files are byte-identical,
+including every standalone mathematical proof, verifier and saved report.
+The prior complete bodies of README, the scientific case, publication
+scope and core assessment are preserved verbatim within history wrappers
+or after a status banner. R1–R98 and the three ledger/dossier/exploration
+histories remain verbatim. No new file, simulation, optimizer, numerical
+verifier, sampling calculation or full local numerical replay is added.
+The existing hosted workflow is checked against the exact published commit.
+
+## Historical checkpoint: finite-pulse witness and convergence
 
 The baseline is commit `49aa0ed9e40440b3465030d4102187986d5326c5`, tree
 `fa704a250b10ba423b4e742484f2a957feeaba50`, with successful

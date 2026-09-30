@@ -1,3 +1,25 @@
+# Publication status after convergence
+
+**Current status, 30 September 2026:** the evidence package is ready for
+a focused theory manuscript on control resolution, prediction accuracy
+and reusable model size. The [scientific guide](SCIENTIFIC_CASE.md)
+is the current statement of the claim, assumptions, theorem dependencies,
+source distinction and limitations. The finite-pulse gate is closed.
+
+The physical model, endpoint observation contract and theorem scope are
+frozen. No additional model extension, parameter search, pulse optimization
+or acquisition calculation is an active drafting prerequisite. Broad
+publication significance, complete priority and device benefit remain
+unestablished. Manuscript writing is on hold and remains the final phase.
+
+The assessments below preserve the path to this decision. Their earlier
+lead results and research priorities are historical, including the former
+chain-extension and finite-accuracy agendas. See the
+[current work order](../work_orders/CURRENT.md) for the active status.
+
+<details>
+<summary>Preserved publication-scope assessments before convergence</summary>
+
 # Publication scope and closest-theorem comparison
 
 ## Current result: sharp state counts and an unavoidable accuracy boundary — 28 September 2026
@@ -824,3 +846,5 @@ The leading publication question is how the physical reversal assigned to a redu
 The one-percent kinetic theorem removes the earlier very small sufficient rate allowance as the immediate mathematical bottleneck. The serial theorem permits reuse of one device without assuming independent trials, and the finite target reset makes its preparation exposure explicit. The new observable preparation result provides a separate calibration route under exact protected readout, while the counterexample isolates electronic/hidden-update independence as a remaining physical premise. Keep the two-word core; the next priority is sharper joint calibration and physical readout justification. The 60-billion scalar precision construction neither establishes a necessary cost nor completes a five-type size/power theorem, and no matching three-state upper has been supplied for the added observations. Further field or score-constant optimization is secondary. The older 12-versus-11 example and address-and-table asymptotic theorem retain their separate scopes; no eleven-state generalized-reversible predictor is supplied. Narrowing the identity-reversal entropy bounds, proving a stronger uncapped ordinary lower and constructing a tight-band binary realization remain separate open questions. The complete-theorem priority comparison also remains open, including the unavailable Falk full text and recent conditional-disturbance lead recorded in the source audits.
 
 The constructor receives a known target. Observation results concern specified-model tests with the stated preparation and readout. Continue with bounded analytic work and small exact checks. PRL is the user's selected target, while complete-theorem novelty, natural physical relevance and the journal's significance threshold remain matters for further assessment. Manuscript writing remains the final step.
+
+</details>

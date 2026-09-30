@@ -1,6 +1,49 @@
 # Current work order: convergence before manuscript drafting
 
-## Current priority: consolidate the frozen scientific case — 30 September 2026
+## Current status: convergence complete; manuscript writing remains on hold — 30 September 2026
+
+This continuation starts from published commit
+`cc2df87d17637787dd3ecef58d20cfef8bf7bda4`, tree
+`897ee897c285704b8e892c5cd236c899e0e933f9`, with successful
+[CI run 36685904068](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36685904068).
+Preserve the MIT license, all mathematical proofs, verifiers, saved
+reports and historical claim rows R1–R98. Existing authorization covers
+non-forced publication to public main. Collaborator contact is not
+authorized. Manuscript writing remains on hold as the final phase.
+
+The requested bounded consistency and presentation pass is complete.
+The [scientific guide](../docs/SCIENTIFIC_CASE.md) is the single current
+statement of the claim, assumptions, dependencies, source distinction,
+limitations and drafting status. README gives a short route through it,
+the finite-pulse proof and the two precision laws. Earlier overview and
+publication-assessment bodies are preserved as history. The old core
+assessment has a status banner marking its finite-pulse question closed.
+
+**Decision:** the pre-drafting evidence package is ready for a focused
+theory manuscript. The pass identified stale status prose and no unresolved
+mathematical prerequisite for that bounded claim. This is a readiness
+decision, not a prediction of acceptance or a broad-impact/priority claim.
+After the verification checkpoint, there is no replacement research gate.
+
+**Frozen scientific spine:** R92–R93 establish the matched control/accuracy
+laws; R94 supplies the exact general three-state upper in the fast-hidden
+regime; R98 gives the finite three-setting consequence. R95–R97 limit
+the interpretation of the finer equilibrium-specific penalty. Keep fixed
+clocks, arbitrary dwells and the three-setting menu distinct. Preserve
+the normalized unknown-tilt Gibbs premise for the reversible lower,
+arbitrary rival word preparations and the fixed target equilibrium law.
+Three experiment settings contain a growing pulse train. The restricted
+menu has a three-state upper, not a proved three-state lower or fourth-state
+requirement.
+
+Device ramps, detectors, sampling, a large practical gap, hardware or heat
+savings, exhaustive priority and external endorsement remain stated
+limitations. They do not initiate new work. Reopen mathematics only for a
+concrete correctness issue in an existing claim. When the final writing
+phase begins, use the frozen guide and proof dependencies; do not silently
+add experiments, change the comparison class or revive historical agendas.
+
+## Historical priority: consolidate the frozen scientific case — 30 September 2026
 
 This continuation starts from published commit
 `49aa0ed9e40440b3465030d4102187986d5326c5`, tree
