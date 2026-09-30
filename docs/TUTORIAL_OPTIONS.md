@@ -1,23 +1,25 @@
-# Three single-source routes into the project
+# Tutorial selection: Bo–Celani
 
-**Shortlist, 30 September 2026; selection pending.** Each option is one
-existing work. They are alternatives, not a three-source syllabus.
-The [background guide](MANUSCRIPT_BACKGROUND.md) provides the separate
-manuscript citation record. The scientific scope remains frozen.
+**Selected by the author, 30 September 2026: Option 1, Bo–Celani.**
+Begin with that review and then the [project narrative](../REVIEW.md).
+The two alternatives below remain as a record of the comparison; they
+are not additional prerequisites. The [background guide](MANUSCRIPT_BACKGROUND.md)
+provides the separate manuscript citation record. The scientific scope
+remains frozen.
 
-**Recommendation: Option 1 for the closest route into the physical
-mechanism of the current result.** Choose Option 2 for a fuller textbook
-foundation, or Option 3 for the positive-realization mathematics. None
+Bo–Celani is the closest route into the physical mechanism of the
+current result. Gardiner offers a fuller textbook foundation, and
+Benvenuti–Farina focuses on positive-realization mathematics. None
 contains the project's complete controlled state-count theorem; the
-remaining bridge is part of what this repository should explain.
+repository narrative supplies the project-specific bridge.
 
-| Option | Best use | Main bridge still needed |
+| Option | Best use | Project-specific extension |
 | --- | --- | --- |
 | 1. Bo–Celani review | Fast hidden variables and reduced kinetic dynamics | Shared-control error guarantees and necessary state counts |
 | 2. Gardiner textbook | Probability, Markov dynamics and systematic approximation | The precise prediction contract and positive-model lower bounds |
 | 3. Benvenuti–Farina tutorial | Positive dimension versus ordinary linear dimension | Normalized switched CTMCs, equilibrium structure and physical lag |
 
-## 1. Bo and Celani — recommended closest-topic anchor
+## 1. Bo and Celani — selected anchor
 
 Stefano Bo and Antonio Celani, **Multiple-scale stochastic processes:
 decimation, averaging and beyond**, *Physics Reports* **670**, 1–59
@@ -32,12 +34,12 @@ the closest starting point for our hidden-switch limit. The accessible
 author version's relevant passages were inspected.
 
 This route assumes matrix algebra, ODEs, probability and asymptotic
-expansions. The primary bridge to build is from sufficient averaging
+expansions. The project narrative bridges sufficient averaging
 constructions to our uniform shared-control guarantees and lower bounds
 over all smaller models. The review is freely readable; the recommended
 route does not require its diffusion or thermodynamic-functional chapters.
 
-## 2. Gardiner — strongest book foundation
+## 2. Gardiner — retained textbook alternative
 
 Crispin Gardiner, **Stochastic Methods: A Handbook for the Natural and
 Social Sciences**, fourth edition, Springer (2009), ISBN
@@ -57,7 +59,7 @@ were inspected; the full book was not. Full access is by library or
 purchase. The remaining bridge is the shared-generator prediction task,
 positive realizations and class-wide minimality arguments.
 
-## 3. Benvenuti and Farina — focused mathematical route
+## 3. Benvenuti and Farina — retained mathematical alternative
 
 Luca Benvenuti and Lorenzo Farina, **A Tutorial on the Positive Realization
 Problem**, *IEEE Transactions on Automatic Control* **49**(5), 651–664
@@ -78,17 +80,19 @@ the accuracy orders. This is the most direct mathematical option for
 readers who already know Markov dynamics; its historical open-problem
 discussion is not a current research-status guide.
 
-## What furnishing the repository would add after selection
+## The selected bridge into the repository
 
-The chosen work should supply a recognizable starting vocabulary. A
-short project bridge would then do four things:
+The [project narrative](../REVIEW.md) uses the selected work as its
+starting vocabulary and follows four steps:
 
 1. Translate its probability and generator conventions into ours.
 2. Explain the target preparation, endpoint-pair task and model reuse.
 3. Follow the hidden lag to the positive three-state construction.
 4. Explain the class-wide obstruction and the finite-pulse witness.
 
-The bridge should point directly to the frozen proof notes. It should
-not reproduce the selected source, require all three options, or add a
-new theorem agenda. The existing bibliography supports scholarly
-attribution independently of which single teaching anchor is chosen.
+The narrative points directly to the frozen proof notes. It is a guide
+to this project, not a reproduction of the review or a new theorem
+agenda. The [documentation map](README.md) separates the main proof
+route from supporting results and research history. The bibliography
+continues to support scholarly attribution independently of the teaching
+prerequisite.

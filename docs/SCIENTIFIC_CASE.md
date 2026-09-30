@@ -16,19 +16,19 @@ consolidates existing results and adds no theorem or numerical evidence.
 
 ## 1. The prediction contract
 
-The target has two time-even binary configurations $S,Z$ with energy
-$-JSZ-hS$ and heat-bath rates. Write $t=\tanh J\in(0,1)$,
-$u=\tanh H\in(0,1)$ and $r=\Gamma_Z/\Gamma_S$. The precision laws
-keep $t,u$ fixed as $r\to\infty$; time is in units of $1/\Gamma_S$.
+The target has two time-even binary configurations $`S,Z`$ with energy
+$`-JSZ-hS`$ and heat-bath rates. Write $`t=\tanh J\in(0,1)`$,
+$`u=\tanh H\in(0,1)`$ and $`r=\Gamma_Z/\Gamma_S`$. The precision laws
+keep $`t,u`$ fixed as $`r\to\infty`$; time is in units of $`1/\Gamma_S`$.
 The [community-model derivation](FAMILIAR_SWITCH_COMMUNITY_MODEL.md)
 connects this target to a selected equilibrium, wide-band, spinless
 sequential-tunneling model and records its physical approximations.
 
 | Part of the contract | Requirement |
 | --- | --- |
-| Target preparation | Zero-field equilibrium, $\pi_0(S,Z)=(1+tSZ)/4$ |
-| Observations | True initial/final signs of $S$; no intermediate observation or feedback |
-| Control | Prescribed holds at fields $0,H$; ideal changes leave the state unchanged |
+| Target preparation | Zero-field equilibrium, $`\pi_0(S,Z)=(1+tSZ)/4`$ |
+| Observations | True initial/final signs of $`S`$; no intermediate observation or feedback |
+| Control | Prescribed holds at fields $`0,H`$; ideal changes leave the state unchanged |
 | Reusable rival | One persistent state space, deterministic binary readout and one fixed continuous-time generator per field |
 | Preparation freedom | Rival preparation may depend arbitrarily on the entire word; no equilibrium-preparation promise or rate cap |
 | Equilibrium class | Ordinary detailed balance for normalized nonnegative stationary laws with a shared Gibbs tilt through the visible sign; the tilt is unknown |
@@ -41,32 +41,32 @@ each held-field target generator is reversible.
 
 ## 2. What the theorems establish
 
-Let $E_d$ be the infimum, over at-most-$d$-state reusable rivals, of the
+Let $`E_d`$ be the infimum, over at-most-$`d`$-state reusable rivals, of the
 maximum endpoint-pair total-variation error over the specified menu.
 The menu is part of the theorem; lower bounds do not automatically
 transfer to a smaller set of experiments.
 
 | Control menu | Established error statement | Evidence |
 | --- | --- | --- |
-| All finite two-field words, arbitrary held durations | Two states have $\Theta(r^{-1})$ error, even in the general class; three reversible states have $\Theta(r^{-2})$ error; four are exact | [R93](FAMILIAR_SWITCH_RAPID_CONTROL.md), with the three-state lower from R92 |
-| All words at fixed positive low/high ticks | Two reversible states attain $O(r^{-2})$; the two-state general lower and three-state reversible lower have the same order | [R92](FAMILIAR_SWITCH_QUADRATIC_PRECISION.md); its lower also covers the stated broader stochastic-kernel null |
-| Two held calibrations and one specified finite train | Two-state error is $\Theta(r^{-1})$; an existing reversible three-state model attains $O(r^{-2})$ | [R98](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md), inheriting the upper from R93; no three-state lower or fourth-state claim on this restricted menu |
-| All two-field words, exact general prediction | A positive three-state model exists for all sufficiently large $r$ without a Gibbs premise on the rival | [R94](FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md), which supplies the exact rate threshold |
+| All finite two-field words, arbitrary held durations | Two states have $`\Theta(r^{-1})`$ error, even in the general class; three reversible states have $`\Theta(r^{-2})`$ error; four are exact | [R93](FAMILIAR_SWITCH_RAPID_CONTROL.md), with the three-state lower from R92 |
+| All words at fixed positive low/high ticks | Two reversible states attain $`O(r^{-2})`$; the two-state general lower and three-state reversible lower have the same order | [R92](FAMILIAR_SWITCH_QUADRATIC_PRECISION.md); its lower also covers the stated broader stochastic-kernel null |
+| Two held calibrations and one specified finite train | Two-state error is $`\Theta(r^{-1})`$; an existing reversible three-state model attains $`O(r^{-2})`$ | [R98](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md), inheriting the upper from R93; no three-state lower or fourth-state claim on this restricted menu |
+| All two-field words, exact general prediction | A positive three-state model exists for all sufficiently large $`r`$ without a Gibbs premise on the rival | [R94](FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md), which supplies the exact rate threshold |
 
 For the all-duration menu, these results imply the eventual minimum
-counts at tolerance $\epsilon(r)=r^{-p}$:
+counts at tolerance $`\epsilon(r)=r^{-p}`$:
 
 | Precision exponent | General states | Reversible states |
 | --- | ---: | ---: |
-| $0<p<1$ | 2 | 2 |
-| $1<p<2$ | 3 | 3 |
-| $p>2$ | 3 | 4 |
+| $`0<p<1`$ | 2 | 2 |
+| $`1<p<2`$ | 3 | 3 |
+| $`p>2`$ | 3 | 4 |
 
 A one-state deterministic readout already misses the balanced initial
-sign by TV at least $1/2$. At fixed positive ticks, both classes instead
-need two states for $0<p<2$; for $p>2$ their minima are three and four.
-For the all-duration menu, $p=1,2$ depend on constants; at fixed positive
-ticks only $p=2$ is a crossover. A possible constant-factor three-state
+sign by TV at least $`1/2`$. At fixed positive ticks, both classes instead
+need two states for $`0<p<2`$; for $`p>2`$ their minima are three and four.
+For the all-duration menu, $`p=1,2`$ depend on constants; at fixed positive
+ticks only $`p=2`$ is a crossover. A possible constant-factor three-state
 advantage at the quadratic crossover remains outside the order-level
 statements.
 
@@ -80,29 +80,29 @@ field-independent change of mean coordinates, giving quadratic accuracy
 uniformly over words and horizons.
 
 The finite witness makes the reuse failure concrete. Put
-$n=\lceil r/2\rceil$, $A=n/r$ and use the holds $L_A,H_A$ together
-with $W=(L_{1/r}H_{1/r})^n$. For a two-state model containing both
-visible signs, let $a_w$ be half the difference of its conditional final
+$`n=\lceil r/2\rceil`$, $`A=n/r`$ and use the holds $`L_A,H_A`$ together
+with $`W=(L_{1/r}H_{1/r})^n`$. For a two-state model containing both
+visible signs, let $`a_w`$ be half the difference of its conditional final
 means from the two initial signs.
-The same generators force $a_W=a_{L_A}a_{H_A}$. The target contrasts
-$C_w$ instead satisfy
+The same generators force $`a_W=a_{L_A}a_{H_A}`$. The target contrasts
+$`C_w`$ instead satisfy
 
-$$
+```math
 C_W-C_{L_A}C_{H_A}
 =\frac{e^{-\bar c}\chi}{r}+O(r^{-2}),\qquad \chi>0.
-$$
+```
 
-R98 gives $\bar c,\chi$ explicitly and converts the absolute residual
+R98 gives $`\bar c,\chi`$ explicitly and converts the absolute residual
 to a universal pair-TV lower by dividing by twelve, while retaining
 arbitrary rival preparations. This proves the intermediate-accuracy
 third-state window on just three settings. The train has
-$2\lceil r/2\rceil$ segments, so its length is not fixed as $r$ grows.
+$`2\lceil r/2\rceil`$ segments, so its length is not fixed as $`r`$ grows.
 
 The fourth-state obstruction is separate. With three states and binary
 readout, one sign identifies a singleton state. Detailed balance then
 forces a reverse-order return identity that the target violates in both
 signs. Two transfers of hidden response make the seven-word violation
-quadratic in $r^{-1}$. A general positive three-state predictor is exact
+quadratic in $`r^{-1}`$. A general positive three-state predictor is exact
 in the fast-hidden regime; retaining equilibrium structure is therefore
 the additional fine-precision requirement.
 
@@ -111,9 +111,11 @@ the additional fine-precision requirement.
 The [manuscript background guide](MANUSCRIPT_BACKGROUND.md) consolidates
 the mathematical language, physical citation chain and closest-result
 comparisons, with a [focused bibliography](../references/manuscript.bib).
-The [tutorial shortlist](TUTORIAL_OPTIONS.md) offers three alternative
-single-source routes into this case. The teaching anchor is not yet
-selected; choosing it does not change the scientific scope.
+The selected teaching anchor is Bo–Celani. The
+[tutorial-to-result narrative](../REVIEW.md) connects its fast-variable
+averaging framework to this prediction task and the existing proofs.
+The [selection record](TUTORIAL_OPTIONS.md) retains the alternatives;
+they are not additional prerequisites. The scientific scope is unchanged.
 
 The [bounded primary-source comparison](CONTROL_ACCURACY_CORE_ARGUMENT.md#4-the-nearest-theory-already-covers-important-ingredients)
 already records preparation-specific HMM reduction, shared controlled
@@ -160,7 +162,7 @@ map resolves older open-question language without changing the proofs.
 | Remaining issue | Treatment in the frozen case |
 | --- | --- |
 | Finite ramps, detector behavior and sampling costs | State as unproved implementation requirements; do not import older experiment guarantees |
-| Pulse count and physical time | Report explicitly: at fixed $\Gamma_Z$, each pulse lasts $1/\Gamma_Z$ and the train lasts $2\lceil r/2\rceil/\Gamma_Z$ |
+| Pulse count and physical time | Report explicitly: at fixed $`\Gamma_Z`$, each pulse lasts $`1/\Gamma_Z`$ and the train lasts $`2\lceil r/2\rceil/\Gamma_Z`$ |
 | Hardware bits, heat savings and a large useful error gap | No such benefit is established; three and four abstract states both fit in two fixed register bits |
 | Broad significance and complete priority | Remain judgment and evidence limits; use the bounded source comparison and avoid first-discovery claims |
 | External review | Internal analytic reviews and reproducibility checks are recorded; external endorsement is not claimed |

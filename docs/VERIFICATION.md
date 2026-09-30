@@ -8,7 +8,49 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: scientific background and single-source tutorial shortlist
+## Current checkpoint: selected tutorial bridge and mathematical presentation
+
+The baseline is commit `fc1d108a77bdad4eee7119c805fd1f27256e047a`, tree
+`426b927120cf97b2ed6e49a3e90c2aaecc8a9964`, with successful
+[CI run 36705456602](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36705456602).
+The author selected Bo–Celani as the single teaching anchor. The
+[new narrative](../REVIEW.md) connects that review to the frozen
+prediction task and proofs; the [documentation map](README.md) separates
+the main route from supporting results and history.
+
+The presentation adopts a clear question, displayed core equations,
+compact comparison tables and a three-pass reading route. Current entry
+pages use GitHub's documented inline math syntax and fenced math blocks.
+The narrative defines the target, generator convention, conditional
+averaging, hidden lag, positivity requirement, unknown-tilt Gibbs class,
+preparation-robust finite witness and menu-dependent hierarchy. In the
+narrative, the high-field contraction is named by its tilt subscript to
+avoid collision with the earlier continuous definition.
+
+Separate internal reviews check the narrative against the existing
+proofs and inspect navigation and math delimiters. The notation change
+is explanatory only. No standalone mathematical proof, verifier or
+saved report is altered. The source passage establishing the review's
+column convention was checked before translating it to probability rows.
+
+**Scoped local checks passed:** 3,534 relative Markdown links, all 82
+Python syntax checks, saved-report provenance, MIT preservation and
+`git diff --check`. The six current reading surfaces contain 174 inline
+expressions and 25 math displays; their delimiters, braces and fences
+were checked, including the absence of literal math pipes in table cells.
+These source checks supplement, rather than replace, live rendering.
+
+Six existing presentation/status files change and two reading guides
+are added, bringing the repository to 383 tracked files. All 375 other
+baseline files remain byte-identical, including R1–R98, the bibliography,
+all standalone proofs, verifiers, saved reports and the MIT license.
+The earlier README/scientific-guide history bodies remain verbatim;
+prior verification and work-order entries change only their current
+headings to historical. No new simulation or local full numerical replay
+is introduced. Hosted verification and rendered GitHub entry pages are
+checked separately after publication.
+
+## Historical checkpoint: scientific background and single-source tutorial shortlist
 
 The baseline is commit `f9bb30260a6f4442aedaa26a2a6990dcf6d48eba`, tree
 `fb537a239e720daa274ab41dab0d788a035fa694`, with successful

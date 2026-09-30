@@ -1,69 +1,153 @@
 # Intervention Reuse Limits
 
-**Control speed and prediction accuracy determine how many states a reusable kinetic model needs.**
+### How many states must a kinetic model retain when its controls change?
 
-A model that fits relaxation at two held fields can still miss the response
-when those fields alternate. For two interacting equilibrium switches,
-we prove which state budgets can meet a requested accuracy while one model
-is reused across the controls. The results combine explicit positive
-models with lower bounds against every admissible smaller model.
+A fast hidden variable can often be averaged away. A small model may then
+fit relaxation at each held field. This repository asks whether **the same
+model still predicts correctly when those fields alternate**, and how its
+required number of states changes with prediction accuracy.
 
-## The result
+For two interacting equilibrium switches, we give explicit positive
+Markov models and lower bounds against every smaller admissible model.
+The leading hidden lag needs a third state under rapid control. Preserving
+equilibrium structure at finer accuracy needs a fourth.
 
-Let $r$ be the hidden-to-visible attempt-rate ratio, with nonzero coupling
-and field held fixed as $r$ grows. Observe only the initial and final
-visible sign, starting the target at zero-field equilibrium. For all
-finite two-field words with arbitrary held durations, the eventual
-minimum state counts at error tolerance $\epsilon(r)=r^{-p}$ are:
+## Start from one tutorial
+
+The teaching anchor is **Stefano Bo and Antonio Celani,
+[Multiple-scale stochastic processes: decimation, averaging and beyond](https://arxiv.org/pdf/1612.04999)**,
+*Physics Reports* 670, 1–59 (2017).
+
+Read §1, §2 through §2.2, and §2.3.2. Then follow the
+[project narrative](REVIEW.md): averaging the fast switch, retaining its
+lag, and deciding how many positive states a reused model requires.
+Basic probability, matrix algebra, linear ODEs and asymptotic notation
+are sufficient for this route. The review supplies the multiscale
+starting point; the state-count results below are proved in this repository.
+
+## Read the repository in three passes
+
+| Pass | Route | What it gives you |
+| --- | --- | --- |
+| Overview | This page | The question, result and experimental menu |
+| Understand the mechanism | **[Tutorial-to-result narrative](REVIEW.md)** | One continuous explanation from Bo–Celani to the project |
+| Check the arguments | **[Documentation map](docs/README.md)** and [scientific guide](docs/SCIENTIFIC_CASE.md) | Exact assumptions, proof dependencies and evidence limits |
+
+The [background guide](docs/MANUSCRIPT_BACKGROUND.md) supplies the primary
+literature and citation map. The [tutorial selection record](docs/TUTORIAL_OPTIONS.md)
+retains the alternatives considered; they are not additional prerequisites.
+
+## The prediction task
+
+The target has one visible sign $`S`$ and one hidden sign $`Z`$.
+Its dimensionless energy is $`-JSZ-hS`$, and each held field has
+reversible heat-bath dynamics. Set
+
+```math
+t=\tanh J\in(0,1),\qquad u=\tanh H\in(0,1),\qquad
+r=\frac{\Gamma_Z}{\Gamma_S}.
+```
+
+The asymptotic statements keep $`t,u`$ fixed as $`r\to\infty`$.
+Time is measured in units of $`1/\Gamma_S`$.
+The [physical-model derivation](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md)
+connects these switches to a selected equilibrium sequential-tunneling model.
+
+| Part of the task | Requirement |
+| --- | --- |
+| Target preparation | Zero-field equilibrium: $`\pi_0(s,z)=(1+tsz)/4`$ |
+| Observation | True initial and final visible signs; no intermediate records or feedback |
+| Controls | Predetermined holds at fields $`0,H`$; ideal changes leave the state unchanged |
+| Reused model | One persistent state space, one fixed generator per field, one deterministic binary readout |
+| Rival preparation | May vary with the whole word; no rate cap or equilibrium-preparation promise |
+| General models | Nonnegative transition rates and normalized probabilities |
+| Reversible models | Detailed balance and the stated shared normalized Gibbs relation, with unknown tilt |
+
+A held-field fit and a separate fit for every pulse sequence do not meet
+the same reuse requirement. All persistent states count, including
+preparable states of zero stationary weight.
+
+## The state-count law
+
+For **all finite two-field words with arbitrary held durations**, let
+$`E_d^{\mathrm{gen}}(r)`$ and $`E_d^{\mathrm{rev}}(r)`$ be the best
+worst-case endpoint-pair total-variation errors with at most $`d`$ states
+in the two classes. The central orders are
+
+```math
+\boxed{
+E_2^{\mathrm{gen}}(r)=\Theta(r^{-1}),\qquad
+E_3^{\mathrm{rev}}(r)=\Theta(r^{-2}).
+}
+```
+
+Two reversible states attain the same first-order scale. Four reversible
+states are exact, and a general positive three-state model is exact for
+all sufficiently large $`r`$. At tolerance $`\epsilon(r)=r^{-p}`$,
+the eventual minimum counts are therefore:
 
 | Required precision | General model | Reversible model |
 | --- | ---: | ---: |
-| $0<p<1$ | 2 states | 2 states |
-| $1<p<2$ | 3 states | 3 states |
-| $p>2$ | 3 states | 4 states |
+| $`0\lt p\lt1`$ | 2 states | 2 states |
+| $`1\lt p\lt2`$ | 3 states | 3 states |
+| $`p\gt2`$ | 3 states | 4 states |
 
-Reversible rivals retain the stated normalized Gibbs force relation with
-unknown tilt. Rival preparations may vary by word; rates are uncapped.
-The crossover cases $p=1,2$ depend on constants and are not settled by
-these orders. At fixed positive low/high ticks, two states already attain
-quadratic error: the separated-order three-state window depends on control
-timing. The [scientific guide](docs/SCIENTIFIC_CASE.md) gives the full
-contract and theorem dependencies.
+The crossover exponents $`p=1,2`$ depend on constants. If the low/high
+clock ticks instead stay fixed and positive, two states already attain
+quadratic error; only $`p=2`$ is then an order-level crossover.
+Control timing is part of the theorem.
 
-The finite-control consequence uses just three experiment settings:
-low-field hold, high-field hold, and an alternating train with the same
-total residence at each field. Every two-state model has an exact
-conditional-contrast multiplication rule. The target violates it at
-order $r^{-1}$, while a reversible three-state model has error $O(r^{-2})$
-on the same menu. The [finite-pulse proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md)
-specifies $2\lceil r/2\rceil$ held segments of duration $1/r$ and a
-bounded dimensionless horizon. Three settings therefore contain a growing
-pulse count. This restricted menu establishes the third-state requirement;
-the fourth-state lower belongs to the separate seven-word/all-word task.
+The [all-duration proof](docs/FAMILIAR_SWITCH_RAPID_CONTROL.md),
+[fixed-clock proof](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) and
+[exact general construction](docs/FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
+establish these statements.
 
-## Read the case
+## Three experiments expose the leading memory requirement
 
-| Reading step | What it answers |
-| --- | --- |
-| [Scientific guide](docs/SCIENTIFIC_CASE.md) | The core claim, assumptions, evidence map, source distinction and drafting status |
-| [Scientific background](docs/MANUSCRIPT_BACKGROUND.md) | Concepts, physical assumptions, closest results and a focused citation map |
-| [Three tutorial options](docs/TUTORIAL_OPTIONS.md) | Alternative single-source entry points, recommended sections and the remaining bridge |
-| [Three-experiment proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) | Why held-field responses cannot be reused by any two-state model at the stated accuracy |
-| [All-duration law](docs/FAMILIAR_SWITCH_RAPID_CONTROL.md) and [fixed-clock law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) | How the best attainable error changes with control timing |
-| [Community model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) | Which published kinetic assumptions support the physical target |
-| [Final sanity audit](docs/FINAL_SANITY_AUDIT.md) | Proof review, full reproducibility check, minor clarifications and completion limits |
+Use two held-field calibration experiments and one alternating train.
+Writing $`L_a,H_a`$ for holds of duration $`a`$, choose
 
-The physical model, endpoint observation contract and theorem scope are
-frozen. The pre-drafting evidence package is ready for a focused theory
-manuscript. **Manuscript writing is on hold.** Broad publication significance
-and practical device benefit remain unestablished.
+```math
+n=\lceil r/2\rceil,\qquad A=\frac nr,\qquad
+\mathcal W_r=\{L_A,\ H_A,\ (L_{1/r}H_{1/r})^n\}.
+```
 
-Ideal field jumps and true endpoint records define the task. At fixed
-hidden attempt rate, the pulse-train duration grows with $r$. The results
-supply no finite-ramp, detector, sampling, hardware-bit or heat-saving
-guarantee for that menu. These limitations remain part of the scope.
+Every reusable two-state model obeys an exact multiplication rule for its
+conditional contrasts. The target violates that rule at order
+$`r^{-1}`$. A reversible three-state model has error $`O(r^{-2})`$
+on the same menu. Thus these three settings already require the third
+state at intermediate accuracy.
 
-[Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) · [Verification](docs/VERIFICATION.md) · [Publication status and history](docs/PUBLICATION_SCOPE.md)
+The [finite-pulse proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md)
+covers arbitrary rival preparations. This menu establishes no
+three-state lower bound or fourth-state requirement; those belong to
+the separate seven-word/all-word task.
+
+Three settings contain a growing train: its $`2\lceil r/2\rceil`$
+segments each last $`1/r`$ in dimensionless time. At fixed hidden
+attempt rate $`\Gamma_Z`$, each train segment lasts $`1/\Gamma_Z`$
+and its total physical duration grows as $`r/\Gamma_Z`$.
+
+## Verification and status
+
+The theorem is analytic. The [verification record](docs/VERIFICATION.md)
+and [full sanity audit](docs/FINAL_SANITY_AUDIT.md) map the reproducibility
+checks to their claims. To run the existing suite:
+
+```bash
+python -m pip install -r requirements.txt
+make check
+```
+
+The physical model, endpoint task and theorem scope are frozen.
+**Manuscript writing is on hold and remains the final phase.** Ideal
+field jumps and true endpoint records are assumptions; finite-ramp,
+detector, sampling, hardware-bit and heat-saving guarantees are not
+established for this menu. The conclusions concern predictive states,
+not a demonstrated device advantage.
+
+[Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) ·
+[Publication status and history](docs/PUBLICATION_SCOPE.md) · [MIT license](LICENSE)
 
 <details>
 <summary>Preserved overview and research history before consolidation</summary>

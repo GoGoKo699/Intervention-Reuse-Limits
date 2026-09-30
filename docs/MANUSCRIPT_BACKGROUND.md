@@ -3,9 +3,10 @@
 **Background consolidation, 30 September 2026.** This guide supplies the
 concepts, physical precedents and closest-result comparisons needed to
 present the [frozen scientific case](SCIENTIFIC_CASE.md). It adds no
-theorem or experiment. The [tutorial shortlist](TUTORIAL_OPTIONS.md)
-offers three alternative single-source entry points; no teaching anchor
-has been selected. Manuscript writing remains on hold.
+theorem or experiment. **Bo–Celani is the selected tutorial anchor.**
+The [project narrative](../REVIEW.md) supplies the bridge to the proofs;
+the [selection record](TUTORIAL_OPTIONS.md) retains the alternatives
+considered. Manuscript writing remains on hold.
 
 The [BibTeX file](../references/manuscript.bib) collects the twenty
 sources used here or in the shortlist. Keys shown below match that file.
@@ -36,49 +37,49 @@ identify the additional conditions and conclusions precisely.
 ## 2. Minimal mathematical language and the bridge to the proofs
 
 Use row probability vectors throughout the manuscript. A finite
-continuous-time generator satisfies $Q_{ij}\ge0$ for $i\ne j$ and
-$Q\mathbf1=0$. Probabilities obey $\dot p=pQ$, whereas a column
-observable $f$ obeys
+continuous-time generator satisfies $`Q_{ij}\ge0`$ for $`i\ne j`$ and
+$`Q\mathbf1=0`$. Probabilities obey $`\dot p=pQ`$, whereas a column
+observable $`f`$ obeys
 
-$$
+```math
 \frac{d}{dt}\mathbb E[f(X_t)]=\mathbb E[(Qf)(X_t)].
-$$
+```
 
-A hold at field $h$ lasts $a$ and has propagator $e^{aQ_h}$. Write $K_w$
-for a word's chronological product. With $D_s$ the diagonal indicator
-of visible sign $s$, its endpoint-pair law is
+A hold at field $`h`$ lasts $`a`$ and has propagator $`e^{aQ_h}`$. Write $`K_w`$
+for a word's chronological product. With $`D_s`$ the diagonal indicator
+of visible sign $`s`$, its endpoint-pair law is
 
-$$
+```math
 P_w(s,s')=\nu D_s K_w D_{s'}\mathbf1.
-$$
+```
 
 An intermediate observation inserts another indicator matrix into the
 product. Matching endpoint pairs therefore does not establish matching
 of full output trajectories. The target uses the fixed law
-$\nu(S,Z)=(1+tSZ)/4$; rivals may choose a different initial law for
+$`\nu(S,Z)=(1+tSZ)/4`$; rivals may choose a different initial law for
 each word. Pair-TV error includes the initial marginal, so arbitrary
 rival preparation cannot be silently replaced by balanced preparation.
 These are the repository's task definitions, not an extra claim about
 the cited models.
 
-For a partition with indicator matrix $C$, equal total exit rates into
-each block give $Q_hC=C\overline Q_h$. If the same partition satisfies
+For a partition with indicator matrix $`C`$, equal total exit rates into
+each block give $`Q_hC=C\overline Q_h`$. If the same partition satisfies
 this at both fields, exponentiation and multiplication preserve the
 quotient under every word. Without such closure, the conditional hidden
 distribution can retain history. This explains *lumpability*; it does
 not exhaust the possible smaller surrogate models.
 
 The [mean equations](FAMILIAR_SWITCH_FAST_RELAXATION.md) close on
-$1,S,Z$. Writing $x=\mathbb E S$, $z=\mathbb E Z$ gives
+$`1,S,Z`$. Writing $`x=\mathbb E S`$, $`z=\mathbb E Z`$ gives
 
-$$
+```math
 \dot x=A_h-x+B_hz,\qquad \dot z=r(tx-z).
-$$
+```
 
-The lag $z-tx$ is the fast coordinate. Its elimination motivates an
+The lag $`z-tx`$ is the fast coordinate. Its elimination motivates an
 effective two-state model; the proof notes determine its actual error
-under each control menu. Keep the expansion parameter $1/r$ distinct
-from the requested prediction tolerance $\epsilon$. An asymptotic
+under each control menu. Keep the expansion parameter $`1/r`$ distinct
+from the requested prediction tolerance $`\epsilon`$. An asymptotic
 reduction at a fixed field supplies neither uniform accuracy over
 unrestricted words nor a lower bound against all smaller realizations.
 
@@ -113,15 +114,15 @@ model is compact:
 Selecting a common temperature, fixed chemical potentials and no
 interdot particle transfer gives an equilibrium specialization. From the
 Fermi-rate ratio, detailed balance follows for the grand energy
-$\mathcal E=\epsilon_1n_1+\epsilon_2n_2+Un_1n_2$. The repository's
+$`\mathcal E=\epsilon_1n_1+\epsilon_2n_2+Un_1n_2`$. The repository's
 substitution
 
-$$
+```math
 S=2n_1-1,\quad Z=1-2n_2,\quad J=\frac{U}{4k_BT},\quad
 \epsilon_2=-\frac U2,\quad \epsilon_1=-\frac U2-2k_BT h
-$$
+```
 
-gives $\mathcal E/(k_BT)=-JSZ-hS-J-h$. This algebraic identification
+gives $`\mathcal E/(k_BT)=-JSZ-hS-J-h`$. This algebraic identification
 and the selected operating point are deductions, not an experiment
 reported in those papers. Occupation labels are time-even; literal
 magnetic-spin reversal should not be substituted for this convention.
@@ -129,17 +130,17 @@ magnetic-spin reversal should not be substituted for this convention.
 Keep three kinetic choices separate: flat coupling versus transition
 energy, equal attempts on the two dots, and unchanged tunneling barriers
 during control. Equal attempts are not assumed in the present
-$r=\Gamma_Z/\Gamma_S$ theorem. Spinlessness, isolated levels, weak
+$`r=\Gamma_Z/\Gamma_S`$ theorem. Spinlessness, isolated levels, weak
 tunneling and short reservoir memory define the selected physical
 branch. The sources do not provide a microscopic error certificate at
 arbitrarily fine theorem tolerances.
 
 ## 4. Equilibrium structure is an additional model requirement
 
-Ordinary detailed balance is $\pi_iQ_{ij}=\pi_jQ_{ji}$. It does not
+Ordinary detailed balance is $`\pi_iQ_{ij}=\pi_jQ_{ji}`$. It does not
 alone determine how a control changes stationary weights. The separate
 energy coupling through the measured sign gives
-$\pi_h\propto\pi_0e^{hS}$. A fixed readout-compatible equilibrium
+$`\pi_h\propto\pi_0e^{hS}`$. A fixed readout-compatible equilibrium
 aggregation inherits this relation by summing weights. For a freely
 fitted rival the corresponding unknown-tilt Gibbs rule is a declared
 interface requirement; it is not inferred from endpoint agreement.
@@ -199,10 +200,10 @@ cases have not been cleared, so retain this explicit priority limitation.
 | Discuss the finer equilibrium obstruction | Unknown-tilt lower proof and `FrancoKepkaVelazquez2026`; retain the Falk qualification |
 
 No source here certifies the theorem's growing pulse train in a device.
-The alternating setting contains $2\lceil r/2\rceil$ held segments;
+The alternating setting contains $`2\lceil r/2\rceil`$ held segments;
 the other two settings are single calibration holds. At fixed
-$\Gamma_Z$, each alternating segment lasts $1/\Gamma_Z$, and the
-alternating protocol's total duration grows as $r/\Gamma_Z$.
+$`\Gamma_Z`$, each alternating segment lasts $`1/\Gamma_Z`$, and the
+alternating protocol's total duration grows as $`r/\Gamma_Z`$.
 Ideal jumps, true endpoint records and the absence of
 a demonstrated hardware/heat saving must remain explicit. Old sampling,
 detector and numerical certificates belong to their original tasks.
@@ -223,7 +224,8 @@ linked versions, whose pagination can differ from the journal editions.
 
 The scientific background needed for the frozen claim is now organized
 for drafting. No new theorem, model family, simulation or replacement
-research gate follows from this pass. The next pedagogical decision is
-to select **one** of the [three tutorial options](TUTORIAL_OPTIONS.md),
-then furnish a compact bridge from that source to the existing proofs.
-The manuscript itself remains the final phase.
+research gate follows from this pass. The selected **Bo–Celani** route
+now leads through a [compact project narrative](../REVIEW.md) to the
+existing proofs. Other bibliography entries support attribution rather
+than adding to the single-source teaching prerequisite. The manuscript
+itself remains the final phase.

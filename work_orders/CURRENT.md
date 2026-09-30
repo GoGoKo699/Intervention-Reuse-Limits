@@ -1,6 +1,39 @@
 # Current work order: convergence before manuscript drafting
 
-## Current status: scientific background integrated; tutorial choice pending — 30 September 2026
+## Current status: Bo–Celani anchor furnished; scientific scope frozen — 30 September 2026
+
+The author selected **Bo–Celani, Option 1**, as the single teaching
+anchor and requested a presentation in the style of Hopf-Frame-Compilation,
+including properly rendered inline and displayed mathematics.
+This continuation starts from published commit
+`fc1d108a77bdad4eee7119c805fd1f27256e047a`, tree
+`426b927120cf97b2ed6e49a3e90c2aaecc8a9964`, with successful
+[CI run 36705456602](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36705456602).
+
+The [overview](../README.md) now leads through one selected tutorial,
+the [project narrative](../REVIEW.md), and the
+[documentation map](../docs/README.md). The narrative translates
+generator conventions, derives the target's conditional averaging and
+lag, distinguishes linear coordinates from positive states, explains
+the preparation-robust contrast test, and states the separate precision
+laws. It links to the existing proofs instead of creating a new theorem
+or manuscript draft. The alternative tutorials remain in the selection
+record as optional background, not required reading.
+
+Current entry pages use GitHub-supported inline math and fenced math
+displays. Overview and scientific-guide history bodies remain intact.
+All standalone proofs, verifiers, saved reports, R1–R98, bibliography
+and the MIT license are preserved. Existing authorization covers
+non-forced publication to main; collaborator contact is not authorized.
+
+**Decision:** the requested tutorial-based furnishing is complete.
+The model, observation task and theorem scope remain frozen. No new
+simulation or research branch is opened. Manuscript writing remains
+on hold as the final phase, and journal-target discussion stays outside
+this public record. Further changes should address a concrete reader
+or correctness issue, not extend the result by default.
+
+## Historical status: scientific background integrated; tutorial choice pending — 30 September 2026
 
 This continuation starts from published commit
 `f9bb30260a6f4442aedaa26a2a6990dcf6d48eba`, tree
