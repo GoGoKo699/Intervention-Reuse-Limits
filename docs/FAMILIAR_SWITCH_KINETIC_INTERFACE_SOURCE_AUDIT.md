@@ -69,5 +69,5 @@ kinetically perturbed targets or arbitrarily slow rivals.
 
 This is a bounded component audit. The unresolved Falk full-text comparison
 and novelty limits in the earlier audit remain open. It does not establish
-a device demonstration, full visible-path equivalence or PRL readiness.
+a device demonstration, full visible-path equivalence or broad scientific significance.
 Manuscript drafting remains deferred.

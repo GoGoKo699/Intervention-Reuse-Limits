@@ -15,7 +15,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_preparation_free.json': 'fc66764244870e0930a8b15c28947478f99e223647f916dfe8260c3ad5bd0420',
+    'reports/switch_preparation_free.json': '47c010c34eea3d2da53839187d0bcb89c13a3a385444671771f0592ae7515411',
 }
 # Reviewed universal derivations; finite fixtures do not replace these proofs.
 PROOFS = {
@@ -264,7 +264,7 @@ def main():
               'checks': CHECKS, 'largest_matrix_dimension': 4,
               'source_sha256': {Path(__file__).name: hashlib.sha256(Path(__file__).read_bytes()).hexdigest()},
               'input_report_sha256': INPUTS, 'proof_snapshot_sha256': proofs,
-              'scope': 'Finite and symbolic checks accompany reviewed universal derivations. They do not establish literature priority, physical detector performance, or PRL significance.'}
+              'scope': 'Finite and symbolic checks accompany reviewed universal derivations. They do not establish literature priority, physical detector performance, or scientific significance.'}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2, sort_keys=True)+'\n')
     print(f'PASS: {CHECKS} physical-core algebra and provenance checks -> {args.output}')

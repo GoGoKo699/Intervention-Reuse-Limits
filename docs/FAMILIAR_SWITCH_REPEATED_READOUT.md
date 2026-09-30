@@ -387,5 +387,5 @@ correlation with the final output. Such a stronger data interface would
 require a separate upper construction and comparison. The current
 result is an instrument and calibration theorem supporting the same
 two-word score test, conditional on the stated preparation and physical
-promises. Device feasibility and PRL readiness remain unestablished;
+promises. Device feasibility and broad scientific significance remain unestablished;
 manuscript drafting remains deferred.

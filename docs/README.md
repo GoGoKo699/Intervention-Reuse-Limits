@@ -41,7 +41,6 @@ seven-word argument in R92.
 | --- | --- |
 | [Equilibrium-reduction note](FAMILIAR_SWITCH_EQUILIBRIUM_REDUCTION.md) | Gibbs inheritance versus dynamical closure |
 | [Physical assumption alignment](PHYSICAL_ASSUMPTION_ALIGNMENT.md) | Published model families and the chosen specializations |
-| [Background and citation map](MANUSCRIPT_BACKGROUND.md) | Established ingredients versus the project-specific combination |
 | [Bibliography](../references/manuscript.bib) | Citation metadata |
 | [Final sanity audit](FINAL_SANITY_AUDIT.md) | Internal analytic review and full reproducibility result |
 | [Verification guide](VERIFICATION.md) | Commands, provenance and the limits of computational checks |

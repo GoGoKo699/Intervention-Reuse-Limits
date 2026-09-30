@@ -1,6 +1,6 @@
 # Physical reversal, even observables and Markov closure
 
-[Generalized word predictor](GENERALIZED_REVERSAL_PREDICTION.md) · [Three-class resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [Physical interface robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md) · [Current research](PRL_EXPLORATION.md)
+[Generalized word predictor](GENERALIZED_REVERSAL_PREDICTION.md) · [Three-class resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [Physical interface robustness](PHYSICAL_INTERFACE_ROBUSTNESS.md) · [Current research](STATE_COST_EXPLORATION.md)
 
 **Analytic boundary, 23 September 2026.** A reversal-even observable of an equilibrium process has a reversible stationary path law. If that observable is itself an autonomous Markov process, its generator obeys ordinary detailed balance. Thus an equilibrium realization cannot turn an even Markov configuration into an ordinarily nonreversible Markov word state merely by hiding an ordinary-equilibrium phase. Memory, physical reversal parity and the retained state count must be specified.
 

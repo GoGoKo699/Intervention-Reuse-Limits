@@ -641,5 +641,5 @@ Ordinary preparation and arbitrary initial measurement dynamics are
 absorbed into the state that actually starts the word. Target preparation,
 its postmeasurement marginal control, fixed active dynamics, the stated
 force relation, and the calibrated detector envelope remain substantive
-premises. Device feasibility and PRL readiness remain unestablished;
+premises. Device feasibility and broad scientific significance remain unestablished;
 manuscript drafting remains deferred.

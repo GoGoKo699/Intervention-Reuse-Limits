@@ -17,7 +17,7 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_chain_sharpness.json"
-INPUT_SHA256 = "71bfd5baff344261801b13abc7d0bb629430c1b965ce2e6b31a034cffe81ec56"
+INPUT_SHA256 = "ac1f75e25443a7d72f0f72b0f78b62cd6fd09dbf0beca5fdd2d7fb0e21dfff62"
 PROOF = "docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md"
 PROOF_SHA256 = "3cb6df9b691dbd6d9ed2cf4e6880eb54e3583d724c147c666300a3cbc35be65f"
 T = F(1, 3)

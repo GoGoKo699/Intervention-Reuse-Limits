@@ -22,7 +22,7 @@ import verify_familiar_switch_preparation_free_unknown_tilt as core
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_switch_preparation_free_unknown_tilt.json"
 # Frozen reviewed analytic core and its proof snapshots.
-INPUT_SHA256 = "619b56d7bd966608f104299c39144163f4fce58005198740756840169edabd4a"
+INPUT_SHA256 = "79fbbd35de7dbdb8354d8808e320d8e936e186a49e8c673931f620d622e09195"
 N = 80_000_000
 M = 168_000_000
 RADIUS = F(1, 1000)

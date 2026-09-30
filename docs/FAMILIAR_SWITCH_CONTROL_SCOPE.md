@@ -101,7 +101,7 @@ The audit also corrects an earlier normalization description of the
 Taghavian–Sjölund comparison; the complete-theorem distinction survives.
 
 This is a stronger and more informative theory result than the isolated
-state-count example. It still does not establish PRL-level significance,
+state-count example. It still does not establish broad scientific significance,
 hardware-bit savings, heat cost or a physical implementation of the
 circulating predictor. The next research decision is whether this exact
 criterion expresses a useful principle for a broader established kinetic

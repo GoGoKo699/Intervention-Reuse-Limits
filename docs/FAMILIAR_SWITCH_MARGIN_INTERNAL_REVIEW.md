@@ -34,7 +34,7 @@ Direct eleven-word fitting improves on an older retained model evaluated without
 
 The target is a familiar time-even coupled conformational pair; equal attempt rates and the specified control interface are retained. Predictions concern endpoint means, not path laws. Passive target paths already have hidden memory. Arbitrary rates at the two fields are allowed, but arbitrary changes in hidden-state field coupling are not: the shared Gibbs tilt is substantive.
 
-The finite margin is 0.05 percentage points, bounded above by an ordinary-three-state fit below 0.1 percentage points on the same menu. No one-percentage-point advantage, experimental sample budget, calibration tolerance, microscopic device, generalized-reversal separation or universal dissipation requirement is established. Those limits prevent treating this checkpoint alone as PRL readiness.
+The finite margin is 0.05 percentage points, bounded above by an ordinary-three-state fit below 0.1 percentage points on the same menu. No one-percentage-point advantage, experimental sample budget, calibration tolerance, microscopic device, generalized-reversal separation or universal dissipation requirement is established. Those limits prevent inferring broad practical significance from this checkpoint alone.
 
 The [source audit](FAMILIAR_SWITCH_MARGIN_SOURCE_AUDIT.md) compares three primary full texts on finite realization, polynomial invariants and dimension witnesses. Classical ingredients are attributed and complete controlled-task assumptions are separated. Falk 1983 remains an unresolved full-text lead from the prior kinetic audit. Internal checks and bounded searches do not certify originality.
 

@@ -22,7 +22,7 @@ import verify_familiar_chain_accuracy as base
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_chain_cross_rank.json":
-        "2f23889fbe560df9201e9885769bbe83dd28e7373adebb86c3bb31c422e1e39c"
+        "eee7e6a45c6ee1a823d59f4e0fc79e829090db07932b1c390df43d2e840078cf"
 }
 PROOFS = {'docs/FAMILIAR_SWITCH_FROZEN_EQUIVALENCE.md': '96670d6b5d111dc63627407f5835ab39594a62996079724ff499966d39547428'}
 T = F(1, 3)

@@ -21,9 +21,9 @@ import verify_familiar_switch_margin as algebra
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_switch_frozen_bound.json":
-        "9b15c6c9eacf0e19d53e8413442cc8d568aa8e3411eadc552d0547fc01c0d5a8",
+        "3f807fcf2ed4e68f11831966399389475375bf13b3a801e96434e5fb9adfa625",
     "reports/familiar_switch_frozen_equivalence.json":
-        "eaaa7cde30932f7d6a6b825e36eeec2917536dc9f27cb5bf87def8a8df5cc29c",
+        "22d4c933c424c81632dceb3a90a221ed18de3c30cda624fd4a21a6f0d9407a30",
 }
 EXTRA_SOURCES = {
     "verify_familiar_switch_margin.py":

@@ -39,7 +39,7 @@ check:
 	$(PYTHON) scripts/verify_uncapped_observability.py --output .check-output/uncapped_observability.json
 	$(PYTHON) scripts/verify_binary_uncapped_observability.py --output .check-output/binary_uncapped_observability.json
 	$(PYTHON) scripts/verify_fixed_clock_observability.py --output .check-output/fixed_clock_observability.json
-	$(PYTHON) scripts/verify_prl_exploration.py --output .check-output/prl_exploration.json
+	$(PYTHON) scripts/verify_state_cost_exploration.py --output .check-output/state_cost_exploration.json
 	$(PYTHON) scripts/verify_kinetic_parity.py --output .check-output/kinetic_parity.json
 	$(PYTHON) scripts/verify_finite_advantage.py --output .check-output/finite_advantage.json
 	$(PYTHON) scripts/verify_physical_robustness.py --output .check-output/physical_robustness.json

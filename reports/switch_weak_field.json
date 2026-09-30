@@ -517,7 +517,7 @@
     "This candidate and its sampling design are not asserted globally optimal."
   ],
   "source_sha256": {
-    "verify_switch_weak_field.py": "2ad499688a4b1c803de39097bcbdd5abaf93a169476577709583c2d9f35429bd",
+    "verify_switch_weak_field.py": "266670a1afcdc69b7fcbcdf222ec74521cce3b344a49054be2533c14e3536809",
     "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
   },
   "input_report_sha256": {
@@ -542,7 +542,7 @@
     "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "fda7778b6d9a6fef9f4ac4418a1027e5aa5754d3d41ed9ad7e0b3193451c659c",
     "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "f019e9d52bfb532b57b64c4c3196e39cd503e138745ff27f30c4d3423197fcd0",
     "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "60fd88d798d3d84fe1c972d22d7e16ceca8ce7b7e25b8a05a758a296f5428e1d",
-    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "f06f1f9e96c30b6074e50f9992b50401bf7885a7c114bad96ef5ae431280a8b5"
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "95ceb1bedbc53c07fbb10a091083285214275fc3e5cfbdefae3bee1dd189b874"
   },
   "checks": 172
 }

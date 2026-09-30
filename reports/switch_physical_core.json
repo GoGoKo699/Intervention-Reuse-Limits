@@ -33,7 +33,7 @@
     "scope": "Standard equilibrium inheritance and reversible flux projections; projected trajectories need not be Markov. These identities motivate the rival interface but do not make the circulating predictor a physical coarse-graining."
   },
   "input_report_sha256": {
-    "reports/switch_preparation_free.json": "fc66764244870e0930a8b15c28947478f99e223647f916dfe8260c3ad5bd0420"
+    "reports/switch_preparation_free.json": "47c010c34eea3d2da53839187d0bcb89c13a3a385444671771f0592ae7515411"
   },
   "largest_matrix_dimension": 4,
   "minimal_theorem_certificate": {
@@ -87,8 +87,8 @@
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_REALIZATION.md": "4e9c09ce59c2f39ae14b7a83d62e7697ec636f142e2856a34adf6493602ee7da",
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_TEST.md": "abd653f621fc26c37b5c454f8096542920fdd8c0486bf48c5980d7dd9b14161f",
     "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "0f301c2b87e6ef6106ea2e785a7c5166b7214d92369076332d8050592d5d4c3b",
-    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "f42f5116f33ba564e03d7d8e92a9f34521dbf4d049c017420f830c4f088f4690",
-    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "00c16376fbe100691aef3c260d05a42fbffdbbfd1408750cdc4badc146764f81",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "5e096c2259516df0ab8046f090a3fbd1b92fa99ded0c45cf7187d9d98f96c03d",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4ab03cd77e1c03daf53bfd9e24dc36d444c7e604bdabb52a7c20740ff75dee44",
     "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "9a3bbbbaf70464656e25bce6ac1f9881f422d91597b347b68b3a2c88a59f3657",
     "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "d7dee7539c9be35541ed2cce78e0f3615f04ce9db46ec9277c688f5fe72b029c",
     "docs/FAMILIAR_SWITCH_SNAPSHOT_SCORE_TEST.md": "e7705e19b582cb56178dd7468b986ee09d7f62d5301a4cf02821e28e75a55839",
@@ -96,11 +96,11 @@
     "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "fa3feabda54430ad78d09e97d65f900a9a7225123dc6378c65ace24efb3d5fd8",
     "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "fda7778b6d9a6fef9f4ac4418a1027e5aa5754d3d41ed9ad7e0b3193451c659c",
     "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "60fd88d798d3d84fe1c972d22d7e16ceca8ce7b7e25b8a05a758a296f5428e1d",
-    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "f06f1f9e96c30b6074e50f9992b50401bf7885a7c114bad96ef5ae431280a8b5"
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "95ceb1bedbc53c07fbb10a091083285214275fc3e5cfbdefae3bee1dd189b874"
   },
-  "scope": "Finite and symbolic checks accompany reviewed universal derivations. They do not establish literature priority, physical detector performance, or PRL significance.",
+  "scope": "Finite and symbolic checks accompany reviewed universal derivations. They do not establish literature priority, physical detector performance, or scientific significance.",
   "source_sha256": {
-    "verify_switch_physical_core.py": "3f802055585b5d56a453a2d38c199ada16d7938a06ece9427ff4013b3b0deace"
+    "verify_switch_physical_core.py": "bca0bd5beda68f13dfe7dc876b20b74f248d66faa8d3c167802f080a09c22570"
   },
   "status": "PASS",
   "versions": {

@@ -1,6 +1,6 @@
 # Prediction states and stationary entropy production
 
-[Uniform reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) · [Tight-band fixed-clock lower](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Fixed-budget lower](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) · [PRL exploration](PRL_EXPLORATION.md)
+[Uniform reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) · [Tight-band fixed-clock lower](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Fixed-budget lower](DYNAMIC_LAMP_REVERSIBILITY_LOWER_BOUND.md) · [state-cost exploration](STATE_COST_EXPLORATION.md)
 
 **Research consequence, 23 September 2026.** The reversible state lower bounds imply quantitative constraints on predictors with small stationary entropy production. The bridge uses additive reversibilization on exactly the same states. It does not identify state count with Shannon entropy or assume that the weighted law in the lamp argument is the predictor's physical stationary law.
 
@@ -173,4 +173,4 @@ Every target is an equilibrium reversible Markov system with an exactly two-stat
 
 The microscopic realization of a predictor remains a separate issue. Multiplication of the path entropy-production rate by Boltzmann's constant gives entropy units when ordinary Markov time reversal describes the physical states. Identifying a heat rate additionally requires a thermodynamic realization and its reservoirs. No such identification is needed for the mathematical lower.
 
-The theorem concerns counted Markov states and stationary path irreversibility. It does not lower-bound the predictor's physical stationary Shannon entropy, experimental sample cost, fitting time or robustness to arbitrary changes of field rule. The field rule and bounded sensitivity range remain explicit assumptions. Primary-source precedents and the PRL significance assessment are recorded separately; manuscript drafting remains deferred.
+The theorem concerns counted Markov states and stationary path irreversibility. It does not lower-bound the predictor's physical stationary Shannon entropy, experimental sample cost, fitting time or robustness to arbitrary changes of field rule. The field rule and bounded sensitivity range remain explicit assumptions. Primary-source precedents and the scientific significance assessment are recorded separately; manuscript drafting remains deferred.

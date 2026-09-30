@@ -919,14 +919,14 @@
     "The fifth-power bookkeeping uses representative constants; no practical experimental accuracy or horizon is claimed."
   ],
   "source_sha256": {
-    "verify_prl_exploration.py": "6211b2c6af3979a71d863bc883786b60660e0c3ad674fc5476220251b2f509bc"
+    "verify_state_cost_exploration.py": "4cb60d440367203cdd69576d41285e994090111e9af7d56a5603e028a80722d9"
   },
   "imported_repository_verifiers": [],
   "proof_snapshot_sha256": {
     "docs/POSITIVE_LABEL_SELECTORS.md": "2807a7b6fbea0837d9c00e9ca786d58a23dd44d924d53d20d4283fa6995170db",
     "docs/TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md": "904651f4ba2783d5245ba87de584f411e4f05f50df585a89a6b430cd5e385621",
-    "docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md": "db3c12b6812f43768d70973c3630b56d69ce033d508d0f73fe740577b4783c82",
-    "docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md": "7a7d176d737d160cf6eb5aed9ddcddb4cf6d1890253317a7ba2d87ecc2f8156e"
+    "docs/ENTROPY_PRODUCTION_REVERSIBILIZATION.md": "b1391242a3b67263d6649e149a9cda9f4c00c569a0207b8e1130e261672d981f",
+    "docs/STATE_ENTROPY_PRODUCTION_TRADEOFF.md": "7a14b42fd8a1a19f7e04dd7cf463d6a2eb240d0b7b6699be3fde7369c15548c1"
   },
   "checks": 561
 }

@@ -598,16 +598,16 @@
     "sufficient_to_necessary_fixed_budget_ratio_upper": "10702553177/1000000000"
   },
   "input_report_sha256": {
-    "reports/familiar_chain.json": "4c7073d91d05f8521bb13eaa1687fc7ddd399b87a2f6a372e96b4759ec078476",
-    "reports/familiar_chain_accuracy.json": "d82ff88c482e572eb975713ed5b4b81160e2d9493a2636e575775df52fe6da1e",
-    "reports/familiar_chain_cross_rank.json": "2f23889fbe560df9201e9885769bbe83dd28e7373adebb86c3bb31c422e1e39c",
-    "reports/familiar_chain_sharpness.json": "71bfd5baff344261801b13abc7d0bb629430c1b965ce2e6b31a034cffe81ec56",
-    "reports/familiar_switch_frozen_bound.json": "9b15c6c9eacf0e19d53e8413442cc8d568aa8e3411eadc552d0547fc01c0d5a8",
-    "reports/familiar_switch_frozen_equivalence.json": "eaaa7cde30932f7d6a6b825e36eeec2917536dc9f27cb5bf87def8a8df5cc29c",
-    "reports/familiar_switch_frozen_information.json": "766adef9a912231a30e8c4675cec5353bdbd11e31767d8151292006f9c223d71",
-    "reports/familiar_switch_preparation_free_unknown_sampling.json": "4faf794eaad6092ef34916e8cf38173c04f3c8aa7a6df711d2081884dbbc7310",
-    "reports/familiar_switch_preparation_free_unknown_tilt.json": "619b56d7bd966608f104299c39144163f4fce58005198740756840169edabd4a",
-    "reports/switch_control_scope.json": "2a2ff2b6abbd6f4d649d7464e79f2ff12f01b05bdc0c731aacadd23a186bf9f6"
+    "reports/familiar_chain.json": "95fddbbdfe22d3d62cb6802e3d5491f3d8826aede5ddbeb3be285c2984265b0e",
+    "reports/familiar_chain_accuracy.json": "7a51577858248c9a21ac5e2f41a005c83e2f9cf3c563b420d44a2b7b3fe06716",
+    "reports/familiar_chain_cross_rank.json": "eee7e6a45c6ee1a823d59f4e0fc79e829090db07932b1c390df43d2e840078cf",
+    "reports/familiar_chain_sharpness.json": "ac1f75e25443a7d72f0f72b0f78b62cd6fd09dbf0beca5fdd2d7fb0e21dfff62",
+    "reports/familiar_switch_frozen_bound.json": "3f807fcf2ed4e68f11831966399389475375bf13b3a801e96434e5fb9adfa625",
+    "reports/familiar_switch_frozen_equivalence.json": "22d4c933c424c81632dceb3a90a221ed18de3c30cda624fd4a21a6f0d9407a30",
+    "reports/familiar_switch_frozen_information.json": "c97e9967918b04617ad362811145fe490ba959418630e5f00b6674fcda176592",
+    "reports/familiar_switch_preparation_free_unknown_sampling.json": "8aaa81c5bfc7e6b405693d3b536f1d09043fc6df25a86a9536848a629944d7e6",
+    "reports/familiar_switch_preparation_free_unknown_tilt.json": "79fbbd35de7dbdb8354d8808e320d8e936e186a49e8c673931f620d622e09195",
+    "reports/switch_control_scope.json": "b2fdb053e2e6d2229e218a4b6d1e9446b79a83c1c6f6911dc06c5f763e0d9fdd"
   },
   "limitations": "Necessary acquisition bounds apply to complete endpoint pairs from exactly these seven words, with word choice before the current initial sign. Other words, current-sign-conditioned control, intermediate/path/analog observations and additional calibration data require separate information accounting. Approximation and sample-budget brackets are certified bounds, not identified optima or laboratory feasibility claims.",
   "model_certificate": {
@@ -1321,8 +1321,8 @@
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_SOURCE_AUDIT.md": "164619060bf7f5805f77b2da5d2f81387d9defa5e9064f30677ef8ec6d91252b",
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_UNKNOWN_TILT.md": "a25ea1b3620c80208646c6c2bca11a5f2c4541815261a8378495e165b25a950f",
     "docs/FAMILIAR_SWITCH_PREPARATION_WITNESS.md": "0f301c2b87e6ef6106ea2e785a7c5166b7214d92369076332d8050592d5d4c3b",
-    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "f42f5116f33ba564e03d7d8e92a9f34521dbf4d049c017420f830c4f088f4690",
-    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "00c16376fbe100691aef3c260d05a42fbffdbbfd1408750cdc4badc146764f81",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "5e096c2259516df0ab8046f090a3fbd1b92fa99ded0c45cf7187d9d98f96c03d",
+    "docs/FAMILIAR_SWITCH_REPEATED_READOUT.md": "4ab03cd77e1c03daf53bfd9e24dc36d444c7e604bdabb52a7c20740ff75dee44",
     "docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md": "9a3bbbbaf70464656e25bce6ac1f9881f422d91597b347b68b3a2c88a59f3657",
     "docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md": "b2131d99825f5268400d801ea8be352ef8ece92e27399af55726a6ea2f41763f",
     "docs/FAMILIAR_SWITCH_SNAPSHOT_ROBUSTNESS.md": "d7dee7539c9be35541ed2cce78e0f3615f04ce9db46ec9277c688f5fe72b029c",
@@ -1332,22 +1332,22 @@
     "docs/FAMILIAR_SWITCH_UNCALIBRATED_READOUT.md": "fa3feabda54430ad78d09e97d65f900a9a7225123dc6378c65ace24efb3d5fd8",
     "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "fda7778b6d9a6fef9f4ac4418a1027e5aa5754d3d41ed9ad7e0b3193451c659c",
     "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "60fd88d798d3d84fe1c972d22d7e16ceca8ce7b7e25b8a05a758a296f5428e1d",
-    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "f06f1f9e96c30b6074e50f9992b50401bf7885a7c114bad96ef5ae431280a8b5"
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "95ceb1bedbc53c07fbb10a091083285214275fc3e5cfbdefae3bee1dd189b874"
   },
   "source_sha256": {
-    "verify_familiar_chain.py": "32fff61899cc1336ebc0e3c40abf2fa767b74a3c68238d4dd2a03e802a2397c9",
-    "verify_familiar_chain_accuracy.py": "5f520c58e6e00438a1e5715fda3a56a331d1dbebe0be938eae1aacd4cd72448c",
-    "verify_familiar_chain_cross_rank.py": "cffb11bb7424cc3d57b3b7ce2ef8a485d237be267d7ccb6e1e891f9e20507312",
-    "verify_familiar_chain_sharpness.py": "f38d3864d017e815f2e8c6e91cefacdc7abe3d4652a577d426c7aa60ba0a993b",
-    "verify_familiar_switch_frozen_bound.py": "84528a7f45ce2214b6d594dfcf24c36186d32f8549be2c6dc824229ebe72507d",
-    "verify_familiar_switch_frozen_equivalence.py": "013627d73cc0accc383c38de3b41df4336b02dc3e2ad1067a3e6a88e7fe8443b",
-    "verify_familiar_switch_frozen_information.py": "9587614ec13e0d436825f389b32223fe3f73cba2c88951ef24c65cb383c8c12e",
+    "verify_familiar_chain.py": "a4e1fd9729a096e3b063b0548702185337645d6504f4d9c99ff8f2efaf26de47",
+    "verify_familiar_chain_accuracy.py": "d54229cece8992af24a5611e3dea162159ee009ec227122d7d33251622e73e3d",
+    "verify_familiar_chain_cross_rank.py": "0255bdb7e3c3219ac60ec91b28a44be711d9a991e481d631a6d40ebb5b93070c",
+    "verify_familiar_chain_sharpness.py": "8d909eea1ee7ef45b210e276d7fc192a44cecf4c9c3a32469d7e314b02653062",
+    "verify_familiar_switch_frozen_bound.py": "20857e956f559b07a9073439fa0a2fe33a4e3ffbe8120f9ca54f8fdaf6cf92b3",
+    "verify_familiar_switch_frozen_equivalence.py": "8b21759959e5954a9ee04cdc9e18caf5de6ff20c503e1ea2d212ebbba72368e6",
+    "verify_familiar_switch_frozen_information.py": "66e619c026341ca1d15c01bcae828b4b1a1f46208286efe9b031ab1821e4f1c1",
     "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397",
-    "verify_familiar_switch_preparation_free_information.py": "b918cb6e020b8d61b3845168e3552253ab6b7d430bf7d62ae6ecfb7de187b02d",
-    "verify_familiar_switch_preparation_free_unknown_sampling.py": "ce3345da0b2a57f70cb1da645d047192af147cc03264bd74118273d2933a64aa",
-    "verify_familiar_switch_preparation_free_unknown_tilt.py": "c634034c37854b123bf8fe16e1ccbddbbac2155e560e09f1f2996a16f69343db",
-    "verify_switch_control_scope.py": "8125707b1a8bf9e4b69853f0bc787c8abd0a0109cbfe0ba61307874eaa2a03c9",
-    "verify_switch_physical_core.py": "3f802055585b5d56a453a2d38c199ada16d7938a06ece9427ff4013b3b0deace"
+    "verify_familiar_switch_preparation_free_information.py": "da2b8f32077e14375fe164c6dc908f884bc00f1e599ba0482ae12d192cd31916",
+    "verify_familiar_switch_preparation_free_unknown_sampling.py": "f21cc12385a484663ccac10c80a80f40dff5647c58e759938fa33e4ce6dc5769",
+    "verify_familiar_switch_preparation_free_unknown_tilt.py": "eb0668572d167560e8a8c036ba8414edd2d147e71db15d62ce9fc47c3175dd0d",
+    "verify_switch_control_scope.py": "d566b3e981fbecf739e9026f0ccc9b3117a9d95cba89d42c701e87f96849e8aa",
+    "verify_switch_physical_core.py": "bca0bd5beda68f13dfe7dc876b20b74f248d66faa8d3c167802f080a09c22570"
   },
   "status": "PASS",
   "versions": {

@@ -16,7 +16,7 @@ import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {'reports/switch_physical_core.json':
-          '2fe509fd39d9b2c02e5249b48e4c2bc6641182808ecbba822166a666e2ea6e0a'}
+          '0d5bd7b74cab9a927305bc89da9bbc258382cb0dd4fb555eb8db0e61ca7401a8'}
 PROOFS = {
     'docs/FAMILIAR_SWITCH_THREE_TIME_BOUNDARY.md': 'dd8b25351d147ad2020f73935acba651e789c0185cc758aa19daf808ce6c4ffd',
     'docs/FAMILIAR_SWITCH_SIGNED_CONTROL_BOUNDARY.md': 'b2131d99825f5268400d801ea8be352ef8ece92e27399af55726a6ea2f41763f',
@@ -312,7 +312,7 @@ def main():
               'arithmetic': 'Exact rational and algebraic matrices and symbolic identities; no floating point or search',
               'symbolic_certificate': symbolic, 'exact_fixtures': fixtures, 'finite_signed_menu': menu,
               'source_sha256': sources, 'proof_snapshot_sha256': proofs, 'input_report_sha256': INPUTS,
-              'limitations': 'Mathematical checks do not establish sensor nondisturbance, a thermodynamic implementation, literature priority or PRL significance.'}
+              'limitations': 'Mathematical checks do not establish sensor nondisturbance, a thermodynamic implementation, literature priority or scientific significance.'}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2, sort_keys=True)+'\n')
     print(f'PASS: {CHECKS} exact control-scope checks -> {args.output}')

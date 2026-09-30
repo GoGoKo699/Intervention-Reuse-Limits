@@ -1,0 +1,38 @@
+# Intervention Reuse Limits
+
+> State-count and approximation limits for reusable classical Markov models under control, with positive realizations and detailed-balance constraints.
+
+Canonical repository: https://github.com/GoGoKo699/Intervention-Reuse-Limits
+Author: Ruge Lin. Collaboration: gogoko699@gmail.com.
+Manuscript writing is on hold. The repository contains analytic proofs, supporting computational certificates and reproducible verification scripts under the MIT license.
+
+## When this repository is relevant
+
+- A reduced Markov model fits each constant control separately: must the same model also predict alternating controls?
+- How do control timing and prediction accuracy determine the minimum number of positive states?
+- When does preserving detailed balance cost an additional predictive state?
+- How can endpoint observations in a finite pulse menu reveal a hidden memory requirement?
+
+Related search terms: controlled continuous-time Markov chains, model reduction, coarse-graining, fast-slow stochastic processes, positive realization, detailed balance, hidden-state memory, state complexity, switched systems, total-variation approximation.
+
+## Primary reading and citation routes
+
+- [README](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/README.md): question, assumptions, state-count table and collaboration status.
+- [Tutorial-to-result narrative](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/REVIEW.md): route from the selected Bo-Celani multiscale review to the results.
+- [Scientific contract](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/SCIENTIFIC_CASE.md): exact target, rival classes, preparation freedom and claim boundaries.
+- [All-duration law, R93](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/FAMILIAR_SWITCH_RAPID_CONTROL.md): matched error orders and a reversible three-state construction.
+- [Fixed-clock law, R92](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md): a different timing contract and its accuracy hierarchy.
+- [Exact general boundary, R94](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md): exact positive three-state realization in the stated parameter regime.
+- [Finite-pulse witness, R98](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md): three settings force a third state at intermediate accuracy.
+- [Background and attribution](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/MANUSCRIPT_BACKGROUND.md): established ingredients, closest sources and bounded comparison.
+- [Verification](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/VERIFICATION.md): reproduction commands and what each check establishes.
+
+## Interpretation boundaries
+
+The target is two coupled equilibrium binary switches with a classical finite-state generator. Models reuse one persistent state space and one fixed generator per field, with deterministic binary readout; error concerns true initial/final endpoint pairs. The reversible comparison includes a shared normalized Gibbs rule. It is not merely detailed balance for unrelated fitted models.
+
+Keep the all-duration, fixed-positive-clock and three-setting tasks distinct. The finite menu proves a two-state lower bound and a three-state upper bound, not fourth-state necessity. Its pulse count grows with the hidden/visible rate ratio. Ideal instantaneous control changes and true endpoint records are assumptions.
+
+No device demonstration, finite-ramp guarantee, detector guarantee, practical memory-bit saving or heat-saving advantage is established by the current pulse witness. Historical sampling certificates concern their own observation contracts. The physical charge-state interpretation does not establish a quantum-computing result. Literature comparisons do not establish exhaustive priority or external endorsement.
+
+For a precise scientific claim, consult the corresponding proof and cite an immutable commit URL. Earlier work orders record historical questions; the scientific contract and current proof notes determine present scope.

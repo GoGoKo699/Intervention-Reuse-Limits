@@ -19,13 +19,13 @@ import verify_familiar_switch_frozen_information as base
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_switch_preparation_free_unknown_tilt.json":
-        "619b56d7bd966608f104299c39144163f4fce58005198740756840169edabd4a",
+        "79fbbd35de7dbdb8354d8808e320d8e936e186a49e8c673931f620d622e09195",
     "reports/familiar_switch_preparation_free_unknown_sampling.json":
-        "4faf794eaad6092ef34916e8cf38173c04f3c8aa7a6df711d2081884dbbc7310",
+        "8aaa81c5bfc7e6b405693d3b536f1d09043fc6df25a86a9536848a629944d7e6",
     "reports/familiar_switch_frozen_information.json":
-        "766adef9a912231a30e8c4675cec5353bdbd11e31767d8151292006f9c223d71",
+        "c97e9967918b04617ad362811145fe490ba959418630e5f00b6674fcda176592",
 }
-HELPER_SHA256 = "9587614ec13e0d436825f389b32223fe3f73cba2c88951ef24c65cb383c8c12e"
+HELPER_SHA256 = "66e619c026341ca1d15c01bcae828b4b1a1f46208286efe9b031ab1821e4f1c1"
 PROOFS = {
     "docs/FAMILIAR_SWITCH_PREPARATION_FREE_INFORMATION.md":
         "5fdfc6bc4a373f94a81c61f8fd97e0a684bb8275f75a3b19a58f0bf7d633c457",

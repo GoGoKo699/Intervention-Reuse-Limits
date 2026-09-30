@@ -12,6 +12,10 @@ Markov models and lower bounds against every smaller admissible model.
 The leading hidden lag needs a third state under rapid control. Preserving
 equilibrium structure at finer accuracy needs a fourth.
 
+**Manuscript writing is currently on hold.** Researchers interested in
+collaboration are welcome to contact Ruge Lin at
+[gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+
 ## Start from one tutorial
 
 The teaching anchor is **Stefano Bo and Antonio Celani,
@@ -112,7 +116,8 @@ n=\lceil r/2\rceil,\qquad A=\frac nr,\qquad
 \mathcal W_r=\{L_A,\ H_A,\ (L_{1/r}H_{1/r})^n\}.
 ```
 
-Every reusable two-state model obeys an exact multiplication rule for its
+Every reusable two-state model with one state per visible sign obeys an
+exact multiplication rule for its
 conditional contrasts. The target violates that rule at order
 $`r^{-1}`$. A reversible three-state model has error $`O(r^{-2})`$
 on the same menu. Thus these three settings already require the third
@@ -140,11 +145,13 @@ make check
 ```
 
 The physical model, endpoint task and theorem scope are frozen.
-**Manuscript writing is on hold and remains the final phase.** Ideal
-field jumps and true endpoint records are assumptions; finite-ramp,
+Ideal field jumps and true endpoint records are assumptions; finite-ramp,
 detector, sampling, hardware-bit and heat-saving guarantees are not
 established for this menu. The conclusions concern predictive states,
 not a demonstrated device advantage.
+
+For search and assisted reading, [llms.txt](llms.txt) identifies relevant
+research questions, canonical proof links and the limits of the results.
 
 [Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) ·
 [Publication status](docs/PUBLICATION_SCOPE.md) · [Research history](docs/RESEARCH_HISTORY.md) · [MIT license](LICENSE)

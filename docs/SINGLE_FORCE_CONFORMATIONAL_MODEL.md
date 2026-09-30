@@ -117,4 +117,4 @@ These results turn each finite prediction certificate into a nonzero neighborhoo
 
 The force construction answers a specific modeling question: a single conventional mechanical control can have the required thermodynamic and kinetic effects, with ordinary parity fixed by retained configurations. This is more specific than an abstract local-balance ratio, but remains a stipulated mesoscopic network.
 
-A credible PRL case still needs the quantitative prediction result to matter within such a model class. A small certified state advantage is directly relevant; a feasible molecular design, useful error tolerance, measurement cost and a microscopic derivation would be further achievements. Neither this interpretation nor a bibliography alone establishes those claims.
+The quantitative prediction result still needs a consequential interpretation within such a model class. A small certified state advantage is directly relevant; a feasible molecular design, useful error tolerance, measurement cost and a microscopic derivation would be further achievements. Neither this interpretation nor a bibliography alone establishes those claims.

@@ -72,7 +72,7 @@ The complete shared-control three-versus-four positive-realization theorem
 is the candidate contribution. No priority claim follows from a bounded
 source audit; the Falk full text remains an explicit access gap.
 
-**PRL readiness remains unestablished.** The next substantive question is
+**broad scientific significance remains unestablished.** The next substantive question is
 whether the complete theorem expresses a useful general constraint on
 equilibrium model reduction, beyond this exact benchmark. A concrete next
 analysis should test whether an existing simultaneous reversible-realization

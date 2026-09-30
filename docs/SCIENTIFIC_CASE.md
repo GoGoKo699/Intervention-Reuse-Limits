@@ -99,7 +99,8 @@ third-state window on just three settings. The train has
 $`2\lceil r/2\rceil`$ segments, so its length is not fixed as $`r`$ grows.
 
 The fourth-state obstruction is separate. With three states and binary
-readout, one sign identifies a singleton state. Detailed balance then
+readout, one sign identifies a singleton state. Detailed balance with the
+shared Gibbs rule then
 forces a reverse-order return identity that the target violates in both
 signs. Two transfers of hidden response make the seven-word violation
 quadratic in $`r^{-1}`$. A general positive three-state predictor is exact
@@ -150,9 +151,8 @@ No new simulation or numerical verifier is needed for this guide.
 **The pre-drafting evidence package is ready for a focused theory
 manuscript.** The selected analytic questions are resolved, the claim and
 assumptions are explicit, and the closest-source distinction is stated at
-the level supported by the existing comparison. The consistency pass found
-stale status prose, which has since been consolidated; it identified no
-unresolved mathematical prerequisite for this bounded claim.
+the level supported by the existing comparison. No unresolved mathematical
+prerequisite was identified for this bounded claim.
 
 The subsequent [full sanity audit](FINAL_SANITY_AUDIT.md) independently
 reviewed the central proof chain and reran the complete verification

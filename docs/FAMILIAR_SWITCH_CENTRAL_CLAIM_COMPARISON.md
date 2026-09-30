@@ -12,7 +12,7 @@ positive realizations, equilibrium-preserving reduction, and warnings
 about misleading thermodynamic interpretations of reduced models all
 have substantial precedents. The lower identity by itself is elementary.
 The sources inspected below do not supply the complete separation, but
-that bounded finding does not establish priority or PRL-level significance.
+that bounded finding does not establish priority or broad scientific significance.
 
 ## The claim being compared
 
@@ -125,7 +125,7 @@ showing spurious irreversibility would overstate it. The named primary
 results do not presently invalidate the combined claim, with the Falk
 full-text limitation stated above.
 
-PRL readiness remains unestablished. The unresolved issue is whether the
+broad scientific significance remains unestablished. The unresolved issue is whether the
 state-count obstruction changes an important modeling practice or
 illuminates a wider class of systems enough to justify that level of
 significance. More detector assumptions or smaller numerical error bars

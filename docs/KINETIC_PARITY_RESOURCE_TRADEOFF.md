@@ -158,4 +158,4 @@ The rigorous distinction is between ordinary detailed balance on retained config
 
 The involution in this theorem is mathematically explicit. A natural mechanical, chemical or other device realization with that parity has not been supplied. Neither zero stationary generalized entropy production nor ordinary stationarity implies zero total entropy production during a changing protocol. No heat, work, sample-complexity or stationary Shannon-entropy lower bound follows here.
 
-The target still contains a constructed address-and-table system. The two-field horizon bound does not supply a small certified example at a useful tolerance. Establishing such an example, or verifying the separation in a recognizable physical model class, remains important to the PRL exploration. Manuscript drafting stays deferred.
+The target still contains a constructed address-and-table system. The two-field horizon bound does not supply a small certified example at a useful tolerance. Establishing such an example, or verifying the separation in a recognizable physical model class, remains important to the state-cost exploration. Manuscript drafting stays deferred.

@@ -100,4 +100,4 @@ or initial-readout resource is explicit. The proof is substantially simpler
 than the earlier seven-word invariant, and its selected deterministic gap
 is tightly bracketed. Statistical efficiency, implementable preparation
 and the closest-source comparison remain scientific priorities. This
-checkpoint alone does not establish PRL readiness.
+checkpoint alone does not establish broad scientific significance.

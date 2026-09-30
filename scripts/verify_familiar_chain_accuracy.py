@@ -22,7 +22,7 @@ from math import factorial
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_chain_sharpness.json":
-        "71bfd5baff344261801b13abc7d0bb629430c1b965ce2e6b31a034cffe81ec56"
+        "ac1f75e25443a7d72f0f72b0f78b62cd6fd09dbf0beca5fdd2d7fb0e21dfff62"
 }
 PROOFS = {
     "docs/FAMILIAR_CHAIN_TWO_FIELD_ACCURACY.md":

@@ -1,6 +1,6 @@
 # Kinetic freedom, word memory and the time-reversal boundary
 
-[Resource and parity comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [General kinetic interface](GENERAL_KINETIC_INTERFACE.md) · [General interface entropy bound](GENERAL_INTERFACE_ENTROPY_BOUND.md) · [Generalized-reversal theorem](GENERALIZED_REVERSAL_PREDICTION.md) · [Earlier PRL source audit](PRL_EXPLORATION_SOURCE_AUDIT.md)
+[Resource and parity comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [General kinetic interface](GENERAL_KINETIC_INTERFACE.md) · [General interface entropy bound](GENERAL_INTERFACE_ENTROPY_BOUND.md) · [Generalized-reversal theorem](GENERALIZED_REVERSAL_PREDICTION.md) · [Earlier state-cost source audit](STATE_COST_EXPLORATION_SOURCE_AUDIT.md)
 
 **Primary-source audit, 23 September 2026.** The most consequential comparison is with reversible higher-order Markov models. Their word-state representations need not obey ordinary detailed balance, although the represented sequence is time reversible. Consequently, a lower against ordinary reversible predictors does not automatically extend to predictors with a nontrivial state-reversal involution, or imply a convention-independent physical dissipation cost.
 
@@ -125,7 +125,7 @@ The community-supported ingredients in D–F are rate-ratio thermodynamics and i
 
 ### What the inspected sources do not combine
 
-The closest comparisons are complementary: G compares a generator with its additive reversibilization, H and J turn relative entropy into observable error, and I supplies reset renewal. None of these inspected statements directly supplies the repository's combination of an interface-only, all-horizon, all-bounded-protocol endpoint estimate and a same-state ordinary-reversible comparator. This is a precise comparison of inspected statements, not evidence of exhaustive priority. The ordinary path-entropy foundation from Seifert (2005) is documented in the [earlier audit](PRL_EXPLORATION_SOURCE_AUDIT.md).
+The closest comparisons are complementary: G compares a generator with its additive reversibilization, H and J turn relative entropy into observable error, and I supplies reset renewal. None of these inspected statements directly supplies the repository's combination of an interface-only, all-horizon, all-bounded-protocol endpoint estimate and a same-state ordinary-reversible comparator. This is a precise comparison of inspected statements, not evidence of exhaustive priority. The ordinary path-entropy foundation from Seifert (2005) is documented in the [earlier audit](STATE_COST_EXPLORATION_SOURCE_AUDIT.md).
 
 The [general interface entropy theorem](GENERAL_INTERFACE_ENTROPY_BOUND.md) proves the extension from exponential sensitivities to (1): the return rate remains at least $`kb_-`$ and the injection density is bounded by $`k e^{2H}b_+`$. More generally, its endpoint bound needs only a positive return lower bound, a stationary-law-dominated injection upper bound and a controlled initial hidden density. The common equilibrium ratio is needed separately to make the full comparison model reversible. A whole-path relative-entropy bound uniform over arbitrarily long times is not claimed.
 
@@ -153,4 +153,4 @@ The [capped kinetic-interface separation](CAPPED_KINETIC_INTERFACE_SEPARATION.md
 
 All ten selected sources were opened in full text and the listed sections were inspected. The Bacallado file is a primary electronic reprint with pagination differing from the journal; Lee–Kwon–Park was inspected as its explicitly identified preprint, not as the inaccessible publisher PDF. The other links identify the primary article/manuscript versions used. No review, search snippet, lecture note or secondary summary substitutes for a key statement.
 
-The search covered kinetic barriers, local detailed balance, observable-response information inequalities, reset renewal, generalized reversal and higher-order Markov representations. It was targeted rather than exhaustive. Neither the number of papers nor the absence of a matching theorem among them certifies novelty, broad physical applicability or PRL suitability.
+The search covered kinetic barriers, local detailed balance, observable-response information inequalities, reset renewal, generalized reversal and higher-order Markov representations. It was targeted rather than exhaustive. Neither the number of papers nor the absence of a matching theorem among them certifies novelty or broad physical applicability.

@@ -1,6 +1,6 @@
 # Why the finite observation certificate remains poorly conditioned
 
-[Finite construction](FINITE_REVERSIBILITY_ADVANTAGE.md) · [Sharper Gram obstruction](FINITE_GRAM_ROBUSTNESS.md) · [Research roadmap](PRL_EXPLORATION.md)
+[Finite construction](FINITE_REVERSIBILITY_ADVANTAGE.md) · [Sharper Gram obstruction](FINITE_GRAM_ROBUSTNESS.md) · [Research roadmap](STATE_COST_EXPLORATION.md)
 
 **Research boundary, 23 September 2026.** The small state advantage uses six distinct kinetic labels and exact nonnegative diagonal selectors. Within this particular polynomial-selector construction, degree ten is necessary, and the unique selectors of that degree become large at permitted off-grid rival barriers. This identifies a limitation of the present proof architecture. It is not a lower bound on attainable measurement precision, the best reversible prediction error, or all possible observation certificates.
 

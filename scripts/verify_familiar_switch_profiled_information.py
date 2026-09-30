@@ -18,10 +18,10 @@ import verify_familiar_switch_frozen_information as base
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_switch_frozen_information.json"
-INPUT_SHA256 = "766adef9a912231a30e8c4675cec5353bdbd11e31767d8151292006f9c223d71"
+INPUT_SHA256 = "c97e9967918b04617ad362811145fe490ba959418630e5f00b6674fcda176592"
 PROOF = "docs/FAMILIAR_SWITCH_PROFILED_ACQUISITION.md"
 PROOF_SHA256 = "351b33f58bc3738d44ee418cfa0fb309d1b335f4f964e9ca807e97b2e6dbb184"
-HELPER_SHA256 = "9587614ec13e0d436825f389b32223fe3f73cba2c88951ef24c65cb383c8c12e"
+HELPER_SHA256 = "66e619c026341ca1d15c01bcae828b4b1a1f46208286efe9b031ab1821e4f1c1"
 RHO = (F(1, 4), F(1, 4), F(1, 2))
 SIGNS = (F(1), F(1), F(-1))
 FIELDS = (F(0), F(7, 9))

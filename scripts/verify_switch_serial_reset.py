@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 INPUT = 'reports/switch_percent_kinetics.json'
-INPUT_SHA = 'c75444907d818449f50b07ae765d979331febef1db836f346157676ac0676c05'
+INPUT_SHA = 'e2ddaf0510da59b7f474a57b29913d703b2b4b60c45544f059c0d21cc9af30a2'
 PROOFS = {
     'docs/FAMILIAR_SWITCH_SERIAL_SAMPLING.md': '9a3bbbbaf70464656e25bce6ac1f9881f422d91597b347b68b3a2c88a59f3657',
     'docs/FAMILIAR_SWITCH_FINITE_RESET.md': '7f0c754807e9891e738bc58fb4f6a242462c9ce423218ba7624856b8be796965',

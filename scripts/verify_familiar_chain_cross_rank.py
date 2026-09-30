@@ -20,7 +20,7 @@ import verify_familiar_chain_accuracy as base
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_chain_accuracy.json":
-        "d82ff88c482e572eb975713ed5b4b81160e2d9493a2636e575775df52fe6da1e"
+        "7a51577858248c9a21ac5e2f41a005c83e2f9cf3c563b420d44a2b7b3fe06716"
 }
 PROOFS = {'docs/FAMILIAR_CHAIN_PRECISION_FRONTIER.md': 'ce62da3cbf368bc71a0829066d9c1c639bc7701402c701f12784b45ed21d0df6'}
 DELTA = F(1, 500_000)

@@ -26,7 +26,7 @@ Equation (30) closes the single-spin means for the selected zero-field nearest-n
 
 Equation (3.2) gives the closed magnetization equation for the directed zero-field chain; its symmetric case is Glauber's equation. Section 2 distinguishes the multiplicative-field rate from the heat-bath rate and notes that a spatially varying field preserves detailed balance for the symmetric dynamics. Section 6.2 treats an infinitesimal field: Eq. (6.4) displays the correlation term that precedes the linear-response approximation. This makes the boundary of the closure claim concrete. The paper does not identify minimum positive realizations of a finite controlled binary-mean task; its directed chain retains the original configuration space.
 
-### C. Coupled receptor conformations have a direct PRL precedent
+### C. Coupled receptor conformations have a direct published precedent
 
 **Monica Skoge, Yigal Meir and Ned S. Wingreen**, “Dynamics of Cooperativity in Chemical Sensing among Cell-Surface Receptors,” *Physical Review Letters* **107**, 178101 (2011), [DOI:10.1103/PhysRevLett.107.178101](https://doi.org/10.1103/PhysRevLett.107.178101). **Access:** full [arXiv:1109.4160v1](https://arxiv.org/pdf/1109.4160v1), especially Eqs. (1)–(6), inspected.
 

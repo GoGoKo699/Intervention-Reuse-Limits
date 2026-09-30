@@ -2,7 +2,7 @@
 
 [Positive selectors](POSITIVE_LABEL_SELECTORS.md) · [Tight-band theorem](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Uniform reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) · [State–entropy-production tradeoff](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [Earlier clock review](FIXED_CLOCK_INTERNAL_REVIEW.md)
 
-**Review date: 23 September 2026. Status: mathematical PASS for the four new proof notes listed below.** A separate internal review role read the complete arguments, checked the operator identities and constants, and traced their use of the existing target, clock-Gram transfer and weighted repair. This is an internal mathematical audit, not external peer review, a novelty certification or an editorial assessment. No manuscript was drafted.
+**Review date: 23 September 2026. Status: mathematical PASS for the four new proof notes listed below.** A separate internal review role read the complete arguments, checked the operator identities and constants, and traced their use of the existing target, clock-Gram transfer and weighted repair. This is an internal mathematical audit, not external peer review or a novelty certification. No manuscript was drafted.
 
 ## 1. Reviewed claims and dependency boundary
 

@@ -135,5 +135,5 @@ and reset. The inherited general three-state construction concerns the
 two retained pair laws. No general three-state upper or state-count
 separation is asserted for the full eight-read transcript. This is a
 conditional instrument and calibration result supporting the existing
-score test. Device feasibility and PRL readiness remain open, and
+score test. Device feasibility and broad scientific significance remain open, and
 manuscript drafting remains deferred.

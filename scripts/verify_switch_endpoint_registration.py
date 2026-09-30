@@ -16,12 +16,12 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_preparation_free.json': 'fc66764244870e0930a8b15c28947478f99e223647f916dfe8260c3ad5bd0420',
+    'reports/switch_preparation_free.json': '47c010c34eea3d2da53839187d0bcb89c13a3a385444671771f0592ae7515411',
 }
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 PROOFS = {
-    'docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md': '5d5f868688d7d91587ce1fbf39bc1ed88ec24ad8e13bc8d16d6f80f127e1a426',
+    'docs/FAMILIAR_SWITCH_ENDPOINT_REGISTRATION.md': 'd6f2260e835eb74b5ea3c27347a9cfa9117443df8fcc164ef18a642b89c87f36',
     'docs/FAMILIAR_SWITCH_RELATIVE_FORCE_ROBUSTNESS.md': 'd289d736bde8d2abf811f8d235563508e7318896bb8380dda7add1f0a699b010',
 }
 CHECKS = 0

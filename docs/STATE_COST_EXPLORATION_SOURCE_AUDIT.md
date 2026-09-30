@@ -1,10 +1,10 @@
-# Equilibrium prediction and the cost of detailed balance: PRL exploration audit
+# Equilibrium prediction and the cost of detailed balance: source audit
 
 **Historical checkpoint notice, 23 September 2026.** The subsequent [kinetic/parity audit](KINETIC_PARITY_SOURCE_AUDIT.md) and [generalized-reversal theorem](GENERALIZED_REVERSAL_PREDICTION.md) resolve the previously open parity boundary: the polynomial predictor can obey generalized detailed balance. References below to an unavailable generalized extension describe this earlier checkpoint. The [current resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) keeps ordinary and generalized reversal distinct and does not assert a universal thermodynamic dissipation cost.
 
 [Repository overview](../README.md) · [Fixed-clock theorem](FIXED_CLOCK_UNCAPPED_REVERSIBILITY_LOWER_BOUND.md) · [Uniform reversibilization](ENTROPY_PRODUCTION_REVERSIBILIZATION.md) · [State–entropy-production tradeoff](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [Fixed-clock source comparison](FIXED_CLOCK_PRIOR_ART.md) · [Binary source comparison](BINARY_OBSERVATION_PRIOR_ART.md) · [Earlier source audit](PRIOR_ART.md)
 
-**Research date: 23 September 2026.** This note audits five core primary papers and one foundational entropy-production paper against the proposed physical claim and identifies research advances that would strengthen a Physical Review Letters case. It is an assessment of scientific scope, not a priority certification or a prediction of editorial acceptance. All six papers were opened in full text; inspection depth is stated below. No manuscript or external correspondence is produced.
+**Research date: 23 September 2026.** This note audits five core primary papers and one foundational entropy-production paper against the proposed physical claim and identifies questions about its scope and consequences. It assesses scientific scope without certifying priority. All six papers were opened in full text; inspection depth is stated below. No manuscript or external correspondence is produced.
 
 ## 1. The internally reviewed claim
 
@@ -146,7 +146,7 @@ Two priorities identified during this audit have now produced internally reviewe
 
 **Make the effect visible at controlled finite precision.** A modest model with a rigorous reversible lower at a stated tolerance, together with an explicit smaller stationary predictor, would supply an interpretable instance of the mechanism. The relevant advance is a certified gap with realistic signal and protocol budgets, not a large simulation. Such an example complements the asymptotic theorem but does not replace the arbitrary-rival lower.
 
-The present evidence supports a stronger PRL case than the state-count result alone: a controlled prediction resource tradeoff with an explicit equilibrium reference and finite-irreversibility upper realization. The main unresolved significance question is its reach beyond the particular kinetic interface and engineered target, together with the scale of the unavoidable cost. This assessment does not certify novelty or journal fit, and manuscript drafting remains deferred.
+The evidence adds a controlled prediction resource tradeoff, with an explicit equilibrium reference and finite-irreversibility upper realization, to the state-count result. The main unresolved significance question is its reach beyond the particular kinetic interface and engineered target, together with the scale of the unavoidable cost. This assessment does not certify novelty, and manuscript drafting remains deferred.
 
 ## 6. Audit boundary
 

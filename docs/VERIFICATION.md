@@ -65,11 +65,10 @@ to exact source bytes. Review that dependency chain before changing a
 bound proof, even for formatting. The preserved checkpoint verifier is an
 immutable regression baseline.
 
-The [full sanity audit](FINAL_SANITY_AUDIT.md) records the complete local
-run: all 81 reports passed and agreed with saved mathematical results;
-only Python-version metadata differed (saved 3.13.5, local 3.12.14).
-That is a dated verification record, not a claim that every later editorial
-change reran the suite locally. Hosted results are available in
+The [release sanity audit](FINAL_SANITY_AUDIT.md) records the complete
+local run and the preservation checks against its named baseline.
+Scientific report payloads agree; local and hosted Python-version metadata
+may differ. Hosted results are available in
 [GitHub Actions](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions);
 match the run's commit to the version being inspected.
 

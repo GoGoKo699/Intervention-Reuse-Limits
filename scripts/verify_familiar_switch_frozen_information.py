@@ -17,7 +17,7 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_switch_frozen_equivalence.json"
-INPUT_SHA256 = "eaaa7cde30932f7d6a6b825e36eeec2917536dc9f27cb5bf87def8a8df5cc29c"
+INPUT_SHA256 = "22d4c933c424c81632dceb3a90a221ed18de3c30cda624fd4a21a6f0d9407a30"
 PROOF = "docs/FAMILIAR_SWITCH_FROZEN_MEASUREMENT.md"
 PROOF_SHA256 = "d8df8dd7b1ce248ff8bdbcd5d1d95f8ef371250c47a8eef4fc8f85f4184097b3"
 ORDER = 64

@@ -136,7 +136,7 @@ runtime or heat-cost saving. Artificial thermodynamic conclusions from
 coarse models already have the precedents discussed in the central
 comparison. The current evidence supports developing a precise theorem
 about controlled model size and observation scope. It does not yet
-establish a broad practical impact or a PRL-level significance case.
+establish broad practical impact or broad scientific significance.
 
 The bounded audit found no inspected theorem that directly supplies the
 complete separation. That is a statement about compared hypotheses and

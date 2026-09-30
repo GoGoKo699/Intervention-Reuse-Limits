@@ -1,4 +1,4 @@
-# PRL exploration: a short memory test and its calibration boundary
+# State-cost exploration: a short memory test and its calibration boundary
 
 [Research dossier](RESEARCH_DOSSIER.md) · [Claim ledger](CLAIM_LEDGER.md) · [Observable preparation](FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md) · [Calibration precision](FAMILIAR_SWITCH_CALIBRATION_SAMPLING_COST.md) · [Readout boundary](FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md) · [Verification](VERIFICATION.md)
 
@@ -973,7 +973,7 @@ and [internal review](FAMILIAR_SWITCH_PERCENT_KINETIC_INTERNAL_REVIEW.md)
 separate standard perturbation and embedding tools from the local
 snapshot construction and certified physical error box.
 
-The [kinetic-interface source comparison](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md) and [internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md) distinguish structural conditions and conservative perturbation estimates from demonstrated device capabilities. The [weaker-field comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and [review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) preserve the operating-point argument and established statistical tools. The [earlier statistical comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) retains the calibration-information attribution. The unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation, a complete priority determination, or PRL readiness. Manuscript drafting stays deferred.
+The [kinetic-interface source comparison](FAMILIAR_SWITCH_KINETIC_INTERFACE_SOURCE_AUDIT.md) and [internal review](FAMILIAR_SWITCH_KINETIC_INTERFACE_INTERNAL_REVIEW.md) distinguish structural conditions and conservative perturbation estimates from demonstrated device capabilities. The [weaker-field comparison](FAMILIAR_SWITCH_WEAK_FIELD_SOURCE_AUDIT.md) and [review](FAMILIAR_SWITCH_WEAK_FIELD_INTERNAL_REVIEW.md) preserve the operating-point argument and established statistical tools. The [earlier statistical comparison](FAMILIAR_SWITCH_UNCALIBRATED_SCORE_SOURCE_AUDIT.md) retains the calibration-information attribution. The unresolved Falk full-text comparison remains open. Internal review and finite certificates are not external validation or a complete priority determination. Manuscript drafting stays deferred.
 
 ## 7. Preserved results and provenance
 

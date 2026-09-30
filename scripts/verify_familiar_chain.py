@@ -14,7 +14,7 @@ import platform
 import sympy as sp
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUTS = {'reports/switch_control_scope.json': '2a2ff2b6abbd6f4d649d7464e79f2ff12f01b05bdc0c731aacadd23a186bf9f6'}
+INPUTS = {'reports/switch_control_scope.json': 'b2fdb053e2e6d2229e218a4b6d1e9446b79a83c1c6f6911dc06c5f763e0d9fdd'}
 PROOFS = {'docs/FAMILIAR_CHAIN_POSITIVE_REALIZATION.md': 'a0c8be3f812eb526c6de8cd5e3e384bff3e72154c616a2ec8c7b7f19c1925e71', 'docs/FAMILIAR_CHAIN_REVERSIBLE_BOUND.md': '861a1eae229c64c8248f3cf8913e1e1235565e1b1472957ed075792b965cf982', 'docs/FAMILIAR_CHAIN_SIX_STATE_REALIZATION.md': 'ae867fae6038abccfe57d516568b85668b2838d1a8f1aa8fcef69f1ee438220c', 'docs/FAMILIAR_CHAIN_PASSIVE_REALIZATION.md': '6426ff59c347c6354362fc1cb602fb8c7b53b9e96da6d8d27f392049fbc2e4bd'}
 
 

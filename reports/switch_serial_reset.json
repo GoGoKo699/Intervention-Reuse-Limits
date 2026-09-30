@@ -127,11 +127,11 @@
   "floating_arithmetic_used": false,
   "optimization_used": false,
   "source_sha256": {
-    "verify_switch_serial_reset.py": "24f6b566364b0e683f435a3de97199a85b54932b916cd3b39c5f6b3fd1a44e3a",
+    "verify_switch_serial_reset.py": "a3ee7cc8f493dc3d364e6377db678de651ed55d6810dfcd229e04d15eb3b9548",
     "verify_familiar_switch_margin.py": "e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397"
   },
   "input_report_sha256": {
-    "reports/switch_percent_kinetics.json": "c75444907d818449f50b07ae765d979331febef1db836f346157676ac0676c05"
+    "reports/switch_percent_kinetics.json": "e2ddaf0510da59b7f474a57b29913d703b2b4b60c45544f059c0d21cc9af30a2"
   },
   "imported_repository_verifiers": [
     "verify_familiar_switch_margin.py"
@@ -150,10 +150,10 @@
     "docs/FAMILIAR_SWITCH_UNCALIBRATED_SCORE_TEST.md": "fda7778b6d9a6fef9f4ac4418a1027e5aa5754d3d41ed9ad7e0b3193451c659c",
     "docs/FAMILIAR_SWITCH_DETECTOR_INFORMATION_COST.md": "f019e9d52bfb532b57b64c4c3196e39cd503e138745ff27f30c4d3423197fcd0",
     "docs/FAMILIAR_SWITCH_WEAK_FIELD_ROBUSTNESS.md": "60fd88d798d3d84fe1c972d22d7e16ceca8ce7b7e25b8a05a758a296f5428e1d",
-    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "f06f1f9e96c30b6074e50f9992b50401bf7885a7c114bad96ef5ae431280a8b5",
+    "docs/FAMILIAR_SWITCH_WEAK_FIELD_SCORE_TEST.md": "95ceb1bedbc53c07fbb10a091083285214275fc3e5cfbdefae3bee1dd189b874",
     "docs/FAMILIAR_SWITCH_KINETIC_TOLERANCE.md": "290f35a9f9e042a308a7a6e2ad000c57c846bd23136c4d6f089ee09edaf97acf",
     "docs/FAMILIAR_SWITCH_KINETIC_SCORE_TEST.md": "9b7758b293968e83ebf5d2f056e9ae7f815cb1ff30f97afec5788cc66d2ff563",
-    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "f42f5116f33ba564e03d7d8e92a9f34521dbf4d049c017420f830c4f088f4690",
+    "docs/FAMILIAR_SWITCH_PROTECTED_READOUT.md": "5e096c2259516df0ab8046f090a3fbd1b92fa99ded0c45cf7187d9d98f96c03d",
     "docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md": "d975cfd78f4bc6a8f30d5bcc50f817cde366c01fb30bbae87c539318c6997eb2",
     "docs/FAMILIAR_SWITCH_LOCAL_SNAPSHOT_REALIZATION.md": "24b4fd2245b27318f47986e5c11ae27cf951f3c18e9d8c265a9309e7acdc45a1",
     "docs/FAMILIAR_SWITCH_PERCENT_SCORE_TEST.md": "8e1edab2453e4eb7f843f483a30552e518499e7e768271758aac10eea9cf9255",

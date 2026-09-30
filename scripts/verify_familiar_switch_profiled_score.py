@@ -19,7 +19,7 @@ import verify_familiar_switch_frozen_bound as target
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_switch_frozen_score.json"
-INPUT_SHA256 = "c8d2fe3b26d9594c9887f59b6e5bb49cb616874ee20483f7a3bca06b32218c35"
+INPUT_SHA256 = "2a9b81dec97139d06bb6890319701bdaff9ea07144520fc27dda040352b9860a"
 PROOFS = {
     "docs/FAMILIAR_SWITCH_PROFILED_ACQUISITION.md":
         "351b33f58bc3738d44ee418cfa0fb309d1b335f4f964e9ca807e97b2e6dbb184",

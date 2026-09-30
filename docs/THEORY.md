@@ -305,7 +305,7 @@ checks, not independent validation or a novelty certificate.
 
 ## 10. Status
 
-The model, equations, inverse, and state-count construction are derived here and checked by [the executable verification](VERIFICATION.md). Their publication-level novelty remains under audit against response theory, controlled lumpability, and nonlinear realization theory. No experimental application, optimal controller, universal compression impossibility, or journal-level claim follows from this note.
+The model, equations, inverse, and state-count construction are derived here and checked by [the executable verification](VERIFICATION.md). Their novelty remains under audit against response theory, controlled lumpability, and nonlinear realization theory. No experimental application, optimal controller, universal compression impossibility, or claim of broad scientific significance follows from this note.
 
 [Finite Accuracy, Sections 9–10](FINITE_ACCURACY.md) adds finite-sample lower bounds against the full analytic Markov surrogate class. The [unrestricted-rate theorem](UNRESTRICTED_RATE_LOWER_BOUND.md) completes the comparison with the constructive upper bounds: the worst-case state requirement grows as the square of the logarithm of inverse tolerance. When active target rates are at most $`3k`$, the corresponding order is a single logarithm. These are coefficient-approximation statements with conservative constants; their publication-level originality remains under audit.
 

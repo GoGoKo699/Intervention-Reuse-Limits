@@ -1,6 +1,6 @@
 # Polynomial prediction under generalized time reversal
 
-[Kinetic and parity resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [Original word-chain upper](BOUNDED_RATE_FINITE_FIELD.md) · [Ordinary-reversibility lower](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Entropy-production scope](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [PRL exploration](PRL_EXPLORATION.md)
+[Kinetic and parity resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [Original word-chain upper](BOUNDED_RATE_FINITE_FIELD.md) · [Ordinary-reversibility lower](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Entropy-production scope](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [state-cost exploration](STATE_COST_EXPLORATION.md)
 
 **Research theorem and physical boundary, 23 September 2026.** Allowing a hidden-state time-reversal involution changes the state-complexity conclusion. The polynomial word predictor can obey generalized detailed balance, with an even actuator, the exact target histogram and the original rate cap. Its controlled response is exactly the same as that of the existing word predictor. Thus the superpolynomial lower for ordinary detailed balance does not extend to this broader notion of equilibrium.
 

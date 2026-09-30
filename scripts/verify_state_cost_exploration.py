@@ -445,7 +445,7 @@ def canonical_label_and_budget_checks() -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output', type=Path, default=Path('reports/prl_exploration.json'))
+    parser.add_argument('--output', type=Path, default=Path('reports/state_cost_exploration.json'))
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     report = {'status': 'PASS', 'versions': {'python': platform.python_version(), 'numpy': np.__version__,

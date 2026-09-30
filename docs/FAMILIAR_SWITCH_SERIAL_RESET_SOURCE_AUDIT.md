@@ -2,7 +2,7 @@
 
 [Serial sampling](FAMILIAR_SWITCH_SERIAL_SAMPLING.md) · [Finite reset](FAMILIAR_SWITCH_FINITE_RESET.md) · [Internal review](FAMILIAR_SWITCH_SERIAL_RESET_INTERNAL_REVIEW.md) · [Earlier kinetic audit](FAMILIAR_SWITCH_PERCENT_KINETIC_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md)
 
-**24 September 2026.** This is a bounded primary-source comparison for the operational extension. It does not certify priority, device feasibility or journal readiness. Manuscript drafting remains deferred.
+**24 September 2026.** This is a bounded primary-source comparison for the operational extension. It does not certify priority or device feasibility. Manuscript drafting remains deferred.
 
 ## Established concentration tools
 

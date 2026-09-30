@@ -1,23 +1,18 @@
-# Current work: consistent mathematical presentation
+# Current work: release preparation
 
 The repository is organized around **Bo–Celani, Option 1**, the selected
 single teaching source. The [overview](../README.md),
 [project narrative](../REVIEW.md) and [documentation map](../docs/README.md)
 lead to the frozen result and its proof dependencies.
 
-Mathematical notation is now formatted consistently throughout the
-Markdown documentation: GitHub inline-math wrappers, fenced displays,
-external equation labels, and table-safe mathematical delimiters.
-Formula and equation-reference comparisons preserve the mathematical
-content. Any changed proof checksum is reviewed and rebound through its
-existing verifier; regenerated reports must preserve their scientific
-payloads. Verifier calculations and saved replay models are unchanged.
-
-The September 22 recovery folder has been removed after confirming that
-all six proofs and its source comparison are integrated. The
-[history map](../docs/RESEARCH_HISTORY.md) identifies their current homes
-and preserves an exact link to the old recovery files. Superseded outage
-and resume instructions are no longer in the current tree.
+The release pass makes the collaboration invitation visible, adds a
+[retrieval guide](../llms.txt), neutralizes old venue-specific filenames
+and status language, and removes duplicated navigation. Literature
+citations, mathematical content and saved replay models are preserved.
+Changed proof and source checksums are reviewed and rebound through the
+existing verifiers; regenerated reports must preserve their scientific
+payloads. The [history map](../docs/RESEARCH_HISTORY.md) retains provenance
+for earlier checkpoints without restoring superseded instructions.
 
 ## Scope and stopping decision
 
@@ -35,8 +30,8 @@ records, not active instructions. The
 content from provenance changes caused by presentation corrections.
 
 Existing authorization covers non-forced publication to public `main`.
-Collaborator contact is not authorized. Journal-target discussion remains
-outside this public research record. Completion requires formula and
-source-logic comparisons, unchanged mathematical report payloads,
-repository checks, exact-commit hosted CI, and live GitHub inspection of
-the reported equations and representative tables and matrices.
+The README invites incoming collaboration emails; sending messages to
+others is not authorized. Completion requires the full existing suite,
+formula and source-logic comparisons, unchanged mathematical report
+payloads, repository checks, exact-commit hosted CI, and inspection of
+the rendered README. No new numerical research is required.

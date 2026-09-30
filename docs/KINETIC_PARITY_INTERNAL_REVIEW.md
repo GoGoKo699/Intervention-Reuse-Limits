@@ -1,8 +1,8 @@
 # Internal review of the kinetic-interface and reversal-parity results
 
-[Resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [Source audit](KINETIC_PARITY_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md) · [Previous internal review](PRL_EXPLORATION_INTERNAL_REVIEW.md)
+[Resource comparison](KINETIC_PARITY_RESOURCE_TRADEOFF.md) · [Source audit](KINETIC_PARITY_SOURCE_AUDIT.md) · [Verification](VERIFICATION.md) · [Previous internal review](STATE_COST_EXPLORATION_INTERNAL_REVIEW.md)
 
-**Review date: 23 September 2026. Status: mathematical PASS for the five proof notes below.** This record distinguishes internal analytic review from finite computational checks, external peer review and source comparison. It does not certify novelty or editorial suitability. No manuscript is drafted.
+**Review date: 23 September 2026. Status: mathematical PASS for the five proof notes below.** This record distinguishes internal analytic review from finite computational checks, external peer review and source comparison. It does not certify novelty. No manuscript is drafted.
 
 The review role compiling this record read the four separately authored interface, capped and resource notes in full. The generalized-reversal note, authored by this role, received complete independent reads from other internal roles, including the coordinating, route and construction reviewers. All reported mathematical reviews passed. “Independent” here describes separate checks within this investigation, not external validation.
 

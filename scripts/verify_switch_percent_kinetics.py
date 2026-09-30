@@ -19,8 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 INPUTS = {
-    'reports/switch_weak_field.json': '480f4e35a2464695744bf7cb0400f8ea5010fe28e3ac6d95b4c767b3ca92f85b',
-    'reports/switch_kinetic_interface.json': 'd39e9720b956c5b1c591d0f7cb83980150276805c8f79d0238baa4283b834eb2',
+    'reports/switch_weak_field.json': 'c8292d6d4a989b28c4888dacd78b355bac76393a212dd8ee88d7cc7f473c6827',
+    'reports/switch_kinetic_interface.json': '2649cbde85dd078aa837d894f5af934182706c8e35f394396b917ad2ea1da774',
 }
 PROOFS = {
     'docs/FAMILIAR_SWITCH_PERCENT_KINETIC_ROBUSTNESS.md': 'd975cfd78f4bc6a8f30d5bcc50f817cde366c01fb30bbae87c539318c6997eb2',

@@ -1,6 +1,6 @@
 # Same-state reversibilization from a stationary entropy-production bound
 
-[State–entropy-production tradeoff](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [Primary-source comparison](PRL_EXPLORATION_SOURCE_AUDIT.md) · [Tight-band fixed-clock lower](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Original model](THEORY.md) · [Bounded-rate prediction upper](BOUNDED_RATE_FINITE_FIELD.md)
+[State–entropy-production tradeoff](STATE_ENTROPY_PRODUCTION_TRADEOFF.md) · [Primary-source comparison](STATE_COST_EXPLORATION_SOURCE_AUDIT.md) · [Tight-band fixed-clock lower](TIGHT_BAND_FIXED_CLOCK_REVERSIBILITY.md) · [Original model](THEORY.md) · [Bounded-rate prediction upper](BOUNDED_RATE_FINITE_FIELD.md)
 
 **Research theorem, 23 September 2026.** In the original intervention model, a predictor with small stationary hidden entropy production has a reversible predictor on exactly the same states, with the same hidden stationary law, actuator histogram and internal exit rates. Their actual controlled means remain uniformly close over every bounded deterministic protocol and every observation horizon. No hidden rate cap or minimum stationary mass is needed for this comparison.
 

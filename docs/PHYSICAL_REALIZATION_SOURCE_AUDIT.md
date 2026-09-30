@@ -4,7 +4,7 @@
 
 **Primary-source assessment, 23 September 2026.** A recognizable model class is a force-controlled conformational network with one gateway configuration, many unresolved configurations and an occupancy readout. Chemical-number and overdamped configurational states have a specified ordinary physical reversal. A single applied force can produce the repository's equilibrium bias and heterogeneous activation rates simultaneously. This is a meaningful kinetic interpretation, but the inspected sources do not turn the constructed hard target family into an experimentally realized molecule or a microscopic device.
 
-Nine primary papers below support different ingredients. The closest structural precedents are the enzyme model of Berezhkovskii et al. and the force-dependent conformational model of Diezemann et al. Bell's law supplies the simplest force parametrization; Dudko–Hummer–Szabo and Falasco–Esposito supply essential limits on its microscopic interpretation. No source is used to certify the complete architecture, novelty or journal suitability. Manuscript drafting remains deferred.
+Nine primary papers below support different ingredients. The closest structural precedents are the enzyme model of Berezhkovskii et al. and the force-dependent conformational model of Diezemann et al. Bell's law supplies the simplest force parametrization; Dudko–Hummer–Szabo and Falasco–Esposito supply essential limits on its microscopic interpretation. No source is used to certify the complete architecture or novelty. Manuscript drafting remains deferred.
 
 ## 1. A precise single-force interpretation
 
@@ -165,4 +165,4 @@ At present, the exact Bell-network translation is a credible mesoscopic interpre
 
 All nine selected papers were accessed in full text and the stated passages inspected. Several were read as identified primary preprints; Bell and Berezhkovskii et al. were read as hosted publisher reprints. Dudko–Hummer–Szabo was read from the actual published PDF downloaded from its repository copy, not inferred from the abstract. Attempts to obtain Evans–Ritchie (1997) full text were unsuccessful in this audit, so it is not used as evidence here. Metadata-only and secondary summaries were not substituted for an inspected result.
 
-The search was targeted, not exhaustive. No physical realization, experimental validation, priority certification or editorial assessment follows merely from these precedents.
+The search was targeted, not exhaustive. No physical realization, experimental validation or priority certification follows merely from these precedents.

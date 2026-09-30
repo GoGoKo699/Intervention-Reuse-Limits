@@ -30,8 +30,7 @@ limits are part of the publication boundary, not new research assignments.
 
 ## 4. Theorem-by-theorem comparison
 
-This heading is retained for the [claim ledger](CLAIM_LEDGER.md)'s existing
-cross-reference. The current comparison is in
+The current comparison is in
 [Manuscript background](MANUSCRIPT_BACKGROUND.md) and the
 [core source comparison](CONTROL_ACCURACY_CORE_ARGUMENT.md#4-the-nearest-theory-already-covers-important-ingredients).
 The [prior-art record](PRIOR_ART.md) retains precedents for earlier result

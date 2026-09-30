@@ -296,4 +296,4 @@ law, protect the observed sector during initial measurement, preserve
 its conditional stationary law, and use the promised detector channel.
 Only the specified two control words and their initial/final bits enter
 the witness. Preparation and readout duration remain unpriced overhead;
-this is not a device demonstration or a claim of PRL readiness.
+this is not a device demonstration or a claim of broad scientific significance.

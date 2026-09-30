@@ -14,7 +14,7 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUT = "reports/familiar_switch_profiled_score.json"
-INPUT_SHA256 = "3f3bbadbf84959a185d5838616ace517a7c19314df74d3e15ca75a002868c058"
+INPUT_SHA256 = "27457ae626a6e991f73327436b08c04a8e2c024ff683f4defe34b975b9264f77"
 PROOFS = {
     "docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION.md": "7572f23aa9670a745e492dc269317459bc5bee8d6b0b5e2994db402b9870bc6b",
     "docs/FAMILIAR_SWITCH_SERIAL_ACQUISITION_SOURCE_AUDIT.md": "0d3008eb83afb86d77f309aded63e4bfdd05980ec1ec4ae4a06351e79cfb7b05",

@@ -373,5 +373,5 @@ The 2.5-million row also allows prediction error $`10^{-4}`$, larger
 than the general three-state predictor's constructive physical
 allowance $`2\cdot10^{-5}`$. The result concerns the two joint snapshot
 laws and their stated model class. It does not establish full
-multitime-law equivalence, an unpromised instrument model, or PRL
-readiness.
+multitime-law equivalence, an unpromised instrument model, or broad scientific
+significance.

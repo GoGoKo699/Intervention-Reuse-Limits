@@ -19,7 +19,7 @@ from sympy.polys.matrices import DomainMatrix
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
     "reports/familiar_chain.json":
-        "4c7073d91d05f8521bb13eaa1687fc7ddd399b87a2f6a372e96b4759ec078476"
+        "95fddbbdfe22d3d62cb6802e3d5491f3d8826aede5ddbeb3be285c2984265b0e"
 }
 PROOFS = {
     "docs/FAMILIAR_CHAIN_REVERSIBLE_REALIZATION.md":

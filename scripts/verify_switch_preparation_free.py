@@ -17,11 +17,11 @@ import platform
 
 ROOT = Path(__file__).resolve().parents[1]
 INPUTS = {
-    'reports/switch_percent_kinetics.json': 'c75444907d818449f50b07ae765d979331febef1db836f346157676ac0676c05',
-    'reports/switch_repeated_readout.json': 'f05fd529f99d4057346b2443d946aa80bd5ef6e96ae87269ae2a86863af567c0',
+    'reports/switch_percent_kinetics.json': 'e2ddaf0510da59b7f474a57b29913d703b2b4b60c45544f059c0d21cc9af30a2',
+    'reports/switch_repeated_readout.json': 'c3842cb0fd99eb69ffbcef61990e9e25da561e6838f1213da03819f9de582e16',
 }
 IMPORTS = {
-    'verify_switch_percent_kinetics.py': 'e2602d398e556f053eb63ac06ead5e53fa34b23fab6f0ae4c37929ff87132f31',
+    'verify_switch_percent_kinetics.py': '8600754fe957f1953f2952936541c8de333b6e3725fd890f2e43f6b4c18a1372',
     'verify_familiar_switch_margin.py': 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397',
 }
 PROOFS = {

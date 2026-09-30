@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 HELPER = 'verify_familiar_switch_margin.py'
 HELPER_SHA = 'e2a3056da26a357c457eeb199bc9dd3d7c2cf5f7bcba8a3b91f1df68e97b5397'
 INPUT = 'reports/switch_serial_reset.json'
-INPUT_SHA = 'f80480e21278e1e8a438beec4e760b286c748eab4765aad66b1c37b204d92ce1'
+INPUT_SHA = 'b5fbc51f7aab305aebed4fb2545b766e7a9902ea82aa5e2ebb3f203301e957bb'
 PROOFS = {
     'docs/FAMILIAR_SWITCH_OBSERVABLE_PREPARATION.md': '3877c41a657bbc1ad019f098536578c6002f00e5725692f7ef6bb34d22e6072d',
     'docs/FAMILIAR_SWITCH_CALIBRATION_READOUT_BOUNDARY.md': '617a6177f3c1c1f7753ae969b0b3e8fa1ca3fc04e8cf25b2952bd6976b15e3e6',

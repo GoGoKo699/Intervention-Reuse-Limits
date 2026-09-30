@@ -118,7 +118,7 @@ Mori derives an exact projected equation with a memory kernel expressed through 
 
 ## 5. Bounded assessment and remaining limits
 
-The inspected sources establish the constituent rank interpretations and projection mechanisms. Their stated results do not supply the paired controlled-predictor minima of the matrix principle. The defensible description is therefore a **general realization principle for this specified controlled architecture**, new to this repository, with established algebraic ingredients. This is neither an exhaustive literature conclusion nor a journal-fit judgment.
+The inspected sources establish the constituent rank interpretations and projection mechanisms. Their stated results do not supply the paired controlled-predictor minima of the matrix principle. The defensible description is therefore a **general realization principle for this specified controlled architecture**, new to this repository, with established algebraic ingredients. This is not an exhaustive literature conclusion.
 
 The variance result supplies the complementary coarse-accuracy statement: a two-state reversible predictor can hide extensive internal structure when barrier variance is small relative to mixing and visible damping. Its claim concerns binary means, not the entire output path law. The conditional-variance extension requires an invariant conditional-averaging subspace; arbitrary grouping of kinetic labels does not suffice. On a continuous field interval an arithmetic average of exponential barriers need not belong to the original single-exponential family; matching the two queried endpoints avoids that separate issue.
 
