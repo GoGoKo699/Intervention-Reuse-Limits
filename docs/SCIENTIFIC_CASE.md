@@ -108,6 +108,13 @@ the additional fine-precision requirement.
 
 ## 4. Relation to existing work and the role of supporting evidence
 
+The [manuscript background guide](MANUSCRIPT_BACKGROUND.md) consolidates
+the mathematical language, physical citation chain and closest-result
+comparisons, with a [focused bibliography](../references/manuscript.bib).
+The [tutorial shortlist](TUTORIAL_OPTIONS.md) offers three alternative
+single-source routes into this case. The teaching anchor is not yet
+selected; choosing it does not change the scientific scope.
+
 The [bounded primary-source comparison](CONTROL_ACCURACY_CORE_ARGUMENT.md#4-the-nearest-theory-already-covers-important-ingredients)
 already records preparation-specific HMM reduction, shared controlled
 Markov reduction, effective rates and slippage, and periodically driven

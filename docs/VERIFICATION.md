@@ -8,7 +8,43 @@ From the repository root, install [the pinned dependencies](../requirements.txt)
 
 The workflow uses the same command. A saved local PASS does not establish that a GitHub Actions run completed; inspect the live workflow separately. Neither kind of test constitutes independent mathematical review or novelty certification.
 
-## Current checkpoint: full sanity audit of the frozen case
+## Current checkpoint: scientific background and single-source tutorial shortlist
+
+The baseline is commit `f9bb30260a6f4442aedaa26a2a6990dcf6d48eba`, tree
+`fb537a239e720daa274ab41dab0d788a035fa694`, with successful
+[CI run 36692917077](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36692917077).
+The [background guide](MANUSCRIPT_BACKGROUND.md) consolidates definitions,
+physical sources, equilibrium assumptions, closest results and citation
+placement. The [tutorial shortlist](TUTORIAL_OPTIONS.md) gives three
+single-work alternatives and their exact remaining bridges. The
+[bibliography](../references/manuscript.bib) supplies twenty entries.
+Source access and inherited versus fresh checks are distinguished.
+
+Separate internal reviews checked physical attribution, closest-result
+comparisons, tutorial fit and access transparency. One wording correction
+clarified that the growing segment count belongs to the alternating
+setting, alongside two additional calibration holds. No change to a
+proof or numerical result was needed. This is a bounded literature and
+presentation audit, not external review or exhaustive priority clearance.
+
+**Scoped local verification passed:** 3,482 local Markdown links,
+math/code-fence balance, all 82 Python syntax checks, saved-report
+provenance, MIT preservation and `git diff --check`. Pandoc parsed all
+twenty BibTeX entries; every citation key in the two new guides resolves
+uniquely, and every entry is used. Byte comparisons verified preservation
+of the protected baseline and prior history bodies.
+
+Exactly four existing navigation/status files change and three new
+background/bibliography files are added, bringing the repository to 381
+files. All 374 protected baseline files remain byte-identical, including
+every standalone proof, verifier, saved report, the MIT license and the
+full R1–R98 ledger. Earlier verification and work-order bodies remain
+verbatim apart from their headings being marked historical. No new
+simulation, optimizer, numerical verifier or local full-suite replay is
+introduced; the prior complete sanity audit remains the numerical
+baseline. Hosted CI is checked separately for the published commit.
+
+## Historical checkpoint: full sanity audit of the frozen case
 
 The baseline is commit `aabeade3ef03d22dd4e8be5dfecc89a6e27f33fb`, tree
 `68ebe4191a3dc0e255a273cb35d0cdf42c88362c`, with successful

@@ -46,6 +46,8 @@ the fourth-state lower belongs to the separate seven-word/all-word task.
 | Reading step | What it answers |
 | --- | --- |
 | [Scientific guide](docs/SCIENTIFIC_CASE.md) | The core claim, assumptions, evidence map, source distinction and drafting status |
+| [Scientific background](docs/MANUSCRIPT_BACKGROUND.md) | Concepts, physical assumptions, closest results and a focused citation map |
+| [Three tutorial options](docs/TUTORIAL_OPTIONS.md) | Alternative single-source entry points, recommended sections and the remaining bridge |
 | [Three-experiment proof](docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) | Why held-field responses cannot be reused by any two-state model at the stated accuracy |
 | [All-duration law](docs/FAMILIAR_SWITCH_RAPID_CONTROL.md) and [fixed-clock law](docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) | How the best attainable error changes with control timing |
 | [Community model](docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md) | Which published kinetic assumptions support the physical target |

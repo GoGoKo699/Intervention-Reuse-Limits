@@ -1,6 +1,40 @@
 # Current work order: convergence before manuscript drafting
 
-## Current status: full sanity audit passed; frozen research complete — 30 September 2026
+## Current status: scientific background integrated; tutorial choice pending — 30 September 2026
+
+This continuation starts from published commit
+`f9bb30260a6f4442aedaa26a2a6990dcf6d48eba`, tree
+`fb537a239e720daa274ab41dab0d788a035fa694`, with successful
+[CI run 36692917077](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions/runs/36692917077).
+Preserve the MIT license, all standalone mathematical proofs, verifiers,
+saved reports and historical claim rows R1–R98. Existing authorization
+covers non-forced publication to public main. Collaborator contact is
+not authorized; manuscript writing remains on hold as the final phase.
+
+The [scientific background guide](../docs/MANUSCRIPT_BACKGROUND.md)
+now maps definitions, physical precedents, equilibrium assumptions and
+closest results to the frozen claim. It separates published statements
+from this project's specializations and deductions. The accompanying
+[BibTeX file](../references/manuscript.bib) contains twenty focused
+references. The Falk full-text access gap and Gardiner preview-only
+inspection are explicit; the comparison does not certify broad priority.
+
+The [tutorial shortlist](../docs/TUTORIAL_OPTIONS.md) offers exactly three
+alternative single works. Bo–Celani is recommended for the closest
+physical mechanism; Gardiner provides the broader textbook foundation;
+Benvenuti–Farina supplies the positive-realization route. None contains
+the complete project theorem. **Selection remains the user's next
+decision.** After selection, furnish a compact notation-and-concept
+bridge from that one source to the existing proof spine.
+
+The theoretical research remains frozen and complete at the scope of
+the [scientific guide](../docs/SCIENTIFIC_CASE.md). This pass adds no
+theorem, model family, simulation or numerical verifier. Do not treat
+the bibliography as a reading burden or initiate new research to fill
+every historical source gap. The manuscript remains the final phase;
+journal-target discussion stays outside this public research record.
+
+## Historical status: full sanity audit passed; frozen research complete — 30 September 2026
 
 This continuation starts from published commit
 `aabeade3ef03d22dd4e8be5dfecc89a6e27f33fb`, tree
