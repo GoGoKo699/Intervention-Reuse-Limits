@@ -6,7 +6,11 @@ present the [frozen scientific case](SCIENTIFIC_CASE.md). It adds no
 theorem or experiment. **Bo–Celani is the selected tutorial anchor.**
 The [project narrative](../REVIEW.md) supplies the bridge to the proofs;
 the [selection record](TUTORIAL_OPTIONS.md) retains the alternatives
-considered. Manuscript writing remains on hold.
+considered.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 The [BibTeX file](../references/manuscript.bib) collects the twenty
 sources used here or in the shortlist. Keys shown below match that file.

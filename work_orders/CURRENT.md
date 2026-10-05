@@ -21,7 +21,10 @@ frozen as stated in the [scientific guide](../docs/SCIENTIFIC_CASE.md).
 The pre-drafting analytic questions are resolved. No new simulation,
 parameter search, model extension or research branch is an active task.
 Further work should address a concrete reader or correctness issue.
-**Manuscript writing remains on hold and is the final phase.**
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 The mathematical arguments, R1–R98, bibliography, original checkpoint
 verifier and MIT license are preserved. Historical work orders are

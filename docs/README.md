@@ -61,5 +61,9 @@ removed from the current reading path; older research priorities remain
 historical. The [tutorial selection record](TUTORIAL_OPTIONS.md) retains
 the two unselected alternatives for reference.
 
-Manuscript drafting remains on hold. The current reading path explains
-the frozen result and does not open a new research phase.
+The current reading path explains the frozen result and does not open a
+new research phase.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

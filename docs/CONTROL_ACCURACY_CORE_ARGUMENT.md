@@ -200,4 +200,7 @@ that limitation and reconsider the control contract; do not infer a
 class-wide finite-bandwidth advantage from the ideal supremum. This
 single analytic gate is the next justified calculation. No new
 simulation, verifier or sampling budget is needed for this assessment.
-Manuscript writing remains on hold.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
