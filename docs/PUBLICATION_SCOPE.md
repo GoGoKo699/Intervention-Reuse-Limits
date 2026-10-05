@@ -9,7 +9,10 @@ closes the former pre-drafting gate.
 The physical model, endpoint observation contract and theorem scope are
 frozen. No additional model extension, parameter search, pulse optimization
 or acquisition calculation is an active drafting prerequisite.
-**Manuscript writing is on hold and remains the final phase.**
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## What the publication case supports
 

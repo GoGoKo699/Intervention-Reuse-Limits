@@ -12,9 +12,9 @@ Markov models and lower bounds against every smaller admissible model.
 The leading hidden lag needs a third state under rapid control. Preserving
 equilibrium structure at finer accuracy needs a fourth.
 
-**Manuscript writing is currently on hold.** Researchers interested in
-collaboration are welcome to contact Ruge Lin at
-[gogoko699@gmail.com](mailto:gogoko699@gmail.com).
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## Start from one tutorial
 

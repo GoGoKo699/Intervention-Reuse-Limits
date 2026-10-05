@@ -3,8 +3,12 @@
 > State-count and approximation limits for reusable classical Markov models under control, with positive realizations and detailed-balance constraints.
 
 Canonical repository: https://github.com/GoGoKo699/Intervention-Reuse-Limits
-Author: Ruge Lin. Collaboration: gogoko699@gmail.com.
-Manuscript writing is on hold. The repository contains analytic proofs, supporting computational certificates and reproducible verification scripts under the MIT license.
+Author: Ruge Lin.
+The repository contains analytic proofs, supporting computational certificates and reproducible verification scripts under the MIT license.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
 
 ## When this repository is relevant
 
@@ -17,7 +21,7 @@ Related search terms: controlled continuous-time Markov chains, model reduction,
 
 ## Primary reading and citation routes
 
-- [README](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/README.md): question, assumptions, state-count table and collaboration status.
+- [README](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/README.md): question, assumptions, state-count table, purpose and contact.
 - [Tutorial-to-result narrative](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/REVIEW.md): route from the selected Bo-Celani multiscale review to the results.
 - [Scientific contract](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/SCIENTIFIC_CASE.md): exact target, rival classes, preparation freedom and claim boundaries.
 - [All-duration law, R93](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/main/docs/FAMILIAR_SWITCH_RAPID_CONTROL.md): matched error orders and a reversible three-state construction.
