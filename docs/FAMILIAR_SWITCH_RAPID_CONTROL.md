@@ -368,5 +368,4 @@ and [trace reduction](FAMILIAR_SWITCH_TRACE_REDUCTION.md) delimit the
 finite-accuracy interpretation: parameter extremes do not provide a
 fixed positive equilibrium-specific penalty in the exact general-three-state
 regime. A substantial interior gap remains unproved and lies outside the
-[frozen scientific claim](SCIENTIFIC_CASE.md). It is not an active
-pre-drafting requirement.
+[scientific claim](SCIENTIFIC_CASE.md).

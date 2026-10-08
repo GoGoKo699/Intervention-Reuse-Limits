@@ -38,8 +38,8 @@ starting point; the state-count results below are proved in this repository.
 | Check the arguments | **[Documentation map](docs/README.md)** and [scientific guide](docs/SCIENTIFIC_CASE.md) | Exact assumptions, proof dependencies and evidence limits |
 
 The [background guide](docs/MANUSCRIPT_BACKGROUND.md) supplies the primary
-literature and citation map. The [tutorial selection record](docs/TUTORIAL_OPTIONS.md)
-retains the alternatives considered; they are not additional prerequisites.
+literature and citation map. [Further reading](docs/TUTORIAL_OPTIONS.md)
+provides textbook and positive-realization background.
 
 ## The prediction task
 
@@ -133,18 +133,17 @@ segments each last $`1/r`$ in dimensionless time. At fixed hidden
 attempt rate $`\Gamma_Z`$, each train segment lasts $`1/\Gamma_Z`$
 and its total physical duration grows as $`r/\Gamma_Z`$.
 
-## Verification and status
+## Reproduce the checks
 
 The theorem is analytic. The [verification record](docs/VERIFICATION.md)
-and [full sanity audit](docs/FINAL_SANITY_AUDIT.md) map the reproducibility
-checks to their claims. To run the existing suite:
+and [proof review](docs/FINAL_SANITY_AUDIT.md) map the reproducibility
+checks to their claims. To run the suite:
 
 ```bash
 python -m pip install -r requirements.txt
 make check
 ```
 
-The physical model, endpoint task and theorem scope are frozen.
 Ideal field jumps and true endpoint records are assumptions; finite-ramp,
 detector, sampling, hardware-bit and heat-saving guarantees are not
 established for this menu. The conclusions concern predictive states,
@@ -153,5 +152,5 @@ not a demonstrated device advantage.
 For search and assisted reading, [llms.txt](llms.txt) identifies relevant
 research questions, canonical proof links and the limits of the results.
 
-[Current work](work_orders/CURRENT.md) · [Claim ledger](docs/CLAIM_LEDGER.md) ·
-[Publication status](docs/PUBLICATION_SCOPE.md) · [Research history](docs/RESEARCH_HISTORY.md) · [MIT license](LICENSE)
+[Results index](docs/CLAIM_LEDGER.md) · [Theorem scope](docs/PUBLICATION_SCOPE.md) ·
+[Bibliography](references/manuscript.bib) · [MIT license](LICENSE)

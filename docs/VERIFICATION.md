@@ -1,13 +1,13 @@
 # Verification and provenance
 
-The current hierarchy and finite-pulse witness are analytic results.
+The state-count hierarchy and finite-pulse witness are analytic results.
 Computational checks reproduce the evidence attached to their own claims;
 a passing workflow is not a substitute for the proofs.
-The [claim ledger](CLAIM_LEDGER.md) maps R1–R98 to their evidence, and the
-[full sanity audit](FINAL_SANITY_AUDIT.md) records the completed internal
+The [results index](CLAIM_LEDGER.md) maps R1–R98 to their evidence, and the
+[proof review](FINAL_SANITY_AUDIT.md) records the completed internal
 proof review and full local reproduction.
 
-## Run the existing checks
+## Run the checks
 
 From the repository root:
 
@@ -52,9 +52,8 @@ collapsed numbered displays and broken inline notation seen in GitHub.
 | Internal proof review | An independent internal check; no external peer-review endorsement |
 | Local PASS or hosted CI | Successful execution for that local tree or exact hosted commit; no priority, impact or acceptance claim |
 
-Historical detector, calibration and sample-count guarantees do not
-transfer to the current R98 pulse menu. No additional simulations are
-required by the presentation cleanup.
+Detector, calibration and sample-count guarantees apply to their specified
+observation contracts and do not transfer automatically to the R98 pulse menu.
 
 ## Preserve and update evidence deliberately
 
@@ -65,44 +64,19 @@ to exact source bytes. Review that dependency chain before changing a
 bound proof, even for formatting. The preserved checkpoint verifier is an
 immutable regression baseline.
 
-The [release sanity audit](FINAL_SANITY_AUDIT.md) records the complete
-local run and the preservation checks against its named baseline.
-Scientific report payloads agree; local and hosted Python-version metadata
-may differ. Hosted results are available in
+The [proof review](FINAL_SANITY_AUDIT.md) records the analytic and
+computational checks. Local and hosted Python-version metadata may differ.
+Hosted results are available in
 [GitHub Actions](https://github.com/GoGoKo699/Intervention-Reuse-Limits/actions);
 match the run's commit to the version being inspected.
 
-## Original import provenance
+## Regression baseline
 
-The import record states that all six entries in the supplied checkpoint
-checksum manifest were verified before import. Its source archive had
-SHA-256:
-
-```text
-7ee27fc1e6b1c6217c9649374ae01f05edbd1ba61e35e31749925b14b3e99abe
-```
-
-[`scripts/verify_checkpoint.py`](../scripts/verify_checkpoint.py) was
-imported byte-for-byte, with only its repository filename changed. Its
-SHA-256 is:
+The [checkpoint verifier](../scripts/verify_checkpoint.py) and its
+[report](../reports/checkpoint.json) cover generator, detailed-balance,
+stationarity, lumpability, rational-rate Laplace and three-state inverse
+checks. The repository checker protects the verifier’s SHA-256:
 
 ```text
 ce7a2a981e6a09f7350ad42731afbcafd6c67f2de2bade8d2de16666227e2026
 ```
-
-The [original checkpoint report](../reports/checkpoint.json) covers its
-generator, detailed-balance, stationarity, lumpability, rational-rate
-Laplace and three-state inverse checks. The active theory and audit
-notes reorganize and extend that checkpoint; they are not claimed to be
-byte-identical copies of its original documentation. These are retained
-import facts, not a claim to have reacquired the archive during cleanup.
-
-## Historical checkpoints
-
-Repeated status narratives and per-checkpoint file counts have been
-removed from the current guides. The [research history](RESEARCH_HISTORY.md)
-links their exact pre-cleanup versions. Standalone proofs, saved reports
-and source audits retain the underlying evidence. The superseded recovery
-folder has been removed after confirming that its six proofs and source
-comparison are integrated; its original files remain available through the
-history map's exact-commit link.

@@ -1,6 +1,6 @@
 # Physical assumptions must come from an established model
 
-[Current work](../work_orders/CURRENT.md) · [Charge realization](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) · [Charge-platform sources](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) · [Measurement sources](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_SOURCE_AUDIT.md)
+[Scientific guide](SCIENTIFIC_CASE.md) · [Charge realization](FAMILIAR_SWITCH_CHARGE_REALIZATION.md) · [Charge-platform sources](FAMILIAR_SWITCH_REALIZATION_SOURCE_AUDIT.md) · [Measurement sources](FAMILIAR_SWITCH_ENDPOINT_REGISTRATION_SOURCE_AUDIT.md)
 
 **Research direction, 24 September 2026.** The owner requires the physical
 model to be grounded in another community's established assumptions. We may

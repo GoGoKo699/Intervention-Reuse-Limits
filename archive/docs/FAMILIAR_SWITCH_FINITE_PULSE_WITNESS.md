@@ -1,6 +1,6 @@
 # Three experiments expose a finite-pulse memory requirement
 
-Two held-field experiments
+**Convergence checkpoint, 30 September 2026.** Two held-field experiments
 and one specified alternating pulse train already force a third predictive
 state at intermediate accuracy. Every reusable two-state Markov model
 obeys an exact multiplication rule for its conditional contrasts. The
@@ -9,7 +9,7 @@ hidden-to-visible rate ratio, while the existing reversible three-state
 model has second-order error on the same experiments.
 
 This closes the finite-pulse question in the
-[core assessment](CONTROL_ACCURACY_CORE_ARGUMENT.md). It uses the existing
+[core assessment](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/CONTROL_ACCURACY_CORE_ARGUMENT.md). It uses the existing
 physical model, preparation and endpoint observations. The number of
 experiment settings is three; the pulse train contains a growing number
 of segments. Finite pulse spacing is established within the ideal-jump
@@ -17,7 +17,7 @@ model, without a finite-ramp or device-performance claim.
 
 ## 1. A fixed three-experiment recipe
 
-Use the [heat-bath target](FAMILIAR_SWITCH_FAST_RELAXATION.md), with fixed
+Use the [heat-bath target](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_FAST_RELAXATION.md), with fixed
 $`t=\tanh J\in(0,1)`$, $`u=\tanh H\in(0,1)`$ and rate ratio
 $`r=\Gamma_Z/\Gamma_S`$. Time is measured in $`1/\Gamma_S`$.
 The target starts in $`\pi_0(S,Z)=(1+tSZ)/4`$, and only the true initial
@@ -74,7 +74,7 @@ E_2(r)=\Theta(r^{-1}).
 ```
 
 The constants in the asymptotic statement keep $`t,u`$ fixed. The
-[existing reversible three-state construction](FAMILIAR_SWITCH_RAPID_CONTROL.md)
+[existing reversible three-state construction](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_RAPID_CONTROL.md)
 on the same menu satisfies
 
 **Equation (5).**
@@ -137,7 +137,7 @@ preparation restrictions or compactness assumptions on the rates.
 
 ## 3. Hidden lag produces a nonzero finite-train residual
 
-The [exact mean closure](FAMILIAR_SWITCH_RAPID_CONTROL.md#3-one-change-of-mean-coordinates-controls-every-word)
+The [exact mean closure](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_RAPID_CONTROL.md#3-one-change-of-mean-coordinates-controls-every-word)
 uses $`x=\mathbb E[S]`$ and $`v=\mathbb E[Z]/t-x`$. Taking half the
 difference between the two initial-sign solutions cancels the affine
 field forcing. Write these contrast coordinates as $`C,V`$. During a hold,
@@ -233,7 +233,7 @@ Thus there is no uncontrolled first-order initial transient. Subtracting,
 
 Since $`T=1+O(r^{-1})`$ and $`C_{L_A}C_{H_A}=e^{-\bar c}+O(r^{-1})`$,
 exponentiation proves the expansion in (4). The
-[adiabatic two-state upper](FAMILIAR_SWITCH_FAST_RELAXATION.md)
+[adiabatic two-state upper](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_FAST_RELAXATION.md)
 $`t^2/[r(1-t^2)]`$ applies to every word and completes $`E_2=\Theta(r^{-1})`$.
 
 For completeness, a conservative fully explicit version follows from
@@ -250,7 +250,7 @@ gives $`C_{L_A}C_{H_A}\ge e^{-(c_0+c_1)A}\ge e^{-2}`$.
 This sufficient onset is deliberately loose; it is not a proposed
 operating point or an optimized experimental threshold.
 
-## 4. Physical interpretation and timing
+## 4. What this closes, and where the project stops
 
 The previous lower used arbitrarily rapid product and long-time limits.
 Here the dwell, segment count and observation horizon are specified for
@@ -274,3 +274,12 @@ equilibrium penalty nor establishes hardware memory, heat savings,
 device feasibility or a large practical error gap. The cited earlier
 assessment retains the primary-source comparison; this proof introduces
 no broader priority claim.
+
+**Convergence decision:** the selected analytic gate is closed. Freeze
+the physical model, observation contract and theorem scope. The next
+work is a bounded consistency and presentation pass over the established
+core argument and evidence, using the existing source comparison.
+Open implementation questions remain stated limitations; they do not
+automatically become new research branches. No simulation, optimizer,
+new numerical verifier or acquisition refinement is needed here.
+Manuscript drafting remains last.

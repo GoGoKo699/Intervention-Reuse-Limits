@@ -186,7 +186,7 @@ The $`1/q`$ error rate is an elementary upper bound, not a minimax or novelty cl
 
 [The executable extension](../scripts/verify_finite_accuracy.py) verifies the normalized spectral weights, nonvanishing signal bound, positive reversible realization, and agreement of its master equation with the memory equations. It also tests the protocol certificate on deterministic sign-changing protocols. See [verification details](VERIFICATION.md).
 
-The coefficient state-growth order is determined for unrestricted target rates and for the separately defined rate-capped target class. The [finite-field extension](FINITE_FIELD.md) now provides a size- and horizon-uniform remainder and a stronger prediction theorem in its specified subclass. Sharp constants, stable recovery of an arbitrary kernel from noisy data, and a specific fluid or molecular implementation remain outside these results. The [next work order](../work_orders/CURRENT.md) records the stronger research direction.
+The coefficient state-growth order is determined for unrestricted target rates and for the separately defined rate-capped target class. The [finite-field extension](FINITE_FIELD.md) now provides a size- and horizon-uniform remainder and a stronger prediction theorem in its specified subclass. Sharp constants, stable recovery of an arbitrary kernel from noisy data, and a specific fluid or molecular implementation remain outside these results.
 
 ## 8. A stronger bound by positive Gaussian quadrature
 
