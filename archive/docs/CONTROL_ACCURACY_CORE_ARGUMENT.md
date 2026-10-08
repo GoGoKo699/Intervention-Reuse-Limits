@@ -1,9 +1,12 @@
+> **Status after convergence, 30 September 2026:** the [current scientific guide](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/SCIENTIFIC_CASE.md) supersedes this assessment's next-step instructions. The [three-experiment theorem](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md) closes the finite-pulse gate proposed in Section 5. The original assessment and bounded source comparison are preserved verbatim below; no proof or source claim is changed.
+
 # Control resolution and accuracy determine the required model size
 
-An attainable model-size law describes a kinetic model reused across
+**Scientific assessment, 30 September 2026.** The strongest current claim
+is an attainable model-size law for a kinetic model reused across
 interventions. The exact three-versus-four separation is its fine-precision
-limit. This guide connects the mechanism, model-selection rule and source
-comparison to the corresponding proofs.
+limit. This assessment consolidates existing theorems; it adds no fitted
+point, numerical certificate or manuscript draft.
 
 ## 1. The core argument
 
@@ -64,7 +67,7 @@ premise for the conclusions below.
 
 Let $`E_d^{\rm rev}`$ denote the infimum over at-most-$`d`$-state reversible
 models of their supremum pair-TV error over those words. The
-[rapid-control theorem](FAMILIAR_SWITCH_RAPID_CONTROL.md) gives
+[rapid-control theorem](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_RAPID_CONTROL.md) gives
 
 ```math
 E_2^{\rm rev}=\Theta(r^{-1}),\qquad
@@ -72,7 +75,7 @@ E_3^{\rm rev}=\Theta(r^{-2}),\qquad E_4^{\rm rev}=0.
 ```
 
 Its two-state lower holds for general models too. The
-[exact positive-realization boundary](FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
+[exact positive-realization boundary](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_ONE_SIDED_BOUNDARY.md)
 gives a general three-state model for all sufficiently large $`r`$.
 Hence, for tolerance $`\epsilon(r)=r^{-p}`$, the eventual minimum counts are:
 
@@ -90,7 +93,7 @@ in the first row. The cases $`p=1,2`$ depend on constants and are not
 settled by the order notation.
 
 For the separate task with fixed positive low/high ticks, the
-[clocked theorem](FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) gives quadratic
+[clocked theorem](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_QUADRATIC_PRECISION.md) gives quadratic
 two-state error uniformly over word length and horizon. Both classes
 then need two states for $`0\lt p\lt 2`$; for $`p\gt 2`$, the minima are three
 general and four reversible states. Fixed clocks remove the separated-order
@@ -127,7 +130,7 @@ presented as hardware or heat savings.
 ## 4. The nearest theory already covers important ingredients
 
 The following is a focused theorem comparison, not a literature-wide
-priority certificate. The [earlier comparison](FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
+priority certificate. The [earlier comparison](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_CENTRAL_CLAIM_COMPARISON.md)
 covers reciprocal-response and hidden-equilibrium inference; its stated
 full-text access gap remains.
 
@@ -158,19 +161,46 @@ reciprocity, trace elimination and effective-rate corrections are
 established tools. Their presence does not by itself supply these lower
 bounds, and their presence also prevents a broad first-discovery claim.
 
-## 5. A finite three-setting witness
+## 5. Decision and the next analytic gate
 
-The [finite-pulse theorem](FAMILIAR_SWITCH_FINITE_PULSE_WITNESS.md)
-uses two held-field calibration experiments and one alternating train.
-With $`n=\lceil r/2\rceil`$ and $`A=n/r`$, the settings are
-$`L_A,H_A,(L_{1/r}H_{1/r})^n`$. The reuse identity of every admissible
-two-state model conflicts with the target contrasts at order $`r^{-1}`$,
-while the reversible three-state construction attains error $`O(r^{-2})`$.
-The theorem permits arbitrary rival preparations and uncapped rival rates.
+**Decision:** lead the research with the control/accuracy/model-size law.
+The exact equilibrium state separation and the
+[uniform trace and interior bounds](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_TRACE_REDUCTION.md)
+support and delimit that claim. The current evidence supports a coherent
+narrow theory result; it does not yet establish broad physical impact.
+Another fourth-state operating-point search or acquisition refinement
+would not address the strongest remaining question.
 
-The train contains $`2\lceil r/2\rceil`$ segments. At fixed hidden
-attempt rate $`\Gamma_Z`$, each segment lasts $`1/\Gamma_Z`$ and the
-train lasts $`2\lceil r/2\rceil/\Gamma_Z`$. Ideal field changes and
-true endpoint observations are part of this task. The finite-menu
-third-state requirement is distinct from the finer fourth-state lower
-bound on the separate seven-word/all-word task.
+The missing link is a finite-bandwidth consequence. The current
+two-state lower takes an arbitrarily rapid product limit and then a
+long-time limit inside the all-word supremum. It does not prove that a
+specified finite pulse train forces the same first-order error.
+
+The next task is to test one explicit family: held-field calibration
+words together with a periodic low/high word whose dwell lengths are
+fixed multiples of $`1/r`$. Seek a constant $`c\gt 0`$ and an explicit finite
+horizon or pulse count for which every reusable two-state model has
+pair error at least $`c/r`$. The existing three-state upper already
+supplies order $`r^{-2}`$ on that restricted family. One failed two-state
+fit is insufficient; the lower must allow all the existing rival
+preparation and rate freedom. The leading memory requirement would then
+have a definite control-time condition. It would remain a third-state
+result, separate from the finer equilibrium-specific fourth-state cost.
+
+This timing scale has a physical interpretation within the
+[published kinetic model](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/FAMILIAR_SWITCH_COMMUNITY_MODEL.md): holding
+$`\Gamma_Z`$ admissible and setting $`\Gamma_S=\Gamma_Z/r`$ converts
+a dimensionless dwell $`\kappa/r`$ to physical duration
+$`\kappa/\Gamma_Z`$. Total duration must also be reported. Finite ramps
+and a detector are further requirements, not consequences of this
+rescaling.
+
+If the specified family permits an $`o(r^{-1})`$ two-state fit, record
+that limitation and reconsider the control contract; do not infer a
+class-wide finite-bandwidth advantage from the ideal supremum. This
+single analytic gate is the next justified calculation. No new
+simulation, verifier or sampling budget is needed for this assessment.
+
+## Purpose and contact
+
+This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).

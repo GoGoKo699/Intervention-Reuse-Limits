@@ -1,18 +1,25 @@
-# Further reading
+# Tutorial selection: Bo–Celani
+
+**Selected by the author, 30 September 2026: Option 1, Bo–Celani.**
+Begin with that review and then the [project narrative](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/REVIEW.md).
+The two alternatives below remain as a record of the comparison; they
+are not additional prerequisites. The [background guide](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/MANUSCRIPT_BACKGROUND.md)
+provides the separate manuscript citation record. The scientific scope
+remains frozen.
 
 Bo–Celani is the closest route into the physical mechanism of the
-result. Gardiner offers a fuller textbook foundation, and
+current result. Gardiner offers a fuller textbook foundation, and
 Benvenuti–Farina focuses on positive-realization mathematics. None
 contains the project's complete controlled state-count theorem; the
 repository narrative supplies the project-specific bridge.
 
-| Source | Best use | Project-specific extension |
+| Option | Best use | Project-specific extension |
 | --- | --- | --- |
 | 1. Bo–Celani review | Fast hidden variables and reduced kinetic dynamics | Shared-control error guarantees and necessary state counts |
 | 2. Gardiner textbook | Probability, Markov dynamics and systematic approximation | The precise prediction contract and positive-model lower bounds |
 | 3. Benvenuti–Farina tutorial | Positive dimension versus ordinary linear dimension | Normalized switched CTMCs, equilibrium structure and physical lag |
 
-## 1. Bo and Celani — tutorial anchor
+## 1. Bo and Celani — selected anchor
 
 Stefano Bo and Antonio Celani, **Multiple-scale stochastic processes:
 decimation, averaging and beyond**, *Physics Reports* **670**, 1–59
@@ -32,7 +39,7 @@ constructions to our uniform shared-control guarantees and lower bounds
 over all smaller models. The review is freely readable; the recommended
 route does not require its diffusion or thermodynamic-functional chapters.
 
-## 2. Gardiner — textbook background
+## 2. Gardiner — retained textbook alternative
 
 Crispin Gardiner, **Stochastic Methods: A Handbook for the Natural and
 Social Sciences**, fourth edition, Springer (2009), ISBN
@@ -52,7 +59,7 @@ were inspected; the full book was not. Full access is by library or
 purchase. The remaining bridge is the shared-generator prediction task,
 positive realizations and class-wide minimality arguments.
 
-## 3. Benvenuti and Farina — positive realizations
+## 3. Benvenuti and Farina — retained mathematical alternative
 
 Luca Benvenuti and Lorenzo Farina, **A Tutorial on the Positive Realization
 Problem**, *IEEE Transactions on Automatic Control* **49**(5), 651–664
@@ -73,9 +80,9 @@ the accuracy orders. This is the most direct mathematical option for
 readers who already know Markov dynamics; its historical open-problem
 discussion is not a current research-status guide.
 
-## From background to the results
+## The selected bridge into the repository
 
-The [project narrative](../REVIEW.md) uses the selected work as its
+The [project narrative](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/REVIEW.md) uses the selected work as its
 starting vocabulary and follows four steps:
 
 1. Translate its probability and generator conventions into ours.
@@ -83,7 +90,9 @@ starting vocabulary and follows four steps:
 3. Follow the hidden lag to the positive three-state construction.
 4. Explain the class-wide obstruction and the finite-pulse witness.
 
-The narrative points directly to the proofs. The
-[documentation map](README.md) provides the main proof route and links
-to supplementary results. The [bibliography](../references/manuscript.bib)
-records the sources used throughout the repository.
+The narrative points directly to the frozen proof notes. It is a guide
+to this project, not a reproduction of the review or a new theorem
+agenda. The [documentation map](https://github.com/GoGoKo699/Intervention-Reuse-Limits/blob/5b8dbc60d4cff8167f56cec84151e7e28f755535/docs/README.md) separates the main proof
+route from supporting results and research history. The bibliography
+continues to support scholarly attribution independently of the teaching
+prerequisite.

@@ -1,7 +1,6 @@
 # The scientific case: control, accuracy and reusable model size
 
-**Current consolidated guide, 30 September 2026.** The research establishes
-an attainable state-count law for a familiar equilibrium kinetic model
+The research establishes an attainable state-count law for a familiar equilibrium kinetic model
 reused under control. A third state retains the leading hidden lag exposed
 by rapid switching; a fourth is needed to preserve equilibrium structure
 at finer precision. A specified three-experiment menu already witnesses
@@ -11,8 +10,6 @@ The scientific decision is which state budget can satisfy a stated
 prediction tolerance across allowed controls. Separate fits at held fields
 do not settle whether one model transfers between protocols. The proofs
 supply both sufficient constructions and class-wide necessary limits.
-The physical model and prediction contract are now frozen; this guide
-consolidates existing results and adds no theorem or numerical evidence.
 
 ## 1. The prediction contract
 
@@ -109,14 +106,14 @@ the additional fine-precision requirement.
 
 ## 4. Relation to existing work and the role of supporting evidence
 
-The [manuscript background guide](MANUSCRIPT_BACKGROUND.md) consolidates
+The [scientific background guide](MANUSCRIPT_BACKGROUND.md) consolidates
 the mathematical language, physical citation chain and closest-result
 comparisons, with a [focused bibliography](../references/manuscript.bib).
 The selected teaching anchor is Bo–Celani. The
 [tutorial-to-result narrative](../REVIEW.md) connects its fast-variable
 averaging framework to this prediction task and the existing proofs.
-The [selection record](TUTORIAL_OPTIONS.md) retains the alternatives;
-they are not additional prerequisites. The scientific scope is unchanged.
+[Further reading](TUTORIAL_OPTIONS.md) provides additional mathematical
+and stochastic-process background.
 
 The [bounded primary-source comparison](CONTROL_ACCURACY_CORE_ARGUMENT.md#4-the-nearest-theory-already-covers-important-ingredients)
 already records preparation-specific HMM reduction, shared controlled
@@ -130,8 +127,8 @@ under the declared interface, with lower bounds over all admissible small
 positive realizations. One pair of field generators must serve both
 calibration and driven words. The comparison is narrower than an all-state
 controlled-reduction guarantee and does not establish broad priority.
-The earlier source audit's full-text access gap remains recorded. This
-consolidation adds no source claim or assertion of exhaustive coverage.
+The source audit records a full-text access gap; the comparison is bounded
+by the inspected sources.
 
 The [finite-rate bounds](FAMILIAR_SWITCH_FINITE_RATE_WINDOW.md) and
 [uniform trace reduction](FAMILIAR_SWITCH_TRACE_REDUCTION.md) delimit the
@@ -143,42 +140,21 @@ they do not enlarge the present core claim.
 
 The current hierarchy and finite-pulse witness are analytic. Saved fits,
 interval certificates and acquisition calculations support their own
-historical tasks. Their margins or sample counts do not transfer to R98.
-No new simulation or numerical verifier is needed for this guide.
+specified tasks. Their margins or sample counts do not transfer to R98.
 
-## 5. Drafting status and the stopping decision
+## 5. Physical interpretation and evidence
 
-**The pre-drafting evidence package is ready for a focused theory
-manuscript.** The selected analytic questions are resolved, the claim and
-assumptions are explicit, and the closest-source distinction is stated at
-the level supported by the existing comparison. No unresolved mathematical
-prerequisite was identified for this bounded claim.
+The [proof review](FINAL_SANITY_AUDIT.md) records the analytic checks of
+the central arguments and the scope of the reproducibility evidence.
 
-The subsequent [full sanity audit](FINAL_SANITY_AUDIT.md) independently
-reviewed the central proof chain and reran the complete verification
-suite. It found no blocking mathematical defect. Its historical-outlook
-map resolves older open-question language without changing the proofs.
-
-| Remaining issue | Treatment in the frozen case |
+| Scope question | Interpretation |
 | --- | --- |
-| Finite ramps, detector behavior and sampling costs | State as unproved implementation requirements; do not import older experiment guarantees |
-| Pulse count and physical time | Report explicitly: at fixed $`\Gamma_Z`$, each pulse lasts $`1/\Gamma_Z`$ and the train lasts $`2\lceil r/2\rceil/\Gamma_Z`$ |
+| Finite ramps, detector behavior and sampling costs | Unproved implementation requirements for this menu; guarantees for other observation contracts do not transfer automatically |
+| Pulse count and physical time | At fixed $`\Gamma_Z`$, each pulse lasts $`1/\Gamma_Z`$ and the train lasts $`2\lceil r/2\rceil/\Gamma_Z`$ |
 | Hardware bits, heat savings and a large useful error gap | No such benefit is established; three and four abstract states both fit in two fixed register bits |
-| Broad significance and complete priority | Remain judgment and evidence limits; use the bounded source comparison and avoid first-discovery claims |
+| Broad significance and complete priority | The source comparison is bounded by the inspected works and does not certify exhaustive priority or broad impact |
 | External review | Internal analytic reviews and reproducibility checks are recorded; external endorsement is not claimed |
 
-These limitations do not become new research branches or prerequisites
-for the stated theory manuscript. The model, observation contract and
-theorem scope stay frozen. Reopen mathematics only for a concrete
-correctness issue in an existing claim. **Manuscript writing remains on
-hold and is the final phase.** The current work does not predict acceptance
-or establish broad publication impact.
-
-The [publication status](PUBLICATION_SCOPE.md),
-[current work order](../work_orders/CURRENT.md) and
-[verification record](VERIFICATION.md) reflect this stopping decision.
-The earlier core assessment's Section 5 proposed the finite-pulse gate;
-R98 has closed it. Its source comparison remains useful, while its
-next-step instructions are historical.
-
-Earlier assessments are accessible through the [research history](RESEARCH_HISTORY.md).
+The [theorem-scope page](PUBLICATION_SCOPE.md) collects the comparison
+classes and boundaries. The [verification guide](VERIFICATION.md)
+provides the reproduction commands and explains the evidence types.

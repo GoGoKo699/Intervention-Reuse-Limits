@@ -1,12 +1,10 @@
-# Scientific background for the frozen manuscript
+# Scientific background and references
 
-**Background consolidation, 30 September 2026.** This guide supplies the
-concepts, physical precedents and closest-result comparisons needed to
-present the [frozen scientific case](SCIENTIFIC_CASE.md). It adds no
-theorem or experiment. **Bo–Celani is the selected tutorial anchor.**
-The [project narrative](../REVIEW.md) supplies the bridge to the proofs;
-the [selection record](TUTORIAL_OPTIONS.md) retains the alternatives
-considered.
+This guide supplies the concepts, physical precedents and closest-result
+comparisons for the [scientific case](SCIENTIFIC_CASE.md).
+**Bo–Celani is the tutorial anchor.** The
+[project narrative](../REVIEW.md) connects that review to the proofs;
+[further reading](TUTORIAL_OPTIONS.md) provides additional background.
 
 ## Purpose and contact
 
@@ -87,7 +85,7 @@ from the requested prediction tolerance $`\epsilon`$. An asymptotic
 reduction at a fixed field supplies neither uniform accuracy over
 unrestricted words nor a lower bound against all smaller realizations.
 
-| Background needed | Source passage and manuscript use | Project-specific next step |
+| Background needed | Source passage and use | Connection to the result |
 | --- | --- | --- |
 | CTMCs, stationary laws and reversal | `Seifert2012`, [author text](https://arxiv.org/pdf/1205.4176), §§6.1.1–6.1.3, Eqs. (110)–(114), for master equations, currents, detailed balance and trajectory probabilities. | State the row convention and exact endpoint contract before the theorem. |
 | Lumpability | `Cardelli2023`, [accepted manuscript](https://backend.orbit.dtu.dk/ws/files/318778353/HKKR_Algorithmic_Minimization_of_Uncertain_Continuous_Time_Markov_Chains.pdf), §II, Theorem 2, for the classical pointwise exit-sum criterion and all-initial-law quotient. | Distinguish a partition criterion from an all-realization lower. The paper's uncertainty/value-function optimization is not being imported. |
@@ -192,7 +190,7 @@ cases have not been cleared, so retain this explicit priority limitation.
 
 ## 6. Citation placement and evidence boundaries
 
-| Manuscript purpose | Smallest useful source cluster or repository evidence |
+| Expository purpose | Smallest useful source cluster or repository evidence |
 | --- | --- |
 | Introduce reduced kinetic models and hidden fast variables | `BoCelani2017`; definitions from `Seifert2012` if needed |
 | Specify the physical target | `BulnesCuetara2011`, `Strasberg2013`, `Ruokola2011`, `Esposito2010`; community-model derivation |
@@ -212,24 +210,18 @@ Ideal jumps, true endpoint records and the absence of
 a demonstrated hardware/heat saving must remain explicit. Old sampling,
 detector and numerical certificates belong to their original tasks.
 
-## 7. Access record and completion
+## 7. Source access and reading route
 
-This consolidation freshly checked the pedagogical sources, CTMC
-lumpability statement, HMM and switched-linear passages, physical-model
-passages, equilibrium-reduction background and rate-ratio review.
-The controlled, reversible-compression, reciprocal-response and
-weak-memory comparisons combine reopened passages and metadata with
-the same-day [sanity audit](FINAL_SANITY_AUDIT.md) and its earlier
-equation-level checks. They are not represented as wholly new full-paper
-audits. Gardiner's recommended chapter coverage is contents-based;
-the preface and probability sample were inspected, not the entire book.
-Falk remains the explicit full-text gap. Section references follow the
-linked versions, whose pagination can differ from the journal editions.
+The comparison uses the inspected passages in the pedagogical, CTMC,
+HMM, switched-linear, physical-model, equilibrium-reduction and
+rate-ratio sources, together with the equation-level comparisons in the
+[proof review](FINAL_SANITY_AUDIT.md). The recorded inspections concern
+those passages rather than full-paper audits. Gardiner’s recommended
+chapter coverage is contents-based; its preface and probability sample
+were inspected. Falk remains the explicit full-text gap. Section
+references follow the linked versions, whose pagination can differ from
+the journal editions.
 
-The scientific background needed for the frozen claim is now organized
-for drafting. No new theorem, model family, simulation or replacement
-research gate follows from this pass. The selected **Bo–Celani** route
-now leads through a [compact project narrative](../REVIEW.md) to the
-existing proofs. Other bibliography entries support attribution rather
-than adding to the single-source teaching prerequisite. The manuscript
-itself remains the final phase.
+The **Bo–Celani** reading route leads through the
+[project narrative](../REVIEW.md) to the proofs. The other bibliography
+entries provide attribution and supporting background.
